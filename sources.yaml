@@ -1,0 +1,16 @@
+sources:
+  - name: 新浪财经
+    url: https://rss.sina.com.cn/roll/finance/hot_roll.xml
+    category: 中文财经
+
+  - name: 华尔街见闻
+    url: https://dedicated.wallstreetcn.com/rss.xml
+    category: 中文财经
+
+  - name: CNBC Business
+    url: https://www.cnbc.com/id/10001147/device/rss/rss.html
+    category: 国际财经
+
+  - name: MarketWatch
+    url: https://feeds.content.dowjones.io/public/rss/mw_topstories
+    category: 国际财经
