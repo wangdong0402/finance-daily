@@ -1,246 +1,270 @@
 {
-  "updated": "2026-11-10T12:55:19.842696+00:00",
+  "updated": "2026-11-10T23:24:40.754278+00:00",
   "count": 50,
   "items": [
     {
-      "title": "冲击美国科技IPO融资纪录！Anthropic最高募资904亿美元、完全稀释估值1.4万亿美元",
-      "link": "https://wallstreetcn.com/articles/3785657",
-      "summary": "Anthropic正以美国科技史上最大规模IPO叩关资本市场， 完全稀释估值目标高达1.4万亿美元， 意在成为首家公开上市的前沿人工智能实验室。 根据周二提交给美国证券交易委员会（SEC）的招股文件，Anthropic寻求通过IPO和私募配售合计筹资至多904亿美元。 其中基础IPO发行规模最高644亿美元， 低于此前撤回版本中所示的693亿美元；此外，包括谷歌母公司Alphabet、英伟达、AMD、博通、美光科技、微软及台积电在内的七家科技巨头， 将另行以私募方式合计投入260亿美元。 发行价区间定为每股70至78美元，拟发行约8.014亿股，部分现有股东另出售约2360万股。 按发行价上限",
+      "title": "华尔街见闻早餐FM-Radio | 2026年11月11日",
+      "link": "https://wallstreetcn.com/articles/3785684",
+      "summary": "华见早安之声 要闻精选 中国10月出口 同比增长35.2%，AI硬件热潮为主引擎 ， 进口 同比增长41.6% ； 原油进口量 环比增长13% ，创3月以来最高， 集成电路进口金额 同比大增近70%。 美国10月核心CPI 环比涨0.3%、整体涨0.4%，双双高于预期 ，12月加息50个基点进入讨论范围。 美联储理事沃勒 释放“最鹰信号”： 若通胀居高不下，12月应加息50基点 ，需收回此前“三次预防性降息”。 美联储今年票委Logan ： 至少还需加息两次， 步伐或将加快。 美联储理事鲍曼警告 ： 若AI押注落空，股市或将大幅回调。 Anthropic 路演瞄准35%长期经营利润目标， 最高",
       "source": "华尔街见闻",
       "category": "中文财经",
-      "published": "2026-11-10T12:48:03+00:00"
+      "published": "2026-11-10T23:11:47+00:00"
     },
     {
-      "title": "阿里巴巴：拟分拆平头哥在港股独立上市",
-      "link": "https://wallstreetcn.com/articles/3785661",
-      "summary": "阿里巴巴正式启动旗下芯片子公司平头哥的分拆上市计划，将其独立推向资本市场，为这家全栈数据中心芯片供应商开辟独立融资渠道，同时帮助集团释放被低估的资产价值。 周二阿里公布的文件显示， 平头哥已于2026年9月11日以保密形式向香港联交所递交A1上市申请表格，申请H股在港交所主板挂牌买卖。 阿里在公告中表示， 香港联交所已确认其可进行建议分拆。此次分拆拟通过全球发售方式进行，包括面向香港公众的公开发售及向机构与专业投资者的配售。 分拆完成后，平头哥预计仍将维持阿里子公司地位。 与此同时，平头哥芯片业务正加速进入规模化商业阶段。 二季度财报显示，基于真武M890芯片的超节点实例已上线阿里云并开始销售",
+      "title": "One reason Children’s Place is going bankrupt? Not enough children.",
+      "link": "https://www.marketwatch.com/story/one-reason-the-childrens-place-is-going-bankrupt-not-enough-children-b275eab0?mod=mw_rss_topstories",
+      "summary": "People might be having fewer children, but that isn’t the only thing to blame for Children’s Place filing for bankruptcy.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-10T22:56:00+00:00"
+    },
+    {
+      "title": "抢在Anthropic IPO前出手！投资者据称兜售配售份额，溢价高达5%",
+      "link": "https://wallstreetcn.com/articles/3785685",
+      "summary": "新近消息显示，Anthropic IPO尚未正式定价，部分现有投资者已提前兜售预期获得的发行配售份额，向买家要求高于IPO发行价3%至5%的溢价。 据彭博社美东时间10日周二的报道，交易机构JonesTrading正代表部分投资者推介一笔最高达5亿美元的股票份额，显示市场对这场热门AI公司IPO的需求已提前升温。 以上消息并不意味着Anthropic股票已经在二级市场上市流通，而是代表，投资者提前转让预期获得的IPO配售份额。买家需要在最终发行价基础上额外支付溢价，以换取提前锁定股份的机会。 最高5亿美元配售份额待售，买家需支付额外溢价 据彭博社报道，JonesTrading正代表部分Anth",
       "source": "华尔街见闻",
       "category": "中文财经",
-      "published": "2026-11-10T12:38:43+00:00"
+      "published": "2026-11-10T22:55:28+00:00"
     },
     {
-      "title": "Nvidia couldn’t derail the stock market’s rally. Hot inflation might.",
-      "link": "https://www.marketwatch.com/story/nvidia-couldnt-derail-the-stock-markets-rally-hot-inflation-might-8a572024?mod=mw_rss_topstories",
-      "summary": "A Fed official raises the prospect of a half-a-percentage-point rate hike. Plus, fresh valuation focus on Anthropic’s blockbuster IPO.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-10T12:33:00+00:00"
-    },
-    {
-      "title": "Anthropic officially sets the stage for an IPO valuing the company north of $1 trillion",
-      "link": "https://www.marketwatch.com/story/anthropic-reportedly-retracts-ipo-terms-sent-to-banks-by-mistake-exposing-jitters-over-ai-investments-6116578d?mod=mw_rss_topstories",
-      "summary": "Anthropic could raise up to $63 billion in an IPO expected to take place next week.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-10T12:32:00+00:00"
-    },
-    {
-      "title": "‘We had the worst fight’: I want my husband to retire at 65, but I don’t want to lose his $280,000 salary. Is that unreasonable?",
-      "link": "https://www.marketwatch.com/story/we-had-the-worst-fight-weve-ever-had-i-want-my-husband-to-retire-at-65-but-i-dont-want-to-lose-his-280-000-salary-48511469?mod=mw_rss_topstories",
-      "summary": "“We have $2.6 million, most of it in his 401(k) and IRAs, plus $450,000 in a brokerage account.”",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-10T12:16:00+00:00"
-    },
-    {
-      "title": "Should a widow leave her late partner’s home to her stepkids — or cut off contact with them?",
-      "link": "https://www.marketwatch.com/story/she-can-always-change-her-mind-should-a-widow-leave-the-family-home-to-her-stepchildren-649b06af?mod=mw_rss_topstories",
-      "summary": "“It would be a less drastic step than selling the home now and splitting the proceeds.”",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-10T11:15:00+00:00"
-    },
-    {
-      "title": "当美国无法建设数据中心，会对 AI 产生怎样的冲击",
-      "link": "https://wallstreetcn.com/articles/3785658",
-      "summary": "2026 年 11 月 4 日，美国中期选举结果落定后的第二天上午，OpenAI 的高管们坐到了一起。 据外媒援引知情人士的消息，他们讨论的是要不要重设 2027 年的数据中心容量预期。讨论还没有形成决定，但焦虑已经摆上了台面。 过去几个月，美国各地的大型数据中心项目接连被按下暂停键。得州前任州长 Abbott 从 8 月起冻结了数据中心的并网和空气许可，要求审计到年底；新当选的州长 Gina Hinojosa 承诺，在州议会立法保护居民之前，暂停所有新数据中心审批，而议会会期要到 2027 年 5 月才结束。 俄亥俄新州长 Amy Acton 提出有条件暂停，要求新项目承担全部电力成本、只能",
+      "title": "英伟达继续大跌，两日市值蒸发4300亿美元，微软一度重夺全球第二",
+      "link": "https://wallstreetcn.com/articles/3785679",
+      "summary": "英伟达股价连续第二个交易日下跌，周二跌幅一度超6%，两日市值损失4300亿美元。 周二，英伟达跌幅明显大于其他大型科技股，成为拖累科技股表现的重要因素。 微软收跌2.2%，Alphabet跌约0.4%，Meta收平，苹果跌约0.6%，特斯拉涨0.5%，亚马逊上涨约1.5%。标普500指数下跌约0.4%，纳斯达克100指数下跌0.6%。 美股盘中微软市值曾一度超越英伟达，成为全球市值第二大的上市公司。后由于Anthropic发布办公套件，微软跌幅扩大，再次落后于英伟达。 股东提起集体诉讼，公司治理风险进一步发酵 股价承压之际，英伟达还面临新的法律和公司治理压力。一名股东已于周一在加利福尼亚州提起",
       "source": "华尔街见闻",
       "category": "中文财经",
-      "published": "2026-11-10T11:11:59+00:00"
+      "published": "2026-11-10T22:50:30+00:00"
     },
     {
-      "title": "公募又“卷”新赛道了，继Agent之后，下一个ETF Skill时代来临",
-      "link": "https://wallstreetcn.com/articles/3785659",
-      "summary": "公募基金的AI应用进入第三阶段。 日前，在AI工作平台WorkBuddy上，悄然出现了一个名为“华泰柏瑞ETF_SKILL”。这个Skill(技能，类似AI平台上的程序)能够完成查询ETF资料、费率、基金经理标签、收益率等一系列工作，弥补了相关AI平台上，官方数据缺乏的不足。 事实上，业内推出Skill的公募机构此前已有几家包括华宝基金、易方达基金、南方基金等，据说业内头部机构华夏基金、嘉实基金、广发基金等可能也在筹划相关的Skill。 一场新的AI竞争正在展开。 ETF Skill能干啥？ 笔者试用了华泰柏瑞和易方达的Skill，发现他们确实能够为ETF投资者或潜在投资者提供一些关键信息。 ",
+      "title": "美国10年期国债票面利率升至5%，创2006年以来新高，拍卖需求降温",
+      "link": "https://wallstreetcn.com/articles/3785682",
+      "summary": "美国财政部最新一轮10年期国债拍卖显示，美国中长期融资成本维持高位。 当地时间周二，美国财政部发行420亿美元10年期国债，得标收益率为5.020%，票面利率定为5%，创2006年以来最高水平。 与此同时，本次拍卖需求较上次有所减弱。投标倍数从10月7日的2.77降至2.46，不仅低于前次水平，也低于过去10次同期限国债拍卖2.54的平均值。 同日，美国公布 10月通胀数据 ，高于市场预期，加上 美联储官员持续释放鹰派信号 ，推动市场重新评估未来利率路径，进一步增加了债券市场的压力。 周二美国10年期国债收益率一度升至5.012%，截至发稿上行13个基点，报4.99%。 拍卖需求低于近期平均水",
       "source": "华尔街见闻",
       "category": "中文财经",
-      "published": "2026-11-10T11:07:30+00:00"
+      "published": "2026-11-10T22:48:23+00:00"
     },
     {
-      "title": "‘I’m sick of flying’: I paid for priority boarding, but the overhead bins were full. Was I duped?",
-      "link": "https://www.marketwatch.com/story/im-sick-of-flying-i-paid-for-priority-boarding-but-the-overhead-bins-were-full-was-i-duped-0badcc80?mod=mw_rss_topstories",
-      "summary": "“Maybe next time I’ll try the other approach: I’ll board whenever I feel like it and drop my suitcase in the first open slot I see.”",
+      "title": "Fossil CEO says turnaround is ahead of plan as sales return to growth",
+      "link": "https://www.cnbc.com/2026/11/10/fossil-fosl-q3-2026-earnings.html",
+      "summary": "Watchmaker Fossil said Tuesday that the company is returning to profit and sales growth in the first signs of its turnaround strategy.",
+      "source": "CNBC Business",
+      "category": "国际财经",
+      "published": "2026-11-10T22:39:30+00:00"
+    },
+    {
+      "title": "AMD’s stock fades as investors weigh whether Nvidia’s turmoil will mean lasting wins",
+      "link": "https://www.marketwatch.com/story/amds-stock-fades-as-investors-weigh-whether-nvidias-turmoil-will-mean-lasting-wins-1ecfbc5e?mod=mw_rss_topstories",
+      "summary": "It’s one thing for money to shift between stocks, but it’s another thing for customers to shift their supplier relationships.",
       "source": "MarketWatch",
       "category": "国际财经",
-      "published": "2026-11-10T10:45:00+00:00"
+      "published": "2026-11-10T22:37:00+00:00"
     },
     {
-      "title": "第三批互惠便利资金“火线入市”，至少10家券商官宣买入股票",
-      "link": "https://wallstreetcn.com/articles/3785655",
-      "summary": "担当稳定市场重任的第三批证券、基金、保险公司互换便利（简称：SFISF）进入集中落地阶段。 截至11月10日，已有至少10家券商“官宣”已完成第三批互换便利项下的首批股票买入，包括中信证券、国泰海通、中金公司、银河证券、招商证券、中信建投、华泰证券、东方证券、财通证券、浙商证券等。 从公告推出第三批SFISF，再到参加招标，再到获得资金并入场。全程时间不到十天，堪称历史上罕见的“火线入市”。 又有两家大券商公布买入进程 11月9日，中信建投、华泰证券、浙商证券先后披露参与第三批SFISF业务——完成回购融资——并于当日完成首批股票买入操作。 中信建投表示后续将 用足用好互换便利工具，进一步增持",
+      "title": "Looking to buy the dip in chip stocks? Here’s how to avoid buying too soon.",
+      "link": "https://www.marketwatch.com/story/ignore-the-wild-swings-in-chip-stocks-until-they-reach-these-lines-in-the-sand-feb6e00f?mod=mw_rss_topstories",
+      "summary": "Investors shouldn’t pay much attention to how the SOX chip-sector index trades until it reaches key “lines in the sand,” that define technical battleground areas above and below current levels.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-10T22:30:00+00:00"
+    },
+    {
+      "title": "美CPI超预期叠加美联储放鹰，美债重挫，美股指承压，英伟达两日跌10%，黄金大跌",
+      "link": "https://wallstreetcn.com/articles/3785613",
+      "summary": "超预期的美国通胀数据与多位联储官员的鹰派信号共振，令市场对美联储更激进加息的押注骤然升温，债市首当其冲，科技股大幅回调，美元走强压制避险资产。 美国10月CPI环比涨幅超出预期，联储理事Christopher Waller随即警告若通胀数据偏强，12月会议上可能需要考虑加息50个基点，随后达拉斯联储主席Logan和堪萨斯城联储主席Jeff Schmid相继发表鹰派言论，市场对12月大幅加息的定价大幅重新调整。 2年期美债收益率单日飙升逾20个基点，创去年关税风波以来最大单日涨幅；10年期收益率重新突破5.00%关口。受此拖累，美股全线下挫，标普500指数收跌0.38%，纳斯达克综合指数跌0.7",
       "source": "华尔街见闻",
       "category": "中文财经",
-      "published": "2026-11-10T10:21:26+00:00"
+      "published": "2026-11-10T22:23:19+00:00"
     },
     {
-      "title": "‘The thought of living to 100 terrifies me’: Is Social Security a giant Ponzi scheme?",
-      "link": "https://www.marketwatch.com/story/the-thought-of-living-to-100-terrifies-me-is-social-security-a-giant-ponzi-scheme-84a64e7e?mod=mw_rss_topstories",
-      "summary": "There’s already a demographic ‘run’ on Social Security.",
+      "title": "CoreWeave Q3营收超预期大涨168%，全年指引上调｜财报见闻",
+      "link": "https://wallstreetcn.com/articles/3785683",
+      "summary": "AI云计算提供商CoreWeave发布强劲季报，并上调全年收入指引，暂时缓解了市场对这家高负债企业增长放缓的担忧。 公司周二公布第三季度营收36.61亿美元，同比增长168%，超出分析师预期，并将2026年全年收入指引上调至130亿至133亿美元。 受此消息提振，CoreWeave盘后股价上涨约2%，但该股今年以来累计跌幅仍达32%。 季报的超预期表现为近期饱受压力的AI云计算行业提供了一定支撑。然而，分析人士指出，高额债务成本与行业层面的政策逆风仍是悬于公司头顶的隐忧，结构性挑战短期内难以消解。 营收与利润双超预期 CoreWeave第三季度营收36.61亿美元，高于分析师预期的35.6亿美",
+      "source": "华尔街见闻",
+      "category": "中文财经",
+      "published": "2026-11-10T22:06:58+00:00"
+    },
+    {
+      "title": "Meet the former prosecutor Nvidia hired to investigate the Jensen Huang spy scandal",
+      "link": "https://www.marketwatch.com/story/meet-the-former-prosecutor-nvidia-hired-to-investigate-the-jensen-huang-spy-scandal-e8078f67?mod=mw_rss_topstories",
+      "summary": "Joon Kim just joined the Wachtell Lipton law firm last month and now will lead an independent investigation into whether Nvidia’s CEO was the target of a China spy operation",
       "source": "MarketWatch",
       "category": "国际财经",
-      "published": "2026-11-10T10:15:00+00:00"
+      "published": "2026-11-10T22:05:00+00:00"
     },
     {
-      "title": "N.Y. Knicks star Josh Hart relists Florida home for $5.7 million",
-      "link": "https://www.marketwatch.com/story/n-y-knicks-star-josh-hart-relists-florida-home-for-5-7-million-5fd3f18c?mod=mw_rss_topstories",
-      "summary": "New York Knicks star Josh Hart has relisted his sprawling Florida mansion for $5.69 million—just one year after removing the home from the selling block.",
+      "title": "Stocks fall as the 10-year Treasury yield nears 5% mark",
+      "link": "https://www.marketwatch.com/story/why-stocks-are-falling-and-10-year-yields-are-climbing-back-near-5-after-tuesdays-inflation-report-389b8392?mod=mw_rss_topstories",
+      "summary": "“I don’t think they should be raising another 25 basis points,” one portfolio manager said about the Federal Reserve’s benchmark interest rate.",
       "source": "MarketWatch",
       "category": "国际财经",
-      "published": "2026-11-10T10:01:00+00:00"
+      "published": "2026-11-10T21:42:00+00:00"
     },
     {
-      "title": "Actor Justin Baldoni quietly sold his L.A. home for $2.1 million after moving to Nashville",
-      "link": "https://www.marketwatch.com/story/actor-justin-baldoni-quietly-sold-his-l-a-home-for-2-1-million-after-moving-to-nashville-4cb8041e?mod=mw_rss_topstories",
-      "summary": "Actor Justin Baldoni discreetly offloaded his former Los Angeles home months after relocating to Nashville, Tenn., for a “fresh start.”",
+      "title": "How the stock market has performed after Veterans Day over the past decade",
+      "link": "https://www.marketwatch.com/story/how-the-stock-market-has-performed-after-veterans-day-over-the-past-decade-7b47233e?mod=mw_rss_topstories",
+      "summary": "The stock market is open Wednesday on Veterans Day, but not the bond market",
       "source": "MarketWatch",
       "category": "国际财经",
-      "published": "2026-11-10T09:58:00+00:00"
+      "published": "2026-11-10T21:29:00+00:00"
     },
     {
-      "title": "见闻历11.11大促最后4天！随日历附赠千元知识礼包，送什么都不如送“搞钱的智慧”",
+      "title": "My friend feels trapped at her job but won’t do anything about it. Am I supposed to step in?",
+      "link": "https://www.marketwatch.com/story/my-friend-feels-trapped-at-her-job-but-wont-do-anything-about-it-am-i-supposed-to-step-in-7e55604e?mod=mw_rss_topstories",
+      "summary": "“She’s handed over the fate of her happiness to this job.”",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-10T21:22:00+00:00"
+    },
+    {
+      "title": "Retirees should be big beneficiaries of the midterms: ‘Democrats will hold every gavel that matters for aging and public policy’",
+      "link": "https://www.marketwatch.com/story/retirees-should-be-big-beneficiaries-of-the-midterms-democrats-will-hold-every-gavel-that-matters-for-aging-and-public-policy-71e966f0?mod=mw_rss_topstories",
+      "summary": "Here’s what might be coming for Social Security, Medicare and long-term care.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-10T21:20:00+00:00"
+    },
+    {
+      "title": "OpenAI推出ChatGPT企业功能，向谷歌广告市场发起挑战",
+      "link": "https://wallstreetcn.com/articles/3785678",
+      "summary": "OpenAI正将ChatGPT打造成企业与消费者之间的新型连接平台，直接挑战谷歌在商业信息检索领域的主导地位。 周二， OpenAI宣布推出\"Businesses in ChatGPT\"测试版，允许企业认领并管理其在ChatGPT上的商业主页，追踪用户互动数据，并通过专属AI代理与潜在客户直接对话 。 此次推出的产品体系包括 两个核心工具 ：供企业管理信息和查看数据分析的 \"Business Hub\" ，以及允许用户与企业AI客服直接交互的 \"Business Agents\" 。 后者目前仅向美国境内符合条件的电商及在线服务企业开放 。企业还可以为其Business Agent投放赞助广告，作",
+      "source": "华尔街见闻",
+      "category": "中文财经",
+      "published": "2026-11-10T21:12:07+00:00"
+    },
+    {
+      "title": "IPO路演日加码企业办公市场！Anthropic推出多款AI工具，正面挑战微软Office",
+      "link": "https://wallstreetcn.com/articles/3785673",
+      "summary": "Anthropic在启动IPO路演当天密集推出一系列企业办公工具，覆盖视频会议、电子表格、团队白板和企业数据分析等场景。在首次公开募股进入关键阶段之际，这家公司进一步展示了Claude在基础模型之外的企业应用布局，试图向投资者证明其商业化潜力不只来自AI模型本身，也来自对企业办公市场的持续渗透。 美东时间10日周二，Anthropic发布三项新工具：能够实时加入视频会议并执行任务的Claude Meetings、支持团队共同编辑的Claude Whiteboards，以及可由AI创建和修改的Claude Sheets。此外，原名Claude Dashboards的数据分析产品正式更名为Clau",
+      "source": "华尔街见闻",
+      "category": "中文财经",
+      "published": "2026-11-10T21:11:55+00:00"
+    },
+    {
+      "title": "Anthropic路演瞄准35%长期经营利润目标，算力效率提高逾4倍，大企业客户1.19万",
+      "link": "https://wallstreetcn.com/articles/3785675",
+      "summary": "在美东时间10日周二公布的IPO路演视频中，Anthropic披露长期盈利目标：公司相信，随着算力效率提升、直接采购和租赁算力的比例增加，以及推理业务占比扩大，长期调整后经营利润率有望达到35%以上，较今年第三季度的15%提高20个百分点以上。 除了这一长期盈利目标，Anthropic此次路演还通过招股书公布了多项此前未集中披露的经营数据：截至第三季度，公司营收达到170亿美元，同比增长超过12倍；过去12个月营收达到10万美元以上的企业客户超过1.19万家，同样同比增长超过12倍；算力效率较2025年第一季度提高超过4倍。Anthropic还披露，截至今年10月末，年化营收达到约810亿美元",
+      "source": "华尔街见闻",
+      "category": "中文财经",
+      "published": "2026-11-10T21:10:31+00:00"
+    },
+    {
+      "title": "Anthropic IPO定价在即：高盛预测2030年营收破6850亿，7位创始人IPO套现17.5亿美元",
+      "link": "https://wallstreetcn.com/articles/3785677",
+      "summary": "Anthropic正以史上最具野心的IPO姿态叩响资本市场大门，而其主承销行高盛的预测模型为这场盛宴提供了最强力的背书。 11月10日，据彭博社援引知情人士透露， 高盛研究团队预测Anthropic到2030年营收将达约6850亿美元，较该公司2025年的46亿美元增长逾130倍 。 与此同时 华尔街见闻提及 ，Anthropic已启动IPO路演，寻求以约1.4万亿美元的完全稀释后估值完成融资，计划于11月18日（周三）定价，次日开始交易。 承销银行周二上午已开始与潜在投资者举行会议，推介这笔目标融资规模达904亿美元（含260亿美元私募配售）的IPO。 公司七位联合创始人将在此次发行中合计套",
+      "source": "华尔街见闻",
+      "category": "中文财经",
+      "published": "2026-11-10T21:10:19+00:00"
+    },
+    {
+      "title": "Nvidia could soon face tougher export rules, making it harder to sell chips to China after scandal",
+      "link": "https://www.marketwatch.com/story/nvidia-could-soon-face-tougher-export-rules-making-it-harder-to-sell-chips-to-china-69c88cc8?mod=mw_rss_topstories",
+      "summary": "“There is growing momentum for these bills in light of the Jensen Huang spy scandal,” one analyst says.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-10T20:37:00+00:00"
+    },
+    {
+      "title": "美联储理事鲍曼警告：若AI押注落空，股市或将大幅回调",
+      "link": "https://wallstreetcn.com/articles/3785680",
+      "summary": "美联储官员就金融市场风险发出警示，直指人工智能热潮可能埋下的系统性隐患，并暗示年内仍有加息空间。 美联储理事Michelle Bowman（米歇尔·鲍曼）周二在华盛顿发表讲话时警告， 若AI投资回报不及预期，股市估值可能面临大幅修正。她同时指出，通胀持续高于预期，暗示支持在12月会议上再度加息。 Bowman的表态与同日发布的通胀数据相互印证——美国劳工部数据显示，10月核心通胀环比上涨0.3%，高于预期。 此前两位美联储票委同日放鹰 ，美联储理事Christopher Waller当日早些时候呼吁12月会议考虑加息50个基点，达拉斯联储主席Lorie Logan则表示至少还需加息两次、每次2",
+      "source": "华尔街见闻",
+      "category": "中文财经",
+      "published": "2026-11-10T20:32:03+00:00"
+    },
+    {
+      "title": "Aggressive Fed rate hikes are quickly becoming the biggest risk to stocks in 2027, says economist",
+      "link": "https://www.marketwatch.com/story/an-overzealous-fed-is-quickly-becoming-the-biggest-risk-to-stocks-in-2027-ba28e51d?mod=mw_rss_topstories",
+      "summary": "The Fed remains too optimistic on its ability to tame inflation, and markets may be too complacent, economist Neil Dutta warns.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-10T20:27:00+00:00"
+    },
+    {
+      "title": "美联储再次放鹰！今年票委Logan：至少还需加息两次，步伐或将加快",
+      "link": "https://wallstreetcn.com/articles/3785671",
+      "summary": "美联储官员对通胀的担忧情绪明显升温，鹰派立场趋于强化。 今年FOMC轮值票委，达拉斯联储主席Lorie Logan周二表示， 美联储至少还需再加息两次，且冬季推进节奏或将快于今秋。 同日，美联储理事 Christopher Waller呼吁在12月会议上考虑加息50个基点 。与此同时， 美国10月CPI数据超预期 ，核心通胀环比升0.3%，进一步强化了市场对紧缩政策的预期。 “新美联储通讯社” NickTimiraos撰文强调，Logan 今日表示， 在10月通胀数据强于预期之后，美联储可能需要加快加息步伐。 受上述表态及通胀数据共同推动，美国国债收益率大幅攀升。两年期美债收益率单日跳涨19个",
+      "source": "华尔街见闻",
+      "category": "中文财经",
+      "published": "2026-11-10T19:45:37+00:00"
+    },
+    {
+      "title": "EIA预计今年剩余时间布油现货维持100美元/桶，上调今明两年均价预测",
+      "link": "https://wallstreetcn.com/articles/3785670",
+      "summary": "美国能源信息署上调2026年和2027年布伦特原油价格预测，预计全球石油供应紧张局面仍将持续一段时间。与此同时，美国原油产量有望在2027年升至1430万桶/日，创历史新高。 美国能源信息署（EIA）周二发布的11月《短期能源展望》（STEO）显示， 预计2026年布伦特原油现货均价为97美元/桶，高于此前预测的96美元/桶；2027年均价预计为86美元/桶，较此前预测的84美元/桶上调2美元。 在供应端，EIA维持对美国原油产量的预测不变，预计2026年日产量为1390万桶，2027年进一步升至1430万桶，较2026年增长约3%，并创历史新高。 EIA此次上调油价预期，主要反映全球石油库存",
+      "source": "华尔街见闻",
+      "category": "中文财经",
+      "published": "2026-11-10T18:34:02+00:00"
+    },
+    {
+      "title": "CoreWeave陷入困境：股价高点已蒸发65%，盘后强劲财报也难平息市场忧虑",
+      "link": "https://wallstreetcn.com/articles/3785665",
+      "summary": "市场对AI基础设施前景的担忧，已非一份靓丽财报所能消解。 云计算公司CoreWeave将于周二收盘后公布第三季度业绩。但投资者的关注焦点并不在财报数字本身，而在于： 上周期中选举结果令多个州的数据中心建设前景蒙上阴影，管理层将如何回应这一变局。 CoreWeave股价上周重挫15%，自六个月前高点至今已累计下跌65%，期权市场数据显示，财报公布后该股波幅预计约为16%。 数据中心建设阻力、科技巨头资本开支收紧以及公司自身债务压力，三重风险正在同步累积。 微软据报道正收紧对部分项目的监管，并退出其认为风险过高的项目；与此同时，英伟达首席执行官黄仁勋深陷个人丑闻，其领导层地位面临不确定性，而英伟达",
+      "source": "华尔街见闻",
+      "category": "中文财经",
+      "published": "2026-11-10T18:15:53+00:00"
+    },
+    {
+      "title": "CPI暴击美债！2年期收益率盘中飙升逾20基点，金银大跌",
+      "link": "https://wallstreetcn.com/articles/3785669",
+      "summary": "美国10月通胀再度超出市场预期，美债遭遇抛售，收益率全线大幅攀升；美元走强、利率上行预期升温，也令黄金和白银承压。美联储官员接连释放鹰派信号，市场不仅进一步押注12月加息，也开始评估更大幅度加息以及明年进一步收紧货币政策的可能性。 美东时间10日周二，美国CPI公布后，美国国债遭集中抛售，美债价格跳水、收益率加速上行。基准10年期美债收益率在CPI公布后升幅扩大，美联储官员洛根（Lorie Logan）讲话后，美股午盘时段一度升破5.01%，日内升超10个基点，对美联储政策利率预期更敏感的2年期美债收益率升幅更大，美股午盘曾升破4.77%，日内升超20个基点，势将创去年4月以来最大单日升幅。 ",
+      "source": "华尔街见闻",
+      "category": "中文财经",
+      "published": "2026-11-10T18:15:42+00:00"
+    },
+    {
+      "title": "美CPI又超预期、沃勒警告应验！华尔街聚焦12月加息25还是50基点，“新美联储通讯社”：加加停停策略面临考验",
+      "link": "https://wallstreetcn.com/articles/3785666",
+      "summary": "美国10月通胀再度高于预期，令美联储12月加息的市场预期进一步升温，而更大幅度的加息也开始进入讨论范围。 美国劳工统计局（BLS）于11月10日周二公布，10月CPI环比上涨0.4%，低于9月涨幅0.6%，但高于经济学家预期的0.3%；核心CPI环比上涨0.3%、持平9月，高于市场预期的0.2%。这是整体CPI连续第三个月涨幅超出华尔街预期，核心CPI也连续第三个月环比涨0.3%。由于2025年10月美国联邦政府停摆期间未能采集CPI数据，BLS此次未能提供10月CPI同比涨幅。 这份报告恰好触及美联储理事沃勒此前提出的政策门槛。沃勒在CPI公布几小时前表示，如果10月核心CPI环比涨幅达到0",
+      "source": "华尔街见闻",
+      "category": "中文财经",
+      "published": "2026-11-10T18:15:30+00:00"
+    },
+    {
+      "title": "MiniMax开源H3 Image：4K图像生成仅10秒，支持多达16张参考图，首周五折优惠",
+      "link": "https://wallstreetcn.com/articles/3785667",
+      "summary": "中国AI公司MiniMax再度加码图像生成赛道。 11月10日周二，MiniMax正式发布并开源新一代图像生成模型H3 Image，主打最高1600万像素（4096×4096）的4K图像生成，官方称最快约10秒即可完成，同时支持精准理解提示词、图像编辑以及最多16张参考图输入。 MiniMax将H3 Image的核心竞争力归纳为速度、画面质量和指令遵循三个方面：在速度上，模型能够在10至20秒内生成4K图像；在画质上，力求摆脱常见的AI生成感，呈现更丰富的细节和更强的真实感；在指令遵循上，官方称其达到开源图像模型中的最强水平，并支持多张参考图协同创作。 与仅开放API调用的闭源模型不同，Min",
+      "source": "华尔街见闻",
+      "category": "中文财经",
+      "published": "2026-11-10T18:15:19+00:00"
+    },
+    {
+      "title": "见闻历11.11大促最后3天！随日历附赠千元知识礼包，送什么都不如送“搞钱的智慧”",
       "link": "https://wallstreetcn.com/articles/3782813",
       "summary": "本文来自华尔街见闻，欢迎下载APP查看更多",
       "source": "华尔街见闻",
       "category": "中文财经",
-      "published": "2026-11-10T09:47:32+00:00"
+      "published": "2026-11-10T16:02:52+00:00"
     },
     {
-      "title": "Fed’s Waller puts half-point rate hike into the mix for December",
-      "link": "https://www.marketwatch.com/story/feds-waller-puts-half-point-rate-hike-into-the-mix-for-december-1bebdffc?mod=mw_rss_topstories",
-      "summary": "It all depends on how hot the consumer-price data for October comes in.",
-      "source": "MarketWatch",
+      "title": "失色的车市“银十”里，合资新能源为何增长69%？",
+      "link": "https://wallstreetcn.com/articles/3785552",
+      "summary": "合资品牌的新能源转型，开始在销量榜上显现成效。 11 月 9 日，乘联分会发布 2026 年 10 月乘用车市场数据，主流合资品牌新能源零售同比增长 69% ，但新能源在其自身销量中的占比仍只有 19.7% 。在全国新能源零售渗透率达到 67.5% 的市场里，合资品牌正在提速，距离完成销量结构调整仍有较大差距。 这轮增长已经有具体的产品支撑。一汽 - 大众 ID.AURA T6 月销超过万辆，广汽丰田铂智 3X 达到近万辆，上汽大众和别克的插混产品也开始贡献销量。合资品牌在家用 SUV 、轿车和 MPV 市场，都拿出了能够参与竞争的新能源车型。 不过，单款产品的突破尚未扭转整体下滑。 10 月",
+      "source": "华尔街见闻",
+      "category": "中文财经",
+      "published": "2026-11-10T15:35:00+00:00"
+    },
+    {
+      "title": "禾赛激光雷达出货增65%，机器人新业务仍在投入期",
+      "link": "https://wallstreetcn.com/articles/3785553",
+      "summary": "禾赛的激光雷达生意赚得更多了，机器人新业务还在花钱。 11月10日，禾赛科技发布2026年三季报。三季度，禾赛交付激光雷达72.97万台，同比增长65.3%。公司营收10.68亿元，同比增长34.3%，低于此前给出的11亿至11.5亿元指引。净利润为8079万元，同比下降68.5%，主要因为上年同期有约1.85亿元的股权投资处置和知识产权转让一次性收益。剔除该一次性收益影响后，净利润同比增长13.7%。 分业务看，激光雷达贡献了9.78亿元收入和1.45亿元经营利润，分别同比增长22.9%和88%。包括机器人执行模组、空间智能平台在内的战略增长业务实现收入9051万元，经营亏损8289万元。两",
+      "source": "华尔街见闻",
+      "category": "中文财经",
+      "published": "2026-11-10T15:34:46+00:00"
+    },
+    {
+      "title": "Rivian CEO says new R2 SUV, autonomy make 2027 an ‘inflection year’ as EV maker marks five years since IPO",
+      "link": "https://www.cnbc.com/2026/11/10/rivian-r2-autonomy-2027-rj-scaringe.html",
+      "summary": "Rivian CEO RJ Scaringe says 2027 will be an “inflection year” as the EV maker scales R2 and invests in autonomy.",
+      "source": "CNBC Business",
       "category": "国际财经",
-      "published": "2026-11-10T09:45:00+00:00"
+      "published": "2026-11-10T15:11:48+00:00"
     },
     {
-      "title": "纳指期货跳水！沃勒释放美联储“最鹰信号”：若通胀居高不下，12月应加息50基点，需收回此前“三次预防性降息”",
-      "link": "https://wallstreetcn.com/articles/3785652",
-      "summary": "美联储理事Christopher Waller（克里斯托弗·沃勒）周二表示支持12月加息，并警告若通胀压力持续，他将支持加息50个基点，以维护央行抗通胀的公信力。这是迄今为止美联储官员就12月政策行动发出的最强硬表态。 Waller在伦敦发表讲话时表示， 若今晚公布的10月消费者价格指数（CPI）数据出现改善，他倾向于支持加息25个基点。 但 若10月核心CPI环比涨幅维持在约0.3%或更高水平——与此前两个月的读数相近——则\"需要采取更强力的政策行动\"，届时应在12月会议上考虑加息50个基点。 Waller警告， 目前通胀仍处于过高水平，美联储至少需要收回此前\"三次预防性降息\"。 华尔街见闻",
-      "source": "华尔街见闻",
-      "category": "中文财经",
-      "published": "2026-11-10T09:28:44+00:00"
-    },
-    {
-      "title": "联想发布混合词元工厂，2027年将建成1.5万P算力集群",
-      "link": "https://wallstreetcn.com/articles/3785653",
-      "summary": "11月10日，联想集团（ 0992.HK ）在张家口发布万全混合词元工厂品牌，配套的母本工厂落地张家口。发布会上，联想集团与张家口市政府签署合作协议。 按联想披露的计划，2027年，联想将在张家口建成1.5万P的异构算力集群和约100兆瓦的智算中心，年词元产量超过2000万亿个。 联想集团高级副总裁、中国方案服务业务群总经理戴炜介绍，联想企业智能体系由三层混合动力构成，底层是联想问天AI基础设施，顶层是联想擎天、百应智能体解决方案和服务，本次发布的万全混合词元工厂处在中间层。 联想表示，混合词元工厂的作用是把底层算力转化为面向AI应用场景的词元供给。混合词元工厂由两部分组成，一是智算中心的建设",
-      "source": "华尔街见闻",
-      "category": "中文财经",
-      "published": "2026-11-10T09:17:10+00:00"
-    },
-    {
-      "title": "美股期货涨幅收窄，纳指期货转跌，英伟达夜盘涨2%，布油自8月首破90美元，黄金跳水",
-      "link": "https://wallstreetcn.com/articles/3785613",
-      "summary": "全球股市周二延续反弹势头，有望录得逾三个月来最佳两日涨幅，科技股回暖与油价持续回落共同提振市场情绪。亚洲市场领涨，韩国综指涨幅居前，美股期货小幅走高。 欧洲斯托克600指数上涨0.8%，突破收盘历史最高纪录。MSCI全球股票指数周二上涨0.4%，叠加周一2.2%的涨幅，全球股市正朝着三个月来最强两日表现迈进。在亚洲市场，韩国综合股价指数大涨4.4%，以芯片股为主的权重结构助推其成为当日表现最佳的主要市场，日本日经225指数和东证指数分别上涨2.9%和2%。 然而，此轮反弹能否持续仍存疑问。科技板块面临的监管风险、高企的估值、急剧攀升的资本支出以及人工智能投资回报的不确定性，构成持续压制市场的多",
-      "source": "华尔街见闻",
-      "category": "中文财经",
-      "published": "2026-11-10T08:53:40+00:00"
-    },
-    {
-      "title": "黄仁勋若离职，谁能接管英伟达？AMD苏姿丰纳入媒体候选",
-      "link": "https://wallstreetcn.com/articles/3785650",
-      "summary": "英伟达CEO黄仁勋面临的压力正促使外界开始讨论一个此前难以想象的问题：谁能接替他执掌这家全球最具价值的芯片公司？ 由于面临来自英伟达董事会等多方正在进行的调查，市场担忧高层动荡将严重分散管理层精力。本周一，英伟达股价下跌4%，而其竞争对手AMD和博通的股价则分别大涨13%和近9%。 在上周日发送给员工的一封内部电子邮件中，黄仁勋明确表态称，他“致力于保护英伟达”。这一表态加剧了市场猜测，即作为公司重要股东，黄仁勋最终可能会为了维护股东整体利益和公司品牌而选择让位，以促成公司的重新出发。 目前，英伟达内部高度依赖黄仁勋的集中式管理，且缺乏明确的“二号人物”来直接接班。尽管财务主管Colette ",
-      "source": "华尔街见闻",
-      "category": "中文财经",
-      "published": "2026-11-10T08:47:07+00:00"
-    },
-    {
-      "title": "创业板涨近1.5%，AI硬件活跃，机器人爆发、宇树市值重回3000亿，恒科指涨超1%，AI大模型股双雄大涨10%",
-      "link": "https://wallstreetcn.com/articles/3785617",
-      "summary": "隔夜美股科技股大涨，纳斯达克100指数涨3.4%，芯片股指数单日飙升近7%。亚太股市周二跟随上涨，韩国和日本股市收涨，韩国股市盘初一度涨至熔断，A股和港股的AI硬件全天活跃。 11月10日，A股全天震荡上涨，三大股指集体上涨，盘中震荡回落，午后基本维持涨势，创业板涨超1%，盘初一度涨超2%，AI短剧、机器人再度爆发，宇树科技涨超6%，市值重回3000亿上方。AI硬件拉升，电路板、光模块、光芯片、光电路交换机等概念股齐涨，“易中天”、沪电股份等涨幅居前，海运、油气、煤炭等板块陷入调整。 港股亦震荡走高，恒指、恒科指盘初走高，恒科指盘中涨1%，盘中震荡回落，午后有所回升，权重科网股多数反弹，阿里逆",
-      "source": "华尔街见闻",
-      "category": "中文财经",
-      "published": "2026-11-10T08:23:41+00:00"
-    },
-    {
-      "title": "软银两年来首次季度亏损！AI暴跌重创愿景基金，美国数据中心项目遭巨额减值",
-      "link": "https://wallstreetcn.com/articles/3785648",
-      "summary": "软银集团近两年来首次录得季度净亏损，核心原因是其美国数据中心项目产生了巨额减值，叠加科技股估值普跌拖累投资组合，AI热潮能否持续的疑虑正以实实在在的财务代价呈现。 软银周二公布， 截至9月30日的财年第二季度净亏损达1.12万亿日元（约71亿美元）， 与市场预期盈利1290亿日元形成鲜明反差，去年同期则录得2.5万亿日元的净利润。 亏损主要源于一笔折合约37亿美元（597.25亿日元）的损失——公司因调整美国俄亥俄州数据中心园区供电设备采购计划，就已支付的不可退还预付款进行了核销。 此次业绩冲击令市场对软银的AI战略风险高度警惕。软银股价自6月高点以来已累计下跌逾50%，民主党在美国中期选举中",
-      "source": "华尔街见闻",
-      "category": "中文财经",
-      "published": "2026-11-10T08:09:54+00:00"
-    },
-    {
-      "title": "魏牌二代蓝山换代，瞄准豪华“方盒子”市场",
-      "link": "https://wallstreetcn.com/articles/3785186",
-      "summary": "魏牌二代蓝山转向豪华 “ 方盒子 ” ，瞄准的是 30 万元左右 SUV 市场里的新客户。 11 月 9 日，魏牌二代蓝山开启预售，提供五座、六座共四款车型，预售价 28.98 万 —32.98 万元 ，新换代的车型 也承担起魏牌寻找新增客户的任务。 这款车推出时，魏牌正面临增长压力。长城汽车产销快报显示， 10 月魏牌销量为 8648 辆，同比下降 31.90% ；前十个月累计销量 75230 辆，同比下降 1.39% 。对于已经布局多款 SUV 和 MPV 的魏牌，接下来的重点是提高各款车的销量，让产品阵容的扩张转化为品牌规模的增长。 集团层面的盈利压力同样值得关注。今年前三季度，长城汽车",
-      "source": "华尔街见闻",
-      "category": "中文财经",
-      "published": "2026-11-10T08:01:32+00:00"
-    },
-    {
-      "title": "马自达扭亏，下半财年要完成909亿日元营业利润",
-      "link": "https://wallstreetcn.com/articles/3785554",
-      "summary": "恢复盈利的马自达，接下来要靠新车型和降本，在下半年完成更重的利润任务。 11 月 9 日，马自达发布 2027 财年上半年业绩。 2026 年 4 月至 9 月，公司营收 2.6881 万亿日元，同比增长 20.1% ；营业利润 591 亿日元，上年同期为亏损 539 亿日元；归母净利润 442 亿日元，同样实现扭亏。 公司维持截至 2027 年 3 月的全年 1500 亿日元营业利润目标，预计下半财年完成 909 亿日元。与此同时，全年销量预期较 8 月下调 2.7 万辆，至 129.7 万辆。销量预期收缩、利润目标不变，新车能卖出怎样的价格、生产和销售成本如何下降，成为接下来的重点。 上半",
-      "source": "华尔街见闻",
-      "category": "中文财经",
-      "published": "2026-11-10T08:00:00+00:00"
-    },
-    {
-      "title": "美联储12月会加息吗？今晚CPI一锤定音！",
-      "link": "https://wallstreetcn.com/articles/3785630",
-      "summary": "今晚公布的10月CPI数据，将成为美联储年内最后一次加息决策的关键依据。在强劲就业数据已为鹰派打开大门的背景下，通胀数据的走向，将直接决定联储主席Warsh是否在12月9日扣动加息扳机。 市场目前对12月加息的定价已高达约86%。上周五非农就业人数大幅超预期，新增16.5万人，远超市场预估的7万人，失业率回落至4.1%，劳动力市场已为鹰派提供了充分支撑。上次FOMC会议以10比2的投票结果维持利率不变，但Cook和Hammack两位官员明确投票支持加息，显示内部分歧已现，通胀数据因此成为压倒性变量。 高盛预测10月核心CPI环比仅增0.16%，大幅低于市场普遍预期的0.20%；UBS预测为0.",
-      "source": "华尔街见闻",
-      "category": "中文财经",
-      "published": "2026-11-10T07:10:22+00:00"
-    },
-    {
-      "title": "大摩图解“蓝潮”影响：20%新增数据中心项目或推至2029年，40%出货芯片2028年前“无法通电”",
-      "link": "https://wallstreetcn.com/articles/3785634",
-      "summary": "摩根士丹利最新研究显示，美国中期选举引发的政治阻力正在实质性改变AI数据中心的建设节奏，约20%原定2028年落地的美国新增容量将被推迟至2029年，2026至2028年间在美部署的芯片中约40%面临无法及时通电的风险。这一判断将对科技供应链、数据中心融资市场及AI整体资本开支周期产生连锁影响。 根据摩根士丹利11月9日的报告， 大摩预计约5GW（吉瓦）的美国数据中心项目将从2028年顺延至2029年。 调整后，美国数据中心年度新增容量2028年同比下降4%（全球同期仍增长9%），2029年随即反弹38%（全球增长20%）。 2026至2028年美国芯片出货所对应的116 GW电力需求存在44",
-      "source": "华尔街见闻",
-      "category": "中文财经",
-      "published": "2026-11-10T06:37:46+00:00"
-    },
-    {
-      "title": "黄仁勋遭股东集体诉讼，指控涉嫌欺诈",
-      "link": "https://wallstreetcn.com/articles/3785635",
-      "summary": "英伟达及其首席执行官黄仁勋正面临新的法律压力。 在公司董事会宣布启动独立调查后，英伟达股价单日下跌逾4%，市值缩水近1930亿美元。美股收盘仅数分钟后，一宗针对英伟达和黄仁勋的股东集体诉讼便在美国加州圣何塞联邦法院提起。 据路透社报道，这起诉讼指控黄仁勋及英伟达通过隐瞒黄仁勋与Alice Huang的关系，误导股东，构成欺诈。诉状主张，英伟达就该关系的公开表态存在虚假或误导性陈述，且未披露相关事项对公司声誉及业务前景构成的安全风险。需要指出的是，诉讼中的相关指控目前均属原告主张，尚未经过法院认定；英伟达及黄仁勋方面的责任也有待后续调查和司法程序确认。 据 澎湃新闻 ，在昨日举行的外交部例行记者",
-      "source": "华尔街见闻",
-      "category": "中文财经",
-      "published": "2026-11-10T06:25:23+00:00"
-    },
-    {
-      "title": "Anthropic加速推进IPO，计划联手摩根大通CEO直播推介",
-      "link": "https://wallstreetcn.com/articles/3785633",
-      "summary": "Anthropic正加快推进潜在的创纪录IPO。 为给上市造势，公司计划安排联合创始人兼CEO达里奥·阿莫迪（Dario Amodei）与摩根大通董事长兼CEO杰米·戴蒙（Jamie Dimon）进行一场直播对谈，向潜在投资者推介公司及其AI业务前景。 据彭博援引知情人士报道，这场直播预计将在本周五纽约午餐时间前后举行。Anthropic本周二启动正式路演，并争取在美国感恩节假期前完成定价、登陆纳斯达克。 不过，在近期AI板块估值回调的背景下，Anthropic的定价预期已明显降温。市场人士目前讨论的估值区间约为 1.1万亿至1.3万亿美元 ，较此前一度接近2万亿美元的预期大幅回落。 直播推介",
-      "source": "华尔街见闻",
-      "category": "中文财经",
-      "published": "2026-11-10T06:11:10+00:00"
-    },
-    {
-      "title": "风险正在转移！高盛：芯片商CDS利差首次超过超大云厂商，AI违约掉期创纪录",
-      "link": "https://wallstreetcn.com/articles/3785628",
-      "summary": "AI产业链的债务风险，正在从大型云计算公司向芯片供应商转移。 据高盛销售与交易部门上周日发布的四份信贷报告， 由博通、AMD、英伟达和英特尔组成的芯片公司信用违约互换篮子（CDS，可理解为市场对企业违约风险的定价）利差，近三个月来首次超过了甲骨文、Meta、亚马逊、Alphabet、微软等超大规模云厂商的CDS篮子。 这意味着，投资者开始更担心芯片公司要承担的风险：一边是高价图形处理器（GPU）更新换代加快、折旧压力上升，另一边则是芯片厂商通过融资、担保等方式支持下游客户扩张。市场正在追问：如果算力投资回报不及预期，最终由谁承担设备贬值和融资损失？ 与此同时， AI相关违约风险合约的单周成交额",
-      "source": "华尔街见闻",
-      "category": "中文财经",
-      "published": "2026-11-10T06:08:15+00:00"
-    },
-    {
-      "title": "台积电10月营收同比飙升60%，四季度预期更高",
-      "link": "https://wallstreetcn.com/articles/3785629",
-      "summary": "11月10日，台积电公布2026年10月营收报告。10月合并营收约为新台币5,868.9亿元，较上月增加了14.7%，较去年同期增加了59.7%。这一增速明显高于三季度约51%的同比增速，显示出台积电业绩的持续提速。 累计来看，台积电2026年1至10月营收约为新台币44,856.17亿元，较去年同期增加了43.3%。 四季度预期更高，分析师看到63%增速 彭博援引分析师平均预测称，台积电第四季度营收同比增速有望进一步提升至 63% 。 台积电上月已公布好于预期的营收展望。分析师将其定性为\"在ChatGPT时代之后，维持了一个火热的增长节奏\"。 作为英伟达和苹果的核心代工伙伴，台积电被市场视为",
-      "source": "华尔街见闻",
-      "category": "中文财经",
-      "published": "2026-11-10T05:31:14+00:00"
-    },
-    {
-      "title": "The short seller who saw signs of Nvidia’s China scandal months ago claims Megaspeed isn’t the only company helping China access chips",
-      "link": "https://www.marketwatch.com/story/the-short-seller-who-saw-signs-of-nvidias-china-scandal-months-ago-claims-megaspeed-isnt-the-ony-company-helping-china-access-chips-9877f544?mod=mw_rss_topstories",
-      "summary": "‘We were confident in the research initially, and we’re still confident in it now,’ says Christian Lamarco, founder of Culper Research",
-      "source": "MarketWatch",
+      "title": "How GM is trying to talk used car shoppers into buying new vehicles",
+      "link": "https://www.cnbc.com/2026/11/10/gm-carbravo-used-car-shoppers.html",
+      "summary": "Automakers say that substantial shares of the customers walking into a dealership looking for certified used cars end up buying new. Here's how it works.",
+      "source": "CNBC Business",
       "category": "国际财经",
-      "published": "2026-11-10T00:48:00+00:00"
+      "published": "2026-11-10T13:00:01+00:00"
     },
     {
       "title": "PepsiCo to cut about 1,000 jobs as North American business struggles",
@@ -377,30 +401,6 @@
       "source": "CNBC Business",
       "category": "国际财经",
       "published": "2026-11-06T12:00:01+00:00"
-    },
-    {
-      "title": "Expedia CEO says AI agents aren't changing booking habits — yet",
-      "link": "https://www.cnbc.com/2026/11/05/expedia-ai-agents-booking-habits.html",
-      "summary": "Expedia CEO Ariane Gorin told CNBC that AI agents present an exciting time for the travel industry but that they haven't yet impacted bookings.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-05T17:03:35+00:00"
-    },
-    {
-      "title": "Marc Lore's Wonder confidentially files for IPO",
-      "link": "https://www.cnbc.com/2026/11/05/wonder-confidential-ipo-filing.html",
-      "summary": "Marc Lore's latest startup Wonder has confidentially filed for an initial public offering.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-05T16:27:10+00:00"
-    },
-    {
-      "title": "Wendy's rejects $1.4 billion takeover proposal from Nelson Peltz’s Trian",
-      "link": "https://www.cnbc.com/2026/11/05/wendys-rejects-takeover-proposal.html",
-      "summary": "Wendy's said the $1.4 billion takeover proposal does not reflect potential gains from the burger chain's turnaround strategy.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-05T15:08:05+00:00"
     }
   ]
 }
