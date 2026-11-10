@@ -14,3 +14,11 @@ sources:
   - name: MarketWatch
     url: https://feeds.content.dowjones.io/public/rss/mw_topstories
     category: 国际财经
+    
+  - name: 东方财富
+    url: http://localhost:8053/eastmoney/kuaixun
+    category: 中文财经
+
+  - name: 同花顺
+    url: http://localhost:8053/ths/kuaixun
+    category: 中文财经
