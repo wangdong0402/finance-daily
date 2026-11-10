@@ -1,0 +1,56 @@
+name: 每日财经自动更新
+
+on:
+  schedule:
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: 下载仓库文件
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 抓取新闻
+        run: python fetch.py
+
+      - name: 生成网页
+        run: python generate.py
+
+      - name: 保存数据和网页到仓库
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ dist/
+          git diff --staged --quiet || git commit -m "自动更新 $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: 配置 GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: 上传网页文件
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: 发布到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
