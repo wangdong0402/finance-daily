@@ -6,12 +6,17 @@ from datetime import datetime, timezone
 
 import yaml
 import feedparser
+import requests
 
 SOURCES_FILE = "sources.yaml"
 OUTPUT_FILE = "data/news.json"
-MAX_PER_SOURCE = 20
-MAX_TOTAL = 120
+MAX_PER_SOURCE = 15
+MAX_TOTAL = 100
 
+# 伪装成正常的浏览器，防止被部分网站当作爬虫拦截
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+}
 
 def clean_text(text):
     if not text:
@@ -20,7 +25,6 @@ def clean_text(text):
     text = re.sub(r"<[^>]+>", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text[:300]
-
 
 def parse_time(entry):
     for key in ("published_parsed", "updated_parsed"):
@@ -33,7 +37,6 @@ def parse_time(entry):
                 pass
     return datetime.now(timezone.utc).isoformat()
 
-
 def fetch_source(source):
     name = source.get("name", "未知来源")
     url = source.get("url", "")
@@ -41,13 +44,17 @@ def fetch_source(source):
     items = []
 
     if not url:
-        print(f"[跳过] {name}: 没有 url")
         return items
 
     try:
-        feed = feedparser.parse(url)
+        # 使用 requests 带上伪装头去获取内容，再交由 feedparser 解析
+        response = requests.get(url, headers=HEADERS, timeout=15)
+        response.raise_for_status()
+        feed = feedparser.parse(response.content)
+        
         if feed.bozo:
-            print(f"[警告] {name}: 解析可能有问题，继续尝试")
+            print(f"[警告] {name}: 解析可能有问题，尝试读取")
+            
         entries = feed.entries[:MAX_PER_SOURCE]
         for entry in entries:
             title = clean_text(entry.get("title", ""))
@@ -68,7 +75,6 @@ def fetch_source(source):
         print(f"[失败] {name}: {exc}")
 
     return items
-
 
 def main():
     with open(SOURCES_FILE, "r", encoding="utf-8") as f:
@@ -101,7 +107,6 @@ def main():
         }, f, ensure_ascii=False, indent=2)
 
     print(f"完成：共写入 {len(unique_items)} 条到 {OUTPUT_FILE}")
-
 
 if __name__ == "__main__":
     main()
