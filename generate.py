@@ -70,21 +70,11 @@ def main():
     cards = build_cards(items)
 
     html_doc = f'''<!doctype html>
-<html lang="zh-CN" translate="yes">
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>每日财经</title>
-<!-- 引入谷歌网页翻译组件 -->
-<script type="text/javascript">
-  function googleTranslateElementInit() {{
-    new google.translate.TranslateElement({{
-      pageLanguage: 'zh-CN',
-      autoDisplay: true
-    }}, 'google_translate_element');
-  }}
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <style>
 :root {{ color-scheme: light dark; }}
 * {{ box-sizing: border-box; }}
@@ -140,9 +130,6 @@ h2 a:hover {{ text-decoration: underline; }}
   color: #6e6e73;
   font-size: 14px;
 }}
-/* 隐藏谷歌翻译的顶部横幅，让下拉框更自然地融入 */
-.goog-te-banner-frame.skiptranslate {{ display: none !important; }}
-body {{ top: 0px !important; }}
 
 @media (prefers-color-scheme: dark) {{
   body {{ background: #000; color: #f5f5f7; }}
@@ -160,8 +147,6 @@ body {{ top: 0px !important; }}
       <h1>每日财经</h1>
       <div class="sub">更新：{updated or "暂无"} · 共 {count} 条</div>
     </div>
-    <!-- 翻译框占位 -->
-    <div id="google_translate_element"></div>
   </div>
 </header>
 <main>
