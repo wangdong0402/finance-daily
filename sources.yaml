@@ -9,9 +9,9 @@ sources:
     category: 产业科技
 
   # --- 国际财经与政策分析 ---
-  - name: 彭博社
-    url: https://bbg.buzzing.cc/feed.xml
-    category: 国际财经
+  - name: 日经中文网
+    url: https://cn.nikkei.com/rss.html
+    category: 国际宏观
 
   - name: CNBC Business
     url: https://www.cnbc.com/id/10001147/device/rss/rss.html
