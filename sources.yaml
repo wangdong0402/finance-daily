@@ -4,23 +4,11 @@ sources:
     url: https://dedicated.wallstreetcn.com/rss.xml
     category: 中文宏观
 
-  - name: 经济观察网-政经要闻
-    url: http://www.eeo.com.cn/Politics/rss.xml
-    category: 中文宏观
-
-  - name: 经济观察网-金融投资
-    url: http://www.eeo.com.cn/finance/rss.xml
-    category: 财经投资
-
   - name: 钛媒体
     url: https://www.tmtpost.com/rss
     category: 产业科技
 
   # --- 国际财经与政策分析 ---
-  - name: 路透中文
-    url: https://feedx.net/rss/reuters.xml
-    category: 国际宏观
-
   - name: 彭博社
     url: https://bbg.buzzing.cc/feed.xml
     category: 国际财经
