@@ -36,22 +36,28 @@ def build_cards(items):
         source = html.escape(item.get("source", ""))
         category = html.escape(item.get("category", ""))
         published = html.escape(format_time(item.get("published", "")))
-        
-        # 为不同的分类添加不同的颜色标签
-        tag_color = ""
+
+        # 色彩语义系统：按类别赋予不同底色与文字色
+        tag_style = ""
         if "宏观" in category or "政策" in category:
-            tag_color = "background: #fee2e2; color: #991b1b;"  # 红色系
-        elif "科技" in category or "商业" in category:
-            tag_color = "background: #dbeafe; color: #1e40af;"  # 蓝色系
+            tag_style = "background: #fee2e2; color: #991b1b;"   # 红色：宏观/政策
+        elif "国际财经" in category:
+            tag_style = "background: #dcfce7; color: #166534;"   # 绿色：国际财经
+        elif "数据" in category:
+            tag_style = "background: #f3e8ff; color: #6b21a8;"   # 紫色：宏观数据
+        elif "投资" in category:
+            tag_style = "background: #fef3c7; color: #92400e;"   # 橙色：财经投资
+        elif "产业" in category or "商业" in category or "科技" in category:
+            tag_style = "background: #dbeafe; color: #1e40af;"   # 蓝色：产业/商业/科技
         else:
-            tag_color = "background: #f3f4f6; color: #374151;"  # 灰色系
+            tag_style = "background: #f3f4f6; color: #374151;"   # 灰色：默认
 
         summary_html = f'<p class="summary">{summary}</p>' if summary else ""
 
         cards.append(f'''
         <article class="card">
           <div class="meta">
-            <span class="tag" style="{tag_color}">{category}</span>
+            <span class="tag" style="{tag_style}">{category}</span>
             <span>{source}</span>
             <span>{published}</span>
           </div>
