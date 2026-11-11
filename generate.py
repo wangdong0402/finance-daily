@@ -36,12 +36,22 @@ def build_cards(items):
         source = html.escape(item.get("source", ""))
         category = html.escape(item.get("category", ""))
         published = html.escape(format_time(item.get("published", "")))
+        
+        # 为不同的分类添加不同的颜色标签
+        tag_color = ""
+        if "宏观" in category or "政策" in category:
+            tag_color = "background: #fee2e2; color: #991b1b;"  # 红色系
+        elif "科技" in category or "商业" in category:
+            tag_color = "background: #dbeafe; color: #1e40af;"  # 蓝色系
+        else:
+            tag_color = "background: #f3f4f6; color: #374151;"  # 灰色系
+
         summary_html = f'<p class="summary">{summary}</p>' if summary else ""
 
         cards.append(f'''
         <article class="card">
           <div class="meta">
-            <span class="tag">{category}</span>
+            <span class="tag" style="{tag_color}">{category}</span>
             <span>{source}</span>
             <span>{published}</span>
           </div>
@@ -60,11 +70,21 @@ def main():
     cards = build_cards(items)
 
     html_doc = f'''<!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" translate="yes">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>每日财经</title>
+<!-- 引入谷歌网页翻译组件 -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {{
+    new google.translate.TranslateElement({{
+      pageLanguage: 'zh-CN',
+      autoDisplay: true
+    }}, 'google_translate_element');
+  }}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <style>
 :root {{ color-scheme: light dark; }}
 * {{ box-sizing: border-box; }}
@@ -81,7 +101,9 @@ header {{
   background: rgba(245, 245, 247, .85);
   border-bottom: 1px solid rgba(0, 0, 0, .08);
   padding: 16px 16px 12px;
+  z-index: 100;
 }}
+.header-top {{ display: flex; justify-content: space-between; align-items: flex-start; }}
 h1 {{ font-size: 20px; margin: 0 0 4px; }}
 .sub {{ font-size: 12px; color: #6e6e73; }}
 main {{ padding: 12px 12px 32px; max-width: 760px; margin: 0 auto; }}
@@ -102,10 +124,9 @@ main {{ padding: 12px 12px 32px; max-width: 760px; margin: 0 auto; }}
   margin-bottom: 6px;
 }}
 .tag {{
-  background: #e8f0fe;
-  color: #1a56db;
   border-radius: 999px;
   padding: 2px 8px;
+  font-weight: 500;
 }}
 h2 {{ font-size: 16px; line-height: 1.45; margin: 0 0 6px; }}
 h2 a {{ color: inherit; text-decoration: none; }}
@@ -118,22 +139,30 @@ h2 a:hover {{ text-decoration: underline; }}
   text-align: center;
   color: #6e6e73;
   font-size: 14px;
-  line-height: 1.6;
 }}
+/* 隐藏谷歌翻译的顶部横幅，让下拉框更自然地融入 */
+.goog-te-banner-frame.skiptranslate {{ display: none !important; }}
+body {{ top: 0px !important; }}
+
 @media (prefers-color-scheme: dark) {{
   body {{ background: #000; color: #f5f5f7; }}
   header {{ background: rgba(0, 0, 0, .8); border-bottom-color: rgba(255, 255, 255, .12); }}
   .sub, .meta {{ color: #98989d; }}
   .card, .empty {{ background: #1c1c1e; box-shadow: none; }}
-  .tag {{ background: #1f3a8a; color: #dbeafe; }}
   .summary {{ color: #d1d1d6; }}
 }}
 </style>
 </head>
 <body>
 <header>
-  <h1>每日财经</h1>
-  <div class="sub">更新：{updated or "暂无"} · 共 {count} 条</div>
+  <div class="header-top">
+    <div>
+      <h1>每日财经</h1>
+      <div class="sub">更新：{updated or "暂无"} · 共 {count} 条</div>
+    </div>
+    <!-- 翻译框占位 -->
+    <div id="google_translate_element"></div>
+  </div>
 </header>
 <main>
 {cards}
