@@ -3,7 +3,8 @@ import os
 import html
 from datetime import datetime
 
-DATA_FILE = "data/news.json"
+NEWS_FILE = "data/news.json"
+REPORTS_FILE = "data/reports.json"
 OUTPUT_FILE = "dist/index.html"
 
 
@@ -17,16 +18,16 @@ def format_time(value):
         return str(value)[:16]
 
 
-def load_data():
-    if not os.path.exists(DATA_FILE):
-        return {"updated": "", "count": 0, "items": []}
-    with open(DATA_FILE, "r", encoding="utf-8") as f:
+def load_json(filepath, default):
+    if not os.path.exists(filepath):
+        return default
+    with open(filepath, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
-def build_cards(items):
+def build_news_cards(items):
     if not items:
-        return '<div class="empty">还没有数据。请等待每日自动任务运行，或手动运行 fetch.py 后再生成。</div>'
+        return '<div class="empty">还没有新闻数据。</div>'
 
     cards = []
     for item in items:
@@ -37,20 +38,19 @@ def build_cards(items):
         category = html.escape(item.get("category", ""))
         published = html.escape(format_time(item.get("published", "")))
 
-        # 色彩语义系统：按类别赋予不同底色与文字色
         tag_style = ""
         if "宏观" in category or "政策" in category:
-            tag_style = "background: #fee2e2; color: #991b1b;"   # 红色：宏观/政策
+            tag_style = "background: #fee2e2; color: #991b1b;"   # 红色
         elif "国际财经" in category:
-            tag_style = "background: #dcfce7; color: #166534;"   # 绿色：国际财经
+            tag_style = "background: #dcfce7; color: #166534;"   # 绿色
         elif "数据" in category:
-            tag_style = "background: #f3e8ff; color: #6b21a8;"   # 紫色：宏观数据
+            tag_style = "background: #f3e8ff; color: #6b21a8;"   # 紫色
         elif "投资" in category:
-            tag_style = "background: #fef3c7; color: #92400e;"   # 橙色：财经投资
+            tag_style = "background: #fef3c7; color: #92400e;"   # 橙色
         elif "产业" in category or "商业" in category or "科技" in category:
-            tag_style = "background: #dbeafe; color: #1e40af;"   # 蓝色：产业/商业/科技
+            tag_style = "background: #dbeafe; color: #1e40af;"   # 蓝色
         else:
-            tag_style = "background: #f3f4f6; color: #374151;"   # 灰色：默认
+            tag_style = "background: #f3f4f6; color: #374151;"   # 灰色
 
         summary_html = f'<p class="summary">{summary}</p>' if summary else ""
 
@@ -68,19 +68,64 @@ def build_cards(items):
     return "\n".join(cards)
 
 
-def main():
-    data = load_data()
-    items = data.get("items", [])
-    updated = format_time(data.get("updated", ""))
-    count = data.get("count", len(items))
-    cards = build_cards(items)
+def build_report_cards(reports):
+    if not reports:
+        return '<div class="empty">还没有研报数据，请等待下次自动更新。</div>'
 
+    cards = []
+    for item in reports:
+        title = html.escape(item.get("title", ""))
+        link = html.escape(item.get("link", ""))
+        org = html.escape(item.get("org", ""))
+        date = html.escape(item.get("date", ""))
+        rating = html.escape(item.get("rating", ""))
+        stock = html.escape(item.get("stock", ""))
+        code = html.escape(item.get("code", ""))
+
+        # 根据评级给不同的颜色
+        rating_color = "#6e6e73"  # 默认灰
+        if "买入" in rating or "推荐" in rating:
+            rating_color = "#dc2626" # 红色
+        elif "增持" in rating or "强烈推荐" in rating:
+            rating_color = "#ea580c" # 橙色
+        elif "中性" in rating or "持有" in rating:
+            rating_color = "#2563eb" # 蓝色
+
+        rating_html = f'<span style="color: {rating_color}; font-weight: bold; margin-left: 8px;">[{rating}]</span>' if rating else ""
+
+        cards.append(f'''
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">{stock} ({code})</span>
+            <span>{org}</span>
+            <span>{date}</span>
+          </div>
+          <h2><a href="{link}" target="_blank" rel="noopener noreferrer">{title}</a>{rating_html}</h2>
+        </article>''')
+
+    return "\n".join(cards)
+
+
+def main():
+    # 读取新闻和研报数据
+    news_data = load_json(NEWS_FILE, {"updated": "", "count": 0, "items": []})
+    reports_data = load_json(REPORTS_FILE, [])
+    
+    news_items = news_data.get("items", [])
+    news_updated = format_time(news_data.get("updated", ""))
+    news_count = news_data.get("count", len(news_items))
+    
+    news_cards_html = build_news_cards(news_items)
+    reports_cards_html = build_report_cards(reports_data)
+
+    # 构建整个网页
     html_doc = f'''<!doctype html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>每日财经</title>
+<title>个人财经终端</title>
 <style>
 :root {{ color-scheme: light dark; }}
 * {{ box-sizing: border-box; }}
@@ -96,12 +141,31 @@ header {{
   backdrop-filter: blur(12px);
   background: rgba(245, 245, 247, .85);
   border-bottom: 1px solid rgba(0, 0, 0, .08);
-  padding: 16px 16px 12px;
+  padding: 16px 16px 0;
   z-index: 100;
 }}
-.header-top {{ display: flex; justify-content: space-between; align-items: flex-start; }}
+.header-top {{ margin-bottom: 12px; }}
 h1 {{ font-size: 20px; margin: 0 0 4px; }}
 .sub {{ font-size: 12px; color: #6e6e73; }}
+.tabs {{
+  display: flex;
+  gap: 20px;
+}}
+.tab-btn {{
+  background: none;
+  border: none;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #6e6e73;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+}}
+.tab-btn.active {{
+  color: #1d1d1f;
+  border-bottom-color: #1d1d1f;
+}}
 main {{ padding: 12px 12px 32px; max-width: 760px; margin: 0 auto; }}
 .card {{
   background: #fff;
@@ -136,28 +200,49 @@ h2 a:hover {{ text-decoration: underline; }}
   color: #6e6e73;
   font-size: 14px;
 }}
-
 @media (prefers-color-scheme: dark) {{
   body {{ background: #000; color: #f5f5f7; }}
   header {{ background: rgba(0, 0, 0, .8); border-bottom-color: rgba(255, 255, 255, .12); }}
   .sub, .meta {{ color: #98989d; }}
   .card, .empty {{ background: #1c1c1e; box-shadow: none; }}
   .summary {{ color: #d1d1d6; }}
+  .tab-btn {{ color: #98989d; }}
+  .tab-btn.active {{ color: #f5f5f7; border-bottom-color: #f5f5f7; }}
+  .meta span[style*="color: #1d1d1f;"] {{ color: #f5f5f7 !important; }}
 }}
 </style>
 </head>
 <body>
 <header>
   <div class="header-top">
-    <div>
-      <h1>每日财经</h1>
-      <div class="sub">更新：{updated or "暂无"} · 共 {count} 条</div>
-    </div>
+    <h1>个人财经终端</h1>
+    <div class="sub">更新：{news_updated or "暂无"} · 共 {news_count} 条新闻</div>
+  </div>
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('news')" id="btn-news">每日新闻</button>
+    <button class="tab-btn" onclick="switchTab('reports')" id="btn-reports">券商研报</button>
   </div>
 </header>
 <main>
-{cards}
+  <div id="tab-news">
+    {news_cards_html}
+  </div>
+  <div id="tab-reports" style="display: none;">
+    {reports_cards_html}
+  </div>
 </main>
+<script>
+function switchTab(tab) {{
+  document.getElementById('tab-news').style.display = 'none';
+  document.getElementById('tab-reports').style.display = 'none';
+  
+  document.getElementById('btn-news').classList.remove('active');
+  document.getElementById('btn-reports').classList.remove('active');
+  
+  document.getElementById('tab-' + tab).style.display = 'block';
+  document.getElementById('btn-' + tab).classList.add('active');
+}}
+</script>
 </body>
 </html>'''
 
@@ -165,7 +250,7 @@ h2 a:hover {{ text-decoration: underline; }}
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(html_doc)
 
-    print(f"已生成 {OUTPUT_FILE}，共 {len(items)} 条")
+    print(f"已生成 {OUTPUT_FILE}，包含 {len(news_items)} 条新闻和 {len(reports_data)} 条研报。")
 
 
 if __name__ == "__main__":
