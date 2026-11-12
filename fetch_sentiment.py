@@ -17,23 +17,28 @@ def fetch_market_sentiment():
         "sector_panic_top5": [],
         "market_theme": ""
     }
+    
+    has_data = False
 
-    # 1. 实时恐贪情绪 + 仓位建议（统一路径 + fn 参数 + GBK 解码）
+    # 1. 实时恐贪情绪 + 仓位建议
     try:
         url = "https://push2delay.eastmoney.com/api/qt/stock/get"
         params = {"fn": "panicIndextrade"}
         res = requests.get(url, params=params, headers=headers, timeout=10)
         res.raise_for_status()
         data = json.loads(res.content.decode('gbk', errors='ignore'))
+        print(f"--- 恐贪原始数据: {data} ---")  # 打印出来看结构
+        
         raw = data.get("data")
         if isinstance(raw, dict):
-            sentiment_data["panic_index"] = raw.get("panicIndex")
-            sentiment_data["suggested_position"] = raw.get("suggestPosition")
-        print(f"[信息] 恐贪指数接口返回成功")
+            # 尝试抓取各种可能的字段名
+            sentiment_data["panic_index"] = raw.get("panicIndex") or raw.get("value") or raw.get("f2")
+            sentiment_data["suggested_position"] = raw.get("suggestPosition") or raw.get("position")
+            has_data = True
     except Exception as e:
         print(f"[警告] 恐贪指数接口异常: {e}")
 
-    # 2. 主力净买额（已成功，保持原样）
+    # 2. 主力净买额
     try:
         url = "https://datacenter-web.eastmoney.com/api/data/v1/get"
         params = {
@@ -46,52 +51,57 @@ def fetch_market_sentiment():
         res = requests.get(url, params=params, headers=headers, timeout=10)
         res.raise_for_status()
         data = res.json()
+        print(f"--- 主力净买原始数据: {data} ---")
+        
         if data.get("result") and data["result"].get("data"):
             item = data["result"]["data"][0]
-            raw_val = item.get("NET_BUY_AMT", 0)
+            # 尝试抓取各种可能的字段名
+            raw_val = item.get("NET_BUY_AMT") or item.get("NET_INFLOW") or 0
             sentiment_data["main_net_buy"] = round(raw_val / 100000000, 2)
-        print(f"[信息] 主力净买额接口返回成功")
+            has_data = True
     except Exception as e:
         print(f"[警告] 主力净买额接口异常: {e}")
 
-    # 3. 板块恐贪榜 Top5（统一路径 + fn 参数 + UTF-8）
+    # 3. 板块恐贪榜 Top5
     try:
         url = "https://push2delay.eastmoney.com/api/qt/stock/get"
         params = {"fn": "panicbklist"}
         res = requests.get(url, params=params, headers=headers, timeout=10)
         res.raise_for_status()
         data = res.json()
-        if data.get("data"):
-            sectors = data["data"]
-            sectors_sorted = sorted(sectors, key=lambda x: x.get("panicValue", 100))[:5]
+        print(f"--- 板块恐贪原始数据: {data} ---")
+        
+        if data.get("data") and isinstance(data["data"], list):
+            sectors_sorted = sorted(data["data"], key=lambda x: x.get("panicValue", 100))[:5]
             for s in sectors_sorted:
                 sentiment_data["sector_panic_top5"].append({
                     "name": s.get("bkName", ""),
                     "panic": s.get("panicValue", 0)
                 })
-        print(f"[信息] 板块恐贪榜接口返回成功")
+            has_data = True
     except Exception as e:
         print(f"[警告] 板块恐贪榜接口异常: {e}")
 
-    # 4. 市场主线（统一路径 + fn 参数 + GBK 解码）
+    # 4. 市场主线
     try:
         url = "https://push2delay.eastmoney.com/api/qt/stock/get"
         params = {"fn": "panicMThemeList"}
         res = requests.get(url, params=params, headers=headers, timeout=10)
         res.raise_for_status()
         data = json.loads(res.content.decode('gbk', errors='ignore'))
+        print(f"--- 市场主线原始数据: {data} ---")
+        
         if data.get("data"):
             themes = [t.get("themeName", "") for t in data["data"][:3]]
             sentiment_data["market_theme"] = " / ".join([t for t in themes if t])
-        print(f"[信息] 市场主线接口返回成功")
+            has_data = True
     except Exception as e:
         print(f"[警告] 市场主线接口异常: {e}")
 
-    # 核心数据：只要恐贪指数或主力净买额有一个成功，就保存
-    if sentiment_data["panic_index"] is None and sentiment_data["main_net_buy"] == 0.0:
-        return None
-
-    return sentiment_data
+    # 只要有任何一部分成功获取，就允许保存
+    if has_data:
+        return sentiment_data
+    return None
 
 def main():
     data = fetch_market_sentiment()
@@ -101,7 +111,7 @@ def main():
             json.dump(data, f, ensure_ascii=False, indent=2)
         print(f"已保存情绪数据：恐贪={data['panic_index']}，主力净买={data['main_net_buy']} 亿")
     else:
-        print("核心情绪数据（恐贪/主力净买）均未获取到，跳过保存。")
+        print("数据全空，跳过保存。")
 
 if __name__ == "__main__":
     main()
