@@ -84,18 +84,7 @@ h2 a:hover { text-decoration: underline; }
 /* 情绪看板专属样式 */
 .sentiment-dashboard { background: #fff; border-radius: 14px; padding: 16px; box-shadow: 0 1px 2px rgba(0, 0, 0, .04); }
 .sentiment-time { text-align: center; font-size: 12px; color: #98989d; margin-bottom: 16px; }
-.idx-row { display: flex; justify-content: space-between; margin-bottom: 16px; gap: 8px; }
-.idx-item { flex: 1; text-align: center; background: #f9fafb; padding: 12px 8px; border-radius: 10px; }
-.idx-name { font-size: 13px; color: #6e6e73; margin-bottom: 4px; }
-.idx-price { font-size: 18px; font-weight: bold; margin-bottom: 4px; }
-.idx-change { font-size: 14px; font-weight: 500; }
-
-.sentiment-panel { padding: 8px 0; }
-.flow-container { text-align: center; margin-bottom: 16px; }
-.flow-title { font-size: 14px; color: #6e6e73; margin-bottom: 8px; }
-.flow-value { font-size: 28px; font-weight: bold; }
-
-.breadth-container { margin-top: 16px; }
+.breadth-container { margin-top: 8px; }
 .breadth-bar { display: flex; height: 12px; border-radius: 6px; overflow: hidden; background: #e5e7eb; margin-bottom: 12px; }
 .bar-up { background: #ef4444; }
 .bar-down { background: #10b981; }
@@ -110,8 +99,8 @@ h2 a:hover { text-decoration: underline; }
   .tab-btn { color: #98989d; }
   .tab-btn.active { color: #f5f5f7; border-bottom-color: #f5f5f7; }
   .meta span[style*="color: #1d1d1f;"] { color: #f5f5f7 !important; }
-  .idx-item { background: #2c2c2e; }
   .breadth-bar { background: #3a3a3c; }
+  .sentiment-dashboard div[style*="background: #f9fafb;"] { background: #2c2c2e !important; }
 }
 </style>
 </head>
@@ -119,7 +108,7 @@ h2 a:hover { text-decoration: underline; }
 <header>
   <div class="header-top">
     <h1>个人财经终端</h1>
-    <div class="sub">更新：2026-11-12 08:49 · 共 70 条新闻</div>
+    <div class="sub">更新：2026-11-12 09:03 · 共 70 条新闻</div>
   </div>
   <div class="tabs">
     <button class="tab-btn active" onclick="switchTab('news')" id="btn-news">每日新闻</button>
@@ -130,6 +119,26 @@ h2 a:hover { text-decoration: underline; }
 <main>
   <div id="tab-news">
     
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
+            <span>钛媒体</span>
+            <span>2026-11-12 08:41</span>
+          </div>
+          <h2><a href="https://www.tmtpost.com/8201514.html" target="_blank" rel="noopener noreferrer">从华尔街到5900亿魏桥集团，黄然非的隐秘资本版图</a></h2>
+          <p class="summary">5900亿魏桥集团，与背后神秘的黄然非。</p>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
+            <span>钛媒体</span>
+            <span>2026-11-12 08:41</span>
+          </div>
+          <h2><a href="https://www.tmtpost.com/8202837.html" target="_blank" rel="noopener noreferrer">想做AI视频，不知道用哪款模型？我们帮你测完了</a></h2>
+          <p class="summary">四大视频模型发布时没告诉你的真相，我们测出来了。</p>
+        </article>
+
         <article class="card">
           <div class="meta">
             <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
@@ -378,26 +387,6 @@ h2 a:hover { text-decoration: underline; }
           </div>
           <h2><a href="https://www.tmtpost.com/8202391.html" target="_blank" rel="noopener noreferrer">华东医药的80.3%，还不是MASH的完整答案</a></h2>
           <p class="summary">仍隔着几轮试验。</p>
-        </article>
-
-        <article class="card">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span>2026-11-12 05:08</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8201671.html" target="_blank" rel="noopener noreferrer">黄仁勋的裂缝，英伟达等来了创始人的凡人时刻</a></h2>
-          <p class="summary">神坛之下，公司才真正开始。</p>
-        </article>
-
-        <article class="card">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span>2026-11-12 05:02</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8202380.html" target="_blank" rel="noopener noreferrer">零售巨头MUJI，为什么反复开酒店？</a></h2>
-          <p class="summary">全球四家，中国独占三家。</p>
         </article>
 
         <article class="card">
@@ -835,6 +824,16 @@ h2 a:hover { text-decoration: underline; }
         <article class="card">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">托伦斯 (301583)</span>
+            <span>中邮证券</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831656716.html" target="_blank" rel="noopener noreferrer">托精造极，伦起新章</a><span style="color: #ea580c; font-weight: bold; margin-left: 8px;">[增持]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">安集科技 (688019)</span>
             <span>东海证券</span>
             <span>2026-11-12</span>
@@ -1021,19 +1020,186 @@ h2 a:hover { text-decoration: underline; }
           </div>
           <h2><a href="https://data.eastmoney.com/report/info/AP202611121831642224.html" target="_blank" rel="noopener noreferrer">2026年三季报点评：利润同比扭亏，创新管线持续放量</a></h2>
         </article>
-
-        <article class="card">
-          <div class="meta">
-            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
-            <span style="font-weight: bold; color: #1d1d1f;">海天味业 (603288)</span>
-            <span>华龙证券</span>
-            <span>2026-11-12</span>
-          </div>
-          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831641742.html" target="_blank" rel="noopener noreferrer">2026年三季报业绩点评报告：收入稳健修复，盈利端承压</a><span style="color: #ea580c; font-weight: bold; margin-left: 8px;">[增持]</span></h2>
-        </article>
   </div>
   <div id="tab-sentiment" style="display: none;">
-    <div class="empty">还没有市场情绪数据。</div>
+    
+    <div class="sentiment-dashboard">
+      <div class="sentiment-time">实时数据更新于：2026-11-12 09:03</div>
+
+      <!-- 新增：顶部核心资金流向看板 -->
+      <div style="text-align: center; margin-bottom: 24px; background: #f9fafb; padding: 20px 0; border-radius: 12px;">
+        <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px;">两市主力资金净流入</div>
+        <div style="font-size: 42px; font-weight: bold; color: #ef4444; letter-spacing: -1px;">+74.75 亿</div>
+      </div>
+
+      <div style="margin-bottom: 28px;">
+        <div style="font-size: 14px; color: #6e6e73; margin-bottom: 12px;">全市场涨跌分布</div>
+        
+    <div class="breadth-container">
+      <div class="breadth-bar">
+        <div class="bar-up" style="width: 0.0%;"></div>
+        <div class="bar-down" style="width: 0.0%;"></div>
+      </div>
+      <div class="breadth-labels">
+        <span style="color: #ef4444;">上涨 0.0 家</span>
+        <span style="color: #6b7280;">平盘 100 家</span>
+        <span style="color: #10b981;">下跌 0.0 家</span>
+      </div>
+    </div>
+    
+      </div>
+
+      <div style="margin-bottom: 28px;">
+        <div style="font-size: 16px; font-weight: bold; color: #1d1d1f; margin-bottom: 12px; border-left: 4px solid #ef4444; padding-left: 8px;">主力净流入 TOP10 行业</div>
+        
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">半导体</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">-0.84%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #ef4444;">+23.53 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">营销代理</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">-2.00%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #ef4444;">+19.28 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">广告营销</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">-2.02%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #ef4444;">+18.86 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">半导体设备</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">+0.75%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #ef4444;">+17.33 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">医疗服务</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">+0.07%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #ef4444;">+9.7 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">集成电路制造</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">+1.19%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #ef4444;">+8.85 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">分立器件</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">-1.53%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #ef4444;">+8.57 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">银行</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">+0.02%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #ef4444;">+7.46 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">银行Ⅱ</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">+0.02%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #ef4444;">+7.46 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">集成电路封测</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">-0.05%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #ef4444;">+5.73 亿</div>
+            </div>
+      </div>
+
+      <div>
+        <div style="font-size: 16px; font-weight: bold; color: #1d1d1f; margin-bottom: 12px; border-left: 4px solid #10b981; padding-left: 8px;">主力净流出 TOP10 行业</div>
+        
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">电子</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">-1.58%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #10b981;">-79.05 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">通信</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">-2.06%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #10b981;">-73.03 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">通信设备</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">-2.02%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #10b981;">-68.14 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">机械设备</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">-2.10%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #10b981;">-66.99 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">电力设备</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">-2.02%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #10b981;">-62.39 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">有色金属</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">-2.51%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #10b981;">-59.03 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">通信网络设备及器件</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">-1.71%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #10b981;">-49.26 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">消费电子</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">-2.52%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #10b981;">-45.9 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">消费电子零部件及组装</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">-2.53%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #10b981;">-44.05 亿</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">汽车</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">-2.35%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: #10b981;">-39.15 亿</div>
+            </div>
+      </div>
+    </div>
+    
   </div>
 </main>
 <script>
