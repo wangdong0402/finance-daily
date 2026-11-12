@@ -33,9 +33,14 @@ def fetch_eastmoney_reports():
         
         if "data" in data and data["data"]:
             for item in data["data"]:
-                # 拼接研报详情页的链接
                 info_code = item.get("infoCode", "")
-                link = f"https://data.eastmoney.com/report/info/{info_code}.html"
+                
+                # 【核心修复】：优先提取 PDF 原文件地址，如果没有则使用新版网页地址
+                pdf_url = item.get("pdfUrl")
+                if pdf_url:
+                    link = pdf_url
+                else:
+                    link = f"https://data.eastmoney.com/report/zw_stock.jshtml?infocode={info_code}"
                 
                 reports.append({
                     "title": item.get("title", ""),
