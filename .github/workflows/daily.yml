@@ -34,6 +34,9 @@ jobs:
       - name: 抓取新闻
         run: python fetch.py
 
+      - name: 抓取研报
+        run: python fetch_reports.py
+
       - name: 生成网页
         run: python generate.py
 
