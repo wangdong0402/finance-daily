@@ -1,7 +1,255 @@
 {
-  "updated": "2026-11-12T13:55:25.309372+00:00",
+  "updated": "2026-11-12T23:51:07.753432+00:00",
   "count": 70,
   "items": [
+    {
+      "title": "思科Q1财季营收创十五年来最快增速，上调全年指引，AI相关收入料将翻倍｜财报见闻",
+      "link": "https://wallstreetcn.com/articles/3785840",
+      "summary": "思科系统公司发布强劲季度财报，营收和利润均超市场预期，并大幅上调全年业绩指引，显示AI基础设施建设热潮正为这家网络设备巨头带来持续动能。 11月12日美股盘后，思科发布截至10月24日的2027财年第一财季报告， 营收 同比增长24%至185亿美元，创下逾15年来最强增速， 调整后每股收益 1.40美元，均超出分析师预期。 公司同步将本财年来自超大规模数据中心运营商的 AI相关收入预期 上调至90亿美元，较上一财年翻逾一倍。首席执行官Chuck Robbins表示： 我们正处于一个多年期网络超级周期的极早期阶段，各类机构正转向思科，借助我们的技术和专业能力，为智能体AI时代扩展、保障并优化其运",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-12T23:34:54+00:00"
+    },
+    {
+      "title": "【钛晨报】李强主持国务院第二十二次专题学习，聚焦健全多层次社会保障体系；英伟达换帅！黄仁勋辞任CEO，CFO克雷斯临时接棒；国内首个口服GLP-1类减肥药获批上市",
+      "link": "https://www.tmtpost.com/8203507.html",
+      "summary": "国家发改委：11月12日24时起汽、柴油价格每吨分别下调645元、625元；存储涨价潮仍将延续，产品需求现分化；美国FDA终止药物快速审评计划；张一鸣：字节AI最早2029年或2030年追平OpenAI与Anthropic；百度推出大模型交易平台词元所；腾讯相关知情人士：微信“看一看”正在小范围测试短剧入口；台积电回应“6.9GB员工资料外泄”：将向相关人员提供必要协助",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-12T23:20:00+00:00"
+    },
+    {
+      "title": "币安宣布完成63亿美元被盗资产全额赔付，美国司法部称将扣押12亿美元被盗资产",
+      "link": "https://wallstreetcn.com/articles/3785839",
+      "summary": "币安宣布已全额补偿63亿美元被盗加密资产，为有史以来规模最大的加密货币网络盗窃案画上句点。 11月12日，周四，币安在其X平台账号发文确认，所有被盗资产已全部完成赔付。币安在帖子中写道： 感谢用户和社区的耐心与理解。 据报道， 美国司法部称将扣押（黑客）从币安窃取的、价值12亿美元的加密货币资产。美国政府部门和私营部门已经冻结超过27亿美元被盗资金。 这家全球最大加密货币交易所在10月29日遭遇黑客入侵后，动用自有利润及紧急储备资金，在数日内迅速恢复了大部分被盗代币。 此案不仅波及比特币等主流加密货币，还涉及大量冷僻代币，给币安的追购和补偿工作带来额外挑战。该事件再度引发外界对整个数字资产行业",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-12T23:10:51+00:00"
+    },
+    {
+      "title": "华尔街见闻早餐FM-Radio | 2026年11月13日",
+      "link": "https://wallstreetcn.com/articles/3785833",
+      "summary": "华见早安之声 要闻精选 中国商务部 ： 中美正就降税、贸易、投资等问题保持密切沟通 。 中国外交部 回应涉英伟达相关问题： 美方应当停止编造所谓的间谍叙事、为实施科技封锁寻找借口 。 中国国务院 ： 强化社保基金安全监管和保值增值 ， 扩大企业年金覆盖面 。 中国证监会副主席 ： 中国发展具有长期确定性 ， 投资中国具备坚实基础 ； 进一步拓宽中长期资金来源 ， 全力维护市场平稳运行 。 特朗普 称美国不需要与伊朗达成协议 、万斯应当关注国内事务，国际原油直线拉升转涨。 美联储 10月鹰派异议票委 哈马克 ：需进一步加息、压制 “超错误方向移动” 的 通胀 。 美联储 兑现沃什计划： 删除20",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-12T23:09:32+00:00"
+    },
+    {
+      "title": "英伟达黄仁勋离职，将损失约1.08亿美元未归属股权",
+      "link": "https://wallstreetcn.com/articles/3785846",
+      "summary": "黄仁勋因婚外情丑闻被迫离开英伟达，将损失约1.08亿美元未归属股权补偿，但相较于其个人财富，这一损失微乎其微。 根据彭博亿万富翁指数，上述放弃的股权奖励约占其净资产的0.08%——彭博对其财富的估算为1384亿美元。 英伟达股价当日一度暴跌逾14%，随后收窄跌幅，最终收跌4.3%至166.19美元，令黄仁勋的净资产单日蒸发逾60亿美元。 根据英伟达的股权补偿政策，高管一旦终止连续服务，未归属的限制性股票单元（RSU）将予以没收。黄仁勋持有约34.6万个此类单元，并有望通过公司股权激励计划获得约31万股——前提是公司业绩达到特定目标。 与众多科技公司CEO不同，黄仁勋的财富几乎全部来源于英伟达普",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-12T23:07:05+00:00"
+    },
+    {
+      "title": "Nebius Q3业绩超预期，资本开支升至270亿美元、ARR目标延期，股价跌近17% | 财报见闻",
+      "link": "https://wallstreetcn.com/articles/3785826",
+      "summary": "AI云计算公司Nebius Group公布第三季度业绩，营收与利润双双超出市场预期，但ARR增长指引下调与资本开支大幅上调的组合，令投资者对其盈利路径产生疑虑。 Nebius三季度营收达9.81亿美元，较市场预期的9.19亿美元高出约6.7%；调整后EBITDA为4.66亿美元，亦大幅超出预期的3.57亿美元。 然而，公司将年化经常性收入（ARR）目标从此前承诺的\"2026年12月前达到70亿至90亿美元\"下调至\"2027年2月前达到70亿美元以上\"，与此同时，公司还表示\"ARR不再是衡量业务的正确指标\"， 令外界对其战略方向的清晰度产生质疑。 受财报表现不及预期拖累，公司股价在盘前交易时段即",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-12T22:59:31+00:00"
+    },
+    {
+      "title": "英伟达高管致员工备忘录：黄仁勋离任后，公司领导层如何回应？",
+      "link": "https://wallstreetcn.com/articles/3785834",
+      "summary": "英伟达刚刚与首席执行官黄仁勋结束了合作关系。这位将英伟达打造为全球主导地位芯片制造商的人物，因婚外情丑闻而离职。 英伟达资深首席财务官科莱特·克雷斯（Colette Kress）将出任临时首席执行官。在寻找黄仁勋继任者期间，英伟达将由她暂时执掌。 公司还任命了历史上首位董事长，由董事哈维·琼斯（Harvey Jones）出任。现年73岁的琼斯此前曾担任芯片设计软件制造商新思科技（Synopsys Inc.）的负责人。 以下是琼斯和克雷斯向员工发送的内部备忘录，解释此次人事变动。 哈维·琼斯（Harvey Jones） 致英伟达全体员工： 我写信是为了向大家通报一项重要消息。 黄仁勋已辞去首席执",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-12T22:57:44+00:00"
+    },
+    {
+      "title": "Who can replace Jensen Huang as Nvidia CEO? These four names are buzzing in AI circles.",
+      "link": "https://www.marketwatch.com/story/who-can-replace-jensen-huang-as-nvidia-ceo-these-four-names-are-buzzing-in-ai-circles-66c31ec2?mod=mw_rss_topstories",
+      "summary": "As Nvidia’s board seeks a new CEO, experts say that person will need a rare balance of tech vision and business savvy",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-12T22:57:00+00:00"
+    },
+    {
+      "title": "黄仁勋辞职叠加油价走强，美股承压，英伟达市值一度跌破4万亿，美债、黄金遭抛售",
+      "link": "https://wallstreetcn.com/articles/3785806",
+      "summary": "英伟达掌门人突然出局，叠加油价走强推高通胀预期，美国股市、债市、黄金和比特币同步承压，美元三连涨。 黄仁勋遭董事会免职， 英伟达 股价一度跌超14%，随后跌幅收窄、收跌逾4%，盘中市值跌破4万亿美元关口，回落至2025年7月以来最低水平。 标普500指数 收跌0.4%， 纳斯达克100指数 跌0.3%， 道琼斯工业平均指数 跌0.4%。 华尔街对此次人事变动的解读总体保持克制。Siebert Financial的Mark Malek强调，英伟达最大的买家均以自有现金流支撑AI基础设施投资，\"无论门上写着谁的名字，他们都需要芯片\"。 与此同时，特朗普公开表态放弃与伊朗达成协议，霍尔木兹海峡紧张局",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-12T22:50:17+00:00"
+    },
+    {
+      "title": "Opening trading-card packs has become a $2 billion market",
+      "link": "https://www.marketwatch.com/story/opening-trading-card-packs-has-become-a-2-billion-market-new-apps-are-trying-to-cash-in-b7ba11f5?mod=mw_rss_topstories",
+      "summary": "Pack-ripping apps are changing the way people buy and sell cards. But analysts say their “slot-like payoff” raises risks.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-12T22:38:00+00:00"
+    },
+    {
+      "title": "Scout Motors has 212,000 vehicle reservations as $2 billion South Carolina plant nears completion",
+      "link": "https://www.cnbc.com/2026/11/12/scout-motors-reservations-south-carolina-plant.html",
+      "summary": "Scout Motors has roughly 212,000 reservations for its Terra pickup and Traveler SUV, CEO Scott Keogh told CNBC.",
+      "source": "CNBC Business",
+      "category": "国际财经",
+      "published": "2026-11-12T22:17:05+00:00"
+    },
+    {
+      "title": "托克大举建仓LME铝多头，市场陷入数十年来最严峻逼仓局面",
+      "link": "https://wallstreetcn.com/articles/3785845",
+      "summary": "报道称托克大举买入LME铝合约，伦敦铝库存创36年新低引发历史性逼仓。 11月12日，据彭博社援引知情人士透露， 托克已在LME铝市场积累了大量多头头寸，意在将金属卖往亚洲市场套取利润。 与此同时，LME铝库存跌至1990年以来最低水平，仅226,350吨，而 多头持仓规模已超过全部库存。 周四现货合约相对三个月期货的升水一度飙升至每吨176.80美元，创逾30年来最高纪录，令空头陷入被动。 上述局面对持有空头头寸的交易商和制造商造成直接冲击——他们必须在到期前买回合约或实物交割，而市场上可供交割的铝库存已所剩无几，且大部分集中在少数大型多头手中。 LME表示，交易所已针对大额及主导性头寸设有",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-12T22:16:46+00:00"
+    },
+    {
+      "title": "Bond yields just saw their biggest surge since 2022 as expectations grow for more Fed rate hikes",
+      "link": "https://www.marketwatch.com/story/bond-yields-just-saw-their-biggest-surge-since-2022-as-expectations-grow-for-more-fed-rate-hikes-d0a4f195?mod=mw_rss_topstories",
+      "summary": "Fed Chair Warsh’s quiet style of communicating interest-rate policy has led to more volatile markets.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-12T22:16:00+00:00"
+    },
+    {
+      "title": "‘He calls my plans a fantasy’: My husband says we can’t afford our $200,000-a-year dream retirement. I think he’s cheap.",
+      "link": "https://www.marketwatch.com/story/he-calls-my-plans-a-fantasy-my-husband-says-we-cant-afford-our-200-000-a-year-dream-retirement-i-think-hes-cheap-45bc5b4e?mod=mw_rss_topstories",
+      "summary": "“We have $2 million saved in our retirement accounts and a house worth $1.3 million.”",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-12T22:00:00+00:00"
+    },
+    {
+      "title": "Am I overpaying for health insurance? How to answer the key question this open-enrollment season.",
+      "link": "https://www.marketwatch.com/story/am-i-overpaying-for-health-insurance-how-to-answer-the-key-question-this-open-enrollment-season-2d00ed55?mod=mw_rss_topstories",
+      "summary": "More people want to understand the fine print on plans this year, financial planners say.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-12T21:55:00+00:00"
+    },
+    {
+      "title": "The 10 best stocks for a year-end momentum trade",
+      "link": "https://www.marketwatch.com/story/the-10-best-stocks-for-a-year-end-momentum-trade-8d4cf8f7?mod=mw_rss_topstories",
+      "summary": "Why December is the best month of the year for momentum strategies",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-12T21:50:00+00:00"
+    },
+    {
+      "title": "I inherited $1.4 million from my father. Am I wrong to ask my husband of 25 years for a postnuptial agreement?",
+      "link": "https://www.marketwatch.com/story/i-inherited-1-4-million-from-my-father-am-i-wrong-to-ask-my-husband-of-25-years-for-a-postnuptial-agreement-b739c51d?mod=mw_rss_topstories",
+      "summary": "“He has always said he wants his daughter to inherit a chunk of his estate, and I’ve never objected to that.”",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-12T21:30:00+00:00"
+    },
+    {
+      "title": "不用Flash命名，谷歌发布Gemini 4 Hydrogen：幻觉减少5倍，速度翻倍",
+      "link": "https://wallstreetcn.com/articles/3785836",
+      "summary": "谷歌以一款面向普通用户和开发者的高效能模型，全面扩大Gemini 4系列的覆盖半径。 继本周推出旗舰模型Carbon之后，谷歌周四发布Gemini 4 Hydrogen，以\"为所有人带来前沿智能\"为核心定位。 该模型主打速度与执行效率，放弃沿用的\"Flash\"品牌命名，以Hydrogen取而代之。 谷歌表示，Hydrogen已面向开发者、企业和消费者全球同步上线，覆盖Gemini API、AI Studio、Gemini应用、谷歌搜索及Google Antigravity等多个平台。 在基准测试方面 ，Hydrogen在Artificial Analysis Intelligence Inde",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-12T21:23:32+00:00"
+    },
+    {
+      "title": "SpaceX计划投资740亿美元，在亚利桑那州和德克萨斯州建设数据中心",
+      "link": "https://wallstreetcn.com/articles/3785835",
+      "summary": "SpaceX正大举押注人工智能基础设施。公司宣布，将在亚利桑那州和德克萨斯州合计投资740亿美元，兴建两座超级计算中心，标志着这家火箭制造商向AI基础设施供应商的转型进入新阶段。 其中，亚利桑那州项目投资额高达500亿美元，是此次计划的核心。SpaceX同步确认，将向位于德克萨斯州Starbase总部附近的另一处计算中心追加投资240亿美元。 马斯克正持续扩大SpaceX的计算能力，这也进一步推动该公司从一家领先的火箭制造商和发射服务提供商，向重要的人工智能基础设施供应商转型。 SpaceX目前已成为Anthropic PBC和Alphabet Inc.等公司的重要基础设施合作方。此外，该公司",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-12T21:23:10+00:00"
+    },
+    {
+      "title": "Cerebras大涨！Q3营收超预期，云业务激增272%，上调全年指引｜财报见闻",
+      "link": "https://wallstreetcn.com/articles/3785843",
+      "summary": "AI推理需求持续升温，AI芯片公司Cerebras第三季度业绩超出市场预期，云业务收入成为增长的核心引擎。公司不仅上调了2026年全年营收指引，还预计2027年营收将达到今年的三倍，显示其对AI推理算力需求的增长前景持乐观态度。 当地时间11月12日， Cerebras公布2026年第三季度财报。公司当季核心营收达到2.309亿美元，同比增长70%，高于分析师平均预期的2.147亿美元；其中，云及其他服务收入同比增长272%至1.449亿美元。 受云业务增长和客户需求推动， Cerebras将2026年全年核心营收指引从此前的8.8亿至8.9亿美元上调至9.4亿至9.6亿美元。公司还预计，第四",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-12T21:20:30+00:00"
+    },
+    {
+      "title": "The S&P 500 is shrugging off Nvidia’s selloff this week. Here’s what’s keeping the rest of the market afloat.",
+      "link": "https://www.marketwatch.com/story/the-s-p-500-is-shrugging-off-nvidias-selloff-heres-whats-keeping-the-rest-of-the-market-afloat-7cdf2f05?mod=mw_rss_topstories",
+      "summary": "Investors have been forced to look up from the poster child of the artificial-intelligence trade and remember the other stocks on the board.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-12T21:08:00+00:00"
+    },
+    {
+      "title": "黄仁勋突然离任震动AI行业！英伟达大跌、新云与硬件承压、AMD大涨，Anthropic IPO受审视",
+      "link": "https://wallstreetcn.com/articles/3785829",
+      "summary": "英伟达创始人、首席执行官黄仁勋突然离任，全球AI产业迎来重大领导层变局。这家由黄仁勋一手打造、并成为全球AI算力基础设施核心供应商的科技巨头，正式进入后黄仁勋时代。 当地时间11月12日， 英伟达宣布，黄仁勋辞去公司总裁、首席执行官及董事职务，即刻生效。公司首席财务官Colette Kress接任临时CEO，董事会将同时考虑内部和外部候选人，启动正式继任者遴选程序。公司还任命长期董事、前Synopsys CEO Harvey Jones为首任董事长。 这一人事变动发生在英伟达经历一系列个人关系争议及国家安全调查之后。黄仁勋的离任不仅令投资者重新评估英伟达对创始人的依赖程度，也将AI产业融资模式",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-12T20:58:11+00:00"
+    },
+    {
+      "title": "The bond market now has an even bigger fear than AI fallout",
+      "link": "https://www.marketwatch.com/story/the-bond-market-now-has-an-even-bigger-fear-than-the-ai-fallout-b6401b54?mod=mw_rss_topstories",
+      "summary": "Carnage in tech stocks made Treasurys look more attractive in recent weeks, but fears of more Fed rate hikes are now driving yields higher",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-12T20:44:00+00:00"
+    },
+    {
+      "title": "I’m 17 and will be a first-generation college student. Is law school worth being $200,000 in debt?",
+      "link": "https://www.marketwatch.com/story/im-17-and-will-be-a-first-generation-college-student-is-law-school-worth-being-200-000-in-debt-df9b23c3?mod=mw_rss_topstories",
+      "summary": "“I‘’m considering a pre-law track … I’m just a bit hesitant because of how expensive law school is.”",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-12T20:17:00+00:00"
+    },
+    {
+      "title": "黄仁勋再次被曝与第二名女员工有染",
+      "link": "https://wallstreetcn.com/articles/3785837",
+      "summary": "据路透社从两位知情人士处获悉，已被罢免的英伟达（Nvidia）首席执行官黄仁勋（Jensen Huang）曾与第二名员工有过亲密关系。 在此消息曝光之前，黄仁勋还曾曝出另外两段婚外情，并因此于周四辞职。 这两名女性分别是爱丽丝·黄（Alice Huang），以及英伟达医疗保健业务副总裁金伯利·鲍威尔（Kimberly Powell）。 媒体未公布这名（第二位）员工的姓名，且未能成功联系到她。 在有关他与爱丽丝·黄关系的报道传出后，黄仁勋曾在11月8日的一份声明中承认有过婚外情，但未直接点名提及她。 截至发稿，周四盘中英伟达股价下跌6%。 本文来自华尔街见闻，欢迎下载APP查看更多",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-12T19:40:42+00:00"
+    },
+    {
+      "title": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm",
+      "summary": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+      "source": "Federal Reserve",
+      "category": "宏观数据",
+      "published": "2026-11-12T18:30:00+00:00"
+    },
+    {
+      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+      "summary": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "source": "Federal Reserve",
+      "category": "宏观数据",
+      "published": "2026-11-12T17:45:00+00:00"
+    },
+    {
+      "title": "Disney's 'Star Wars' is coming to Cosm domes ahead of 50th anniversary as part of multiyear film deal",
+      "link": "https://www.cnbc.com/2026/11/12/star-wars-cosm-dome-screenings.html",
+      "summary": "Cosm has secured a new studio partnership with Disney that will bring \"Star Wars: A New Hope\" to its domes as part of a multiyear, multifilm collaboration.",
+      "source": "CNBC Business",
+      "category": "国际财经",
+      "published": "2026-11-12T17:23:25+00:00"
+    },
+    {
+      "title": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm",
+      "summary": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
+      "source": "Federal Reserve",
+      "category": "宏观数据",
+      "published": "2026-11-12T16:00:00+00:00"
+    },
+    {
+      "title": "见闻历11.11大促最后1天！买日历送超千元知识礼包，送什么都不如送“搞钱的智慧”！",
+      "link": "https://wallstreetcn.com/articles/3782813",
+      "summary": "本文来自华尔街见闻，欢迎下载APP查看更多",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-12T15:56:54+00:00"
+    },
+    {
+      "title": "美国成屋销售跌至16年低点，高利率与通胀持续压制购房需求",
+      "link": "https://wallstreetcn.com/articles/3785831",
+      "summary": "美国成屋市场持续承压，10月销售量降至2010年以来最低水平，房贷利率高企与顽固通胀令潜在买家望而却步。 全国房地产经纪人协会（NAR）周四公布数据显示， 10月成屋成交量环比下滑5.5%，折年率降至375万套。西部地区销售跌至1999年有记录以来最低，南部和中西部亦创逾十年新低。 尽管市场需求大幅萎缩，但库存上升与价格松动迹象正逐步浮现，或为疲软的市场带来一丝转机。NAR首席经济学家Lawrence Yun表示， 若房贷利率出现回落，当前受压抑的购房需求或将大规模释放。 高利率与通胀夹击，买家观望情绪浓厚 7%以上的房贷利率与持续高企的通胀是此轮成屋销售下滑的核心驱动因素。 对于大多数潜在买",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-12T15:40:03+00:00"
+    },
     {
       "title": "Chinese Workers Are Paying Their Own AI Bills to Stay Productive",
       "link": "https://www.tmtpost.com/8203536.html",
@@ -9,30 +257,6 @@
       "source": "钛媒体",
       "category": "产业科技",
       "published": "2026-11-12T13:42:07+00:00"
-    },
-    {
-      "title": "It’s not ‘Medicare for All,’ but ‘Medicare for More.’ What this could mean for workers over 50.",
-      "link": "https://www.marketwatch.com/story/its-not-medicare-for-all-but-medicare-for-more-what-this-could-mean-for-workers-over-50-4a5c51a3?mod=mw_rss_topstories",
-      "summary": "A new bill would lower the Medicare age to 50, expanding coverage to an additional 60 million adults",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-12T13:38:00+00:00"
-    },
-    {
-      "title": "Nebius Q3业绩超预期，资本开支升至270亿美元、ARR目标延期，股价盘前跌逾14% | 财报见闻",
-      "link": "https://wallstreetcn.com/articles/3785826",
-      "summary": "AI云计算公司Nebius Group公布第三季度业绩，营收与利润双双超出市场预期，但ARR增长指引下调与资本开支大幅上调的组合，令投资者对其盈利路径产生疑虑，股价盘前一度跌逾14%。 Nebius三季度营收达9.81亿美元，较市场预期的9.19亿美元高出约6.7%；调整后EBITDA为4.66亿美元，亦大幅超出预期的3.57亿美元。 然而，公司将年化经常性收入（ARR）目标从此前承诺的\"2026年12月前达到70亿至90亿美元\"下调至\"2027年2月前达到70亿美元以上\"，与此同时，公司还表示\"ARR不再是衡量业务的正确指标\"， 令外界对其战略方向的清晰度产生质疑。 值得注意的是，同日半导体",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-12T13:32:11+00:00"
-    },
-    {
-      "title": "黄仁勋丑闻持续发酵，美股盘前英伟达大跌9%，纳指期货下跌1.4%，Nebius绩后跌13%，油价短线上扬",
-      "link": "https://wallstreetcn.com/articles/3785806",
-      "summary": "英伟达的管理层危机把风险从一家公司扩散到整条人工智能供应链，投资者不得不重新为今年最拥挤的交易定价。 周四，美股期货下挫，纳斯达克100指数期货跌1.4%，标普500指数期货跌0.7%，道指期货跌0.2%。存储芯片股普跌，SK海力士跌约4%，闪迪跌约4%。光通信股普跌，Coherent跌约4%，Lumentum跌约4%。Nebius美股盘前跌幅扩大至13%。 布伦特原油5分钟内上涨1.21美元/桶，报93.28美元/桶；WTI原油5分钟内上涨1.2美元/桶，报86.89美元/桶。特朗普称，我们不需要与伊朗达成协议。 美股期货下挫，纳斯达克100指数期货跌1.4%，标普500指数期货跌0.7%，",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-12T13:26:53+00:00"
     },
     {
       "title": "今天起，豆包工作接入更多模型了",
@@ -51,38 +275,6 @@
       "published": "2026-11-12T13:23:09+00:00"
     },
     {
-      "title": "特朗普称美国不需要与伊朗达成协议，油价直线拉升",
-      "link": "https://wallstreetcn.com/articles/3785827",
-      "summary": "特朗普表示美国无需与伊朗达成协议，令中东局势前景更趋不明朗，市场对该地区供应风险的担忧重燃。 据央视新闻，当地时间11月12日， 美国总统特朗普表示，美国不需要与伊朗达成协议。 特朗普称，那样的日子早已过去。他声称，美国已经掌握了伊朗数千亿美元的资金以及霍尔木兹海峡。 话音一落，原油直线拉升，布油转涨，截至发稿，日内涨幅超过1%。 特朗普表示，副总统JD·万斯应把重点放在国内事务上，尤其是调查美国各地由民主党掌管的城市和州所涉腐败问题。而据媒体此前报道， 万斯正考虑与伊朗强硬派安全官员Mohsen Rezaei进行直接会谈 ，特朗普已向幕僚和外国对应方表示，支持万斯重启对伊谈判并授权其主导这一",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-12T13:20:55+00:00"
-    },
-    {
-      "title": "Wendy’s rejects a takeover offer, scales back breakfast and still sees its stock surge",
-      "link": "https://www.marketwatch.com/story/wendys-rejects-a-takeover-offer-scales-back-breakfast-and-still-sees-its-stock-surge-4e398cde?mod=mw_rss_topstories",
-      "summary": "Wendy’s plans to go it alone, and analysts say the company has “significant work ahead.”",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-12T13:05:00+00:00"
-    },
-    {
-      "title": "The world’s most sophisticated drug companies are putting billions into vaccines — despite the political environment",
-      "link": "https://www.marketwatch.com/story/the-worlds-most-sophisticated-drug-companies-are-putting-billions-into-vaccines-despite-the-political-environment-8dcbf276?mod=mw_rss_topstories",
-      "summary": "Look at the promising data for Moderna and Merck’s experimental cancer vaccine and the research suggesting the shingles vaccine can delay dementia.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-12T13:00:00+00:00"
-    },
-    {
-      "title": "How the U.S. government’s equity holdings have surged during Trump’s second term — in one chart",
-      "link": "https://www.marketwatch.com/story/how-the-u-s-governments-equity-holdings-have-surged-during-trumps-second-term-in-one-chart-b598c369?mod=mw_rss_topstories",
-      "summary": "41 companies have made deals that grant stakes to the Trump administration, and some could face probes from the new Congress",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-12T13:00:00+00:00"
-    },
-    {
       "title": "艾迪药业定增再砍6600万：管线分文未动，补流空间进一步压缩",
       "link": "https://www.tmtpost.com/8203361.html",
       "summary": "从12.77亿元首版方案，到9.45亿元，再落到如今8.79亿元，大半年时间里，这轮定增经历两轮规模压缩。",
@@ -91,92 +283,12 @@
       "published": "2026-11-12T12:57:08+00:00"
     },
     {
-      "title": "伊朗强硬派高官：美军若再袭击，其欧洲基地也将成为打击目标",
-      "link": "https://wallstreetcn.com/articles/3785824",
-      "summary": "伊朗最高安全官员发出迄今最强硬的军事警告，将潜在打击目标范围扩大至欧洲境内的美军基地，令中东局势紧张态势进一步向外蔓延，并对全球能源市场构成新的不确定性压力。 据央视新闻12日报道，伊朗最高国家安全委员会秘书雷扎伊（Mohsen Rezaei）在11月11日播出的采访中表示，如果美国再次对伊朗发动军事打击，伊朗将把打击范围扩大至欧洲境内的美军基地。他明确警告： \"如果美国军机从欧洲国家的美军基地起飞轰炸伊朗，我们也将打击那些基地。\"雷扎伊同时否认伊朗正与美国进行任何谈判，称相关报道是\"谎言\"，并强调在伊方七项条件得到满足之前，霍尔木兹海峡将继续关闭。 上述表态令市场对中东局势的风险溢价预期升温",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-12T12:56:02+00:00"
-    },
-    {
-      "title": "The ‘bank of Nvidia’ is in jeopardy, threatening the entire AI boom",
-      "link": "https://www.marketwatch.com/story/jensen-huang-built-nvidia-into-a-behemoth-his-scandal-puts-the-entire-ai-boom-in-jeopardy-c374b079?mod=mw_rss_topstories",
-      "summary": "Huang fueled his company and the AI ecosystem with advanced chips and creative financing deals across the supply chain. What happens if he’s gone?",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-12T12:55:00+00:00"
-    },
-    {
-      "title": "百度想重构大模型调度的入口",
-      "link": "https://wallstreetcn.com/articles/3785825",
-      "summary": "11月12日的百度世界大会上，李彦宏谈起了大模型市场里的一门常见的生意——中转站的商业痛点。 “这些中转站它们把各种模型提供方聚合起来，提供给开发者来调用，但它们并不对模型的效果、服务的稳定性、响应速度等负责，甚至有时候这个模型的真实性都无从考证，它如果说用一个flash来代替，或者它生成一个Pro版本基本上也不会在中转站遇到什么阻力。” 模型厂商和第三方推理服务商越来越多，同一款模型往往有多个供应渠道，价格和服务表现各不相同，增加了开发者的选型成本。一批中转平台由此出现，通过聚合模型资源、提供统一接口，向开发者出售调用服务。 针对这一痛点，百度推出了自己的大模型交易平台词元所。词元所产品经理",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-12T12:46:12+00:00"
-    },
-    {
-      "title": "Nvidia’s Jensen Huang crisis tests how much of the AI industry depends on one man",
-      "link": "https://www.marketwatch.com/story/nvidias-jensen-huang-dilemma-is-a-test-of-the-ai-industrys-dependence-on-one-flawed-man-a9a1d99c?mod=mw_rss_topstories",
-      "summary": "Huang’s exit could fray tight bonds among AI businesses. Plus, Oracle’s potential AI catalyst, a $1.5 trillion Social Security stock proposal and what the oil-yield split may mean for inflation.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-12T12:29:00+00:00"
-    },
-    {
-      "title": "霍华德·马克斯：一个外行对AI的思考，谁能从AI投资中赚到钱？",
-      "link": "https://wallstreetcn.com/articles/3785818",
-      "summary": "橡树资本联合创始人霍华德·马克斯（Howard Marks）在最新备忘录中，以一个\"外行\"的视角系统梳理了围绕人工智能投资的核心问题。他的结论并不乐观： AI投资涉及的关键变量数量异常庞大，预测难度远超以往任何一次技术革命，而真正能从中获利的究竟是谁，目前在很大程度上仍是一个信仰问题。 马克斯在备忘录中援引Anthropic旗下AI模型Claude的评估指出， AI整体的可预测性评分仅为3分（满分10分）。其中，技术方向的可预测性尚可达到6、7分，但投资者真正关心的问题——盈利速度、利润规模以及利润归属——可预测性仅约2分。这一判断直接指向AI投资的核心困境：方向清晰，但回报高度不确定。 马克",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-12T11:52:58+00:00"
-    },
-    {
       "title": "Alibaba’s Chip Unit Heads for Hong Kong With Cloud Still in the Way",
       "link": "https://www.tmtpost.com/8203405.html",
       "summary": "Alibaba plans to list T-Head in Hong Kong after eight years inside the group. The unit has real silicon and a slice of China’s AI accelerator market. Investors still cannot see a clean chip-company P&L, because most demand runs through Alibaba Cloud.",
       "source": "钛媒体",
       "category": "产业科技",
       "published": "2026-11-12T11:46:05+00:00"
-    },
-    {
-      "title": "Tech stocks may soon enjoy a ‘violent bounce’ — but one strategist warns investors not to take the bait",
-      "link": "https://www.marketwatch.com/story/tech-stocks-may-soon-enjoy-a-violent-bounce-but-one-strategist-warns-investors-not-to-take-the-bait-1a41f9c4?mod=mw_rss_topstories",
-      "summary": "Jim Thorne, Wellington-Altus Private Wealth’s chief market strategist, says investors should not get tempted too fast into a tech stock bounce.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-12T11:34:00+00:00"
-    },
-    {
-      "title": "Scout Motors has 212,000 vehicle reservations as $2 billion South Carolina plant nears completion",
-      "link": "https://www.cnbc.com/2026/11/12/scout-motors-reservations-south-carolina-plant.html",
-      "summary": "Scout Motors has roughly 212,000 reservations for its Terra pickup and Traveler SUV, CEO Scott Keogh told CNBC.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-12T11:30:01+00:00"
-    },
-    {
-      "title": "伯恩斯坦：为什么现在绝对不能抄底英伟达？",
-      "link": "https://wallstreetcn.com/articles/3785817",
-      "summary": "华尔街顶级券商伯恩斯坦（Bernstein）将英伟达股票评级从\"跑赢大市\"下调至\"与大市同步\"，目标价从400美元腰斩至200美元。触发此次下调的，不是基本面恶化，而是一场席卷公司最高层、仍在持续发酵的管理层丑闻。 目前，关于英伟达CEO黄仁勋的丑闻不断蔓延，公司董事会已宣布启动独立调查，《华尔街日报》更进一步报道称，公司正准备将其解职。伯恩斯坦分析师Stacy A. Rasgon在报告中直言： 在新的指控面前，董事会几乎不可能让黄仁勋留任；即便是在位，持续曝光的风险同样不容忽视。 在此背景下，伯恩斯坦认为， 尽管英伟达股价已跌至\"近乎荒诞的低估\"水平，但仍强烈建议投资者暂时袖手旁观。公司基本",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-12T11:27:48+00:00"
-    },
-    {
-      "title": "山姆399元羽绒服的采购账",
-      "link": "https://wallstreetcn.com/articles/3785815",
-      "summary": "11月11日，一款售价399.9元、充绒量300克的羽绒服，让山姆再次登上微博热搜。 这款羽绒服来自ROKKA&ROLLA，男款售价399.9元，女款售价499.9元。武汉一家山姆门店的工作人员称，商品早在10月就已上架，近期女款全部售完，男款也只剩部分尺码。 山姆卖断货的羽绒服，去年冬天就火过一次。 2025年，同系列一款充绒量400克、售价499.9元的女款羽绒服，也曾在多地出现断货。今年399.9元的男款，价格进一步下探，成为山姆服装货架上又一款热门商品。 一件400元以内的长款羽绒服，价格究竟能压到多低，与原料成本、产品配置和供应商的经营方式都有关系。山姆对商品规格和采购渠道的影响，也",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-12T11:11:25+00:00"
-    },
-    {
-      "title": "Here’s what Megaspeed, the company at the forefront of the Nvidia scandal, is now saying",
-      "link": "https://www.marketwatch.com/story/heres-what-megaspeed-the-company-at-the-forefront-of-the-nvidia-scandal-is-now-saying-b73f8d0b?mod=mw_rss_topstories",
-      "summary": "The Singaporean company Megaspeed, at the center of the scandal engulfing Nvidia, on Thursday issued its first public statement since the scandal erupted.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-12T10:57:00+00:00"
     },
     {
       "title": "替公募海外调研买单，国盛证券踩中连环雷",
@@ -243,92 +355,12 @@
       "published": "2026-11-12T10:22:22+00:00"
     },
     {
-      "title": "I inherited $1.4 million from my father. Am I wrong to ask my husband of 25 years for a postnuptial agreement?",
-      "link": "https://www.marketwatch.com/story/i-inherited-1-4-million-from-my-father-am-i-wrong-to-ask-my-husband-of-25-years-for-a-postnuptial-agreement-b739c51d?mod=mw_rss_topstories",
-      "summary": "“He has always said he wants his daughter to inherit a chunk of his estate, and I’ve never objected to that.”",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-12T10:15:00+00:00"
-    },
-    {
-      "title": "Alice开始走出wind终端",
-      "link": "https://wallstreetcn.com/articles/3785813",
-      "summary": "11月10日，万得为终端之外的个人用户，开出了一张新的价目表。 这一天，Alice Market上线个人订阅。用户可以购买套餐，在自己常用的AI里调用万得的数据和工具。研究从别人的界面开始，专业服务仍然向万得购买。 这个连接外部AI的平台，属于金融智能品牌Alice。10月，这个从万得终端中成长起来的智能金融助理，刚刚以独立品牌、官网和新的业务分工走到台前。 一张订阅账单背后，是万得过去半年不断加快的动作。 3月，Alice推出个人版，WindClaw也向个人投资者开放； 7月，万得成立全资子公司万得艾思； 到了秋天，此前并行的产品开始收拢，WindClaw并入Alice，最初分散在不同入口的",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-12T10:13:56+00:00"
-    },
-    {
-      "title": "10月新能源重卡渗透率超50%，快充和换电向干线延伸",
-      "link": "https://wallstreetcn.com/articles/3785812",
-      "summary": "新能源在重卡领域的渗透率正在快速攀升。 11月11日，中国汽车工业协会发布数据显示，10月我国新能源重卡单月渗透率超过50%，新能源车型在当月重卡新车销量中已占多数。 中国汽车技术研究中心同日披露，新一代新能源重卡进入量产阶段，满载续航可达500公里级，兆瓦超充和快速换电等补能方式也在向高速干线延伸。 重卡电动化已经带动电池装机增长。 高工产业研究院根据交强险数据统计，2026年前三季度，国内新能源重卡用锂电池装机量达97.8吉瓦时，同比增长75%，超过2025年全年的94.8吉瓦时。电池企业也开始针对港口短倒、矿区重载和高速干线，分别设计产品。 10月20日，宁德时代发布四款天行Ⅱ重卡充电电",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-12T10:12:35+00:00"
-    },
-    {
-      "title": "大众搁置沃尔夫斯堡压铸项目，燃油高尔夫迁产再起争议",
-      "link": "https://wallstreetcn.com/articles/3785811",
-      "summary": "大众在沃尔夫斯堡的工厂改造计划生变。 据大众职工委员会透露，沃尔夫斯堡主工厂的新压铸车间原定于11月中旬动工。 11月11日，大众向外确认，公司将不再按原计划实施“Gamechanger”制造方案。原拟建设的大型压铸中心随之搁置。大众发言人表示，集团正审查各项投资，下一代电动车平台SSP仍将继续开发。 大型压铸是这次工厂改造的重要组成部分。它把原本需要拼装的多个车身零件整合成较大的铸件，可以减少装配工序，但要先投入厂房、设备和模具。大众原本计划在沃尔夫斯堡引入这套工艺，为本十年末投产的SSP车型做准备。 工厂改造也关系到2024年12月达成的劳资协议。按照当时的安排，大众计划到2030年在德国",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-12T10:10:45+00:00"
-    },
-    {
-      "title": "EnerSys数据中心业务两位数增长，UPS锂电方案获首单",
-      "link": "https://wallstreetcn.com/articles/3785810",
-      "summary": "数据中心需求正在带动EnerSys的基础设施业务增长。 北京时间11月12日凌晨，美国工业电池厂商EnerSys公布2027财年第二季度（2026年7月6日 – 2026年10月4日）业绩。截至10月4日，公司季度净销售额为9.499亿美元，同比下降0.1%，低于此前给出的9.55亿至9.95亿美元指引。公司将营收微降和未达指引归因于汇率折算。 三项业务的表现分化。网络与基础设施解决方案部门录得4.49亿美元收入，同比增长3.3%，其中数据中心业务保持两位数增长。精密电源解决方案收入增长21%，军用电源等产品需求提供了支撑。面向叉车等设备的工业动力解决方案收入下降7.8%，物料搬运业务仍承压。",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-12T10:09:35+00:00"
-    },
-    {
-      "title": "Nvidia’s stock drops as the board reportedly prepares to remove CEO Jensen Huang",
-      "link": "https://www.marketwatch.com/story/nvidias-stock-drops-as-the-board-reportedly-prepares-to-remove-ceo-jensen-huang-9edee58d?mod=mw_rss_topstories",
-      "summary": "Nvidia’s board of directors reportedly met late Wednesday to determine the CEO’s fate.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-12T10:07:00+00:00"
-    },
-    {
-      "title": "奔驰在中国碰了壁，康林松却要更靠中国",
-      "link": "https://wallstreetcn.com/articles/3785809",
-      "summary": "作者 | 周智宇 四年前，康林松在法国蔚蓝海岸为奔驰定下了一门生意经：把超过四分之三的投资投向核心豪华和高端豪华车型，靠卖更贵的车赚更多的钱。如今到了中国，他仍想守住奔驰的身价，只是得先想办法，把一辆奔驰造得便宜些。 当地时间11月11日，梅赛德斯-奔驰集团董事会主席康林松在柏林参加德国《汽车周刊》大会时表示，奔驰愿意接受一部分销量损失，以稳住成交价，让经销商有钱可赚。但在中国造车，奔驰的成本也得降到本地同行的水平。 同一天，在《南德意志报》的论坛上，他把话说得更直白。过去近二十年，奔驰从不同地区的工厂调来零部件，再在中国组装。这套办法曾帮奔驰做大了中国生意，如今已经行不通了。明年下半年在华投",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-12T09:59:33+00:00"
-    },
-    {
-      "title": "捷豹路虎诉比亚迪，法院却下令销毁被扣文件",
-      "link": "https://wallstreetcn.com/articles/3785808",
-      "summary": "作者 | 周智宇 当地时间11月11日，荷兰海牙地区法院解除了对比亚迪方程豹钛7相关文件的扣押。三个月前申请保全这批文件的捷豹路虎，如今须在裁定送达后24小时内，通知司法执行人员或保管人销毁被扣数据。销毁完成后，捷豹路虎还须在24小时内向比亚迪提交证明。 荷兰海牙地区法院法官认为，捷豹路虎要证明钛7侵犯了路虎卫士的外观设计权，无须查阅比亚迪的内部文件。要核算销售损失，同样用不上这批资料。截至裁定时，比亚迪在欧盟还没有卖出一辆钛7。至于钛7是否侵犯卫士的外观设计权，法院此次未作裁决。 比亚迪Ti7现阶段尚未在欧盟市场上市销售，也是法院认定本次大规模取证关联性不足的重要考量。这也释放出清晰信号：海",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-12T09:58:12+00:00"
-    },
-    {
-      "title": "“拯救黄仁勋”！马斯克等硅谷大佬集体声援：调查结束前不应解雇",
-      "link": "https://wallstreetcn.com/articles/3785804",
-      "summary": "一桩个人私德风波，正在演变为牵动公司治理、股东权利与AI交易走向的市场事件。 当地时间11月11日晚间，《纽约时报》曝出黄仁勋的第二段婚外情——与下属金伯利·鲍威尔的恋爱关系。随后《华尔街日报》报道，英伟达董事会已成立由独立董事主导、外部律师参与的调查委员会，并正在准备解除黄仁勋的职务。 部分董事倾向由首席财务官Colette Kress出任过渡期CEO，同时公司已委托外部猎头机构启动新CEO搜寻工作。 面对潜在的领导层更迭，多位科技巨头与风投机构高管通过社交媒体平台呼吁英伟达董事会保持克制。 Atreides Management管理合伙人兼首席投资官Gavin Baker提出 “调查结束后",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-12T09:46:06+00:00"
-    },
-    {
       "title": "机器人泡沫在老股市场漏了气",
       "link": "https://www.tmtpost.com/8203031.html",
       "summary": "具身智能融资仍热，星尘智能新一轮 10 亿、估值 150 亿；但部分老股东按上轮估值六五至八折出让老股，买家谨慎。新资金看能否量产和订单能否接续，老股看谁等得起，退出预期先松动。",
       "source": "钛媒体",
       "category": "产业科技",
       "published": "2026-11-12T09:42:30+00:00"
-    },
-    {
-      "title": "聊聊中国版MUSE：蚂蚁灵光2.0，支付宝，超级App的生态优势与挑战",
-      "link": "https://www.tmtpost.com/8203056.html",
-      "summary": "对话蚂蚁灵光CTO。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-12T09:42:22+00:00"
     },
     {
       "title": "Feds arrest top official of healthcare company, alleging illegal drug importation",
@@ -435,14 +467,6 @@
       "published": "2026-11-09T19:35:58+00:00"
     },
     {
-      "title": "Honda to invest $3 billion in new vehicle assembly plant in Ohio",
-      "link": "https://www.cnbc.com/2026/11/09/honda-to-invest-3-billion-in-new-vehicle-assembly-plant-in-ohio.html",
-      "summary": "The Japanese automaker said the plant will focus on hybrid vehicles and is expected to begin production in 2029.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-09T18:59:43+00:00"
-    },
-    {
       "title": "Goldman CEO Solomon says AI financing remains strong despite market jitters",
       "link": "https://www.cnbc.com/2026/11/09/goldman-ceo-ai-financing-market.html",
       "summary": "Goldman CEO David Solomon says investor appetite for AI infrastructure remains strong despite a reset in AI stocks and political uncertainty around data centers.",
@@ -537,30 +561,6 @@
       "source": "Federal Reserve",
       "category": "宏观数据",
       "published": "2026-10-02T20:00:00+00:00"
-    },
-    {
-      "title": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
-      "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm",
-      "summary": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
-      "source": "Federal Reserve",
-      "category": "宏观数据",
-      "published": "2026-10-02T15:00:00+00:00"
-    },
-    {
-      "title": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
-      "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm",
-      "summary": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
-      "source": "Federal Reserve",
-      "category": "宏观数据",
-      "published": "2026-09-30T13:00:00+00:00"
-    },
-    {
-      "title": "Agencies publish resolution plan feedback letters for 15 banking organizations",
-      "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260929a.htm",
-      "summary": "Agencies publish resolution plan feedback letters for 15 banking organizations",
-      "source": "Federal Reserve",
-      "category": "宏观数据",
-      "published": "2026-09-29T20:00:00+00:00"
     }
   ]
 }
