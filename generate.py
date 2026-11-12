@@ -108,27 +108,20 @@ def build_report_cards(reports):
 
 
 def build_sentiment_html(data):
-    if not data or not data.get("indices"):
+    if not data:
         return '<div class="empty">还没有市场情绪数据。</div>'
 
     updated = html.escape(data.get("updated", ""))
-    indices = data.get("indices", [])
+    main_net_buy = data.get("main_net_buy", 0)
     breadth = data.get("breadth", {})
-    capital_flow = data.get("capital_flow", 0)
+    inflow = data.get("sector_inflow_top10", [])
+    outflow = data.get("sector_outflow_top10", [])
 
-    # 1. 指数卡片
-    idx_html = ""
-    for idx in indices:
-        change = idx.get("change", 0)
-        color = "#ef4444" if change > 0 else "#10b981" if change < 0 else "#6b7280"
-        idx_html += f'''
-        <div class="idx-item">
-          <div class="idx-name">{html.escape(idx.get("name", ""))}</div>
-          <div class="idx-price" style="color: {color};">{idx.get("price", 0)}</div>
-          <div class="idx-change" style="color: {color};">{change:+.2f}%</div>
-        </div>'''
+    # 顶部总资金流向颜色和显示
+    flow_color = "#ef4444" if main_net_buy > 0 else "#10b981" if main_net_buy < 0 else "#6b7280"
+    flow_text = f"+{main_net_buy} 亿" if main_net_buy > 0 else f"{main_net_buy} 亿"
 
-    # 2. 涨跌家数
+    # 涨跌家数进度条
     up = breadth.get("up", 0)
     down = breadth.get("down", 0)
     flat = breadth.get("flat", 0)
@@ -151,27 +144,51 @@ def build_sentiment_html(data):
     </div>
     '''
 
-    # 3. 主力资金
-    flow_color = "#ef4444" if capital_flow > 0 else "#10b981" if capital_flow < 0 else "#6b7280"
-    flow_text = f"+{capital_flow} 亿" if capital_flow > 0 else f"{capital_flow} 亿"
-    
-    flow_html = f'''
-    <div class="flow-container">
-      <div class="flow-title">主力资金净流入</div>
-      <div class="flow-value" style="color: {flow_color};">{flow_text}</div>
-    </div>
-    '''
+    # 行业资金流榜单构造
+    def build_sector_rows(sectors):
+        rows = ""
+        for s in sectors:
+            name = html.escape(s.get("name", ""))
+            change = s.get("change", 0)
+            net = s.get("main_net", 0)
+            net_color = "#ef4444" if net > 0 else "#10b981" if net < 0 else "#6b7280"
+            net_text = f"+{net} 亿" if net > 0 else f"{net} 亿"
+            rows += f'''
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+              <div style="flex: 1;">
+                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">{name}</span>
+                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">{change:+.2f}%</span>
+              </div>
+              <div style="font-size: 14px; font-weight: bold; color: {net_color};">{net_text}</div>
+            </div>'''
+        return rows or '<div style="color: #98989d; font-size: 13px; padding: 16px 0;">暂无数据</div>'
+
+    inflow_html = build_sector_rows(inflow)
+    outflow_html = build_sector_rows(outflow)
 
     return f'''
     <div class="sentiment-dashboard">
       <div class="sentiment-time">实时数据更新于：{updated}</div>
-      <div class="idx-row">
-        {idx_html}
+
+      <!-- 新增：顶部核心资金流向看板 -->
+      <div style="text-align: center; margin-bottom: 24px; background: #f9fafb; padding: 20px 0; border-radius: 12px;">
+        <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px;">两市主力资金净流入</div>
+        <div style="font-size: 42px; font-weight: bold; color: {flow_color}; letter-spacing: -1px;">{flow_text}</div>
       </div>
-      <div class="sentiment-panel">
-        {flow_html}
-        <div style="border-top: 1px solid #eee; margin: 16px 0;"></div>
+
+      <div style="margin-bottom: 28px;">
+        <div style="font-size: 14px; color: #6e6e73; margin-bottom: 12px;">全市场涨跌分布</div>
         {breadth_html}
+      </div>
+
+      <div style="margin-bottom: 28px;">
+        <div style="font-size: 16px; font-weight: bold; color: #1d1d1f; margin-bottom: 12px; border-left: 4px solid #ef4444; padding-left: 8px;">主力净流入 TOP10 行业</div>
+        {inflow_html}
+      </div>
+
+      <div>
+        <div style="font-size: 16px; font-weight: bold; color: #1d1d1f; margin-bottom: 12px; border-left: 4px solid #10b981; padding-left: 8px;">主力净流出 TOP10 行业</div>
+        {outflow_html}
       </div>
     </div>
     '''
@@ -276,18 +293,7 @@ h2 a:hover {{ text-decoration: underline; }}
 /* 情绪看板专属样式 */
 .sentiment-dashboard {{ background: #fff; border-radius: 14px; padding: 16px; box-shadow: 0 1px 2px rgba(0, 0, 0, .04); }}
 .sentiment-time {{ text-align: center; font-size: 12px; color: #98989d; margin-bottom: 16px; }}
-.idx-row {{ display: flex; justify-content: space-between; margin-bottom: 16px; gap: 8px; }}
-.idx-item {{ flex: 1; text-align: center; background: #f9fafb; padding: 12px 8px; border-radius: 10px; }}
-.idx-name {{ font-size: 13px; color: #6e6e73; margin-bottom: 4px; }}
-.idx-price {{ font-size: 18px; font-weight: bold; margin-bottom: 4px; }}
-.idx-change {{ font-size: 14px; font-weight: 500; }}
-
-.sentiment-panel {{ padding: 8px 0; }}
-.flow-container {{ text-align: center; margin-bottom: 16px; }}
-.flow-title {{ font-size: 14px; color: #6e6e73; margin-bottom: 8px; }}
-.flow-value {{ font-size: 28px; font-weight: bold; }}
-
-.breadth-container {{ margin-top: 16px; }}
+.breadth-container {{ margin-top: 8px; }}
 .breadth-bar {{ display: flex; height: 12px; border-radius: 6px; overflow: hidden; background: #e5e7eb; margin-bottom: 12px; }}
 .bar-up {{ background: #ef4444; }}
 .bar-down {{ background: #10b981; }}
@@ -302,8 +308,8 @@ h2 a:hover {{ text-decoration: underline; }}
   .tab-btn {{ color: #98989d; }}
   .tab-btn.active {{ color: #f5f5f7; border-bottom-color: #f5f5f7; }}
   .meta span[style*="color: #1d1d1f;"] {{ color: #f5f5f7 !important; }}
-  .idx-item {{ background: #2c2c2e; }}
   .breadth-bar {{ background: #3a3a3c; }}
+  .sentiment-dashboard div[style*="background: #f9fafb;"] {{ background: #2c2c2e !important; }}
 }}
 </style>
 </head>
