@@ -37,6 +37,9 @@ jobs:
       - name: 抓取研报
         run: python fetch_reports.py
 
+      - name: 抓取市场情绪
+        run: python fetch_sentiment.py
+
       - name: 生成网页
         run: python generate.py
 
