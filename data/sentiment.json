@@ -1,26 +1,8 @@
 {
-  "updated": "2026-11-12 08:08",
-  "indices": [
-    {
-      "name": "上证指数",
-      "price": 3655.83,
-      "change": -0.67
-    },
-    {
-      "name": "深证成指",
-      "price": 11197.98,
-      "change": -1.68
-    },
-    {
-      "name": "创业板指",
-      "price": 2509.43,
-      "change": -2.44
-    }
-  ],
-  "breadth": {
-    "up": 0.0,
-    "down": 0.0,
-    "flat": 100
-  },
-  "capital_flow": -739.41
+  "updated": "2026-11-12 08:46",
+  "panic_index": null,
+  "suggested_position": null,
+  "main_net_buy": 0.0,
+  "sector_panic_top5": [],
+  "market_theme": ""
 }
