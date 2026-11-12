@@ -4,47 +4,51 @@ import os
 from datetime import datetime
 
 def fetch_market_sentiment():
-    # 伪装请求头
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     }
 
     sentiment_data = {
         "updated": datetime.now().strftime("%Y-%m-%d %H:%M"),
-        "indices": [],
-        "breadth": {"up": 0, "down": 0, "flat": 0},
-        "capital_flow": 0.0
+        "panic_index": None,
+        "suggested_position": None,
+        "main_net_buy": 0.0,
+        "sector_panic_top5": [],
+        "market_theme": ""
     }
 
     try:
-        # 1. 抓取三大指数（上证、深证、创业板）的实时行情和主力净流入
-        # f12:代码, f14:名称, f2:最新价, f3:涨跌幅, f62:主力净流入
-        idx_url = "https://push2.eastmoney.com/api/qt/ulist.np/get?fltt=2&secids=1.000001,0.399001,0.399006&fields=f12,f14,f2,f3,f62"
-        idx_res = requests.get(idx_url, headers=headers, timeout=10).json()
-        
-        total_main_flow = 0
-        if idx_res.get("data") and idx_res["data"].get("diff"):
-            for item in idx_res["data"]["diff"]:
-                flow = item.get("f62", 0)
-                total_main_flow += flow
-                sentiment_data["indices"].append({
-                    "name": item.get("f14", ""),
-                    "price": item.get("f2", 0),
-                    "change": item.get("f3", 0)
-                })
-        # 主力净流入转换为“亿”为单位
-        sentiment_data["capital_flow"] = round(total_main_flow / 100000000, 2)
+        # 1. 实时恐贪情绪 + 仓位建议
+        panic_url = "https://emdc.eastmoney.com/api/qt/panicindexst"  # 示意端点
+        panic_res = requests.get(panic_url, headers=headers, timeout=10).json()
+        if panic_res.get("data"):
+            sentiment_data["panic_index"] = panic_res["data"].get("panicIndex")
+            sentiment_data["suggested_position"] = panic_res["data"].get("suggestPosition")
 
-        # 2. 抓取全市场涨跌家数 (f104:上涨, f105:下跌, f106:平盘)
-        # 以上证指数（1.000001）的市场统计代表全市场概况
-        breadth_url = "https://push2.eastmoney.com/api/qt/stock/get?secid=1.000001&fields=f104,f105,f106"
-        breadth_res = requests.get(breadth_url, headers=headers, timeout=10).json()
-        if breadth_res.get("data"):
-            sentiment_data["breadth"] = {
-                "up": breadth_res["data"].get("f104", 0),
-                "down": breadth_res["data"].get("f105", 0),
-                "flat": breadth_res["data"].get("f106", 0)
-            }
+        # 2. 主力净买额
+        netbuy_url = "https://datacenter-web.eastmoney.com/api/data/v1/get?reportName=RPT_MRRKET_FINNETBUYAMT1Y"  # 示意端点
+        netbuy_res = requests.get(netbuy_url, headers=headers, timeout=10).json()
+        if netbuy_res.get("result") and netbuy_res["result"].get("data"):
+            item = netbuy_res["result"]["data"][0]
+            sentiment_data["main_net_buy"] = round(item.get("NET_BUY_AMT", 0) / 100000000, 2)
+
+        # 3. 板块恐贪榜 Top5
+        bk_url = "https://emdc.eastmoney.com/api/qt/panicbklist"  # 示意端点
+        bk_res = requests.get(bk_url, headers=headers, timeout=10).json()
+        if bk_res.get("data"):
+            sectors = sorted(bk_res["data"], key=lambda x: x.get("panicValue", 0))
+            for s in sectors[:5]:
+                sentiment_data["sector_panic_top5"].append({
+                    "name": s.get("bkName", ""),
+                    "panic": s.get("panicValue", 0)
+                })
+
+        # 4. 市场主线
+        theme_url = "https://emdc.eastmoney.com/api/qt/panicMThemeList"  # 示意端点
+        theme_res = requests.get(theme_url, headers=headers, timeout=10).json()
+        if theme_res.get("data"):
+            themes = [t.get("themeName", "") for t in theme_res["data"][:3]]
+            sentiment_data["market_theme"] = " / ".join(themes)
 
         return sentiment_data
 
@@ -58,9 +62,9 @@ def main():
         os.makedirs("data", exist_ok=True)
         with open("data/sentiment.json", "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        print(f"成功抓取市场情绪数据，主力净流入: {data['capital_flow']} 亿")
+        print(f"成功抓取情绪数据：恐贪 {data['panic_index']}，主力净买 {data['main_net_buy']} 亿")
     else:
-        print("市场情绪数据抓取失败，跳过保存。")
+        print("市场情绪数据抓取失败。")
 
 if __name__ == "__main__":
     main()
