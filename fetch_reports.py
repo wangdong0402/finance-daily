@@ -35,12 +35,9 @@ def fetch_eastmoney_reports():
             for item in data["data"]:
                 info_code = item.get("infoCode", "")
                 
-                # 【核心修复】：优先提取 PDF 原文件地址，如果没有则使用新版网页地址
-                pdf_url = item.get("pdfUrl")
-                if pdf_url:
-                    link = pdf_url
-                else:
-                    link = f"https://data.eastmoney.com/report/zw_stock.jshtml?infocode={info_code}"
+                # 【核心修复】：强制使用 PC 端单篇研报详情页链接，绕过手机端重定向
+                # 这个页面在手机打开会自动适配，且顶部直接有 PDF 预览按钮
+                link = f"https://data.eastmoney.com/report/info/{info_code}.html"
                 
                 reports.append({
                     "title": item.get("title", ""),
