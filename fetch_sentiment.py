@@ -18,22 +18,22 @@ def fetch_market_sentiment():
         "market_theme": ""
     }
 
-    # 1. 实时恐贪情绪 + 仓位建议（尝试 push2delay 域名）
+    # 1. 实时恐贪情绪 + 仓位建议（统一路径 + fn 参数 + GBK 解码）
     try:
-        url = "https://push2delay.eastmoney.com/api/qt/panicindexst"
-        res = requests.get(url, headers=headers, timeout=10)
+        url = "https://push2delay.eastmoney.com/api/qt/stock/get"
+        params = {"fn": "panicIndextrade"}
+        res = requests.get(url, params=params, headers=headers, timeout=10)
         res.raise_for_status()
-        # 恐贪类接口大概率是 GBK 编码
         data = json.loads(res.content.decode('gbk', errors='ignore'))
         raw = data.get("data")
         if isinstance(raw, dict):
-            sentiment_data["panic_index"] = raw.get("panicIndex") or raw.get("panic")
-            sentiment_data["suggested_position"] = raw.get("suggestPosition") or raw.get("position")
+            sentiment_data["panic_index"] = raw.get("panicIndex")
+            sentiment_data["suggested_position"] = raw.get("suggestPosition")
         print(f"[信息] 恐贪指数接口返回成功")
     except Exception as e:
         print(f"[警告] 恐贪指数接口异常: {e}")
 
-    # 2. 主力净买额（datacenter-web 域名）
+    # 2. 主力净买额（已成功，保持原样）
     try:
         url = "https://datacenter-web.eastmoney.com/api/data/v1/get"
         params = {
@@ -54,10 +54,11 @@ def fetch_market_sentiment():
     except Exception as e:
         print(f"[警告] 主力净买额接口异常: {e}")
 
-    # 3. 板块恐贪榜 Top5（尝试 push2delay 域名）
+    # 3. 板块恐贪榜 Top5（统一路径 + fn 参数 + UTF-8）
     try:
-        url = "https://push2delay.eastmoney.com/api/qt/panicbklist"
-        res = requests.get(url, headers=headers, timeout=10)
+        url = "https://push2delay.eastmoney.com/api/qt/stock/get"
+        params = {"fn": "panicbklist"}
+        res = requests.get(url, params=params, headers=headers, timeout=10)
         res.raise_for_status()
         data = res.json()
         if data.get("data"):
@@ -72,10 +73,11 @@ def fetch_market_sentiment():
     except Exception as e:
         print(f"[警告] 板块恐贪榜接口异常: {e}")
 
-    # 4. 市场主线（尝试 push2delay 域名）
+    # 4. 市场主线（统一路径 + fn 参数 + GBK 解码）
     try:
-        url = "https://push2delay.eastmoney.com/api/qt/panicMThemeList"
-        res = requests.get(url, headers=headers, timeout=10)
+        url = "https://push2delay.eastmoney.com/api/qt/stock/get"
+        params = {"fn": "panicMThemeList"}
+        res = requests.get(url, params=params, headers=headers, timeout=10)
         res.raise_for_status()
         data = json.loads(res.content.decode('gbk', errors='ignore'))
         if data.get("data"):
@@ -85,7 +87,7 @@ def fetch_market_sentiment():
     except Exception as e:
         print(f"[警告] 市场主线接口异常: {e}")
 
-    # 只要主力净买额或恐贪指数有一个拿到了，就保存
+    # 核心数据：只要恐贪指数或主力净买额有一个成功，就保存
     if sentiment_data["panic_index"] is None and sentiment_data["main_net_buy"] == 0.0:
         return None
 
