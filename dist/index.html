@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>每日财经</title>
+<title>个人财经终端</title>
 <style>
 :root { color-scheme: light dark; }
 * { box-sizing: border-box; }
@@ -19,12 +19,31 @@ header {
   backdrop-filter: blur(12px);
   background: rgba(245, 245, 247, .85);
   border-bottom: 1px solid rgba(0, 0, 0, .08);
-  padding: 16px 16px 12px;
+  padding: 16px 16px 0;
   z-index: 100;
 }
-.header-top { display: flex; justify-content: space-between; align-items: flex-start; }
+.header-top { margin-bottom: 12px; }
 h1 { font-size: 20px; margin: 0 0 4px; }
 .sub { font-size: 12px; color: #6e6e73; }
+.tabs {
+  display: flex;
+  gap: 20px;
+}
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #6e6e73;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+}
+.tab-btn.active {
+  color: #1d1d1f;
+  border-bottom-color: #1d1d1f;
+}
 main { padding: 12px 12px 32px; max-width: 760px; margin: 0 auto; }
 .card {
   background: #fff;
@@ -59,26 +78,91 @@ h2 a:hover { text-decoration: underline; }
   color: #6e6e73;
   font-size: 14px;
 }
-
 @media (prefers-color-scheme: dark) {
   body { background: #000; color: #f5f5f7; }
   header { background: rgba(0, 0, 0, .8); border-bottom-color: rgba(255, 255, 255, .12); }
   .sub, .meta { color: #98989d; }
   .card, .empty { background: #1c1c1e; box-shadow: none; }
   .summary { color: #d1d1d6; }
+  .tab-btn { color: #98989d; }
+  .tab-btn.active { color: #f5f5f7; border-bottom-color: #f5f5f7; }
+  .meta span[style*="color: #1d1d1f;"] { color: #f5f5f7 !important; }
 }
 </style>
 </head>
 <body>
 <header>
   <div class="header-top">
-    <div>
-      <h1>每日财经</h1>
-      <div class="sub">更新：2026-11-12 05:27 · 共 70 条</div>
-    </div>
+    <h1>个人财经终端</h1>
+    <div class="sub">更新：2026-11-12 07:25 · 共 70 条新闻</div>
+  </div>
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('news')" id="btn-news">每日新闻</button>
+    <button class="tab-btn" onclick="switchTab('reports')" id="btn-reports">券商研报</button>
   </div>
 </header>
 <main>
+  <div id="tab-news">
+    
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span>2026-11-12 06:36</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3785794" target="_blank" rel="noopener noreferrer">婚外情风波下、英伟达股价重挫，“大空头”：短期或是“绝佳交易”但长期仍看空</a></h2>
+          <p class="summary">英伟达深陷CEO婚外情丑闻，股价持续承压，市值蒸发规模已超越Meta整体市值。因做空英伟达而广为人知的投资人Michael Burry表示，短期内市场或将视此为一次“绝佳交易机会”，但他本人并不打算买入持有，且对英伟达的长期前景依然持悲观态度。 英伟达CEO 黄仁勋（Jensen Huang——在一封上周日（11月8日）发给员工的内部邮件中 坦承婚外情属实 。 消息曝光后，英伟达股价截至周二收盘已累计下跌近10%。叠加此前市场对AI过度投资的担忧，以及上周民主党赢得众参两院控制权后外界对更严格监管的预期，英伟达股价已较10月6日约243美元的历史高点累计下挫逾30%。 据Business In</p>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span>2026-11-12 06:26</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3785792" target="_blank" rel="noopener noreferrer">马斯克又发声：如果能聘请黄仁勋，那将是我的荣幸</a></h2>
+          <p class="summary">英伟达CEO黄仁勋婚外情风波持续发酵，围绕其去留的讨论已从个人丑闻演变为一场牵动AI产业走向的市场事件。 当地时间11月12日，知名财经评论账号ZeroHedge在社交平台X上发文，向马斯克喊话： “Elon please hire Jensen”（埃隆，请雇佣黄仁勋）。 马斯克随即回复： “That would be an honor”（那将是我的荣幸）。 此前，据《华尔街日报》报道，英伟达董事会正准备解雇黄仁勋，导火索是其两段婚外情。 受上述消息影响，华尔街对英伟达前景的担忧明显升温，部分基金经理表示将在未来数周减持英伟达股票。 马斯克隔空&quot;接盘&quot;，呼应硅谷圈力挺声浪 目前马斯克这一表态仅</p>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span>2026-11-12 06:21</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3785793" target="_blank" rel="noopener noreferrer">太平基金四位基金经理集体离任，保险央企麾下公募出路何在？</a></h2>
+          <p class="summary">如果你现在打开中国证券投资基金业协会的从业人员公示系统，在太平基金目录下依次输入刘金、邵闯、徐昊、刘翀的名字，系统页面会告诉你查无此人。 这些名字曾经分别代表着：公司权益投资部总监、公司首席资产配置官兼多元资产投资部总经理和权益条线基金经理，但现在已经全数从太平基金名册里消失。 与此同时，太平基金这家保险央企麾下的公募资管机构，再度引发关注。作为一家背靠超大型保险机构母公司，自身亦成立近十四年的中生代公募基金公司，最新管理规模不足1000亿（choice统计数据）的现状，恐怕远不能让各方理解和满意。 刘金：权益总监卸任后起诉公司 太平基金的现状和成因，一定程度上可以从离职的人群中找到一些“线索</p>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span>2026-11-12 06:15</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3785791" target="_blank" rel="noopener noreferrer">苏姿丰、库克、陈立武…谁能接黄仁勋的班？“Nobody”！分权或是更好的解法</a></h2>
+          <p class="summary">英伟达正面临其历史上最严峻的领导层危机。随着黄仁勋深陷调查漩涡，一个令投资者不安的问题浮出水面：这家市值约4万亿美元的全球最重要人工智能芯片公司，究竟有没有人能够接掌帅印？ 据彭博社报道，英伟达董事会已与外部机构合作物色黄仁勋的潜在继任者，讨论先任命临时CEO、再寻找长期人选的过渡方案，董事会成员于11月11日晚举行会议，详细讨论黄仁勋去留问题。 包括英特尔CEO陈立武、AMD CEO苏姿丰以及博通CEO陈福阳甚至苹果库克等业界大佬都被媒体视为潜在人选。 消息传出后，周三美股盘后，英伟达股价重挫逾8%，AMD与博通则各涨约3%。 然而，业内分析人士普遍认为，这场继任者搜寻注定困难重重。顾问机构</p>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
+            <span>钛媒体</span>
+            <span>2026-11-12 06:14</span>
+          </div>
+          <h2><a href="https://www.tmtpost.com/8202543.html" target="_blank" rel="noopener noreferrer">当算力遇上“电墙”，英飞凌豪赌300毫米氮化镓背后</a></h2>
+          <p class="summary">AI竞赛大背景下，从芯片制程延伸到电力供给，氮化镓正从充电器市场的&quot;网红材料&quot;，升级为数据中心供电架构的底层选择。</p>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span>2026-11-12 06:02</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3785788" target="_blank" rel="noopener noreferrer">CoreWeave季报史上最强，但伯恩斯坦和汇丰仍坚持&quot;卖出&quot;</a></h2>
+          <p class="summary">云计算公司CoreWeave交出了一份几乎无可挑剔的季报，却未能说服华尔街最坚定的两位空头改变立场。 华尔街见闻文章 写道， CoreWeave周三盘中一度飙升逾27%，创逾一年来最佳单日表现。 此前一天， 公司发布第三季度财报 ：营收36.6亿美元超出预期，利润率双双超预期，全年收入及运营利润指引双双上调，合同积压订单达1325亿美元，首席执行官Michael Intrator将其称为&quot;突破性季度&quot;。这份财报暂时缓解了市场对AI基础设施需求放缓的担忧，Zack投资管理公司首席市场策略师Brian Mulberry表示，如果CoreWeave能连续几个季度保持这样的执行表现，市场的担忧将逐步消</p>
+        </article>
 
         <article class="card">
           <div class="meta">
@@ -224,6 +308,16 @@ h2 a:hover { text-decoration: underline; }
           <div class="meta">
             <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
             <span>华尔街见闻</span>
+            <span>2026-11-12 04:08</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3782813" target="_blank" rel="noopener noreferrer">见闻历11.11大促最后2天！随日历附赠千元知识礼包，送什么都不如送“搞钱的智慧”</a></h2>
+          <p class="summary">本文来自华尔街见闻，欢迎下载APP查看更多</p>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
             <span>2026-11-12 04:06</span>
           </div>
           <h2><a href="https://wallstreetcn.com/articles/3785781" target="_blank" rel="noopener noreferrer">科创50大涨超2%，GPU爆发，寒武纪重返千元、燧原科技创新高，恒科指跌超1%，阿里跌5%</a></h2>
@@ -268,16 +362,6 @@ h2 a:hover { text-decoration: underline; }
           </div>
           <h2><a href="https://www.tmtpost.com/8202109.html" target="_blank" rel="noopener noreferrer">日本电视台，被老人救活了</a></h2>
           <p class="summary">日本电视不会被剪线，也不能加广告。</p>
-        </article>
-
-        <article class="card">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span>2026-11-12 03:26</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8202042.html" target="_blank" rel="noopener noreferrer">Grok Bot大升级，AI同事开始抢活干</a></h2>
-          <p class="summary">网友：@bot帮我总结这次更新。</p>
         </article>
 
         <article class="card">
@@ -382,72 +466,12 @@ h2 a:hover { text-decoration: underline; }
 
         <article class="card">
           <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span>2026-11-12 00:31</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3785775" target="_blank" rel="noopener noreferrer">中选结束清算开始！民主党誓言揭露&quot;特朗普执政贪腐&quot;，白宫以调查反击</a></h2>
-          <p class="summary">美国中期选举落幕，两党对抗随即进入新阶段。民主党赢得国会控制权后，迅速将矛头指向特朗普政府，誓言展开大规模腐败调查；白宫则率先出手，警告民主党议员其调查行为&quot;可能涉嫌犯罪&quot;，华盛顿政治对决骤然升温。 据 新华社 报道，白宫法律顾问Will Scharf于11月9日致信众议院监督委员会主席、民主党人Robert Garcia，指责民主党人意图利用国会调查程序恐吓和骚扰政府官员，并警告称若相关调查旨在阻止行政官员履职或以滥权恐吓调查对象，可能构成&quot;犯罪&quot;。Garcia随即反击，称“看来特朗普有什么事情想要隐瞒”，并强调国会权力来自宪法，而非白宫的批准。 民主党在此次中期选举中取得重大胜利，计划在新</p>
-        </article>
-
-        <article class="card">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span>2026-11-11 23:59</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3785773" target="_blank" rel="noopener noreferrer">今日开会决定“黄仁勋是否下台”！英伟达董事会已开始遴选新CEO，考虑任命过渡CEO</a></h2>
-          <p class="summary">英伟达正面临一场可能重塑这家全球最高市值人工智能芯片制造商领导架构的严峻危机。因首席执行官黄仁勋卷入多起婚外情丑闻，公司董事会目前正积极寻找潜在的继任者，以应对可能出现的权力真空。 据彭博和《华尔街日报》报道， 英伟达董事会于周三召开内部会议以决定黄仁勋的去留，并已与外部机构合作遴选新任CEO候选人，其中包括考虑任命一位过渡时期首席执行官。 此前，《纽约时报》最新披露了黄仁勋与一名直接下属存在不正当关系，这一消息进一步加剧了早前关于其与一名中国女性有染的严重指控。 （以上图片由AI生成） 继任不确定性迅速引发了金融市场的剧烈反应。在周三的盘后交易中，英伟达股价一度重挫9%，不仅单日抹去巨额市值</p>
-        </article>
-
-        <article class="card">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span>2026-11-11 23:39</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3785770" target="_blank" rel="noopener noreferrer">CoreWeave拟发行至少40亿美元投资级贷款，盘后下挫近6%</a></h2>
-          <p class="summary">AI算力供应商CoreWeave正寻求通过投资级贷款再度大规模融资。 11月11日，据彭博社援引知情人士透露， 摩根士丹利与三菱日联金融集团（MUFG）正主导该笔至少40亿美元的潜在融资，计划分阶段向投资者进行银团推介，最快可能于下周启动，但方案尚未最终确定。 CoreWeave周二发布财报，将全年营收指引上调至130亿至133亿美元，高于此前预期区间，也超出华尔街平均预期的129亿美元。公司股价周三大幅上涨，债券价格亦随之走高。 消息公布后，CoreWeave盘后下挫近6%。 这笔融资将为其以芯片及相关合同作为抵押、借助投资级评级压低融资成本的运作模式提供又一次市场检验。CoreWeave今</p>
-        </article>
-
-        <article class="card">
-          <div class="meta">
             <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
             <span>MarketWatch</span>
             <span>2026-11-11 23:30</span>
           </div>
           <h2><a href="https://www.marketwatch.com/story/your-holiday-credit-card-bills-are-going-up-what-you-can-do-to-ease-the-pain-5ddeb446?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Your holiday credit-card bills are going up. What you can do to ease the pain.</a></h2>
           <p class="summary">The government may have lost a month of inflation data, but don’t expect your credit card’s annual percentage rate to decline because of it.</p>
-        </article>
-
-        <article class="card">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span>2026-11-11 23:17</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3785765" target="_blank" rel="noopener noreferrer">黄仁勋再曝新婚外情，董事会准备罢免！英伟达盘后跌幅达8%</a></h2>
-          <p class="summary">英伟达CEO黄仁勋正面临新一轮个人行为方面的质疑，报道称公司董事会正筹划将其解职，这一消息令全球最重要的人工智能芯片供应商面临潜在的领导层剧变。 11月11日美股盘后，据《纽约时报》援引五名曾在英伟达任职的人士透露， 英伟达CEO黄仁勋曾与医疗健康业务副总裁Kimberly Powell存在婚外情。 （英伟达全球医疗业务副总裁 Kimberly Powell，图源：英伟达官网） 随后据《华尔街日报》报道称，英伟达董事会正准备罢免黄仁勋，最早于今天召开会议，届时将决定他的未来去向 。 据报道，今年3月英伟达在加利福尼亚州圣何塞举办的年度开发者大会期间，黄仁勋与Kimberly Powell被人拍</p>
-        </article>
-
-        <article class="card">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span>2026-11-11 23:15</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3785764" target="_blank" rel="noopener noreferrer">华尔街见闻早餐FM-Radio | 2026年11月12日</a></h2>
-          <p class="summary">华见早安之声 要闻精选 王毅 同 美国国务卿鲁比奥 通电话。 中国央行 Q3货政报告： 坚持实施好适度宽松的货币政策，保持人民币汇率在合理均衡水平上的基本稳定 ；用好债市非银大额赎回互换便利， 维护股票、债券、外汇等金融市场平稳运行。 国家税务总局 ：离岸信托收益征税过渡期已结束， 累计申报个税超1600亿元， 其中10月入库超1200亿元。 英伟达 盘后跌幅一度扩大至超8%，该公司准备罢免 CEO黄仁勋 。另据媒体报道，黄仁勋曾与英伟达高管有过婚外情。美银之后，大摩也 将英伟达移除“首选股”名单。 Anthropic IPO遭疯抢！ 认购需求数倍超额，目标估值1.4万亿美元。 高盛、野村、德</p>
-        </article>
-
-        <article class="card">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span>2026-11-11 22:58</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3785762" target="_blank" rel="noopener noreferrer">英伟达美股盘后跳水，媒体报道称：黄仁勋曾与英伟达高管有过婚外情</a></h2>
-          <p class="summary">英伟达首席执行官黄仁勋正面临新一轮个人行为方面的质疑。 11月11日美股盘后，据《纽约时报》援引五名曾在英伟达任职的人士透露，英伟达CEO黄仁勋曾与医疗健康业务副总裁Kimberly Powell存在婚外情。 （英伟达全球医疗业务副总裁 Kimberly Powell，图源：英伟达官网） 据报道，今年3月英伟达在加利福尼亚州圣何塞举办的年度开发者大会期间，黄仁勋与Kimberly Powell被人拍到在附近一家酒店有亲密举动，且黄仁勋的安保人员随即介入，要求目击者签署保密协议。黄仁勋63岁，Kimberly Powell48岁，两人均已婚。 此事件进一步加剧了外界对黄仁勋的审视压力。报道指出，</p>
         </article>
 
         <article class="card">
@@ -779,6 +803,221 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260929a.htm" target="_blank" rel="noopener noreferrer">Agencies publish resolution plan feedback letters for 15 banking organizations</a></h2>
           <p class="summary">Agencies publish resolution plan feedback letters for 15 banking organizations</p>
         </article>
+  </div>
+  <div id="tab-reports" style="display: none;">
+    
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">力盛体育 (002858)</span>
+            <span>中银证券</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831653105.html" target="_blank" rel="noopener noreferrer">Q3营收高增利润承压，后续业绩增量显著</a><span style="color: #ea580c; font-weight: bold; margin-left: 8px;">[增持]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">广东宏大 (002683)</span>
+            <span>西南证券</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831652489.html" target="_blank" rel="noopener noreferrer">2026年三季报点评：矿服民爆稳步发展，军工转型持续突破</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">莲花控股 (600186)</span>
+            <span>山西证券</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831651788.html" target="_blank" rel="noopener noreferrer">收入利润稳健增长，持续挖掘第二曲线</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">常友科技 (301557)</span>
+            <span>山西证券</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831650608.html" target="_blank" rel="noopener noreferrer">风电复材龙头企业固本拓新，AI时代积极开拓第二增长曲线</a><span style="color: #ea580c; font-weight: bold; margin-left: 8px;">[增持]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">华立科技 (301011)</span>
+            <span>万联证券</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831650515.html" target="_blank" rel="noopener noreferrer">首次覆盖：游戏游艺设备龙头，构建多元化IP产品矩阵</a><span style="color: #ea580c; font-weight: bold; margin-left: 8px;">[增持]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">朗信电气 (920220)</span>
+            <span>华鑫证券</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831650385.html" target="_blank" rel="noopener noreferrer">公司动态研究报告：汽车电子风扇龙头厂商，2026H1人形机器人电机产品收入同比大增755%</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">映翰通 (688080)</span>
+            <span>太平洋</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831650263.html" target="_blank" rel="noopener noreferrer">Q3业绩短暂承压，端侧AI逐步落地放量</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">长盈精密 (300115)</span>
+            <span>中邮证券</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831649660.html" target="_blank" rel="noopener noreferrer">具身智能放量提速</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">星宸科技 (301536)</span>
+            <span>中邮证券</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831649658.html" target="_blank" rel="noopener noreferrer">端边侧AI SoC量价齐升</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">大金重工 (002487)</span>
+            <span>华鑫证券</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831649324.html" target="_blank" rel="noopener noreferrer">公司事件点评报告：海外海工交付推进，一体化服务能力持续扩展</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">鼎智科技 (920593)</span>
+            <span>开源证券</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831648369.html" target="_blank" rel="noopener noreferrer">北交所信息更新：公司拓展半导体领域新产品，2026Q1-3机器人业务营收0.55亿元同比+573%</a><span style="color: #ea580c; font-weight: bold; margin-left: 8px;">[增持]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">方盛股份 (920662)</span>
+            <span>开源证券</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831648367.html" target="_blank" rel="noopener noreferrer">北交所信息更新：铝价快速上涨毛利率承压，储能需求增长拉动涂布机采购</a><span style="color: #ea580c; font-weight: bold; margin-left: 8px;">[增持]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">锐翔智能 (920178)</span>
+            <span>开源证券</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831647763.html" target="_blank" rel="noopener noreferrer">北交所信息更新：取得索尔思光电订单+布局PCB和半导体领域，2026Q1-3营收同比+22%</a><span style="color: #ea580c; font-weight: bold; margin-left: 8px;">[增持]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">嘉友国际 (603871)</span>
+            <span>中银证券</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831642961.html" target="_blank" rel="noopener noreferrer">成本优化超营收降幅，毛利率阶梯式抬升</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">康希诺 (688185)</span>
+            <span>西南证券</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831642224.html" target="_blank" rel="noopener noreferrer">2026年三季报点评：利润同比扭亏，创新管线持续放量</a></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">海天味业 (603288)</span>
+            <span>华龙证券</span>
+            <span>2026-11-12</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611121831641742.html" target="_blank" rel="noopener noreferrer">2026年三季报业绩点评报告：收入稳健修复，盈利端承压</a><span style="color: #ea580c; font-weight: bold; margin-left: 8px;">[增持]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">益生股份 (002458)</span>
+            <span>国信证券</span>
+            <span>2026-11-11</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611111831635148.html" target="_blank" rel="noopener noreferrer">2026三季报点评：受益行情回暖，Q3归母净利润同比+429%</a><span style="color: #ea580c; font-weight: bold; margin-left: 8px;">[增持]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">蓝思科技 (300433)</span>
+            <span>西南证券</span>
+            <span>2026-11-11</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611111831635147.html" target="_blank" rel="noopener noreferrer">消费电子稳基本盘，多元布局筑增长线</a></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">海南橡胶 (601118)</span>
+            <span>国信证券</span>
+            <span>2026-11-11</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611111831634841.html" target="_blank" rel="noopener noreferrer">2026三季报点评：天然橡胶价格上涨，Q3归母净利润同比减亏18%</a><span style="color: #ea580c; font-weight: bold; margin-left: 8px;">[增持]</span></h2>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">华明装备 (002270)</span>
+            <span>国信证券</span>
+            <span>2026-11-11</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611111831634838.html" target="_blank" rel="noopener noreferrer">海外业务持续放量，全球化布局打开成长空间</a><span style="color: #ea580c; font-weight: bold; margin-left: 8px;">[增持]</span></h2>
+        </article>
+  </div>
 </main>
+<script>
+function switchTab(tab) {
+  document.getElementById('tab-news').style.display = 'none';
+  document.getElementById('tab-reports').style.display = 'none';
+  
+  document.getElementById('btn-news').classList.remove('active');
+  document.getElementById('btn-reports').classList.remove('active');
+  
+  document.getElementById('tab-' + tab).style.display = 'block';
+  document.getElementById('btn-' + tab).classList.add('active');
+}
+</script>
 </body>
 </html>
