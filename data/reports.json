@@ -1,5 +1,23 @@
 [
   {
+    "title": "长鑫科技：业绩持续提升，中国芯闪耀存储超级周期",
+    "org": "华安证券",
+    "date": "2026-11-13",
+    "link": "https://data.eastmoney.com/report/info/AP202611131831683611.html",
+    "rating": "买入",
+    "stock": "长鑫科技",
+    "code": "688825"
+  },
+  {
+    "title": "盛合晶微：加码先进封装，扩产夯实算力基石",
+    "org": "华安证券",
+    "date": "2026-11-13",
+    "link": "https://data.eastmoney.com/report/info/AP202611131831683490.html",
+    "rating": "买入",
+    "stock": "盛合晶微",
+    "code": "688820"
+  },
+  {
     "title": "电磁线、电缆双主业营收增长，海外加大新兴市场开发",
     "org": "华安证券",
     "date": "2026-11-13",
@@ -16,6 +34,15 @@
     "rating": "买入",
     "stock": "海光信息",
     "code": "688041"
+  },
+  {
+    "title": "Q3盈利持续向好，出口核心驱动力稳步上行",
+    "org": "中航证券",
+    "date": "2026-11-13",
+    "link": "https://data.eastmoney.com/report/info/AP202611131831683141.html",
+    "rating": "买入",
+    "stock": "比亚迪",
+    "code": "002594"
   },
   {
     "title": "多重成本端影响扣非利润承压，AI业务快速成长",
@@ -151,32 +178,5 @@
     "rating": "买入",
     "stock": "迈为股份",
     "code": "300751"
-  },
-  {
-    "title": "公司事件点评报告：三季度盈利增长，海外项目与储能产品升级共振",
-    "org": "华鑫证券",
-    "date": "2026-11-12",
-    "link": "https://data.eastmoney.com/report/info/AP202611121831664332.html",
-    "rating": "买入",
-    "stock": "海博思创",
-    "code": "688411"
-  },
-  {
-    "title": "测试电源老牌企业，AIDC与高端工业电源打开成长空间",
-    "org": "国信证券",
-    "date": "2026-11-12",
-    "link": "https://data.eastmoney.com/report/info/AP202611121831661596.html",
-    "rating": "",
-    "stock": "爱科赛博",
-    "code": "688719"
-  },
-  {
-    "title": "三季度收入增长19%，座椅及机器人业务持续拓展",
-    "org": "国信证券",
-    "date": "2026-11-12",
-    "link": "https://data.eastmoney.com/report/info/AP202611121831661445.html",
-    "rating": "增持",
-    "stock": "新泉股份",
-    "code": "603179"
   }
 ]
