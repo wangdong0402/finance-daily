@@ -78,7 +78,6 @@ def build_report_cards(reports):
         stock = html.escape(item.get("stock", ""))
         code = html.escape(item.get("code", ""))
 
-        # 为搜索功能添加 data-* 属性用于前端过滤
         search_str = f"{stock} {code}".lower()
 
         rating_color = "#6e6e73"
@@ -159,7 +158,14 @@ def build_sentiment_html(data):
 
 def build_macro_html(macro_data):
     charts = macro_data.get("charts", {})
-    categories = {"货币": "💵 货币与信用", "物价": "📈 物价与通胀", "工业": "🏭 工业与景气", "外贸": "🏗️ 投资与外贸"}
+    # 增加“大类资产”分类
+    categories = {
+        "货币": "💵 货币与信用", 
+        "物价": "📈 物价与通胀", 
+        "工业": "🏭 工业与景气", 
+        "外贸": "🏗️ 投资与外贸",
+        "大类资产": "💰 大类资产"
+    }
     
     cat_nav = ""
     first_cat = True
@@ -178,11 +184,22 @@ def build_macro_html(macro_data):
         display = "block" if first_content else "none"
         first_content = False
         
+        cat_charts = [v for k, v in charts.items() if v["category"] == cat_id]
+        
+        # 【核心修复】：强制指定“货币”分类下的图表顺序
+        if cat_id == "货币":
+            desired_order = ["货币供应量", "新增人民币贷款", "社会融资规模", "LPR"]
+            def sort_key(c):
+                for i, name in enumerate(desired_order):
+                    if name in c["name"]:
+                        return i
+                return 99
+            cat_charts.sort(key=sort_key)
+
         charts_html = ""
-        for key, cfg in charts.items():
-            if cfg["category"] != cat_id:
-                continue
-                
+        for cfg in cat_charts:
+            # 通过对象找 key
+            key = [k for k, v in charts.items() if v == cfg][0]
             if cfg["type"] in ("line", "bar", "multi_line"):
                 charts_html += f'''
                 <div class="macro-card">
@@ -247,7 +264,6 @@ h2 a:hover {{ text-decoration: underline; }}
 .summary {{ font-size: 14px; line-height: 1.6; color: #3a3a3c; margin: 0; }}
 .empty {{ background: #fff; border-radius: 14px; padding: 32px 20px; text-align: center; color: #6e6e73; font-size: 14px; }}
 
-/* 搜索框样式 */
 .search-container {{ margin-bottom: 16px; }}
 .search-input {{ width: 100%; padding: 12px 16px; border-radius: 10px; border: 1px solid #e5e7eb; font-size: 14px; background: #fff; color: #1d1d1f; outline: none; transition: border-color 0.2s; }}
 .search-input:focus {{ border-color: #3b82f6; }}
@@ -324,7 +340,6 @@ function switchTab(tab) {{
   if(tab === 'macro') lazyRenderCharts();
 }}
 
-// 研报搜索过滤逻辑
 function filterReports() {{
   const query = document.getElementById('report-search').value.toLowerCase().trim();
   const cards = document.querySelectorAll('.report-card');
@@ -428,7 +443,7 @@ document.addEventListener('DOMContentLoaded', () => {{
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(html_doc)
-    print(f"已生成 {OUTPUT_FILE}，包含个股研报搜索功能。")
+    print(f"已生成 {OUTPUT_FILE}，包含大类资产与排序逻辑。")
 
 
 if __name__ == "__main__":
