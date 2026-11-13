@@ -123,7 +123,7 @@ def build_sentiment_html(data):
 
     period_labels = {"5d": "5个交易日", "20d": "20个交易日", "60d": "60个交易日"}
     blocks = ""
-    for key in ["60d", "20d", "5d"]:  # 按60→20→5从上到下
+    for key in ["60d", "20d", "5d"]:
         p = periods.get(key, {})
         inflow = p.get("inflow", [])
         outflow = p.get("outflow", [])
