@@ -154,29 +154,56 @@ def build_sentiment_html(data):
 
 def build_macro_html(macro_data):
     charts = macro_data.get("charts", {})
+    categories = {"货币": "💵 货币与信用", "物价": "📈 物价与通胀", "工业": "🏭 工业与景气", "外贸": "🏗️ 投资与外贸"}
     
-    def chart_box(title, data_key, color):
-        # 如果数据为空，显示占位
-        if not charts.get(data_key) or not charts[data_key].get("labels"):
-            return f'<div class="macro-card"><h3>{title}</h3><div class="empty" style="padding:20px;">暂无数据</div></div>'
+    # 生成二级分类导航栏
+    cat_nav = ""
+    first_cat = True
+    for cat_id, cat_name in categories.items():
+        # 检查该分类下是否有数据
+        if any(c["category"] == cat_id for c in charts.values()):
+            active = "active" if first_cat else ""
+            cat_nav += f'<button class="sub-tab-btn {active}" onclick="switchSubTab(\'{cat_id}\')" id="subbtn-{cat_id}">{cat_name}</button>'
+            first_cat = False
+
+    # 生成各个分类的内容区
+    cat_contents = ""
+    first_content = True
+    for cat_id in categories.keys():
+        if not any(c["category"] == cat_id for c in charts.values()):
+            continue
+            
+        display = "block" if first_content else "none"
+        first_content = False
         
-        # 容器 ID 用于后续 JS 渲染
-        return f'''
-        <div class="macro-card">
-          <h3>{title}</h3>
-          <div style="position: relative; height: 200px; width: 100%;">
-            <canvas id="chart-{data_key}"></canvas>
-          </div>
-        </div>
-        '''
+        charts_html = ""
+        for key, cfg in charts.items():
+            if cfg["category"] != cat_id:
+                continue
+                
+            if cfg["type"] in ("line", "bar"):
+                charts_html += f'''
+                <div class="macro-card">
+                  <h3>{cfg['name']}</h3>
+                  <div style="position: relative; height: 200px; width: 100%;">
+                    <canvas id="chart-{key}"></canvas>
+                  </div>
+                </div>'''
+            elif cfg["type"] == "multi_line":
+                charts_html += f'''
+                <div class="macro-card">
+                  <h3>{cfg['name']}</h3>
+                  <div style="position: relative; height: 200px; width: 100%;">
+                    <canvas id="chart-{key}"></canvas>
+                  </div>
+                </div>'''
+        
+        cat_contents += f'<div id="subtab-{cat_id}" class="sub-tab-content" style="display: {display};">{charts_html}</div>'
 
     return f'''
-    <div class="macro-container">
-      {chart_box("居民消费价格指数 (CPI) - 同比", "cpi", "#ef4444")}
-      {chart_box("工业生产者出厂价格 (PPI) - 同比", "ppi", "#3b82f6")}
-      {chart_box("M2 货币供应量 - 同比", "m2", "#10b981")}
-      {chart_box("M1 货币供应量 - 同比", "m1", "#f59e0b")}
-      {chart_box("固定资产投资 - 同比", "invest", "#8b5cf6")}
+    <div class="macro-wrapper">
+      <div class="sub-tabs">{cat_nav}</div>
+      <div class="sub-tab-container">{cat_contents}</div>
     </div>
     '''
 
@@ -196,7 +223,6 @@ def main():
     sentiment_cards_html = build_sentiment_html(sentiment_data)
     macro_cards_html = build_macro_html(macro_data)
 
-    # 将宏观数据转成 JSON 字符串，注入到前端的 JS 中
     macro_json_str = json.dumps(macro_data.get("charts", {}), ensure_ascii=False)
 
     html_doc = f'''<!doctype html>
@@ -205,7 +231,6 @@ def main():
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>个人财经终端</title>
-<!-- 引入 Chart.js 图表库 -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
 :root {{ color-scheme: light dark; }}
@@ -231,9 +256,12 @@ h2 a:hover {{ text-decoration: underline; }}
 .sentiment-dashboard {{ background: transparent; }}
 .sentiment-time {{ text-align: center; font-size: 12px; color: #98989d; margin-bottom: 20px; }}
 
-/* 宏观数据卡片样式 */
-.macro-container {{ display: flex; flex-direction: column; gap: 16px; }}
-.macro-card {{ background: #fff; border-radius: 14px; padding: 16px; box-shadow: 0 1px 2px rgba(0, 0, 0, .04); }}
+/* 宏观二级菜单样式 */
+.macro-wrapper {{ background: transparent; }}
+.sub-tabs {{ display: flex; gap: 10px; overflow-x: auto; margin-bottom: 16px; padding-bottom: 4px; }}
+.sub-tab-btn {{ background: rgba(0,0,0,0.05); border: none; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; color: #3a3a3c; cursor: pointer; white-space: nowrap; }}
+.sub-tab-btn.active {{ background: #1d1d1f; color: #fff; }}
+.macro-card {{ background: #fff; border-radius: 14px; padding: 16px; box-shadow: 0 1px 2px rgba(0, 0, 0, .04); margin-bottom: 16px; }}
 .macro-card h3 {{ font-size: 14px; margin: 0 0 16px 0; color: #3a3a3c; }}
 
 @media (prefers-color-scheme: dark) {{
@@ -245,6 +273,8 @@ h2 a:hover {{ text-decoration: underline; }}
   .macro-card h3 {{ color: #f5f5f7; }}
   .tab-btn {{ color: #98989d; }}
   .tab-btn.active {{ color: #f5f5f7; border-bottom-color: #f5f5f7; }}
+  .sub-tab-btn {{ background: rgba(255,255,255,0.1); color: #d1d1d6; }}
+  .sub-tab-btn.active {{ background: #f5f5f7; color: #000; }}
   .meta span[style*="color: #1d1d1f;"] {{ color: #f5f5f7 !important; }}
   .sentiment-dashboard div[style*="background: #fff;"] {{ background: #1c1c1e !important; }}
   .sentiment-dashboard div[style*="border-left: 4px solid #1d1d1f;"] {{ border-left-color: #f5f5f7 !important; }}
@@ -273,10 +303,9 @@ h2 a:hover {{ text-decoration: underline; }}
 </main>
 
 <script>
-// 将后端的宏观 JSON 数据注入到 JS 中
 const macroData = {macro_json_str};
+const chartInstances = {{}};
 
-// Tab 切换逻辑
 function switchTab(tab) {{
   ['news','reports','sentiment','macro'].forEach(t => {{
     document.getElementById('tab-' + t).style.display = 'none';
@@ -284,83 +313,100 @@ function switchTab(tab) {{
   }});
   document.getElementById('tab-' + tab).style.display = 'block';
   document.getElementById('btn-' + tab).classList.add('active');
+  if(tab === 'macro') lazyRenderCharts();
 }}
 
-// 绘制图表逻辑
-document.addEventListener('DOMContentLoaded', function() {{
+function switchSubTab(catId) {{
+  document.querySelectorAll('.sub-tab-content').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.sub-tab-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById('subtab-' + catId).style.display = 'block';
+  document.getElementById('subbtn-' + catId).classList.add('active');
+  lazyRenderCharts();
+}}
+
+// 懒加载图表渲染机制
+function lazyRenderCharts() {{
   const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   const textColor = isDark ? '#98989d' : '#6e6e73';
   const gridColor = isDark ? '#3a3a3c' : '#e5e7eb';
 
-  const chartConfigs = [
-    {{ id: 'chart-cpi', dataKey: 'cpi', color: '#ef4444', label: 'CPI同比 (%)' }},
-    {{ id: 'chart-ppi', dataKey: 'ppi', color: '#3b82f6', label: 'PPI同比 (%)' }},
-    {{ id: 'chart-m2', dataKey: 'm2', color: '#10b981', label: 'M2同比 (%)' }},
-    {{ id: 'chart-m1', dataKey: 'm1', color: '#f59e0b', label: 'M1同比 (%)' }},
-    {{ id: 'chart-invest', dataKey: 'invest', color: '#8b5cf6', label: '固投同比 (%)' }}
-  ];
+  // 只绘制当前可见的子 Tab 里的图表
+  const activeContent = document.querySelector('.sub-tab-content[style*="display: block"]');
+  if (!activeContent) return;
 
-  chartConfigs.forEach(cfg => {{
-    const canvas = document.getElementById(cfg.id);
-    if (!canvas || !macroData[cfg.dataKey]) return;
+  activeContent.querySelectorAll('canvas').forEach(canvas => {{
+    const chartId = canvas.id.replace('chart-', '');
+    if (chartInstances[chartId]) return; // 已经画过了就跳过
 
-    const rawData = macroData[cfg.dataKey];
-    
-    // 如果因为某些原因 DOM 隐藏导致画不出来，可以让它保持透明，等切 Tab 时再画。
-    // 但 Chart.js 通常支持隐藏状态下初始化。
-    new Chart(canvas.getContext('2d'), {{
-      type: 'line',
-      data: {{
-        labels: rawData.labels,
-        datasets: [{{
-          label: cfg.label,
-          data: rawData.data,
-          borderColor: cfg.color,
-          backgroundColor: cfg.color + '20', // 加上 20 变成半透明的 Hex 颜色
-          borderWidth: 2,
-          pointRadius: 3,
-          pointBackgroundColor: cfg.color,
-          fill: true,
-          tension: 0.3 // 平滑曲线
-        }}]
-      }},
+    const cfg = macroData[chartId];
+    if (!cfg) return;
+
+    let datasets = [];
+    let chartType = cfg.type === 'multi_line' ? 'line' : cfg.type;
+
+    if (cfg.type === 'multi_line') {{
+      datasets = cfg.series.map(s => ({{
+        label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color + '20',
+        borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false
+      }}));
+    }} else if (cfg.type === 'bar') {{
+      // 为柱状图配置正负数不同颜色
+      const bgColors = cfg.data.map(v => v >= 0 ? cfg.color : '#10b981');
+      datasets = [{{
+        data: cfg.data, backgroundColor: bgColors, borderRadius: 4
+      }}];
+    }} else {{
+      datasets = [{{
+        data: cfg.data, borderColor: cfg.color, backgroundColor: cfg.color + '20',
+        borderWidth: 2, tension: 0.3, pointRadius: 3, fill: true
+      }}];
+    }}
+
+    const config = {{
+      type: chartType,
+      data: {{ labels: cfg.labels, datasets: datasets }},
       options: {{
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {{
-          legend: {{ display: false }}, // 隐藏图例，因为上方标题已经有了
-          tooltip: {{
-            mode: 'index',
-            intersect: false,
-            backgroundColor: isDark ? 'rgba(0,0,0,0.8)' : 'rgba(255,255,255,0.9)',
-            titleColor: isDark ? '#fff' : '#1d1d1f',
-            bodyColor: isDark ? '#fff' : '#1d1d1f',
-            borderColor: gridColor,
-            borderWidth: 1
-          }}
+        responsive: true, maintainAspectRatio: false,
+        plugins: {{ 
+          legend: {{ display: cfg.type === 'multi_line', position: 'top', labels: {{ boxWidth: 12, font: {{ size: 10 }} }} }},
+          tooltip: {{ mode: 'index', intersect: false }}
         }},
         scales: {{
-          x: {{
-            grid: {{ display: false }},
-            ticks: {{ color: textColor, maxRotation: 45, minRotation: 45, font: {{ size: 10 }} }}
-          }},
-          y: {{
-            grid: {{ color: gridColor, drawBorder: false }},
-            ticks: {{ color: textColor, font: {{ size: 10 }} }}
-          }}
+          x: {{ grid: {{ display: false }}, ticks: {{ color: textColor, maxRotation: 45, minRotation: 45, font: {{ size: 10 }} }} }},
+          y: {{ grid: {{ color: gridColor, drawBorder: false }}, ticks: {{ color: textColor, font: {{ size: 10 }} }} }}
         }}
       }}
-    }});
+    }};
+
+    // 如果是 PMI，添加 50 枯荣线
+    if (cfg.baseline) {{
+      config.options.plugins.annotation = {{
+        annotations: {{
+          line1: {{
+            type: 'line', yMin: cfg.baseline, yMax: cfg.baseline,
+            borderColor: '#ef4444', borderWidth: 1, borderDash: [5, 5],
+            label: {{ display: true, content: '枯荣线', position: 'end' }}
+          }}
+        }}
+      }};
+    }}
+
+    chartInstances[chartId] = new Chart(canvas.getContext('2d'), config);
   }});
+}}
+
+// 每次点开宏观 Tab 时，顺便检查并渲染一次
+document.addEventListener('DOMContentLoaded', () => {{
+  // 延迟一下确保 DOM 完全就绪
+  setTimeout(lazyRenderCharts, 500);
 }});
 </script>
 </body>
 </html>'''
-
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(html_doc)
-    print(f"已生成 {OUTPUT_FILE}，包含图表。")
+    print(f"已生成 {OUTPUT_FILE}，包含二级菜单和懒加载图表。")
 
 
 if __name__ == "__main__":
