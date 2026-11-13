@@ -4,35 +4,62 @@ import os
 import pandas as pd
 from datetime import datetime
 
-def clean_data(df, date_col, value_col, target_len=13):
-    """
-    清洗数据：提取指定列，转为正序，取最近 target_len 期，并处理空值
-    """
+# ================= 核心配置区 =================
+# 以后想加新指标，只需要在这里加字典即可
+MACRO_CONFIGS = [
+    # 1. 货币与信用
+    {
+        "id": "shrzgm", "name": "社会融资规模增量 (亿元)", "category": "货币",
+        "api": "macro_china_shrzgm", "x_col": "月份", "y_col": "社会融资规模增量",
+        "type": "bar", "color": "#3b82f6"
+    },
+    # 2. 物价与通胀
+    {
+        "id": "cpi", "name": "居民消费价格指数 (CPI) - 同比 (%)", "category": "物价",
+        "api": "macro_china_cpi", "x_col": "月份", "y_col": "全国-同比增长",
+        "type": "line", "color": "#ef4444"
+    },
+    {
+        "id": "ppi", "name": "工业生产者出厂价格 (PPI) - 同比 (%)", "category": "物价",
+        "api": "macro_china_ppi", "x_col": "月份", "y_col": "当月同比增长",
+        "type": "line", "color": "#8b5cf6"
+    },
+    # 3. 工业与景气 (PMI比较特殊，一个接口返回两个数据，后面单独处理)
+    {
+        "id": "gyzjz", "name": "工业增加值 - 同比 (%)", "category": "工业",
+        "api": "macro_china_gyzjz", "x_col": "月份", "y_col": "同比增长",
+        "type": "bar", "color": "#10b981"
+    },
+    # 4. 投资与外贸
+    {
+        "id": "trade", "name": "贸易帐差额 (亿美元)", "category": "外贸",
+        "api": "macro_china_trade_balance", "x_col": "月份", "y_col": "当月差额",
+        "type": "bar", "color": "#f59e0b"
+    }
+]
+
+def extract_series(df, x_col_fuzzy, y_col_fuzzy, target_len=13):
+    """模糊匹配列名并提取最近N期数据"""
     try:
-        # 兼容不同版本的列名
-        col_date = [c for c in df.columns if date_col in c][0]
-        col_val = [c for c in df.columns if value_col in c][0]
+        col_x = [c for c in df.columns if x_col_fuzzy in c][0]
+        col_y = [c for c in df.columns if y_col_fuzzy in c][0]
         
-        df = df[[col_date, col_val]].copy()
+        df = df[[col_x, col_y]].copy()
         df.columns = ['date', 'value']
         
-        # 转换数值，处理 "---" 或空值
+        # 清除 "---" 等非数值
         df['value'] = pd.to_numeric(df['value'], errors='coerce')
         df = df.dropna()
         
-        # 截取最近的数据 (因为 AKShare 返回的默认是倒序，最新的在第一行)
-        df = df.head(target_len)
-        
-        # 翻转为正序（时间从旧到新）
-        df = df.iloc[::-1]
+        df = df.head(target_len).iloc[::-1] # 取近13期并正序
         
         return {
             "labels": df['date'].tolist(),
             "data": [round(float(v), 2) for v in df['value'].tolist()]
         }
     except Exception as e:
-        print(f"数据清洗失败 ({value_col}): {e}")
-        return {"labels": [], "data": []}
+        print(f"  [警告] 数据解析失败 ({y_col_fuzzy}): {e}")
+        return None
 
 def main():
     macro_data = {
@@ -40,53 +67,45 @@ def main():
         "charts": {}
     }
 
-    # 1. CPI
-    try:
-        df_cpi = ak.macro_china_cpi()
-        # AKShare 的 CPI 列名通常包含 "全国-同比增长"
-        macro_data["charts"]["cpi"] = clean_data(df_cpi, "月份", "全国-同比增长")
-        print("[成功] CPI 数据抓取完成")
-    except Exception as e:
-        print(f"[警告] CPI 抓取失败: {e}")
+    # 批量抓取配置中的基础指标
+    for cfg in MACRO_CONFIGS:
+        print(f"[信息] 抓取 {cfg['name']} ...")
+        try:
+            func = getattr(ak, cfg["api"])
+            df = func()
+            result = extract_series(df, cfg["x_col"], cfg["y_col"])
+            if result:
+                macro_data["charts"][cfg["id"]] = {
+                    "name": cfg["name"], "category": cfg["category"],
+                    "type": cfg["type"], "color": cfg["color"],
+                    **result
+                }
+        except Exception as e:
+            print(f"  [失败] {cfg['name']}: {e}")
 
-    # 2. PPI
+    # 特殊处理：PMI (包含制造业和非制造业)
+    print("[信息] 抓取 PMI ...")
     try:
-        df_ppi = ak.macro_china_ppi()
-        macro_data["charts"]["ppi"] = clean_data(df_ppi, "月份", "当月同比增长")
-        print("[成功] PPI 数据抓取完成")
+        df_pmi = ak.macro_china_pmi()
+        mfg = extract_series(df_pmi, "月份", "制造业-指数")
+        non_mfg = extract_series(df_pmi, "月份", "非制造业-指数")
+        if mfg and non_mfg:
+            macro_data["charts"]["pmi"] = {
+                "name": "采购经理人指数 (PMI)", "category": "工业",
+                "type": "multi_line", # 多线图
+                "labels": mfg["labels"],
+                "series": [
+                    {"name": "制造业", "color": "#3b82f6", "data": mfg["data"]},
+                    {"name": "非制造业", "color": "#f59e0b", "data": non_mfg["data"]}
+                ],
+                "baseline": 50  # 50 枯荣线
+            }
     except Exception as e:
-        print(f"[警告] PPI 抓取失败: {e}")
-
-    # 3. M2 & M1
-    try:
-        df_money = ak.macro_china_money_supply()
-        # 兼容不同版本列名
-        m2_col = [c for c in df_money.columns if "M2" in c and "同比" in c]
-        m1_col = [c for c in df_money.columns if "M1" in c and "同比" in c]
-        
-        if m2_col:
-            macro_data["charts"]["m2"] = clean_data(df_money, "月份", m2_col[0])
-        if m1_col:
-            macro_data["charts"]["m1"] = clean_data(df_money, "月份", m1_col[0])
-        print("[成功] 货币供应量 (M1/M2) 数据抓取完成")
-    except Exception as e:
-        print(f"[警告] 货币供应量抓取失败: {e}")
-
-    # 4. 固定资产投资 (通常取当月同比增长)
-    try:
-        df_inv = ak.macro_china_gdzctz()
-        # 兼容不同版本列名
-        inv_col = [c for c in df_inv.columns if "同比" in c]
-        if inv_col:
-            macro_data["charts"]["invest"] = clean_data(df_inv, "月份", inv_col[0])
-        print("[成功] 固定资产投资数据抓取完成")
-    except Exception as e:
-        print(f"[警告] 固定资产投资抓取失败: {e}")
+        print(f"  [失败] PMI: {e}")
 
     os.makedirs("data", exist_ok=True)
     with open("data/macro.json", "w", encoding="utf-8") as f:
         json.dump(macro_data, f, ensure_ascii=False, indent=2)
-    
     print("宏观数据保存完成。")
 
 if __name__ == "__main__":
