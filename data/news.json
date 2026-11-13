@@ -1,86 +1,14 @@
 {
-  "updated": "2026-11-13T06:48:47.683952+00:00",
-  "count": 80,
+  "updated": "2026-11-13T07:05:15.302116+00:00",
+  "count": 70,
   "items": [
     {
-      "title": "中芯国际7-9月净利润增至2.2倍",
-      "link": "http://cn.nikkei.com/china/ccompany/64720-2026-11-13-14-04-03.html",
-      "summary": "",
-      "source": "日经中文网",
-      "category": "国际宏观",
-      "published": "2026-11-13T06:44:44+00:00"
-    },
-    {
-      "title": "微软365发生大规模故障",
-      "link": "http://cn.nikkei.com/industry/itelectric-appliance/64717-2026-11-13-13-52-16.html",
-      "summary": "",
-      "source": "日经中文网",
-      "category": "国际宏观",
-      "published": "2026-11-13T06:44:44+00:00"
-    },
-    {
-      "title": "日本开发借动漫学习日语APP，扩大“知日派”",
-      "link": "http://cn.nikkei.com/career/abroadstudy/64716-2026-11-13-12-33-43.html",
-      "summary": "",
-      "source": "日经中文网",
-      "category": "国际宏观",
-      "published": "2026-11-13T06:44:44+00:00"
-    },
-    {
-      "title": "日本拟将重要物资的老化生产设备收归国有",
-      "link": "http://cn.nikkei.com/politicsaeconomy/politicsasociety/64715-2026-11-13-11-09-44.html",
-      "summary": "",
-      "source": "日经中文网",
-      "category": "国际宏观",
-      "published": "2026-11-13T06:44:44+00:00"
-    },
-    {
-      "title": "“蓝色浪潮”在让比特币降温",
-      "link": "http://cn.nikkei.com/politicsaeconomy/stockforex/64714-2026-11-13-10-42-20.html",
-      "summary": "",
-      "source": "日经中文网",
-      "category": "国际宏观",
-      "published": "2026-11-13T06:44:44+00:00"
-    },
-    {
-      "title": "高市将表明支援东盟开展AI安全评估",
-      "link": "http://cn.nikkei.com/politicsaeconomy/politicsasociety/64713-2026-11-13-09-50-07.html",
-      "summary": "",
-      "source": "日经中文网",
-      "category": "国际宏观",
-      "published": "2026-11-13T06:44:44+00:00"
-    },
-    {
-      "title": "从AI投资领军者黄仁勋退场看到的",
-      "link": "http://cn.nikkei.com/industry/itelectric-appliance/64712-2026-11-13-09-51-35.html",
-      "summary": "",
-      "source": "日经中文网",
-      "category": "国际宏观",
-      "published": "2026-11-13T06:44:44+00:00"
-    },
-    {
-      "title": "日元一度跌破160关口，创两个半月新低",
-      "link": "http://cn.nikkei.com/politicsaeconomy/stockforex/64711-2026-11-13-09-56-42.html",
-      "summary": "",
-      "source": "日经中文网",
-      "category": "国际宏观",
-      "published": "2026-11-13T06:44:44+00:00"
-    },
-    {
-      "title": "中国国际半导体博览会在北京开幕",
-      "link": "http://cn.nikkei.com/china/ceconomy/64710-2026-11-13-09-43-52.html",
-      "summary": "",
-      "source": "日经中文网",
-      "category": "国际宏观",
-      "published": "2026-11-13T06:44:44+00:00"
-    },
-    {
-      "title": "特朗普称无需与伊朗停火，指示万斯专攻国内",
-      "link": "http://cn.nikkei.com/politicsaeconomy/politicsasociety/64709-2026-11-13-09-36-41.html",
-      "summary": "",
-      "source": "日经中文网",
-      "category": "国际宏观",
-      "published": "2026-11-13T06:44:44+00:00"
+      "title": "黄仁勋丑闻发酵前，量化之王精准清仓英伟达！",
+      "link": "https://wallstreetcn.com/articles/3785873",
+      "summary": "量化投资巨头文艺复兴科技（Renaissance Technologies）第三季度大幅调整股票组合，在英伟达丑闻发酵前，就早已几乎清仓该股，同时大举增持美光科技、AMD及闪迪。 根据最新提交的13F文件，截至9月30日， 文艺复兴科技持有的英伟达股票从第二季度末的709万股降至2.317万股，减持99.7%。Meta持股则从202万股降至1577股，减持99.9%，两家公司的持仓几乎被清空。 与大幅削减英伟达形成鲜明对比的是， 文艺复兴科技将美光持股增加618.7%至152万股，期末持仓市值约16.2亿美元。 AMD持股增加140.5%至近200万股，持仓价值约12.1亿美元，闪迪持股也大幅",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-13T06:56:56+00:00"
     },
     {
       "title": "英伟达新掌门会给AI融资踩刹车？她曾将2500亿美元数据中心担保砍半，被黄仁勋嘲讽“只会做财务”，是“惊弓之鹿”",
@@ -249,14 +177,6 @@
       "source": "华尔街见闻",
       "category": "中文宏观",
       "published": "2026-11-13T03:07:13+00:00"
-    },
-    {
-      "title": "Cerebras电话会：拿下微软大单，HBM短缺反而是机会，WSE-5芯片明年夏天量产",
-      "link": "https://wallstreetcn.com/articles/3785852",
-      "summary": "AI芯片初创公司Cerebras在2026年第三季度交出首次实现净利润转正的答卷，并宣布微软成为其六个月内拿下的第三家超大规模云服务商客户，公司重申2027年营收将实现三倍增长的强劲指引。 华尔街见闻提及 ，当地时间11月12日，备受市场瞩目的Cerebras公布2026年第三季度财报。公司当季核心营收达到2.309亿美元，同比增长70%，高于分析师平均预期的2.147亿美元。 公司首次作为上市公司实现了非公认会计准则（Non-GAAP）下的净利润转正，达到3000万美元。 随后电话会上，Cerebras联合创始人兼CEO Andrew Feldman表示， 公司同步上调第四季度及全年指引，预",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-13T02:51:55+00:00"
     },
     {
       "title": "花七年造一辆两座小车，smart这笔账怎么算？",
