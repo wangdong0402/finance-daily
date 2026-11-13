@@ -1,5 +1,32 @@
 [
   {
+    "title": "电磁线、电缆双主业营收增长，海外加大新兴市场开发",
+    "org": "华安证券",
+    "date": "2026-11-13",
+    "link": "https://data.eastmoney.com/report/info/AP202611131831683246.html",
+    "rating": "买入",
+    "stock": "金杯电工",
+    "code": "002533"
+  },
+  {
+    "title": "海光信息：人工智能推动下游需求增长，双芯协同布局成效显著",
+    "org": "华安证券",
+    "date": "2026-11-13",
+    "link": "https://data.eastmoney.com/report/info/AP202611131831683179.html",
+    "rating": "买入",
+    "stock": "海光信息",
+    "code": "688041"
+  },
+  {
+    "title": "多重成本端影响扣非利润承压，AI业务快速成长",
+    "org": "华安证券",
+    "date": "2026-11-13",
+    "link": "https://data.eastmoney.com/report/info/AP202611131831683122.html",
+    "rating": "买入",
+    "stock": "麦格米特",
+    "code": "002851"
+  },
+  {
     "title": "沪电股份：业绩持续成长，算力领域核心技术持续攻关",
     "org": "华安证券",
     "date": "2026-11-13",
@@ -7,6 +34,15 @@
     "rating": "买入",
     "stock": "沪电股份",
     "code": "002463"
+  },
+  {
+    "title": "矿服+资源双驱动，国际矿业舞台放异彩",
+    "org": "东吴证券",
+    "date": "2026-11-13",
+    "link": "https://data.eastmoney.com/report/info/AP202611131831683084.html",
+    "rating": "买入",
+    "stock": "金诚信",
+    "code": "603979"
   },
   {
     "title": "高端运动服饰龙头，多品牌持续扩张",
@@ -142,41 +178,5 @@
     "rating": "增持",
     "stock": "新泉股份",
     "code": "603179"
-  },
-  {
-    "title": "从特种电源走向AI供电，多层级布局打开AI成长空间",
-    "org": "东吴证券",
-    "date": "2026-11-12",
-    "link": "https://data.eastmoney.com/report/info/AP202611121831660247.html",
-    "rating": "买入",
-    "stock": "新雷能",
-    "code": "300593"
-  },
-  {
-    "title": "托精造极，伦起新章",
-    "org": "中邮证券",
-    "date": "2026-11-12",
-    "link": "https://data.eastmoney.com/report/info/AP202611121831656716.html",
-    "rating": "增持",
-    "stock": "托伦斯",
-    "code": "301583"
-  },
-  {
-    "title": "公司简评报告：3+1平台协同放量，扣非净利润稳步提升",
-    "org": "东海证券",
-    "date": "2026-11-12",
-    "link": "https://data.eastmoney.com/report/info/AP202611121831655524.html",
-    "rating": "增持",
-    "stock": "安集科技",
-    "code": "688019"
-  },
-  {
-    "title": "前三季度营收增长28%，新业务布局持续推进",
-    "org": "国信证券",
-    "date": "2026-11-12",
-    "link": "https://data.eastmoney.com/report/info/AP202611121831655473.html",
-    "rating": "增持",
-    "stock": "爱柯迪",
-    "code": "600933"
   }
 ]

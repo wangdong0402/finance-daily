@@ -1,17 +1,383 @@
 {
-  "updated": "2026-11-13 03:05",
+  "updated": "2026-11-13 03:17",
   "periods": {
     "5d": {
-      "inflow": [],
-      "outflow": []
+      "inflow": [
+        {
+          "name": "影视院线",
+          "code": "BK1222",
+          "change": 5.8,
+          "main_net": 9.8
+        },
+        {
+          "name": "半导体设备",
+          "code": "BK1326",
+          "change": -0.47,
+          "main_net": 9.7
+        },
+        {
+          "name": "IT服务Ⅲ",
+          "code": "BK1444",
+          "change": 0.81,
+          "main_net": 7.4
+        },
+        {
+          "name": "IT服务Ⅱ",
+          "code": "BK1238",
+          "change": 0.81,
+          "main_net": 7.4
+        },
+        {
+          "name": "计算机",
+          "code": "BK1207",
+          "change": 0.65,
+          "main_net": 7.03
+        },
+        {
+          "name": "院线",
+          "code": "BK1300",
+          "change": 12.5,
+          "main_net": 6.15
+        },
+        {
+          "name": "电力",
+          "code": "BK0428",
+          "change": 0.55,
+          "main_net": 5.58
+        },
+        {
+          "name": "银行",
+          "code": "BK1283",
+          "change": 1.44,
+          "main_net": 5.57
+        },
+        {
+          "name": "银行Ⅱ",
+          "code": "BK0475",
+          "change": 1.44,
+          "main_net": 5.57
+        },
+        {
+          "name": "公用事业",
+          "code": "BK0427",
+          "change": 0.31,
+          "main_net": 4.76
+        }
+      ],
+      "outflow": [
+        {
+          "name": "电子",
+          "code": "BK1201",
+          "change": -0.93,
+          "main_net": -122.14
+        },
+        {
+          "name": "元件",
+          "code": "BK0459",
+          "change": -3.4,
+          "main_net": -65.0
+        },
+        {
+          "name": "通信设备",
+          "code": "BK0448",
+          "change": -0.99,
+          "main_net": -60.97
+        },
+        {
+          "name": "通信",
+          "code": "BK1215",
+          "change": -0.37,
+          "main_net": -58.8
+        },
+        {
+          "name": "印制电路板",
+          "code": "BK1340",
+          "change": -3.97,
+          "main_net": -56.69
+        },
+        {
+          "name": "通信网络设备及器件",
+          "code": "BK1591",
+          "change": -1.6,
+          "main_net": -54.69
+        },
+        {
+          "name": "半导体",
+          "code": "BK1036",
+          "change": -0.78,
+          "main_net": -29.2
+        },
+        {
+          "name": "机械设备",
+          "code": "BK1205",
+          "change": -0.39,
+          "main_net": -27.72
+        },
+        {
+          "name": "数字芯片设计",
+          "code": "BK1331",
+          "change": -0.59,
+          "main_net": -26.76
+        },
+        {
+          "name": "营销代理",
+          "code": "BK1293",
+          "change": 0.13,
+          "main_net": -19.6
+        }
+      ]
     },
     "20d": {
-      "inflow": [],
-      "outflow": []
+      "inflow": [
+        {
+          "name": "生活用纸",
+          "code": "BK1495",
+          "main_net": 64.04,
+          "days": 20
+        },
+        {
+          "name": "个护用品",
+          "code": "BK1251",
+          "main_net": 63.94,
+          "days": 20
+        },
+        {
+          "name": "美容护理",
+          "code": "BK1035",
+          "main_net": 48.48,
+          "days": 20
+        },
+        {
+          "name": "半导体设备",
+          "code": "BK1326",
+          "main_net": 39.45,
+          "days": 20
+        },
+        {
+          "name": "集成电路制造",
+          "code": "BK1329",
+          "main_net": 11.13,
+          "days": 20
+        },
+        {
+          "name": "院线",
+          "code": "BK1300",
+          "main_net": -1.94,
+          "days": 20
+        },
+        {
+          "name": "影视动漫制作",
+          "code": "BK1299",
+          "main_net": -11.63,
+          "days": 20
+        },
+        {
+          "name": "影视院线",
+          "code": "BK1222",
+          "main_net": -13.58,
+          "days": 20
+        },
+        {
+          "name": "生猪养殖",
+          "code": "BK1512",
+          "main_net": -16.89,
+          "days": 20
+        },
+        {
+          "name": "锂",
+          "code": "BK1621",
+          "main_net": -19.88,
+          "days": 20
+        }
+      ],
+      "outflow": [
+        {
+          "name": "计算机",
+          "code": "BK1207",
+          "main_net": -242.53,
+          "days": 20
+        },
+        {
+          "name": "电力",
+          "code": "BK0428",
+          "main_net": -118.96,
+          "days": 20
+        },
+        {
+          "name": "IT服务Ⅲ",
+          "code": "BK1444",
+          "main_net": -59.05,
+          "days": 20
+        },
+        {
+          "name": "IT服务Ⅱ",
+          "code": "BK1238",
+          "main_net": -59.05,
+          "days": 20
+        },
+        {
+          "name": "银行",
+          "code": "BK1283",
+          "main_net": -50.4,
+          "days": 20
+        },
+        {
+          "name": "银行Ⅱ",
+          "code": "BK0475",
+          "main_net": -50.4,
+          "days": 20
+        },
+        {
+          "name": "食品饮料",
+          "code": "BK0438",
+          "main_net": -43.67,
+          "days": 20
+        },
+        {
+          "name": "游戏Ⅲ",
+          "code": "BK1301",
+          "main_net": -38.57,
+          "days": 20
+        },
+        {
+          "name": "火力发电",
+          "code": "BK1377",
+          "main_net": -38.27,
+          "days": 20
+        },
+        {
+          "name": "能源金属",
+          "code": "BK1015",
+          "main_net": -38.14,
+          "days": 20
+        }
+      ]
     },
     "60d": {
-      "inflow": [],
-      "outflow": []
+      "inflow": [
+        {
+          "name": "生活用纸",
+          "code": "BK1495",
+          "main_net": 110.41,
+          "days": 60
+        },
+        {
+          "name": "个护用品",
+          "code": "BK1251",
+          "main_net": 109.99,
+          "days": 60
+        },
+        {
+          "name": "车身附件及饰件",
+          "code": "BK1525",
+          "main_net": 12.36,
+          "days": 60
+        },
+        {
+          "name": "影视动漫制作",
+          "code": "BK1299",
+          "main_net": -17.69,
+          "days": 60
+        },
+        {
+          "name": "生猪养殖",
+          "code": "BK1512",
+          "main_net": -25.85,
+          "days": 60
+        },
+        {
+          "name": "通信应用增值服务",
+          "code": "BK1589",
+          "main_net": -75.13,
+          "days": 60
+        },
+        {
+          "name": "白酒Ⅲ",
+          "code": "BK1575",
+          "main_net": -76.62,
+          "days": 60
+        },
+        {
+          "name": "白酒Ⅱ",
+          "code": "BK1277",
+          "main_net": -76.62,
+          "days": 60
+        },
+        {
+          "name": "游戏Ⅱ",
+          "code": "BK1046",
+          "main_net": -92.71,
+          "days": 60
+        },
+        {
+          "name": "能源金属",
+          "code": "BK1015",
+          "main_net": -157.43,
+          "days": 60
+        }
+      ],
+      "outflow": [
+        {
+          "name": "计算机",
+          "code": "BK1207",
+          "main_net": -975.74,
+          "days": 60
+        },
+        {
+          "name": "计算机设备",
+          "code": "BK0735",
+          "main_net": -273.85,
+          "days": 60
+        },
+        {
+          "name": "银行Ⅱ",
+          "code": "BK0475",
+          "main_net": -173.94,
+          "days": 60
+        },
+        {
+          "name": "能源金属",
+          "code": "BK1015",
+          "main_net": -157.43,
+          "days": 60
+        },
+        {
+          "name": "游戏Ⅱ",
+          "code": "BK1046",
+          "main_net": -92.71,
+          "days": 60
+        },
+        {
+          "name": "白酒Ⅲ",
+          "code": "BK1575",
+          "main_net": -76.62,
+          "days": 60
+        },
+        {
+          "name": "白酒Ⅱ",
+          "code": "BK1277",
+          "main_net": -76.62,
+          "days": 60
+        },
+        {
+          "name": "通信应用增值服务",
+          "code": "BK1589",
+          "main_net": -75.13,
+          "days": 60
+        },
+        {
+          "name": "生猪养殖",
+          "code": "BK1512",
+          "main_net": -25.85,
+          "days": 60
+        },
+        {
+          "name": "影视动漫制作",
+          "code": "BK1299",
+          "main_net": -17.69,
+          "days": 60
+        }
+      ]
     }
   }
 }
