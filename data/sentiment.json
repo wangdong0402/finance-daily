@@ -1,133 +1,17 @@
 {
-  "updated": "2026-11-12 23:51",
-  "main_net_buy": 74.75,
-  "breadth": {
-    "up": 0.0,
-    "down": 0.0,
-    "flat": 100
-  },
-  "sector_inflow_top10": [
-    {
-      "name": "半导体",
-      "code": "BK1036",
-      "change": -0.84,
-      "main_net": 23.53
+  "updated": "2026-11-13 03:05",
+  "periods": {
+    "5d": {
+      "inflow": [],
+      "outflow": []
     },
-    {
-      "name": "营销代理",
-      "code": "BK1293",
-      "change": -2.0,
-      "main_net": 19.28
+    "20d": {
+      "inflow": [],
+      "outflow": []
     },
-    {
-      "name": "广告营销",
-      "code": "BK1220",
-      "change": -2.02,
-      "main_net": 18.86
-    },
-    {
-      "name": "半导体设备",
-      "code": "BK1326",
-      "change": 0.75,
-      "main_net": 17.33
-    },
-    {
-      "name": "医疗服务",
-      "code": "BK0727",
-      "change": 0.07,
-      "main_net": 9.7
-    },
-    {
-      "name": "集成电路制造",
-      "code": "BK1329",
-      "change": 1.19,
-      "main_net": 8.85
-    },
-    {
-      "name": "分立器件",
-      "code": "BK1327",
-      "change": -1.53,
-      "main_net": 8.57
-    },
-    {
-      "name": "银行",
-      "code": "BK1283",
-      "change": 0.02,
-      "main_net": 7.46
-    },
-    {
-      "name": "银行Ⅱ",
-      "code": "BK0475",
-      "change": 0.02,
-      "main_net": 7.46
-    },
-    {
-      "name": "集成电路封测",
-      "code": "BK1328",
-      "change": -0.05,
-      "main_net": 5.73
+    "60d": {
+      "inflow": [],
+      "outflow": []
     }
-  ],
-  "sector_outflow_top10": [
-    {
-      "name": "电子",
-      "code": "BK1201",
-      "change": -1.58,
-      "main_net": -79.05
-    },
-    {
-      "name": "通信",
-      "code": "BK1215",
-      "change": -2.06,
-      "main_net": -73.03
-    },
-    {
-      "name": "通信设备",
-      "code": "BK0448",
-      "change": -2.02,
-      "main_net": -68.14
-    },
-    {
-      "name": "机械设备",
-      "code": "BK1205",
-      "change": -2.1,
-      "main_net": -66.99
-    },
-    {
-      "name": "电力设备",
-      "code": "BK1200",
-      "change": -2.02,
-      "main_net": -62.39
-    },
-    {
-      "name": "有色金属",
-      "code": "BK0478",
-      "change": -2.51,
-      "main_net": -59.03
-    },
-    {
-      "name": "通信网络设备及器件",
-      "code": "BK1591",
-      "change": -1.71,
-      "main_net": -49.26
-    },
-    {
-      "name": "消费电子",
-      "code": "BK1037",
-      "change": -2.52,
-      "main_net": -45.9
-    },
-    {
-      "name": "消费电子零部件及组装",
-      "code": "BK1338",
-      "change": -2.53,
-      "main_net": -44.05
-    },
-    {
-      "name": "汽车",
-      "code": "BK1211",
-      "change": -2.35,
-      "main_net": -39.15
-    }
-  ]
+  }
 }
