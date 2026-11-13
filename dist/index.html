@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>个人财经终端</title>
+<!-- 引入 Chart.js 图表库 -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
 :root { color-scheme: light dark; }
 * { box-sizing: border-box; }
@@ -24,14 +26,22 @@ h2 a { color: inherit; text-decoration: none; }
 h2 a:hover { text-decoration: underline; }
 .summary { font-size: 14px; line-height: 1.6; color: #3a3a3c; margin: 0; }
 .empty { background: #fff; border-radius: 14px; padding: 32px 20px; text-align: center; color: #6e6e73; font-size: 14px; }
+
 .sentiment-dashboard { background: transparent; }
 .sentiment-time { text-align: center; font-size: 12px; color: #98989d; margin-bottom: 20px; }
+
+/* 宏观数据卡片样式 */
+.macro-container { display: flex; flex-direction: column; gap: 16px; }
+.macro-card { background: #fff; border-radius: 14px; padding: 16px; box-shadow: 0 1px 2px rgba(0, 0, 0, .04); }
+.macro-card h3 { font-size: 14px; margin: 0 0 16px 0; color: #3a3a3c; }
+
 @media (prefers-color-scheme: dark) {
   body { background: #000; color: #f5f5f7; }
   header { background: rgba(0, 0, 0, .8); border-bottom-color: rgba(255, 255, 255, .12); }
   .sub, .meta { color: #98989d; }
-  .card, .empty { background: #1c1c1e; box-shadow: none; }
+  .card, .empty, .macro-card { background: #1c1c1e; box-shadow: none; }
   .summary { color: #d1d1d6; }
+  .macro-card h3 { color: #f5f5f7; }
   .tab-btn { color: #98989d; }
   .tab-btn.active { color: #f5f5f7; border-bottom-color: #f5f5f7; }
   .meta span[style*="color: #1d1d1f;"] { color: #f5f5f7 !important; }
@@ -45,12 +55,13 @@ h2 a:hover { text-decoration: underline; }
 <header>
   <div class="header-top">
     <h1>个人财经终端</h1>
-    <div class="sub">更新：2026-11-13 04:58 · 共 70 条新闻</div>
+    <div class="sub">更新：2026-11-13 05:04 · 共 70 条新闻</div>
   </div>
   <div class="tabs">
     <button class="tab-btn active" onclick="switchTab('news')" id="btn-news">每日新闻</button>
     <button class="tab-btn" onclick="switchTab('reports')" id="btn-reports">券商研报</button>
     <button class="tab-btn" onclick="switchTab('sentiment')" id="btn-sentiment">市场情绪</button>
+    <button class="tab-btn" onclick="switchTab('macro')" id="btn-macro">宏观数据</button>
   </div>
 </header>
 <main>
@@ -956,8 +967,103 @@ h2 a:hover { text-decoration: underline; }
         </article></div>
   <div id="tab-sentiment" style="display: none;">
     <div class="sentiment-dashboard">
-      <div class="sentiment-time">数据更新于：2026-11-13 04:58（行业资金流为盘后数据）</div>
+      <div class="sentiment-time">数据更新于：2026-11-13 05:04（同花顺行业资金流，盘后数据）</div>
       
+        <div style="margin-bottom: 32px;">
+          <div style="font-size: 16px; font-weight: bold; color: #1d1d1f; margin-bottom: 12px; padding-left: 8px; border-left: 4px solid #1d1d1f;">
+            📅 20个交易日 · 行业累计资金流向
+          </div>
+          <div style="display: flex; gap: 12px;">
+            <div style="flex: 1; background: #fff; border-radius: 12px; padding: 14px;">
+              <div style="font-size: 13px; font-weight: bold; color: #ef4444; margin-bottom: 8px;">流入 TOP10</div>
+              
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">军工装备 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+18.83 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">房地产 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+10.09 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">贵金属 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+8.54 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">白酒 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+7.73 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">养殖业 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+5.73 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">银行 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+5.37 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">电网设备 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+5.02 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">农产品加工 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+4.81 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">军工电子 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+4.39 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">汽车零部件 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+3.56 亿</div>
+        </div>
+            </div>
+            <div style="flex: 1; background: #fff; border-radius: 12px; padding: 14px;">
+              <div style="font-size: 13px; font-weight: bold; color: #10b981; margin-bottom: 8px;">流出 TOP10</div>
+              
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">文化传媒 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-34.25 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">元件 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-24.58 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">半导体 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-23.02 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">电池 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-21.96 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">证券 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-18.67 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">软件开发 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-16.26 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">医疗服务 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-14.27 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">化学制品 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-11.43 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">IT服务 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-10.46 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">游戏 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-9.09 亿</div>
+        </div>
+            </div>
+          </div>
+        </div>
         <div style="margin-bottom: 32px;">
           <div style="font-size: 16px; font-weight: bold; color: #1d1d1f; margin-bottom: 12px; padding-left: 8px; border-left: 4px solid #1d1d1f;">
             📅 10个交易日 · 行业累计资金流向
@@ -965,11 +1071,91 @@ h2 a:hover { text-decoration: underline; }
           <div style="display: flex; gap: 12px;">
             <div style="flex: 1; background: #fff; border-radius: 12px; padding: 14px;">
               <div style="font-size: 13px; font-weight: bold; color: #ef4444; margin-bottom: 8px;">流入 TOP10</div>
-              <div style="color: #98989d; font-size: 12px; padding: 12px 0;">暂无数据</div>
+              
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">白酒 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+27.57 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">电池 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+16.79 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">银行 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+16.2 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">白色家电 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+10.76 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">港口航运 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+7.39 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">医疗服务 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+4.58 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">生物制品 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+4.22 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">饮料制造 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+3.34 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">石油加工贸易 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+3.2 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">小金属 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+3.07 亿</div>
+        </div>
             </div>
             <div style="flex: 1; background: #fff; border-radius: 12px; padding: 14px;">
               <div style="font-size: 13px; font-weight: bold; color: #10b981; margin-bottom: 8px;">流出 TOP10</div>
-              <div style="color: #98989d; font-size: 12px; padding: 12px 0;">暂无数据</div>
+              
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">半导体 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-41.02 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">软件开发 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-32.29 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">文化传媒 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-24.48 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">IT服务 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-22.94 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">通用设备 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-18.66 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">光学光电子 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-18.26 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">军工装备 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-14.58 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">电力 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-11.84 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">汽车零部件 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-11.57 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">专用设备 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-11.48 亿</div>
+        </div>
             </div>
           </div>
         </div>
@@ -980,26 +1166,223 @@ h2 a:hover { text-decoration: underline; }
           <div style="display: flex; gap: 12px;">
             <div style="flex: 1; background: #fff; border-radius: 12px; padding: 14px;">
               <div style="font-size: 13px; font-weight: bold; color: #ef4444; margin-bottom: 8px;">流入 TOP10</div>
-              <div style="color: #98989d; font-size: 12px; padding: 12px 0;">暂无数据</div>
+              
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">银行 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+24.67 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">电力 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+19.33 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">轨交设备 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+4.95 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">养殖业 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+3.42 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">煤炭开采加工 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+2.74 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">公路铁路运输 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+2.17 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">综合 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+1.84 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">石油加工贸易 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+1.32 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">白色家电 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+1.18 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">黑色家电 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+0.04 亿</div>
+        </div>
             </div>
             <div style="flex: 1; background: #fff; border-radius: 12px; padding: 14px;">
               <div style="font-size: 13px; font-weight: bold; color: #10b981; margin-bottom: 8px;">流出 TOP10</div>
-              <div style="color: #98989d; font-size: 12px; padding: 12px 0;">暂无数据</div>
+              
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">半导体 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-35.26 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">电池 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-34.32 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">医疗服务 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-30.12 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">通用设备 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-26.13 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">工业金属 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-24.48 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">软件开发 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-23.44 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">IT服务 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-19.42 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">元件 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-18.65 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">消费电子 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-18.5 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">汽车零部件 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-17.33 亿</div>
+        </div>
             </div>
           </div>
         </div>
     </div>
     </div>
+  <div id="tab-macro" style="display: none;">
+    <div class="macro-container">
+      
+        <div class="macro-card">
+          <h3>居民消费价格指数 (CPI) - 同比</h3>
+          <div style="position: relative; height: 200px; width: 100%;">
+            <canvas id="chart-cpi"></canvas>
+          </div>
+        </div>
+        
+      
+        <div class="macro-card">
+          <h3>工业生产者出厂价格 (PPI) - 同比</h3>
+          <div style="position: relative; height: 200px; width: 100%;">
+            <canvas id="chart-ppi"></canvas>
+          </div>
+        </div>
+        
+      
+        <div class="macro-card">
+          <h3>M2 货币供应量 - 同比</h3>
+          <div style="position: relative; height: 200px; width: 100%;">
+            <canvas id="chart-m2"></canvas>
+          </div>
+        </div>
+        
+      
+        <div class="macro-card">
+          <h3>M1 货币供应量 - 同比</h3>
+          <div style="position: relative; height: 200px; width: 100%;">
+            <canvas id="chart-m1"></canvas>
+          </div>
+        </div>
+        
+      
+        <div class="macro-card">
+          <h3>固定资产投资 - 同比</h3>
+          <div style="position: relative; height: 200px; width: 100%;">
+            <canvas id="chart-invest"></canvas>
+          </div>
+        </div>
+        
+    </div>
+    </div>
 </main>
+
 <script>
+// 将后端的宏观 JSON 数据注入到 JS 中
+const macroData = {"cpi": {"labels": ["2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "data": [0.2, 0.7, 0.8, 0.2, 1.3, 1.0, 1.2, 1.2, 1.0, 0.5, 0.8, 0.9, 0.7]}, "ppi": {"labels": ["2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "data": [-2.1, -2.2, -1.9, -1.4, -0.9, 0.5, 2.8, 3.9, 4.1, 3.5, 3.8, 5.0, 5.7]}, "m2": {"labels": ["2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份"], "data": [8.4, 8.2, 8.0, 8.5, 9.0, 9.0, 8.5, 8.6, 8.6, 8.0, 7.7, 7.5, 7.2]}, "m1": {"labels": ["2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份"], "data": [7.2, 6.2, 4.9, 3.8, 4.9, 5.9, 5.1, 5.0, 5.5, 4.0, 4.0, 4.1, 3.2]}, "invest": {"labels": ["2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份"], "data": [-6.26, -9.32, -8.41, -15.52, -17.59, -15.21, -1.12, -12.01, -17.15, -15.6, -14.19, -13.51, -9.69]}};
+
+// Tab 切换逻辑
 function switchTab(tab) {
-  ['news','reports','sentiment'].forEach(t => {
+  ['news','reports','sentiment','macro'].forEach(t => {
     document.getElementById('tab-' + t).style.display = 'none';
     document.getElementById('btn-' + t).classList.remove('active');
   });
   document.getElementById('tab-' + tab).style.display = 'block';
   document.getElementById('btn-' + tab).classList.add('active');
 }
+
+// 绘制图表逻辑
+document.addEventListener('DOMContentLoaded', function() {
+  const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const textColor = isDark ? '#98989d' : '#6e6e73';
+  const gridColor = isDark ? '#3a3a3c' : '#e5e7eb';
+
+  const chartConfigs = [
+    { id: 'chart-cpi', dataKey: 'cpi', color: '#ef4444', label: 'CPI同比 (%)' },
+    { id: 'chart-ppi', dataKey: 'ppi', color: '#3b82f6', label: 'PPI同比 (%)' },
+    { id: 'chart-m2', dataKey: 'm2', color: '#10b981', label: 'M2同比 (%)' },
+    { id: 'chart-m1', dataKey: 'm1', color: '#f59e0b', label: 'M1同比 (%)' },
+    { id: 'chart-invest', dataKey: 'invest', color: '#8b5cf6', label: '固投同比 (%)' }
+  ];
+
+  chartConfigs.forEach(cfg => {
+    const canvas = document.getElementById(cfg.id);
+    if (!canvas || !macroData[cfg.dataKey]) return;
+
+    const rawData = macroData[cfg.dataKey];
+    
+    // 如果因为某些原因 DOM 隐藏导致画不出来，可以让它保持透明，等切 Tab 时再画。
+    // 但 Chart.js 通常支持隐藏状态下初始化。
+    new Chart(canvas.getContext('2d'), {
+      type: 'line',
+      data: {
+        labels: rawData.labels,
+        datasets: [{
+          label: cfg.label,
+          data: rawData.data,
+          borderColor: cfg.color,
+          backgroundColor: cfg.color + '20', // 加上 20 变成半透明的 Hex 颜色
+          borderWidth: 2,
+          pointRadius: 3,
+          pointBackgroundColor: cfg.color,
+          fill: true,
+          tension: 0.3 // 平滑曲线
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false }, // 隐藏图例，因为上方标题已经有了
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            backgroundColor: isDark ? 'rgba(0,0,0,0.8)' : 'rgba(255,255,255,0.9)',
+            titleColor: isDark ? '#fff' : '#1d1d1f',
+            bodyColor: isDark ? '#fff' : '#1d1d1f',
+            borderColor: gridColor,
+            borderWidth: 1
+          }
+        },
+        scales: {
+          x: {
+            grid: { display: false },
+            ticks: { color: textColor, maxRotation: 45, minRotation: 45, font: { size: 10 } }
+          },
+          y: {
+            grid: { color: gridColor, drawBorder: false },
+            ticks: { color: textColor, font: { size: 10 } }
+          }
+        }
+      }
+    });
+  });
+});
 </script>
 </body>
 </html>
