@@ -44,16 +44,15 @@ def extract_series(df, x_col_fuzzy, y_col_fuzzy, target_len=13):
         print(f"    [警告] 数据解析失败: {e}")
         return None
 
-def resample_monthly(df, date_col, value_cols):
+def resample_monthly(df, date_col, value_cols, target_len=13):
     try:
         df = df.copy()
         df['dt'] = pd.to_datetime(df[date_col], errors='coerce')
         df = df.dropna(subset=['dt'])
         for col in value_cols:
             df[col] = pd.to_numeric(df[col], errors='coerce')
-        df = df.set_index('dt')
-        df = df.sort_index()
-        monthly = df[value_cols].resample('ME').last().dropna(how='all').tail(13)
+        df = df.set_index('dt').sort_index()
+        monthly = df[value_cols].resample('ME').last().dropna(how='all').tail(target_len)
         if monthly.empty:
             return None, []
         labels = [d.strftime('%Y-%m') for d in monthly.index]
@@ -76,7 +75,7 @@ def main():
         macro_data["charts"]["money_supply"] = {"name": "货币供应量同比增速 (%)", "category": "货币", "type": "multi_line", "labels": [str(x)[:10] for x in df_money[col_date]], "series": [{"name": f"M{i}", "color": ["#ef4444", "#10b981", "#3b82f6"][i], "data": [round(float(v), 2) for v in df_money[cols[i]]]} for i in range(3)]}
     except Exception as e: print(f"货币供应量失败: {e}")
 
-    # 2. 配置指标
+    # 2. 基础配置指标
     for cfg in MACRO_CONFIGS:
         print(f"[信息] 抓取 {cfg['name']} ...")
         try:
@@ -119,7 +118,7 @@ def main():
                 macro_data["charts"]["bond_yield"] = {"name": "10年期国债收益率 (%)", "category": "大类资产", "type": "multi_line", "labels": labels, "series": [{"name": "中国", "color": "#ef4444", "data": [round(float(v), 2) for v in monthly[col_cn]]}, {"name": "美国", "color": "#3b82f6", "data": [round(float(v), 2) for v in monthly[col_us]]}]}
     except Exception as e: print(f"国债异常: {e}")
 
-    # 6. 大类资产：美元兑人民币
+    # 6. 大类资产：汇率
     print("[信息] 抓取 美元兑人民币汇率 ...")
     try:
         df_fx = ak.currency_boc_safe()
@@ -132,49 +131,77 @@ def main():
                 macro_data["charts"]["exchange_rate"] = {"name": "美元兑人民币中间价", "category": "大类资产", "type": "line", "color": "#10b981", "labels": labels, "data": [round(float(v), 4) for v in monthly[col_val]]}
     except Exception as e: print(f"汇率异常: {e}")
 
-    # 7. 大类资产：沪深300 PE (乐咕乐股)
+    # 7. 大类资产：沪深300 PE (近三年)
     print("[信息] 抓取 沪深300 PE ...")
     try:
-        # 乐咕乐股接口，提供长周期估值数据
         df_pe = ak.stock_index_pe_lg(symbol="沪深300")
-        print(f"    [调试] PE接口原始列名: {df_pe.columns.tolist()}")
-        
         col_date = next((c for c in df_pe.columns if "日期" in c), None)
         col_val = next((c for c in df_pe.columns if "滚动市盈率" in c or "等权静态市盈率" in c or "市盈率" in c), None)
-        
         if col_date and col_val:
-            monthly, labels = resample_monthly(df_pe, col_date, [col_val])
+            monthly, labels = resample_monthly(df_pe, col_date, [col_val], target_len=36)
             if monthly is not None:
                 macro_data["charts"]["hs300_pe"] = {
-                    "name": "沪深300 滚动市盈率 (PE-TTM)", "category": "大类资产", "type": "line", "color": "#8b5cf6",
-                    "labels": labels,
-                    "data": [round(float(v), 2) for v in monthly[col_val]]
+                    "name": "沪深300 滚动市盈率 (PE-TTM，近三年)", "category": "大类资产", "type": "line", "color": "#8b5cf6",
+                    "labels": labels, "data": [round(float(v), 2) for v in monthly[col_val]]
                 }
-                print("    [成功] 沪深300 PE 抓取完成")
     except Exception as e: print(f"沪深300 PE异常: {e}")
 
-    # 8. 大类资产：两融余额 (上交所)
-    print("[信息] 抓取 两融余额 ...")
+    # 8. 大类资产：中证500 PE (近三年)
+    print("[信息] 抓取 中证500 PE ...")
     try:
-        # 上交所融资融券汇总接口
-        df_margin = ak.stock_margin_sse()
-        print(f"    [调试] 两融接口原始列名: {df_margin.columns.tolist()}")
-        
-        col_date = next((c for c in df_margin.columns if "日期" in c), None)
-        # 找“融资融券余额”，通常单位是元
-        col_val = next((c for c in df_margin.columns if "融资融券余额" in c), None)
-        
+        df_pe500 = ak.stock_index_pe_lg(symbol="中证500")
+        col_date = next((c for c in df_pe500.columns if "日期" in c), None)
+        col_val = next((c for c in df_pe500.columns if "滚动市盈率" in c or "等权静态市盈率" in c or "市盈率" in c), None)
         if col_date and col_val:
-            # 强制转换为亿元
-            df_margin[col_val] = pd.to_numeric(df_margin[col_val], errors='coerce') / 100000000.0
-            monthly, labels = resample_monthly(df_margin, col_date, [col_val])
+            monthly, labels = resample_monthly(df_pe500, col_date, [col_val], target_len=36)
             if monthly is not None:
-                macro_data["charts"]["margin_balance"] = {
-                    "name": "上交所两融余额 (亿元)", "category": "大类资产", "type": "bar", "color": "#f43f5e",
-                    "labels": labels,
-                    "data": [round(float(v), 2) for v in monthly[col_val]]
+                macro_data["charts"]["zz500_pe"] = {
+                    "name": "中证500 滚动市盈率 (PE-TTM，近三年)", "category": "大类资产", "type": "line", "color": "#ec4899",
+                    "labels": labels, "data": [round(float(v), 2) for v in monthly[col_val]]
                 }
-                print("    [成功] 两融余额抓取完成")
+    except Exception as e: print(f"中证500 PE异常: {e}")
+
+    # 9. 大类资产：沪深两市两融余额（柱状图 + 融资余额折线）
+    print("[信息] 抓取 沪深两市两融余额 ...")
+    try:
+        # 获取上海与深圳全市场历史两融数据
+        df_sh = ak.macro_china_market_margin_sh()
+        df_sz = ak.macro_china_market_margin_sz()
+        
+        # 统一列名和日期格式
+        def prep(df):
+            df = df.copy()
+            df['dt'] = pd.to_datetime(df['日期'], errors='coerce')
+            df = df.dropna(subset=['dt'])
+            # 寻找融资融券余额与融资余额列
+            col_total = next((c for c in df.columns if "融资融券余额" in c), None)
+            col_rz = next((c for c in df.columns if "融资余额" in c), None)
+            if not col_total or not col_rz:
+                return None
+            df[col_total] = pd.to_numeric(df[col_total], errors='coerce')
+            df[col_rz] = pd.to_numeric(df[col_rz], errors='coerce')
+            return df[['dt', col_total, col_rz]].set_index('dt')
+        
+        sh_clean = prep(df_sh)
+        sz_clean = prep(df_sz)
+        
+        if sh_clean is not None and sz_clean is not None:
+            # 按日期合并沪深两市，并求和
+            merged = pd.concat([sh_clean, sz_clean]).groupby('dt').sum().sort_index()
+            # 按月重采样取月末值（单位换算为亿元）
+            monthly = merged.resample('ME').last().dropna().tail(13)
+            if not monthly.empty:
+                labels = [d.strftime('%Y-%m') for d in monthly.index]
+                col_total = [c for c in sh_clean.columns if "融资融券" in c][0]
+                col_rz = [c for c in sh_clean.columns if "融资余额" in c][0]
+                
+                macro_data["charts"]["margin_balance"] = {
+                    "name": "沪深两市两融余额 (亿元)", "category": "大类资产", "type": "mixed", 
+                    "labels": labels,
+                    "bar_data": [round(float(v) / 100000000, 2) for v in monthly[col_total]],
+                    "line_data": [round(float(v) / 100000000, 2) for v in monthly[col_rz]],
+                    "bar_color": "#f43f5e", "line_color": "#3b82f6"
+                }
     except Exception as e: print(f"两融余额异常: {e}")
 
     os.makedirs("data", exist_ok=True)
