@@ -2,10 +2,10 @@ import akshare as ak
 import json
 import os
 import pandas as pd
+import re
 from datetime import datetime
 
 # ================= 核心配置区 =================
-# 以后想加新指标，只需要在这里加字典即可
 MACRO_CONFIGS = [
     # 1. 货币与信用
     {
@@ -24,7 +24,7 @@ MACRO_CONFIGS = [
         "api": "macro_china_ppi", "x_col": "月份", "y_col": "当月同比增长",
         "type": "line", "color": "#8b5cf6"
     },
-    # 3. 工业与景气 (PMI比较特殊，一个接口返回两个数据，后面单独处理)
+    # 3. 工业与景气
     {
         "id": "gyzjz", "name": "工业增加值 - 同比 (%)", "category": "工业",
         "api": "macro_china_gyzjz", "x_col": "月份", "y_col": "同比增长",
@@ -39,7 +39,7 @@ MACRO_CONFIGS = [
 ]
 
 def extract_series(df, x_col_fuzzy, y_col_fuzzy, target_len=13):
-    """模糊匹配列名并提取最近N期数据"""
+    """模糊匹配列名，强制统一按时间排序，并提取最近N期数据"""
     try:
         col_x = [c for c in df.columns if x_col_fuzzy in c][0]
         col_y = [c for c in df.columns if y_col_fuzzy in c][0]
@@ -51,10 +51,26 @@ def extract_series(df, x_col_fuzzy, y_col_fuzzy, target_len=13):
         df['value'] = pd.to_numeric(df['value'], errors='coerce')
         df = df.dropna()
         
-        df = df.head(target_len).iloc[::-1] # 取近13期并正序
+        # 【核心修复】：用正则提取年月，生成一个可排序的辅助列
+        def parse_date_to_sortable(d):
+            d_str = str(d)
+            # 匹配 4 位数字年份，后面跟任意非数字，再跟 1-2 位数字月份
+            match = re.search(r'(\d{4})\D*(\d{1,2})', d_str)
+            if match:
+                y, m = match.groups()
+                return f"{y}-{int(m):02d}" # 格式化为 2016-01 以便字符串排序
+            return d_str # 匹配失败则保留原样兜底
+            
+        df['sort_date'] = df['date'].apply(parse_date_to_sortable)
+        
+        # 按清理后的时间列进行升序排序（老数据在前，新数据在后）
+        df = df.sort_values(by='sort_date').reset_index(drop=True)
+        
+        # 截取最后 target_len 行（即最新数据）
+        df = df.tail(target_len)
         
         return {
-            "labels": df['date'].tolist(),
+            "labels": df['date'].tolist(), # 返回原始日期格式给前端展示
             "data": [round(float(v), 2) for v in df['value'].tolist()]
         }
     except Exception as e:
