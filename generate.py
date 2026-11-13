@@ -77,6 +77,10 @@ def build_report_cards(reports):
         rating = html.escape(item.get("rating", ""))
         stock = html.escape(item.get("stock", ""))
         code = html.escape(item.get("code", ""))
+
+        # 为搜索功能添加 data-* 属性用于前端过滤
+        search_str = f"{stock} {code}".lower()
+
         rating_color = "#6e6e73"
         if "买入" in rating or "推荐" in rating:
             rating_color = "#dc2626"
@@ -85,8 +89,9 @@ def build_report_cards(reports):
         elif "中性" in rating or "持有" in rating:
             rating_color = "#2563eb"
         rating_html = f'<span style="color: {rating_color}; font-weight: bold; margin-left: 8px;">[{rating}]</span>' if rating else ""
+        
         cards.append(f'''
-        <article class="card">
+        <article class="card report-card" data-search="{search_str}">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">{stock} ({code})</span>
@@ -156,17 +161,14 @@ def build_macro_html(macro_data):
     charts = macro_data.get("charts", {})
     categories = {"货币": "💵 货币与信用", "物价": "📈 物价与通胀", "工业": "🏭 工业与景气", "外贸": "🏗️ 投资与外贸"}
     
-    # 生成二级分类导航栏
     cat_nav = ""
     first_cat = True
     for cat_id, cat_name in categories.items():
-        # 检查该分类下是否有数据
         if any(c["category"] == cat_id for c in charts.values()):
             active = "active" if first_cat else ""
             cat_nav += f'<button class="sub-tab-btn {active}" onclick="switchSubTab(\'{cat_id}\')" id="subbtn-{cat_id}">{cat_name}</button>'
             first_cat = False
 
-    # 生成各个分类的内容区
     cat_contents = ""
     first_content = True
     for cat_id in categories.keys():
@@ -181,15 +183,7 @@ def build_macro_html(macro_data):
             if cfg["category"] != cat_id:
                 continue
                 
-            if cfg["type"] in ("line", "bar"):
-                charts_html += f'''
-                <div class="macro-card">
-                  <h3>{cfg['name']}</h3>
-                  <div style="position: relative; height: 200px; width: 100%;">
-                    <canvas id="chart-{key}"></canvas>
-                  </div>
-                </div>'''
-            elif cfg["type"] == "multi_line":
+            if cfg["type"] in ("line", "bar", "multi_line"):
                 charts_html += f'''
                 <div class="macro-card">
                   <h3>{cfg['name']}</h3>
@@ -253,10 +247,14 @@ h2 a:hover {{ text-decoration: underline; }}
 .summary {{ font-size: 14px; line-height: 1.6; color: #3a3a3c; margin: 0; }}
 .empty {{ background: #fff; border-radius: 14px; padding: 32px 20px; text-align: center; color: #6e6e73; font-size: 14px; }}
 
+/* 搜索框样式 */
+.search-container {{ margin-bottom: 16px; }}
+.search-input {{ width: 100%; padding: 12px 16px; border-radius: 10px; border: 1px solid #e5e7eb; font-size: 14px; background: #fff; color: #1d1d1f; outline: none; transition: border-color 0.2s; }}
+.search-input:focus {{ border-color: #3b82f6; }}
+
 .sentiment-dashboard {{ background: transparent; }}
 .sentiment-time {{ text-align: center; font-size: 12px; color: #98989d; margin-bottom: 20px; }}
 
-/* 宏观二级菜单样式 */
 .macro-wrapper {{ background: transparent; }}
 .sub-tabs {{ display: flex; gap: 10px; overflow-x: auto; margin-bottom: 16px; padding-bottom: 4px; }}
 .sub-tab-btn {{ background: rgba(0,0,0,0.05); border: none; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; color: #3a3a3c; cursor: pointer; white-space: nowrap; }}
@@ -268,7 +266,7 @@ h2 a:hover {{ text-decoration: underline; }}
   body {{ background: #000; color: #f5f5f7; }}
   header {{ background: rgba(0, 0, 0, .8); border-bottom-color: rgba(255, 255, 255, .12); }}
   .sub, .meta {{ color: #98989d; }}
-  .card, .empty, .macro-card {{ background: #1c1c1e; box-shadow: none; }}
+  .card, .empty, .macro-card, .search-input {{ background: #1c1c1e; box-shadow: none; border-color: #3a3a3c; }}
   .summary {{ color: #d1d1d6; }}
   .macro-card h3 {{ color: #f5f5f7; }}
   .tab-btn {{ color: #98989d; }}
@@ -297,7 +295,17 @@ h2 a:hover {{ text-decoration: underline; }}
 </header>
 <main>
   <div id="tab-news">{news_cards_html}</div>
-  <div id="tab-reports" style="display: none;">{reports_cards_html}</div>
+  
+  <div id="tab-reports" style="display: none;">
+    <div class="search-container">
+      <input type="text" id="report-search" class="search-input" placeholder="🔍 输入股票代码或名称搜索研报..." oninput="filterReports()">
+    </div>
+    <div id="report-list">
+      {reports_cards_html}
+    </div>
+    <div id="report-empty" class="empty" style="display: none;">未找到相关研报</div>
+  </div>
+
   <div id="tab-sentiment" style="display: none;">{sentiment_cards_html}</div>
   <div id="tab-macro" style="display: none;">{macro_cards_html}</div>
 </main>
@@ -316,6 +324,26 @@ function switchTab(tab) {{
   if(tab === 'macro') lazyRenderCharts();
 }}
 
+// 研报搜索过滤逻辑
+function filterReports() {{
+  const query = document.getElementById('report-search').value.toLowerCase().trim();
+  const cards = document.querySelectorAll('.report-card');
+  let visibleCount = 0;
+
+  cards.forEach(card => {{
+    const searchData = card.getAttribute('data-search');
+    if (searchData.includes(query)) {{
+      card.style.display = 'block';
+      visibleCount++;
+    }} else {{
+      card.style.display = 'none';
+    }}
+  }});
+
+  const emptyMsg = document.getElementById('report-empty');
+  emptyMsg.style.display = visibleCount === 0 ? 'block' : 'none';
+}}
+
 function switchSubTab(catId) {{
   document.querySelectorAll('.sub-tab-content').forEach(el => el.style.display = 'none');
   document.querySelectorAll('.sub-tab-btn').forEach(el => el.classList.remove('active'));
@@ -324,19 +352,17 @@ function switchSubTab(catId) {{
   lazyRenderCharts();
 }}
 
-// 懒加载图表渲染机制
 function lazyRenderCharts() {{
   const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   const textColor = isDark ? '#98989d' : '#6e6e73';
   const gridColor = isDark ? '#3a3a3c' : '#e5e7eb';
 
-  // 只绘制当前可见的子 Tab 里的图表
   const activeContent = document.querySelector('.sub-tab-content[style*="display: block"]');
   if (!activeContent) return;
 
   activeContent.querySelectorAll('canvas').forEach(canvas => {{
     const chartId = canvas.id.replace('chart-', '');
-    if (chartInstances[chartId]) return; // 已经画过了就跳过
+    if (chartInstances[chartId]) return;
 
     const cfg = macroData[chartId];
     if (!cfg) return;
@@ -350,7 +376,6 @@ function lazyRenderCharts() {{
         borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false
       }}));
     }} else if (cfg.type === 'bar') {{
-      // 为柱状图配置正负数不同颜色
       const bgColors = cfg.data.map(v => v >= 0 ? cfg.color : '#10b981');
       datasets = [{{
         data: cfg.data, backgroundColor: bgColors, borderRadius: 4
@@ -378,7 +403,6 @@ function lazyRenderCharts() {{
       }}
     }};
 
-    // 如果是 PMI，添加 50 枯荣线
     if (cfg.baseline) {{
       config.options.plugins.annotation = {{
         annotations: {{
@@ -395,9 +419,7 @@ function lazyRenderCharts() {{
   }});
 }}
 
-// 每次点开宏观 Tab 时，顺便检查并渲染一次
 document.addEventListener('DOMContentLoaded', () => {{
-  // 延迟一下确保 DOM 完全就绪
   setTimeout(lazyRenderCharts, 500);
 }});
 </script>
@@ -406,7 +428,7 @@ document.addEventListener('DOMContentLoaded', () => {{
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(html_doc)
-    print(f"已生成 {OUTPUT_FILE}，包含二级菜单和懒加载图表。")
+    print(f"已生成 {OUTPUT_FILE}，包含个股研报搜索功能。")
 
 
 if __name__ == "__main__":
