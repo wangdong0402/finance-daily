@@ -17,6 +17,9 @@ def fetch_datacenter_flow(period):
     
     # 报表名称：行业资金流
     # 排序规则：按主力净流入（MAIN_NET_INFLOW）降序，取前10
+    # 【修复语法错误】：f-string 中使用了单引号
+    filter_str = f'(PERIOD="{period}")'
+    
     params_in = {
         "reportName": "RPT_SECTOR_FUND_FLOW",
         "columns": "ALL",
@@ -24,7 +27,7 @@ def fetch_datacenter_flow(period):
         "pageNumber": 1,
         "sortTypes": -1,
         "sortColumns": "MAIN_NET_INFLOW",
-        "filter": f"(PERIOD="{period}")"
+        "filter": filter_str
     }
     
     # 按主力净流入升序，取前10（即流出榜）
