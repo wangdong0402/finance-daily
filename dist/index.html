@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>个人财经终端</title>
-<!-- 引入 Chart.js 图表库 -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
 :root { color-scheme: light dark; }
@@ -30,9 +29,12 @@ h2 a:hover { text-decoration: underline; }
 .sentiment-dashboard { background: transparent; }
 .sentiment-time { text-align: center; font-size: 12px; color: #98989d; margin-bottom: 20px; }
 
-/* 宏观数据卡片样式 */
-.macro-container { display: flex; flex-direction: column; gap: 16px; }
-.macro-card { background: #fff; border-radius: 14px; padding: 16px; box-shadow: 0 1px 2px rgba(0, 0, 0, .04); }
+/* 宏观二级菜单样式 */
+.macro-wrapper { background: transparent; }
+.sub-tabs { display: flex; gap: 10px; overflow-x: auto; margin-bottom: 16px; padding-bottom: 4px; }
+.sub-tab-btn { background: rgba(0,0,0,0.05); border: none; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; color: #3a3a3c; cursor: pointer; white-space: nowrap; }
+.sub-tab-btn.active { background: #1d1d1f; color: #fff; }
+.macro-card { background: #fff; border-radius: 14px; padding: 16px; box-shadow: 0 1px 2px rgba(0, 0, 0, .04); margin-bottom: 16px; }
 .macro-card h3 { font-size: 14px; margin: 0 0 16px 0; color: #3a3a3c; }
 
 @media (prefers-color-scheme: dark) {
@@ -44,6 +46,8 @@ h2 a:hover { text-decoration: underline; }
   .macro-card h3 { color: #f5f5f7; }
   .tab-btn { color: #98989d; }
   .tab-btn.active { color: #f5f5f7; border-bottom-color: #f5f5f7; }
+  .sub-tab-btn { background: rgba(255,255,255,0.1); color: #d1d1d6; }
+  .sub-tab-btn.active { background: #f5f5f7; color: #000; }
   .meta span[style*="color: #1d1d1f;"] { color: #f5f5f7 !important; }
   .sentiment-dashboard div[style*="background: #fff;"] { background: #1c1c1e !important; }
   .sentiment-dashboard div[style*="border-left: 4px solid #1d1d1f;"] { border-left-color: #f5f5f7 !important; }
@@ -55,7 +59,7 @@ h2 a:hover { text-decoration: underline; }
 <header>
   <div class="header-top">
     <h1>个人财经终端</h1>
-    <div class="sub">更新：2026-11-13 05:27 · 共 70 条新闻</div>
+    <div class="sub">更新：2026-11-13 05:32 · 共 70 条新闻</div>
   </div>
   <div class="tabs">
     <button class="tab-btn active" onclick="switchTab('news')" id="btn-news">每日新闻</button>
@@ -174,16 +178,6 @@ h2 a:hover { text-decoration: underline; }
           </div>
           <h2><a href="https://www.tmtpost.com/8204069.html" target="_blank" rel="noopener noreferrer">黄仁勋辞职，对中国企业影响几何？</a></h2>
           <p class="summary">“达链”集体承压，国产芯片股强势走高。</p>
-        </article>
-
-        <article class="card">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span>2026-11-13 03:40</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8204090.html" target="_blank" rel="noopener noreferrer">迪士尼的新任CEO正在帮助公司股价重拾昔日的光彩</a></h2>
-          <p class="summary">现在是投资者进场买入的时候了吗？</p>
         </article>
 
         <article class="card">
@@ -324,6 +318,16 @@ h2 a:hover { text-decoration: underline; }
           </div>
           <h2><a href="https://www.tmtpost.com/8203846.html" target="_blank" rel="noopener noreferrer">美元定价体系：财富分配、阶层变迁与世界格局</a></h2>
           <p class="summary">美国债务风险释放，会触发一套由美债收益率、全球美元信贷、资产估值、汇率、实体经济构成的多米诺链式反应。区分急性危机踩踏和长期计价基准慢性漂移，后者可能性更高。</p>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
+            <span>钛媒体</span>
+            <span>2026-11-13 01:18</span>
+          </div>
+          <h2><a href="https://www.tmtpost.com/8203648.html" target="_blank" rel="noopener noreferrer">苹果换帅不足三个月，新任CEO令人失望</a></h2>
+          <p class="summary">出师不利</p>
         </article>
 
         <article class="card">
@@ -967,7 +971,7 @@ h2 a:hover { text-decoration: underline; }
         </article></div>
   <div id="tab-sentiment" style="display: none;">
     <div class="sentiment-dashboard">
-      <div class="sentiment-time">数据更新于：2026-11-13 05:27（同花顺行业资金流，盘后数据）</div>
+      <div class="sentiment-time">数据更新于：2026-11-13 05:32（同花顺行业资金流，盘后数据）</div>
       
         <div style="margin-bottom: 32px;">
           <div style="font-size: 16px; font-weight: bold; color: #1d1d1f; margin-bottom: 12px; padding-left: 8px; border-left: 4px solid #1d1d1f;">
@@ -1077,6 +1081,10 @@ h2 a:hover { text-decoration: underline; }
           <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+27.57 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">电池 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+16.79 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
           <div style="flex: 1; font-size: 13px; color: #1d1d1f;">银行 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
           <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+16.2 亿</div>
         </div>
@@ -1108,10 +1116,6 @@ h2 a:hover { text-decoration: underline; }
           <div style="flex: 1; font-size: 13px; color: #1d1d1f;">小金属 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
           <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+3.07 亿</div>
         </div>
-        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">化学制药 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+2.35 亿</div>
-        </div>
             </div>
             <div style="flex: 1; background: #fff; border-radius: 12px; padding: 14px;">
               <div style="font-size: 13px; font-weight: bold; color: #10b981; margin-bottom: 8px;">流出 TOP10</div>
@@ -1121,12 +1125,20 @@ h2 a:hover { text-decoration: underline; }
           <div style="font-size: 13px; font-weight: bold; color: #10b981;">-41.02 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">软件开发 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-32.29 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
           <div style="flex: 1; font-size: 13px; color: #1d1d1f;">文化传媒 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
           <div style="font-size: 13px; font-weight: bold; color: #10b981;">-24.48 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
           <div style="flex: 1; font-size: 13px; color: #1d1d1f;">IT服务 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
           <div style="font-size: 13px; font-weight: bold; color: #10b981;">-22.94 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">通用设备 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-18.66 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
           <div style="flex: 1; font-size: 13px; color: #1d1d1f;">光学光电子 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
@@ -1148,14 +1160,6 @@ h2 a:hover { text-decoration: underline; }
           <div style="flex: 1; font-size: 13px; color: #1d1d1f;">专用设备 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
           <div style="font-size: 13px; font-weight: bold; color: #10b981;">-11.48 亿</div>
         </div>
-        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">消费电子 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-10.84 亿</div>
-        </div>
-        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">计算机设备 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-10.17 亿</div>
-        </div>
             </div>
           </div>
         </div>
@@ -1168,6 +1172,18 @@ h2 a:hover { text-decoration: underline; }
               <div style="font-size: 13px; font-weight: bold; color: #ef4444; margin-bottom: 8px;">流入 TOP10</div>
               
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">银行 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+24.67 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">电力 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+19.33 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">轨交设备 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+4.95 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
           <div style="flex: 1; font-size: 13px; color: #1d1d1f;">养殖业 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
           <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+3.42 亿</div>
         </div>
@@ -1176,36 +1192,24 @@ h2 a:hover { text-decoration: underline; }
           <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+2.74 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">农产品加工 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-0.25 亿</div>
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">公路铁路运输 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+2.17 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">油气开采及服务 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-0.48 亿</div>
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">综合 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+1.84 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">油气开采及服务 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-0.48 亿</div>
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">石油加工贸易 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+1.32 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">白酒 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-0.71 亿</div>
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">白色家电 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+1.18 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">橡胶制品 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-0.72 亿</div>
-        </div>
-        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">医药商业 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-1.03 亿</div>
-        </div>
-        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">种植业与林业 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-1.2 亿</div>
-        </div>
-        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">非金属材料 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-1.22 亿</div>
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">黑色家电 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+0.04 亿</div>
         </div>
             </div>
             <div style="flex: 1; background: #fff; border-radius: 12px; padding: 14px;">
@@ -1236,20 +1240,20 @@ h2 a:hover { text-decoration: underline; }
           <div style="font-size: 13px; font-weight: bold; color: #10b981;">-23.44 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">IT服务 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-19.42 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
           <div style="flex: 1; font-size: 13px; color: #1d1d1f;">元件 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
           <div style="font-size: 13px; font-weight: bold; color: #10b981;">-18.65 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">化学制药 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-17.08 亿</div>
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">消费电子 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-18.5 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">光伏设备 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-15.44 亿</div>
-        </div>
-        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">小金属 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-15.2 亿</div>
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">汽车零部件 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-17.33 亿</div>
         </div>
             </div>
           </div>
@@ -1257,56 +1261,47 @@ h2 a:hover { text-decoration: underline; }
     </div>
     </div>
   <div id="tab-macro" style="display: none;">
-    <div class="macro-container">
-      
-        <div class="macro-card">
-          <h3>居民消费价格指数 (CPI) - 同比</h3>
-          <div style="position: relative; height: 200px; width: 100%;">
-            <canvas id="chart-cpi"></canvas>
-          </div>
-        </div>
-        
-      
-        <div class="macro-card">
-          <h3>工业生产者出厂价格 (PPI) - 同比</h3>
-          <div style="position: relative; height: 200px; width: 100%;">
-            <canvas id="chart-ppi"></canvas>
-          </div>
-        </div>
-        
-      
-        <div class="macro-card">
-          <h3>M2 货币供应量 - 同比</h3>
-          <div style="position: relative; height: 200px; width: 100%;">
-            <canvas id="chart-m2"></canvas>
-          </div>
-        </div>
-        
-      
-        <div class="macro-card">
-          <h3>M1 货币供应量 - 同比</h3>
-          <div style="position: relative; height: 200px; width: 100%;">
-            <canvas id="chart-m1"></canvas>
-          </div>
-        </div>
-        
-      
-        <div class="macro-card">
-          <h3>固定资产投资 - 同比</h3>
-          <div style="position: relative; height: 200px; width: 100%;">
-            <canvas id="chart-invest"></canvas>
-          </div>
-        </div>
-        
+    <div class="macro-wrapper">
+      <div class="sub-tabs"><button class="sub-tab-btn active" onclick="switchSubTab('货币')" id="subbtn-货币">💵 货币与信用</button><button class="sub-tab-btn " onclick="switchSubTab('物价')" id="subbtn-物价">📈 物价与通胀</button><button class="sub-tab-btn " onclick="switchSubTab('工业')" id="subbtn-工业">🏭 工业与景气</button></div>
+      <div class="sub-tab-container"><div id="subtab-货币" class="sub-tab-content" style="display: block;">
+                <div class="macro-card">
+                  <h3>社会融资规模增量 (亿元)</h3>
+                  <div style="position: relative; height: 200px; width: 100%;">
+                    <canvas id="chart-shrzgm"></canvas>
+                  </div>
+                </div></div><div id="subtab-物价" class="sub-tab-content" style="display: none;">
+                <div class="macro-card">
+                  <h3>居民消费价格指数 (CPI) - 同比 (%)</h3>
+                  <div style="position: relative; height: 200px; width: 100%;">
+                    <canvas id="chart-cpi"></canvas>
+                  </div>
+                </div>
+                <div class="macro-card">
+                  <h3>工业生产者出厂价格 (PPI) - 同比 (%)</h3>
+                  <div style="position: relative; height: 200px; width: 100%;">
+                    <canvas id="chart-ppi"></canvas>
+                  </div>
+                </div></div><div id="subtab-工业" class="sub-tab-content" style="display: none;">
+                <div class="macro-card">
+                  <h3>工业增加值 - 同比 (%)</h3>
+                  <div style="position: relative; height: 200px; width: 100%;">
+                    <canvas id="chart-gyzjz"></canvas>
+                  </div>
+                </div>
+                <div class="macro-card">
+                  <h3>采购经理人指数 (PMI)</h3>
+                  <div style="position: relative; height: 200px; width: 100%;">
+                    <canvas id="chart-pmi"></canvas>
+                  </div>
+                </div></div></div>
     </div>
     </div>
 </main>
 
 <script>
-// 将后端的宏观 JSON 数据注入到 JS 中
-const macroData = {"cpi": {"labels": ["2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "data": [0.2, 0.7, 0.8, 0.2, 1.3, 1.0, 1.2, 1.2, 1.0, 0.5, 0.8, 0.9, 0.7]}, "ppi": {"labels": ["2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "data": [-2.1, -2.2, -1.9, -1.4, -0.9, 0.5, 2.8, 3.9, 4.1, 3.5, 3.8, 5.0, 5.7]}, "m2": {"labels": ["2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份"], "data": [8.4, 8.2, 8.0, 8.5, 9.0, 9.0, 8.5, 8.6, 8.6, 8.0, 7.7, 7.5, 7.2]}, "m1": {"labels": ["2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份"], "data": [7.2, 6.2, 4.9, 3.8, 4.9, 5.9, 5.1, 5.0, 5.5, 4.0, 4.0, 4.1, 3.2]}, "invest": {"labels": ["2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份"], "data": [-6.26, -9.32, -8.41, -15.52, -17.59, -15.21, -1.12, -12.01, -17.15, -15.6, -14.19, -13.51, -9.69]}};
+const macroData = {"shrzgm": {"name": "社会融资规模增量 (亿元)", "category": "货币", "type": "bar", "color": "#3b82f6", "labels": ["201601", "201512", "201511", "201510", "201509", "201508", "201507", "201506", "201505", "201504", "201503", "201502", "201501"], "data": [34758.0, 18114.0, 10255.0, 5593.0, 13571.0, 11097.0, 7511.0, 18384.0, 12397.0, 10582.0, 12433.0, 13609.0, 20516.0]}, "cpi": {"name": "居民消费价格指数 (CPI) - 同比 (%)", "category": "物价", "type": "line", "color": "#ef4444", "labels": ["2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "data": [0.2, 0.7, 0.8, 0.2, 1.3, 1.0, 1.2, 1.2, 1.0, 0.5, 0.8, 0.9, 0.7]}, "ppi": {"name": "工业生产者出厂价格 (PPI) - 同比 (%)", "category": "物价", "type": "line", "color": "#8b5cf6", "labels": ["2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "data": [-2.1, -2.2, -1.9, -1.4, -0.9, 0.5, 2.8, 3.9, 4.1, 3.5, 3.8, 5.0, 5.7]}, "gyzjz": {"name": "工业增加值 - 同比 (%)", "category": "工业", "type": "bar", "color": "#10b981", "labels": ["2009年03月份", "2009年02月份", "2008年12月份", "2008年11月份", "2008年10月份", "2008年09月份", "2008年08月份", "2008年07月份", "2008年06月份", "2008年05月份", "2008年04月份", "2008年03月份", "2008年02月份"], "data": [8.3, 11.0, 5.7, 5.4, 8.2, 11.4, 12.8, 14.7, 16.0, 16.0, 15.7, 17.8, 15.4]}, "pmi": {"name": "采购经理人指数 (PMI)", "category": "工业", "type": "multi_line", "labels": ["2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "series": [{"name": "制造业", "color": "#3b82f6", "data": [49.0, 49.2, 50.1, 49.3, 49.0, 50.4, 50.3, 50.0, 50.3, 49.2, 49.8, 50.1, 49.3]}, {"name": "非制造业", "color": "#f59e0b", "data": [50.1, 49.5, 50.2, 49.4, 49.5, 50.1, 49.4, 50.1, 50.2, 49.0, 49.0, 50.2, 49.7]}], "baseline": 50}};
+const chartInstances = {};
 
-// Tab 切换逻辑
 function switchTab(tab) {
   ['news','reports','sentiment','macro'].forEach(t => {
     document.getElementById('tab-' + t).style.display = 'none';
@@ -1314,74 +1309,92 @@ function switchTab(tab) {
   });
   document.getElementById('tab-' + tab).style.display = 'block';
   document.getElementById('btn-' + tab).classList.add('active');
+  if(tab === 'macro') lazyRenderCharts();
 }
 
-// 绘制图表逻辑
-document.addEventListener('DOMContentLoaded', function() {
+function switchSubTab(catId) {
+  document.querySelectorAll('.sub-tab-content').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.sub-tab-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById('subtab-' + catId).style.display = 'block';
+  document.getElementById('subbtn-' + catId).classList.add('active');
+  lazyRenderCharts();
+}
+
+// 懒加载图表渲染机制
+function lazyRenderCharts() {
   const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   const textColor = isDark ? '#98989d' : '#6e6e73';
   const gridColor = isDark ? '#3a3a3c' : '#e5e7eb';
 
-  const chartConfigs = [
-    { id: 'chart-cpi', dataKey: 'cpi', color: '#ef4444', label: 'CPI同比 (%)' },
-    { id: 'chart-ppi', dataKey: 'ppi', color: '#3b82f6', label: 'PPI同比 (%)' },
-    { id: 'chart-m2', dataKey: 'm2', color: '#10b981', label: 'M2同比 (%)' },
-    { id: 'chart-m1', dataKey: 'm1', color: '#f59e0b', label: 'M1同比 (%)' },
-    { id: 'chart-invest', dataKey: 'invest', color: '#8b5cf6', label: '固投同比 (%)' }
-  ];
+  // 只绘制当前可见的子 Tab 里的图表
+  const activeContent = document.querySelector('.sub-tab-content[style*="display: block"]');
+  if (!activeContent) return;
 
-  chartConfigs.forEach(cfg => {
-    const canvas = document.getElementById(cfg.id);
-    if (!canvas || !macroData[cfg.dataKey]) return;
+  activeContent.querySelectorAll('canvas').forEach(canvas => {
+    const chartId = canvas.id.replace('chart-', '');
+    if (chartInstances[chartId]) return; // 已经画过了就跳过
 
-    const rawData = macroData[cfg.dataKey];
-    
-    // 如果因为某些原因 DOM 隐藏导致画不出来，可以让它保持透明，等切 Tab 时再画。
-    // 但 Chart.js 通常支持隐藏状态下初始化。
-    new Chart(canvas.getContext('2d'), {
-      type: 'line',
-      data: {
-        labels: rawData.labels,
-        datasets: [{
-          label: cfg.label,
-          data: rawData.data,
-          borderColor: cfg.color,
-          backgroundColor: cfg.color + '20', // 加上 20 变成半透明的 Hex 颜色
-          borderWidth: 2,
-          pointRadius: 3,
-          pointBackgroundColor: cfg.color,
-          fill: true,
-          tension: 0.3 // 平滑曲线
-        }]
-      },
+    const cfg = macroData[chartId];
+    if (!cfg) return;
+
+    let datasets = [];
+    let chartType = cfg.type === 'multi_line' ? 'line' : cfg.type;
+
+    if (cfg.type === 'multi_line') {
+      datasets = cfg.series.map(s => ({
+        label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color + '20',
+        borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false
+      }));
+    } else if (cfg.type === 'bar') {
+      // 为柱状图配置正负数不同颜色
+      const bgColors = cfg.data.map(v => v >= 0 ? cfg.color : '#10b981');
+      datasets = [{
+        data: cfg.data, backgroundColor: bgColors, borderRadius: 4
+      }];
+    } else {
+      datasets = [{
+        data: cfg.data, borderColor: cfg.color, backgroundColor: cfg.color + '20',
+        borderWidth: 2, tension: 0.3, pointRadius: 3, fill: true
+      }];
+    }
+
+    const config = {
+      type: chartType,
+      data: { labels: cfg.labels, datasets: datasets },
       options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false }, // 隐藏图例，因为上方标题已经有了
-          tooltip: {
-            mode: 'index',
-            intersect: false,
-            backgroundColor: isDark ? 'rgba(0,0,0,0.8)' : 'rgba(255,255,255,0.9)',
-            titleColor: isDark ? '#fff' : '#1d1d1f',
-            bodyColor: isDark ? '#fff' : '#1d1d1f',
-            borderColor: gridColor,
-            borderWidth: 1
-          }
+        responsive: true, maintainAspectRatio: false,
+        plugins: { 
+          legend: { display: cfg.type === 'multi_line', position: 'top', labels: { boxWidth: 12, font: { size: 10 } } },
+          tooltip: { mode: 'index', intersect: false }
         },
         scales: {
-          x: {
-            grid: { display: false },
-            ticks: { color: textColor, maxRotation: 45, minRotation: 45, font: { size: 10 } }
-          },
-          y: {
-            grid: { color: gridColor, drawBorder: false },
-            ticks: { color: textColor, font: { size: 10 } }
-          }
+          x: { grid: { display: false }, ticks: { color: textColor, maxRotation: 45, minRotation: 45, font: { size: 10 } } },
+          y: { grid: { color: gridColor, drawBorder: false }, ticks: { color: textColor, font: { size: 10 } } }
         }
       }
-    });
+    };
+
+    // 如果是 PMI，添加 50 枯荣线
+    if (cfg.baseline) {
+      config.options.plugins.annotation = {
+        annotations: {
+          line1: {
+            type: 'line', yMin: cfg.baseline, yMax: cfg.baseline,
+            borderColor: '#ef4444', borderWidth: 1, borderDash: [5, 5],
+            label: { display: true, content: '枯荣线', position: 'end' }
+          }
+        }
+      };
+    }
+
+    chartInstances[chartId] = new Chart(canvas.getContext('2d'), config);
   });
+}
+
+// 每次点开宏观 Tab 时，顺便检查并渲染一次
+document.addEventListener('DOMContentLoaded', () => {
+  // 延迟一下确保 DOM 完全就绪
+  setTimeout(lazyRenderCharts, 500);
 });
 </script>
 </body>
