@@ -6,6 +6,7 @@ from datetime import datetime
 NEWS_FILE = "data/news.json"
 REPORTS_FILE = "data/reports.json"
 SENTIMENT_FILE = "data/sentiment.json"
+MACRO_FILE = "data/macro.json"
 OUTPUT_FILE = "dist/index.html"
 
 
@@ -120,10 +121,9 @@ def build_sentiment_html(data):
     updated = html.escape(data.get("updated", ""))
     periods = data["periods"]
 
-    period_labels = {"5d": "5个交易日", "10d": "10个交易日"}
+    period_labels = {"20d": "20个交易日", "10d": "10个交易日", "5d": "5个交易日"}
     blocks = ""
-    # 按 10日 -> 5日 排序
-    for key in ["10d", "5d"]:
+    for key in ["20d", "10d", "5d"]:
         p = periods.get(key, {})
         inflow = p.get("inflow", [])
         outflow = p.get("outflow", [])
@@ -144,11 +144,39 @@ def build_sentiment_html(data):
             </div>
           </div>
         </div>'''
-
     return f'''
     <div class="sentiment-dashboard">
-      <div class="sentiment-time">数据更新于：{updated}（行业资金流为盘后数据）</div>
+      <div class="sentiment-time">数据更新于：{updated}（同花顺行业资金流，盘后数据）</div>
       {blocks}
+    </div>
+    '''
+
+
+def build_macro_html(macro_data):
+    charts = macro_data.get("charts", {})
+    
+    def chart_box(title, data_key, color):
+        # 如果数据为空，显示占位
+        if not charts.get(data_key) or not charts[data_key].get("labels"):
+            return f'<div class="macro-card"><h3>{title}</h3><div class="empty" style="padding:20px;">暂无数据</div></div>'
+        
+        # 容器 ID 用于后续 JS 渲染
+        return f'''
+        <div class="macro-card">
+          <h3>{title}</h3>
+          <div style="position: relative; height: 200px; width: 100%;">
+            <canvas id="chart-{data_key}"></canvas>
+          </div>
+        </div>
+        '''
+
+    return f'''
+    <div class="macro-container">
+      {chart_box("居民消费价格指数 (CPI) - 同比", "cpi", "#ef4444")}
+      {chart_box("工业生产者出厂价格 (PPI) - 同比", "ppi", "#3b82f6")}
+      {chart_box("M2 货币供应量 - 同比", "m2", "#10b981")}
+      {chart_box("M1 货币供应量 - 同比", "m1", "#f59e0b")}
+      {chart_box("固定资产投资 - 同比", "invest", "#8b5cf6")}
     </div>
     '''
 
@@ -157,6 +185,7 @@ def main():
     news_data = load_json(NEWS_FILE, {"updated": "", "count": 0, "items": []})
     reports_data = load_json(REPORTS_FILE, [])
     sentiment_data = load_json(SENTIMENT_FILE, {})
+    macro_data = load_json(MACRO_FILE, {"charts": {}})
 
     news_items = news_data.get("items", [])
     news_updated = format_time(news_data.get("updated", ""))
@@ -165,6 +194,10 @@ def main():
     news_cards_html = build_news_cards(news_items)
     reports_cards_html = build_report_cards(reports_data)
     sentiment_cards_html = build_sentiment_html(sentiment_data)
+    macro_cards_html = build_macro_html(macro_data)
+
+    # 将宏观数据转成 JSON 字符串，注入到前端的 JS 中
+    macro_json_str = json.dumps(macro_data.get("charts", {}), ensure_ascii=False)
 
     html_doc = f'''<!doctype html>
 <html lang="zh-CN">
@@ -172,6 +205,8 @@ def main():
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>个人财经终端</title>
+<!-- 引入 Chart.js 图表库 -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
 :root {{ color-scheme: light dark; }}
 * {{ box-sizing: border-box; }}
@@ -192,14 +227,22 @@ h2 a {{ color: inherit; text-decoration: none; }}
 h2 a:hover {{ text-decoration: underline; }}
 .summary {{ font-size: 14px; line-height: 1.6; color: #3a3a3c; margin: 0; }}
 .empty {{ background: #fff; border-radius: 14px; padding: 32px 20px; text-align: center; color: #6e6e73; font-size: 14px; }}
+
 .sentiment-dashboard {{ background: transparent; }}
 .sentiment-time {{ text-align: center; font-size: 12px; color: #98989d; margin-bottom: 20px; }}
+
+/* 宏观数据卡片样式 */
+.macro-container {{ display: flex; flex-direction: column; gap: 16px; }}
+.macro-card {{ background: #fff; border-radius: 14px; padding: 16px; box-shadow: 0 1px 2px rgba(0, 0, 0, .04); }}
+.macro-card h3 {{ font-size: 14px; margin: 0 0 16px 0; color: #3a3a3c; }}
+
 @media (prefers-color-scheme: dark) {{
   body {{ background: #000; color: #f5f5f7; }}
   header {{ background: rgba(0, 0, 0, .8); border-bottom-color: rgba(255, 255, 255, .12); }}
   .sub, .meta {{ color: #98989d; }}
-  .card, .empty {{ background: #1c1c1e; box-shadow: none; }}
+  .card, .empty, .macro-card {{ background: #1c1c1e; box-shadow: none; }}
   .summary {{ color: #d1d1d6; }}
+  .macro-card h3 {{ color: #f5f5f7; }}
   .tab-btn {{ color: #98989d; }}
   .tab-btn.active {{ color: #f5f5f7; border-bottom-color: #f5f5f7; }}
   .meta span[style*="color: #1d1d1f;"] {{ color: #f5f5f7 !important; }}
@@ -219,22 +262,97 @@ h2 a:hover {{ text-decoration: underline; }}
     <button class="tab-btn active" onclick="switchTab('news')" id="btn-news">每日新闻</button>
     <button class="tab-btn" onclick="switchTab('reports')" id="btn-reports">券商研报</button>
     <button class="tab-btn" onclick="switchTab('sentiment')" id="btn-sentiment">市场情绪</button>
+    <button class="tab-btn" onclick="switchTab('macro')" id="btn-macro">宏观数据</button>
   </div>
 </header>
 <main>
   <div id="tab-news">{news_cards_html}</div>
   <div id="tab-reports" style="display: none;">{reports_cards_html}</div>
   <div id="tab-sentiment" style="display: none;">{sentiment_cards_html}</div>
+  <div id="tab-macro" style="display: none;">{macro_cards_html}</div>
 </main>
+
 <script>
+// 将后端的宏观 JSON 数据注入到 JS 中
+const macroData = {macro_json_str};
+
+// Tab 切换逻辑
 function switchTab(tab) {{
-  ['news','reports','sentiment'].forEach(t => {{
+  ['news','reports','sentiment','macro'].forEach(t => {{
     document.getElementById('tab-' + t).style.display = 'none';
     document.getElementById('btn-' + t).classList.remove('active');
   }});
   document.getElementById('tab-' + tab).style.display = 'block';
   document.getElementById('btn-' + tab).classList.add('active');
 }}
+
+// 绘制图表逻辑
+document.addEventListener('DOMContentLoaded', function() {{
+  const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const textColor = isDark ? '#98989d' : '#6e6e73';
+  const gridColor = isDark ? '#3a3a3c' : '#e5e7eb';
+
+  const chartConfigs = [
+    {{ id: 'chart-cpi', dataKey: 'cpi', color: '#ef4444', label: 'CPI同比 (%)' }},
+    {{ id: 'chart-ppi', dataKey: 'ppi', color: '#3b82f6', label: 'PPI同比 (%)' }},
+    {{ id: 'chart-m2', dataKey: 'm2', color: '#10b981', label: 'M2同比 (%)' }},
+    {{ id: 'chart-m1', dataKey: 'm1', color: '#f59e0b', label: 'M1同比 (%)' }},
+    {{ id: 'chart-invest', dataKey: 'invest', color: '#8b5cf6', label: '固投同比 (%)' }}
+  ];
+
+  chartConfigs.forEach(cfg => {{
+    const canvas = document.getElementById(cfg.id);
+    if (!canvas || !macroData[cfg.dataKey]) return;
+
+    const rawData = macroData[cfg.dataKey];
+    
+    // 如果因为某些原因 DOM 隐藏导致画不出来，可以让它保持透明，等切 Tab 时再画。
+    // 但 Chart.js 通常支持隐藏状态下初始化。
+    new Chart(canvas.getContext('2d'), {{
+      type: 'line',
+      data: {{
+        labels: rawData.labels,
+        datasets: [{{
+          label: cfg.label,
+          data: rawData.data,
+          borderColor: cfg.color,
+          backgroundColor: cfg.color + '20', // 加上 20 变成半透明的 Hex 颜色
+          borderWidth: 2,
+          pointRadius: 3,
+          pointBackgroundColor: cfg.color,
+          fill: true,
+          tension: 0.3 // 平滑曲线
+        }}]
+      }},
+      options: {{
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {{
+          legend: {{ display: false }}, // 隐藏图例，因为上方标题已经有了
+          tooltip: {{
+            mode: 'index',
+            intersect: false,
+            backgroundColor: isDark ? 'rgba(0,0,0,0.8)' : 'rgba(255,255,255,0.9)',
+            titleColor: isDark ? '#fff' : '#1d1d1f',
+            bodyColor: isDark ? '#fff' : '#1d1d1f',
+            borderColor: gridColor,
+            borderWidth: 1
+          }}
+        }},
+        scales: {{
+          x: {{
+            grid: {{ display: false }},
+            ticks: {{ color: textColor, maxRotation: 45, minRotation: 45, font: {{ size: 10 }} }}
+          }},
+          y: {{
+            grid: {{ color: gridColor, drawBorder: false }},
+            ticks: {{ color: textColor, font: {{ size: 10 }} }}
+          }}
+        }}
+      }}
+    }});
+  }});
+}});
 </script>
 </body>
 </html>'''
@@ -242,7 +360,7 @@ function switchTab(tab) {{
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(html_doc)
-    print(f"已生成 {OUTPUT_FILE}。")
+    print(f"已生成 {OUTPUT_FILE}，包含图表。")
 
 
 if __name__ == "__main__":
