@@ -101,14 +101,13 @@ def build_sector_rows(sectors):
     rows = ""
     for s in sectors:
         name = html.escape(s.get("name", ""))
+        change = s.get("change", 0)
         net = s.get("main_net", 0)
-        days = s.get("days", "")
         net_color = "#ef4444" if net > 0 else "#10b981" if net < 0 else "#6b7280"
         net_text = f"+{net} 亿" if net > 0 else f"{net} 亿"
-        days_hint = f'<span style="font-size:11px;color:#98989d;margin-left:4px;">({days}日)</span>' if days else ""
         rows += f'''
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">{name}{days_hint}</div>
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">{name} <span style="font-size:11px;color:#98989d;">({change:+.2f}%)</span></div>
           <div style="font-size: 13px; font-weight: bold; color: {net_color};">{net_text}</div>
         </div>'''
     return rows or '<div style="color: #98989d; font-size: 12px; padding: 12px 0;">暂无数据</div>'
@@ -121,9 +120,10 @@ def build_sentiment_html(data):
     updated = html.escape(data.get("updated", ""))
     periods = data["periods"]
 
-    period_labels = {"5d": "5个交易日", "20d": "20个交易日", "60d": "60个交易日"}
+    period_labels = {"5d": "5个交易日", "10d": "10个交易日"}
     blocks = ""
-    for key in ["60d", "20d", "5d"]:
+    # 按 10日 -> 5日 排序
+    for key in ["10d", "5d"]:
         p = periods.get(key, {})
         inflow = p.get("inflow", [])
         outflow = p.get("outflow", [])
