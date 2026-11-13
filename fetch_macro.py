@@ -51,7 +51,11 @@ def resample_monthly(df, date_col, value_cols):
         df = df.dropna(subset=['dt'])
         for col in value_cols:
             df[col] = pd.to_numeric(df[col], errors='coerce')
+        
         df = df.set_index('dt')
+        # 【核心修复】：先按时间进行升序排序，确保无论原始数据是正序还是倒序，最后取到的都是最新数据
+        df = df.sort_index()
+        
         monthly = df[value_cols].resample('ME').last().dropna(how='all').tail(13)
         if monthly.empty:
             return None, []
@@ -110,7 +114,6 @@ def main():
     print("[信息] 抓取 10年期国债收益率 ...")
     try:
         df_bond = ak.bond_zh_us_rate()
-        # 智能匹配列名
         col_cn = next((c for c in df_bond.columns if "中国" in c and "10年" in c), None)
         col_us = next((c for c in df_bond.columns if "美国" in c and "10年" in c), None)
         if col_cn and col_us:
