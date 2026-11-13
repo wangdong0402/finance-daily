@@ -1,5 +1,32 @@
 [
   {
+    "title": "单季毛利率修复，经营现金流高增",
+    "org": "华安证券",
+    "date": "2026-11-13",
+    "link": "https://data.eastmoney.com/report/info/AP202611131831687094.html",
+    "rating": "买入",
+    "stock": "上海沿浦",
+    "code": "605128"
+  },
+  {
+    "title": "动储出货持续高增，短期盈利承压",
+    "org": "华安证券",
+    "date": "2026-11-13",
+    "link": "https://data.eastmoney.com/report/info/AP202611131831687032.html",
+    "rating": "买入",
+    "stock": "宁德时代",
+    "code": "300750"
+  },
+  {
+    "title": "Q3盈利环比改善，订单与新业务双轮驱动",
+    "org": "华安证券",
+    "date": "2026-11-13",
+    "link": "https://data.eastmoney.com/report/info/AP202611131831687027.html",
+    "rating": "买入",
+    "stock": "杰瑞股份",
+    "code": "002353"
+  },
+  {
     "title": "盈利能力相对稳定，多项在研获批临床",
     "org": "中邮证券",
     "date": "2026-11-13",
@@ -151,32 +178,5 @@
     "rating": "买入",
     "stock": "华峰测控",
     "code": "688200"
-  },
-  {
-    "title": "长丝盈利提升，投资浙石化增厚收益",
-    "org": "中银证券",
-    "date": "2026-11-13",
-    "link": "https://data.eastmoney.com/report/info/AP202611131831676559.html",
-    "rating": "买入",
-    "stock": "桐昆股份",
-    "code": "601233"
-  },
-  {
-    "title": "公司事件点评报告：三季度收入利润增长，算力与储能产品需求拓展",
-    "org": "华鑫证券",
-    "date": "2026-11-13",
-    "link": "https://data.eastmoney.com/report/info/AP202611131831675648.html",
-    "rating": "买入",
-    "stock": "盛弘股份",
-    "code": "300693"
-  },
-  {
-    "title": "公司事件点评报告：两网订单接续落地，智慧计量业务蓄力修复",
-    "org": "华鑫证券",
-    "date": "2026-11-13",
-    "link": "https://data.eastmoney.com/report/info/AP202611131831675647.html",
-    "rating": "买入",
-    "stock": "炬华科技",
-    "code": "300360"
   }
 ]
