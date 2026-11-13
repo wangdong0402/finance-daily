@@ -51,11 +51,8 @@ def resample_monthly(df, date_col, value_cols):
         df = df.dropna(subset=['dt'])
         for col in value_cols:
             df[col] = pd.to_numeric(df[col], errors='coerce')
-        
         df = df.set_index('dt')
-        # 【核心修复】：先按时间进行升序排序，确保无论原始数据是正序还是倒序，最后取到的都是最新数据
         df = df.sort_index()
-        
         monthly = df[value_cols].resample('ME').last().dropna(how='all').tail(13)
         if monthly.empty:
             return None, []
@@ -68,7 +65,7 @@ def resample_monthly(df, date_col, value_cols):
 def main():
     macro_data = {"updated": datetime.now().strftime("%Y-%m-%d"), "charts": {}}
 
-    # 1. 最先抓取货币供应量
+    # 1. 货币供应量
     print("[信息] 抓取 货币供应量 M0/M1/M2 ...")
     try:
         df_money = ak.macro_china_money_supply()
@@ -79,7 +76,7 @@ def main():
         macro_data["charts"]["money_supply"] = {"name": "货币供应量同比增速 (%)", "category": "货币", "type": "multi_line", "labels": [str(x)[:10] for x in df_money[col_date]], "series": [{"name": f"M{i}", "color": ["#ef4444", "#10b981", "#3b82f6"][i], "data": [round(float(v), 2) for v in df_money[cols[i]]]} for i in range(3)]}
     except Exception as e: print(f"货币供应量失败: {e}")
 
-    # 2. 遍历抓取配置指标
+    # 2. 配置指标
     for cfg in MACRO_CONFIGS:
         print(f"[信息] 抓取 {cfg['name']} ...")
         try:
@@ -122,15 +119,26 @@ def main():
                 macro_data["charts"]["bond_yield"] = {"name": "10年期国债收益率 (%)", "category": "大类资产", "type": "multi_line", "labels": labels, "series": [{"name": "中国", "color": "#ef4444", "data": [round(float(v), 2) for v in monthly[col_cn]]}, {"name": "美国", "color": "#3b82f6", "data": [round(float(v), 2) for v in monthly[col_us]]}]}
     except Exception as e: print(f"国债异常: {e}")
 
-    # 6. 大类资产：美元兑人民币
+    # 6. 大类资产：美元兑人民币（替换为 forex_hist_em）
     print("[信息] 抓取 美元兑人民币汇率 ...")
     try:
-        df_fx = ak.macro_china_rmb()
-        col_fx = next((c for c in df_fx.columns if "美元" in c and "中间价" in c), None)
-        if col_fx:
-            monthly, labels = resample_monthly(df_fx, "日期", [col_fx])
+        df_fx = ak.forex_hist_em(symbol="USDCNH")
+        print(f"    [调试] forex_hist_em 返回列名: {df_fx.columns.tolist()}")
+        # forex_hist_em 通常返回列名如：日期, 今开, 最新价, 最高, 最低...
+        col_date = next((c for c in df_fx.columns if "日期" in c), None)
+        col_val = next((c for c in df_fx.columns if "最新价" in c or "收盘" in c), None)
+        
+        if col_date and col_val:
+            monthly, labels = resample_monthly(df_fx, col_date, [col_val])
             if monthly is not None:
-                macro_data["charts"]["exchange_rate"] = {"name": "美元兑人民币中间价", "category": "大类资产", "type": "line", "color": "#10b981", "labels": labels, "data": [round(float(v), 4) for v in monthly[col_fx]]}
+                macro_data["charts"]["exchange_rate"] = {
+                    "name": "美元兑离岸人民币 (USDCNH)", "category": "大类资产", "type": "line", "color": "#10b981",
+                    "labels": labels,
+                    "data": [round(float(v), 4) for v in monthly[col_val]]
+                }
+                print("    [成功] 汇率数据抓取完成")
+        else:
+            print(f"    [失败] 未找到匹配的日期或价格列名")
     except Exception as e: print(f"汇率异常: {e}")
 
     os.makedirs("data", exist_ok=True)
