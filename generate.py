@@ -29,7 +29,6 @@ def load_json(filepath, default):
 def build_news_cards(items):
     if not items:
         return '<div class="empty">还没有新闻数据。</div>'
-
     cards = []
     for item in items:
         title = html.escape(item.get("title", ""))
@@ -38,7 +37,6 @@ def build_news_cards(items):
         source = html.escape(item.get("source", ""))
         category = html.escape(item.get("category", ""))
         published = html.escape(format_time(item.get("published", "")))
-
         tag_style = ""
         if "宏观" in category or "政策" in category:
             tag_style = "background: #fee2e2; color: #991b1b;"
@@ -52,9 +50,7 @@ def build_news_cards(items):
             tag_style = "background: #dbeafe; color: #1e40af;"
         else:
             tag_style = "background: #f3f4f6; color: #374151;"
-
         summary_html = f'<p class="summary">{summary}</p>' if summary else ""
-
         cards.append(f'''
         <article class="card">
           <div class="meta">
@@ -65,14 +61,12 @@ def build_news_cards(items):
           <h2><a href="{link}" target="_blank" rel="noopener noreferrer">{title}</a></h2>
           {summary_html}
         </article>''')
-
     return "\n".join(cards)
 
 
 def build_report_cards(reports):
     if not reports:
         return '<div class="empty">还没有研报数据。</div>'
-
     cards = []
     for item in reports:
         title = html.escape(item.get("title", ""))
@@ -82,7 +76,6 @@ def build_report_cards(reports):
         rating = html.escape(item.get("rating", ""))
         stock = html.escape(item.get("stock", ""))
         code = html.escape(item.get("code", ""))
-
         rating_color = "#6e6e73"
         if "买入" in rating or "推荐" in rating:
             rating_color = "#dc2626"
@@ -90,9 +83,7 @@ def build_report_cards(reports):
             rating_color = "#ea580c"
         elif "中性" in rating or "持有" in rating:
             rating_color = "#2563eb"
-
         rating_html = f'<span style="color: {rating_color}; font-weight: bold; margin-left: 8px;">[{rating}]</span>' if rating else ""
-
         cards.append(f'''
         <article class="card">
           <div class="meta">
@@ -103,93 +94,61 @@ def build_report_cards(reports):
           </div>
           <h2><a href="{link}" target="_blank" rel="noopener noreferrer">{title}</a>{rating_html}</h2>
         </article>''')
-
     return "\n".join(cards)
 
 
+def build_sector_rows(sectors):
+    rows = ""
+    for s in sectors:
+        name = html.escape(s.get("name", ""))
+        net = s.get("main_net", 0)
+        days = s.get("days", "")
+        net_color = "#ef4444" if net > 0 else "#10b981" if net < 0 else "#6b7280"
+        net_text = f"+{net} 亿" if net > 0 else f"{net} 亿"
+        days_hint = f'<span style="font-size:11px;color:#98989d;margin-left:4px;">({days}日)</span>' if days else ""
+        rows += f'''
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">{name}{days_hint}</div>
+          <div style="font-size: 13px; font-weight: bold; color: {net_color};">{net_text}</div>
+        </div>'''
+    return rows or '<div style="color: #98989d; font-size: 12px; padding: 12px 0;">暂无数据</div>'
+
+
 def build_sentiment_html(data):
-    if not data:
+    if not data or not data.get("periods"):
         return '<div class="empty">还没有市场情绪数据。</div>'
 
     updated = html.escape(data.get("updated", ""))
-    main_net_buy = data.get("main_net_buy", 0)
-    breadth = data.get("breadth", {})
-    inflow = data.get("sector_inflow_top10", [])
-    outflow = data.get("sector_outflow_top10", [])
+    periods = data["periods"]
 
-    # 顶部总资金流向颜色和显示
-    flow_color = "#ef4444" if main_net_buy > 0 else "#10b981" if main_net_buy < 0 else "#6b7280"
-    flow_text = f"+{main_net_buy} 亿" if main_net_buy > 0 else f"{main_net_buy} 亿"
-
-    # 涨跌家数进度条
-    up = breadth.get("up", 0)
-    down = breadth.get("down", 0)
-    flat = breadth.get("flat", 0)
-    total = up + down + flat
-    if total == 0: total = 1
-    up_pct = (up / total) * 100
-    down_pct = (down / total) * 100
-
-    breadth_html = f'''
-    <div class="breadth-container">
-      <div class="breadth-bar">
-        <div class="bar-up" style="width: {up_pct}%;"></div>
-        <div class="bar-down" style="width: {down_pct}%;"></div>
-      </div>
-      <div class="breadth-labels">
-        <span style="color: #ef4444;">上涨 {up} 家</span>
-        <span style="color: #6b7280;">平盘 {flat} 家</span>
-        <span style="color: #10b981;">下跌 {down} 家</span>
-      </div>
-    </div>
-    '''
-
-    # 行业资金流榜单构造
-    def build_sector_rows(sectors):
-        rows = ""
-        for s in sectors:
-            name = html.escape(s.get("name", ""))
-            change = s.get("change", 0)
-            net = s.get("main_net", 0)
-            net_color = "#ef4444" if net > 0 else "#10b981" if net < 0 else "#6b7280"
-            net_text = f"+{net} 亿" if net > 0 else f"{net} 亿"
-            rows += f'''
-            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
-              <div style="flex: 1;">
-                <span style="font-size: 14px; color: #1d1d1f; font-weight: 500;">{name}</span>
-                <span style="font-size: 12px; color: #6e6e73; margin-left: 8px;">{change:+.2f}%</span>
-              </div>
-              <div style="font-size: 14px; font-weight: bold; color: {net_color};">{net_text}</div>
-            </div>'''
-        return rows or '<div style="color: #98989d; font-size: 13px; padding: 16px 0;">暂无数据</div>'
-
-    inflow_html = build_sector_rows(inflow)
-    outflow_html = build_sector_rows(outflow)
+    period_labels = {"5d": "5个交易日", "20d": "20个交易日", "60d": "60个交易日"}
+    blocks = ""
+    for key in ["60d", "20d", "5d"]:  # 按60→20→5从上到下
+        p = periods.get(key, {})
+        inflow = p.get("inflow", [])
+        outflow = p.get("outflow", [])
+        title = period_labels.get(key, key)
+        blocks += f'''
+        <div style="margin-bottom: 32px;">
+          <div style="font-size: 16px; font-weight: bold; color: #1d1d1f; margin-bottom: 12px; padding-left: 8px; border-left: 4px solid #1d1d1f;">
+            📅 {title} · 行业累计资金流向
+          </div>
+          <div style="display: flex; gap: 12px;">
+            <div style="flex: 1; background: #fff; border-radius: 12px; padding: 14px;">
+              <div style="font-size: 13px; font-weight: bold; color: #ef4444; margin-bottom: 8px;">流入 TOP10</div>
+              {build_sector_rows(inflow)}
+            </div>
+            <div style="flex: 1; background: #fff; border-radius: 12px; padding: 14px;">
+              <div style="font-size: 13px; font-weight: bold; color: #10b981; margin-bottom: 8px;">流出 TOP10</div>
+              {build_sector_rows(outflow)}
+            </div>
+          </div>
+        </div>'''
 
     return f'''
     <div class="sentiment-dashboard">
-      <div class="sentiment-time">实时数据更新于：{updated}</div>
-
-      <!-- 新增：顶部核心资金流向看板 -->
-      <div style="text-align: center; margin-bottom: 24px; background: #f9fafb; padding: 20px 0; border-radius: 12px;">
-        <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px;">两市主力资金净流入</div>
-        <div style="font-size: 42px; font-weight: bold; color: {flow_color}; letter-spacing: -1px;">{flow_text}</div>
-      </div>
-
-      <div style="margin-bottom: 28px;">
-        <div style="font-size: 14px; color: #6e6e73; margin-bottom: 12px;">全市场涨跌分布</div>
-        {breadth_html}
-      </div>
-
-      <div style="margin-bottom: 28px;">
-        <div style="font-size: 16px; font-weight: bold; color: #1d1d1f; margin-bottom: 12px; border-left: 4px solid #ef4444; padding-left: 8px;">主力净流入 TOP10 行业</div>
-        {inflow_html}
-      </div>
-
-      <div>
-        <div style="font-size: 16px; font-weight: bold; color: #1d1d1f; margin-bottom: 12px; border-left: 4px solid #10b981; padding-left: 8px;">主力净流出 TOP10 行业</div>
-        {outflow_html}
-      </div>
+      <div class="sentiment-time">数据更新于：{updated}（行业资金流为盘后数据）</div>
+      {blocks}
     </div>
     '''
 
@@ -198,11 +157,11 @@ def main():
     news_data = load_json(NEWS_FILE, {"updated": "", "count": 0, "items": []})
     reports_data = load_json(REPORTS_FILE, [])
     sentiment_data = load_json(SENTIMENT_FILE, {})
-    
+
     news_items = news_data.get("items", [])
     news_updated = format_time(news_data.get("updated", ""))
     news_count = news_data.get("count", len(news_items))
-    
+
     news_cards_html = build_news_cards(news_items)
     reports_cards_html = build_report_cards(reports_data)
     sentiment_cards_html = build_sentiment_html(sentiment_data)
@@ -216,100 +175,37 @@ def main():
 <style>
 :root {{ color-scheme: light dark; }}
 * {{ box-sizing: border-box; }}
-body {{
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-  background: #f5f5f7;
-  color: #1d1d1f;
-}}
-header {{
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(12px);
-  background: rgba(245, 245, 247, .85);
-  border-bottom: 1px solid rgba(0, 0, 0, .08);
-  padding: 16px 16px 0;
-  z-index: 100;
-}}
+body {{ margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; background: #f5f5f7; color: #1d1d1f; }}
+header {{ position: sticky; top: 0; backdrop-filter: blur(12px); background: rgba(245, 245, 247, .85); border-bottom: 1px solid rgba(0, 0, 0, .08); padding: 16px 16px 0; z-index: 100; }}
 .header-top {{ margin-bottom: 12px; }}
 h1 {{ font-size: 20px; margin: 0 0 4px; }}
 .sub {{ font-size: 12px; color: #6e6e73; }}
-.tabs {{
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-}}
-.tab-btn {{
-  background: none;
-  border: none;
-  padding: 10px 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #6e6e73;
-  cursor: pointer;
-  border-bottom: 3px solid transparent;
-  transition: all 0.2s;
-  white-space: nowrap;
-}}
-.tab-btn.active {{
-  color: #1d1d1f;
-  border-bottom-color: #1d1d1f;
-}}
+.tabs {{ display: flex; gap: 20px; overflow-x: auto; }}
+.tab-btn {{ background: none; border: none; padding: 10px 0; font-size: 16px; font-weight: bold; color: #6e6e73; cursor: pointer; border-bottom: 3px solid transparent; transition: all 0.2s; white-space: nowrap; }}
+.tab-btn.active {{ color: #1d1d1f; border-bottom-color: #1d1d1f; }}
 main {{ padding: 12px 12px 32px; max-width: 760px; margin: 0 auto; }}
-.card {{
-  background: #fff;
-  border-radius: 14px;
-  padding: 14px 16px;
-  margin-bottom: 12px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, .04);
-}}
-.meta {{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-  font-size: 12px;
-  color: #6e6e73;
-  margin-bottom: 6px;
-}}
-.tag {{
-  border-radius: 999px;
-  padding: 2px 8px;
-  font-weight: 500;
-}}
+.card {{ background: #fff; border-radius: 14px; padding: 14px 16px; margin-bottom: 12px; box-shadow: 0 1px 2px rgba(0, 0, 0, .04); }}
+.meta {{ display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 12px; color: #6e6e73; margin-bottom: 6px; }}
+.tag {{ border-radius: 999px; padding: 2px 8px; font-weight: 500; }}
 h2 {{ font-size: 16px; line-height: 1.45; margin: 0 0 6px; }}
 h2 a {{ color: inherit; text-decoration: none; }}
 h2 a:hover {{ text-decoration: underline; }}
 .summary {{ font-size: 14px; line-height: 1.6; color: #3a3a3c; margin: 0; }}
-.empty {{
-  background: #fff;
-  border-radius: 14px;
-  padding: 32px 20px;
-  text-align: center;
-  color: #6e6e73;
-  font-size: 14px;
-}}
-
-/* 情绪看板专属样式 */
-.sentiment-dashboard {{ background: #fff; border-radius: 14px; padding: 16px; box-shadow: 0 1px 2px rgba(0, 0, 0, .04); }}
-.sentiment-time {{ text-align: center; font-size: 12px; color: #98989d; margin-bottom: 16px; }}
-.breadth-container {{ margin-top: 8px; }}
-.breadth-bar {{ display: flex; height: 12px; border-radius: 6px; overflow: hidden; background: #e5e7eb; margin-bottom: 12px; }}
-.bar-up {{ background: #ef4444; }}
-.bar-down {{ background: #10b981; }}
-.breadth-labels {{ display: flex; justify-content: space-between; font-size: 14px; font-weight: 500; }}
-
+.empty {{ background: #fff; border-radius: 14px; padding: 32px 20px; text-align: center; color: #6e6e73; font-size: 14px; }}
+.sentiment-dashboard {{ background: transparent; }}
+.sentiment-time {{ text-align: center; font-size: 12px; color: #98989d; margin-bottom: 20px; }}
 @media (prefers-color-scheme: dark) {{
   body {{ background: #000; color: #f5f5f7; }}
   header {{ background: rgba(0, 0, 0, .8); border-bottom-color: rgba(255, 255, 255, .12); }}
   .sub, .meta {{ color: #98989d; }}
-  .card, .empty, .sentiment-dashboard {{ background: #1c1c1e; box-shadow: none; }}
+  .card, .empty {{ background: #1c1c1e; box-shadow: none; }}
   .summary {{ color: #d1d1d6; }}
   .tab-btn {{ color: #98989d; }}
   .tab-btn.active {{ color: #f5f5f7; border-bottom-color: #f5f5f7; }}
   .meta span[style*="color: #1d1d1f;"] {{ color: #f5f5f7 !important; }}
-  .breadth-bar {{ background: #3a3a3c; }}
-  .sentiment-dashboard div[style*="background: #f9fafb;"] {{ background: #2c2c2e !important; }}
+  .sentiment-dashboard div[style*="background: #fff;"] {{ background: #1c1c1e !important; }}
+  .sentiment-dashboard div[style*="border-left: 4px solid #1d1d1f;"] {{ border-left-color: #f5f5f7 !important; }}
+  .sentiment-dashboard div[style*="color: #1d1d1f;"] {{ color: #f5f5f7 !important; }}
 }}
 </style>
 </head>
@@ -326,26 +222,16 @@ h2 a:hover {{ text-decoration: underline; }}
   </div>
 </header>
 <main>
-  <div id="tab-news">
-    {news_cards_html}
-  </div>
-  <div id="tab-reports" style="display: none;">
-    {reports_cards_html}
-  </div>
-  <div id="tab-sentiment" style="display: none;">
-    {sentiment_cards_html}
-  </div>
+  <div id="tab-news">{news_cards_html}</div>
+  <div id="tab-reports" style="display: none;">{reports_cards_html}</div>
+  <div id="tab-sentiment" style="display: none;">{sentiment_cards_html}</div>
 </main>
 <script>
 function switchTab(tab) {{
-  document.getElementById('tab-news').style.display = 'none';
-  document.getElementById('tab-reports').style.display = 'none';
-  document.getElementById('tab-sentiment').style.display = 'none';
-  
-  document.getElementById('btn-news').classList.remove('active');
-  document.getElementById('btn-reports').classList.remove('active');
-  document.getElementById('btn-sentiment').classList.remove('active');
-  
+  ['news','reports','sentiment'].forEach(t => {{
+    document.getElementById('tab-' + t).style.display = 'none';
+    document.getElementById('btn-' + t).classList.remove('active');
+  }});
   document.getElementById('tab-' + tab).style.display = 'block';
   document.getElementById('btn-' + tab).classList.add('active');
 }}
@@ -356,7 +242,6 @@ function switchTab(tab) {{
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(html_doc)
-
     print(f"已生成 {OUTPUT_FILE}。")
 
 
