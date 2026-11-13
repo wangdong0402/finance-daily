@@ -12,11 +12,11 @@ def fetch_eastmoney_reports():
     begin_time = (datetime.now() - timedelta(days=3)).strftime("%Y-%m-%d")
 
     params = {
-        "pageSize": 20,      # 抓取最新20条
+        "pageSize": 200,     # 【核心修改】：把抓取数量从 20 扩大到 200
         "pageNo": 1,
         "beginTime": begin_time,
         "endTime": end_time,
-        "qType": "0",        # 0代表个股研报，1代表行业研报（这里我们抓个股）
+        "qType": "0",        # 0代表个股研报
     }
     
     # 伪装成正常浏览器
@@ -35,8 +35,7 @@ def fetch_eastmoney_reports():
             for item in data["data"]:
                 info_code = item.get("infoCode", "")
                 
-                # 【核心修复】：强制使用 PC 端单篇研报详情页链接，绕过手机端重定向
-                # 这个页面在手机打开会自动适配，且顶部直接有 PDF 预览按钮
+                # 强制使用 PC 端单篇研报详情页链接
                 link = f"https://data.eastmoney.com/report/info/{info_code}.html"
                 
                 reports.append({
@@ -44,9 +43,9 @@ def fetch_eastmoney_reports():
                     "org": item.get("orgSName", ""),
                     "date": item.get("publishDate", "")[:10],
                     "link": link,
-                    "rating": item.get("emRatingName", ""),  # 评级（如：买入、增持）
-                    "stock": item.get("stockName", ""),      # 股票名称
-                    "code": item.get("stockCode", "")        # 股票代码
+                    "rating": item.get("emRatingName", ""),
+                    "stock": item.get("stockName", ""),
+                    "code": item.get("stockCode", "")
                 })
         return reports
     except Exception as e:
@@ -57,7 +56,6 @@ def main():
     reports = fetch_eastmoney_reports()
     os.makedirs("data", exist_ok=True)
     
-    # 保存为独立的 JSON 文件，不影响原来的新闻数据
     with open("data/reports.json", "w", encoding="utf-8") as f:
         json.dump(reports, f, ensure_ascii=False, indent=2)
         
