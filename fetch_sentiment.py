@@ -1,105 +1,135 @@
 import requests
 import json
 import os
-from datetime import datetime
+import time
+from datetime import datetime, timedelta
 
-def fetch_market_sentiment():
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Referer": "https://data.eastmoney.com/"
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Referer": "https://data.eastmoney.com/"
+}
+UT = "bd1d9ddb04089700cf9c27f6f7426281"
+RANK_URL = "https://push2.eastmoney.com/api/qt/clist/get"
+HIS_URL = "https://push2his.eastmoney.com/api/qt/stock/fflow/daykline/get"
+
+# 候选板块池大小：取10日排行前N名作为20/60日累加的候选，控制请求量
+CANDIDATE_POOL = 30
+
+
+def fetch_rank(indicator, po, page_size=100):
+    """通用排行接口：indicator=5day/10day，po=1流入/0流出"""
+    params = {
+        "pn": 1, "pz": page_size, "np": 1, "fltt": 2, "invt": 2,
+        "fs": "m:90+t:2", "fields": "f12,f14,f3,f62",
+        "ut": UT, "fid": "f62", "po": po, "indicator": indicator
     }
-    UT = "bd1d9ddb04089700cf9c27f6f7426281"
-
-    sentiment_data = {
-        "updated": datetime.now().strftime("%Y-%m-%d %H:%M"),
-        "main_net_buy": 0.0,  # 新增：两市主力净买额
-        "breadth": {"up": 0, "down": 0, "flat": 0},
-        "sector_inflow_top10": [],
-        "sector_outflow_top10": []
-    }
-
-    # 1. 两市主力净买额（使用之前验证成功的数据中心接口）
     try:
-        url = "https://datacenter-web.eastmoney.com/api/data/v1/get"
-        params = {
-            "reportName": "RPT_MRRKET_FINNETBUYAMT1Y",
-            "columns": "ALL",
-            "pageSize": 1,
-            "pageNumber": 1,
-            "sortTypes": -1,
-            "sortColumns": "TRADE_DATE"
-        }
-        res = requests.get(url, params=params, headers=headers, timeout=10)
+        res = requests.get(RANK_URL, params=params, headers=HEADERS, timeout=15)
         res.raise_for_status()
         data = res.json()
-        if data.get("result") and data["result"].get("data"):
-            item = data["result"]["data"][0]
-            raw_val = item.get("FIN_NETBUY_AMT", 0)
-            sentiment_data["main_net_buy"] = round(raw_val / 100000000, 2)
-        print("[信息] 主力净买额接口成功")
-    except Exception as e:
-        print(f"[警告] 主力净买额接口异常: {e}")
-
-    # 2. 全市场涨跌家数
-    try:
-        url = "https://push2.eastmoney.com/api/qt/stock/get"
-        params = {"secid": "1.000001", "fields": "f104,f105,f106", "ut": UT}
-        res = requests.get(url, params=params, headers=headers, timeout=10)
-        res.raise_for_status()
-        data = res.json()
-        if data.get("data"):
-            sentiment_data["breadth"] = {
-                "up": data["data"].get("f104", 0),
-                "down": data["data"].get("f105", 0),
-                "flat": data["data"].get("f106", 0)
-            }
-        print("[信息] 涨跌家数接口成功")
-    except Exception as e:
-        print(f"[警告] 涨跌家数接口异常: {e}")
-
-    # 3. 行业板块资金流向（流入/流出 TOP10）
-    try:
-        url = "https://push2.eastmoney.com/api/qt/clist/get"
-        base_params = {
-            "pn": 1, "pz": 500, "np": 1, "fltt": 2, "invt": 2,
-            "fs": "m:90+t:2", "fields": "f12,f14,f3,f62", "ut": UT, "fid": "f62"
-        }
-
-        # 主力净流入 TOP10
-        params_in = {**base_params, "po": 1}
-        res_in = requests.get(url, params=params_in, headers=headers, timeout=10).json()
-        if res_in.get("data") and res_in["data"].get("diff"):
-            for item in res_in["data"]["diff"][:10]:
-                sentiment_data["sector_inflow_top10"].append({
+        items = []
+        if data.get("data") and data["data"].get("diff"):
+            for item in data["data"]["diff"]:
+                items.append({
                     "name": item.get("f14", ""),
                     "code": item.get("f12", ""),
                     "change": item.get("f3", 0),
                     "main_net": round(item.get("f62", 0) / 100000000, 2)
                 })
-
-        # 主力净流出 TOP10
-        params_out = {**base_params, "po": 0}
-        res_out = requests.get(url, params=params_out, headers=headers, timeout=10).json()
-        if res_out.get("data") and res_out["data"].get("diff"):
-            for item in res_out["data"]["diff"][:10]:
-                sentiment_data["sector_outflow_top10"].append({
-                    "name": item.get("f14", ""),
-                    "code": item.get("f12", ""),
-                    "change": item.get("f3", 0),
-                    "main_net": round(item.get("f62", 0) / 100000000, 2)
-                })
-        print("[信息] 行业资金流接口成功")
+        return items
     except Exception as e:
-        print(f"[警告] 行业资金流接口异常: {e}")
+        print(f"[警告] 排行接口 {indicator} po={po} 异常: {e}")
+        return []
 
-    return sentiment_data
+
+def fetch_sector_history(code, days=60):
+    """获取单个行业板块最近 days 个交易日的主力净流入序列，单位统一为亿元"""
+    secid = f"90.{code}"
+    params = {
+        "secid": secid,
+        "fields1": "f1,f2,f3,f7",
+        "fields2": "f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61,f62,f63,f64,f65",
+        "klt": "101",
+        "lmt": str(days + 10),
+        "ut": UT
+    }
+    try:
+        res = requests.get(HIS_URL, params=params, headers=HEADERS, timeout=15)
+        res.raise_for_status()
+        data = res.json()
+        klines = data.get("data", {}).get("klines", [])
+        if not klines:
+            return None
+        # klines 每行逗号分隔，索引1为主力净流入（元）
+        flows = []
+        for line in klines[-days:]:
+            parts = line.split(",")
+            if len(parts) >= 2:
+                try:
+                    flows.append(float(parts[1]))
+                except ValueError:
+                    continue
+        if not flows:
+            return None
+        return {
+            "name": data.get("data", {}).get("name", ""),
+            "code": code,
+            "main_net": round(sum(flows) / 100000000, 2),
+            "days": len(flows)
+        }
+    except Exception as e:
+        print(f"[警告] 历史接口 {code} 异常: {e}")
+        return None
+
+
+def build_period_ranking(candidates, days):
+    """对候选板块拉取历史并累加，返回按累计净流入排序的完整列表"""
+    results = []
+    for i, c in enumerate(candidates):
+        hist = fetch_sector_history(c["code"], days=days)
+        if hist and hist["main_net"] != 0:
+            results.append(hist)
+        time.sleep(0.6)  # 控制频率，避免触发IP限流
+        if (i + 1) % 10 == 0:
+            print(f"    已处理 {i+1}/{len(candidates)} 个候选板块...")
+    results.sort(key=lambda x: x["main_net"], reverse=True)
+    return results
+
 
 def main():
-    data = fetch_market_sentiment()
+    sentiment_data = {
+        "updated": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "periods": {}
+    }
+
+    # ===== 5日：直接使用排行接口 =====
+    print("[信息] 抓取 5日 排行...")
+    inflow_5d = fetch_rank("5day", 1, 10)
+    time.sleep(1)
+    outflow_5d = fetch_rank("5day", 0, 10)
+    sentiment_data["periods"]["5d"] = {"inflow": inflow_5d, "outflow": outflow_5d}
+    print(f"  5日：流入 {len(inflow_5d)} 条，流出 {len(outflow_5d)} 条")
+
+    # ===== 20日 / 60日：10日排行取候选，历史累加 =====
+    print("[信息] 抓取 10日 候选池（用于20/60日累加）...")
+    candidates_in = fetch_rank("10day", 1, CANDIDATE_POOL)
+    time.sleep(1)
+    candidates_out = fetch_rank("10day", 0, CANDIDATE_POOL)
+    all_candidates = candidates_in + candidates_out
+
+    for days, label in [(20, "20d"), (60, "60d")]:
+        print(f"[信息] 计算 {days} 日累计排行（候选 {len(all_candidates)} 个）...")
+        full_ranking = build_period_ranking(all_candidates, days)
+        inflow = full_ranking[:10]
+        outflow = sorted(full_ranking, key=lambda x: x["main_net"])[:10]
+        sentiment_data["periods"][label] = {"inflow": inflow, "outflow": outflow}
+        print(f"  {days}日：流入 {len(inflow)} 条，流出 {len(outflow)} 条")
+
     os.makedirs("data", exist_ok=True)
     with open("data/sentiment.json", "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    print(f"情绪数据保存完成：主力净买={data['main_net_buy']} 亿，上涨 {data['breadth']['up']} 家。")
+        json.dump(sentiment_data, f, ensure_ascii=False, indent=2)
+    print("情绪数据保存完成。")
+
 
 if __name__ == "__main__":
     main()
