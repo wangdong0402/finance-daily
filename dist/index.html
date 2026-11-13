@@ -26,10 +26,14 @@ h2 a:hover { text-decoration: underline; }
 .summary { font-size: 14px; line-height: 1.6; color: #3a3a3c; margin: 0; }
 .empty { background: #fff; border-radius: 14px; padding: 32px 20px; text-align: center; color: #6e6e73; font-size: 14px; }
 
+/* 搜索框样式 */
+.search-container { margin-bottom: 16px; }
+.search-input { width: 100%; padding: 12px 16px; border-radius: 10px; border: 1px solid #e5e7eb; font-size: 14px; background: #fff; color: #1d1d1f; outline: none; transition: border-color 0.2s; }
+.search-input:focus { border-color: #3b82f6; }
+
 .sentiment-dashboard { background: transparent; }
 .sentiment-time { text-align: center; font-size: 12px; color: #98989d; margin-bottom: 20px; }
 
-/* 宏观二级菜单样式 */
 .macro-wrapper { background: transparent; }
 .sub-tabs { display: flex; gap: 10px; overflow-x: auto; margin-bottom: 16px; padding-bottom: 4px; }
 .sub-tab-btn { background: rgba(0,0,0,0.05); border: none; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; color: #3a3a3c; cursor: pointer; white-space: nowrap; }
@@ -41,7 +45,7 @@ h2 a:hover { text-decoration: underline; }
   body { background: #000; color: #f5f5f7; }
   header { background: rgba(0, 0, 0, .8); border-bottom-color: rgba(255, 255, 255, .12); }
   .sub, .meta { color: #98989d; }
-  .card, .empty, .macro-card { background: #1c1c1e; box-shadow: none; }
+  .card, .empty, .macro-card, .search-input { background: #1c1c1e; box-shadow: none; border-color: #3a3a3c; }
   .summary { color: #d1d1d6; }
   .macro-card h3 { color: #f5f5f7; }
   .tab-btn { color: #98989d; }
@@ -59,7 +63,7 @@ h2 a:hover { text-decoration: underline; }
 <header>
   <div class="header-top">
     <h1>个人财经终端</h1>
-    <div class="sub">更新：2026-11-13 06:14 · 共 70 条新闻</div>
+    <div class="sub">更新：2026-11-13 06:33 · 共 70 条新闻</div>
   </div>
   <div class="tabs">
     <button class="tab-btn active" onclick="switchTab('news')" id="btn-news">每日新闻</button>
@@ -128,6 +132,16 @@ h2 a:hover { text-decoration: underline; }
           </div>
           <h2><a href="https://www.tmtpost.com/8203972.html" target="_blank" rel="noopener noreferrer">李彦宏的考题，发给了所有CEO</a></h2>
           <p class="summary">人工智能是新电能，智能组织就是AI时代的新厂房，是生产力真正发生的地方。</p>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span>2026-11-13 04:50</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3782813" target="_blank" rel="noopener noreferrer">见闻历11.11大促最后1天！买日历送超千元知识礼包，送什么都不如送“搞钱的智慧”！</a></h2>
+          <p class="summary">本文来自华尔街见闻，欢迎下载APP查看更多</p>
         </article>
 
         <article class="card">
@@ -368,16 +382,6 @@ h2 a:hover { text-decoration: underline; }
           </div>
           <h2><a href="https://wallstreetcn.com/articles/3785851" target="_blank" rel="noopener noreferrer">黄仁勋下台，14家华尔街投行火速解读：共识是“无人可替”，有人感叹“他哪来的时间？”</a></h2>
           <p class="summary">英伟达已经宣布，公司联合创始人、执掌公司33年的唯一一任CEO黄仁勋即时辞职，同时卸任董事会职务。CFO Colette Kress兼任临时CEO，Synopsys资深人士Harvey Jones出任公司首位董事会主席，永久CEO人选将同时考虑内外部候选人。 消息在美东时间12日上午8点48分落地。到开盘前，英伟达股价已跌约10%至156美元附近，跌破52周低点164.27美元。单日市值蒸发约4200亿美元，过去一个月公司市值已累计缩水约三分之一。 当晚，华尔街14家投行的研报涌入分析师和基金经理的收件箱。 下调英伟达评级的有3家：Bernstein、KeyBanc、William Blair</p>
-        </article>
-
-        <article class="card">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span>2026-11-13 01:13</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3785854" target="_blank" rel="noopener noreferrer">一个时代的结束！Semianalysis：没有黄仁勋，英伟达将成为下一个苹果</a></h2>
-          <p class="summary">黄仁勋离开了他掌舵33年的英伟达。 “英伟达从来都不是为了在他不在的情况下而建立的。”知名半导体研究机构Semianalysis在最新报告中写道。 Semianalysis将英伟达类比成下一个苹果。 在如此规模和体量下，只有另一个有远见的创始人公司在创始人离任后依然发展良好的案例，那就是史蒂夫·乔布斯领导下的苹果公司。 SpaceX和特斯拉在没有埃隆的情况下无法运转，英伟达在没有黄仁勋的情况下也无法运转。 Semianalysis认为，后续职业经理人主导下的英伟达最可能的走向是：大规模回购股票、收缩资产负债表、放弃激进的生态系统押注。 “公司在技术上的发展速度将不如以往”——对股东而言短期可以</p>
         </article>
 
         <article class="card">
@@ -769,8 +773,54 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm" target="_blank" rel="noopener noreferrer">Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O</a></h2>
           <p class="summary">Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O</p>
         </article></div>
+  
   <div id="tab-reports" style="display: none;">
-        <article class="card">
+    <div class="search-container">
+      <input type="text" id="report-search" class="search-input" placeholder="🔍 输入股票代码或名称搜索研报..." oninput="filterReports()">
+    </div>
+    <div id="report-list">
+      
+        <article class="card report-card" data-search="国电南瑞 600406">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">国电南瑞 (600406)</span>
+            <span>华安证券</span>
+            <span>2026-11-13</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611131831687334.html" target="_blank" rel="noopener noreferrer">在手订单充足，26Q4迎交付高峰，海外业务延续高增长态势</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
+        </article>
+
+        <article class="card report-card" data-search="宏发股份 600885">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">宏发股份 (600885)</span>
+            <span>华安证券</span>
+            <span>2026-11-13</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611131831687229.html" target="_blank" rel="noopener noreferrer">继电器基本盘稳固，海外越南工厂稳步推进</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
+        </article>
+
+        <article class="card report-card" data-search="汇成股份 688403">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">汇成股份 (688403)</span>
+            <span>华安证券</span>
+            <span>2026-11-13</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611131831687139.html" target="_blank" rel="noopener noreferrer">汇成股份：布局HITS先进封装技术平台，适配下一代AI终端迭代需求</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
+        </article>
+
+        <article class="card report-card" data-search="裕太微 688515">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">裕太微 (688515)</span>
+            <span>华安证券</span>
+            <span>2026-11-13</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611131831687103.html" target="_blank" rel="noopener noreferrer">裕太微：下游需求旺盛，营收持续增长</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
+        </article>
+
+        <article class="card report-card" data-search="上海沿浦 605128">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">上海沿浦 (605128)</span>
@@ -780,7 +830,7 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://data.eastmoney.com/report/info/AP202611131831687094.html" target="_blank" rel="noopener noreferrer">单季毛利率修复，经营现金流高增</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
         </article>
 
-        <article class="card">
+        <article class="card report-card" data-search="宁德时代 300750">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">宁德时代 (300750)</span>
@@ -790,7 +840,7 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://data.eastmoney.com/report/info/AP202611131831687032.html" target="_blank" rel="noopener noreferrer">动储出货持续高增，短期盈利承压</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
         </article>
 
-        <article class="card">
+        <article class="card report-card" data-search="杰瑞股份 002353">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">杰瑞股份 (002353)</span>
@@ -800,7 +850,7 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://data.eastmoney.com/report/info/AP202611131831687027.html" target="_blank" rel="noopener noreferrer">Q3盈利环比改善，订单与新业务双轮驱动</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
         </article>
 
-        <article class="card">
+        <article class="card report-card" data-search="我武生物 300357">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">我武生物 (300357)</span>
@@ -810,7 +860,7 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://data.eastmoney.com/report/info/AP202611131831684792.html" target="_blank" rel="noopener noreferrer">盈利能力相对稳定，多项在研获批临床</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
         </article>
 
-        <article class="card">
+        <article class="card report-card" data-search="恒立液压 601100">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">恒立液压 (601100)</span>
@@ -820,7 +870,7 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://data.eastmoney.com/report/info/AP202611131831684445.html" target="_blank" rel="noopener noreferrer">收入规模持续高增，Q3单季度毛利率环比改善</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
         </article>
 
-        <article class="card">
+        <article class="card report-card" data-search="山推股份 000680">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">山推股份 (000680)</span>
@@ -830,7 +880,7 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://data.eastmoney.com/report/info/AP202611131831684440.html" target="_blank" rel="noopener noreferrer">业绩稳健向上，毛利率持续提升</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
         </article>
 
-        <article class="card">
+        <article class="card report-card" data-search="长鑫科技 688825">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">长鑫科技 (688825)</span>
@@ -840,7 +890,7 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://data.eastmoney.com/report/info/AP202611131831683611.html" target="_blank" rel="noopener noreferrer">长鑫科技：业绩持续提升，中国芯闪耀存储超级周期</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
         </article>
 
-        <article class="card">
+        <article class="card report-card" data-search="盛合晶微 688820">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">盛合晶微 (688820)</span>
@@ -850,7 +900,7 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://data.eastmoney.com/report/info/AP202611131831683490.html" target="_blank" rel="noopener noreferrer">盛合晶微：加码先进封装，扩产夯实算力基石</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
         </article>
 
-        <article class="card">
+        <article class="card report-card" data-search="金杯电工 002533">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">金杯电工 (002533)</span>
@@ -860,7 +910,7 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://data.eastmoney.com/report/info/AP202611131831683246.html" target="_blank" rel="noopener noreferrer">电磁线、电缆双主业营收增长，海外加大新兴市场开发</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
         </article>
 
-        <article class="card">
+        <article class="card report-card" data-search="海光信息 688041">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">海光信息 (688041)</span>
@@ -870,7 +920,7 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://data.eastmoney.com/report/info/AP202611131831683179.html" target="_blank" rel="noopener noreferrer">海光信息：人工智能推动下游需求增长，双芯协同布局成效显著</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
         </article>
 
-        <article class="card">
+        <article class="card report-card" data-search="比亚迪 002594">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">比亚迪 (002594)</span>
@@ -880,7 +930,7 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://data.eastmoney.com/report/info/AP202611131831683141.html" target="_blank" rel="noopener noreferrer">Q3盈利持续向好，出口核心驱动力稳步上行</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
         </article>
 
-        <article class="card">
+        <article class="card report-card" data-search="麦格米特 002851">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">麦格米特 (002851)</span>
@@ -890,7 +940,7 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://data.eastmoney.com/report/info/AP202611131831683122.html" target="_blank" rel="noopener noreferrer">多重成本端影响扣非利润承压，AI业务快速成长</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
         </article>
 
-        <article class="card">
+        <article class="card report-card" data-search="沪电股份 002463">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">沪电股份 (002463)</span>
@@ -900,7 +950,7 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://data.eastmoney.com/report/info/AP202611131831683087.html" target="_blank" rel="noopener noreferrer">沪电股份：业绩持续成长，算力领域核心技术持续攻关</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
         </article>
 
-        <article class="card">
+        <article class="card report-card" data-search="金诚信 603979">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">金诚信 (603979)</span>
@@ -910,7 +960,7 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://data.eastmoney.com/report/info/AP202611131831683084.html" target="_blank" rel="noopener noreferrer">矿服+资源双驱动，国际矿业舞台放异彩</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
         </article>
 
-        <article class="card">
+        <article class="card report-card" data-search="比音勒芬 002832">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">比音勒芬 (002832)</span>
@@ -920,7 +970,7 @@ h2 a:hover { text-decoration: underline; }
           <h2><a href="https://data.eastmoney.com/report/info/AP202611131831682514.html" target="_blank" rel="noopener noreferrer">高端运动服饰龙头，多品牌持续扩张</a><span style="color: #ea580c; font-weight: bold; margin-left: 8px;">[增持]</span></h2>
         </article>
 
-        <article class="card">
+        <article class="card report-card" data-search="金雷股份 300443">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
             <span style="font-weight: bold; color: #1d1d1f;">金雷股份 (300443)</span>
@@ -929,49 +979,13 @@ h2 a:hover { text-decoration: underline; }
           </div>
           <h2><a href="https://data.eastmoney.com/report/info/AP202611131831681823.html" target="_blank" rel="noopener noreferrer">公司事件点评报告：回款改善支撑产能投入，铸锻双轮拓展增长空间</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
         </article>
+    </div>
+    <div id="report-empty" class="empty" style="display: none;">未找到相关研报</div>
+  </div>
 
-        <article class="card">
-          <div class="meta">
-            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
-            <span style="font-weight: bold; color: #1d1d1f;">洛阳钼业 (603993)</span>
-            <span>华鑫证券</span>
-            <span>2026-11-13</span>
-          </div>
-          <h2><a href="https://data.eastmoney.com/report/info/AP202611131831681820.html" target="_blank" rel="noopener noreferrer">公司事件点评报告：铜产量进一步提升，业绩持续高增长</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
-        </article>
-
-        <article class="card">
-          <div class="meta">
-            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
-            <span style="font-weight: bold; color: #1d1d1f;">达瑞电子 (300976)</span>
-            <span>太平洋</span>
-            <span>2026-11-13</span>
-          </div>
-          <h2><a href="https://data.eastmoney.com/report/info/AP202611131831677187.html" target="_blank" rel="noopener noreferrer">主业收入稳健增长，轻量化与热管理布局深化</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
-        </article>
-
-        <article class="card">
-          <div class="meta">
-            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
-            <span style="font-weight: bold; color: #1d1d1f;">滨江集团 (002244)</span>
-            <span>太平洋</span>
-            <span>2026-11-13</span>
-          </div>
-          <h2><a href="https://data.eastmoney.com/report/info/AP202611131831677169.html" target="_blank" rel="noopener noreferrer">滨江集团2026年三季报点评：结算规模下降，财务状况稳健</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
-        </article>
-
-        <article class="card">
-          <div class="meta">
-            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
-            <span style="font-weight: bold; color: #1d1d1f;">华峰测控 (688200)</span>
-            <span>太平洋</span>
-            <span>2026-11-13</span>
-          </div>
-          <h2><a href="https://data.eastmoney.com/report/info/AP202611131831676697.html" target="_blank" rel="noopener noreferrer">市场需求带动业绩增长，AI测试布局持续完善</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
-        </article></div>
   <div id="tab-sentiment" style="display: none;">
     <div class="sentiment-dashboard">
-      <div class="sentiment-time">数据更新于：2026-11-13 06:14（同花顺行业资金流，盘后数据）</div>
+      <div class="sentiment-time">数据更新于：2026-11-13 06:33（同花顺行业资金流，盘后数据）</div>
       
         <div style="margin-bottom: 32px;">
           <div style="font-size: 16px; font-weight: bold; color: #1d1d1f; margin-bottom: 12px; padding-left: 8px; border-left: 4px solid #1d1d1f;">
@@ -1172,18 +1186,6 @@ h2 a:hover { text-decoration: underline; }
               <div style="font-size: 13px; font-weight: bold; color: #ef4444; margin-bottom: 8px;">流入 TOP10</div>
               
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">银行 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+24.67 亿</div>
-        </div>
-        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">电力 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+19.33 亿</div>
-        </div>
-        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">轨交设备 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+4.95 亿</div>
-        </div>
-        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
           <div style="flex: 1; font-size: 13px; color: #1d1d1f;">养殖业 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
           <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+3.42 亿</div>
         </div>
@@ -1192,33 +1194,41 @@ h2 a:hover { text-decoration: underline; }
           <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+2.74 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">公路铁路运输 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+2.17 亿</div>
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">农产品加工 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-0.25 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">综合 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+1.84 亿</div>
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">油气开采及服务 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-0.48 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">石油加工贸易 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+1.32 亿</div>
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">油气开采及服务 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-0.48 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">白色家电 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+1.18 亿</div>
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">白酒 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-0.71 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">黑色家电 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #ef4444;">+0.04 亿</div>
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">橡胶制品 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-0.72 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">医药商业 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-1.03 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">种植业与林业 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-1.2 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">非金属材料 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-1.22 亿</div>
         </div>
             </div>
             <div style="flex: 1; background: #fff; border-radius: 12px; padding: 14px;">
               <div style="font-size: 13px; font-weight: bold; color: #10b981; margin-bottom: 8px;">流出 TOP10</div>
               
-        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">半导体 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-35.26 亿</div>
-        </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
           <div style="flex: 1; font-size: 13px; color: #1d1d1f;">电池 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
           <div style="font-size: 13px; font-weight: bold; color: #10b981;">-34.32 亿</div>
@@ -1226,10 +1236,6 @@ h2 a:hover { text-decoration: underline; }
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
           <div style="flex: 1; font-size: 13px; color: #1d1d1f;">医疗服务 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
           <div style="font-size: 13px; font-weight: bold; color: #10b981;">-30.12 亿</div>
-        </div>
-        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">通用设备 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-26.13 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
           <div style="flex: 1; font-size: 13px; color: #1d1d1f;">工业金属 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
@@ -1240,20 +1246,28 @@ h2 a:hover { text-decoration: underline; }
           <div style="font-size: 13px; font-weight: bold; color: #10b981;">-23.44 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">IT服务 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-19.42 亿</div>
-        </div>
-        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
           <div style="flex: 1; font-size: 13px; color: #1d1d1f;">元件 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
           <div style="font-size: 13px; font-weight: bold; color: #10b981;">-18.65 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">消费电子 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-18.5 亿</div>
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">化学制药 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-17.08 亿</div>
         </div>
         <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
-          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">汽车零部件 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
-          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-17.33 亿</div>
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">光伏设备 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-15.44 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">小金属 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-15.2 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">贵金属 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-14.02 亿</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+          <div style="flex: 1; font-size: 13px; color: #1d1d1f;">化学制品 <span style="font-size:11px;color:#98989d;">(+0.00%)</span></div>
+          <div style="font-size: 13px; font-weight: bold; color: #10b981;">-13.79 亿</div>
         </div>
             </div>
           </div>
@@ -1348,6 +1362,26 @@ function switchTab(tab) {
   if(tab === 'macro') lazyRenderCharts();
 }
 
+// 研报搜索过滤逻辑
+function filterReports() {
+  const query = document.getElementById('report-search').value.toLowerCase().trim();
+  const cards = document.querySelectorAll('.report-card');
+  let visibleCount = 0;
+
+  cards.forEach(card => {
+    const searchData = card.getAttribute('data-search');
+    if (searchData.includes(query)) {
+      card.style.display = 'block';
+      visibleCount++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+
+  const emptyMsg = document.getElementById('report-empty');
+  emptyMsg.style.display = visibleCount === 0 ? 'block' : 'none';
+}
+
 function switchSubTab(catId) {
   document.querySelectorAll('.sub-tab-content').forEach(el => el.style.display = 'none');
   document.querySelectorAll('.sub-tab-btn').forEach(el => el.classList.remove('active'));
@@ -1356,19 +1390,17 @@ function switchSubTab(catId) {
   lazyRenderCharts();
 }
 
-// 懒加载图表渲染机制
 function lazyRenderCharts() {
   const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   const textColor = isDark ? '#98989d' : '#6e6e73';
   const gridColor = isDark ? '#3a3a3c' : '#e5e7eb';
 
-  // 只绘制当前可见的子 Tab 里的图表
   const activeContent = document.querySelector('.sub-tab-content[style*="display: block"]');
   if (!activeContent) return;
 
   activeContent.querySelectorAll('canvas').forEach(canvas => {
     const chartId = canvas.id.replace('chart-', '');
-    if (chartInstances[chartId]) return; // 已经画过了就跳过
+    if (chartInstances[chartId]) return;
 
     const cfg = macroData[chartId];
     if (!cfg) return;
@@ -1382,7 +1414,6 @@ function lazyRenderCharts() {
         borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false
       }));
     } else if (cfg.type === 'bar') {
-      // 为柱状图配置正负数不同颜色
       const bgColors = cfg.data.map(v => v >= 0 ? cfg.color : '#10b981');
       datasets = [{
         data: cfg.data, backgroundColor: bgColors, borderRadius: 4
@@ -1410,7 +1441,6 @@ function lazyRenderCharts() {
       }
     };
 
-    // 如果是 PMI，添加 50 枯荣线
     if (cfg.baseline) {
       config.options.plugins.annotation = {
         annotations: {
@@ -1427,9 +1457,7 @@ function lazyRenderCharts() {
   });
 }
 
-// 每次点开宏观 Tab 时，顺便检查并渲染一次
 document.addEventListener('DOMContentLoaded', () => {
-  // 延迟一下确保 DOM 完全就绪
   setTimeout(lazyRenderCharts, 500);
 });
 </script>
