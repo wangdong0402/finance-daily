@@ -119,22 +119,17 @@ def main():
                 macro_data["charts"]["bond_yield"] = {"name": "10年期国债收益率 (%)", "category": "大类资产", "type": "multi_line", "labels": labels, "series": [{"name": "中国", "color": "#ef4444", "data": [round(float(v), 2) for v in monthly[col_cn]]}, {"name": "美国", "color": "#3b82f6", "data": [round(float(v), 2) for v in monthly[col_us]]}]}
     except Exception as e: print(f"国债异常: {e}")
 
-    # 6. 大类资产：美元兑人民币（换用新浪接口 currency_boc_sina）
+    # 6. 大类资产：美元兑人民币（换用官方外汇管理局数据源 currency_boc_safe）
     print("[信息] 抓取 美元兑人民币汇率 ...")
     try:
-        # 使用中国银行外汇牌价（新浪接口），相对东财更宽容
-        df_fx = ak.currency_boc_sina(symbol="美元", start_date="20220101", end_date=datetime.now().strftime("%Y%m%d"))
+        df_fx = ak.currency_boc_safe()
+        # currency_boc_safe 返回的宽表，列名为各币种中文名，如 '日期', '美元', '欧元' 等
         col_date = next((c for c in df_fx.columns if "日期" in c), None)
-        # 新浪接口的列名通常是 '中行汇买价', '中行钞买价', '中行钞卖价', '中行汇卖价', '央行中间价' 等，我们取中间价
-        col_val = next((c for c in df_fx.columns if "中间价" in c), None)
+        col_val = next((c for c in df_fx.columns if "美元" in c), None)
         
-        if not col_val:
-             # 如果没有中间价，退而求其次取汇卖价
-             col_val = next((c for c in df_fx.columns if "汇卖价" in c), None)
-             
         if col_date and col_val:
-            # 新浪接口返回的数值可能带逗号或需要除以100，直接转数值
-            df_fx[col_val] = df_fx[col_val].astype(str).str.replace(',', '')
+            # 官方中间价口径是"100 外币 = X 人民币"，需要除以 100 才能得到 1 美元兑人民币
+            df_fx[col_val] = pd.to_numeric(df_fx[col_val], errors='coerce') / 100.0
             monthly, labels = resample_monthly(df_fx, col_date, [col_val])
             if monthly is not None:
                 macro_data["charts"]["exchange_rate"] = {
@@ -144,7 +139,7 @@ def main():
                 }
                 print("    [成功] 汇率数据抓取完成")
         else:
-            print(f"    [失败] 未找到匹配的日期或价格列名，实际列名: {df_fx.columns.tolist()}")
+            print(f"    [失败] 未找到匹配的日期或美元列名，实际列名: {df_fx.columns.tolist()}")
     except Exception as e: print(f"汇率异常: {e}")
 
     os.makedirs("data", exist_ok=True)
