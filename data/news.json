@@ -1,14 +1,238 @@
 {
-  "updated": "2026-11-14T05:18:12.663353+00:00",
+  "updated": "2026-11-14T13:34:46.427178+00:00",
   "count": 70,
   "items": [
     {
-      "title": "黄仁勋创办了英伟达，英伟达为什么还能让他走？",
-      "link": "https://www.tmtpost.com/8204790.html",
-      "summary": "黄仁勋的离开，留下了一个极具宿命感的商业悖论：他花了33年时间，把英伟达打造成全球人工智能基础设施中不可替代的底座；但在这个过程中，他也把自己变成了英伟达内部唯一不可替代的中央处理器。",
+      "title": "Washington can start delivering on affordability by rejecting Trump’s tariffs",
+      "link": "https://www.marketwatch.com/story/washington-can-start-delivering-on-affordability-by-rejecting-trumps-tariffs-8f2c76fd?mod=mw_rss_topstories",
+      "summary": "Americans voted against policies that drove up their costs. Will policymakers ignore them?",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-14T13:30:00+00:00"
+    },
+    {
+      "title": "Retailers are turning to entertainment to win shoppers’ attention",
+      "link": "https://www.cnbc.com/2026/11/14/retailers-invest-entertainment.html",
+      "summary": "Retailers are increasingly investing in and building out entertainment studios as the race for audience attention speeds up.",
+      "source": "CNBC Business",
+      "category": "国际财经",
+      "published": "2026-11-14T13:00:01+00:00"
+    },
+    {
+      "title": "These 6 battered AI stocks could bounce back big, an analyst says",
+      "link": "https://www.marketwatch.com/story/these-6-battered-ai-stocks-could-bounce-back-big-an-analyst-says-e9f29c24?mod=mw_rss_topstories",
+      "summary": "The postelection panic over data centers has led to a widespread tech selloff, but some stocks are more insulated than they seem, according to Bernstein.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-14T13:00:00+00:00"
+    },
+    {
+      "title": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
+      "link": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
+      "summary": "Eric Trump-backed robot startup Foundation Future Industries has run low on cash and missed payroll, as CEO Sankaet Pathak faces scrutiny over a $4.6 million company loan.",
+      "source": "CNBC Business",
+      "category": "国际财经",
+      "published": "2026-11-14T12:00:01+00:00"
+    },
+    {
+      "title": "China’s hottest stocks these days have one thing in common: names that sound like sheep",
+      "link": "https://www.marketwatch.com/story/chinas-hottest-stocks-these-days-have-one-thing-in-common-names-that-sound-like-sheep-6176e521?mod=mw_rss_topstories",
+      "summary": "Shares of fish processors, lighting manufacturers and appliance makers have soared ahead of the Year of the Sheep. Investor appetite has had little to do with the status of their businesses.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-14T12:00:00+00:00"
+    },
+    {
+      "title": "华尔街与硅谷强推Anthropic上市：一场“大而不能败”的AI保卫战",
+      "link": "https://wallstreetcn.com/articles/3785948",
+      "summary": "Anthropic正在冲刺一场可能创下史上最大规模IPO纪录的资本市场盛事，而推动这场上市的，不仅是华尔街的逐利本能，更是整个科技生态系统对AI未来的集体押注。 Anthropic本周披露计划以最高1.4万亿美元估值融资最多1000亿美元。公司已联合22家承销行展开路演，同时获得包括英伟达、微软、博通在内的七家科技巨头承诺在上市后立即合计注资260亿美元。 前美国银行股票资本市场全球负责人Craig Coben将此次IPO定性为\"太关键、不能失败\"（too crucial to fail）。 此次上市并非一帆风顺。AI基础设施过度扩张的债务隐忧已令股债市场剧烈震荡数周，英伟达CEO黄仁勋的突然",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-14T11:47:50+00:00"
+    },
+    {
+      "title": "特斯拉向受邀个人开放Cybercab购买，起售价29990美元，首批12月交付",
+      "link": "https://wallstreetcn.com/articles/3785947",
+      "summary": "特斯拉在全自动驾驶商业化道路上迈出重要一步，开始向受邀个人消费者开放无方向盘自动驾驶车辆Cybercab的购买。 特斯拉于美东时间11月13日在X平台宣布，向\"精选客户\"发出邀请，允许其以个人用途购买Cybercab，起售价29990美元，另需每月支付299美元的自动驾驶订阅费用，预计首批交付时间为2026年12月。这将使Cybercab成为特斯拉现售车型中售价最低的产品。 特斯拉人工智能负责人Ashok Elluswamy在X平台发帖表示，Cybercab将能够在与特斯拉robotaxi车队相同的所有区域内实现无监督自动驾驶。奥斯汀特斯拉车主俱乐部主席Matt Holm随后晒出相关邀请邮件截",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-14T11:30:54+00:00"
+    },
+    {
+      "title": "英伟达财报、Anthropic万亿IPO接连登场！AI交易更大的考验在下周",
+      "link": "https://wallstreetcn.com/articles/3785944",
+      "summary": "英伟达CEO离职风波尚未平息，华尔街已将目光投向下周——英伟达季报与Anthropic上市将接连登场，AI交易的信心能否经受住这轮双重压力测试，答案即将揭晓。 英伟达CEO黄仁勋因婚外情丑闻于上周四突然辞职，引发市场对这家AI芯片巨头的深度担忧。尽管如此，英伟达股价本周跌幅约13%，远小于此前市场担忧的20%乃至更大跌幅，标普500指数更录得8月以来最佳单周表现。与此同时，Anthropic宣布其IPO估值较此前约2万亿美元的高点大幅下调，预计本次上市估值约为1.2万亿至1.4万亿美元。 市场所受的冲击，折射出当前AI叙事的脆弱性。消费者通胀数据高于预期、美联储进一步加息预期升温，叠加中东局势",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-14T10:54:50+00:00"
+    },
+    {
+      "title": "宁德时代等来一个敢押全系的盟友",
+      "link": "https://wallstreetcn.com/articles/3785945",
+      "summary": "极狐准备把换电做到全系。 11月13日晚，极狐同时推出贝塔S3激光换电版和贝塔T1换电版。选择电池租赁，前者限时补贴价7.88万元，后者两款配置分别为5.20万元和6万元。 S3是极狐今年5月推出的首款换电车型，这次增加了一款带激光雷达的配置。累计销量已超过10万辆的T1，则首次提供换电版。 极狐加码的依据，来自S3上市近半年的表现。 北汽新能源董事长刘观桥在11月13日晚间对华尔街见闻表示，约七成S3购车用户选择换电版，S3累计换电已超过10万次。租电降低了购车时的一次性支出，也为宁德时代的换电网络带来了一批家用车客户。按照刘观桥给出的计划，2027年极狐将为贝塔、阿尔法和问道三个系列的全系",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-14T10:40:30+00:00"
+    },
+    {
+      "title": "库克接班，可能真是英伟达的最优解",
+      "link": "https://www.tmtpost.com/8205427.html",
+      "summary": "再找一个黄仁勋很难，先找一个库克呢？",
       "source": "钛媒体",
       "category": "产业科技",
-      "published": "2026-11-14T04:57:00+00:00"
+      "published": "2026-11-14T10:37:06+00:00"
+    },
+    {
+      "title": "ADC载荷迭代迈入加速期",
+      "link": "https://www.tmtpost.com/8205391.html",
+      "summary": "从分子竞争到平台比拼。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-14T10:37:01+00:00"
+    },
+    {
+      "title": "A股一级行业，PS偏离度分布与深潜分析",
+      "link": "https://www.tmtpost.com/8205459.html",
+      "summary": "就结论而言，偏离度剔除了市场整体水位，使行业间的相对贵贱在横截面与时间序列上都可比；但它只衡量相对贵贱，并不回答这份贵贱是否合理——偏离度为正，未必是高估；偏离度为负，也未必是低估。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-14T09:58:58+00:00"
+    },
+    {
+      "title": "营收增长与PS变化：A股一级行业五年估值位移的经济含义",
+      "link": "https://www.tmtpost.com/8205450.html",
+      "summary": "PS的变化，本质是两条曲线的差。五年合起来看，扩张落在收入与市值两端，利润没有跟上——市值跑赢收入的那一段距离，来自估值水位与收入结构，不是盈利改善。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-14T09:57:36+00:00"
+    },
+    {
+      "title": "价值判断：跌停板的投资机会和风险提示（11月13日）｜上市公司观察",
+      "link": "https://www.tmtpost.com/8205442.html",
+      "summary": "跌停的构成分三路。一路被隔夜外围直接砸下来：英伟达宣布黄仁勋辞任首席执行官，股价收跌四个多点，元件跌逾八个点、通信设备跌逾六个点，沪电股份、景旺电子、华正新材封死跌停。一路是前期靠机器人概念上来的高位股，襄阳轴承连拉八个板后熄火，尾盘被摁在地板；大业股份的腱绳停在送样，午后同样跌停。第三路是医疗器械的集体走弱，南卫股份跌幅居前。本期三只都是本轮第一根跌停，收盘对济安定价的溢价仍在六成三至近一倍。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-14T09:57:13+00:00"
+    },
+    {
+      "title": "价值判断：涨停板的投资机会和风险提示（11月13日）｜上市公司观察",
+      "link": "https://www.tmtpost.com/8205437.html",
+      "summary": "本期五只标的分两头：三只首板、收盘低于济安定价四成四至六成九，分属色纺纱、汽车橡塑与港口机械；两只连板、高于九成五至一倍二，分属汽车胶管与输水管道。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-14T09:57:00+00:00"
+    },
+    {
+      "title": "美国精英阶层并非学术分歧，而是政治博弈与利益选择",
+      "link": "https://www.tmtpost.com/8205430.html",
+      "summary": "美债问题早已不只是金融学或经济学的学术争论，更是利益分配、政治周期与全球权力博弈交织而成的现实选择。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-14T09:56:39+00:00"
+    },
+    {
+      "title": "“AI央行”失去掌舵人，华尔街警告：黄仁勋离开将引爆“AI版量化紧缩”！",
+      "link": "https://wallstreetcn.com/articles/3785942",
+      "summary": "英伟达董事长黄仁勋的骤然离场，不仅是一家芯片公司的高管更迭，更是整个AI融资生态系统面临的系统性冲击。在过去三年里，英伟达实际上已演变为AI行业的\"最后贷款人\"，以股权投资、担保承诺和回购协议构建起一台规模逾5000亿美元的循环融资机器。如今，这台机器的操盘手已经离场。 黄仁勋辞职消息宣布后，英伟达股价盘中一度暴跌逾13%，收盘跌约4%。与此同时，高盛、瑞银、William Blair等14家卖方机构相继下调评级或目标价，直指同一核心担忧：没有黄仁勋的英伟达，还能继续为AI生态系统提供资金输血吗？依赖英伟达资金的新兴云服务商（neocloud）反应更为剧烈——CoreWeave（CRWV）当日",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-14T09:44:04+00:00"
+    },
+    {
+      "title": "日产把筹码又加在了中国牌桌上",
+      "link": "https://wallstreetcn.com/articles/3785943",
+      "summary": "作者 | 周智宇 “日产最近的销量压力确实很大。”11月13日，在珠海举行的日产品牌日上，日产中国管理委员会主席马智欣开场不久，便主动谈起了销量。 两天前，日产刚把2026年中国市场零售销量预期从58万辆下调到37万至40万辆。到了珠海，东风与日产两家股东给出的决定，却是未来三年继续加大在华投入。当天，东风日产把一款插混SUV的预售起价定在了13万元以内，郑州日产则拿出了插混MPV和皮卡。销量预期一下少了近二十万辆，两家股东还愿意掏钱，看中的还有这批中国新车进入日产海外门店的机会。 日产在国内抢订单的决心，从NX7的定价就能看出来。11月9日，东风日产销售公司副总经理王骞谈起这款五座SUV，瞄",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-14T09:39:19+00:00"
+    },
+    {
+      "title": "中国越野车，正在打两场不同的仗",
+      "link": "https://www.tmtpost.com/8205404.html",
+      "summary": "在国内，越野车正从少数人的专业爱好走向大众消费；在海外，中国品牌则开始从产品竞争转向体系竞争。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-14T09:17:43+00:00"
+    },
+    {
+      "title": "当广告开始被追更：肌肉唐僧唱摇滚，AI改写游戏获客",
+      "link": "https://www.tmtpost.com/8205248.html",
+      "summary": "素材可以量产，好创意却不能一键生成。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-14T08:54:00+00:00"
+    },
+    {
+      "title": "字节的2029与腾讯的“一半人”",
+      "link": "https://www.tmtpost.com/8201267.html",
+      "summary": "不管是什么时间，大厂都想为AI“争取时间”。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-14T08:39:41+00:00"
+    },
+    {
+      "title": "“坏事全部撞在一起\"，美股却逆势反弹：华尔街上演“无票可卖”式逼空！",
+      "link": "https://wallstreetcn.com/articles/3785940",
+      "summary": "一周之内，英伟达创始人丑闻缠身后黯然离任，美国CPI连续第三个月超预期，PPI攀升至四年新高，美联储官员放风12月加息50个基点——所有利空同时引爆，美股却逆势收涨，标普500周涨2%，费城半导体指数创4月以来最佳单周表现。 答案只有一个： 空头已无牌可打。 这是一场典型的\"无票可卖\"式逼空。高盛Prime数据显示，对冲基金在中期选举当周大幅削减杠杆，净多头仓位降至五年最低。进入本周，空头已基本出清，坏消息砸下来，市场找不到足够的卖盘承接压力，股市非但没有崩塌，反而借助轧空一路拉升。与此同时，债市独自扛下了所有的宏观冲击——2年期美债收益率单周飙升35个基点，创2024年10月以来最大周度涨幅",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-14T08:34:01+00:00"
+    },
+    {
+      "title": "黄仁勋传",
+      "link": "https://www.tmtpost.com/8204575.html",
+      "summary": "黄仁勋事业回顾。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-14T07:57:00+00:00"
+    },
+    {
+      "title": "开始“纯过日子”，双11年轻人不再“包装”自己的生活",
+      "link": "https://www.tmtpost.com/8205255.html",
+      "summary": "双11的第十八年，年轻人交出了算盘。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-14T07:30:00+00:00"
+    },
+    {
+      "title": "愿望单17万，国产独游又出了款冷门黑马",
+      "link": "https://www.tmtpost.com/8205240.html",
+      "summary": "把美丽而无用的东西，做成让人上头的游戏。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-14T07:26:00+00:00"
+    },
+    {
+      "title": "AI时代，公司越来越扁平，也越来越官僚",
+      "link": "https://www.tmtpost.com/8205239.html",
+      "summary": "未来最有活力的公司，也许不是每件事都管得最细的公司，而是有人敢说：这条规则，该改了。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-14T07:21:00+00:00"
+    },
+    {
+      "title": "特斯拉和SpaceX最快12月合并？没那么简单，还有3.47万亿美元卡在弃权票上",
+      "link": "https://www.tmtpost.com/8205220.html",
+      "summary": "SpaceX 与特斯拉推进全股票合并谈判，面临股东表决、多国监管等多重不确定性。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-14T07:13:00+00:00"
+    },
+    {
+      "title": "高盛2027年全球股市展望：AI资本开支见顶，盈利增长“大减速”，云巨头成“防御性资产”",
+      "link": "https://wallstreetcn.com/articles/3785935",
+      "summary": "随着AI资本开支热潮接近顶点，全球股市盈利增长引擎正在降速。高盛在最新发布的2027年全球股票策略展望中指出，尽管盈利增速将大幅放缓，当前被市场抛售的成长股——尤其是美国超大规模云计算企业反而具备了布局价值。 高盛首席全球股票策略师Peter Oppenheimer在最新《Finding Value in Growth》的报告中指出， AI相关企业估值已大幅回调，反映出市场对AI资本开支见顶及回报放缓的担忧，这为投资者提供了具有吸引力的入场时机。 云巨头目前以19.7倍预期市盈率交易，不仅低于过去20年历史区间下沿，更低于必需消费品板块的21.0倍，高盛将其定性为\"相对防御性\"资产。 这份展望",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-14T06:49:41+00:00"
+    },
+    {
+      "title": "坐拥1350亿美元英伟达股票，黄仁勋会抛售套现吗？",
+      "link": "https://wallstreetcn.com/articles/3785938",
+      "summary": "执掌英伟达33年后，黄仁勋的离职令外界将目光投向他手中价值逾千亿美元的股票。这批筹码的命运，已成为悬在英伟达股价上方的一块巨石。 黄仁勋目前持有约8.12亿股英伟达股票 ，市值约1350亿美元，是公司最大的个人股东。据William Blair分析师本周表示， 这一庞大持仓在近期对英伟达股价构成\"重大压制\"。 市场普遍关注的问题在于，黄仁勋何时能够、以及是否会选择开始大规模减持。哈佛大学公司治理专家Jesse Fried指出， 只要黄仁勋仍掌握可能压低股价的未公开重大信息，他就无法合规出售股票。 英伟达定于下周二发布业绩，若届时相关负面信息得以披露，或将为其减持扫清部分法律障碍。 三十年积累，",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-14T06:29:17+00:00"
     },
     {
       "title": "老黄离职后，“大空头”加码做空科技股！警告AI热潮或陷入“牛市陷阱”",
@@ -43,124 +267,12 @@
       "published": "2026-11-14T02:42:00+00:00"
     },
     {
-      "title": "宁夏“龙头酒庄”斩获近亿元融资，跨产区运作的压力给到西鸽酒庄",
-      "link": "https://www.tmtpost.com/8204938.html",
-      "summary": "国产葡萄酒新玩家的野心、机遇与隐忧。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-14T02:30:00+00:00"
-    },
-    {
-      "title": "英伟达“跌倒”，会是平头哥和昆仑芯的窗口期吗？",
-      "link": "https://www.tmtpost.com/8204784.html",
-      "summary": "终于来了么？",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-14T02:25:00+00:00"
-    },
-    {
-      "title": "苹果不想一直“躺赢”",
-      "link": "https://www.tmtpost.com/8204097.html",
-      "summary": "新任CEO坐不住了。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-14T02:17:00+00:00"
-    },
-    {
-      "title": "银泰到底姓什么？43亿REITs背后的招牌之争",
-      "link": "https://www.tmtpost.com/8204078.html",
-      "summary": "“天下甬商是一家”的招牌不能丢。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-14T02:13:00+00:00"
-    },
-    {
-      "title": "英伟达第一次没有黄仁勋",
-      "link": "https://www.tmtpost.com/8204046.html",
-      "summary": "谁来押注下一个十年？",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-14T02:09:00+00:00"
-    },
-    {
-      "title": "瑞幸越来越不像一家咖啡公司了",
-      "link": "https://www.tmtpost.com/8204697.html",
-      "summary": "做加法往往比做减法容易，同时也危险得多。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-14T02:04:53+00:00"
-    },
-    {
-      "title": "等离子电源小巨人上会迎考，神州股份砍掉3亿补流，中微公司身兼两角",
-      "link": "https://www.tmtpost.com/8204937.html",
-      "summary": "订单高度集中，产能消化成核心考题。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-14T02:04:43+00:00"
-    },
-    {
-      "title": "汽车芯片再次告急，这次是晶圆厂不想生产了",
-      "link": "https://www.tmtpost.com/8204916.html",
-      "summary": "汽车每年买这么多芯片，晶圆厂为什么还嫌订单小？",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-14T02:02:11+00:00"
-    },
-    {
-      "title": "国潮风云：两次转型赌局，“户外鼻祖”探路者弄丢了自己",
-      "link": "https://www.tmtpost.com/8204930.html",
-      "summary": "探路者因一轮户外潮崛起，又失落于新一轮户外潮。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-14T02:02:06+00:00"
-    },
-    {
       "title": "14 dividend stocks selected for long-term growth",
       "link": "https://www.marketwatch.com/story/14-dividend-stocks-selected-for-long-term-growth-0a095c0d?mod=mw_rss_topstories",
       "summary": "These stocks feature attractive dividend payouts and are trading low to the companies’ intrinsic value, according to John Buckingham of Value87 Investment Partners.",
       "source": "MarketWatch",
       "category": "国际财经",
       "published": "2026-11-14T01:58:00+00:00"
-    },
-    {
-      "title": "又一款10万元内合资纯电车上市，低价能拯救它们吗？",
-      "link": "https://www.tmtpost.com/8204812.html",
-      "summary": "真正机会在于“价值感”。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-14T01:56:57+00:00"
-    },
-    {
-      "title": "外卖大战一年后，大厂亲自下场开店",
-      "link": "https://www.tmtpost.com/8204490.html",
-      "summary": "淘宝京东美团都有了“自营厨房”。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-14T01:49:27+00:00"
-    },
-    {
-      "title": "黄仁勋下课，硅谷没有永远的主人",
-      "link": "https://www.tmtpost.com/8204793.html",
-      "summary": "创始人的功劳通常没有争议。真正发生争议的，是这份功劳还能不能让他继续掌权。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-14T01:49:17+00:00"
-    },
-    {
-      "title": "禾赛，胜宏，英伟达，深扒科技大佬婚外情的“定价体系”",
-      "link": "https://www.tmtpost.com/8204080.html",
-      "summary": "黄仁勋辞职引发英伟达股价暴跌，其婚外情事件引发市场动荡，不同企业对此反应各异。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-14T01:41:41+00:00"
-    },
-    {
-      "title": "硅谷创业“修道院”：HF0与OpenRouter早期故事",
-      "link": "https://www.tmtpost.com/8204330.html",
-      "summary": "秘诀是“做减法”。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-14T01:39:35+00:00"
     },
     {
       "title": "Anthropic上市路演，CEO称“不在乎什么市场条件”，希望“少承诺、多兑现”",
@@ -187,68 +299,12 @@
       "published": "2026-11-14T01:09:09+00:00"
     },
     {
-      "title": "美国“全国停飞”！超过10000架次航班延误或取消，国土安全部长：不是又一次9·11",
-      "link": "https://wallstreetcn.com/articles/3785927",
-      "summary": "据 新华社 报道，美国联邦航空管理局11月13日以“特殊情况和安全原因”为由，发布全国范围的航班暂停起飞指令。该事件造成逾万架次航班延误或取消，成为近年来美国航空史上影响最为深远的停飞事件之一。 此次停飞令于美东时间下午3时53分生效，起因为影响全美空中航路交通管制中心的通信系统故障。航班追踪网站FlightAware的数据显示， 截至当日下午6时40分，全美已有逾3300架次航班被取消，另有逾10200架次出现延误；与此同时，各大航空公司已开始删减周末航班，周六已有逾300个航班遭到取消。 美国国土安全部长马克韦恩·马林在白宫表示，此次事件为电信系统中断，\"目前没有任何迹象表明这是一起针对我",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-14T01:05:38+00:00"
-    },
-    {
-      "title": "英伟达创18个月最差单周表现，黄仁勋离职引发市场重估",
-      "link": "https://wallstreetcn.com/articles/3785919",
-      "summary": "英伟达股价本周遭遇逾18个月以来最惨烈的单周跌幅，市值蒸发超过6200亿美元。随着创始人黄仁勋因丑闻被董事会解职，华尔街分析师普遍转向观望，市场对这家全球最大芯片公司的前景信心受到严峻考验。 11月13日周五，英伟达股价收跌2%、盘中一度下跌4.7%，将本周累计跌幅扩大至约14%。 这是自2025年4月特朗普宣布大规模关税政策、引发全球股市震荡以来的最差单周表现。本周市值损失规模超过标普500指数中97%的成分股市值。 本周抛售压力骤然加剧的直接导火索，是黄仁勋承认存在婚外情，并据报道与一名员工另有不正当关系。英伟达董事会随即将其解职，由首席财务官Colette Kress出任临时首席执行官。",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-13T23:44:21+00:00"
-    },
-    {
-      "title": "同样是科技巨头IPO，Anthropic为何比SpaceX上市定价更保守",
-      "link": "https://wallstreetcn.com/articles/3785926",
-      "summary": "Anthropic正寻求打破SpaceX创下的史上最大IPO纪录，但在定价策略上，这家Claude开发商选择了一条截然不同的路径——将更多主动权交给机构投资者，而非单方面设定价格。 华尔街见闻提及，Anthropic正以每股70至78美元的区间价格向投资者询价，目标完全稀释估值约为1.4万亿美元，计划通过IPO募资最多644亿美元，另通过私募融资260亿美元。 据彭博社报道，这与SpaceX在营销阶段直接设定每股135美元固定价格的\"要么接受、要么放弃\"模式形成鲜明对比 。与此同时，当前人工智能板块交易环境趋于复杂，此前市场流传的Anthropic 2万亿美元估值预期已悄然消退。 报道指出，相",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-13T23:44:09+00:00"
-    },
-    {
-      "title": "华尔街见闻早餐FM-Radio | 2026年11月14日",
-      "link": "https://wallstreetcn.com/articles/3785925",
-      "summary": "华见早安之声 要闻精选 中国10月新增社融 1.15万亿元， 人民币贷款 单月减少1000亿元 ， M2 同比增长7.1% ， M2与M1剪刀差 由4.0个百分点收窄至2.7个百分点。 央视网评 ： 离岸信托 个税申报超1600亿，不是“劫富”， 是收旧账。 美国联邦航空管理局 因空管通信频率故障发布全国地面停飞令 ，出港航班全部暂停，入境国际航班逐案处理。 美联储半年度金融稳定报告 称 资产估值压力持续处于高位 ，股票估值指标居高不下，部分源于市场对超级智能的预期。 芝加哥联储主席古尔斯比 与 波士顿联储主席柯林斯 同日警告通胀正向更多商品和服务扩散， 称很快需要进一步收紧政策。 美国财长贝",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-13T23:12:44+00:00"
-    },
-    {
       "title": "‘The thought of living to 100 terrifies me’: Is Social Security a giant Ponzi scheme?",
       "link": "https://www.marketwatch.com/story/the-thought-of-living-to-100-terrifies-me-is-social-security-a-giant-ponzi-scheme-84a64e7e?mod=mw_rss_topstories",
       "summary": "There is already a demographic ‘run’ on Social Security.",
       "source": "MarketWatch",
       "category": "国际财经",
       "published": "2026-11-13T23:12:00+00:00"
-    },
-    {
-      "title": "索罗斯基金Q3大举加码英特尔、Meta，新进SK海力士，减持英伟达",
-      "link": "https://wallstreetcn.com/articles/3785924",
-      "summary": "索罗斯基金管理公司（Soros Fund Management）2026年第三季度大幅调整美股持仓：新建仓韩国存储芯片巨头SK海力士ADR，大幅增持英特尔和Meta，同时减持英伟达，并清仓KKR和ServiceNow。 从持仓变化看，该基金在继续布局AI产业链的同时，对芯片行业内部的配置进行了调整。英特尔和Meta获得大幅加仓，英伟达普通股持仓则有所下降，SK海力士的加入也使其投资组合进一步覆盖AI存储领域。 根据SEC第三季度13F文件，截至2026年9月30日，索罗斯基金披露的持仓涉及247项投资，据统计，13F组合市值约为64.81亿美元。 新进SK海力士ADR，布局AI存储产业链 第三",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-13T23:07:17+00:00"
-    },
-    {
-      "title": "避免流动性支持被视为QE，美联储洛根提议市场功能性购债单独记账、尽快出售",
-      "link": "https://wallstreetcn.com/articles/3785920",
-      "summary": "美联储官员正推动对央行资产负债表管理框架进行结构性调整，核心诉求是 将市场功能性购债与货币政策操作彻底分离，以消除市场对流动性干预是否变相压制长端收益率的疑虑。 达拉斯联储主席Lorie Logan（洛根）周四在达拉斯联储联合主办的银行融资会议上表示， 美联储应将为维护市场功能而购入的资产单独记账，并承诺尽快出售，以防此类操作在无意间提供额外刺激。 她同时指出，国债收益率的快速攀升本身并不必然意味着市场出现了需要央行介入的失序状态，联储更依赖买卖价差、市场深度和价格冲击等流动性指标作为研判依据。 上述表态折射出美联储内部对危机时期市场干预与量化宽松界限模糊问题的持续关注。 官员们历来依靠沟通来",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-13T23:06:51+00:00"
-    },
-    {
-      "title": "纳指跌0.9%、道指逆势收涨，英伟达跌2%，苹果盘中刷新历史高位，比特币跌破7万",
-      "link": "https://wallstreetcn.com/articles/3785885",
-      "summary": "英伟达领导层动荡持续发酵，叠加通胀压力高企与美联储加息预期升温，美股指周五表现分化，标普、纳指收跌，道指则在消费股支撑下收涨。 美国10月生产者价格指数（PPI）同比上涨6.5%，创2022年11月以来最快年增速，尽管数据略低于市场预期，但仍强化了美联储12月继续加息的预期。BMO资本市场分析师Vail Hartman指出，PPI中纳入美联储首选通胀指标的分项数据在10月有所回落。LPL Financial首席经济学家Jeffrey Roach表示： 考虑到整体经济的脆弱性，50个基点的加息幅度可能带来不必要的风险，预计美联储将加息25个基点。 周五费城半导体指数下跌3.4%，纳斯达克100指",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-13T22:54:12+00:00"
     },
     {
       "title": "4 expert tips for signing up for Medicare",
@@ -275,14 +331,6 @@
       "published": "2026-11-13T22:04:00+00:00"
     },
     {
-      "title": "高盛2027年宏观展望：全球经济略为提速但道路崎岖，下行风险不容忽视",
-      "link": "https://wallstreetcn.com/articles/3785912",
-      "summary": "全球经济在经历2026年伊朗战争冲击后展现出超预期韧性，但高盛警告，2027年的增长路径将更为崎岖，风险天平明显向下倾斜。 高盛首席经济学家Jan Hatzius领衔撰写的2027年宏观展望报告预测，全球GDP增速将从2026年的2.7%小幅升至2.8%，略高于潜在增速。 报告的核心判断是：能源价格正常化与持续强劲的AI资本开支将构成主要支撑，但金融条件收紧与财政刺激退潮将形成对冲，整体增长格局\"稳健但平淡\"。与此同时，高盛明确指出三大下行风险——伊朗局势再度升级、债券市场动荡以及AI投资周期提前见顶——并认为市场面临的挑战将比宏观经济本身更为严峻。 在货币政策层面，高盛预计美联储将在12月和",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-13T22:03:01+00:00"
-    },
-    {
       "title": "‘He calls my plans a fantasy’: My husband says we can’t afford a $200,000-a-year retirement. Is he being cheap?",
       "link": "https://www.marketwatch.com/story/he-calls-my-plans-a-fantasy-my-husband-says-we-cant-afford-our-200-000-a-year-dream-retirement-i-think-hes-cheap-45bc5b4e?mod=mw_rss_topstories",
       "summary": "“We have $2 million saved in our retirement accounts and a house worth $1.3 million.”",
@@ -291,44 +339,12 @@
       "published": "2026-11-13T22:00:00+00:00"
     },
     {
-      "title": "贝森特与美联储高官交锋：通胀源于能源冲击还是需求过热，美联储加息路径争论升温",
-      "link": "https://wallstreetcn.com/articles/3785917",
-      "summary": "美国财政部长与芝加哥联储主席就当前通胀根源公开交锋，折射出华盛顿与美联储之间日益加深的政策分歧，并为美联储12月议息会议蒙上更多不确定性。 美财政部长Scott Bessent（贝森特） 周五接受CNBC采访时呼吁美联储不应因伊朗战争引发的\"能源供应冲击\"而激进加息。 芝加哥联储主席Austan Goolsbee（古尔斯比） 随即在同一节目中予以回应，指出通胀已蔓延至服务业、医疗等与油价关联度低的领域，并受到AI数据中心建设带动的强劲需求推升，远非能源价格上涨所能解释。 Goolsbee明确表示，美联储\"还有大量工作要做\"以重建政策公信力。 近期强于预期的就业与通胀数据进一步强化了美联储继续加",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-13T21:54:36+00:00"
-    },
-    {
-      "title": "‘She has a history of financial mismanagement’: My brother cut our sister out of his will. I’ll get everything. Do I tell her?",
-      "link": "https://www.marketwatch.com/story/she-has-a-history-of-financial-mismanagement-my-brother-cut-my-sister-out-of-his-will-im-getting-everything-do-i-tell-her-3e537851?mod=mw_rss_topstories",
-      "summary": "“I’m torn between respecting my brother’s wishes and being fair to my sister.”",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-13T21:32:00+00:00"
-    },
-    {
-      "title": "Bitcoin is now below $69,000 and could fall even further if investors cash out to buy into the Anthropic IPO",
-      "link": "https://www.marketwatch.com/story/bitcoin-could-fall-even-further-if-investors-cash-out-to-buy-into-the-anthropic-ipo-5a14f46a?mod=mw_rss_topstories",
-      "summary": "Investors may have to sell some of their existing bets in crypto to make room in their portfolio for what could be one of the most sought-after stock offerings in history.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-13T21:26:00+00:00"
-    },
-    {
       "title": "Agencies extend comment period for proposed third-party risk management guidance",
       "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261113a.htm",
       "summary": "Agencies extend comment period for proposed third-party risk management guidance",
       "source": "Federal Reserve",
       "category": "宏观数据",
       "published": "2026-11-13T21:15:00+00:00"
-    },
-    {
-      "title": "AMD and other chip stocks slide as Wall Street rethinks the AI trade without Jensen Huang",
-      "link": "https://www.marketwatch.com/story/amd-and-other-chip-stocks-slide-as-wall-street-rethinks-the-ai-trade-without-jensen-huang-2fb74547?mod=mw_rss_topstories",
-      "summary": "At first, it looked like Nvidia’s pain might be the rest of the chip sector’s gain. But now, investors aren’t so sure.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-13T21:10:00+00:00"
     },
     {
       "title": "Scout Motors has 212,000 vehicle reservations as $2 billion South Carolina plant nears completion",
@@ -465,22 +481,6 @@
       "source": "CNBC Business",
       "category": "国际财经",
       "published": "2026-11-09T20:57:46+00:00"
-    },
-    {
-      "title": "Boeing to cut 5% of commercial airplane workers as production increase takes longer than expected",
-      "link": "https://www.cnbc.com/2026/11/09/boeing-layoffs-commercial-airplane.html",
-      "summary": "Boeing has been working to stabilize production rates of its bestselling 737 Max planes, which are made outside of Seattle.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-09T19:35:58+00:00"
-    },
-    {
-      "title": "Goldman CEO Solomon says AI financing remains strong despite market jitters",
-      "link": "https://www.cnbc.com/2026/11/09/goldman-ceo-ai-financing-market.html",
-      "summary": "Goldman CEO David Solomon says investor appetite for AI infrastructure remains strong despite a reset in AI stocks and political uncertainty around data centers.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-09T18:14:47+00:00"
     },
     {
       "title": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
