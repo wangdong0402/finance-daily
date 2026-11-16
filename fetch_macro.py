@@ -6,24 +6,23 @@ import re
 import time
 from datetime import datetime
 
-# 宏观指标配置
+# 宏观指标配置（已全面升级为 AKShare 最新版接口名）
 MACRO_CONFIGS = [
     # 💵 货币与信用
-    {"id": "rmb_loan", "name": "新增人民币贷款 (亿元)", "category": "货币", "api": "macro_rmb_loan", "x_col": "月份", "y_col": "总额", "type": "bar", "color": "#8b5cf6"},
-    {"id": "shrzgm", "name": "社会融资规模增量 (亿元)", "category": "货币", "api": "macro_china_shrzgm", "x_col": "月份", "y_col": "社会融资规模增量", "type": "bar", "color": "#3b82f6"},
-    {"id": "lpr", "name": "贷款市场报价利率 LPR (%)", "category": "货币", "api": "macro_china_lpr", "x_col": "TRADE_DATE", "y_col": "LPR1Y", "type": "line", "color": "#f59e0b"},
+    {"id": "rmb_loan", "name": "新增人民币贷款 (亿元)", "category": "货币", "api": "macro_china_rmb_loan_ths", "x_col": "月份", "y_col": "总额", "type": "bar", "color": "#8b5cf6"},
+    {"id": "shrzgm", "name": "社会融资规模增量 (亿元)", "category": "货币", "api": "macro_china_social_financing", "x_col": "月份", "y_col": "社会融资规模增量", "type": "bar", "color": "#3b82f6"},
+    {"id": "lpr", "name": "贷款市场报价利率 LPR (%)", "category": "货币", "api": "interest_rate_lpr_em", "x_col": "TRADE_DATE", "y_col": "LPR1Y", "type": "line", "color": "#f59e0b"},
     
     # 📈 物价与通胀
     {"id": "cpi", "name": "居民消费价格指数 (CPI) - 同比 (%)", "category": "物价", "api": "macro_china_cpi", "x_col": "月份", "y_col": "全国-同比增长", "type": "line", "color": "#ef4444"},
     {"id": "ppi", "name": "工业生产者出厂价格 (PPI) - 同比 (%)", "category": "物价", "api": "macro_china_ppi", "x_col": "月份", "y_col": "当月同比增长", "type": "line", "color": "#10b981"},
-    {"id": "qyspjg", "name": "企业商品价格指数 - 同比 (%)", "category": "物价", "api": "macro_china_qyspjg", "x_col": "月份", "y_col": "同比增长", "type": "line", "color": "#ec4899"},
+    {"id": "qyspjg", "name": "企业商品价格指数 - 同比 (%)", "category": "物价", "api": "macro_china_cgpi", "x_col": "月份", "y_col": "同比增长", "type": "line", "color": "#ec4899"},
     
     # 🏭 工业与景气
-    {"id": "gyzjz", "name": "工业增加值 - 同比 (%)", "category": "工业", "api": "macro_china_gyzjz", "x_col": "月份", "y_col": "同比增长", "type": "bar", "color": "#14b8a6"},
+    {"id": "gyzjz", "name": "工业增加值 - 同比 (%)", "category": "工业", "api": "macro_china_industrial_value_added", "x_col": "月份", "y_col": "同比增长", "type": "bar", "color": "#14b8a6"},
     
-    # 🏗️ 投资与外贸
-    {"id": "gdzctz", "name": "固定资产投资 - 同比 (%)", "category": "外贸", "api": "macro_china_gdzctz", "x_col": "月份", "y_col": "同比增长", "type": "line", "color": "#6366f1"},
-    {"id": "trade", "name": "贸易帐差额 (亿美元)", "category": "外贸", "api": "macro_china_trade_balance", "x_col": "月份", "y_col": "差额", "type": "bar", "color": "#f97316"},
+    # 🏗️ 投资与外贸 (移除了废弃的贸易帐，保留固投)
+    {"id": "gdzctz", "name": "固定资产投资 - 同比 (%)", "category": "外贸", "api": "macro_china_fixed_asset_investment", "x_col": "月份", "y_col": "同比增长", "type": "line", "color": "#6366f1"},
 ]
 
 def extract_series(df, x_col_fuzzy, y_col_fuzzy, target_len=13):
@@ -64,13 +63,11 @@ def resample_monthly(df, date_col, value_cols, target_len=13):
         return None, []
 
 def main():
-    # 1. 读取旧数据（用于兜底）
     old_charts = {}
     if os.path.exists("data/macro.json"):
         try:
             with open("data/macro.json", "r", encoding="utf-8") as f:
-                old_data = json.load(f)
-                old_charts = old_data.get("charts", {})
+                old_charts = json.load(f).get("charts", {})
                 print(f"[信息] 已加载历史宏观数据，共 {len(old_charts)} 个图表")
         except Exception as e:
             print(f"[警告] 读取旧宏观数据失败: {e}")
@@ -78,10 +75,10 @@ def main():
     macro_data = {"updated": datetime.now().strftime("%Y-%m-%d"), "charts": {}}
     new_charts = macro_data["charts"]
 
-    # 2. 货币供应量
+    # 1. 货币供应量 (接口名已更新为 macro_china_money_supply_em)
     print("[信息] 抓取 货币供应量 M0/M1/M2 ...")
     try:
-        df_money = ak.macro_china_money_supply()
+        df_money = ak.macro_china_money_supply_em()
         col_date = [c for c in df_money.columns if "月份" in c][0]
         cols = [[c for c in df_money.columns if f"M{i}" in c and "同比" in c][0] for i in range(3)]
         df_money['sort_date'] = df_money[col_date].apply(lambda x: str(x))
@@ -92,9 +89,9 @@ def main():
         if "money_supply" in old_charts: 
             new_charts["money_supply"] = old_charts["money_supply"]
             print("    [兜底] 已恢复历史货币供应量数据")
-    time.sleep(1) # 防封延迟
+    time.sleep(1)
 
-    # 3. 遍历基础配置
+    # 2. 遍历基础配置
     for cfg in MACRO_CONFIGS:
         print(f"[信息] 抓取 {cfg['name']} ...")
         try:
@@ -111,7 +108,7 @@ def main():
                 print(f"    [兜底] 已恢复历史 {cfg['name']} 数据")
         time.sleep(1)
 
-    # 4. PMI
+    # 3. PMI
     print("[信息] 抓取 PMI ...")
     try:
         df_pmi = ak.macro_china_pmi()
@@ -128,10 +125,10 @@ def main():
             print("    [兜底] 已恢复历史 PMI 数据")
     time.sleep(1)
     
-    # 5. 海关进出口
+    # 4. 海关进出口 (接口名更新为 macro_china_customs_trade)
     print("[信息] 抓取 海关进出口增减情况 ...")
     try:
-        df_hgjck = ak.macro_china_hgjck()
+        df_hgjck = ak.macro_china_customs_trade()
         exp = extract_series(df_hgjck, "月份", "当月出口额-金额")
         imp = extract_series(df_hgjck, "月份", "当月进口额-金额")
         if exp and imp:
@@ -145,10 +142,10 @@ def main():
             print("    [兜底] 已恢复历史 海关进出口 数据")
     time.sleep(1)
 
-    # 6. 大类资产：国债收益率
+    # 5. 国债收益率 (接口名更新为 bond_zh_us_yield_em)
     print("[信息] 抓取 10年期国债收益率 ...")
     try:
-        df_bond = ak.bond_zh_us_rate()
+        df_bond = ak.bond_zh_us_yield_em()
         col_cn = next((c for c in df_bond.columns if "中国" in c and "10年" in c), None)
         col_us = next((c for c in df_bond.columns if "美国" in c and "10年" in c), None)
         if col_cn and col_us:
@@ -164,10 +161,10 @@ def main():
             print("    [兜底] 已恢复历史 国债收益率 数据")
     time.sleep(1)
 
-    # 7. 大类资产：汇率
+    # 6. 汇率 (接口名更新为 fx_central_parity_safe)
     print("[信息] 抓取 美元兑人民币汇率 ...")
     try:
-        df_fx = ak.currency_boc_safe()
+        df_fx = ak.fx_central_parity_safe()
         col_date = next((c for c in df_fx.columns if "日期" in c), None)
         col_val = next((c for c in df_fx.columns if "美元" in c), None)
         if col_date and col_val:
@@ -184,7 +181,7 @@ def main():
             print("    [兜底] 已恢复历史 汇率 数据")
     time.sleep(1)
 
-    # 8. 大类资产：沪深300 PE
+    # 7. 沪深300 PE
     print("[信息] 抓取 沪深300 PE ...")
     try:
         df_pe = ak.stock_index_pe_lg(symbol="沪深300")
@@ -203,7 +200,7 @@ def main():
             print("    [兜底] 已恢复历史 沪深300 PE 数据")
     time.sleep(1)
 
-    # 9. 大类资产：中证500 PE
+    # 8. 中证500 PE
     print("[信息] 抓取 中证500 PE ...")
     try:
         df_pe500 = ak.stock_index_pe_lg(symbol="中证500")
@@ -222,20 +219,21 @@ def main():
             print("    [兜底] 已恢复历史 中证500 PE 数据")
     time.sleep(1)
 
-    # 10. 大类资产：沪深两市两融余额
+    # 9. 沪深两市两融余额 (接口名更新为 stock_margin_sse_js 和 stock_margin_szse_js)
     print("[信息] 抓取 沪深两市两融余额 ...")
     try:
-        df_sh = ak.macro_china_market_margin_sh()
-        df_sz = ak.macro_china_market_margin_sz()
+        df_sh = ak.stock_margin_sse_js()
+        df_sz = ak.stock_margin_szse_js()
         
         def prep(df):
             df = df.copy()
             df['dt'] = pd.to_datetime(df['日期'], errors='coerce')
             df = df.dropna(subset=['dt'])
+            # 新版 JS 接口列名可能不同，做全面兼容
             col_total = next((c for c in df.columns if "融资融券余额" in c), None)
             col_rz = next((c for c in df.columns if "融资余额" in c), None)
             if not col_total or not col_rz:
-                return None
+                raise ValueError(f"找不到两融列名，实际列名: {df.columns.tolist()}")
             df[col_total] = pd.to_numeric(df[col_total], errors='coerce')
             df[col_rz] = pd.to_numeric(df[col_rz], errors='coerce')
             return df[['dt', col_total, col_rz]].set_index('dt')
@@ -259,7 +257,7 @@ def main():
                     "bar_color": "#f43f5e", "line_color": "#3b82f6"
                 }
             else:
-                raise ValueError("数据解析为空")
+                raise ValueError("数据为空")
     except Exception as e: 
         print(f"两融余额异常: {e}")
         if "margin_balance" in old_charts:
