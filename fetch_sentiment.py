@@ -1,14 +1,18 @@
 import akshare as ak
 import json
 import os
-import pandas as pd
+import time
 from datetime import datetime
 
 def fetch_ths_sector_flow(symbol):
     """获取同花顺行业资金流排行"""
     try:
-        df = ak.stock_fund_flow_industry(symbol=symbol)
-        df = df.sort_values(by="净额", ascending=False)
+        # 【核心修复】：将接口名更改为 stock_fund_flow_industry_ths
+        df = ak.stock_fund_flow_industry_ths(symbol=symbol)
+        
+        # 兼容新版接口的排序（如果存在"净额"列）
+        if "净额" in df.columns:
+            df = df.sort_values(by="净额", ascending=False)
         
         inflow = []
         for _, row in df.head(10).iterrows():
@@ -41,6 +45,7 @@ def main():
     for key, symbol in periods:
         in_data, out_data = fetch_ths_sector_flow(symbol)
         sentiment_data["periods"][key] = {"inflow": in_data, "outflow": out_data}
+        time.sleep(1) # 防封延迟
 
     os.makedirs("data", exist_ok=True)
     with open("data/sentiment.json", "w", encoding="utf-8") as f:
