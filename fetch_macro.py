@@ -6,23 +6,13 @@ import re
 import time
 from datetime import datetime
 
-# 宏观指标配置
 MACRO_CONFIGS = [
-    # 💵 货币与信用
     {"id": "rmb_loan", "name": "新增人民币贷款 (亿元)", "category": "货币", "api": "macro_china_rmb_loan_ths", "x_col": "月份", "y_col": "总额", "type": "bar", "color": "#8b5cf6"},
     {"id": "shrzgm", "name": "社会融资规模增量 (亿元)", "category": "货币", "api": "macro_china_social_financing", "x_col": "月份", "y_col": "社会融资规模增量", "type": "bar", "color": "#3b82f6"},
-    # 【核心修复】：将 x_col 改为 "日期" 以防接口返回中文列名
-    {"id": "lpr", "name": "贷款市场报价利率 LPR (%)", "category": "货币", "api": "interest_rate_lpr_em", "x_col": "日期", "y_col": "LPR1Y", "type": "line", "color": "#f59e0b"},
-    
-    # 📈 物价与通胀
     {"id": "cpi", "name": "居民消费价格指数 (CPI) - 同比 (%)", "category": "物价", "api": "macro_china_cpi", "x_col": "月份", "y_col": "全国-同比增长", "type": "line", "color": "#ef4444"},
     {"id": "ppi", "name": "工业生产者出厂价格 (PPI) - 同比 (%)", "category": "物价", "api": "macro_china_ppi", "x_col": "月份", "y_col": "当月同比增长", "type": "line", "color": "#10b981"},
     {"id": "qyspjg", "name": "企业商品价格指数 - 同比 (%)", "category": "物价", "api": "macro_china_cgpi", "x_col": "月份", "y_col": "同比增长", "type": "line", "color": "#ec4899"},
-    
-    # 🏭 工业与景气
     {"id": "gyzjz", "name": "工业增加值 - 同比 (%)", "category": "工业", "api": "macro_china_industrial_value_added", "x_col": "月份", "y_col": "同比增长", "type": "bar", "color": "#14b8a6"},
-    
-    # 🏗️ 投资与外贸
     {"id": "gdzctz", "name": "固定资产投资 - 同比 (%)", "category": "外贸", "api": "macro_china_fixed_asset_investment", "x_col": "月份", "y_col": "同比增长", "type": "line", "color": "#6366f1"},
 ]
 
@@ -109,7 +99,46 @@ def main():
                 print(f"    [兜底] 已恢复历史 {cfg['name']} 数据")
         time.sleep(1)
 
-    # 3. PMI
+    # 3. LPR (独立处理，强制指定列名)
+    print("[信息] 抓取 贷款市场报价利率 LPR ...")
+    try:
+        df_lpr = ak.interest_rate_lpr_em()
+        print(f"    [调试] LPR 接口实际返回列名: {df_lpr.columns.tolist()}")
+        
+        # 强制指定日期列和 LPR1Y 列
+        col_date = "TRADE_DATE" if "TRADE_DATE" in df_lpr.columns else "日期"
+        col_val = "LPR1Y" if "LPR1Y" in df_lpr.columns else "LPR_1Y利率(%)"
+        
+        if col_date not in df_lpr.columns or col_val not in df_lpr.columns:
+            raise ValueError(f"列名不匹配，实际列名: {df_lpr.columns.tolist()}")
+            
+        df_lpr = df_lpr[[col_date, col_val]].copy()
+        df_lpr.columns = ['date', 'value']
+        df_lpr['value'] = pd.to_numeric(df_lpr['value'], errors='coerce')
+        df_lpr = df_lpr.dropna()
+        
+        def parse_date_to_sortable(d):
+            match = re.search(r'(\d{4})\D*(\d{1,2})', str(d))
+            if match:
+                return f"{match.group(1)}-{int(match.group(2)):02d}"
+            return str(d)
+        df_lpr['sort_date'] = df_lpr['date'].apply(parse_date_to_sortable)
+        df_lpr = df_lpr.sort_values(by='sort_date').reset_index(drop=True).tail(13)
+        
+        new_charts["lpr"] = {
+            "name": "贷款市场报价利率 LPR (%)", "category": "货币", "type": "line", "color": "#f59e0b",
+            "labels": [str(x)[:10] for x in df_lpr['date']],
+            "data": [round(float(v), 2) for v in df_lpr['value']]
+        }
+        print("    [成功] LPR 抓取完成")
+    except Exception as e:
+        print(f"  [失败] LPR 异常: {e}")
+        if "lpr" in old_charts:
+            new_charts["lpr"] = old_charts["lpr"]
+            print("    [兜底] 已恢复历史 LPR 数据")
+    time.sleep(1)
+
+    # 4. PMI
     print("[信息] 抓取 PMI ...")
     try:
         df_pmi = ak.macro_china_pmi()
@@ -126,7 +155,7 @@ def main():
             print("    [兜底] 已恢复历史 PMI 数据")
     time.sleep(1)
     
-    # 4. 海关进出口
+    # 5. 海关进出口
     print("[信息] 抓取 海关进出口增减情况 ...")
     try:
         df_hgjck = ak.macro_china_customs_trade()
@@ -143,7 +172,7 @@ def main():
             print("    [兜底] 已恢复历史 海关进出口 数据")
     time.sleep(1)
 
-    # 5. 国债收益率
+    # 6. 国债收益率
     print("[信息] 抓取 10年期国债收益率 ...")
     try:
         df_bond = ak.bond_zh_us_yield_em()
@@ -162,7 +191,7 @@ def main():
             print("    [兜底] 已恢复历史 国债收益率 数据")
     time.sleep(1)
 
-    # 6. 汇率
+    # 7. 汇率
     print("[信息] 抓取 美元兑人民币汇率 ...")
     try:
         df_fx = ak.fx_central_parity_safe()
@@ -182,7 +211,7 @@ def main():
             print("    [兜底] 已恢复历史 汇率 数据")
     time.sleep(1)
 
-    # 7. 沪深300 PE
+    # 8. 沪深300 PE
     print("[信息] 抓取 沪深300 PE ...")
     try:
         df_pe = ak.stock_index_pe_lg(symbol="沪深300")
@@ -201,7 +230,7 @@ def main():
             print("    [兜底] 已恢复历史 沪深300 PE 数据")
     time.sleep(1)
 
-    # 8. 中证500 PE
+    # 9. 中证500 PE
     print("[信息] 抓取 中证500 PE ...")
     try:
         df_pe500 = ak.stock_index_pe_lg(symbol="中证500")
@@ -220,7 +249,7 @@ def main():
             print("    [兜底] 已恢复历史 中证500 PE 数据")
     time.sleep(1)
 
-    # 9. 沪深两市两融余额
+    # 10. 沪深两市两融余额
     print("[信息] 抓取 沪深两市两融余额 ...")
     try:
         df_sh = ak.stock_margin_sse_js()
