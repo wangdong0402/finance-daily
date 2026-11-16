@@ -99,15 +99,14 @@ def main():
                 print(f"    [兜底] 已恢复历史 {cfg['name']} 数据")
         time.sleep(1)
 
-    # 3. LPR (独立处理，强制指定列名)
+    # 3. LPR (精确匹配新版中文列名)
     print("[信息] 抓取 贷款市场报价利率 LPR ...")
     try:
         df_lpr = ak.interest_rate_lpr_em()
-        print(f"    [调试] LPR 接口实际返回列名: {df_lpr.columns.tolist()}")
         
-        # 强制指定日期列和 LPR1Y 列
-        col_date = "TRADE_DATE" if "TRADE_DATE" in df_lpr.columns else "日期"
-        col_val = "LPR1Y" if "LPR1Y" in df_lpr.columns else "LPR_1Y利率(%)"
+        # 直接使用日志中返回的中文列名
+        col_date = "日期"
+        col_val = "1年期LPR"
         
         if col_date not in df_lpr.columns or col_val not in df_lpr.columns:
             raise ValueError(f"列名不匹配，实际列名: {df_lpr.columns.tolist()}")
