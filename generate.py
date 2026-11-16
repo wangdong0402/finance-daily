@@ -77,9 +77,7 @@ def build_report_cards(reports):
         rating = html.escape(item.get("rating", ""))
         stock = html.escape(item.get("stock", ""))
         code = html.escape(item.get("code", ""))
-
         search_str = f"{stock} {code}".lower()
-
         rating_color = "#6e6e73"
         if "买入" in rating or "推荐" in rating:
             rating_color = "#dc2626"
@@ -88,7 +86,6 @@ def build_report_cards(reports):
         elif "中性" in rating or "持有" in rating:
             rating_color = "#2563eb"
         rating_html = f'<span style="color: {rating_color}; font-weight: bold; margin-left: 8px;">[{rating}]</span>' if rating else ""
-        
         cards.append(f'''
         <article class="card report-card" data-search="{search_str}">
           <div class="meta">
@@ -121,10 +118,8 @@ def build_sector_rows(sectors):
 def build_sentiment_html(data):
     if not data or not data.get("periods"):
         return '<div class="empty">还没有市场情绪数据。</div>'
-
     updated = html.escape(data.get("updated", ""))
     periods = data["periods"]
-
     period_labels = {"20d": "20个交易日", "10d": "10个交易日", "5d": "5个交易日"}
     blocks = ""
     for key in ["20d", "10d", "5d"]:
@@ -158,7 +153,7 @@ def build_sentiment_html(data):
 
 def build_macro_html(macro_data):
     charts = macro_data.get("charts", {})
-    # 增加“大类资产”分类
+    # 强制保留全部分类
     categories = {
         "货币": "💵 货币与信用", 
         "物价": "📈 物价与通胀", 
@@ -169,24 +164,22 @@ def build_macro_html(macro_data):
     
     cat_nav = ""
     first_cat = True
+    # 强制渲染所有分类标签
     for cat_id, cat_name in categories.items():
-        if any(c["category"] == cat_id for c in charts.values()):
-            active = "active" if first_cat else ""
-            cat_nav += f'<button class="sub-tab-btn {active}" onclick="switchSubTab(\'{cat_id}\')" id="subbtn-{cat_id}">{cat_name}</button>'
-            first_cat = False
+        active = "active" if first_cat else ""
+        cat_nav += f'<button class="sub-tab-btn {active}" onclick="switchSubTab(\'{cat_id}\')" id="subbtn-{cat_id}">{cat_name}</button>'
+        first_cat = False
 
     cat_contents = ""
     first_content = True
     for cat_id in categories.keys():
-        if not any(c["category"] == cat_id for c in charts.values()):
-            continue
-            
         display = "block" if first_content else "none"
         first_content = False
         
+        # 只取当前分类的图表
         cat_charts = [v for k, v in charts.items() if v["category"] == cat_id]
         
-        # 【核心修复】：强制指定“货币”分类下的图表顺序
+        # 货币排序强制逻辑
         if cat_id == "货币":
             desired_order = ["货币供应量", "新增人民币贷款", "社会融资规模", "LPR"]
             def sort_key(c):
@@ -197,10 +190,11 @@ def build_macro_html(macro_data):
             cat_charts.sort(key=sort_key)
 
         charts_html = ""
-        for cfg in cat_charts:
-            # 通过对象找 key
-            key = [k for k, v in charts.items() if v == cfg][0]
-            if cfg["type"] in ("line", "bar", "multi_line"):
+        if not cat_charts:
+            charts_html = '<div class="empty" style="padding: 30px;">该分类暂无数据，可能正在等待接口更新。</div>'
+        else:
+            for cfg in cat_charts:
+                key = [k for k, v in charts.items() if v == cfg][0]
                 charts_html += f'''
                 <div class="macro-card">
                   <h3>{cfg['name']}</h3>
@@ -385,7 +379,17 @@ function lazyRenderCharts() {{
     let datasets = [];
     let chartType = cfg.type === 'multi_line' ? 'line' : cfg.type;
 
-    if (cfg.type === 'multi_line') {{
+    if (cfg.type === 'mixed') {{
+      chartType = 'bar';
+      datasets.push({{
+        type: 'bar', label: '两融余额', data: cfg.bar_data, backgroundColor: cfg.bar_color + '80',
+        borderRadius: 4, yAxisID: 'y'
+      }});
+      datasets.push({{
+        type: 'line', label: '融资余额', data: cfg.line_data, borderColor: cfg.line_color,
+        borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false, yAxisID: 'y1'
+      }});
+    }} else if (cfg.type === 'multi_line') {{
       datasets = cfg.series.map(s => ({{
         label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color + '20',
         borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false
@@ -408,12 +412,13 @@ function lazyRenderCharts() {{
       options: {{
         responsive: true, maintainAspectRatio: false,
         plugins: {{ 
-          legend: {{ display: cfg.type === 'multi_line', position: 'top', labels: {{ boxWidth: 12, font: {{ size: 10 }} }} }},
+          legend: {{ display: cfg.type === 'multi_line' || cfg.type === 'mixed', position: 'top', labels: {{ boxWidth: 12, font: {{ size: 10 }} }} }},
           tooltip: {{ mode: 'index', intersect: false }}
         }},
         scales: {{
           x: {{ grid: {{ display: false }}, ticks: {{ color: textColor, maxRotation: 45, minRotation: 45, font: {{ size: 10 }} }} }},
-          y: {{ grid: {{ color: gridColor, drawBorder: false }}, ticks: {{ color: textColor, font: {{ size: 10 }} }} }}
+          y: {{ grid: {{ color: gridColor, drawBorder: false }}, ticks: {{ color: textColor, font: {{ size: 10 }} }} }},
+          y1: {{ display: false, grid: {{ display: false }} }}
         }}
       }}
     }};
@@ -440,10 +445,11 @@ document.addEventListener('DOMContentLoaded', () => {{
 </script>
 </body>
 </html>'''
+
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(html_doc)
-    print(f"已生成 {OUTPUT_FILE}，包含大类资产与排序逻辑。")
+    print(f"已生成 {OUTPUT_FILE}，包含兜底与全分类展示。")
 
 
 if __name__ == "__main__":
