@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16 05:48",
+  "updated": "2026-11-16 15:42",
   "periods": {
     "20d": {
       "inflow": [
@@ -44,12 +44,12 @@
           "main_net": 11.34
         },
         {
-          "name": "白色家电",
+          "name": "白酒",
           "change": 0.0,
           "main_net": 11.33
         },
         {
-          "name": "白酒",
+          "name": "白色家电",
           "change": 0.0,
           "main_net": 11.33
         }
