@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16 03:05",
+  "updated": "2026-11-16 03:36",
   "periods": {
     "20d": {
       "inflow": [
@@ -221,6 +221,11 @@
           "main_net": 46.78
         },
         {
+          "name": "银行",
+          "change": 0.0,
+          "main_net": 33.36
+        },
+        {
           "name": "通信设备",
           "change": 0.0,
           "main_net": 24.86
@@ -236,6 +241,16 @@
           "main_net": 13.31
         },
         {
+          "name": "自动化设备",
+          "change": 0.0,
+          "main_net": 3.24
+        },
+        {
+          "name": "零售",
+          "change": 0.0,
+          "main_net": 2.46
+        },
+        {
           "name": "白色家电",
           "change": 0.0,
           "main_net": 2.41
@@ -246,24 +261,9 @@
           "main_net": 1.69
         },
         {
-          "name": "港口航运",
-          "change": 0.0,
-          "main_net": 1.69
-        },
-        {
           "name": "燃气",
           "change": 0.0,
           "main_net": 1.36
-        },
-        {
-          "name": "公路铁路运输",
-          "change": 0.0,
-          "main_net": 1.06
-        },
-        {
-          "name": "金属新材料",
-          "change": 0.0,
-          "main_net": 0.43
         }
       ],
       "outflow": [
@@ -288,6 +288,11 @@
           "main_net": -22.38
         },
         {
+          "name": "IT服务",
+          "change": 0.0,
+          "main_net": -19.42
+        },
+        {
           "name": "电网设备",
           "change": 0.0,
           "main_net": -18.66
@@ -298,16 +303,6 @@
           "main_net": -17.32
         },
         {
-          "name": "化学制品",
-          "change": 0.0,
-          "main_net": -17.32
-        },
-        {
-          "name": "化学制药",
-          "change": 0.0,
-          "main_net": -16.94
-        },
-        {
           "name": "化学制药",
           "change": 0.0,
           "main_net": -16.94
@@ -316,6 +311,11 @@
           "name": "证券",
           "change": 0.0,
           "main_net": -15.15
+        },
+        {
+          "name": "电力",
+          "change": 0.0,
+          "main_net": -13.3
         }
       ]
     }
