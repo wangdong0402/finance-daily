@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 def fetch_eastmoney_reports():
     # 东方财富研报API
-    url = "https://reportapi.eastmoney.com/report/list"
+    url = "https://pdf.dfcfw.com/pdf/H3_{infoCode}_1.pdf"
     
     # 动态获取最近3天的日期
     end_time = datetime.now().strftime("%Y-%m-%d")
