@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17 04:59",
+  "updated": "2026-11-17 05:26",
   "periods": {
     "20d": {
       "inflow": [
@@ -115,6 +115,11 @@
           "main_net": 31.89
         },
         {
+          "name": "白酒",
+          "change": 0.0,
+          "main_net": 31.89
+        },
+        {
           "name": "保险",
           "change": 0.0,
           "main_net": 23.72
@@ -153,11 +158,6 @@
           "name": "医疗器械",
           "change": 0.0,
           "main_net": 6.21
-        },
-        {
-          "name": "钢铁",
-          "change": 0.0,
-          "main_net": 6.09
         }
       ],
       "outflow": [
@@ -256,14 +256,14 @@
           "main_net": 9.83
         },
         {
-          "name": "IT服务",
-          "change": 0.0,
-          "main_net": 8.9
-        },
-        {
           "name": "机场航运",
           "change": 0.0,
           "main_net": 5.82
+        },
+        {
+          "name": "白色家电",
+          "change": 0.0,
+          "main_net": 5.23
         }
       ],
       "outflow": [
