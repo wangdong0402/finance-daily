@@ -1,321 +1,321 @@
 {
-  "updated": "2026-11-16 23:50",
+  "updated": "2026-11-17 03:45",
   "periods": {
     "20d": {
       "inflow": [
         {
-          "name": "银行",
-          "change": 0.0,
-          "main_net": 48.74
-        },
-        {
-          "name": "通信设备",
-          "change": 0.0,
-          "main_net": 23.23
-        },
-        {
-          "name": "自动化设备",
-          "change": 0.0,
-          "main_net": 17.85
-        },
-        {
-          "name": "电力",
-          "change": 0.0,
-          "main_net": 16.53
-        },
-        {
           "name": "消费电子",
           "change": 0.0,
-          "main_net": 15.14
-        },
-        {
-          "name": "军工装备",
-          "change": 0.0,
-          "main_net": 14.22
-        },
-        {
-          "name": "元件",
-          "change": 0.0,
-          "main_net": 12.46
-        },
-        {
-          "name": "汽车零部件",
-          "change": 0.0,
-          "main_net": 11.34
-        },
-        {
-          "name": "白酒",
-          "change": 0.0,
-          "main_net": 11.33
-        },
-        {
-          "name": "白色家电",
-          "change": 0.0,
-          "main_net": 11.33
-        }
-      ],
-      "outflow": [
-        {
-          "name": "房地产",
-          "change": 0.0,
-          "main_net": -9.86
-        },
-        {
-          "name": "文化传媒",
-          "change": 0.0,
-          "main_net": -9.41
-        },
-        {
-          "name": "化学制药",
-          "change": 0.0,
-          "main_net": -9.21
-        },
-        {
-          "name": "光学光电子",
-          "change": 0.0,
-          "main_net": -5.73
-        },
-        {
-          "name": "种植业与林业",
-          "change": 0.0,
-          "main_net": -5.58
-        },
-        {
-          "name": "电池",
-          "change": 0.0,
-          "main_net": -4.87
-        },
-        {
-          "name": "农产品加工",
-          "change": 0.0,
-          "main_net": -4.73
-        },
-        {
-          "name": "生物制品",
-          "change": 0.0,
-          "main_net": -4.15
-        },
-        {
-          "name": "零售",
-          "change": 0.0,
-          "main_net": -3.92
+          "main_net": 27.04
         },
         {
           "name": "半导体",
           "change": 0.0,
-          "main_net": -3.23
+          "main_net": 20.97
+        },
+        {
+          "name": "自动化设备",
+          "change": 0.0,
+          "main_net": 15.2
+        },
+        {
+          "name": "IT服务",
+          "change": 0.0,
+          "main_net": 11.83
+        },
+        {
+          "name": "软件开发",
+          "change": 0.0,
+          "main_net": 9.17
+        },
+        {
+          "name": "医疗器械",
+          "change": 0.0,
+          "main_net": 8.95
+        },
+        {
+          "name": "汽车零部件",
+          "change": 0.0,
+          "main_net": 8.32
+        },
+        {
+          "name": "通信服务",
+          "change": 0.0,
+          "main_net": 4.88
+        },
+        {
+          "name": "通信设备",
+          "change": 0.0,
+          "main_net": 4.37
+        },
+        {
+          "name": "医疗服务",
+          "change": 0.0,
+          "main_net": 4.21
+        }
+      ],
+      "outflow": [
+        {
+          "name": "证券",
+          "change": 0.0,
+          "main_net": -26.81
+        },
+        {
+          "name": "电力",
+          "change": 0.0,
+          "main_net": -19.42
+        },
+        {
+          "name": "军工装备",
+          "change": 0.0,
+          "main_net": -19.12
+        },
+        {
+          "name": "工业金属",
+          "change": 0.0,
+          "main_net": -16.88
+        },
+        {
+          "name": "电网设备",
+          "change": 0.0,
+          "main_net": -15.53
+        },
+        {
+          "name": "银行",
+          "change": 0.0,
+          "main_net": -15.5
+        },
+        {
+          "name": "保险",
+          "change": 0.0,
+          "main_net": -14.36
+        },
+        {
+          "name": "光伏设备",
+          "change": 0.0,
+          "main_net": -11.41
+        },
+        {
+          "name": "汽车整车",
+          "change": 0.0,
+          "main_net": -10.54
+        },
+        {
+          "name": "建筑装饰",
+          "change": 0.0,
+          "main_net": -8.58
         }
       ]
     },
     "10d": {
       "inflow": [
         {
-          "name": "证券",
-          "change": 0.0,
-          "main_net": 55.08
-        },
-        {
-          "name": "文化传媒",
-          "change": 0.0,
-          "main_net": 46.12
-        },
-        {
-          "name": "软件开发",
-          "change": 0.0,
-          "main_net": 43.14
-        },
-        {
-          "name": "半导体",
-          "change": 0.0,
-          "main_net": 34.86
-        },
-        {
-          "name": "IT服务",
-          "change": 0.0,
-          "main_net": 25.48
-        },
-        {
-          "name": "游戏",
-          "change": 0.0,
-          "main_net": 22.09
-        },
-        {
           "name": "白酒",
           "change": 0.0,
-          "main_net": 21.16
+          "main_net": 31.89
         },
         {
-          "name": "光伏设备",
+          "name": "保险",
           "change": 0.0,
-          "main_net": 21.06
+          "main_net": 23.72
         },
         {
-          "name": "汽车零部件",
+          "name": "电池",
           "change": 0.0,
-          "main_net": 16.51
+          "main_net": 18.52
         },
         {
-          "name": "计算机设备",
+          "name": "证券",
           "change": 0.0,
-          "main_net": 14.91
+          "main_net": 17.51
+        },
+        {
+          "name": "养殖业",
+          "change": 0.0,
+          "main_net": 11.02
+        },
+        {
+          "name": "白色家电",
+          "change": 0.0,
+          "main_net": 10.65
+        },
+        {
+          "name": "银行",
+          "change": 0.0,
+          "main_net": 7.28
+        },
+        {
+          "name": "机场航运",
+          "change": 0.0,
+          "main_net": 6.23
+        },
+        {
+          "name": "医疗器械",
+          "change": 0.0,
+          "main_net": 6.21
+        },
+        {
+          "name": "钢铁",
+          "change": 0.0,
+          "main_net": 6.09
         }
       ],
       "outflow": [
         {
-          "name": "银行",
+          "name": "半导体",
           "change": 0.0,
-          "main_net": -14.77
-        },
-        {
-          "name": "贵金属",
-          "change": 0.0,
-          "main_net": -11.04
-        },
-        {
-          "name": "工业金属",
-          "change": 0.0,
-          "main_net": -10.99
+          "main_net": -85.47
         },
         {
           "name": "元件",
           "change": 0.0,
-          "main_net": -8.85
+          "main_net": -40.38
         },
         {
-          "name": "煤炭开采加工",
+          "name": "通信设备",
           "change": 0.0,
-          "main_net": -2.67
+          "main_net": -33.62
         },
         {
-          "name": "医疗服务",
+          "name": "通用设备",
           "change": 0.0,
-          "main_net": -2.3
+          "main_net": -29.59
         },
         {
-          "name": "美容护理",
+          "name": "汽车零部件",
           "change": 0.0,
-          "main_net": -1.58
+          "main_net": -18.43
         },
         {
-          "name": "石油加工贸易",
+          "name": "IT服务",
           "change": 0.0,
-          "main_net": -1.33
+          "main_net": -15.3
         },
         {
-          "name": "金属新材料",
+          "name": "文化传媒",
           "change": 0.0,
-          "main_net": -1.08
+          "main_net": -15.26
         },
         {
-          "name": "油气开采及服务",
+          "name": "电子化学品",
           "change": 0.0,
-          "main_net": -0.91
+          "main_net": -14.14
+        },
+        {
+          "name": "光学光电子",
+          "change": 0.0,
+          "main_net": -14.12
+        },
+        {
+          "name": "自动化设备",
+          "change": 0.0,
+          "main_net": -11.91
         }
       ]
     },
     "5d": {
       "inflow": [
         {
-          "name": "元件",
+          "name": "文化传媒",
           "change": 0.0,
-          "main_net": 46.78
-        },
-        {
-          "name": "银行",
-          "change": 0.0,
-          "main_net": 33.36
-        },
-        {
-          "name": "通信设备",
-          "change": 0.0,
-          "main_net": 24.86
-        },
-        {
-          "name": "煤炭开采加工",
-          "change": 0.0,
-          "main_net": 16.91
+          "main_net": 29.65
         },
         {
           "name": "消费电子",
           "change": 0.0,
-          "main_net": 13.31
+          "main_net": 23.05
         },
         {
-          "name": "自动化设备",
+          "name": "汽车零部件",
           "change": 0.0,
-          "main_net": 3.24
+          "main_net": 16.45
         },
         {
-          "name": "零售",
+          "name": "银行",
           "change": 0.0,
-          "main_net": 2.46
-        },
-        {
-          "name": "白色家电",
-          "change": 0.0,
-          "main_net": 2.41
-        },
-        {
-          "name": "港口航运",
-          "change": 0.0,
-          "main_net": 1.69
-        },
-        {
-          "name": "燃气",
-          "change": 0.0,
-          "main_net": 1.36
-        }
-      ],
-      "outflow": [
-        {
-          "name": "电池",
-          "change": 0.0,
-          "main_net": -42.23
-        },
-        {
-          "name": "光伏设备",
-          "change": 0.0,
-          "main_net": -33.9
+          "main_net": 14.87
         },
         {
           "name": "半导体",
           "change": 0.0,
-          "main_net": -26.85
+          "main_net": 12.91
+        },
+        {
+          "name": "光学光电子",
+          "change": 0.0,
+          "main_net": 12.73
         },
         {
           "name": "软件开发",
           "change": 0.0,
-          "main_net": -22.38
+          "main_net": 9.88
+        },
+        {
+          "name": "通用设备",
+          "change": 0.0,
+          "main_net": 9.83
         },
         {
           "name": "IT服务",
           "change": 0.0,
-          "main_net": -19.42
+          "main_net": 8.9
         },
         {
-          "name": "电网设备",
+          "name": "机场航运",
           "change": 0.0,
-          "main_net": -18.66
+          "main_net": 5.82
+        }
+      ],
+      "outflow": [
+        {
+          "name": "工业金属",
+          "change": 0.0,
+          "main_net": -22.02
         },
         {
-          "name": "化学制品",
+          "name": "军工装备",
           "change": 0.0,
-          "main_net": -17.32
+          "main_net": -18.54
+        },
+        {
+          "name": "元件",
+          "change": 0.0,
+          "main_net": -16.6
+        },
+        {
+          "name": "煤炭开采加工",
+          "change": 0.0,
+          "main_net": -15.07
+        },
+        {
+          "name": "医疗服务",
+          "change": 0.0,
+          "main_net": -13.98
         },
         {
           "name": "化学制药",
           "change": 0.0,
-          "main_net": -16.94
+          "main_net": -11.04
         },
         {
           "name": "证券",
           "change": 0.0,
-          "main_net": -15.15
+          "main_net": -10.24
         },
         {
-          "name": "电力",
+          "name": "石油加工贸易",
           "change": 0.0,
-          "main_net": -13.3
+          "main_net": -9.64
+        },
+        {
+          "name": "港口航运",
+          "change": 0.0,
+          "main_net": -9.2
+        },
+        {
+          "name": "油气开采及服务",
+          "change": 0.0,
+          "main_net": -7.64
         }
       ]
     }
