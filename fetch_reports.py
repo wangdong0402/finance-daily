@@ -36,7 +36,7 @@ def fetch_eastmoney_reports():
                 info_code = item.get("infoCode", "")
                 
                 # 强制使用 PC 端单篇研报详情页链接
-                link = f"https://data.eastmoney.com/report/info/{infoCode}.html"
+                link = f"https://data.eastmoney.com/report/info/{info_code}.html"
                 
                 reports.append({
                     "title": item.get("title", ""),
