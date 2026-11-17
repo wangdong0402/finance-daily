@@ -1,7 +1,7 @@
 import json
 import os
 import html
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 NEWS_FILE = "data/news.json"
 REPORTS_FILE = "data/reports.json"
@@ -10,12 +10,26 @@ MACRO_FILE = "data/macro.json"
 OUTPUT_FILE = "dist/index.html"
 
 
-def format_time(value):
+def format_relative_time(value):
+    """将时间转换为相对时间（如：2小时前、昨天 14:30）"""
     if not value:
         return ""
     try:
         dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
-        return dt.strftime("%Y-%m-%d %H:%M")
+        now = datetime.now(timezone.utc)
+        diff = now - dt
+        
+        if diff.days == 0:
+            if diff.seconds < 3600:
+                return f"{diff.seconds // 60} 分钟前"
+            return f"{diff.seconds // 3600} 小时前"
+        elif diff.days == 1:
+            # 转为北京时间显示
+            local_dt = dt + timedelta(hours=8)
+            return f"昨天 {local_dt.strftime('%H:%M')}"
+        else:
+            local_dt = dt + timedelta(hours=8)
+            return local_dt.strftime('%m-%d %H:%M')
     except Exception:
         return str(value)[:16]
 
@@ -30,6 +44,17 @@ def load_json(filepath, default):
 def build_news_cards(items):
     if not items:
         return '<div class="empty">还没有新闻数据。</div>'
+    
+    # 提取所有分类
+    categories = sorted(list(set(item.get("category", "") for item in items if item.get("category"))))
+    
+    # 构建分类筛选栏
+    filter_html = '<div class="filter-bar" id="filter-bar">'
+    filter_html += f'<button class="filter-btn active" onclick="filterNews(\'all\', this)">全部</button>'
+    for cat in categories:
+        filter_html += f'<button class="filter-btn" onclick="filterNews(\'{cat}\', this)">{cat}</button>'
+    filter_html += '</div>'
+
     cards = []
     for item in items:
         title = html.escape(item.get("title", ""))
@@ -37,32 +62,42 @@ def build_news_cards(items):
         summary = html.escape(item.get("summary", ""))
         source = html.escape(item.get("source", ""))
         category = html.escape(item.get("category", ""))
-        published = html.escape(format_time(item.get("published", "")))
+        published = format_relative_time(item.get("published", ""))
+        
         tag_style = ""
+        border_color = "#e5e7eb" # 默认左侧边框颜色
         if "宏观" in category or "政策" in category:
             tag_style = "background: #fee2e2; color: #991b1b;"
+            border_color = "#ef4444"
         elif "国际财经" in category:
             tag_style = "background: #dcfce7; color: #166534;"
+            border_color = "#10b981"
         elif "数据" in category:
             tag_style = "background: #f3e8ff; color: #6b21a8;"
+            border_color = "#a855f7"
         elif "投资" in category:
             tag_style = "background: #fef3c7; color: #92400e;"
+            border_color = "#f59e0b"
         elif "产业" in category or "商业" in category or "科技" in category:
             tag_style = "background: #dbeafe; color: #1e40af;"
+            border_color = "#3b82f6"
         else:
             tag_style = "background: #f3f4f6; color: #374151;"
+
         summary_html = f'<p class="summary">{summary}</p>' if summary else ""
+        
         cards.append(f'''
-        <article class="card">
+        <article class="card news-card" data-category="{category}" style="border-left: 4px solid {border_color};">
           <div class="meta">
             <span class="tag" style="{tag_style}">{category}</span>
             <span>{source}</span>
-            <span>{published}</span>
+            <span class="time-text">{published}</span>
           </div>
           <h2><a href="{link}" target="_blank" rel="noopener noreferrer">{title}</a></h2>
           {summary_html}
         </article>''')
-    return "\n".join(cards)
+
+    return filter_html + "\n".join(cards)
 
 
 def build_report_cards(reports):
@@ -153,7 +188,6 @@ def build_sentiment_html(data):
 
 def build_macro_html(macro_data):
     charts = macro_data.get("charts", {})
-    # 强制保留全部分类
     categories = {
         "货币": "💵 货币与信用", 
         "物价": "📈 物价与通胀", 
@@ -164,7 +198,6 @@ def build_macro_html(macro_data):
     
     cat_nav = ""
     first_cat = True
-    # 强制渲染所有分类标签
     for cat_id, cat_name in categories.items():
         active = "active" if first_cat else ""
         cat_nav += f'<button class="sub-tab-btn {active}" onclick="switchSubTab(\'{cat_id}\')" id="subbtn-{cat_id}">{cat_name}</button>'
@@ -176,10 +209,7 @@ def build_macro_html(macro_data):
         display = "block" if first_content else "none"
         first_content = False
         
-        # 只取当前分类的图表
         cat_charts = [v for k, v in charts.items() if v["category"] == cat_id]
-        
-        # 货币排序强制逻辑
         if cat_id == "货币":
             desired_order = ["货币供应量", "新增人民币贷款", "社会融资规模", "LPR"]
             def sort_key(c):
@@ -220,7 +250,7 @@ def main():
     macro_data = load_json(MACRO_FILE, {"charts": {}})
 
     news_items = news_data.get("items", [])
-    news_updated = format_time(news_data.get("updated", ""))
+    news_updated = html.escape(format_relative_time(news_data.get("updated", "")))
     news_count = news_data.get("count", len(news_items))
 
     news_cards_html = build_news_cards(news_items)
@@ -258,6 +288,12 @@ h2 a:hover {{ text-decoration: underline; }}
 .summary {{ font-size: 14px; line-height: 1.6; color: #3a3a3c; margin: 0; }}
 .empty {{ background: #fff; border-radius: 14px; padding: 32px 20px; text-align: center; color: #6e6e73; font-size: 14px; }}
 
+/* 新闻分类筛选栏 */
+.filter-bar {{ display: flex; gap: 8px; overflow-x: auto; padding-bottom: 12px; margin-bottom: 4px; }}
+.filter-btn {{ background: #fff; border: 1px solid #e5e7eb; padding: 6px 14px; border-radius: 20px; font-size: 13px; color: #3a3a3c; cursor: pointer; white-space: nowrap; transition: all 0.2s; }}
+.filter-btn.active {{ background: #1d1d1f; color: #fff; border-color: #1d1d1f; }}
+
+/* 搜索框样式 */
 .search-container {{ margin-bottom: 16px; }}
 .search-input {{ width: 100%; padding: 12px 16px; border-radius: 10px; border: 1px solid #e5e7eb; font-size: 14px; background: #fff; color: #1d1d1f; outline: none; transition: border-color 0.2s; }}
 .search-input:focus {{ border-color: #3b82f6; }}
@@ -272,21 +308,26 @@ h2 a:hover {{ text-decoration: underline; }}
 .macro-card {{ background: #fff; border-radius: 14px; padding: 16px; box-shadow: 0 1px 2px rgba(0, 0, 0, .04); margin-bottom: 16px; }}
 .macro-card h3 {{ font-size: 14px; margin: 0 0 16px 0; color: #3a3a3c; }}
 
+/* 返回顶部悬浮按钮 */
+.back-to-top {{ position: fixed; bottom: 30px; right: 20px; width: 44px; height: 44px; background: #1d1d1f; color: #fff; border-radius: 50%; display: none; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.15); cursor: pointer; z-index: 999; border: none; font-size: 20px; }}
+
 @media (prefers-color-scheme: dark) {{
   body {{ background: #000; color: #f5f5f7; }}
   header {{ background: rgba(0, 0, 0, .8); border-bottom-color: rgba(255, 255, 255, .12); }}
   .sub, .meta {{ color: #98989d; }}
-  .card, .empty, .macro-card, .search-input {{ background: #1c1c1e; box-shadow: none; border-color: #3a3a3c; }}
+  .card, .empty, .macro-card, .search-input, .filter-btn {{ background: #1c1c1e; box-shadow: none; border-color: #3a3a3c; color: #f5f5f7; }}
   .summary {{ color: #d1d1d6; }}
   .macro-card h3 {{ color: #f5f5f7; }}
   .tab-btn {{ color: #98989d; }}
   .tab-btn.active {{ color: #f5f5f7; border-bottom-color: #f5f5f7; }}
+  .filter-btn.active {{ background: #f5f5f7; color: #000; border-color: #f5f5f7; }}
   .sub-tab-btn {{ background: rgba(255,255,255,0.1); color: #d1d1d6; }}
   .sub-tab-btn.active {{ background: #f5f5f7; color: #000; }}
   .meta span[style*="color: #1d1d1f;"] {{ color: #f5f5f7 !important; }}
   .sentiment-dashboard div[style*="background: #fff;"] {{ background: #1c1c1e !important; }}
   .sentiment-dashboard div[style*="border-left: 4px solid #1d1d1f;"] {{ border-left-color: #f5f5f7 !important; }}
   .sentiment-dashboard div[style*="color: #1d1d1f;"] {{ color: #f5f5f7 !important; }}
+  .back-to-top {{ background: #f5f5f7; color: #000; }}
 }}
 </style>
 </head>
@@ -320,6 +361,8 @@ h2 a:hover {{ text-decoration: underline; }}
   <div id="tab-macro" style="display: none;">{macro_cards_html}</div>
 </main>
 
+<button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
+
 <script>
 const macroData = {macro_json_str};
 const chartInstances = {{}};
@@ -334,6 +377,25 @@ function switchTab(tab) {{
   if(tab === 'macro') lazyRenderCharts();
 }}
 
+// 新闻分类筛选
+function filterNews(category, btn) {{
+  // 更新按钮状态
+  const buttons = document.querySelectorAll('.filter-btn');
+  buttons.forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  // 过滤卡片
+  const cards = document.querySelectorAll('.news-card');
+  cards.forEach(card => {{
+    if (category === 'all' || card.getAttribute('data-category') === category) {{
+      card.style.display = 'block';
+    }} else {{
+      card.style.display = 'none';
+    }}
+  }});
+}}
+
+// 研报搜索
 function filterReports() {{
   const query = document.getElementById('report-search').value.toLowerCase().trim();
   const cards = document.querySelectorAll('.report-card');
@@ -361,6 +423,20 @@ function switchSubTab(catId) {{
   lazyRenderCharts();
 }}
 
+// 返回顶部逻辑
+window.onscroll = function() {{
+  const btn = document.getElementById('backToTop');
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {{
+    btn.style.display = 'flex';
+  }} else {{
+    btn.style.display = 'none';
+  }}
+}};
+
+function scrollToTop() {{
+  window.scrollTo({{ top: 0, behavior: 'smooth' }});
+}}
+
 function lazyRenderCharts() {{
   const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   const textColor = isDark ? '#98989d' : '#6e6e73';
@@ -381,29 +457,15 @@ function lazyRenderCharts() {{
 
     if (cfg.type === 'mixed') {{
       chartType = 'bar';
-      datasets.push({{
-        type: 'bar', label: '两融余额', data: cfg.bar_data, backgroundColor: cfg.bar_color + '80',
-        borderRadius: 4, yAxisID: 'y'
-      }});
-      datasets.push({{
-        type: 'line', label: '融资余额', data: cfg.line_data, borderColor: cfg.line_color,
-        borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false, yAxisID: 'y1'
-      }});
+      datasets.push({{ type: 'bar', label: '两融余额', data: cfg.bar_data, backgroundColor: cfg.bar_color + '80', borderRadius: 4, yAxisID: 'y' }});
+      datasets.push({{ type: 'line', label: '融资余额', data: cfg.line_data, borderColor: cfg.line_color, borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false, yAxisID: 'y1' }});
     }} else if (cfg.type === 'multi_line') {{
-      datasets = cfg.series.map(s => ({{
-        label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color + '20',
-        borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false
-      }}));
+      datasets = cfg.series.map(s => ({{ label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color + '20', borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false }}));
     }} else if (cfg.type === 'bar') {{
       const bgColors = cfg.data.map(v => v >= 0 ? cfg.color : '#10b981');
-      datasets = [{{
-        data: cfg.data, backgroundColor: bgColors, borderRadius: 4
-      }}];
+      datasets = [{{ data: cfg.data, backgroundColor: bgColors, borderRadius: 4 }}];
     }} else {{
-      datasets = [{{
-        data: cfg.data, borderColor: cfg.color, backgroundColor: cfg.color + '20',
-        borderWidth: 2, tension: 0.3, pointRadius: 3, fill: true
-      }}];
+      datasets = [{{ data: cfg.data, borderColor: cfg.color, backgroundColor: cfg.color + '20', borderWidth: 2, tension: 0.3, pointRadius: 3, fill: true }}];
     }}
 
     const config = {{
@@ -425,13 +487,7 @@ function lazyRenderCharts() {{
 
     if (cfg.baseline) {{
       config.options.plugins.annotation = {{
-        annotations: {{
-          line1: {{
-            type: 'line', yMin: cfg.baseline, yMax: cfg.baseline,
-            borderColor: '#ef4444', borderWidth: 1, borderDash: [5, 5],
-            label: {{ display: true, content: '枯荣线', position: 'end' }}
-          }}
-        }}
+        annotations: {{ line1: {{ type: 'line', yMin: cfg.baseline, yMax: cfg.baseline, borderColor: '#ef4444', borderWidth: 1, borderDash: [5, 5], label: {{ display: true, content: '枯荣线', position: 'end' }} }} }}
       }};
     }}
 
@@ -449,7 +505,7 @@ document.addEventListener('DOMContentLoaded', () => {{
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(html_doc)
-    print(f"已生成 {OUTPUT_FILE}，包含兜底与全分类展示。")
+    print(f"已生成 {OUTPUT_FILE}，前端交互已全面优化。")
 
 
 if __name__ == "__main__":
