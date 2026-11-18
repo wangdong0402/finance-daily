@@ -1,286 +1,30 @@
 {
-  "updated": "2026-11-18T05:28:55.915539+00:00",
+  "updated": "2026-11-18T13:55:38.405710+00:00",
   "count": 70,
   "items": [
     {
-      "title": "AI陪伴，硬件的账该怎么算？",
-      "link": "https://www.tmtpost.com/8208289.html",
-      "summary": "AI陪伴核心是算清楚：硬件的增量体验，能否覆盖它带来的全部成本。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-18T05:16:13+00:00"
-    },
-    {
-      "title": "微博三季度广告行业分化，AI和视频还填不上收入缺口",
-      "link": "https://wallstreetcn.com/articles/3786162",
-      "summary": "今年前三季度，微博的营收几乎原地踏步，净利润却少了七成多。 11月17日，微博披露截至9月30日的三季度业绩：总营收4.102亿美元，同比下降7%。 按去年同期汇率计算，降幅为13%。归属微博的净利润2450万美元，同比降88.9%。 拉长到前三季度，累计营收12.854亿美元，与去年同期12.840亿几乎持平。 按财报数据计算，前两个季度收入同比增长约4%，下滑集中出现在三季度。 前三季度归属净利1.266亿美元，同比下降72%。 更贴近经营层面的经调整EBITDA，前三季度为3.351亿美元，同比下降27%。 广告及营销收入3.441亿美元，同比下降8%，固定汇率降幅14%。 据公告，下滑",
+      "title": "美联储分歧加剧：沃勒称12月应考虑加息50个基点，威廉姆斯认为无需激进收紧",
+      "link": "https://wallstreetcn.com/articles/3786207",
+      "summary": "美联储内部对后续加息力度出现明显分歧，理事克里斯托弗·沃勒主张进一步加大加息幅度，而纽约联储主席约翰·威廉姆斯认为当前没有必要采取激进行动。 11月18日，据彭博报道，沃勒周三接受CNBC采访时表示， 通胀走势仍在朝错误方向发展，美联储需要在加息方面更加积极主动。如果通胀继续加速，他将支持12月一次性加息50个基点，以维护央行的抗通胀信誉。 威廉姆斯则持不同看法。 他周二在纽约出席Axios主办的活动时表示，当前形势并不需要采取激烈行动，并强调美联储循序渐进、根据经济数据调整政策的方式一直奏效。 两人的分歧反映出美联储内部对通胀风险及政策收紧节奏的不同判断。尽管市场目前仍倾向于常规加息路径，但",
       "source": "华尔街见闻",
       "category": "中文宏观",
-      "published": "2026-11-18T05:01:15+00:00"
+      "published": "2026-11-18T13:49:35+00:00"
     },
     {
-      "title": "Target is set to report earnings before the bell. Here's what to expect",
-      "link": "https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html",
-      "summary": "Target is expected to offer more color on the progress of its turnaround and a preview of the holiday season as it reports fiscal third-quarter earnings.",
+      "title": "Lowe's posts strong online sales, raises outlook despite slow housing market",
+      "link": "https://www.cnbc.com/2026/11/18/lowes-low-q3-2026-earnings.html",
+      "summary": "Lowe's said it saw strength in online sales during its quarter that contributed to a guidance raise for the full year.",
       "source": "CNBC Business",
       "category": "国际财经",
-      "published": "2026-11-18T05:01:01+00:00"
+      "published": "2026-11-18T13:43:48+00:00"
     },
     {
-      "title": "AI 创新加速落地CES 2027，中国企业如何应答？｜钛媒体TMTPOST CES系列活动开启",
-      "link": "https://www.tmtpost.com/8205750.html",
-      "summary": "钛媒体TMTPOST CES 2027「Talk to the World」系列活动启动招募。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-18T04:47:11+00:00"
-    },
-    {
-      "title": "AI伴侣的孤独陷阱",
-      "link": "https://www.tmtpost.com/8209348.html",
-      "summary": "AI伴侣的核心卖点是随叫随到的陪伴，但这种陪伴是否真正有效？斯坦福大学一项基于46万条真实聊天记录的研究发现，对于社交网络薄弱的人，这种陪伴不仅没有缓解孤独，反而让孤独加剧。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-18T04:36:33+00:00"
-    },
-    {
-      "title": "抖音生服换帅：字节为什么派“红果掌门”去打美团？",
-      "link": "https://www.tmtpost.com/8209254.html",
-      "summary": "与其说是换人，不如说是换方法论。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-18T04:36:27+00:00"
-    },
-    {
-      "title": "A股三大股指早盘集体下跌，算力租赁逆势大涨，恒指、恒科指齐跌超1%，京东大跌8%",
-      "link": "https://wallstreetcn.com/articles/3786152",
-      "summary": "英伟达披露第三季度业绩，大幅超出市场预期，盘后股价涨超4%，提振市场信心。亚太股市周三开盘上涨，韩国KOSPI指数涨幅扩大至3%，SK海力士涨超6%，三星电子涨超4%。A股部分AI硬件股跟随反弹走高。算力租赁、华为算力概念逆势大涨，PCB概念股中生益电子涨超15%；半导体盘中冲高回落、午间分化。 11月18日，A股集体高开后震荡回落，三大股指集体下跌。科创50指数冲高回落，此前一度涨超2%，英伟达最新公布的业绩强于预期，AI硬件测局部反弹，算力租赁、光模块、电路板、覆铜板等概念股集体回暖，工业富联、沪电股份、天孚通信等早盘拉升。白色家电、油气、煤炭、海运、电力等板块走强。贵金属、生物科技、AI",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-18T04:05:53+00:00"
-    },
-    {
-      "title": "只剩央行一个买家！时隔11天，高盛再度下调黄金目标价至4650美元",
-      "link": "https://wallstreetcn.com/articles/3786160",
-      "summary": "现货黄金跌至逾一年低位，高盛认为美联储加息压制私人投资需求，央行买盘成为支撑金价的唯一力量。 周三，现货黄金下挫1.5%、跌破3800美元，为2025年10月以来最低，较一个月前下跌超300美元。美元持续走强，加之市场预期美联储将于12月再度加息，令金价承压。 正是在此背景下， 高盛 Lina Thomas领衔的高盛大宗商品团队于本周发布2027年贵金属年度展望， 将黄金年底目标价由4800美元下调至4650美元每金衡盎司，并首次给出2028年底目标价5600美元。 这已是该团队在11天内第二次下调目标价，此前高盛Lina Thomas团队刚刚将预测从5400美元下调至4800美元。 高盛将当",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-18T04:03:20+00:00"
-    },
-    {
-      "title": "2027见闻历，财经人的桌面必备“神历”",
-      "link": "https://wallstreetcn.com/articles/3782813",
-      "summary": "本文来自华尔街见闻，欢迎下载APP查看更多",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-18T03:51:00+00:00"
-    },
-    {
-      "title": "京东外卖减亏过半，获客回报仍待检验",
-      "link": "https://wallstreetcn.com/articles/3786158",
-      "summary": "外卖亏损大幅收窄，推动京东三季度利润回升。但在补贴投入下降之后，此前吸引来的用户能够留下多少，又能为核心零售贡献多少增量，仍有待验证。 11月17日晚，京东发布2026年第三季度财报，营收3095.93亿元，同比增长3.5%；归属于普通股股东的净利润65.03亿元，同比增长约23.3%；经调整净利润83.27亿元，同比增长43.7%。 利润改善的主要来源是新业务减亏。 三季度，京东集团经营利润由上年同期亏损10.51亿元转为盈利51.54亿元，同比改善62.05亿元。其中，新业务经营亏损从157.36亿元降至96.42亿元，减少60.94亿元，相当于集团经营利润同比改善规模的98.2%。 相比",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-18T02:44:59+00:00"
-    },
-    {
-      "title": "京东港股盘中跌超8%，摩根士丹利维持低配评级",
-      "link": "https://wallstreetcn.com/articles/3786154",
-      "summary": "京东三季度营收重回增长，但每股盈利不及预期，叠加摩根士丹利对消费前景发出警示，导致公司股价周三遭遇大幅抛售。 华尔街见闻提及 ，京东周二发布的财报显示，三季度净营收同比增长3.5%至3096亿元人民币，经营利润扭亏为盈， 但每股盈利0.88美元，较分析师一致预期的0.98美元低约10%，终结了此前连续八个季度超预期的纪录。 摩根士丹利随即发布报告， 消费市场仍然疲软，预计京东第四季度零售收入同比将基本持平，并维持低配评级。 周三盘初京东港股股价一度下跌8.7%，创下三个多月来最大日内跌幅。 此前周二京东美股ADR收盘下跌7.7%，报25.43美元。 零售与物流分化，消费复苏为核心变量 摩根士丹",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-18T02:39:14+00:00"
-    },
-    {
-      "title": "Gartner 2027十大技术趋势：十项里四项与AI治理有关，窗口期只有1到6年",
-      "link": "https://www.tmtpost.com/8209258.html",
-      "summary": "到2028年，25%的企业安全漏洞事件可追溯至AI智能体滥用。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-18T02:30:43+00:00"
-    },
-    {
-      "title": "英伟达代理CEO Kress安抚市场：客户没有流失，员工也不会出走",
-      "link": "https://wallstreetcn.com/articles/3786150",
-      "summary": "英伟达交出一份超预期的季度成绩单，代理CEO Colette Kress随即出面稳定军心。 在黄仁勋因丑闻突然辞职后的首份财报发布当晚，Kress接受CNBC《Mad Money》节目专访， 明确表示客户需求未受影响，员工队伍同样稳固。盘后英伟达股价上涨逾3%。 这份财报在一定程度上缓解了市场对英伟达领导层更迭后前景的担忧。但公司股价本月已累计下跌24%，并在上周五结束了自2012年以来最长的六连跌，当前股价处于2025年7月以来的最低水平。 代理CEO Colette Kress Kress：大客户仍在，需求只增不减 黄仁勋的离职引发了市场的一个核心疑问：大型云计算客户是否会借机转向自研芯片",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-18T02:29:50+00:00"
-    },
-    {
-      "title": "美银调查：基金经理以二十年来最大幅度砍科技股，但现金太少，“恐慌还不够”",
-      "link": "https://wallstreetcn.com/articles/3786133",
-      "summary": "美国银行（Bank of America）最新月度调查显示，全球基金经理正在以2006年以来最快速度撤出科技股。 调查显示，科技股超配比例从10月的净37%骤降至净12%，单月降幅创近20年之最。 美银策略师Michael Hartnett在报告中直言\"AI繁荣与亢奋情绪已经终结\"，并建议投资者在未来数月维持防御性仓位。 市场表现印证了这一情绪转变。纳斯达克100指数本月已下跌逾4%，料创2008年以来最差11月表现；半导体相关股票指数自10月初以来累计下跌27%。 这一调查于11月6日至12日进行，全球部分共覆盖169名参与者，管理资产规模合计4610亿美元；欧洲区域性问题由94名参与者作答",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-18T02:28:12+00:00"
-    },
-    {
-      "title": "国产户外品牌，吃到凯乐石让出的平价生态了吗？",
-      "link": "https://www.tmtpost.com/8208700.html",
-      "summary": "平价户外看着是甜点区，吃着是薄利区。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-18T02:13:00+00:00"
-    },
-    {
-      "title": "大洋彼岸的数据中心成了洪水猛兽",
-      "link": "https://www.tmtpost.com/8208735.html",
-      "summary": "AI算力需求激增，数据中心却因噪声、用水、电价及土地占用引发海外居民抵制。美国多地收紧审批，并要求开发商承担扩网风险。中国则以机房上架率约束新增建设，探索绿电直连和算力跨区域调度。数据中心扩张正从争抢投资转向衡量资源成本与实际需求。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-18T02:09:00+00:00"
-    },
-    {
-      "title": "亚玛芬三季度营收增长24%，美股上市后首推10亿美元级回购",
-      "link": "https://wallstreetcn.com/articles/3786153",
-      "summary": "始祖鸟母公司亚玛芬体育（Amer Sports）宣布美股上市以来首次推出10亿美元级股票回购计划，同时年内第三次上调全年业绩指引。 11月17日，亚玛芬公布2026年第三季度业绩。集团营收21.69亿美元，同比增长24%；调整后营业利润3.57亿美元，同比增长30%；调整后净利润2.50亿美元，同比增长35%，收入及盈利均超过市场预期。 这是亚玛芬今年第三次上调全年业绩指引。此前，公司已分别在5月和8月发布一、二季度财报时提高全年预期。 此次，亚玛芬将全年营收增长预期从约24%上调至25%至26%；调整后营业利润率预期从14.2%至14.5%上调至14.5%至14.7%；调整后每股收益预期从1",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-18T02:05:44+00:00"
-    },
-    {
-      "title": "顺为资本押注的天才，被告到英国司法机构",
-      "link": "https://www.tmtpost.com/8208723.html",
-      "summary": "融资10亿元，知名PE追责明星创业者陈曦。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-18T02:02:00+00:00"
-    },
-    {
-      "title": "CoreWeave’s stock pops — even as Nvidia talks up a ‘disciplined’ approach to financing",
-      "link": "https://www.marketwatch.com/story/coreweaves-stock-pops-even-as-nvidia-talks-up-a-disciplined-approach-to-financing-e7f00876?mod=mw_rss_topstories",
-      "summary": "Nvidia interim CEO Colette Kress said neoclouds are “increasingly important,” but added the company will take “a very strong look” at the customers it helps with financing.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-18T01:59:00+00:00"
-    },
-    {
-      "title": "GPT-6.2 Astra终于上线，从PPT做到发动机",
-      "link": "https://www.tmtpost.com/8209040.html",
-      "summary": "新模型什么活都想干，但很难伺候。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-18T01:58:00+00:00"
-    },
-    {
-      "title": "芯片供不应求，台积电却开始给客户“验资”？",
-      "link": "https://www.tmtpost.com/8208977.html",
-      "summary": "芯片不愁卖，谁在替买家垫钱？",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-18T01:51:00+00:00"
-    },
-    {
-      "title": "英伟达业绩超预期提振亚太股市，韩股一度涨超3%，SK海力士涨逾5%，黄金下挫1%",
-      "link": "https://wallstreetcn.com/articles/3786140",
-      "summary": "英伟达财季业绩强劲叠加乐观营收展望，为近期遭受抛售压力的AI相关资产注入一剂强心针，亚太股市普遍走高，美股期货同步上扬。 周三亚太早盘， 韩国综合股价指数 一度涨超3%，领涨亚太股市。 MSCI亚太股票指数 上涨0.3%，终结此前四连跌。此前周二美股盘后， 英伟达 涨逾4%， 纳斯达克100指数期货 劲升1.3%， 标普500指数期货 上涨0.7%。 日经225指数 涨幅曾扩大至1.1%，受日本10月出口数据超预期提振； 澳大利亚ASX 200 小幅下跌0.3%， 新加坡海峡时报指数 则下跌1.2%，走势分化。 eToro亚太区首席分析师Josh Gilbert表示： 在堪称企业史上讨论度最高",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-18T01:49:09+00:00"
-    },
-    {
-      "title": "IPO火爆！Anthropic的早期VC们回报超过10倍",
-      "link": "https://wallstreetcn.com/articles/3786149",
-      "summary": "Anthropic或将以1.4万亿美元估值完成IPO定价，这场AI独角兽的上市盛宴，让一批押注早、押注重的风险投资机构收获颇丰。 11月17日，据知情人士向The Information透露，美国Spark Capital、Factorial Funds、Sound Ventures和Menlo Ventures等早期VC机构，将在本次IPO中实现超过10倍的理论回报。其中Menlo Ventures以10亿美元投资换来约210亿美元持仓，理论回报倍数高达21倍。 稍晚入场的Bessemer Venture Partners和Lightspeed Venture Partners，则预计将分别",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-18T01:45:58+00:00"
-    },
-    {
-      "title": "Medicare Part B premiums rise due higher healthcare spending",
+      "title": "Medicare Part B premiums rise due to higher healthcare spending",
       "link": "https://www.marketwatch.com/story/medicare-part-b-premiums-rise-due-higher-healthcare-spending-f2daba13?mod=mw_rss_topstories",
       "summary": "The premiums will increase by $6.50, to $209.40 a month.",
       "source": "MarketWatch",
       "category": "国际财经",
-      "published": "2026-11-18T01:45:00+00:00"
-    },
-    {
-      "title": "英伟达，段永平的投资压力测试",
-      "link": "https://www.tmtpost.com/8208863.html",
-      "summary": "段永平在等英伟达给出答案。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-18T01:39:00+00:00"
-    },
-    {
-      "title": "爱奇艺，再不努力就退了",
-      "link": "https://www.tmtpost.com/8208727.html",
-      "summary": "还是看红果吧，不要会员，也不烧心。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-18T01:33:00+00:00"
-    },
-    {
-      "title": "Nvidia’s stock rises as blowout numbers help ease CEO transition fears",
-      "link": "https://www.marketwatch.com/story/nvidias-stock-rises-as-blowout-numbers-help-ease-ceo-transition-fears-2f20d38a?mod=mw_rss_topstories",
-      "summary": "Nvidia’s revenue growth and $130 billion quarterly forecast showed that demand for chips is still sky-high.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-18T01:28:00+00:00"
-    },
-    {
-      "title": "蚂蚁灵波，又放大招了",
-      "link": "https://www.tmtpost.com/8208722.html",
-      "summary": "靠“通用底座”能不能撑起一门独立的生意？",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-18T01:27:15+00:00"
-    },
-    {
-      "title": "德鲁肯米勒：做空铜，“离开”股市，“不敢做多也不敢做空”，现在目标是保本",
-      "link": "https://wallstreetcn.com/articles/3786129",
-      "summary": "亿万富翁投资者德鲁肯米勒（Stan Druckenmiller）表示， 面对经济与货币政策前景的高度不确定性，他已大幅收缩仓位，转向防御姿态，优先保全资本而非追求回报。 11月17日，在美国得克萨斯州奥斯汀举行的TomorrowX峰会上，Druckenmiller表示， 他无法回忆起曾有哪个时刻对市场一年后走向如此缺乏判断。 Druckenmiller认为，2027年下半年的经济形势可能会令人失望。目前他持有少量美元多头仓位，同时做空铜 。他说： 我们不做多股票，也不做空股票。我绝不敢做空。我们基本上在回避市场，目标是不亏钱。 Druckenmiller随后补充称： 我只是休息一下，可能是两天",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-18T01:22:24+00:00"
-    },
-    {
-      "title": "理想出海的右舵首战：为什么先派出MEGA？",
-      "link": "https://www.tmtpost.com/8208799.html",
-      "summary": "泰国的新税制，让高端进口MPV面临制造选择。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-18T01:20:54+00:00"
-    },
-    {
-      "title": "黄仁勋反攻了：我将重返英伟达任 CEO，如果董事会允许",
-      "link": "https://www.tmtpost.com/8208942.html",
-      "summary": "财报发布前夕，老黄终于开口。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-18T01:20:44+00:00"
-    },
-    {
-      "title": "中选之后清算潮？爱泼斯坦和特朗普税务文件流出，德银股价重挫，特朗普回应",
-      "link": "https://wallstreetcn.com/articles/3786144",
-      "summary": "德意志银行周二在法兰克福股价一度重挫逾6% ，导火索是一批多达1500万份的泄露文件，揭示这家德国最大银行处理了与爱泼斯坦（Jeffrey Epstein）相关的逾5.82亿美元可疑交款，在2017年将特朗普的税务文件意外泄露给外部人士。 这批文件由两名举报人从银行内部复制后，交给印度记者Josy Joseph和南非记者Khadija Sharife，由南非非营利机构Barracuda Media统筹协调，联合《金融时报》、《明镜》周刊、《世界报》和《纽约时报》等逾200名记者历时数月完成调查。 举报人的律师表示，相关材料已同步移交美国司法部、财政部金融犯罪执法网络（FinCEN）以及英国税务",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-18T01:13:20+00:00"
-    },
-    {
-      "title": "回归英伟达，黄仁勋要先“干掉董事会”",
-      "link": "https://wallstreetcn.com/articles/3786145",
-      "summary": "离职第五天，黄仁勋打破沉默。 11月17日周二，黄仁勋发布声明称： “自我离开以来，我看到英伟达的员工、投资者、商业伙伴和客户纷纷呼吁我回归担任CEO。如果董事会认为我的回归符合股东、员工、公司和美国的最大利益，我将荣幸地回应这些呼声，重返CEO职位。” 他同时承认了个人过失：“我没有达到英伟达对每个人的要求标准，我在个人生活中犯了严重的错误。我给董事会造成了麻烦，我对此深感遗憾。我完全承担自己的错误，并承诺配合董事会的独立调查。” 黄仁勋个人声明截图 话音刚落， 英伟达董事会主席Harvey Jones随即表态：董事会不打算恢复黄仁勋的职务。 11月17日，据路透社报道，Jones的表态措辞",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-18T00:52:06+00:00"
-    },
-    {
-      "title": "英伟达电话会：“不打算请回黄仁勋”，2028财年增速预期上调至75%，AI投资将更加“克制与挑剔”",
-      "link": "https://wallstreetcn.com/articles/3786136",
-      "summary": "华尔街见闻提及 ，美东时间17日周二美股盘后，英伟达公布，截至2026年10月25日的公司2027财年第三财季，营收同比增长103.1%至1158亿美元，不但公司史上首次单季营收突破1000亿美元，而且较分析师预期高约5.9%，也明显高于该司自身指引中值1080亿美元。 随后英伟达举行了2027财年第三季度财报电话会议，这也是公司经历高层巨震后的首场业绩沟通会。针对市场最关注的换帅问题，英伟达董事长Harvey Jones在开场给出了明确且强硬的定调： 英伟达董事会一致接受了他的辞呈，并且不打算恢复黄仁勋的CEO职务。 他强调，董事会已成立美国国家安全和出口控制监督委员会，并在积极寻找正式CE",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-18T00:35:25+00:00"
-    },
-    {
-      "title": "My husband is happily retired at 64 and thinks I should keep working. Is he being fair?",
-      "link": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories",
-      "summary": "“I’m exhausted. My alarm goes off at 6 a.m., and I have a 50-minute commute.”",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-17T23:30:00+00:00"
+      "published": "2026-11-18T13:42:00+00:00"
     },
     {
       "title": "I’m in my 40s. Should I accept a lower pension in exchange for naming my husband or child as a beneficiary?",
@@ -288,15 +32,31 @@
       "summary": "“If I die before my husband, he will receive a lifetime pension equal to 50%–66% of my monthly benefit.”",
       "source": "MarketWatch",
       "category": "国际财经",
-      "published": "2026-11-17T23:15:00+00:00"
+      "published": "2026-11-18T13:30:00+00:00"
     },
     {
-      "title": "Costco is benefiting from ‘apocalyptic concerns’ as customers stock up on goods, analysts say",
-      "link": "https://www.marketwatch.com/story/costco-is-benefiting-from-apocalyptic-concerns-as-customers-stock-up-on-goods-analysts-say-24f611ab?mod=mw_rss_topstories",
-      "summary": "Mizuho analysts have seen an “acceleration on emergency prep sales” at the warehouse chain following the Microsoft outage and nationwide flight stoppage.",
+      "title": "Target posts best sales growth in five years, raises guidance",
+      "link": "https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html",
+      "summary": "Target beat third-quarter sales expectations and raised its guidance as it continues a turnaround effort.",
+      "source": "CNBC Business",
+      "category": "国际财经",
+      "published": "2026-11-18T13:29:33+00:00"
+    },
+    {
+      "title": "高利率持续施压，全球信用市场迎来压力测试：违约潮或进一步扩大",
+      "link": "https://wallstreetcn.com/articles/3786213",
+      "summary": "全球信用市场正经历全面重新定价，违约与债务重组风险持续上升。高利率进一步加重低评级借款人的偿债压力，信用市场紧张局势仍在加剧。 11月18日，据彭博报道，在彭博伦敦全球信用论坛上， 多家大型资产管理机构的高管警告，市场正在进入新一轮信用风险释放阶段。 从最低评级公司债利差走阔、对冲基金遭受重创，到CoreWeave债券跌至通常预示信用困境的价位，再到法国借贷成本升至逾二十年高位，市场紧张信号不断增加。 利率预期进一步加剧了市场压力。目前市场已定价美联储下月至少加息25个基点，欧洲央行也被预期采取相近幅度的行动。 若两大央行如期加息，政策利率都将升至逾一年来最高水平，持有浮动利率债务的杠杆企业将",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T13:26:09+00:00"
+    },
+    {
+      "title": "Want to earn 5% on shorter-term Treasurys again? Watch for this shift.",
+      "link": "https://www.marketwatch.com/story/want-to-earn-5-on-shorter-term-treasurys-again-watch-for-this-shift-d6ff42f2?mod=mw_rss_topstories",
+      "summary": "Don’t rule out a half-point interest-rate hike in December, BofA Global’s rates team said.",
       "source": "MarketWatch",
       "category": "国际财经",
-      "published": "2026-11-17T22:46:00+00:00"
+      "published": "2026-11-18T13:24:00+00:00"
     },
     {
       "title": "‘It’s downright dirty’: My brother took over our ailing mother’s life and finances. What can I do?",
@@ -304,7 +64,287 @@
       "summary": "“It is devastating when the people you should be able to trust become the very people you have to protect yourself from.”",
       "source": "MarketWatch",
       "category": "国际财经",
-      "published": "2026-11-17T22:30:00+00:00"
+      "published": "2026-11-18T13:15:00+00:00"
+    },
+    {
+      "title": "腾讯：WorkBuddy七天年化收入突破5亿美元，是腾讯会议的两倍以上，受算力限制下一代混元推出时间可能延迟",
+      "link": "https://wallstreetcn.com/articles/3786214",
+      "summary": "腾讯交出一份被AI重塑的季度成绩单：云业务增速从21%跳升至35%，Workbuddy日活突破1000万、年化收入超5亿美元，管理层定调——\"AI让现有业务用更少的人，多出来的人去建新业务。\" 周二晚间，腾讯2026年第三季度财报电话会召开，公司创始人兼CEO马化腾、总裁刘炽平、高级执行副总裁兼首席战略官詹姆斯·米切尔（James Mitchell）以及CFO罗硕瀚参与本次电话会。 总体而言，管理层在本次电话会上定调：AI投入正在产生可见回报，但算力限制对下一代模型训练带来真实压力。 腾讯表示，WorkBuddy的日活跃用户（DAU）超过1000万，每天消耗100万亿token， 最近七天的收",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T13:14:04+00:00"
+    },
+    {
+      "title": "博理科技获超5亿元融资，3D打印机器人零部件批量供货",
+      "link": "https://wallstreetcn.com/articles/3786210",
+      "summary": "11月18日，苏州博理新材料科技有限公司（以下简称“博理科技”）宣布连续完成B2轮与B+轮股权融资，合计金额超5亿元。 公司披露，B2轮由基石资本与金沙江联合资本联合领投，格致资本、天堂硅谷、中时资本、云锦资本、卓璞基金跟投；B+轮由经纬创投领投，安耐德资本、天堂硅谷跟投，上市公司长盈精密参投，估值未披露。 募资将用于高分子材料研发、装备扩产、具身智能应用开发、全球化交付网络建设与总部基地建设。 博理科技成立于2017年，主业为高分子弹性体材料与超高速3D打印批量制造。公司称，截至2026年已累计交付终端零部件超1000万件，累计服务客户超400家。 具身智能方向，公司称仿生柔体结构、壳体防干",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T13:01:41+00:00"
+    },
+    {
+      "title": "Measles cases in the U.S. are at a 35-year high. Here’s the staggering cost of these outbreaks for all Americans.",
+      "link": "https://www.marketwatch.com/story/measles-cases-in-the-u-s-are-at-a-35-year-high-heres-the-staggering-cost-of-falling-vaccination-rates-for-americans-e80a7ac6?mod=mw_rss_topstories",
+      "summary": "The U.S. officially lost its measles elimination status on Tuesday as it grapples with multiple outbreaks.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-18T13:00:00+00:00"
+    },
+    {
+      "title": "‘Nvidia’s turmoil has me spooked’: Has the time come to sell my stocks?",
+      "link": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
+      "summary": "“Real estate here in Florida seems to be presenting some interesting opportunities.”",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-18T13:00:00+00:00"
+    },
+    {
+      "title": "Booking Holdings creates new enterprise division as AI reshapes travel planning",
+      "link": "https://www.cnbc.com/2026/11/18/booking-holdings-enterprise.html",
+      "summary": "The future for online travel agencies increasingly relies on scaling business-to-business travel platforms.",
+      "source": "CNBC Business",
+      "category": "国际财经",
+      "published": "2026-11-18T12:55:01+00:00"
+    },
+    {
+      "title": "中行仍在坚守的村镇生意",
+      "link": "https://wallstreetcn.com/articles/3786209",
+      "summary": "国有大行的村镇银行改革接近尾声，中国银行成了一个特殊的存在。 11月11日，河北金融监管局发布批复，同意中行旗下中银富登村镇银行股份有限公司募集20亿股股份。这家投管行，持有并管理着国内规模最大的村行体系。 其他大行正陆续退出村镇银行独立法人经营。 建行早在2018年便签约转让所持27家村行股权，农行、交行已完成旗下村行改制，工行最后一家村行也已获批收购改制。 中行则一面将京沪部分村行业务收归自身分支网络，一面推动县域村行内部合并，为投管行筹备新的资本补充。 值得注意的是，建行当年转让的那批村行，正是由中行与富登金控接手。多年积累下来，中银富登已成为中行深入县域服务农户与小微经营者的一条渠道。",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T12:50:02+00:00"
+    },
+    {
+      "title": "从跨境结算到智能体支付，蚂蚁国际加码支付基础设施",
+      "link": "https://wallstreetcn.com/articles/3786208",
+      "summary": "11月18日，新加坡金融科技节首日，蚂蚁国际CEO杨鹏在一场讨论未来金融体系的圆桌上表示，账户直连账户的支付将冲击现有支付模式，在通证化、区块链和AI之下，支付链条中各类机构的分工可能发生变化。 蚂蚁国际正在沿着这一方向推进业务：通过区块链平台处理资金结算，连接银行账户与电子钱包，并为AI智能体建立支付与身份认证机制。 在杨鹏看来，当Web3货币成为主流，商户或许可以自行处理交易，对收单机构和支付网络的依赖也会下降； 他进一步表示，交易轨道和结算层一旦确定，相应的运行规则可能随之确立。 对跨境支付企业而言，结算能力直接关系到资金何时到账、企业需要提前调拨多少资金，以及交易成本如何计算。蚂蚁国际",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T12:46:55+00:00"
+    },
+    {
+      "title": "股价回撤近八成后抛9.5亿定增，欧科亿的逆周期扩张赌局",
+      "link": "https://www.tmtpost.com/8210365.html",
+      "summary": "钨价红利褪去业绩承压，产能与技术双线布局谋变。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T12:45:31+00:00"
+    },
+    {
+      "title": "商汤营收增长23%，算力服务与智能体应用双线推进",
+      "link": "https://wallstreetcn.com/articles/3786206",
+      "summary": "生成式AI已贡献商汤近八成收入，持续付费的客户正在成为公司减亏的重要支撑。 8月26日，商汤集团发布2026年中期业绩，上半年营收29.11亿元，同比增长23.4%；经调整净亏损3.86亿元，同比收窄67.3%。 其中，生成式AI收入23.27亿元，同比增长28.2%，占总收入的79.9%。以计算机视觉起家的商汤，收入结构已明显转向大模型、算力服务及相关应用。 按国际财务报告准则计算，商汤上半年录得净利润6.17亿元，实现上市以来首次该口径盈利。投资公允价值提升及出售附属公司收益，对账面扭亏产生了重要影响。 从经营表现看，公司毛利率升至41.4%，同比提高2.9个百分点，研发和行政费用下降，也",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T12:31:45+00:00"
+    },
+    {
+      "title": "Nvidia’s leadership saga unfolds as demand is surging for Anthropic’s IPO",
+      "link": "https://www.marketwatch.com/story/nvidias-leadership-saga-unfolds-as-demand-is-surging-for-anthropics-ipo-a7a12d40?mod=mw_rss_topstories",
+      "summary": "Three takeaways from Colette Kress’s first earnings call as Nvidia’s interim CEO. Plus, what Medicare Part B will cost in 2027 and why one investor is eyeing Florida real estate as a stock-market alternative.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-18T12:22:00+00:00"
+    },
+    {
+      "title": "“未名·AI Park”正式揭牌，北大海淀共建AI创新转化高地",
+      "link": "https://www.tmtpost.com/8210345.html",
+      "summary": "“未名·AI Park”核心启动区选址北大西门外，构建服务北大的“一公里转化圈”，立足北大顶尖AI学科资源与海淀科创沃土，打通“原始创新—技术攻关—成果落地—产业集聚”全链条，是百年京张AI创新带上的重要节点。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T12:11:01+00:00"
+    },
+    {
+      "title": "欧央行高层人事洗牌：德国支持德科斯竞逐行长，提名布伦纳迈尔进入执委会",
+      "link": "https://wallstreetcn.com/articles/3786205",
+      "summary": "欧洲央行即将迎来成立逾25年来最大规模的一次高层人事调整。德国已确定支持西班牙前央行行长巴勃罗·埃尔南德斯·德科斯竞逐欧洲央行行长，同时提名普林斯顿大学经济学教授马库斯·布伦纳迈尔进入执行委员会，为新一轮权力交接提供关键支持。 11月18日，据彭博报道，德国总理弗里德里希·默茨领导的执政联盟周三就欧洲央行人事安排达成一致。 根据协议，布伦纳迈尔将接替即将离任的伊莎贝尔·施纳贝尔，进入欧洲央行执行委员会；德国则支持德科斯接替克里斯蒂娜·拉加德，出任下一任欧洲央行行长。 这项安排涉及欧洲央行最高决策层多个关键职位，正值欧元区通胀仍明显高于2%的政策目标、法国财政压力持续受到市场关注之际，新一届领导",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T11:57:24+00:00"
+    },
+    {
+      "title": "The Fed is tightening, the economy is slowing — and that’s the perfect setup to buy bonds, this trader argues",
+      "link": "https://www.marketwatch.com/story/the-fed-is-tightening-the-economy-is-slowing-and-thats-the-perfect-setup-to-buy-bonds-this-trader-argues-b1c88b23?mod=mw_rss_topstories",
+      "summary": "Having missed the rally in U.S. Treasurys that statrted in mid-October, Macro Tourist commentator Kevin Muir is taking advantage of a renewed weakness in bonds to buy.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-18T11:38:00+00:00"
+    },
+    {
+      "title": "Target is seeing a revival — but it still needs to work on shoes and women’s clothing",
+      "link": "https://www.marketwatch.com/story/target-is-seeing-a-revival-but-it-still-needs-to-work-on-shoes-and-womens-clothing-afb16799?mod=mw_rss_topstories",
+      "summary": "Some analysts have seen an overhaul of Target’s apparel and home segments as crucial to its turnaround.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-18T11:33:00+00:00"
+    },
+    {
+      "title": "The good news: Bubble predictions vastly outnumber actual episodes. The bad: There may be a 97% chance of one, right now.",
+      "link": "https://www.marketwatch.com/story/the-good-news-bubble-predictions-vastly-outnumber-actual-episodes-the-bad-there-may-be-a-97-chance-of-one-right-now-8ca55732?mod=mw_rss_topstories",
+      "summary": "It turns out, the business media cries wolf about impending stock-market doom too frequently. But that doesn’t mean that the warnings have no predictive value.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-18T11:23:00+00:00"
+    },
+    {
+      "title": "让品牌不止被看见，更能被365天持续记住——“2027见闻历企业定制”开启！",
+      "link": "https://wallstreetcn.com/articles/3786195",
+      "summary": "一份有内容、有质感的年度好礼 时间是最好的见证者，也是最好的投资。 在充满不确定性的时代，企业送给客户、合作伙伴最好的礼物， 不仅是一份心意，更是一份确定性的陪伴与信心 。 《2027见闻历》由华尔街见闻连续 九年 打造，将全球重要财经事件、投资大师箴言、金融历史上的重要瞬间与每日宜忌融入365天的日常。 从市场的风云变幻，到投资大师的深刻思考；从影响时代的财经大事，到值得铭记的历史时刻，每一页都藏着值得阅读和回味的内容。 作为 企业专属定制版 ，还可以 将企业Logo、品牌理念、CEO寄语、年度Slogan等 融入日历及礼盒设计。 让企业文化与财经智慧相遇， 打造一份兼具内容价值、品牌特色与",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T11:22:00+00:00"
+    },
+    {
+      "title": "“带着500亿美元再创业”？“投奔马斯克”？黄仁勋下一站会在哪",
+      "link": "https://wallstreetcn.com/articles/3786201",
+      "summary": "黄仁勋离开英伟达之后，下一站会在哪里？重新执掌英伟达、加入马斯克旗下企业，还是筹集数百亿美元另起炉灶？围绕这位AI行业最具影响力的企业家之一，硅谷已经出现了各种猜测。 在Prof G Markets最新一期节目中，Semafor商业记者Rohan Goswami与DB Live创始人Deirdre Bosa就黄仁勋的未来展开讨论。 两人对其能否重返英伟达存在明显分歧，但Rohan给出了一个更大胆的预测：黄仁勋不会回到英伟达，而是会与一直支持他的朋友筹集并投入500亿美元，创办一家新的企业。 马斯克也出现在这场讨论中。主持人Edson提到，马斯克已在一份要求黄仁勋复职的网络请愿书上签名。 Dei",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T11:19:58+00:00"
+    },
+    {
+      "title": "柏川数据完成5000万元Pre-A轮融资，星海图为投资方兼客户",
+      "link": "https://wallstreetcn.com/articles/3786203",
+      "summary": "11月18日，苏州柏川数据科技有限公司（以下简称“柏川数据”）宣布完成5000万元Pre-A轮融资，投资方包含元禾厚望、毅峰资本，以及星海图在内的2家具身智能产业方。另一家具身智能产业方目前暂未披露。 其中，星海图同时具有柏川数据客户与投资方的双重身份。 柏川数据披露，本轮融资资金将用于物理AI数据管线建设、具身智能算法研发、高质量数据集构建，以及特殊场景机器人的研发与应用。本轮融资估值及各投资方具体出资金额未披露。 柏川数据成立于2021年9月，主业为自动驾驶数据服务，公司称已服务近百家车企与智驾厂商。2025年下半年，公司在原有智驾数据业务基础上拓展具身智能数据业务。公司披露，目前已服务智",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T11:15:16+00:00"
+    },
+    {
+      "title": "红旗谋划在欧洲“借厂造车”",
+      "link": "https://wallstreetcn.com/articles/3786202",
+      "summary": "作者 | 周智宇 红旗想在欧洲生产汽车，先把目光投向了当地车企的工厂。 中国第一汽车集团进出口有限公司总经理肖肖在11月17日表示，红旗正在评估多家欧洲生产伙伴，倾向使用现有工厂。Stellantis是其中一个选项，肖肖还提到了与一汽长期合作的大众。 大众中国发言人随后回应，双方没有就欧洲生产汽车进行谈判。红旗尚未公布具体厂址和投产时间。今年早些时候，已有消息称，红旗正与Stellantis洽谈西班牙生产事宜。 红旗已经借助零跑的平台开发欧洲新车。当地时间11月16日，红旗EHS4在威尼斯亮相，与零跑B10共享平台，外观、内饰采用红旗自己的设计。红旗称，这是首款专门面向欧洲需求开发的车型，慕尼",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T11:00:01+00:00"
+    },
+    {
+      "title": "腾讯Q3营收同比增8%，资本开支814.3亿元大超预期，WorkBuddy日活破千万，自由现金流延续负值｜财报见闻",
+      "link": "https://wallstreetcn.com/articles/3786186",
+      "summary": "腾讯第三季度营收保持增长，营销服务和企业服务业务表现较为亮眼，游戏业务也延续增长。与此同时，随着AI技术加速融入产品与业务，腾讯持续加大模型研发和算力基础设施投入，资本开支明显攀升，现金流也受到一定影响。 财报显示，腾讯第三季度实现营收2073.4亿元，同比增长8%，低于市场预估的2105.3亿元。盈利方面，按国际财务报告准则（IFRS）计算，归属于公司权益持有人的净利润为636亿元，同比增长0.8%；按非国际财务报告准则（Non-IFRS）计算，经营盈利为681亿元，同比下降6%。 AI应用方面，腾讯WorkBuddy每日用户超过千万，用户每日词元消耗量超过100万亿。 管理层表示，若剔除H",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T10:40:17+00:00"
+    },
+    {
+      "title": "九部门推动新能源汽车“车电一体报废”，将修订报废机动车回收细则",
+      "link": "https://wallstreetcn.com/articles/3786200",
+      "summary": "新能源汽车动力电池进入规模化退役阶段，回收规则和企业布局都在推进。 11月17日，商务部等九部门公布关于推进再生资源回收体系建设的意见，提出修订《报废机动车回收管理办法实施细则》，推动新能源汽车“车电一体报废”回收拆解，并研究制定动力电池数字身份证管理制度及相关行政法规。 “车电一体报废”已有制度基础。 今年4月起施行的《新能源汽车废旧动力电池回收和综合利用管理暂行办法》明确规定：“报废新能源汽车，动力电池缺失的，应当认定为车辆缺失，具体办法另行规定。”此次九部门提出修订实施细则，将进一步推动这一要求落实到报废回收环节。 电池去向也是此次政策关注的问题。一辆车送到拆解厂之前，电池可能已经被拆下",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T10:32:19+00:00"
+    },
+    {
+      "title": "黄仁勋一直在权力游戏里裸奔",
+      "link": "https://www.tmtpost.com/8209729.html",
+      "summary": "如果他在公司拥有控制权，也不至于在政治暗箭袭来时，这么快地出局。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T10:26:47+00:00"
+    },
+    {
+      "title": "中国人为什么有钱不爱花，我们可能一直理解错了",
+      "link": "https://www.tmtpost.com/8209423.html",
+      "summary": "中国长期的高储蓄，与过去几十年最成功的那套增长方式有深刻联系。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T10:25:51+00:00"
+    },
+    {
+      "title": "腾讯音乐Q3财报：89.4亿营收背后的“结构转换期”",
+      "link": "https://www.tmtpost.com/8209332.html",
+      "summary": "音乐服务接棒收入，但利润的接力棒还没完全交出去。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T10:24:28+00:00"
+    },
+    {
+      "title": "大厂AI对照系：李彦宏布道，马化腾预警",
+      "link": "https://www.tmtpost.com/8208862.html",
+      "summary": "最早看见浪潮的人，为何没跑到最前面；后知后发的赶超者，又靠什么补课？",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T10:24:24+00:00"
+    },
+    {
+      "title": "黄天鹅创始人的前东家冲击IPO：90后创二代接管，一年卖出30亿枚高端鸡蛋",
+      "link": "https://www.tmtpost.com/8208824.html",
+      "summary": "在这场革命里，鸡蛋究竟能在多大程度上摆脱大宗商品的宿命，走出一条属于民生食材的品牌之路。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T10:18:54+00:00"
+    },
+    {
+      "title": "白酒消费理性时代，剑南春跑出长期复利",
+      "link": "https://www.tmtpost.com/8209304.html",
+      "summary": "名酒的长期主义，最终都会在真实动销、用户口碑里得到回响，时间自会兑现价值。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T10:11:38+00:00"
+    },
+    {
+      "title": "一年半连推四款新车，日产为何还是焦虑？",
+      "link": "https://www.tmtpost.com/8210062.html",
+      "summary": "日产加快中国本土化研发与新车投放，全球战略调整背后，销量压力仍待化解。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T10:07:51+00:00"
+    },
+    {
+      "title": "OpenAI联创谈“AI去中心化”：AI对齐应成公共科学，不能由几家公司说了算",
+      "link": "https://wallstreetcn.com/articles/3786193",
+      "summary": "当AI逐渐具备加速自身研发的能力，一个更根本的问题也随之浮现：未来的AI应该遵循谁的价值观，又该由谁来决定？ Thinking Machines联合创始人、OpenAI联创John Schulman在A16Z播客节目中表示， AI对齐不应成为少数几家公司的专属研究，而应发展为一门面向全球的公共科学，让更多人参与其中，并拥有塑造AI价值观的空间。 这一问题正变得愈发迫切。随着递归自我改进（Recursive Self-Improvement，RSI）从理论设想逐步走向实践，AI开始帮助研究人员加速模型研发，甚至展现出进一步自动化AI研究的潜力。 OpenAI首席研究官Mark Chen表示， A",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T10:07:47+00:00"
+    },
+    {
+      "title": "狂奔后的冷却，AI玩具能跑出下一个泡泡玛特吗？",
+      "link": "https://www.tmtpost.com/8208866.html",
+      "summary": "在持续的资本狂欢与市场扩容之后，AI玩具赛道的热情正在降温。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T10:07:01+00:00"
+    },
+    {
+      "title": "离开黄仁勋的第一周，英伟达单季狂揽1158亿美元",
+      "link": "https://www.tmtpost.com/8209875.html",
+      "summary": "接下来，它要步入的，是一个治理更严苛、博弈更复杂的商业深水区。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T10:03:34+00:00"
+    },
+    {
+      "title": "后外卖大战时代：美团、阿里、京东竞争在别处",
+      "link": "https://www.tmtpost.com/8209893.html",
+      "summary": "开始拼“慢功夫”。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T10:03:29+00:00"
+    },
+    {
+      "title": "华为这一招还是太精明，京东方们立大功了",
+      "link": "https://www.tmtpost.com/8209969.html",
+      "summary": "抢占换机红利期。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T10:03:24+00:00"
+    },
+    {
+      "title": "第一批打工的人形机器人，有的已经失业了",
+      "link": "https://www.tmtpost.com/8209375.html",
+      "summary": "辞退原因是什么？",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T09:51:37+00:00"
+    },
+    {
+      "title": "诺奖得主做AI制药，20个月狂揽550亿",
+      "link": "https://www.tmtpost.com/8209976.html",
+      "summary": "Isomorphic Labs完成C轮融资。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T09:51:26+00:00"
     },
     {
       "title": "Nike lays out financial goals ahead of first investor day in 9 years",
@@ -315,36 +355,12 @@
       "published": "2026-11-17T22:17:44+00:00"
     },
     {
-      "title": "‘Nvidia’s turmoil has me spooked’: Has the time come to sell my stocks?",
-      "link": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
-      "summary": "“Real estate here in Florida seems to be presenting some interesting opportunities.”",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-17T22:15:00+00:00"
-    },
-    {
-      "title": "Want to earn 5% on shorter-term Treasurys again? Watch for this shift.",
-      "link": "https://www.marketwatch.com/story/want-to-earn-5-on-shorter-term-treasurys-again-watch-for-this-shift-d6ff42f2?mod=mw_rss_topstories",
-      "summary": "Don’t rule out a half-point interest-rate hike in December, BofA Global’s rates team said.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-17T22:08:00+00:00"
-    },
-    {
       "title": "U.S. officially loses measles elimination status amid ongoing outbreaks",
       "link": "https://www.cnbc.com/2026/11/17/us-measles-elimination-status.html",
       "summary": "The director of PAHO made the final call that measles is endemic — or always present — in the U.S. following 12 months of continuous transmission.",
       "source": "CNBC Business",
       "category": "国际财经",
       "published": "2026-11-17T22:02:05+00:00"
-    },
-    {
-      "title": "My older brother, who has no children, cut our only sister out of his will. I’ll get everything instead. Do I tell her?",
-      "link": "https://www.marketwatch.com/story/she-has-a-history-of-financial-mismanagement-my-brother-cut-my-sister-out-of-his-will-im-getting-everything-do-i-tell-her-3e537851?mod=mw_rss_topstories",
-      "summary": "“I’m torn between respecting my brother’s wishes and being fair to my sister.”",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-17T21:30:00+00:00"
     },
     {
       "title": "FAA pauses installation of new routers after ground stop",
@@ -403,14 +419,6 @@
       "published": "2026-11-16T21:03:36+00:00"
     },
     {
-      "title": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
-      "link": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
-      "summary": "Eric Trump-backed robot startup Foundation Future Industries has run low on cash and missed payroll, as CEO Sankaet Pathak faces scrutiny over a $4.6 million company loan.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-16T17:14:13+00:00"
-    },
-    {
       "title": "'We slept here': Flight delays linger as airlines recover from ground stop, but schedule improves Monday",
       "link": "https://www.cnbc.com/2026/11/15/flight-delays-ground-faa-stop.html",
       "summary": "Flight disruptions lingered two days after the Federal Aviation Administration grounded departures nationwide for more than four hours.",
@@ -433,14 +441,6 @@
       "source": "CNBC Business",
       "category": "国际财经",
       "published": "2026-11-16T12:00:01+00:00"
-    },
-    {
-      "title": "Rivian, Lucid, Scout CEOs aren’t counting on Democrats to restore EV federal support after midterm wins",
-      "link": "https://www.cnbc.com/2026/11/15/rivian-lucid-scout-arent-counting-on-dems-to-restore-ev-incentives.html",
-      "summary": "EV makers have had to contend with flip-flopping regulatory support from Washington over the years.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-15T13:00:02+00:00"
     },
     {
       "title": "Agencies extend comment period for proposed third-party risk management guidance",
