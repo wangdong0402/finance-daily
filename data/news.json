@@ -1,14 +1,278 @@
 {
-  "updated": "2026-11-17T23:56:34.221180+00:00",
-  "count": 55,
+  "updated": "2026-11-18T05:28:55.915539+00:00",
+  "count": 70,
   "items": [
     {
-      "title": "NSA内网中断、苹果服务受扰、Equinor遭网络攻击，FBI警告黑客利用AI入侵",
-      "link": "https://wallstreetcn.com/articles/3786139",
-      "summary": "美国多家机构和企业在短短数日内相继发生关键系统中断，从政府情报网络到科技巨头再到欧洲能源企业，扰动范围之广引发市场高度关注。 11月17日周二，据报道，美国国家安全局（NSA）机密内网NSA Net发生中断。 美国国家安全局随后确认此次故障发生于\"例行维护\"期间，关键系统保持正常运转。 与此同时， 苹果公司 因内部更新引发大规模服务中断，波及App Store、iCloud及零售门店运营； 挪威国家石油公司Equinor 则证实正遭受持续网络攻击。 FBI同日发布FLASH（快速行动）级别安全预警 ，警告网络犯罪分子及与国家挂钩的黑客正利用人工智能渗透框架ARTEX，对全球企业和机构发动自动化",
+      "title": "AI陪伴，硬件的账该怎么算？",
+      "link": "https://www.tmtpost.com/8208289.html",
+      "summary": "AI陪伴核心是算清楚：硬件的增量体验，能否覆盖它带来的全部成本。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T05:16:13+00:00"
+    },
+    {
+      "title": "微博三季度广告行业分化，AI和视频还填不上收入缺口",
+      "link": "https://wallstreetcn.com/articles/3786162",
+      "summary": "今年前三季度，微博的营收几乎原地踏步，净利润却少了七成多。 11月17日，微博披露截至9月30日的三季度业绩：总营收4.102亿美元，同比下降7%。 按去年同期汇率计算，降幅为13%。归属微博的净利润2450万美元，同比降88.9%。 拉长到前三季度，累计营收12.854亿美元，与去年同期12.840亿几乎持平。 按财报数据计算，前两个季度收入同比增长约4%，下滑集中出现在三季度。 前三季度归属净利1.266亿美元，同比下降72%。 更贴近经营层面的经调整EBITDA，前三季度为3.351亿美元，同比下降27%。 广告及营销收入3.441亿美元，同比下降8%，固定汇率降幅14%。 据公告，下滑",
       "source": "华尔街见闻",
       "category": "中文宏观",
-      "published": "2026-11-17T23:37:53+00:00"
+      "published": "2026-11-18T05:01:15+00:00"
+    },
+    {
+      "title": "Target is set to report earnings before the bell. Here's what to expect",
+      "link": "https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html",
+      "summary": "Target is expected to offer more color on the progress of its turnaround and a preview of the holiday season as it reports fiscal third-quarter earnings.",
+      "source": "CNBC Business",
+      "category": "国际财经",
+      "published": "2026-11-18T05:01:01+00:00"
+    },
+    {
+      "title": "AI 创新加速落地CES 2027，中国企业如何应答？｜钛媒体TMTPOST CES系列活动开启",
+      "link": "https://www.tmtpost.com/8205750.html",
+      "summary": "钛媒体TMTPOST CES 2027「Talk to the World」系列活动启动招募。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T04:47:11+00:00"
+    },
+    {
+      "title": "AI伴侣的孤独陷阱",
+      "link": "https://www.tmtpost.com/8209348.html",
+      "summary": "AI伴侣的核心卖点是随叫随到的陪伴，但这种陪伴是否真正有效？斯坦福大学一项基于46万条真实聊天记录的研究发现，对于社交网络薄弱的人，这种陪伴不仅没有缓解孤独，反而让孤独加剧。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T04:36:33+00:00"
+    },
+    {
+      "title": "抖音生服换帅：字节为什么派“红果掌门”去打美团？",
+      "link": "https://www.tmtpost.com/8209254.html",
+      "summary": "与其说是换人，不如说是换方法论。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T04:36:27+00:00"
+    },
+    {
+      "title": "A股三大股指早盘集体下跌，算力租赁逆势大涨，恒指、恒科指齐跌超1%，京东大跌8%",
+      "link": "https://wallstreetcn.com/articles/3786152",
+      "summary": "英伟达披露第三季度业绩，大幅超出市场预期，盘后股价涨超4%，提振市场信心。亚太股市周三开盘上涨，韩国KOSPI指数涨幅扩大至3%，SK海力士涨超6%，三星电子涨超4%。A股部分AI硬件股跟随反弹走高。算力租赁、华为算力概念逆势大涨，PCB概念股中生益电子涨超15%；半导体盘中冲高回落、午间分化。 11月18日，A股集体高开后震荡回落，三大股指集体下跌。科创50指数冲高回落，此前一度涨超2%，英伟达最新公布的业绩强于预期，AI硬件测局部反弹，算力租赁、光模块、电路板、覆铜板等概念股集体回暖，工业富联、沪电股份、天孚通信等早盘拉升。白色家电、油气、煤炭、海运、电力等板块走强。贵金属、生物科技、AI",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T04:05:53+00:00"
+    },
+    {
+      "title": "只剩央行一个买家！时隔11天，高盛再度下调黄金目标价至4650美元",
+      "link": "https://wallstreetcn.com/articles/3786160",
+      "summary": "现货黄金跌至逾一年低位，高盛认为美联储加息压制私人投资需求，央行买盘成为支撑金价的唯一力量。 周三，现货黄金下挫1.5%、跌破3800美元，为2025年10月以来最低，较一个月前下跌超300美元。美元持续走强，加之市场预期美联储将于12月再度加息，令金价承压。 正是在此背景下， 高盛 Lina Thomas领衔的高盛大宗商品团队于本周发布2027年贵金属年度展望， 将黄金年底目标价由4800美元下调至4650美元每金衡盎司，并首次给出2028年底目标价5600美元。 这已是该团队在11天内第二次下调目标价，此前高盛Lina Thomas团队刚刚将预测从5400美元下调至4800美元。 高盛将当",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T04:03:20+00:00"
+    },
+    {
+      "title": "2027见闻历，财经人的桌面必备“神历”",
+      "link": "https://wallstreetcn.com/articles/3782813",
+      "summary": "本文来自华尔街见闻，欢迎下载APP查看更多",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T03:51:00+00:00"
+    },
+    {
+      "title": "京东外卖减亏过半，获客回报仍待检验",
+      "link": "https://wallstreetcn.com/articles/3786158",
+      "summary": "外卖亏损大幅收窄，推动京东三季度利润回升。但在补贴投入下降之后，此前吸引来的用户能够留下多少，又能为核心零售贡献多少增量，仍有待验证。 11月17日晚，京东发布2026年第三季度财报，营收3095.93亿元，同比增长3.5%；归属于普通股股东的净利润65.03亿元，同比增长约23.3%；经调整净利润83.27亿元，同比增长43.7%。 利润改善的主要来源是新业务减亏。 三季度，京东集团经营利润由上年同期亏损10.51亿元转为盈利51.54亿元，同比改善62.05亿元。其中，新业务经营亏损从157.36亿元降至96.42亿元，减少60.94亿元，相当于集团经营利润同比改善规模的98.2%。 相比",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T02:44:59+00:00"
+    },
+    {
+      "title": "京东港股盘中跌超8%，摩根士丹利维持低配评级",
+      "link": "https://wallstreetcn.com/articles/3786154",
+      "summary": "京东三季度营收重回增长，但每股盈利不及预期，叠加摩根士丹利对消费前景发出警示，导致公司股价周三遭遇大幅抛售。 华尔街见闻提及 ，京东周二发布的财报显示，三季度净营收同比增长3.5%至3096亿元人民币，经营利润扭亏为盈， 但每股盈利0.88美元，较分析师一致预期的0.98美元低约10%，终结了此前连续八个季度超预期的纪录。 摩根士丹利随即发布报告， 消费市场仍然疲软，预计京东第四季度零售收入同比将基本持平，并维持低配评级。 周三盘初京东港股股价一度下跌8.7%，创下三个多月来最大日内跌幅。 此前周二京东美股ADR收盘下跌7.7%，报25.43美元。 零售与物流分化，消费复苏为核心变量 摩根士丹",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T02:39:14+00:00"
+    },
+    {
+      "title": "Gartner 2027十大技术趋势：十项里四项与AI治理有关，窗口期只有1到6年",
+      "link": "https://www.tmtpost.com/8209258.html",
+      "summary": "到2028年，25%的企业安全漏洞事件可追溯至AI智能体滥用。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T02:30:43+00:00"
+    },
+    {
+      "title": "英伟达代理CEO Kress安抚市场：客户没有流失，员工也不会出走",
+      "link": "https://wallstreetcn.com/articles/3786150",
+      "summary": "英伟达交出一份超预期的季度成绩单，代理CEO Colette Kress随即出面稳定军心。 在黄仁勋因丑闻突然辞职后的首份财报发布当晚，Kress接受CNBC《Mad Money》节目专访， 明确表示客户需求未受影响，员工队伍同样稳固。盘后英伟达股价上涨逾3%。 这份财报在一定程度上缓解了市场对英伟达领导层更迭后前景的担忧。但公司股价本月已累计下跌24%，并在上周五结束了自2012年以来最长的六连跌，当前股价处于2025年7月以来的最低水平。 代理CEO Colette Kress Kress：大客户仍在，需求只增不减 黄仁勋的离职引发了市场的一个核心疑问：大型云计算客户是否会借机转向自研芯片",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T02:29:50+00:00"
+    },
+    {
+      "title": "美银调查：基金经理以二十年来最大幅度砍科技股，但现金太少，“恐慌还不够”",
+      "link": "https://wallstreetcn.com/articles/3786133",
+      "summary": "美国银行（Bank of America）最新月度调查显示，全球基金经理正在以2006年以来最快速度撤出科技股。 调查显示，科技股超配比例从10月的净37%骤降至净12%，单月降幅创近20年之最。 美银策略师Michael Hartnett在报告中直言\"AI繁荣与亢奋情绪已经终结\"，并建议投资者在未来数月维持防御性仓位。 市场表现印证了这一情绪转变。纳斯达克100指数本月已下跌逾4%，料创2008年以来最差11月表现；半导体相关股票指数自10月初以来累计下跌27%。 这一调查于11月6日至12日进行，全球部分共覆盖169名参与者，管理资产规模合计4610亿美元；欧洲区域性问题由94名参与者作答",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T02:28:12+00:00"
+    },
+    {
+      "title": "国产户外品牌，吃到凯乐石让出的平价生态了吗？",
+      "link": "https://www.tmtpost.com/8208700.html",
+      "summary": "平价户外看着是甜点区，吃着是薄利区。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T02:13:00+00:00"
+    },
+    {
+      "title": "大洋彼岸的数据中心成了洪水猛兽",
+      "link": "https://www.tmtpost.com/8208735.html",
+      "summary": "AI算力需求激增，数据中心却因噪声、用水、电价及土地占用引发海外居民抵制。美国多地收紧审批，并要求开发商承担扩网风险。中国则以机房上架率约束新增建设，探索绿电直连和算力跨区域调度。数据中心扩张正从争抢投资转向衡量资源成本与实际需求。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T02:09:00+00:00"
+    },
+    {
+      "title": "亚玛芬三季度营收增长24%，美股上市后首推10亿美元级回购",
+      "link": "https://wallstreetcn.com/articles/3786153",
+      "summary": "始祖鸟母公司亚玛芬体育（Amer Sports）宣布美股上市以来首次推出10亿美元级股票回购计划，同时年内第三次上调全年业绩指引。 11月17日，亚玛芬公布2026年第三季度业绩。集团营收21.69亿美元，同比增长24%；调整后营业利润3.57亿美元，同比增长30%；调整后净利润2.50亿美元，同比增长35%，收入及盈利均超过市场预期。 这是亚玛芬今年第三次上调全年业绩指引。此前，公司已分别在5月和8月发布一、二季度财报时提高全年预期。 此次，亚玛芬将全年营收增长预期从约24%上调至25%至26%；调整后营业利润率预期从14.2%至14.5%上调至14.5%至14.7%；调整后每股收益预期从1",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T02:05:44+00:00"
+    },
+    {
+      "title": "顺为资本押注的天才，被告到英国司法机构",
+      "link": "https://www.tmtpost.com/8208723.html",
+      "summary": "融资10亿元，知名PE追责明星创业者陈曦。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T02:02:00+00:00"
+    },
+    {
+      "title": "CoreWeave’s stock pops — even as Nvidia talks up a ‘disciplined’ approach to financing",
+      "link": "https://www.marketwatch.com/story/coreweaves-stock-pops-even-as-nvidia-talks-up-a-disciplined-approach-to-financing-e7f00876?mod=mw_rss_topstories",
+      "summary": "Nvidia interim CEO Colette Kress said neoclouds are “increasingly important,” but added the company will take “a very strong look” at the customers it helps with financing.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-18T01:59:00+00:00"
+    },
+    {
+      "title": "GPT-6.2 Astra终于上线，从PPT做到发动机",
+      "link": "https://www.tmtpost.com/8209040.html",
+      "summary": "新模型什么活都想干，但很难伺候。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T01:58:00+00:00"
+    },
+    {
+      "title": "芯片供不应求，台积电却开始给客户“验资”？",
+      "link": "https://www.tmtpost.com/8208977.html",
+      "summary": "芯片不愁卖，谁在替买家垫钱？",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T01:51:00+00:00"
+    },
+    {
+      "title": "英伟达业绩超预期提振亚太股市，韩股一度涨超3%，SK海力士涨逾5%，黄金下挫1%",
+      "link": "https://wallstreetcn.com/articles/3786140",
+      "summary": "英伟达财季业绩强劲叠加乐观营收展望，为近期遭受抛售压力的AI相关资产注入一剂强心针，亚太股市普遍走高，美股期货同步上扬。 周三亚太早盘， 韩国综合股价指数 一度涨超3%，领涨亚太股市。 MSCI亚太股票指数 上涨0.3%，终结此前四连跌。此前周二美股盘后， 英伟达 涨逾4%， 纳斯达克100指数期货 劲升1.3%， 标普500指数期货 上涨0.7%。 日经225指数 涨幅曾扩大至1.1%，受日本10月出口数据超预期提振； 澳大利亚ASX 200 小幅下跌0.3%， 新加坡海峡时报指数 则下跌1.2%，走势分化。 eToro亚太区首席分析师Josh Gilbert表示： 在堪称企业史上讨论度最高",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T01:49:09+00:00"
+    },
+    {
+      "title": "IPO火爆！Anthropic的早期VC们回报超过10倍",
+      "link": "https://wallstreetcn.com/articles/3786149",
+      "summary": "Anthropic或将以1.4万亿美元估值完成IPO定价，这场AI独角兽的上市盛宴，让一批押注早、押注重的风险投资机构收获颇丰。 11月17日，据知情人士向The Information透露，美国Spark Capital、Factorial Funds、Sound Ventures和Menlo Ventures等早期VC机构，将在本次IPO中实现超过10倍的理论回报。其中Menlo Ventures以10亿美元投资换来约210亿美元持仓，理论回报倍数高达21倍。 稍晚入场的Bessemer Venture Partners和Lightspeed Venture Partners，则预计将分别",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T01:45:58+00:00"
+    },
+    {
+      "title": "Medicare Part B premiums rise due higher healthcare spending",
+      "link": "https://www.marketwatch.com/story/medicare-part-b-premiums-rise-due-higher-healthcare-spending-f2daba13?mod=mw_rss_topstories",
+      "summary": "The premiums will increase by $6.50, to $209.40 a month.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-18T01:45:00+00:00"
+    },
+    {
+      "title": "英伟达，段永平的投资压力测试",
+      "link": "https://www.tmtpost.com/8208863.html",
+      "summary": "段永平在等英伟达给出答案。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T01:39:00+00:00"
+    },
+    {
+      "title": "爱奇艺，再不努力就退了",
+      "link": "https://www.tmtpost.com/8208727.html",
+      "summary": "还是看红果吧，不要会员，也不烧心。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T01:33:00+00:00"
+    },
+    {
+      "title": "Nvidia’s stock rises as blowout numbers help ease CEO transition fears",
+      "link": "https://www.marketwatch.com/story/nvidias-stock-rises-as-blowout-numbers-help-ease-ceo-transition-fears-2f20d38a?mod=mw_rss_topstories",
+      "summary": "Nvidia’s revenue growth and $130 billion quarterly forecast showed that demand for chips is still sky-high.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-18T01:28:00+00:00"
+    },
+    {
+      "title": "蚂蚁灵波，又放大招了",
+      "link": "https://www.tmtpost.com/8208722.html",
+      "summary": "靠“通用底座”能不能撑起一门独立的生意？",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T01:27:15+00:00"
+    },
+    {
+      "title": "德鲁肯米勒：做空铜，“离开”股市，“不敢做多也不敢做空”，现在目标是保本",
+      "link": "https://wallstreetcn.com/articles/3786129",
+      "summary": "亿万富翁投资者德鲁肯米勒（Stan Druckenmiller）表示， 面对经济与货币政策前景的高度不确定性，他已大幅收缩仓位，转向防御姿态，优先保全资本而非追求回报。 11月17日，在美国得克萨斯州奥斯汀举行的TomorrowX峰会上，Druckenmiller表示， 他无法回忆起曾有哪个时刻对市场一年后走向如此缺乏判断。 Druckenmiller认为，2027年下半年的经济形势可能会令人失望。目前他持有少量美元多头仓位，同时做空铜 。他说： 我们不做多股票，也不做空股票。我绝不敢做空。我们基本上在回避市场，目标是不亏钱。 Druckenmiller随后补充称： 我只是休息一下，可能是两天",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T01:22:24+00:00"
+    },
+    {
+      "title": "理想出海的右舵首战：为什么先派出MEGA？",
+      "link": "https://www.tmtpost.com/8208799.html",
+      "summary": "泰国的新税制，让高端进口MPV面临制造选择。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T01:20:54+00:00"
+    },
+    {
+      "title": "黄仁勋反攻了：我将重返英伟达任 CEO，如果董事会允许",
+      "link": "https://www.tmtpost.com/8208942.html",
+      "summary": "财报发布前夕，老黄终于开口。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-18T01:20:44+00:00"
+    },
+    {
+      "title": "中选之后清算潮？爱泼斯坦和特朗普税务文件流出，德银股价重挫，特朗普回应",
+      "link": "https://wallstreetcn.com/articles/3786144",
+      "summary": "德意志银行周二在法兰克福股价一度重挫逾6% ，导火索是一批多达1500万份的泄露文件，揭示这家德国最大银行处理了与爱泼斯坦（Jeffrey Epstein）相关的逾5.82亿美元可疑交款，在2017年将特朗普的税务文件意外泄露给外部人士。 这批文件由两名举报人从银行内部复制后，交给印度记者Josy Joseph和南非记者Khadija Sharife，由南非非营利机构Barracuda Media统筹协调，联合《金融时报》、《明镜》周刊、《世界报》和《纽约时报》等逾200名记者历时数月完成调查。 举报人的律师表示，相关材料已同步移交美国司法部、财政部金融犯罪执法网络（FinCEN）以及英国税务",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T01:13:20+00:00"
+    },
+    {
+      "title": "回归英伟达，黄仁勋要先“干掉董事会”",
+      "link": "https://wallstreetcn.com/articles/3786145",
+      "summary": "离职第五天，黄仁勋打破沉默。 11月17日周二，黄仁勋发布声明称： “自我离开以来，我看到英伟达的员工、投资者、商业伙伴和客户纷纷呼吁我回归担任CEO。如果董事会认为我的回归符合股东、员工、公司和美国的最大利益，我将荣幸地回应这些呼声，重返CEO职位。” 他同时承认了个人过失：“我没有达到英伟达对每个人的要求标准，我在个人生活中犯了严重的错误。我给董事会造成了麻烦，我对此深感遗憾。我完全承担自己的错误，并承诺配合董事会的独立调查。” 黄仁勋个人声明截图 话音刚落， 英伟达董事会主席Harvey Jones随即表态：董事会不打算恢复黄仁勋的职务。 11月17日，据路透社报道，Jones的表态措辞",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T00:52:06+00:00"
+    },
+    {
+      "title": "英伟达电话会：“不打算请回黄仁勋”，2028财年增速预期上调至75%，AI投资将更加“克制与挑剔”",
+      "link": "https://wallstreetcn.com/articles/3786136",
+      "summary": "华尔街见闻提及 ，美东时间17日周二美股盘后，英伟达公布，截至2026年10月25日的公司2027财年第三财季，营收同比增长103.1%至1158亿美元，不但公司史上首次单季营收突破1000亿美元，而且较分析师预期高约5.9%，也明显高于该司自身指引中值1080亿美元。 随后英伟达举行了2027财年第三季度财报电话会议，这也是公司经历高层巨震后的首场业绩沟通会。针对市场最关注的换帅问题，英伟达董事长Harvey Jones在开场给出了明确且强硬的定调： 英伟达董事会一致接受了他的辞呈，并且不打算恢复黄仁勋的CEO职务。 他强调，董事会已成立美国国家安全和出口控制监督委员会，并在积极寻找正式CE",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-18T00:35:25+00:00"
     },
     {
       "title": "My husband is happily retired at 64 and thinks I should keep working. Is he being fair?",
@@ -19,52 +283,12 @@
       "published": "2026-11-17T23:30:00+00:00"
     },
     {
-      "title": "华尔街见闻早餐FM-Radio | 2026年11月18日",
-      "link": "https://wallstreetcn.com/articles/3786137",
-      "summary": "华见早安之声 要闻精选 俄罗斯总统普京 抵达深圳。 中国商务部 ： 中加两国 同意将初步联合安排的相关豁免措施延长2年 。第二次中加经济财金战略对话：中方欢迎加拿大养老金等长线资金投资中国资本市场。 美国 发布限制远程获取先进半导体相关措施， 中国商务部 回应。 英伟达 担忧暂缓， 上季营收首破千亿，本季指引再超预期创新高 ，Vera Rubin爆发式开局。 电话会 ：董事会主席称公司实力超群， 不打算恢复黄仁勋的CEO职务 。 黄仁勋 离任后首次发声， 愿意重返英伟达担任CEO ；将于12月1日出席美国国会听证。报道： 美SEC 调查英伟达， 包括是否通过信息披露误导投资者。 美国10月零售",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-17T23:17:21+00:00"
-    },
-    {
       "title": "I’m in my 40s. Should I accept a lower pension in exchange for naming my husband or child as a beneficiary?",
       "link": "https://www.marketwatch.com/story/im-in-my-40s-should-i-accept-a-lower-pension-in-exchange-for-naming-my-husband-or-child-as-a-beneficiary-b2352059?mod=mw_rss_topstories",
       "summary": "“If I die before my husband, he will receive a lifetime pension equal to 50%–66% of my monthly benefit.”",
       "source": "MarketWatch",
       "category": "国际财经",
       "published": "2026-11-17T23:15:00+00:00"
-    },
-    {
-      "title": "英伟达电话会：“不打算请回黄仁勋”，2028年增速预期上调至75%，AI投资将更加“克制与挑剔”",
-      "link": "https://wallstreetcn.com/articles/3786136",
-      "summary": "面对市场的重重疑虑与高管震荡的阴霾，英伟达临时CEO兼首席财务官Colette Kress交出了一份稳健的答卷。 财报数据显示，英伟达第三季度营收达到1158亿美元（市场预期1093.3亿美元），第四季度营收指引区间落在1261亿至1339亿美元之间（市场预期1252.5亿美元），核心财务指标均超出华尔街预期。盘后交易中，英伟达股价一度上涨超4%。 这是英伟达成立30多年来，首次在没有联合创始人黄仁勋参与的情况下召开业绩会。面对外界的担忧，Kress试图稳住军心，她强调从商业角度来看，“一切如常”，并表示：“我们的创新热情不会改变，我们对客户、合作伙伴和股东的承诺不会改变。” 需求远超供给，2",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-17T23:04:29+00:00"
-    },
-    {
-      "title": "美联储库克律师：库克不会出席白宫听证，特朗普已作出开除决定，委员会是“幌子”",
-      "link": "https://wallstreetcn.com/articles/3786138",
-      "summary": "美联储理事Lisa Cook（丽莎·库克）的代理律师发出迄今最强硬的信号，表示 其当事人将不会出席白宫\"调查委员会\"听证 ，双方围绕这一程序的分歧已公开激化。 律师Abbe Lowell在一封日期为本周一、周二对外公开的信函中写道， 特朗普总统\"开除Cook理事的决定早已作出\"，白宫设立的委员会不过是掩盖这一预定结论的\"幌子\"。 Lowell指出， 该委员会程序存在根本性的不公正，Cook\"对美联储负有职责\"，有义务拒绝参与任何可能损害该机构独立性的程序。 此番表态将使美联储独立性问题再度成为市场焦点。Cook是拜登任命的美联储理事，特朗普长期寻求将其解职。围绕美联储人事的政治博弈若进一步升温",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-17T22:54:16+00:00"
-    },
-    {
-      "title": "系统中断密集爆发，标普、纳指四连跌，软件股重挫，盘后英伟达涨3%，美元结束五连涨",
-      "link": "https://wallstreetcn.com/articles/3786084",
-      "summary": "继上周微软办公软件大规模宕机、周五全美航班停飞逾四小时之后，美国国家安全（NSA）通信网络宕机，把原本就紧绷的AI交易推向全面避险。美股周二全线下挫，标普与道指双双跌破200日均线，资金转向美债和日元。 英伟达周二盘后公布财报，结果超出分析师预期，股价在盘后交易中一度上涨逾3% 。期权市场此前已对本次财报定价约8%的双向波动幅度，为2025年2月以来最大预期波动，英伟达1个月隐含波动率亦为今年3月以来最高。 UBS指出，标普500期权市场将周三定价为今年余下时间内单日波动最大的一天。 标普500指数收跌1.03%，报7340.53点，道琼斯工业平均指数重挫1.64%，纳斯达克综合指数跌0.74",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-17T22:53:28+00:00"
-    },
-    {
-      "title": "英伟达担忧暂缓！本季指引再超预期创新高，Vera Rubin“爆发式开局”，调升下财年指引 | 财报见闻",
-      "link": "https://wallstreetcn.com/articles/3786135",
-      "summary": "在创始人兼CEO黄仁勋深陷风波辞职后，英伟达暂时缓和了市场对公司舵手缺位和AI投资可持续性的担忧，再次交出高基数上继续超预期的成绩单，并且提高了此后一个财年的年度营收指引。 美东时间17日周二美股盘后，英伟达公布，截至2026年10月25日的公司2027财年第三财季，营收同比增长103.1%至1158亿美元，不但公司史上首次单季营收突破1000亿美元，而且较分析师预期高约5.9%，也明显高于该司自身指引中值1080亿美元。 盈利端同样强劲。第三财季非GAAP口径下调整后每股收益（EPS）同比增长111%至2.68美元，较市场预期高8.1%；调整后毛利率为74.9%，虽然虽略低于前一财季的75.",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-17T22:50:29+00:00"
     },
     {
       "title": "Costco is benefiting from ‘apocalyptic concerns’ as customers stock up on goods, analysts say",
@@ -99,28 +323,12 @@
       "published": "2026-11-17T22:15:00+00:00"
     },
     {
-      "title": "AI繁荣终结？美银月度调查：基金经理20年来最大幅度削减科技股仓位",
-      "link": "https://wallstreetcn.com/articles/3786133",
-      "summary": "美国银行（Bank of America）最新月度调查显示，全球基金经理正在以2006年以来最快速度撤出科技股，对人工智能过度投资的担忧达到历史峰值。同时，基金经理对欧洲股市的乐观程度升至年内最高，呈现出鲜明的跨市场分化格局。 调查显示，科技股超配比例从10月的净37%骤降至净12%，单月降幅创近20年之最。与此同时，欧洲股市方面，净67%的基金经理预计欧洲股市将在未来一至三个月内上涨，为今年2月以来最高读数。 美银策略师Michael Hartnett在报告中直言\"AI繁荣与亢奋情绪已经终结\"，并建议投资者在未来数月维持防御性仓位。 市场表现印证了这一情绪转变。纳斯达克100指数本月已下跌逾",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-17T22:13:49+00:00"
-    },
-    {
       "title": "Want to earn 5% on shorter-term Treasurys again? Watch for this shift.",
       "link": "https://www.marketwatch.com/story/want-to-earn-5-on-shorter-term-treasurys-again-watch-for-this-shift-d6ff42f2?mod=mw_rss_topstories",
       "summary": "Don’t rule out a half-point interest-rate hike in December, BofA Global’s rates team said.",
       "source": "MarketWatch",
       "category": "国际财经",
       "published": "2026-11-17T22:08:00+00:00"
-    },
-    {
-      "title": "德鲁肯米勒看空铜价、股市持仓中性，称当前市场能见度为记忆中最低",
-      "link": "https://wallstreetcn.com/articles/3786129",
-      "summary": "亿万富翁投资者Stan Druckenmiller表示，面对经济与货币政策前景的高度不确定性，他已大幅收缩仓位，转向防御姿态，优先保全资本而非追求回报。 11月17日，在美国得克萨斯州奥斯汀举行的TomorrowX峰会上，Druckenmiller表示， 他无法回忆起曾有哪个时刻对市场一年后走向如此缺乏判断。 目前他持有少量美元多头仓位，股票上持仓中性，同时做空铜 。他说： 我们基本上在回避市场，目标是不亏钱，而不是赚钱。 这一表态标志着其立场较今年1月发生显著转变，彼时他对经济前景持明显乐观态度。Druckenmiller以高确信度时果断重仓著称，当前的按兵不动本身即释放出鲜明信号，对风险资",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-17T22:05:36+00:00"
     },
     {
       "title": "U.S. officially loses measles elimination status amid ongoing outbreaks",
@@ -131,52 +339,12 @@
       "published": "2026-11-17T22:02:05+00:00"
     },
     {
-      "title": "英伟达风波中苏姿丰“点赞”黄仁勋，AMD数据中心业务明年占比料达八成",
-      "link": "https://wallstreetcn.com/articles/3786128",
-      "summary": "英伟达深陷黄仁勋风波之际，老对手AMD的CEO苏姿丰并未落井下石，表态专注AMD自身发展，并强调行业的“世代级”增长前景远非传统的周期可比。 美东时间17日周二在美国得州奥斯汀举行的TomorrowX峰会上，苏姿丰一方面公开称赞英伟达及其上周刚辞职的前CEO黄仁勋，称英伟达是一家“了不起的公司”，黄仁勋是推动整个行业发展的杰出领导者；另一方面强调，AMD需要将注意力从行业各种纷扰中抽离，专注于AI基础设施建设带来的巨大机遇。 苏姿丰还对当前半导体行业的增长前景给出乐观判断。她认为，这一轮行业增长已经不同于传统的周期性扩张，而更像是一场“世代级”的增长浪潮。随着AI逐渐提升各行各业的生产力，企业",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-17T21:53:47+00:00"
-    },
-    {
       "title": "My older brother, who has no children, cut our only sister out of his will. I’ll get everything instead. Do I tell her?",
       "link": "https://www.marketwatch.com/story/she-has-a-history-of-financial-mismanagement-my-brother-cut-my-sister-out-of-his-will-im-getting-everything-do-i-tell-her-3e537851?mod=mw_rss_topstories",
       "summary": "“I’m torn between respecting my brother’s wishes and being fair to my sister.”",
       "source": "MarketWatch",
       "category": "国际财经",
       "published": "2026-11-17T21:30:00+00:00"
-    },
-    {
-      "title": "Why Salesforce’s stock led the S&P 500’s decliners amid tech jitters",
-      "link": "https://www.marketwatch.com/story/why-salesforces-stock-is-leading-s-p-500-decliners-amid-tech-jitters-17510caf?mod=mw_rss_topstories",
-      "summary": "A series of technology outages has investors concerned that software companies could prove “particularly vulnerable” to AI misuse, an analyst says.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-17T21:12:00+00:00"
-    },
-    {
-      "title": "‘Can I pick your brain?’ and other terrible things to say in a networking email",
-      "link": "https://www.marketwatch.com/story/nows-the-perfect-time-for-networking-heres-how-to-send-a-cringe-free-email-73ad34ea?mod=mw_rss_topstories",
-      "summary": "Hiring for white-collar jobs usually dips in November and December, so try sending “cold emails” to your network instead.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-17T21:11:00+00:00"
-    },
-    {
-      "title": "‘It leaves me with a sour taste’: My elderly mother gave our cousin $800 for a car repair. Should I be worried?",
-      "link": "https://www.marketwatch.com/story/it-leaves-me-with-a-sour-taste-my-elderly-mother-gave-our-cousin-800-for-a-car-repair-should-i-be-worried-88dbd188?mod=mw_rss_topstories",
-      "summary": "“I know older people can easily feel patronized, and I don’t want that to happen.”",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-17T21:00:00+00:00"
-    },
-    {
-      "title": "报道：美SEC调查英伟达，包括是否通过信息披露误导投资者",
-      "link": "https://wallstreetcn.com/articles/3786134",
-      "summary": "据华尔街日报援引知情人士透露，美国证券交易委员会（SEC）正在对英伟达展开调查。此前，该公司首席执行官黄仁勋因被曝出婚外情而辞职。 知情人士表示，目前尚无法立即获悉此次调查的全部具体焦点，但其中包括审查公司的信息披露是否误导了投资者。 这项民事调查进一步加剧了英伟达面临的危机。自黄仁勋被罢免以来，该公司股价已累计下跌超过10%。就在几周前，英伟达还是处于人工智能交易热潮中心的股市宠儿，也是全球市值最高的公司。 去年，英伟达调整了其国际芯片销售的披露方式，取消了原本单独列示对新加坡销售额的披露项目。 自黄仁勋与爱丽丝·黄（Alice Huang）的关系被曝光以来，英伟达在亚洲的业务便一直处于聚光",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-17T20:59:04+00:00"
     },
     {
       "title": "FAA pauses installation of new routers after ground stop",
@@ -187,52 +355,12 @@
       "published": "2026-11-17T20:53:24+00:00"
     },
     {
-      "title": "Anthropic IPO前夕，OpenAI推出最强模型GPT-6.2 Astra，称性能超越Fable 5.2",
-      "link": "https://wallstreetcn.com/articles/3786124",
-      "summary": "OpenAI推出旗舰模型最新迭代版本，在性能提升的同时大幅降低使用成本，并在多项基准测试中超越竞争对手Anthropic的顶级模型。 此次发布的GPT-6.2 Astra定位于复杂专业工作场景，涵盖金融建模与科学研究等领域，同步推出的GPT-6.2 Sol则面向日常任务。 OpenAI表示， GPT-6.2 Astra在多步骤专业工作基准测试中的得分较竞品Claude Fable 5.2高出5.5分，而成本仅为后者的5%。此次发布恰逢Anthropic备受市场关注的上市前夕，时间节点颇为微妙。 新模型的推出同时面临外界对前沿AI系统安全风险的持续审视。OpenAI曾于9月底以模型\"未能充分限定",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-17T20:19:40+00:00"
-    },
-    {
       "title": "Home Depot names Richard McPhail as new CEO, beats earnings expectations",
       "link": "https://www.cnbc.com/2026/11/17/home-depot-hd-q3-earnings-2026.html",
       "summary": "Home Depot named Richard McPhail as its new CEO effective next week.",
       "source": "CNBC Business",
       "category": "国际财经",
       "published": "2026-11-17T20:01:12+00:00"
-    },
-    {
-      "title": "英伟达“隐身”的重要市场：新加坡子公司被曝去年营收超千亿美元、一年增72%",
-      "link": "https://wallstreetcn.com/articles/3786126",
-      "summary": "去年，新加坡在英伟达对外披露的地域销售数据中“隐身”，但据新近报道曝光，当地的子公司一年营收增超七成、突破1000亿美元。 英国《金融时报》的报道称，英伟达自2025年起停止单独披露新加坡销售额，转而按照客户总部所在地而非客户开票地址划分地域收入。与此同时，根据该报查阅的公司账目，英伟达新加坡子公司的营收规模远超其实际在当地的业务体量。 这一反差引发外界对英伟达地域收入披露方式及其新加坡业务规模的关注。值得注意的是，尽管该子公司账面营收超过千亿美元，其2025年利润却只有5300万美元，营收与利润规模明显不匹配。 新加坡曾是英伟达第二大收入来源，2025年突然从地域披露中消失 英伟达此前一直将",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-17T19:55:15+00:00"
-    },
-    {
-      "title": "耐克公布五年复苏计划：2029财年争取重回行业增速",
-      "link": "https://wallstreetcn.com/articles/3786121",
-      "summary": "时隔近十年，耐克再次召开投资者日，试图向市场说明如何走出持续数年的经营低谷。 11月17日，耐克在美国投资者日正式演讲前发布战略及长期财务框架，宣布推出“全速前进”（Full Stride Ahead）战略，并提出到2031财年，较2027财年新增约50亿美元收入、将营业利润率提升至12%—14%的目标。 这份五年计划同时给出了耐克对复苏节奏的最新判断：2027财年和2028财年仍将以业务调整和投资为主，2029财年争取恢复至行业平均增长水平，2030财年和2031财年才有望实现超越市场的增长。 这意味着，耐克预计至少还需要两个财年才能走出当前调整阶段。 在增长来源上，耐克将进一步向专业运动倾",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-17T19:54:18+00:00"
-    },
-    {
-      "title": "黄仁勋离任后首次发声！愿意重返英伟达担任CEO；将于12月1日出席美国国会听证",
-      "link": "https://wallstreetcn.com/articles/3786122",
-      "summary": "英伟达前CEO黄仁勋在辞职近一周后首次公开发声，表示若董事会认为其回归符合股东及公司利益，他愿意重新出任首席执行官。这是这场围绕英伟达领导层更迭风波中迄今最具决定性意义的表态。 黄仁勋周二上午在声明中表示：\"自我离任以来，英伟达的员工、投资者、商业伙伴及客户纷纷致电，呼吁我回归担任CEO。 如果董事会认为我的回归符合股东、员工、公司及美国的最大利益，我将荣幸地回应这些呼声，重返CEO一职。 \" 这一表态将过去一周的舆论浪潮推向新的高点。在此之前，包括埃隆·马斯克在内的多位科技界亿万富翁，以及特朗普总统本人，均公开表态支持黄仁勋复职。 不过，据彭博社周二美股午盘时段的报道， 截至周二，英伟达董事",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-17T18:58:42+00:00"
-    },
-    {
-      "title": "黄仁勋辞职后首次发声“救市”？标普纳指盘中深V收窄跌幅，报道后称英伟达董事会仍未考虑他复职",
-      "link": "https://wallstreetcn.com/articles/3786123",
-      "summary": "黄仁勋的一则声明，成为本周二美股盘中最受关注的消息之一。 美东时间11月17日周二美股早盘尾声时，英伟达创始人、前CEO黄仁勋在离职后首次公开发声，表示如果董事会认为他回归符合公司、股东和员工的最佳利益，他愿意重新出任CEO。黄仁勋的表态恰好出现在美股早盘抛售压力加剧之际，表态传出后，英伟达和主要美股指几乎同步快速拉升、收窄盘中跌幅。 黄仁勋表态前，三大美股指均在美股早盘刷新日低，标普500指数日内跌逾1.7%，道指跌近1.8%，纳指跌逾2.1%。美股早盘尾声时，黄仁勋愿重新担任CEO的消息传出后，道指跌幅曾收窄至约1.3%，标普和纳指更是出现一波深V走势、大幅收窄跌幅，标普的日内跌幅一度缩小",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-17T18:58:04+00:00"
     },
     {
       "title": "Disney beats fourth-quarter estimates, targets $3 billion in savings through cost-cutting efforts",
@@ -313,14 +441,6 @@
       "source": "CNBC Business",
       "category": "国际财经",
       "published": "2026-11-15T13:00:02+00:00"
-    },
-    {
-      "title": "Retailers are turning to entertainment to win shoppers’ attention",
-      "link": "https://www.cnbc.com/2026/11/14/retailers-invest-entertainment.html",
-      "summary": "Retailers are increasingly investing in and building out entertainment studios as the race for audience attention speeds up.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-14T13:00:01+00:00"
     },
     {
       "title": "Agencies extend comment period for proposed third-party risk management guidance",
