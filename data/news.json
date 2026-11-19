@@ -1,30 +1,270 @@
 {
-  "updated": "2026-11-19T13:57:26.670312+00:00",
+  "updated": "2026-11-19T23:52:51.561538+00:00",
   "count": 70,
   "items": [
     {
-      "title": "Alibaba’s cloud business is thriving. But those profits are completely offset by losses from its AI labs.",
-      "link": "https://www.marketwatch.com/story/alibabas-cloud-business-is-thriving-but-those-profits-are-completely-offset-by-losses-from-its-ai-labs-74bf4b3c?mod=mw_rss_topstories",
-      "summary": "The cloud-services business of Chinese internet giant Alibaba is thriving — but the losses from the artificial-intelligence labs business is completely offsetting it.",
+      "title": "【钛晨报】《中俄美元首和平宣言》发布；31家出资主体现身，DeepSeek第二轮融资落地；比亚迪发布折叠方向盘，长鑫科技拟25亿至50亿元回购股份",
+      "link": "https://www.tmtpost.com/8211593.html",
+      "summary": "燧原科技：在手订单充沛，并正在与多家国内半导体产业伙伴进行合作；吴泳铭：建设超过20GW规模全球数据中心的目标可能下调；拼多多Q3利润295亿元，同比基本持平；因150元成被执行人？格力电器最新回应；OpenAI进军手机领域；马斯克披露多项业务时间表，Optimus拟18个月内胜任家务。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-19T23:20:00+00:00"
+    },
+    {
+      "title": "苹果公司正开发自家AI智能体，以期与OpenAI、Anthropic竞争",
+      "link": "https://wallstreetcn.com/articles/3786317",
+      "summary": "苹果公司正开发自家AI智能体，以期与OpenAI、Anthropic竞争。 11月19日，据彭博报道， 苹果公司正在开发一款能够代替用户完成任务的自主人工智能智能体，正式进军由OpenAI、Anthropic、Meta等公司激烈角逐的赛道。 此前11月18日苹果官网新增一条招聘信息， 透露公司正在寻找一名高级工程经理，负责一款主动式、智能体化的AI助手。 该系统能够编写代码、浏览网页、控制应用，并在设备上代替用户操作。 这一动向出现在AI智能体加速渗透消费端的时点。 Meta的Muse近月来凭借代订餐厅、预订行程和生成新闻简报等能力赢得消费者关注，其应用长期占据苹果App Store免费榜第二",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-19T23:18:00+00:00"
+    },
+    {
+      "title": "黑客经第三方泄露Visa、万事达和摩根大通部分客户数据，三家称支付网络未中断",
+      "link": "https://wallstreetcn.com/articles/3786322",
+      "summary": "Visa、万事达和摩根大通相继证实，一家或多家第三方服务商遭黑客攻击，导致部分客户信息外泄。三家机构均强调，自身支付网络和核心系统未受波及，但这一事件仍加剧了市场对大型金融机构网络安全的担忧。 据摩根大通周四声明，黑客入侵了其一家外部合作方，获取了部分营销数据，可能涉及客户姓名和电子邮件地址，并重申该事件与本周早些时候的服务中断无关。 Visa表示，事件源于亚洲一家第三方公司，其自身系统未受影响，支付数据（如卡号）未被波及。 万事达则称泄露内容为\"特定福利项目部分持卡人的有限非支付信息\"，主要为电子邮件地址，网络运营未受任何冲击。 三家公司股价当日均有不同程度下跌。周四Visa股价收跌3.1%",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-19T23:14:43+00:00"
+    },
+    {
+      "title": "These were the only stocks that rose amid the stock market’s wipeout Thursday",
+      "link": "https://www.marketwatch.com/story/these-were-the-only-stocks-that-rose-amid-the-stock-markets-wipeout-thursday-1eaf32ba?mod=mw_rss_topstories",
+      "summary": "All 11 sectors of the S&P 500 declined — 10 of them by more than 1% — but cybersecurity stocks bucked the weakness.",
       "source": "MarketWatch",
       "category": "国际财经",
-      "published": "2026-11-19T13:55:00+00:00"
+      "published": "2026-11-19T23:11:00+00:00"
     },
     {
-      "title": "对冲基金大幅低配科技股，高盛嗅到逼空机会：Anthropic上市日或成转折点",
-      "link": "https://wallstreetcn.com/articles/3786303",
-      "summary": "对冲基金对科技股的极端低配，正在为市场反弹埋下伏笔，而Anthropic创纪录IPO的落地，可能成为触发资金回流、推动空头回补的关键催化剂。 高盛交易台主管Rich Privorotsky在周四晨报中指出， 对冲基金科技股净敞口较基准指数低配约11个百分点，接近五年来最低水平。与此同时，市场庄家的伽马敞口极度偏空，而波动率趋于稳定，这些因素都可能为反弹创造条件。 纳斯达克期货周四早盘上涨近2%。 这一潜在转折恰逢Anthropic登陆华尔街。该公司周四以每股83美元定价上市，高于此前发行区间上限，IPO融资约813亿美元，连同股东配售合计募资1073亿美元，刷新全球IPO纪录。创纪录的认购需求",
+      "title": "华尔街见闻早餐FM-Radio | 2026年11月20日",
+      "link": "https://wallstreetcn.com/articles/3786319",
+      "summary": "华见早安之声 要闻精选 中国 习近平 主持中俄美元首会晤。中俄美元首和平宣言。 习近平 就大国如何正确相处提出4点看法。 阿里 Q3净利润同比大增213%，云业务收入增长53%， AI投入推动资本开支增60%、负现金流扩大 。 电话会 ：20GW数据中心目标和资本开支计划可能降低，国产算力2028年放量，阿里云将恢复高速增长，现金流转正。 拼多多 Q3营收1083亿元不及预期， 经营利润同比增长25%， 股价收涨11%。 电话会 ：千亿扶持计划仍在投入期，持续加码商家扶持与供应链建设。 海外 史上最大IPO开盘狂热不足一小时， Anthropic 首秀涨34%后回吐半数涨幅 ，市值一度突破2万",
       "source": "华尔街见闻",
       "category": "中文宏观",
-      "published": "2026-11-19T13:52:34+00:00"
+      "published": "2026-11-19T23:10:02+00:00"
     },
     {
-      "title": "沃尔玛Q3营收、净利双双超预期，上调全年业绩指引，高收入消费者成新增长引擎 | 财报见闻",
-      "link": "https://wallstreetcn.com/articles/3786304",
-      "summary": "沃尔玛第三季度营收和盈利双双超出预期，并上调全年业绩指引，显示这家全球最大零售商凭借价格优势和电商扩张持续吸引各收入阶层消费者。 沃尔玛第三季度营收1,888.4亿美元，同比增长5.2%，高于市场预估的1,871.7亿美元；调整后每股收益0.65美元，亦超出预估的0.64美元；经营现金流达294亿美元。公司同步上调全年调整后每股收益预期至2.84美元至2.89美元，高于此前指引的2.80美元至2.87美元，但仍略低于彭博综合预期上限的2.89美元。 尽管业绩整体超预期，沃尔玛美股盘前仍跌超2%，市场反应显示投资者对全年指引未能完全达到预期上限存有保留。 高收入消费者成新增长引擎 沃尔玛首席财务",
+      "title": "史上最大IPO首日冲高回落，标普、英伟达六连跌，道指跌破5万点，黄金再跌3%",
+      "link": "https://wallstreetcn.com/articles/3786267",
+      "summary": "Anthropic破纪录IPO未能提振市场信心，美股三大指数高开低走，道指自6月以来首次收在5万点下方，标普500与纳指跌幅均超2%。 Anthropic以1073亿美元的估值完成IPO，刷新SpaceX纪录，股价盘中一度较发行价83美元大涨34%，收报97.17美元，涨幅收窄至约17%。 然而上市未能阻止更大范围的抛售，纳斯达克100指数当日振幅逾4个百分点，从盘前上涨2.3%逆转至收跌2.2%。 标普500指数盘中市值蒸发约1.3万亿美元，与Anthropic IPO融资规模大体相当。 市场情绪的急剧逆转令投资者猝不及防。盈透证券首席策略师Steve Sosnick表示，标普500指数起初",
       "source": "华尔街见闻",
       "category": "中文宏观",
-      "published": "2026-11-19T13:49:12+00:00"
+      "published": "2026-11-19T22:55:31+00:00"
+    },
+    {
+      "title": "宝洁押注自动化降本：计划到2030年削减最多30%制造业员工，降本百亿美元",
+      "link": "https://wallstreetcn.com/articles/3786320",
+      "summary": "宝洁公司正推进其历史上规模最大的供应链重组之一。面对大宗商品成本高企与消费需求疲软的双重压力， 这家日用消费品巨头计划在本十年末前将制造及物流员工规模削减20%至30%。 宝洁首席产品供应官Luc Reynaert周四在一场投资者说明会上宣布了上述计划， 削减范围将涵盖合同工。该公司设定的目标是到2030年实现累计生产效率节约100亿美元。 宝洁上月已披露，大宗商品成本上升预计将在本财年带来14亿美元的额外支出。 此次裁员公告对市场而言是一个明确信号：宝洁将以自动化与精简人力作为应对利润承压的核心手段。该公司上一财年（截至去年6月）每股盈利仅增长1%，为2016年以来最低增速。 周四，宝洁收跌",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-19T22:53:14+00:00"
+    },
+    {
+      "title": "Intuit’s downbeat outlook deepens Wall Street’s anxiety about software companies",
+      "link": "https://www.marketwatch.com/story/intuits-downbeat-outlook-deepens-wall-streets-anxiety-about-software-companies-15b878e5?mod=mw_rss_topstories",
+      "summary": "TurboTax maker Intuit gives investors a fresh reason to worry about legacy software companies.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-19T22:53:00+00:00"
+    },
+    {
+      "title": "A CoreWeave co-founder just made an unconventional $30 million wager on its battered bonds",
+      "link": "https://www.marketwatch.com/story/a-coreweave-co-founder-just-made-an-unconventional-30-million-wager-on-its-battered-bonds-5586b0e9?mod=mw_rss_topstories",
+      "summary": "While executives typically buy shares to signal confidence, CoreWeave co-founder Brian Venturo is turning to the bond market to calm AI jitters.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-19T22:41:00+00:00"
+    },
+    {
+      "title": "美联储官员再放鹰，Goolsbee：通胀居高不下，不排除单次加息超常规可能",
+      "link": "https://wallstreetcn.com/articles/3786318",
+      "summary": "通胀持续超预期，美联储政策路径再度收紧。 芝加哥联储主席Austan Goolsbee周四表示， 在美联储下月议息会议上，所有政策选项均在考量之中，并未排除单次加息幅度超出常规的可能性。 这是近期多位联储官员就加快加息节奏发出的最新表态，显示决策层内部对通胀形势的担忧正在升温。 在此之前，美联储理事Christopher Waller周三重申，联储或需在12月会议上考虑加息50个基点。根据同日公布的10月会议纪要，会议上除Waller外，另有一位未具名官员也支持讨论更大幅度加息的可能性。 目前市场预计12月会议加息25基点概率为96.4%，加息50基点概率为3.6%。 通胀连续超预期，官员忧虑",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-19T22:19:07+00:00"
+    },
+    {
+      "title": "We’re in our 50s and terrified of a market crash. Should we put $400,000 of our $1 million retirement savings into an annuity?",
+      "link": "https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories",
+      "summary": "“We have a house worth $450,000. Our combined annual income is $125,000.”",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-19T22:15:00+00:00"
+    },
+    {
+      "title": "史上最大IPO开盘狂热不足一小时，Anthropic首秀涨34%后回吐半数涨幅，市值一度突破2万亿",
+      "link": "https://wallstreetcn.com/articles/3786269",
+      "summary": "AI独角兽Anthropic刷新了SpaceX五个月前才创下的上市募资纪录，登陆美股开盘大涨幅度超过暗盘预计最高水平、将公司市值推升至2万亿美元以上，但狂热很快“退烧”。股价开盘后半小时内较开盘价回落13%、创2008年以来大型美股IPO的最差半小时开局。 美东时间11月19日周四，Anthropic以ANT为股票代码正式在纳斯达克挂牌交易，开盘报111.50美元，较IPO发行价涨约34.3%，盘中最高触及115.10美元，涨幅扩大到约38.7%，此后持续回吐涨幅，刷新日低时回到至92.80美元下方、涨幅收窄至不足12%，到收盘，较发行价涨约17.1%，相当于回吐开盘时的半数涨幅，盘后还较收盘",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-19T22:14:13+00:00"
+    },
+    {
+      "title": "Meta拟推出AI设备Muse Charm，售价300美元，智能手表推迟至2027年",
+      "link": "https://wallstreetcn.com/articles/3786316",
+      "summary": "Meta正加快布局AI可穿戴硬件，计划以价格和通信服务补贴吸引消费者购买其新款AI设备Muse Charm，同时推迟智能手表上市，以便集中资源推进这款产品。 据The Information周四援引知情人士报道， Meta计划将Muse Charm定价为300美元，并为用户提供最长12个月的Verizon免费5G网络服务。 Muse Charm是一款配备屏幕的小巧设备，该设备内置5G连接功能，用户无需依赖Wi-Fi或随身携带手机，即可随时使用Meta旗下AI助手Muse。 Meta还计划通过用户补贴降低购买门槛，以推动产品普及。 为优先推进Muse Charm，Meta已将智能手表的大规模上市",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-19T22:12:22+00:00"
+    },
+    {
+      "title": "Anthropic’s stock surges in its debut — and the rest of the market dives anyway",
+      "link": "https://www.marketwatch.com/story/anthropics-stock-surges-in-its-debut-and-the-rest-of-the-market-dives-anyway-19671218?mod=mw_rss_topstories",
+      "summary": "All four major U.S. stock indexes are now on pace for their worst week since President Trump’s “liberation day” tariffs of April 2025",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-19T22:12:00+00:00"
+    },
+    {
+      "title": "拼多多大涨！Q3营收1083亿元不及预期，经营利润同比增长25%｜财报见闻",
+      "link": "https://wallstreetcn.com/articles/3786292",
+      "summary": "拼多多第三季度营收基本持平且低于市场预期，但调整后每ADS收益超预期。尽管收入增长放缓，费用支出收缩仍推动公司经营利润实现两位数增长，但净利润基本持平。 11月19日，拼多多公布截至2026年9月30日的第三季度未经审计财务业绩。 公司当季实现营收1083.41亿元人民币，同比增长约0.1%，低于市场预估的1152.1亿元；Non-GAAP摊薄每ADS收益为21.04元，高于市场预估的18.54元。 业务方面，公司两大收入板块表现分化。在线营销服务及其他收入同比增长12%，至598.19亿元；交易服务收入同比下降12%，至485.22亿元，后者下滑抵消了在线营销业务的部分增长。 盈利方面，销售",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-19T22:05:47+00:00"
+    },
+    {
+      "title": "Markets are sending troubling signals about the state of the economy",
+      "link": "https://www.marketwatch.com/story/markets-are-sending-troubling-signals-about-the-state-of-the-economy-8043f20e?mod=mw_rss_topstories",
+      "summary": "A number of recession trades have started to emerge, even as economic data has largely held up.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-19T21:57:00+00:00"
+    },
+    {
+      "title": "Nvidia’s stock falls further. It has lost $669 billion in six trading days.",
+      "link": "https://www.marketwatch.com/story/nvidias-stock-falls-further-it-has-lost-611-billion-in-six-trading-days-434af231?mod=mw_rss_topstories",
+      "summary": "There are only 20 companies in the world with a market capitalization of $669 billion or higher",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-19T21:45:00+00:00"
+    },
+    {
+      "title": "Anthropic首日股价冲高回落，彭博称其IPO或标志AI行情终结",
+      "link": "https://wallstreetcn.com/articles/3786313",
+      "summary": "Anthropic的大规模IPO看上去是对AI交易的信心投票，但彭博经济学家给出了相反的解读。 11月19日，据彭博经济学经济学家Anna Wong的分析，自9月以来，也就是Anthropic招股书所载财务数据的截止期（9月30日），其每百万token的实际价格已大幅下滑。 同期token使用量激增，但市场份额并未随之上升，甚至小幅走低。公司在让渡了相当一部分价格溢价之后，并未换来更强的竞争地位。 简单来说，技 术领先和旺盛的AI需求，并没有转化为持久的定价能力。对投资者而言，这意味着AI交易赖以支撑的估值逻辑，正面临一次来自基本面的检验。 周四Anthropic以ANT为代码正式挂牌，上市首",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-19T21:40:53+00:00"
+    },
+    {
+      "title": "尽管财报超预期、尽管新管理层称“一切如常”，英伟达依旧“六连跌”",
+      "link": "https://wallstreetcn.com/articles/3786239",
+      "summary": "英伟达交出超预期财报，新任管理层高调亮相、承诺薪酬激励，却依然未能止住股价颓势。 周四，公司股价再度下跌超3.3%，早盘股价一度反弹近5%，但最终逐步回吐涨幅转跌，创下连续六日下跌纪录。 英伟达临时CEO科莱特·克雷斯（Colette Kress）在周二的分析师电话会议上首次以CEO身份主持财报发布，上调公司销售预期，并就旗下新兴云客户支持政策作出表态。周三盘前英伟达股价一度大涨约4%。 然而，这轮涨势在会后全部回吐，股价终以下跌约2%至3%收盘。道琼斯援引华尔街人士反应称， 市场并不买账管理层\"一切如常\"的定调。 自创始人黄仁勋辞去CEO职务的消息曝光以来，英伟达股价已累计下跌约13%，距5",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-19T21:32:41+00:00"
+    },
+    {
+      "title": "Why Micron, Broadcom and other AI stocks gave up their gains Thursday",
+      "link": "https://www.marketwatch.com/story/why-micron-intel-and-other-ai-stocks-are-getting-a-lift-on-thursday-cf6f59f8?mod=mw_rss_topstories",
+      "summary": "The Anthropic enthusiasm has faded while China concerns have intensified.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-19T21:27:00+00:00"
+    },
+    {
+      "title": "Gap names new Athleta CEO, lowers full-year guidance",
+      "link": "https://www.cnbc.com/2026/11/19/gap-gap-q3-2026-earnings.html",
+      "summary": "Gap on Thursday announced Ashley Kechter as the new CEO of Athleta. The retailer also reported mixed fiscal third-quarter earnings.",
+      "source": "CNBC Business",
+      "category": "国际财经",
+      "published": "2026-11-19T21:22:23+00:00"
+    },
+    {
+      "title": "UnitedHealth’s stock tumbles after government signals crackdown on Medicare Advantage fraud",
+      "link": "https://www.marketwatch.com/story/unitedhealths-stock-keeps-plunging-after-government-signals-crackdown-on-medicare-advantage-fraud-c4770a45?mod=mw_rss_topstories",
+      "summary": "UnitedHealth Group’s stock fell again on Thursday amid a tough week in which the government pledged to crack down on Medicare Advantage fraud and lawmakers renewed calls for Medicare for All.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-19T21:22:00+00:00"
+    },
+    {
+      "title": "Why Walmart is making a bigger bet on fast-food delivery",
+      "link": "https://www.marketwatch.com/story/why-walmart-is-making-a-bigger-bet-on-fast-food-delivery-27263735?mod=mw_rss_topstories",
+      "summary": "The retail giant says around 90% of spending at fast-food chains occurs within a few miles from a Walmart.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-19T21:13:00+00:00"
+    },
+    {
+      "title": "SpaceX周四拟发债60亿美元，完成全部320亿美元债券融资，用于购买英伟达芯片",
+      "link": "https://wallstreetcn.com/articles/3786315",
+      "summary": "SpaceX正寻求在周四完成至少320亿美元的债务发售，为英伟达AI芯片采购提供资金。 据彭博援引知情人士透露， 本次发售包括约60亿美元债券，规模已从此前的40亿美元上调，于周四向投资者开放认购；其余约260亿美元票据此前已完成配售。 全部320亿美元债务定于周四定价，债务由三部分组成。高盛与Apollo主导此次交易。 这笔融资的特殊之处在于结构。 资金将通过名为Saturn Funding Trust的特殊目的载体购买英伟达AI芯片，该载体由Apollo支持的一家实体管理，SpaceX初期以约五年期租约使用这些芯片。 债务偿付与租金挂钩，而融资安排使借款不进入SpaceX资产负债表，公司预",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-19T21:10:19+00:00"
+    },
+    {
+      "title": "苹果赢下英国用户数据诉讼首回合，政府秘密令状被迫公开",
+      "link": "https://wallstreetcn.com/articles/3786314",
+      "summary": "苹果在与英国政府的隐私拉锯战中赢下了关键一局。 11月19日，据彭博报道， 英国调查权力法庭作出最新裁决，认定英国内政部“未能证明”公开秘密命令会损害国家安全 。这意味着，与以往绝大多数全程保密的监控案件不同， 苹果及两家非营利组织发起的这场法律挑战，接下来大部分程序将首次在公开法庭上进行。 此前，英国政府依据法律秘密向苹果发出一份“技术能力通知”（TCN），要求苹果交出用户的加密数据。 按照英国法律，这类命令附带严格的“封口令”，收到通知的公司甚至不能对外承认命令的存在，政府也一直以“国家安全”为由拒绝公开。苹果随后向专门审查秘密监控的英国调查权力法庭提起诉讼。 苹果发言人对此表示欢迎，称这",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-19T21:10:09+00:00"
+    },
+    {
+      "title": "英伟达之后下一个目标！做空报告重挫AMD",
+      "link": "https://wallstreetcn.com/articles/3786312",
+      "summary": "对冲基金Hunterbrook Capital发布做空报告，重挫AMD股价。该报告指出AMD在客户融资安排上存在循环交易隐患，且对AI支出放缓高度敏感，AMD方面否认相关指控。 周四，AMD股价盘中最大跌幅达11%，低至470.56美元，为当日纳斯达克100指数成分股中跌幅最大的个股。该股此前年内涨幅已逾一倍。截至发稿，AMD下跌8.9%。 Hunterbrook Capital表示，目前持有AMD空头仓位，同时做多一篮子可比标的。AMD则回应称，Hunterbrook的\"相关指控歪曲了AMD的业务实践与合作关系\"。 循环交易隐患：AMD承诺过多、现金偏少 Hunterbrook在报告中指出，",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-19T21:09:56+00:00"
+    },
+    {
+      "title": "Walmart hikes outlook as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
+      "link": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
+      "summary": "Walmart said it saw strength with store-fulfilled pickup and delivery in its fiscal third quarter.",
+      "source": "CNBC Business",
+      "category": "国际财经",
+      "published": "2026-11-19T19:58:30+00:00"
+    },
+    {
+      "title": "特朗普9月高位买入英伟达站岗，SpaceX也加仓了",
+      "link": "https://wallstreetcn.com/articles/3786311",
+      "summary": "特朗普9月在英伟达股票上的买卖操作，因政策利益冲突问题再度引发外界关注。 据周四公开的最新财务披露文件， 美国总统特朗普9月买入总价最高达26.5万美元的英伟达股票，同期卖出最高1.5万美元 。联邦官员在财务披露表格中以区间形式申报资产价值。这份披露由特朗普于11月1日签署，由美国政府伦理办公室对外发布。 与此同时，特朗普政府正就英伟达先进芯片出口政策展开讨论，相关决定将直接影响这家芯片巨头的业务前景。 这一买入动作发生在黄仁勋婚外情丑闻曝光前，9月英伟达股价运行在210至230区间，目前已经跌至150。 特朗普本人表示，对于有关黄仁勋的相关指控，他感到\"震惊\"。 美国国会议员已就特朗普对黄仁",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-19T19:02:40+00:00"
+    },
+    {
+      "title": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261119a.htm",
+      "summary": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
+      "source": "Federal Reserve",
+      "category": "宏观数据",
+      "published": "2026-11-19T16:00:00+00:00"
+    },
+    {
+      "title": "基金市场概况与资产配置观点（11.09—11.15）",
+      "link": "https://www.tmtpost.com/8211721.html",
+      "summary": "腾讯济安指数上周下跌2.71%。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-19T14:34:30+00:00"
+    },
+    {
+      "title": "重庆汽车与医药制造双线并进，产业升级如何转化为企业长期价值？",
+      "link": "https://www.tmtpost.com/8211669.html",
+      "summary": "重庆上市公司已有一批表现较突出的企业，但不同企业将产业优势转化为长期价值的能力仍有差异。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-19T14:17:37+00:00"
+    },
+    {
+      "title": "价值判断：跌停板的投资机会和风险提示（11月17日）｜上市公司观察",
+      "link": "https://www.tmtpost.com/8211651.html",
+      "summary": "本期三只均为本轮第一根跌停，收盘对济安定价的溢价在一倍至一点四倍之间。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-19T14:12:51+00:00"
+    },
+    {
+      "title": "价值判断：涨停板的投资机会和风险提示（11月17日）｜上市公司观察",
+      "link": "https://www.tmtpost.com/8211631.html",
+      "summary": "本期四只标的分两头：三只首板收在济安定价之下，折价从四成二到五成六；瀛通通讯两连板，收在定价的两倍以上。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-19T13:56:01+00:00"
     },
     {
       "title": "从英伟达到苹果、微软：同样拥抱AI，为什么企业的财富命运截然不同？",
@@ -33,142 +273,6 @@
       "source": "钛媒体",
       "category": "产业科技",
       "published": "2026-11-19T13:48:30+00:00"
-    },
-    {
-      "title": "Is Social Security a Ponzi scheme? No, but fear is fueling such talk.",
-      "link": "https://www.marketwatch.com/story/the-thought-of-living-to-100-terrifies-me-is-social-security-a-giant-ponzi-scheme-84a64e7e?mod=mw_rss_topstories",
-      "summary": "Wisconsin Republican Sen. Ron Johnson called Social Security a “scam” and urged lawmakers to shut it down.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-19T13:46:00+00:00"
-    },
-    {
-      "title": "美股多头迎来新麻烦：通胀、加息与盈利增长放缓同时来袭",
-      "link": "https://wallstreetcn.com/articles/3786300",
-      "summary": "美股多头正面临日益棘手的局面：美联储政策立场可能进一步转鹰，而企业盈利增长动能却在减弱。货币政策收紧与盈利预期下修的双重压力，正在动摇部分机构投资者对美股的信心。 研究机构TS Lombard已将美股配置比例下调350个基点，同时将现金仓位提高10.3个百分点至14%，并将资金转向欧洲和印度市场。其12个月组合贝塔值也从1.07降至0.92，显示整体风险敞口明显收缩。 TS Lombard担忧的并非经济衰退，而是一种对股市更为不利的组合： 经济保持足够强劲，迫使美联储继续加息，但企业盈利却缺乏足够动能，难以支撑股价。这意味着，即使经济没有陷入衰退，美股也可能同时承受利率上行和盈利增长放缓的压力",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T13:25:01+00:00"
-    },
-    {
-      "title": "阿里电话会：20GW数据中心目标和资本开支计划可能降低，国产算力2028年放量，阿里云将恢复高速增长，现金流转正",
-      "link": "https://wallstreetcn.com/articles/3786299",
-      "summary": "全球AI算力供应格局的变化，正在重塑阿里巴巴的基础设施投资计划。 在第二财季财报电话会上，阿里管理层透露，受全球不同区域算力政策变化影响， 公司长期20GW数据中心建设目标存在下调可能，整体资本开支计划也将相应降低 。与此同时， 阿里将加快以平头哥为核心的国产算力供应链建设，预计2028年国产算力产品持续放量后，云业务收入增速有望重新恢复至50%以上。 吴泳铭在电话会上表示， 2027年一季度，新一代平头哥的国产芯片完全可以支持超大规模模型的训练。“其实，我们已经开始在今年这一代平头哥芯片开始训练下一代模型。随着平头哥的国产芯片的产能持续扩量，从长远来看，对于阿里模型的发展，会是一种长期的支撑",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T13:24:51+00:00"
-    },
-    {
-      "title": "Walmart hikes outlook as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
-      "link": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
-      "summary": "Walmart said it saw strength with store-fulfilled pickup and delivery in its fiscal third quarter.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-19T13:23:50+00:00"
-    },
-    {
-      "title": "If the AI trade unwinds, other pillars holding up the U.S. economy are ‘irrelevant,’ says Barclays",
-      "link": "https://www.marketwatch.com/story/if-the-ai-trade-unwinds-other-pillars-holding-up-the-u-s-economy-are-irrelevant-says-barclays-b6f1bdca?mod=mw_rss_topstories",
-      "summary": "The bank does not hold that the artificial-intelligence trade is collapsing, viewing today’s slowdown as a correction that can selectively be bought into.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-19T12:45:00+00:00"
-    },
-    {
-      "title": "Palo Alto Networks’ stock gets a fresh AI-fueled boost from earnings",
-      "link": "https://www.marketwatch.com/story/palo-alto-networks-stock-soars-as-earnings-show-ai-has-upped-the-stakes-for-cybersecurity-308e34b8?mod=mw_rss_topstories",
-      "summary": "The company boosts its outlook in the face of the “current threat environment and demand we see ahead of us.”",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-19T12:34:00+00:00"
-    },
-    {
-      "title": "Here’s the precise moment when cyberattacks started increasing exponentially",
-      "link": "https://www.marketwatch.com/story/heres-the-precise-moment-when-cyberattacks-started-increasing-exponentially-244a4294?mod=mw_rss_topstories",
-      "summary": "One of the world’s top hedge funds is linking the surge to the release of one AI large language model.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-19T12:30:00+00:00"
-    },
-    {
-      "title": "Sandisk’s stock split is almost here. This is what investors need to know.",
-      "link": "https://www.marketwatch.com/story/sandisks-stock-split-is-almost-here-this-is-what-investors-need-to-know-e0a18461?mod=mw_rss_topstories",
-      "summary": "Sandisk is due to split its stock after Thursday’s close, and while the move has gotten some buzz, it won’t alter the fundamental picture for shareholders of the memory-chip company.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-19T12:14:00+00:00"
-    },
-    {
-      "title": "Can Anthropic’s IPO do for the stock market what Nvidia’s earnings couldn’t?",
-      "link": "https://www.marketwatch.com/story/can-anthropics-ipo-do-for-the-stock-market-what-nvidias-earnings-couldnt-be67a434?mod=mw_rss_topstories",
-      "summary": "Here’s the case for energy stocks in your 401(k) and why Target’s comeback runs through the shoe aisle. Plus, what “GTA VI” means for Take-Two investors.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-19T12:12:00+00:00"
-    },
-    {
-      "title": "Deutsche Bank got its dollar call for 2026 wrong. Why it’s shifting tack now.",
-      "link": "https://www.marketwatch.com/story/deutsche-bank-got-its-dollar-call-for-2026-wrong-why-its-shifting-tack-now-bbecbd00?mod=mw_rss_topstories",
-      "summary": "Deutsche Bank’s team readily acknowledges its call for a weaker dollar in 2026 misfired. They predict the forces driving the dollar higher since February will continue into the first half of 2027 but any slowdown in the AI bonanza will start to undermine it.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-19T12:04:00+00:00"
-    },
-    {
-      "title": "I have two children. How can I turn them into millionaires by the time they retire?",
-      "link": "https://www.marketwatch.com/story/i-have-two-children-how-can-i-turn-them-into-millionaires-by-the-time-they-retire-547444eb?mod=mw_rss_topstories",
-      "summary": "Planning for your children’s future is important, but don’t forget your own along the way",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-19T12:00:00+00:00"
-    },
-    {
-      "title": "The stock market is being rocked by the biggest shake-up in a generation as tech falls behind",
-      "link": "https://www.marketwatch.com/story/the-stock-market-is-being-rocked-by-the-biggest-shake-up-in-a-generation-as-tech-falls-behind-66c1f281?mod=mw_rss_topstories",
-      "summary": "Tech stocks are looking cheap, while defensive sectors like consumer staples are screening as expensive.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-19T11:54:00+00:00"
-    },
-    {
-      "title": "拼多多Q3营收1083亿元不及预期，经营利润同比增长25%，盘前涨超8%｜财报见闻",
-      "link": "https://wallstreetcn.com/articles/3786292",
-      "summary": "拼多多第三季度营收基本持平且低于市场预期，但调整后每ADS收益超预期。尽管收入增长放缓，费用支出收缩仍推动公司经营利润实现两位数增长，但净利润基本持平。 11月19日，拼多多公布截至2026年9月30日的第三季度未经审计财务业绩。 公司当季实现营收1083.41亿元人民币，同比增长约0.1%，低于市场预估的1152.1亿元；Non-GAAP摊薄每ADS收益为21.04元，高于市场预估的18.54元。 业务方面，公司两大收入板块表现分化。在线营销服务及其他收入同比增长12%，至598.19亿元；交易服务收入同比下降12%，至485.22亿元，后者下滑抵消了在线营销业务的部分增长。 盈利方面，销售",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T11:53:52+00:00"
-    },
-    {
-      "title": "科技投资大佬Brad Gerstner：Anthropic凭什么\"10倍认购\"与AI时代的\"模型至上主义\"",
-      "link": "https://wallstreetcn.com/articles/3786298",
-      "summary": "在半导体股票大跌、数据中心政策前景不明、英伟达CEO疑云未散的市场环境下，Anthropic的IPO依然获得10倍超额认购——这一现象背后，折射出AI时代最核心的投资逻辑之争。 Altimeter Capital创始人Brad Gerstner在TomorrowX 峰会上详解了Anthropic IPO获追捧的三大驱动力：史上最大的潜在市场、大幅压缩的算力成本，以及一个反常识的事实——Anthropic仅用全年约四分之一的算力预算，便撑起了千亿美元量级的年化收入。他同时警示投资者，新股上市后12个月内出现50%峰谷振幅属于常态，缺乏心理承受力者不宜轻易入场。 在更宏观的投资框架层面， Brad",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T11:52:55+00:00"
-    },
-    {
-      "title": "追加4亿雷亚尔，奇瑞捷途加快巴西本地化",
-      "link": "https://wallstreetcn.com/articles/3786295",
-      "summary": "进入巴西市场不到一年，捷途开始为当地生产做准备。 当地时间11月18日，捷途宣布追加投资4亿雷亚尔，计划2027年在巴西生产T1、T2，并扩充产品线和经销商网络。加上此前公布的4亿雷亚尔，捷途在巴西的计划投资总额增至8亿雷亚尔。厂址拟于2027年一季度公布。 这笔投入对应着捷途下一阶段的经营任务。随着产品和销售网络扩展，捷途需要同步完善当地的供货、配件供应和售后服务能力。 品牌今年上半年进入巴西，截至10月底累计销售7640辆。按照捷途方面规划，其希望明年在当地销售约2万辆，生产项目初期规划年产能也约为2万辆。销售规模扩大，需要制造、产品和渠道同时跟进。 巴西的关税变化，使本地生产的重要性进一",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T11:37:47+00:00"
-    },
-    {
-      "title": "杭州国资加码具身大脑，原力无限三个月内再获第四轮融资",
-      "link": "https://wallstreetcn.com/articles/3786294",
-      "summary": "原力无限三个月内连获四轮融资，浙江省、市两级国资接续入局，持续加码具身大脑研发与产业化。 11月19日，原力无限科技控股（浙江）有限公司（简称“原力无限”）宣布完成数千万元Pre-B轮融资，由杭州市属国有资本投资运营平台杭州资本独家投资。公司表示，本轮资金将主要用于具身大脑AtomBrain研发、真实场景验证及产业化落地。 这是原力无限三个月内的第四轮融资。 今年8月，公司宣布完成A轮及A+轮融资，两轮合计近10亿元人民币；10月，又获得浙江省创业投资集团有限公司近亿元投资。公开融资消息显示，公司目前估值接近百亿元，但尚未明确这一数字属于投前还是投后估值。 连续融资的资金投向具有延续性。此前A",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T11:34:00+00:00"
-    },
-    {
-      "title": "爱回收经营利润增五成，自营业务撑起增长",
-      "link": "https://wallstreetcn.com/articles/3786293",
-      "summary": "万物新生（爱回收）的收入增长，正在转化为更快的利润增长。 11月19日，公司发布2026年三季报，营收64.53亿元，同比增长25.3%，超出此前指引区间高端。经调整经营利润同比增长50.7%至2.11亿元，利润率从2.7%升至3.3%。按美国通用会计准则计算，经营利润为1.91亿元，同比增长57.9%，净利润为1.40亿元，同比增长53.6%。 这份财报的主要变化，是自营销售继续扩张，履约和销售费用的增长相对克制，供应链投入开始被更大的业务规模摊薄。 三季度，公司履约费用同比增长16.8%，销售及营销费用增长23.5%，均低于营收增速。按披露数据计算，履约费用率从约8.5%降至7.9%。人员",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T11:32:47+00:00"
     },
     {
       "title": "大衣只卖499元，中产在山姆捡漏MaxMara平替",
@@ -211,44 +315,12 @@
       "published": "2026-11-19T10:48:26+00:00"
     },
     {
-      "title": "无涯智远获五源红杉数亿元投资，RSI赛道融资与验证仍有落差",
-      "link": "https://wallstreetcn.com/articles/3786289",
-      "summary": "11月19日，北京无涯智远科技有限公司（以下简称“无涯智远”）宣布完成数亿元天使轮和天使加轮融资，投资方包括五源资本、红杉中国、联想之星、中关村科学城基金及戈壁创投，心流资本担任财务顾问。本轮资金主要用于自研RSI模型的技术攻关与产品落地。 无涯智远成立于2026年6月，首席科学家为北大人工智能研究院助理教授张牧涵。公司聚焦实时RSI，技术路径是参数持续学习，用预先训练的超网络生成基座模型的参数更新，让模型在部署后仍能吸收新知识，把经验沉淀进自身参数。 团队称早前在资料内化任务上验证过这条路径，模型一次前向计算生成轻量参数更新，不读取原文即可回答相关问题。 RSI正成为AI融资热门方向。截至1",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T10:27:23+00:00"
-    },
-    {
       "title": "业绩重压下，航天机电继续处理海外亏损光伏项目",
       "link": "https://www.tmtpost.com/8211254.html",
       "summary": "航天机电的业绩拐点还没到来",
       "source": "钛媒体",
       "category": "产业科技",
       "published": "2026-11-19T10:27:07+00:00"
-    },
-    {
-      "title": "最高50亿元！长鑫科技大幅上调回购金额",
-      "link": "https://wallstreetcn.com/articles/3786288",
-      "summary": "长鑫科技公告，公司于2026年10月30日召开第二届董事会第八次会议审议通过回购方案， 2026年11月3日收到董事长朱一明提议将回购金额增加至不低于人民币25亿元（含），不超过人民币50亿元（含）。 2026年11月19日，公司召开第二届董事会第九次会议审议通过调整回购方案。 回购价格不超过人民币63.78元/股（含）， 回购股份用途为股权激励/员工持股计划、注销并减少注册资本及为维护公司价值及股东权益。 在市场层面， 公司此前预计 第四季度DRAM供给紧缺格局将延续，毛利率有望保持稳定。管理层将端侧AI存储需求——涵盖AI手机、AI PC、AI眼镜及智能驾驶等场景——定位为拉动全球存储市场",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T10:25:15+00:00"
-    },
-    {
-      "title": "柯力传感连投五家具身智能公司，机器人传感器放量",
-      "link": "https://wallstreetcn.com/articles/3786287",
-      "summary": "11月19日，宁波柯力传感科技股份有限公司（柯力传感， 603662.SH ）宣布完成对知行机器人科技（苏州）有限公司（以下简称“知行机器人”）的战略投资。 8月27日起，柯力传感先后战略投资优理奇机器人、卓誉科技、深朴智能、鹿明机器人与知行机器人五家公司，覆盖人形机器人整机、电机与关节模组、具身大模型、产业级整机与灵巧手。 柯力传感披露，公司已累计战略投资超15家机器人企业。优理奇机器人、深朴智能、鹿明机器人投资金额为数千万人民币。 知行机器人成立于2018年，总部位于江苏太仓，生产灵巧手与电动末端执行器。知行机器人官网披露，产品负载覆盖0.1公斤至150公斤，已为超过100家具身智能企业供",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T10:24:00+00:00"
-    },
-    {
-      "title": "阿里Q3净利润同比大增213%，云业务收入增长53%，AI投入推动资本开支增60%、负现金流扩大｜财报见闻",
-      "link": "https://wallstreetcn.com/articles/3786285",
-      "summary": "阿里巴巴AI商业化进程持续提速，云业务增长与电商盈利改善成为本季度业绩的两大亮点。2027财年第二季度（对应2026年第三自然季度），公司云业务AI相关产品收入连续第十三个季度实现三位数增长，外部客户经常性收入增速升至67%；与此同时，即时零售业务亏损显著收窄，推动电商板块盈利能力大幅提升。 财报显示， 截至2026年9月30日的季度，阿里巴巴实现收入2715.19亿元人民币，同比增长10%；调整后EBITA达到326.36亿元，同比增长260%。 经营利润率从上年同期的2%升至11%。 净利润同比增长213%至644.20亿元，主要受投资净收益增加及经营利润改善推动；非公认会计准则净利润同比",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T10:15:18+00:00"
     },
     {
       "title": "腾讯的“存亡时刻”写在利润表与现金流里",
@@ -273,62 +345,6 @@
       "source": "钛媒体",
       "category": "产业科技",
       "published": "2026-11-19T10:05:15+00:00"
-    },
-    {
-      "title": "Anthropic上市前触发自身安全警报：AI进展速度超预期",
-      "link": "https://wallstreetcn.com/articles/3786273",
-      "summary": "Anthropic即将登陆华尔街之际，却在上市文件中披露了一项安全警报：公司AI研发进展速度已达到自身设定的安全阈值，必须启动额外安全控制措施。 11月19日，据英国《金融时报》报道， Anthropic在更新后的IPO申报文件中承认，其技术进展速度已触发2023年制定的“负责任扩展政策”（Responsible Scaling Policy）中的额外安全机制。 这一披露恰逢公司将IPO发行价定为每股83美元，高于此前指引区间，估值约达1.5万亿美元之际。 触发安全机制的依据，来自AI评估机构METR本月发布的一份报告。该机构在获得Anthropic系统、人员及未发布模型的广泛访问权限后发现，",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T10:00:49+00:00"
-    },
-    {
-      "title": "网易Q3营收同比下降1.8%，毛利率升至68.3%，游戏业务盈利能力改善｜财报见闻",
-      "link": "https://wallstreetcn.com/articles/3786281",
-      "summary": "网易第三季度业绩呈现出收入小幅回落、盈利能力改善的特点。尽管游戏业务受到产品周期波动影响，整体收入略有承压，但公司通过优化成本结构、控制经营费用，推动毛利率进一步提升，利润端展现出较强韧性。 周四公布的财报显示， 网易第三季度实现净收入279亿元，同比下降1.8%；毛利润190亿元，同比增长4.8%，毛利率由去年同期的约64.1%提升至68.3%。 归属于公司股东的净利润为84亿元，非GAAP净利润为92亿元，较上季度的77亿元明显回升。 分业务来看，游戏及相关增值服务仍是收入和利润的核心支柱，经典产品保持运营韧性，新品也在为后续增长积蓄动能。 有道和云音乐收入继续下滑，创新及其他业务则实现了",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T09:40:30+00:00"
-    },
-    {
-      "title": "Banks Are Turning AI Compute Bills Into Working Capital",
-      "link": "https://www.tmtpost.com/8211189.html",
-      "summary": "Chinese lenders have begun packaging model usage, cloud contracts, and orders into small business loans. The products fill a gap equity markets leave open: AI firms burn cash on tokens from day one, own little collateral, and need revolving funds more than permanent dilution.",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T09:18:06+00:00"
-    },
-    {
-      "title": "国内首款Gen6 SSD量产，AI存储重算经济帐",
-      "link": "https://www.tmtpost.com/8210529.html",
-      "summary": "PCIe 6.0 SSD量产的真正价值，不是让存储设备跑出一个更漂亮的速度数字，而是让AI基础设施有机会重新算一笔账。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T08:35:17+00:00"
-    },
-    {
-      "title": "拒绝黄仁勋回归还不够，英伟达开始围剿他女儿了",
-      "link": "https://www.tmtpost.com/8210307.html",
-      "summary": "要是真想完全“去黄化”，只靠舆论也是有些难度的。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T06:57:35+00:00"
-    },
-    {
-      "title": "AI公司烧Token，烧出了一门“贷款生意”",
-      "link": "https://www.tmtpost.com/8210309.html",
-      "summary": "一张Token账单，换来500万",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T06:57:32+00:00"
-    },
-    {
-      "title": "刚刚！从黄仁勋走后首份财报发布及说明会，我们看到了什么",
-      "link": "https://www.tmtpost.com/8210397.html",
-      "summary": "英伟达进入“后黄仁勋时代”。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T06:57:28+00:00"
     },
     {
       "title": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
@@ -443,14 +459,6 @@
       "published": "2026-11-17T13:57:47+00:00"
     },
     {
-      "title": "JPMorgan Chase says temporary software bug is affecting consumer banking",
-      "link": "https://www.cnbc.com/2026/11/16/jpmorgan-chase-technical-issue.html",
-      "summary": "CNBC's Eamon Javers reported there was no indication of bad actors involved and likewise no indication that a bug was impacting multiple banks at the same time.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-16T22:14:47+00:00"
-    },
-    {
       "title": "Agencies extend comment period for proposed third-party risk management guidance",
       "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261113a.htm",
       "summary": "Agencies extend comment period for proposed third-party risk management guidance",
@@ -553,14 +561,6 @@
       "source": "Federal Reserve",
       "category": "宏观数据",
       "published": "2026-10-07T18:00:00+00:00"
-    },
-    {
-      "title": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
-      "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm",
-      "summary": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
-      "source": "Federal Reserve",
-      "category": "宏观数据",
-      "published": "2026-10-05T20:30:00+00:00"
     }
   ]
 }
