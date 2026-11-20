@@ -1,14 +1,278 @@
 {
-  "updated": "2026-11-19T23:52:51.561538+00:00",
+  "updated": "2026-11-20T05:29:34.603810+00:00",
   "count": 70,
   "items": [
     {
-      "title": "【钛晨报】《中俄美元首和平宣言》发布；31家出资主体现身，DeepSeek第二轮融资落地；比亚迪发布折叠方向盘，长鑫科技拟25亿至50亿元回购股份",
-      "link": "https://www.tmtpost.com/8211593.html",
-      "summary": "燧原科技：在手订单充沛，并正在与多家国内半导体产业伙伴进行合作；吴泳铭：建设超过20GW规模全球数据中心的目标可能下调；拼多多Q3利润295亿元，同比基本持平；因150元成被执行人？格力电器最新回应；OpenAI进军手机领域；马斯克披露多项业务时间表，Optimus拟18个月内胜任家务。",
+      "title": "海螺三投锂电，星川半固态2027量产，杉杉40亿定增包揽，跨界买的是座位不是风口",
+      "link": "https://www.tmtpost.com/8212128.html",
+      "summary": "锂电链生变：跨界资本进场，头部锁长单，2027年验货。",
       "source": "钛媒体",
       "category": "产业科技",
-      "published": "2026-11-19T23:20:00+00:00"
+      "published": "2026-11-20T04:49:00+00:00"
+    },
+    {
+      "title": "五星级酒店没囤够，万亿险资组团扫货长租公寓",
+      "link": "https://www.tmtpost.com/8212258.html",
+      "summary": "变身“包租公”。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-20T04:43:00+00:00"
+    },
+    {
+      "title": "后抗VEGF时代：一场百亿美金的眼底“暗战”",
+      "link": "https://www.tmtpost.com/8212014.html",
+      "summary": "中国资产带来变局。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-20T04:37:00+00:00"
+    },
+    {
+      "title": "东北老牌奶粉摇篮乳业，困在货架之外",
+      "link": "https://www.tmtpost.com/8212183.html",
+      "summary": "有配方、有工厂，为什么卖不进母婴店？",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-20T04:36:00+00:00"
+    },
+    {
+      "title": "铜价撑起前三季度233亿元利润，洛阳钼业市值十个月竟蒸发3000亿元",
+      "link": "https://www.tmtpost.com/8212126.html",
+      "summary": "今年股价累计跌超57%。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-20T04:32:22+00:00"
+    },
+    {
+      "title": "造就中国互联网黄金时代的VC，为什么消失了？",
+      "link": "https://www.tmtpost.com/8212321.html",
+      "summary": "出钱的人变了，风险投资的玩法也跟着变了。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-20T04:32:00+00:00"
+    },
+    {
+      "title": "三星SDI锁单16GWh，美国储能电芯的“合规溢价”还能给中国厂商留几年？",
+      "link": "https://www.tmtpost.com/8212148.html",
+      "summary": "三星SDI签美储LFP长单，FEOC合规门槛逐年抬升，中国厂商北美合规溢价窗口约2027—2029年，之后预计收窄。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-20T04:31:51+00:00"
+    },
+    {
+      "title": "硅谷最昂贵的一场分手",
+      "link": "https://www.tmtpost.com/8211899.html",
+      "summary": "它不但改变了很多人的命运，也是改变了整个科技行业乃至全球的世界线。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-20T04:24:12+00:00"
+    },
+    {
+      "title": "汪明荃“吃席式演唱会”火了，银发经济还有多少想象力？",
+      "link": "https://www.tmtpost.com/8212159.html",
+      "summary": "老模式找到了新市场。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-20T04:24:07+00:00"
+    },
+    {
+      "title": "从悦榕庄到安纳塔拉，一家温泉酒店的换牌实验",
+      "link": "https://www.tmtpost.com/8212241.html",
+      "summary": "安纳塔拉重回重庆，本土高端为何难以挣脱国际品牌怀抱？",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-20T04:24:03+00:00"
+    },
+    {
+      "title": "A股三大股指齐跌，创业板跌2%，PCB逆势走强，恒科指跌超3%，快手大跌10%",
+      "link": "https://wallstreetcn.com/articles/3786333",
+      "summary": "11月20日，A股早盘集体低开，三大指数大幅低开后低位震荡，沪指盘中跌超2%逼近3500点，临近午盘小幅回升，深成指、创业板跌2%。算力硬件再度调整，光模块、光通信、光电路交换机等领跌，覆铜板、电路板等逆势活跃。农业、AI短剧反弹，贵金属、生物医药、航天军工等板块下跌。资金涌入红利资产，银行活跃。 港股大幅低开低走，恒指、恒科指双双下挫，恒指一度跌超2%，自1月29日高点以来的累计跌幅达到20%。恒科指早盘一度跌超4%。权重科网股多数下跌， 网易 与 快手 科技在三季度业绩不及市场预期后，快手大跌10%，网易暴跌18%，光模块、芯片等科技股同样走低，AI大模型股智谱、MINIMAX均下挫。生物",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-20T04:08:01+00:00"
+    },
+    {
+      "title": "美元，迎来第四周上涨",
+      "link": "https://wallstreetcn.com/articles/3786343",
+      "summary": "美元正受到多重利好因素共振支撑，有望实现连续第四周上涨。 周四，人工智能实验室Anthropic正式在纳斯达克全球精选市场挂牌交易，上市首日股价即跳涨17%。 这一史上规模最大的科技类公开募股，吸引全球投资者纷纷将本国货币兑换为美元以认购股份，直接推高了市场对美元的需求。 Spectra Markets总裁Brent Donnelly在周四的研报中估计， 此次IPO的海外认购规模约在100亿至150亿美元之间。 与此同时， 美国10年期国债收益率保持在5%以上，创2007年以来最长持续时间纪录，进一步巩固了美元的强势地位。 本周，彭博美元即期指数已累计上涨0.7%，这是自10月9日以来最长的周",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-20T03:56:08+00:00"
+    },
+    {
+      "title": "新机卖不动，爱回收却更赚钱了｜看财报",
+      "link": "https://www.tmtpost.com/8208338.html",
+      "summary": "新机卖不动，二手生意却越来越好做了。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-20T03:52:17+00:00"
+    },
+    {
+      "title": "摘掉PC单一标签，AI开始改写联想的利润表",
+      "link": "https://www.tmtpost.com/8211786.html",
+      "summary": "AI不再只是营收增长的故事，而是真真切切地改写了联想的利润结构。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-20T03:51:45+00:00"
+    },
+    {
+      "title": "北汽押注千TOPS算力芯片，舱驾融合还有多远？",
+      "link": "https://www.tmtpost.com/8210564.html",
+      "summary": "北汽与新紫光布局千TOPS芯片，探索舱驾融合，算力如何转化为量产竞争力？",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-20T03:50:49+00:00"
+    },
+    {
+      "title": "跌破3600，黄金势创3月来最惨一周",
+      "link": "https://wallstreetcn.com/articles/3786342",
+      "summary": "黄金连跌五日，本周跌幅逼近9%，创下2026年3月以来最大单周跌幅。美联储鹰派信号持续强化、科技股抛售潮蔓延，以及美元走强三重压力叠加，令这一曾在今年1月触及历史高点的贵金属陷入深度调整。 现货黄金周五亚市盘中跌幅一度逼近3%，最低触及3520美元，较1月28日创下的历史高点5589.38美元已累计下跌逾三分之一。 白银同期跌幅更深，本周累计下挫约14%。 美联储加息预期是本轮下行的核心驱动力。 芝加哥联储主席Austan Goolsbee周四表示，为应对顽固通胀，他将考虑“所有选项”，成为近期多位央行官员中最新一位暗示加息的声音。摩根大通本周三成为最新一家预测美联储将在 12月、1月和3月连",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-20T03:46:59+00:00"
+    },
+    {
+      "title": "阿里云加速增长，平头哥走向台前 | 看财报",
+      "link": "https://www.tmtpost.com/8211922.html",
+      "summary": "2027年之后，阿里绝大部分新增AI芯片供给将以平头哥芯片为主。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-20T03:40:58+00:00"
+    },
+    {
+      "title": "DeepSeek限额：免费用户成了AGI的“拦路虎”？",
+      "link": "https://www.tmtpost.com/8212022.html",
+      "summary": "从抢用户到“赶”用户，AI行业变天了。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-20T03:39:27+00:00"
+    },
+    {
+      "title": "‘Nvidia’s turmoil has me spooked’: Should I sell my stocks and buy real estate — or ride out the storm?",
+      "link": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
+      "summary": "Tempted to ditch stocks for property or CDs? Take a deep breath before making any sudden moves.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-20T03:31:00+00:00"
+    },
+    {
+      "title": "首发24小时销量或达到季度预测！GTA 6让大摩惊叹",
+      "link": "https://wallstreetcn.com/articles/3786337",
+      "summary": "《侠盗猎车手6》（《GTA 6》）发布首日即打破多项纪录，摩根士丹利认为这一成绩不仅有望在24小时内兑现其单季度销量预期，更将为母公司Take-Two Interactive奠定未来十年变现增长的基础。 11月19日，《GTA 6》正式上线首日， 第三方数据机构Sensor Tower估计销售额已达18亿美元，销量约1900万份。 追风交易台消息，当日摩根士丹利Matthew Cost团队研究报告指出，按当前势头， 游戏有望在首个24小时内完成此前预估的年底前销售3000万份的目标。 与此同时，该游戏在Metacritic平台获得99分（逾150篇评测），打破《塞尔达传说：时之笛》保持28年的",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-20T02:23:00+00:00"
+    },
+    {
+      "title": "2027见闻历，财经人的桌面必备“神历”",
+      "link": "https://wallstreetcn.com/articles/3782813",
+      "summary": "本文来自华尔街见闻，欢迎下载APP查看更多",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-20T01:42:39+00:00"
+    },
+    {
+      "title": "I’m terrified of a market crash. Should I put $400,000 of my $1 million retirement savings into an annuity?",
+      "link": "https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories",
+      "summary": "“We have a house worth $450,000. Our combined annual income is $125,000.”",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-20T01:30:00+00:00"
+    },
+    {
+      "title": "阿里、腾讯释放同一个信号：资本开支在2028年后下降，国产算力驱动推理",
+      "link": "https://wallstreetcn.com/articles/3786331",
+      "summary": "阿里巴巴和腾讯在各自最新季度财报电话会上，都给出了相似的资本开支路径：AI基础设施资本开支的高峰期正在临近，2028年将成为关键拐点。与此同时，两家公司均强调，推理负载已可在国内芯片上高效运行，国产算力正成为支撑云收入增长的一大核心引擎。 阿里CFO徐宏在电话会上表示，本季度资本开支为505亿元人民币（约合75亿美元），环比上季度的677亿元人民币（约合100亿美元）有所下降。他进一步解释了未来的节奏： 本轮持续投入的最高峰集中在2027年和2028年上半年；2028年之后，随着国产算力供应链实现大规模、持续的扩量，我们将走过AI基础设施投入强度最高的阶段。 针对是否能更早实现正向自由现金流的",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-20T01:29:01+00:00"
+    },
+    {
+      "title": "黑色星期五！日韩股指跌近5%，软银大跌15%，SK海力士跌超7%，黄金跌破3600",
+      "link": "https://wallstreetcn.com/articles/3786330",
+      "summary": "Anthropic上市未能提振AI板块信心，受人工智能交易前景悲观情绪的影响，亚太市场周五开盘遭遇重挫，科技股首当其冲，全球股指正迈向近三年来最长连跌纪录。 MSCI亚太股票指数下跌1.7%，连续第七个交易日收跌，逼近4月以来最低收盘位，同步拖累MSCI全球指数走向2023年9月以来最长跌势。韩国综合股价指数下挫4.7%，日本日经225指数跌幅扩大至4.6%，日本最新通胀数据引发市场对央行加息的担忧，进一步压制科技股情绪。 Anthropic于周四挂牌首日收涨17%，但在盘后交易中随即回落逾5%，跌破92美元，低于上市首日最低点。华尔街多位策略师指出，这一表态折射出市场对AI商业化前景的深层疑",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-20T01:22:29+00:00"
+    },
+    {
+      "title": "My wife is bankrolling her family’s trips to New York and it’s draining our savings. Should I ask her to stop?",
+      "link": "https://www.marketwatch.com/story/my-wife-pays-thousands-of-dollars-for-her-family-to-visit-from-argentina-how-can-i-convince-her-to-stop-9381351c?mod=mw_rss_topstories",
+      "summary": "“Hotel rooms can cost as much as $400 per night.”",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-20T01:22:00+00:00"
+    },
+    {
+      "title": "连续第18个月维持不变！11月LPR报价出炉：5年期以上3.5%，1年期3%",
+      "link": "https://wallstreetcn.com/articles/3786332",
+      "summary": "中国11月贷款市场报价利率（LPR）11月20日出炉，1年期和5年期以上LPR均未调整。 中国人民银行授权全国银行间同业拆借中心公布显示，2026年11月20日贷款市场报价利率（LPR）为：1年期LPR为3.0%，5年期以上LPR为3.5%。以上LPR在下一次发布LPR之前有效。 作为主要政策利率的7天期逆回购利率自2025年5月下调后已经连续17个月保持不变，因此，LPR报价的定价基础本月未发生改变。LPR上一次调整是在2025年5月，1年期和5年期以上LPR均下调10个基点。 最新数据显示，10月企业新发放贷款加权平均利率约为2.9%，比上年同期低约0.2个百分点；个人住房新发放贷款加权平",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-20T01:01:03+00:00"
+    },
+    {
+      "title": "首度突破1万亿美元！AI加持，韩国出口创下新纪录",
+      "link": "https://wallstreetcn.com/articles/3786327",
+      "summary": "韩国年度商品出口额首次突破万亿美元，AI驱动的半导体出口热潮是这一历史性突破的核心引擎。 11月19日周四，据韩国产业通商资源部公布的初步数据， 韩国年度货物出口累计额正式越过万亿美元关口。 这一成就距韩国年出口额首次突破7000亿美元仅一年之隔，使韩国成为继美国、中国和德国之后，全球第四个实现这一目标的经济体。 出口激增也为韩国宏观经济提供了支撑。 韩国三季度GDP环比增长1%，超出市场预期。 然而，私人消费意外收缩，表明芯片热潮的红利尚未广泛传导至居民端，经济复苏的结构性隐忧依然存在。 科技资本开支浪潮带动出口全面走强，可持续性隐忧不容忽视 今年韩国出口增长的核心驱动力来自半导体与计算机类",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-20T00:56:22+00:00"
+    },
+    {
+      "title": "罕见！CoreWeave联合创始人3000万美元买入自己债券",
+      "link": "https://wallstreetcn.com/articles/3786328",
+      "summary": "CoreWeave联合创始人以一笔罕见的债券自购行动，向市场传递信心信号。 CoreWeave联合创始人兼首席战略官Brian Venturo周三（11月18日）在LinkedIn发文披露，他已买入该公司面值3000万美元的无担保债券，并计划持有至2031年10月1日到期。 “我对CoreWeave的信心从未如此之强，”他写道。 CoreWeave随后在社交平台X上转发了这一表态。 消息公布后，CoreWeave股价周四盘中一度涨逾10.5%，但随后受科技板块整体走弱拖累转跌，最终收跌6%。该股自10月初以来已累计下跌近50%。 值得注意的是，与高管买入股票须在两个工作日内向美国证券交易委员会",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-20T00:48:23+00:00"
+    },
+    {
+      "title": "Trendforce看跌2027年NAND闪存价格，因中国云厂砍单影响超过北美需求增长",
+      "link": "https://wallstreetcn.com/articles/3786329",
+      "summary": "全球NAND闪存市场正面临供需格局的系统性逆转。 11月19日，据集邦咨询（TrendForce）最新研究显示，受 供给端产能快速扩张 、 中国云服务商大幅削减企业级固态硬盘订单 以及 消费电子需求持续疲软 等三重因素叠加影响， NAND闪存合约价格预计将于2027年第一季度开始下滑，并在此后逐季扩大跌幅 。 在需求端，中国云服务商削减的企业级固态硬盘订单规模已超过美国云服务商的新增需求量，导致全球企业级存储需求净收缩。 与此同时，消费电子厂商为压缩物料成本而主动下调存储规格，进一步扩大需求缺口。 集邦咨询预计2027年全球NAND闪存位供给量将同比增长25%至30%，供过于求格局将贯穿全年 ",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-20T00:40:17+00:00"
+    },
+    {
+      "title": "Anthropic开盘大涨，一切看似完美！随后风云突变，美股跳水，发生了什么？",
+      "link": "https://wallstreetcn.com/articles/3786326",
+      "summary": "11月19日，Anthropic以83美元定价上市，开盘即飙升至111.50美元，全场沸腾。但Anthropic开盘即是高点，股价随即一路回落，收盘97美元，涨幅收窄至17%。 与此同时，美股大盘也是冲高回落的走势——纳斯达克从开盘涨逾2%，到收盘跌2.25%，单日振幅超过4个百分点。标普500当日蒸发市值约1.3万亿美元，与Anthropic此次IPO募资规模高度吻合。 美股盘中，做空机构Hunterbrook发布报告做空AMD，拖累AI板块整体承压；逾千亿美元的IPO融资规模抽走市场流动性，叠加做市商处于极端负gamma状态及月度期权到期压力，成为市场剧烈波动的核心推手。Anthropic",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-20T00:32:19+00:00"
+    },
+    {
+      "title": "Anthropic“超级IPO”：过半机构投资者“一股未得”，散户“凶猛买卖”",
+      "link": "https://wallstreetcn.com/articles/3786325",
+      "summary": "Anthropic史上最大规模IPO在机构与散户之间制造了截然不同的两个世界：超过半数机构投资者颗粒无收，而散户则以创纪录的交易量同时扮演买家与卖家。 据彭博最新报道， 约1200家机构投资者参与了此次认购，但超过半数未能获得任何配股 。Anthropic此次IPO连同七位联合创始人共募资1073亿美元，其中包括来自英伟达、谷歌及超微半导体（AMD）等投资者的260亿美元私募配售，从SpaceX手中夺得史上最大规模首次公开募股的桂冠。按发行价计算，Anthropic完全摊薄市值达1.5万亿美元。 与此同时，散户投资者的总交易额（含买入与卖出）预计将达到7亿至8亿美元，超越SpaceX上市首日的",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-20T00:15:17+00:00"
+    },
+    {
+      "title": "美国财政部发行“9天期票据”，上一次是在2008年7月",
+      "link": "https://wallstreetcn.com/articles/3786324",
+      "summary": "美国财政部正以越来越短的时间窗口管理其现金需求，一个尘封近17年的融资工具悄然重出江湖，令市场对美联储储备充裕程度的判断再添疑虑。 11月19日， 美国财政部以3.910%的利率售出150亿美元、期限仅9天的现金管理短期国库券（CMB），这是自2008年7月以来首次发行此类超短期工具，彼时IndyMac刚刚被接管，雷曼兄弟距离破产仅剩两个月。 此次“9天期票据”发行日期为11月24日，到期日为12月3日。拍卖需求尚算稳健，间接投标人获配比例达45.8%，高于10月同类标售时的18.3%，主要交易商获配比例则由77.6%降至52.0%。 自1980年有完整拍卖记录以来，同类工具总计仅发行过11次",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-19T23:58:46+00:00"
+    },
+    {
+      "title": "After Anthropic’s ‘bittersweet’ IPO, here’s what lies ahead",
+      "link": "https://www.marketwatch.com/story/after-anthropics-bittersweet-ipo-heres-what-lies-ahead-8c32fdb7?mod=mw_rss_topstories",
+      "summary": "Retail investors showed up, but Anthropic has so far failed to provide a broad lift to the technology sector.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-19T23:56:00+00:00"
+    },
+    {
+      "title": "Gap names new Athleta CEO, lowers full-year guidance",
+      "link": "https://www.cnbc.com/2026/11/19/gap-gap-q3-2026-earnings.html",
+      "summary": "Gap on Thursday announced Ashley Kechter as the new CEO of Athleta. The retailer also reported mixed fiscal third-quarter earnings.",
+      "source": "CNBC Business",
+      "category": "国际财经",
+      "published": "2026-11-19T23:54:20+00:00"
     },
     {
       "title": "苹果公司正开发自家AI智能体，以期与OpenAI、Anthropic竞争",
@@ -19,44 +283,12 @@
       "published": "2026-11-19T23:18:00+00:00"
     },
     {
-      "title": "黑客经第三方泄露Visa、万事达和摩根大通部分客户数据，三家称支付网络未中断",
-      "link": "https://wallstreetcn.com/articles/3786322",
-      "summary": "Visa、万事达和摩根大通相继证实，一家或多家第三方服务商遭黑客攻击，导致部分客户信息外泄。三家机构均强调，自身支付网络和核心系统未受波及，但这一事件仍加剧了市场对大型金融机构网络安全的担忧。 据摩根大通周四声明，黑客入侵了其一家外部合作方，获取了部分营销数据，可能涉及客户姓名和电子邮件地址，并重申该事件与本周早些时候的服务中断无关。 Visa表示，事件源于亚洲一家第三方公司，其自身系统未受影响，支付数据（如卡号）未被波及。 万事达则称泄露内容为\"特定福利项目部分持卡人的有限非支付信息\"，主要为电子邮件地址，网络运营未受任何冲击。 三家公司股价当日均有不同程度下跌。周四Visa股价收跌3.1%",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T23:14:43+00:00"
-    },
-    {
       "title": "These were the only stocks that rose amid the stock market’s wipeout Thursday",
       "link": "https://www.marketwatch.com/story/these-were-the-only-stocks-that-rose-amid-the-stock-markets-wipeout-thursday-1eaf32ba?mod=mw_rss_topstories",
       "summary": "All 11 sectors of the S&P 500 declined — 10 of them by more than 1% — but cybersecurity stocks bucked the weakness.",
       "source": "MarketWatch",
       "category": "国际财经",
       "published": "2026-11-19T23:11:00+00:00"
-    },
-    {
-      "title": "华尔街见闻早餐FM-Radio | 2026年11月20日",
-      "link": "https://wallstreetcn.com/articles/3786319",
-      "summary": "华见早安之声 要闻精选 中国 习近平 主持中俄美元首会晤。中俄美元首和平宣言。 习近平 就大国如何正确相处提出4点看法。 阿里 Q3净利润同比大增213%，云业务收入增长53%， AI投入推动资本开支增60%、负现金流扩大 。 电话会 ：20GW数据中心目标和资本开支计划可能降低，国产算力2028年放量，阿里云将恢复高速增长，现金流转正。 拼多多 Q3营收1083亿元不及预期， 经营利润同比增长25%， 股价收涨11%。 电话会 ：千亿扶持计划仍在投入期，持续加码商家扶持与供应链建设。 海外 史上最大IPO开盘狂热不足一小时， Anthropic 首秀涨34%后回吐半数涨幅 ，市值一度突破2万",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T23:10:02+00:00"
-    },
-    {
-      "title": "史上最大IPO首日冲高回落，标普、英伟达六连跌，道指跌破5万点，黄金再跌3%",
-      "link": "https://wallstreetcn.com/articles/3786267",
-      "summary": "Anthropic破纪录IPO未能提振市场信心，美股三大指数高开低走，道指自6月以来首次收在5万点下方，标普500与纳指跌幅均超2%。 Anthropic以1073亿美元的估值完成IPO，刷新SpaceX纪录，股价盘中一度较发行价83美元大涨34%，收报97.17美元，涨幅收窄至约17%。 然而上市未能阻止更大范围的抛售，纳斯达克100指数当日振幅逾4个百分点，从盘前上涨2.3%逆转至收跌2.2%。 标普500指数盘中市值蒸发约1.3万亿美元，与Anthropic IPO融资规模大体相当。 市场情绪的急剧逆转令投资者猝不及防。盈透证券首席策略师Steve Sosnick表示，标普500指数起初",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T22:55:31+00:00"
-    },
-    {
-      "title": "宝洁押注自动化降本：计划到2030年削减最多30%制造业员工，降本百亿美元",
-      "link": "https://wallstreetcn.com/articles/3786320",
-      "summary": "宝洁公司正推进其历史上规模最大的供应链重组之一。面对大宗商品成本高企与消费需求疲软的双重压力， 这家日用消费品巨头计划在本十年末前将制造及物流员工规模削减20%至30%。 宝洁首席产品供应官Luc Reynaert周四在一场投资者说明会上宣布了上述计划， 削减范围将涵盖合同工。该公司设定的目标是到2030年实现累计生产效率节约100亿美元。 宝洁上月已披露，大宗商品成本上升预计将在本财年带来14亿美元的额外支出。 此次裁员公告对市场而言是一个明确信号：宝洁将以自动化与精简人力作为应对利润承压的核心手段。该公司上一财年（截至去年6月）每股盈利仅增长1%，为2016年以来最低增速。 周四，宝洁收跌",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T22:53:14+00:00"
     },
     {
       "title": "Intuit’s downbeat outlook deepens Wall Street’s anxiety about software companies",
@@ -75,52 +307,12 @@
       "published": "2026-11-19T22:41:00+00:00"
     },
     {
-      "title": "美联储官员再放鹰，Goolsbee：通胀居高不下，不排除单次加息超常规可能",
-      "link": "https://wallstreetcn.com/articles/3786318",
-      "summary": "通胀持续超预期，美联储政策路径再度收紧。 芝加哥联储主席Austan Goolsbee周四表示， 在美联储下月议息会议上，所有政策选项均在考量之中，并未排除单次加息幅度超出常规的可能性。 这是近期多位联储官员就加快加息节奏发出的最新表态，显示决策层内部对通胀形势的担忧正在升温。 在此之前，美联储理事Christopher Waller周三重申，联储或需在12月会议上考虑加息50个基点。根据同日公布的10月会议纪要，会议上除Waller外，另有一位未具名官员也支持讨论更大幅度加息的可能性。 目前市场预计12月会议加息25基点概率为96.4%，加息50基点概率为3.6%。 通胀连续超预期，官员忧虑",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T22:19:07+00:00"
-    },
-    {
-      "title": "We’re in our 50s and terrified of a market crash. Should we put $400,000 of our $1 million retirement savings into an annuity?",
-      "link": "https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories",
-      "summary": "“We have a house worth $450,000. Our combined annual income is $125,000.”",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-19T22:15:00+00:00"
-    },
-    {
-      "title": "史上最大IPO开盘狂热不足一小时，Anthropic首秀涨34%后回吐半数涨幅，市值一度突破2万亿",
-      "link": "https://wallstreetcn.com/articles/3786269",
-      "summary": "AI独角兽Anthropic刷新了SpaceX五个月前才创下的上市募资纪录，登陆美股开盘大涨幅度超过暗盘预计最高水平、将公司市值推升至2万亿美元以上，但狂热很快“退烧”。股价开盘后半小时内较开盘价回落13%、创2008年以来大型美股IPO的最差半小时开局。 美东时间11月19日周四，Anthropic以ANT为股票代码正式在纳斯达克挂牌交易，开盘报111.50美元，较IPO发行价涨约34.3%，盘中最高触及115.10美元，涨幅扩大到约38.7%，此后持续回吐涨幅，刷新日低时回到至92.80美元下方、涨幅收窄至不足12%，到收盘，较发行价涨约17.1%，相当于回吐开盘时的半数涨幅，盘后还较收盘",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T22:14:13+00:00"
-    },
-    {
-      "title": "Meta拟推出AI设备Muse Charm，售价300美元，智能手表推迟至2027年",
-      "link": "https://wallstreetcn.com/articles/3786316",
-      "summary": "Meta正加快布局AI可穿戴硬件，计划以价格和通信服务补贴吸引消费者购买其新款AI设备Muse Charm，同时推迟智能手表上市，以便集中资源推进这款产品。 据The Information周四援引知情人士报道， Meta计划将Muse Charm定价为300美元，并为用户提供最长12个月的Verizon免费5G网络服务。 Muse Charm是一款配备屏幕的小巧设备，该设备内置5G连接功能，用户无需依赖Wi-Fi或随身携带手机，即可随时使用Meta旗下AI助手Muse。 Meta还计划通过用户补贴降低购买门槛，以推动产品普及。 为优先推进Muse Charm，Meta已将智能手表的大规模上市",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T22:12:22+00:00"
-    },
-    {
       "title": "Anthropic’s stock surges in its debut — and the rest of the market dives anyway",
       "link": "https://www.marketwatch.com/story/anthropics-stock-surges-in-its-debut-and-the-rest-of-the-market-dives-anyway-19671218?mod=mw_rss_topstories",
       "summary": "All four major U.S. stock indexes are now on pace for their worst week since President Trump’s “liberation day” tariffs of April 2025",
       "source": "MarketWatch",
       "category": "国际财经",
       "published": "2026-11-19T22:12:00+00:00"
-    },
-    {
-      "title": "拼多多大涨！Q3营收1083亿元不及预期，经营利润同比增长25%｜财报见闻",
-      "link": "https://wallstreetcn.com/articles/3786292",
-      "summary": "拼多多第三季度营收基本持平且低于市场预期，但调整后每ADS收益超预期。尽管收入增长放缓，费用支出收缩仍推动公司经营利润实现两位数增长，但净利润基本持平。 11月19日，拼多多公布截至2026年9月30日的第三季度未经审计财务业绩。 公司当季实现营收1083.41亿元人民币，同比增长约0.1%，低于市场预估的1152.1亿元；Non-GAAP摊薄每ADS收益为21.04元，高于市场预估的18.54元。 业务方面，公司两大收入板块表现分化。在线营销服务及其他收入同比增长12%，至598.19亿元；交易服务收入同比下降12%，至485.22亿元，后者下滑抵消了在线营销业务的部分增长。 盈利方面，销售",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T22:05:47+00:00"
     },
     {
       "title": "Markets are sending troubling signals about the state of the economy",
@@ -139,78 +331,6 @@
       "published": "2026-11-19T21:45:00+00:00"
     },
     {
-      "title": "Anthropic首日股价冲高回落，彭博称其IPO或标志AI行情终结",
-      "link": "https://wallstreetcn.com/articles/3786313",
-      "summary": "Anthropic的大规模IPO看上去是对AI交易的信心投票，但彭博经济学家给出了相反的解读。 11月19日，据彭博经济学经济学家Anna Wong的分析，自9月以来，也就是Anthropic招股书所载财务数据的截止期（9月30日），其每百万token的实际价格已大幅下滑。 同期token使用量激增，但市场份额并未随之上升，甚至小幅走低。公司在让渡了相当一部分价格溢价之后，并未换来更强的竞争地位。 简单来说，技 术领先和旺盛的AI需求，并没有转化为持久的定价能力。对投资者而言，这意味着AI交易赖以支撑的估值逻辑，正面临一次来自基本面的检验。 周四Anthropic以ANT为代码正式挂牌，上市首",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T21:40:53+00:00"
-    },
-    {
-      "title": "尽管财报超预期、尽管新管理层称“一切如常”，英伟达依旧“六连跌”",
-      "link": "https://wallstreetcn.com/articles/3786239",
-      "summary": "英伟达交出超预期财报，新任管理层高调亮相、承诺薪酬激励，却依然未能止住股价颓势。 周四，公司股价再度下跌超3.3%，早盘股价一度反弹近5%，但最终逐步回吐涨幅转跌，创下连续六日下跌纪录。 英伟达临时CEO科莱特·克雷斯（Colette Kress）在周二的分析师电话会议上首次以CEO身份主持财报发布，上调公司销售预期，并就旗下新兴云客户支持政策作出表态。周三盘前英伟达股价一度大涨约4%。 然而，这轮涨势在会后全部回吐，股价终以下跌约2%至3%收盘。道琼斯援引华尔街人士反应称， 市场并不买账管理层\"一切如常\"的定调。 自创始人黄仁勋辞去CEO职务的消息曝光以来，英伟达股价已累计下跌约13%，距5",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T21:32:41+00:00"
-    },
-    {
-      "title": "Why Micron, Broadcom and other AI stocks gave up their gains Thursday",
-      "link": "https://www.marketwatch.com/story/why-micron-intel-and-other-ai-stocks-are-getting-a-lift-on-thursday-cf6f59f8?mod=mw_rss_topstories",
-      "summary": "The Anthropic enthusiasm has faded while China concerns have intensified.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-19T21:27:00+00:00"
-    },
-    {
-      "title": "Gap names new Athleta CEO, lowers full-year guidance",
-      "link": "https://www.cnbc.com/2026/11/19/gap-gap-q3-2026-earnings.html",
-      "summary": "Gap on Thursday announced Ashley Kechter as the new CEO of Athleta. The retailer also reported mixed fiscal third-quarter earnings.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-19T21:22:23+00:00"
-    },
-    {
-      "title": "UnitedHealth’s stock tumbles after government signals crackdown on Medicare Advantage fraud",
-      "link": "https://www.marketwatch.com/story/unitedhealths-stock-keeps-plunging-after-government-signals-crackdown-on-medicare-advantage-fraud-c4770a45?mod=mw_rss_topstories",
-      "summary": "UnitedHealth Group’s stock fell again on Thursday amid a tough week in which the government pledged to crack down on Medicare Advantage fraud and lawmakers renewed calls for Medicare for All.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-19T21:22:00+00:00"
-    },
-    {
-      "title": "Why Walmart is making a bigger bet on fast-food delivery",
-      "link": "https://www.marketwatch.com/story/why-walmart-is-making-a-bigger-bet-on-fast-food-delivery-27263735?mod=mw_rss_topstories",
-      "summary": "The retail giant says around 90% of spending at fast-food chains occurs within a few miles from a Walmart.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-19T21:13:00+00:00"
-    },
-    {
-      "title": "SpaceX周四拟发债60亿美元，完成全部320亿美元债券融资，用于购买英伟达芯片",
-      "link": "https://wallstreetcn.com/articles/3786315",
-      "summary": "SpaceX正寻求在周四完成至少320亿美元的债务发售，为英伟达AI芯片采购提供资金。 据彭博援引知情人士透露， 本次发售包括约60亿美元债券，规模已从此前的40亿美元上调，于周四向投资者开放认购；其余约260亿美元票据此前已完成配售。 全部320亿美元债务定于周四定价，债务由三部分组成。高盛与Apollo主导此次交易。 这笔融资的特殊之处在于结构。 资金将通过名为Saturn Funding Trust的特殊目的载体购买英伟达AI芯片，该载体由Apollo支持的一家实体管理，SpaceX初期以约五年期租约使用这些芯片。 债务偿付与租金挂钩，而融资安排使借款不进入SpaceX资产负债表，公司预",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T21:10:19+00:00"
-    },
-    {
-      "title": "苹果赢下英国用户数据诉讼首回合，政府秘密令状被迫公开",
-      "link": "https://wallstreetcn.com/articles/3786314",
-      "summary": "苹果在与英国政府的隐私拉锯战中赢下了关键一局。 11月19日，据彭博报道， 英国调查权力法庭作出最新裁决，认定英国内政部“未能证明”公开秘密命令会损害国家安全 。这意味着，与以往绝大多数全程保密的监控案件不同， 苹果及两家非营利组织发起的这场法律挑战，接下来大部分程序将首次在公开法庭上进行。 此前，英国政府依据法律秘密向苹果发出一份“技术能力通知”（TCN），要求苹果交出用户的加密数据。 按照英国法律，这类命令附带严格的“封口令”，收到通知的公司甚至不能对外承认命令的存在，政府也一直以“国家安全”为由拒绝公开。苹果随后向专门审查秘密监控的英国调查权力法庭提起诉讼。 苹果发言人对此表示欢迎，称这",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T21:10:09+00:00"
-    },
-    {
-      "title": "英伟达之后下一个目标！做空报告重挫AMD",
-      "link": "https://wallstreetcn.com/articles/3786312",
-      "summary": "对冲基金Hunterbrook Capital发布做空报告，重挫AMD股价。该报告指出AMD在客户融资安排上存在循环交易隐患，且对AI支出放缓高度敏感，AMD方面否认相关指控。 周四，AMD股价盘中最大跌幅达11%，低至470.56美元，为当日纳斯达克100指数成分股中跌幅最大的个股。该股此前年内涨幅已逾一倍。截至发稿，AMD下跌8.9%。 Hunterbrook Capital表示，目前持有AMD空头仓位，同时做多一篮子可比标的。AMD则回应称，Hunterbrook的\"相关指控歪曲了AMD的业务实践与合作关系\"。 循环交易隐患：AMD承诺过多、现金偏少 Hunterbrook在报告中指出，",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T21:09:56+00:00"
-    },
-    {
       "title": "Walmart hikes outlook as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
       "link": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
       "summary": "Walmart said it saw strength with store-fulfilled pickup and delivery in its fiscal third quarter.",
@@ -219,132 +339,12 @@
       "published": "2026-11-19T19:58:30+00:00"
     },
     {
-      "title": "特朗普9月高位买入英伟达站岗，SpaceX也加仓了",
-      "link": "https://wallstreetcn.com/articles/3786311",
-      "summary": "特朗普9月在英伟达股票上的买卖操作，因政策利益冲突问题再度引发外界关注。 据周四公开的最新财务披露文件， 美国总统特朗普9月买入总价最高达26.5万美元的英伟达股票，同期卖出最高1.5万美元 。联邦官员在财务披露表格中以区间形式申报资产价值。这份披露由特朗普于11月1日签署，由美国政府伦理办公室对外发布。 与此同时，特朗普政府正就英伟达先进芯片出口政策展开讨论，相关决定将直接影响这家芯片巨头的业务前景。 这一买入动作发生在黄仁勋婚外情丑闻曝光前，9月英伟达股价运行在210至230区间，目前已经跌至150。 特朗普本人表示，对于有关黄仁勋的相关指控，他感到\"震惊\"。 美国国会议员已就特朗普对黄仁",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-19T19:02:40+00:00"
-    },
-    {
       "title": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
       "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261119a.htm",
       "summary": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
       "source": "Federal Reserve",
       "category": "宏观数据",
       "published": "2026-11-19T16:00:00+00:00"
-    },
-    {
-      "title": "基金市场概况与资产配置观点（11.09—11.15）",
-      "link": "https://www.tmtpost.com/8211721.html",
-      "summary": "腾讯济安指数上周下跌2.71%。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T14:34:30+00:00"
-    },
-    {
-      "title": "重庆汽车与医药制造双线并进，产业升级如何转化为企业长期价值？",
-      "link": "https://www.tmtpost.com/8211669.html",
-      "summary": "重庆上市公司已有一批表现较突出的企业，但不同企业将产业优势转化为长期价值的能力仍有差异。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T14:17:37+00:00"
-    },
-    {
-      "title": "价值判断：跌停板的投资机会和风险提示（11月17日）｜上市公司观察",
-      "link": "https://www.tmtpost.com/8211651.html",
-      "summary": "本期三只均为本轮第一根跌停，收盘对济安定价的溢价在一倍至一点四倍之间。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T14:12:51+00:00"
-    },
-    {
-      "title": "价值判断：涨停板的投资机会和风险提示（11月17日）｜上市公司观察",
-      "link": "https://www.tmtpost.com/8211631.html",
-      "summary": "本期四只标的分两头：三只首板收在济安定价之下，折价从四成二到五成六；瀛通通讯两连板，收在定价的两倍以上。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T13:56:01+00:00"
-    },
-    {
-      "title": "从英伟达到苹果、微软：同样拥抱AI，为什么企业的财富命运截然不同？",
-      "link": "https://www.tmtpost.com/8211622.html",
-      "summary": "本文先讨论AI改变的四条决策前提，再借助七阶行为逻辑，观察不同领导方式可能带来的财富后果。这里讨论的是作用机制，不意味着某一种行为逻辑必然对应某一种财富结果。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T13:48:30+00:00"
-    },
-    {
-      "title": "大衣只卖499元，中产在山姆捡漏MaxMara平替",
-      "link": "https://www.tmtpost.com/8211170.html",
-      "summary": "继续改变品类认知。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T11:02:56+00:00"
-    },
-    {
-      "title": "国产GPU，风浪越大鱼越贵",
-      "link": "https://www.tmtpost.com/8210657.html",
-      "summary": "黄仁勋卸任英伟达CEO，全球AI算力格局发生转变，中国AI产业面临供给风险挑战。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T10:58:06+00:00"
-    },
-    {
-      "title": "谁吃掉了名创优品的利润？",
-      "link": "https://www.tmtpost.com/8210698.html",
-      "summary": "持续增收不增利。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T10:48:31+00:00"
-    },
-    {
-      "title": "哈尔滨买了“迪士尼”",
-      "link": "https://www.tmtpost.com/8210987.html",
-      "summary": "哈尔滨第一次向别人借冬天。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T10:48:28+00:00"
-    },
-    {
-      "title": "国产芯片正在准备三级跳",
-      "link": "https://www.tmtpost.com/8210830.html",
-      "summary": "国产芯片迎来新一轮资本投入，从产品量产、工艺迭代到争夺客户订单，产业竞争正在升级。长鑫、长江存储加速进入高端市场，国产AI芯片则面临英伟达整套计算系统的挑战。融资只是起点，能否持续迭代、赢得下一代产品订单，才是国产芯片实现“三级跳”的关键。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T10:48:26+00:00"
-    },
-    {
-      "title": "业绩重压下，航天机电继续处理海外亏损光伏项目",
-      "link": "https://www.tmtpost.com/8211254.html",
-      "summary": "航天机电的业绩拐点还没到来",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T10:27:07+00:00"
-    },
-    {
-      "title": "腾讯的“存亡时刻”写在利润表与现金流里",
-      "link": "https://www.tmtpost.com/8211143.html",
-      "summary": "一家年赚2000亿的公司怎么就“生死存亡”了？",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T10:11:19+00:00"
-    },
-    {
-      "title": "睿能科技拟控股博泰智能，5亿作价押注锂电，2027年周期隐忧待考",
-      "link": "https://www.tmtpost.com/8211241.html",
-      "summary": "睿能拟控股博泰智能。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T10:06:43+00:00"
-    },
-    {
-      "title": "钛媒体硅谷峰会震撼开启，马斯克背后传奇投资人、Google X创始人、全球AI及投资领军者齐聚斯坦福",
-      "link": "https://www.tmtpost.com/8210519.html",
-      "summary": "Google X创始人、马斯克背后长期资本创始人、洛克菲勒国际主席、斯坦福顶尖科学家，哥伦比亚大学AI监管权威专家、还有多位AI创新与生命科技领军人物齐聚，提前预判2027，全球技术与资金将走向何处？",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-19T10:05:15+00:00"
     },
     {
       "title": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
