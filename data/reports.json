@@ -1,5 +1,86 @@
 [
   {
+    "title": "以光之名，照亮未来",
+    "org": "中邮证券",
+    "date": "2026-11-20",
+    "link": "https://data.eastmoney.com/report/info/AP202611201831906835.html",
+    "rating": "买入",
+    "stock": "宇瞳光学",
+    "code": "300790"
+  },
+  {
+    "title": "跟踪点评：引进空间组学新平台，看好虚拟细胞产业前景",
+    "org": "中邮证券",
+    "date": "2026-11-20",
+    "link": "https://data.eastmoney.com/report/info/AP202611201831906837.html",
+    "rating": "买入",
+    "stock": "诺禾致源",
+    "code": "688315"
+  },
+  {
+    "title": "单季利润回升，AI商业化提速",
+    "org": "中邮证券",
+    "date": "2026-11-20",
+    "link": "https://data.eastmoney.com/report/info/AP202611201831906834.html",
+    "rating": "买入",
+    "stock": "合合信息",
+    "code": "688615"
+  },
+  {
+    "title": "慧能泰并表推动经营再上台阶，算力电源链布局全面",
+    "org": "国信证券",
+    "date": "2026-11-20",
+    "link": "https://data.eastmoney.com/report/info/AP202611201831906738.html",
+    "rating": "增持",
+    "stock": "东微半导",
+    "code": "688261"
+  },
+  {
+    "title": "2026年三季报点评：发行创作有望回暖，期待《流浪地球3》",
+    "org": "西南证券",
+    "date": "2026-11-20",
+    "link": "https://data.eastmoney.com/report/info/AP202611201831906363.html",
+    "rating": "",
+    "stock": "中国电影",
+    "code": "600977"
+  },
+  {
+    "title": "出海商业化元年，从单品走向平台型创新药企",
+    "org": "山西证券",
+    "date": "2026-11-20",
+    "link": "https://data.eastmoney.com/report/info/AP202611201831893535.html",
+    "rating": "增持",
+    "stock": "海创药业",
+    "code": "688302"
+  },
+  {
+    "title": "公司首次覆盖报告：无源器件强通胀时代的MPO&DFAU领军企业",
+    "org": "开源证券",
+    "date": "2026-11-20",
+    "link": "https://data.eastmoney.com/report/info/AP202611201831891382.html",
+    "rating": "买入",
+    "stock": "致尚科技",
+    "code": "301486"
+  },
+  {
+    "title": "新股覆盖研究：傲拓科技",
+    "org": "华金证券",
+    "date": "2026-11-20",
+    "link": "https://data.eastmoney.com/report/info/AP202611201831889553.html",
+    "rating": "",
+    "stock": "傲拓科技",
+    "code": "688845"
+  },
+  {
+    "title": "新股覆盖研究：猎奇智能",
+    "org": "华金证券",
+    "date": "2026-11-20",
+    "link": "https://data.eastmoney.com/report/info/AP202611201831889395.html",
+    "rating": "",
+    "stock": "猎奇智能",
+    "code": "301661"
+  },
+  {
     "title": "电镀增量显著，高温硫酸陆续交付",
     "org": "中邮证券",
     "date": "2026-11-20",
@@ -7,6 +88,15 @@
     "rating": "买入",
     "stock": "盛美上海",
     "code": "688082"
+  },
+  {
+    "title": "D-2570三期银屑病彰显BIC潜质，看好价值兑现",
+    "org": "中邮证券",
+    "date": "2026-11-20",
+    "link": "https://data.eastmoney.com/report/info/AP202611201831889358.html",
+    "rating": "增持",
+    "stock": "益方生物",
+    "code": "688382"
   },
   {
     "title": "2026Q3净利润大幅增长，盈利明显改善",
@@ -808,68 +898,5 @@
     "rating": "增持",
     "stock": "招商积余",
     "code": "001914"
-  },
-  {
-    "title": "电子材料利润高增，光刻胶与新产品持续放量",
-    "org": "太平洋",
-    "date": "2026-11-17",
-    "link": "https://data.eastmoney.com/report/info/AP202611171831771445.html",
-    "rating": "买入",
-    "stock": "彤程新材",
-    "code": "603650"
-  },
-  {
-    "title": "销售订单规模扩张，先进封装材料持续突破",
-    "org": "太平洋",
-    "date": "2026-11-17",
-    "link": "https://data.eastmoney.com/report/info/AP202611171831771432.html",
-    "rating": "买入",
-    "stock": "华海诚科",
-    "code": "688535"
-  },
-  {
-    "title": "璞泰来2026年三季报点评：扣非向上，海外+一体化布局持续推进",
-    "org": "太平洋",
-    "date": "2026-11-17",
-    "link": "https://data.eastmoney.com/report/info/AP202611171831771395.html",
-    "rating": "买入",
-    "stock": "璞泰来",
-    "code": "603659"
-  },
-  {
-    "title": "事件点评报告：收购巴西第二大水泥企业，国际化布局再进一步",
-    "org": "华龙证券",
-    "date": "2026-11-17",
-    "link": "https://data.eastmoney.com/report/info/AP202611171831769667.html",
-    "rating": "增持",
-    "stock": "华新建材",
-    "code": "600801"
-  },
-  {
-    "title": "公司深度报告：资源+工程驱动业绩增长，矿产铅锌有望大幅提升",
-    "org": "开源证券",
-    "date": "2026-11-17",
-    "link": "https://data.eastmoney.com/report/info/AP202611171831769305.html",
-    "rating": "买入",
-    "stock": "中色股份",
-    "code": "000758"
-  },
-  {
-    "title": "液冷领先龙头、乘行业东风高增可期",
-    "org": "东吴证券",
-    "date": "2026-11-17",
-    "link": "https://data.eastmoney.com/report/info/AP202611171831765011.html",
-    "rating": "增持",
-    "stock": "曙光数创",
-    "code": "920808"
-  },
-  {
-    "title": "液压主业加速成长，多元布局启新程",
-    "org": "东吴证券",
-    "date": "2026-11-17",
-    "link": "https://data.eastmoney.com/report/info/AP202611171831764927.html",
-    "rating": "买入",
-    "stock": "艾迪精密",
-    "code": "603638"
   }
 ]

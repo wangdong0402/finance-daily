@@ -1,8 +1,43 @@
 {
-  "updated": "2026-11-20 05:29",
+  "updated": "2026-11-20 13:56",
   "periods": {
     "20d": {
       "inflow": [
+        {
+          "name": "半导体",
+          "change": 0.0,
+          "main_net": 121.76
+        },
+        {
+          "name": "通信设备",
+          "change": 0.0,
+          "main_net": 49.24
+        },
+        {
+          "name": "软件开发",
+          "change": 0.0,
+          "main_net": 47.03
+        },
+        {
+          "name": "消费电子",
+          "change": 0.0,
+          "main_net": 37.15
+        },
+        {
+          "name": "自动化设备",
+          "change": 0.0,
+          "main_net": 30.55
+        },
+        {
+          "name": "汽车零部件",
+          "change": 0.0,
+          "main_net": 24.25
+        },
+        {
+          "name": "IT服务",
+          "change": 0.0,
+          "main_net": 22.43
+        },
         {
           "name": "证券",
           "change": 0.0,
@@ -14,44 +49,9 @@
           "main_net": 18.45
         },
         {
-          "name": "电池",
+          "name": "光学光电子",
           "change": 0.0,
-          "main_net": 14.93
-        },
-        {
-          "name": "医疗器械",
-          "change": 0.0,
-          "main_net": 12.33
-        },
-        {
-          "name": "保险",
-          "change": 0.0,
-          "main_net": 10.18
-        },
-        {
-          "name": "汽车整车",
-          "change": 0.0,
-          "main_net": 7.82
-        },
-        {
-          "name": "工程机械",
-          "change": 0.0,
-          "main_net": 6.89
-        },
-        {
-          "name": "文化传媒",
-          "change": 0.0,
-          "main_net": 6.63
-        },
-        {
-          "name": "游戏",
-          "change": 0.0,
-          "main_net": 6.47
-        },
-        {
-          "name": "白色家电",
-          "change": 0.0,
-          "main_net": 5.28
+          "main_net": 17.73
         }
       ],
       "outflow": [
@@ -66,9 +66,24 @@
           "main_net": -9.3
         },
         {
+          "name": "建筑材料",
+          "change": 0.0,
+          "main_net": -3.75
+        },
+        {
+          "name": "建筑装饰",
+          "change": 0.0,
+          "main_net": -2.22
+        },
+        {
           "name": "港口航运",
           "change": 0.0,
           "main_net": -1.09
+        },
+        {
+          "name": "油气开采及服务",
+          "change": 0.0,
+          "main_net": -0.77
         },
         {
           "name": "钢铁",
@@ -86,24 +101,9 @@
           "main_net": -0.38
         },
         {
-          "name": "厨卫电器",
+          "name": "包装印刷",
           "change": 0.0,
-          "main_net": -0.16
-        },
-        {
-          "name": "贸易",
-          "change": 0.0,
-          "main_net": -0.11
-        },
-        {
-          "name": "公路铁路运输",
-          "change": 0.0,
-          "main_net": -0.1
-        },
-        {
-          "name": "环境治理",
-          "change": 0.0,
-          "main_net": -0.08
+          "main_net": -0.32
         }
       ]
     },
