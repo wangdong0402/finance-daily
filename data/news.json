@@ -1,7 +1,151 @@
 {
-  "updated": "2026-11-21T23:46:36.192919+00:00",
+  "updated": "2026-11-22T05:25:26.974644+00:00",
   "count": 70,
   "items": [
+    {
+      "title": "跨境收款之后，中国公司盯上智能体支付的新生意",
+      "link": "https://www.tmtpost.com/8213773.html",
+      "summary": "中国公司正在通过智能体支付，从赚通道费走向把经营能力捆绑进企业的日常工作流。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-22T04:42:29+00:00"
+    },
+    {
+      "title": "小鹏交出一份增长财报，盈利拐点为何还没来？",
+      "link": "https://www.tmtpost.com/8213686.html",
+      "summary": "小鹏三季度营收与交付量双创新高，但盈利压力犹存。海外扩张与物理AI商业化，能否成为新的增长动力？",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-22T04:36:59+00:00"
+    },
+    {
+      "title": "“别抱侥幸心理了，科技股投资者”！摩根大通劝退科技股：“还有很多人没卖”",
+      "link": "https://wallstreetcn.com/articles/3786447",
+      "summary": "美股科技板块创下2020年3月以来最大单周跌幅之际，摩根大通仓位情报团队的John Schlegel在最新周报中化用了但丁《神曲》名句开篇：“交易科技股者，放弃一切希望吧”。 摩根大通与高盛的最新数据均显示，尽管对冲基金已大幅降仓，但握有大额筹码的长线资管机构和散户仍未大规模离场。 过去一周，标普500指数连跌七日，周五收于6910点，失守7000点关口；纳斯达克100指数重挫10.4%，费城半导体指数（SOX）大跌17%。抛售同步波及大宗商品与加密货币，黄金周跌9.5%，比特币跌14.2%，铜价跌超9%。 两家投行均警告，单靠对冲基金降仓不足以确认市场见底；摩根大通更指出，当前盘面正愈发贴近",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-22T03:56:21+00:00"
+    },
+    {
+      "title": "阻止美联储加息的最快方式：美股“以死相逼”",
+      "link": "https://wallstreetcn.com/articles/3786446",
+      "summary": "美银首席投资策略师Michael Hartnett在本周最新的Flow Show指出，阻止美联储继续加息的最快方式，是让股市回吐2026年的全部涨幅。这一目标位对应标普500指数6,845点，而该指数上周五收于6,925点，距离触发仅剩80点、约1.2%的空间。在连续六周维持\"避险\"立场后，Hartnett的框架正从预测变为市场现实。 上周美股录得\"解放日\"以来最差单周表现。 标普500单周下跌8.4%，连续第七个交易日走低并跌破200日均线，进入技术性回调 ；纳斯达克100较10月纪录高点回落19.8%，逼近熊市边缘；VIX一度突破39。据Hartnett统计，标普500年内涨幅已从一周前的",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-22T03:38:21+00:00"
+    },
+    {
+      "title": "Lean社区通过“形式化验证”：相信Anthropic数学家对黎曼猜想的证明是正确的",
+      "link": "https://wallstreetcn.com/articles/3786445",
+      "summary": "11月21日，开源形式化验证社区Lean与Mathlib发布联合声明，确认Anthropic数学家Levent Alpöge对黎曼猜想的证明成立。两家机构联合背书称： “完全有信心Alpöge对黎曼猜想的证明是正确的”。 11月20日，即Anthropic上市次日，Alpöge宣布与AI模型Claude合作找到了黎曼猜想及广义黎曼猜想的证明方法，并公开逾1700万行Lean源码。因超过25万页的文字版证明难以阅读而未公开，加之宣布时点紧贴IPO，外界一度对其真伪与商业动机存疑，预测平台上的相关赔率也反映出市场分歧。 24小时后，Lean社区用四重形式化核验给出了计算机级别的回应。但机器验证与人",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-22T03:11:28+00:00"
+    },
+    {
+      "title": "2027见闻历，财经人的桌面必备“神历”",
+      "link": "https://wallstreetcn.com/articles/3782813",
+      "summary": "本文来自华尔街见闻，欢迎下载APP查看更多",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-22T01:39:45+00:00"
+    },
+    {
+      "title": "上市第二天就“差点破发”！Anthropic的“豪华投行承销团”面临压力",
+      "link": "https://wallstreetcn.com/articles/3786442",
+      "summary": "史上最大规模IPO在上市次日遭遇剧烈抛售。 人工智能巨头Anthropic（ANT）周五盘中一度大跌15%，最低仅比IPO发行价高出5美分，收盘跌幅收窄至8.5%，报88.91美元，单日市值蒸发约1090亿美元。 这场剧烈震荡浇灭了市场借Anthropic扭转AI板块颓势的预期。周五，英伟达、Meta和甲骨文等AI核心标的随Anthropic同步下挫，令纳斯达克市值蒸发4万亿美元。市场动荡也波及Anthropic的主要竞争对手OpenAI——后者正推进新一轮估值达1.25万亿美元的巨额融资，并急于在明年登陆公开市场。 不过，接近Anthropic及主承销商的人士坚称此次IPO依然成功，强调公司",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-22T01:25:46+00:00"
+    },
+    {
+      "title": "My husband is happily retired at 64 and thinks I should keep working. Is he being fair?",
+      "link": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories",
+      "summary": "“I’m exhausted. My alarm goes off at 6 a.m., and I have a 50-minute commute.”",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-22T01:15:00+00:00"
+    },
+    {
+      "title": "云南农商银行获批筹建，123家涉改机构将归入同一法人",
+      "link": "https://wallstreetcn.com/articles/3786439",
+      "summary": "11月20日，国家金融监督管理总局公布批复，同意筹建云南农村商业银行股份有限公司（以下简称云南农商银行）。 这次合并涉及云南省农村信用社联合社（以下简称云南省联社），以及省内122家州（市）、县（市、区）农信法人机构； 按照方案，123家涉改机构将以新设合并方式组建云南农商银行，新银行成立后，将依法承继这些机构的业务、财产、债权债务及其他权利义务。 按云南农信披露的2025年末数据，全省农信系统资产规模超过1.4万亿元，存款和贷款余额合计接近2万亿元，不良贷款余额和不良贷款率已连续六年下降，新银行的注册资本尚未披露。 云南此前曾在部分州市推进统一法人改革。 2022年底，迪庆、怒江两家州级农商",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-22T01:13:51+00:00"
+    },
+    {
+      "title": "下周重磅日程：“美联储最爱通胀指标”、小米、美团、B站、戴尔财报",
+      "link": "https://wallstreetcn.com/articles/3786441",
+      "summary": "11月22日 - 11月30日当周重磅财经事件一览，以下均为北京时间： 本周美股遭遇年内最猛烈抛售，纳指重挫10.02%抹平年内涨幅，AI投资前景疑虑持续发酵。经历暴跌后，下周进入感恩节缩短交易周，见闻财经日历提醒下周重点关注： 宏观层面聚焦美股企稳之问。 美国10月PCE即“美联储最爱的通胀指标”与三季度GDP修正值下周三同日出炉，机构预期核心PCE同比由3.1%升至3.2%以上，若超预期将加剧加息担忧、继续压制高估值科技股；下周五“黑五”购物高峰则检验高物价与美国股市财富缩水下的消费韧性，这或是AI板块之外行情的关键支撑。 此外，感恩节周四美股全天休市、黑色星期五于美东13:00提前收市，",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-22T01:13:17+00:00"
+    },
+    {
+      "title": "Edge AI Daily 早报（11月22日）",
+      "link": "https://www.tmtpost.com/8213684.html",
+      "summary": "英伟达同时面临治理追问、加州传票与SEC调查传闻，AI芯片估值经历重估；亚马逊拟以最高75亿美元收购Decart，AWS将LLM缓存推向集群。谷歌调整TPU出货并研究Agent记忆迁移，OpenAI把对抗性蒸馏防护推进API层。Anthropic黎曼猜想主张待验证，IPO定价为模型公司提供估值参照。Meta Muse用户破千万，AI脱衣应用引发参议员质询；特斯拉FSD V15与马斯克上海行受关注；GrapheneOS指控谷歌限制Android开源生态。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-22T01:06:08+00:00"
+    },
+    {
+      "title": "科伦系迎80后新帅，185亿“输液大王”扶子“上位”",
+      "link": "https://www.tmtpost.com/8213633.html",
+      "summary": "执掌科伦三十载后，身家185亿元的“输液大王”刘革新正式交棒给儿子刘思川。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-22T01:02:09+00:00"
+    },
+    {
+      "title": "可灵为何开始发力“图片”？",
+      "link": "https://www.tmtpost.com/8212803.html",
+      "summary": "两家头部AI公司几乎前后脚更新图像模型。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-22T01:02:06+00:00"
+    },
+    {
+      "title": "全球Meta一家独大，中国AI眼镜为何还在混战？",
+      "link": "https://www.tmtpost.com/8213674.html",
+      "summary": "中国AI眼镜，胜负未分。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-22T01:02:01+00:00"
+    },
+    {
+      "title": "多家美国银行更新网银协议，AI智能体越权交易或由客户担责",
+      "link": "https://wallstreetcn.com/articles/3786440",
+      "summary": "在不久后的11月24日，富国银行新版《在线访问协议》即将生效。 根据新增条款，客户把网银登录凭证交给第三方AI智能体，或以其他方式授权其代为操作后，除非法律法规另有规定，银行将把智能体发起的交易视为客户本人授权。 即使智能体误解指令或超出权限，协议也将相应责任归给客户。客户撤销授权时，须留存记录并通知银行。在法律允许的范围内，客户仍须对通知银行前智能体的操作负责。 花旗银行也在11月更新了《在线用户协议》。 若客户先将登录凭证交给第三方智能体，凭证随后被转交或泄露，他人使用这些凭证进行的操作，按协议仍将被视为客户授权。 有关智能体误操作和越权的责任条款，也保留了适用法律另有规定的情形。 几乎同",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-22T00:51:05+00:00"
+    },
+    {
+      "title": "特锐德、LG抢跑进场，AI抢电抢到气田门口，气电先端走69%份额，真正的账单还在后面",
+      "link": "https://www.tmtpost.com/8213639.html",
+      "summary": "数据中心抢购稳定电力，重画美国气电定价与电网调峰；国内东数西算调峰账本同步重算，订单兑现待观察。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-22T00:45:35+00:00"
+    },
+    {
+      "title": "印度大米多到装不下，价格为何还在涨？",
+      "link": "https://www.tmtpost.com/8212802.html",
+      "summary": "印度不再为缺粮而发愁，却面临库存高企、出口涨价的新难题。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-22T00:45:30+00:00"
+    },
+    {
+      "title": "My wife is bankrolling her family’s trips to New York and it’s draining our savings. Should I ask her to stop?",
+      "link": "https://www.marketwatch.com/story/my-wife-pays-thousands-of-dollars-for-her-family-to-visit-from-argentina-how-can-i-convince-her-to-stop-9381351c?mod=mw_rss_topstories",
+      "summary": "“Hotel rooms can cost as much as $400 per night.”",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-22T00:03:00+00:00"
+    },
     {
       "title": "I’m in my 40s. Should I accept a lower pension in exchange for naming my husband or child as a beneficiary?",
       "link": "https://www.marketwatch.com/story/im-in-my-40s-should-i-accept-a-lower-pension-in-exchange-for-naming-my-husband-or-child-as-a-beneficiary-b2352059?mod=mw_rss_topstories",
@@ -35,14 +179,6 @@
       "published": "2026-11-21T19:45:00+00:00"
     },
     {
-      "title": "My husband is happily retired at 64 and thinks I should keep working. Is he being fair?",
-      "link": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories",
-      "summary": "“I’m exhausted. My alarm goes off at 6 a.m., and I have a 50-minute commute.”",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-21T19:23:00+00:00"
-    },
-    {
       "title": "America is definitely rich enough to fix Social Security and Medicare. Here’s how.",
       "link": "https://www.marketwatch.com/story/america-is-definitely-rich-enough-to-fix-social-security-and-medicare-heres-how-30678aa5?mod=mw_rss_topstories",
       "summary": "This one, simple, low-pain tax solves all the problems.",
@@ -73,14 +209,6 @@
       "source": "MarketWatch",
       "category": "国际财经",
       "published": "2026-11-21T16:50:00+00:00"
-    },
-    {
-      "title": "Micron and Sandisk stocks might look like bargains, but analysts say that’s actually a red flag",
-      "link": "https://www.marketwatch.com/story/micron-and-sandisk-stocks-might-look-like-bargains-but-analysts-say-thats-actually-a-red-flag-da1f1f5d?mod=mw_rss_topstories",
-      "summary": "Cheap valuation multiples for memory stocks have historically been associated with peak pricing levels, according to analysts.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-21T15:35:00+00:00"
     },
     {
       "title": "International first class is over for U.S. airlines. Enter the mega business-class cabin",
@@ -201,134 +329,6 @@
       "source": "钛媒体",
       "category": "产业科技",
       "published": "2026-11-21T05:05:42+00:00"
-    },
-    {
-      "title": "利润掉队，扫地茅要过紧日子",
-      "link": "https://www.tmtpost.com/8213409.html",
-      "summary": "还有领先吗？",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-21T05:05:34+00:00"
-    },
-    {
-      "title": "生死存亡时刻，老钱腾讯也“慌”了",
-      "link": "https://www.tmtpost.com/8213296.html",
-      "summary": "马化腾也坐不住了。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-21T05:05:32+00:00"
-    },
-    {
-      "title": "锡价一周跌超10%，全球突然不缺锡了？",
-      "link": "https://www.tmtpost.com/8213240.html",
-      "summary": "印尼矿业政策再添变数，产能恢复与AI需求预期分歧扰动锡价。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-21T05:05:30+00:00"
-    },
-    {
-      "title": "东南亚AI中间商之死",
-      "link": "https://www.tmtpost.com/8213274.html",
-      "summary": "算力中间商的淘金时代，结束了。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-21T05:05:28+00:00"
-    },
-    {
-      "title": "欧盟少了9.5亿件跨境包裹，国内卖家的长尾生意还能做吗？",
-      "link": "https://www.tmtpost.com/8213269.html",
-      "summary": "今年7月1日起，欧盟取消了价值不超过150欧元的进口小包裹关税豁免，对包裹内不同海关税目类别的商品分别征收3欧元临时关税。11月1日起，欧盟又增加了2欧元的海关处理费。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-21T05:05:27+00:00"
-    },
-    {
-      "title": "在泡泡玛特拆盒的人，不为谁拆",
-      "link": "https://www.tmtpost.com/8213227.html",
-      "summary": "逛门店的小笔记。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-21T05:05:24+00:00"
-    },
-    {
-      "title": "腾讯，终于有了“赌性”",
-      "link": "https://www.tmtpost.com/8213199.html",
-      "summary": "腾讯，终于有了“赌性”",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-21T05:05:22+00:00"
-    },
-    {
-      "title": "Seedance、MiniMax和Qwen image修改能力测试：3轮连改，谁更好用？",
-      "link": "https://www.tmtpost.com/8213159.html",
-      "summary": "看看谁更听指挥",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-21T05:05:03+00:00"
-    },
-    {
-      "title": "高盛交易员“重拾2018年剧本”：至今清晰记得“12月24日那天，客户问为什么跌这么多？我完全不知道”",
-      "link": "https://wallstreetcn.com/articles/3786426",
-      "summary": "美股连续七日下跌，高盛衍生品交易员警告，当前市场正显现2018年四季度暴跌行情的相似特征，本轮调整可能尚未结束。 高盛衍生品策略师Brian Garrett在周五发布的报告中指出，当 前市场走势、技术面和交易结构均与2018年有明显相似之处。他通过对比两轮行情的指数跌幅，评估主要股指可能面临的进一步调整空间。 Garrett回忆起2018年12月24日的市场崩跌。 当时，一位客户问他：“为什么今天跌了这么多？”Garrett坦言：“完全不知道。” 即便是经验丰富的交易员，面对突如其来的剧烈抛售，也难以判断市场究竟为何失控。 不过，历史相似并不意味着行情必然重复。此次市场调整中，信用市场尚未出现",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-21T03:44:58+00:00"
-    },
-    {
-      "title": "融资收购SK海力士？孙正义一度考虑“万亿豪赌”，已接洽华尔街",
-      "link": "https://wallstreetcn.com/articles/3786425",
-      "summary": "软银创始人孙正义的AI扩张野心，再度瞄准全球存储芯片巨头。 据The Information近日报道援引知情人士， 孙正义近期曾就收购韩国SK海力士一事接触华尔街机构，探讨融资可能性，交易规模或高达1万亿美元。不过，软银随后确认曾探讨这一方案，但表示目前已不再积极推进。 软银发言人称：“软银会探索许多机会，这一项目目前已不在积极考虑之列。” 若这项收购计划最终落地，软银原本有望直接切入全球存储芯片市场，进一步扩大在AI供应链中的影响力。但近万亿美元的交易规模，加上融资和监管障碍，使这一构想难以推进。 尽管收购计划已暂时搁置，孙正义对AI基础设施的布局野心仍值得关注。随着存储芯片成为AI算力扩张",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-21T03:04:16+00:00"
-    },
-    {
-      "title": "2.3万亿美元“灰飞烟灭”！美国芯片股上一次跌这么惨，还是2001年，英伟达已经“跌掉一个亚马逊”",
-      "link": "https://wallstreetcn.com/articles/3786423",
-      "summary": "AI交易的三大支柱同时松动，美国科技股遭遇猛烈抛售，市场对AI泡沫和经济增长放缓的担忧迅速升温。 本周， 费城半导体指数（SOX）重挫逾10%，创2001年以来最惨烈的单周表现，芯片板块整体市值蒸发约2.3万亿美元。英伟达股价连续第七周下跌，创2008年以来最长连跌纪录，自历史高点以来市值缩水约2.7万亿美元，相当于跌掉一个亚马逊。 抛售潮迅速蔓延至整个美股市场。标普500指数连续七个交易日下跌，单周跌幅超过9%，创近年来最大单周跌幅；纳斯达克100指数单周下跌逾10%，年内涨幅悉数回吐。VIX一度突破40，市场恐慌情绪急剧升温。 值得注意的是，英伟达财报表现亮眼、Anthropic创纪录IP",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-21T02:27:20+00:00"
-    },
-    {
-      "title": "“抛售”带来“更多抛售”！高盛预测“未来一周美股将出现另一波大规模抛售”",
-      "link": "https://wallstreetcn.com/articles/3786422",
-      "summary": "美股新一轮剧烈抛售正在蔓延，高盛警告，市场可能陷入“抛售引发更多抛售”的恶性循环，未来一周仍有大规模卖盘等待释放。 11月21日，据彭博报道，高盛交易员周五发布研报称， 该行“恐慌指数”已升至10分满分中的9分，系统性投资者的抛售压力全面扩散。根据高盛模型，即使市场保持平稳，趋势追踪基金未来一周仍可能抛售数百亿美元股票；若市场进一步下跌，卖盘规模还将显著扩大。 本轮跌势已对科技股造成沉重打击。纳斯达克100指数周五单日重挫5.6%，创2020年3月以来最大单周跌幅；费城半导体指数大跌11%，英伟达自10月6日高点以来累计下挫近50%。与此同时，抛售开始波及散户偏好股票及加密货币相关资产，市场压",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-21T01:35:48+00:00"
-    },
-    {
-      "title": "4万亿“灰飞烟灭”、疫情以来最惨烈的一周！美国科技股跌入熊市",
-      "link": "https://wallstreetcn.com/articles/3786414",
-      "summary": "美国科技股遭遇新冠疫情暴发以来最惨烈的一周，AI投资热潮降温引发的恐慌情绪席卷华尔街。 周五， 纳斯达克100指数 单日重挫5.6%，当周累计下跌10.4%，创逾六年来最大单周跌幅，较10月6日盘中高点累计下跌已逾20%，正式步入熊市区间。 本周科技股市值蒸发逾4万亿美元。 到周五收盘，纳指抹平今年内累计涨幅转跌 标普500指数 同期下跌3.7%，较10月高点回调超过10%，进入技术性调整区域。 无论是业绩和指引超预期强劲的英伟达财报，还是Anthropic创纪录的IPO募资，本周都未能拯救美股 与此同时，Anthropic上市首日大涨17%的喜悦昙花一现，次日即告回落，这家AI明星公司的IP",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-21T01:16:15+00:00"
-    },
-    {
-      "title": "“数学界第一神山”被攻克？Anthropic数学家宣称证明黎曼猜想，给出1700万行Lean源码，AI证明文件超过25万页",
-      "link": "https://wallstreetcn.com/articles/3786421",
-      "summary": "困扰数学界167年的黎曼猜想，或迎来首次重大突破，但AI生成的证明能否经受数学界检验，仍是最大悬念。 11月20日， Anthropic数学家Levent Alpöge发布声明，称自己与AI模型Claude合作，找到了黎曼猜想及广义黎曼猜想（GRH）的证明方法，并同步公布超过1700万行Lean形式化代码。 由于声明发布恰逢Anthropic上市次日，这项数学突破也引发了外界对发布时间及商业动机的讨论。 Alpöge将证明以Lean语言写成，分为14个压缩文件发布。与此同时， 他与Claude生成的文字版证明超过25万页，但因篇幅过长、难以阅读而没有公开。 目前，尚无数学家正式确认这一证明成立",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-21T01:14:53+00:00"
-    },
-    {
-      "title": "2027见闻历，财经人的桌面必备“神历”",
-      "link": "https://wallstreetcn.com/articles/3782813",
-      "summary": "本文来自华尔街见闻，欢迎下载APP查看更多",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-21T01:02:55+00:00"
-    },
-    {
-      "title": "费城联储主席Paulson：不排除连续加息，但强调“有节奏”",
-      "link": "https://wallstreetcn.com/articles/3786418",
-      "summary": "费城联储主席Anna Paulson表示，愿意考虑在即将举行的政策会议上连续加息以遏制通胀，但强调美联储应以\"审慎\"步伐推进，给家庭、企业和银行留出调整时间。 11月20日周五，Paulson在接受彭博新闻采访时明确表态， 利率走向\"非常清晰\"，\"需要继续走高\"。 她表示对连续加息\"持开放态度\"，认为这是\"完全合理的选项\"，但同时拒绝承诺具体节奏，称\"我既不承诺隔次会议加息，也不承诺每次会议加息\"。 这一表态进一步强化了市场对美联储12月加息的预期。目前，多位官员已公开支持在12月8日至9日的华盛顿会议上再度收紧政策。 投资者亦普遍预期12月及1月将相继加息，尽管科技股大幅下挫已令后者的概率有",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-21T00:52:24+00:00"
     },
     {
       "title": "Federal Reserve announces College Fed Challenge winners",
