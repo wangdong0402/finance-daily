@@ -488,9 +488,27 @@ function lazyRenderCharts() {{
           tooltip: {{ mode: 'index', intersect: false }}
         }},
         scales: {{
-          x: {{ grid: {{ display: false }}, ticks: {{ color: textColor, maxRotation: 45, minRotation: 45, font: {{ size: 10 }} }} }},
-          y: {{ grid: {{ color: gridColor, drawBorder: false }}, ticks: {{ color: textColor, font: {{ size: 10 }} }} }},
-          y1: {{ display: false, grid: {{ display: false }} }}
+          x: {{ 
+            grid: {{ display: false }}, 
+            ticks: {{ 
+              color: textColor, 
+              maxRotation: 60, 
+              minRotation: 45, 
+              font: {{ size: 10 }},
+              autoSkip: true,
+              maxTicksLimit: 12,
+              callback: function(value, index, values) {{
+                const rawLabel = this.getLabelForValue(value);
+                let str = rawLabel.replace('年份', '').replace('月份', '月');
+                if (str.includes('-')) {{
+                  const parts = str.split('-');
+                  if (parts.length >= 2) return parts[0].slice(2) + '-' + parts[1]; // 例如 2026-10 -> 26-10
+                }}
+                return str;
+              }}
+            }} 
+          }},
+          y: {{ grid: {{ color: gridColor, drawBorder: false }}, ticks: {{ color: textColor, font: {{ size: 10 }} }} }}
         }}
       }}
     }};
@@ -554,7 +572,26 @@ function openChartModal(chartId, title) {{
         tooltip: {{ mode: 'index', intersect: false }}
       }},
       scales: {{
-        x: {{ grid: {{ display: false }}, ticks: {{ color: textColor, maxRotation: 60, minRotation: 45, font: {{ size: 11 }}, autoSkip: true, maxTicksLimit: 15 }} }},
+        x: {{ 
+          grid: {{ display: false }}, 
+          ticks: {{ 
+            color: textColor, 
+            maxRotation: 90, 
+            minRotation: 45, 
+            font: {{ size: 11 }}, 
+            autoSkip: true, 
+            maxTicksLimit: 24,
+            callback: function(value, index, values) {{
+              const rawLabel = this.getLabelForValue(value);
+              let str = rawLabel.replace('年份', '').replace('月份', '月');
+              if (str.includes('-')) {{
+                const parts = str.split('-');
+                if (parts.length >= 2) return parts[0].slice(2) + '-' + parts[1];
+              }}
+              return str;
+            }}
+          }} 
+        }},
         y: {{ grid: {{ color: gridColor, drawBorder: false }}, ticks: {{ color: textColor, font: {{ size: 11 }} }} }},
         y1: {{ display: false, grid: {{ display: false }} }}
       }}
