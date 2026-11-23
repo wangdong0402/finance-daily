@@ -16,7 +16,7 @@ MACRO_CONFIGS = [
     {"id": "gdzctz", "name": "固定资产投资 - 同比 (%)", "category": "外贸", "api": "macro_china_fixed_asset_investment", "x_col": "月份", "y_col": "同比增长", "type": "line", "color": "#6366f1"},
 ]
 
-def extract_series(df, x_col_fuzzy, y_col_fuzzy, target_len=13):
+def extract_series(df, x_col_fuzzy, y_col_fuzzy, target_len=60):
     try:
         col_x = [c for c in df.columns if x_col_fuzzy in c][0]
         col_y = [c for c in df.columns if y_col_fuzzy in c][0]
@@ -36,7 +36,7 @@ def extract_series(df, x_col_fuzzy, y_col_fuzzy, target_len=13):
         print(f"    [警告] 数据解析失败: {e}")
         return None
 
-def resample_monthly(df, date_col, value_cols, target_len=13):
+def resample_monthly(df, date_col, value_cols, target_len=60):
     try:
         df = df.copy()
         df['dt'] = pd.to_datetime(df[date_col], errors='coerce')
@@ -73,7 +73,7 @@ def main():
         col_date = [c for c in df_money.columns if "月份" in c][0]
         cols = [[c for c in df_money.columns if f"M{i}" in c and "同比" in c][0] for i in range(3)]
         df_money['sort_date'] = df_money[col_date].apply(lambda x: str(x))
-        df_money = df_money.sort_values(by='sort_date').tail(13)
+        df_money = df_money.sort_values(by='sort_date').tail(60)
         new_charts["money_supply"] = {"name": "货币供应量同比增速 (%)", "category": "货币", "type": "multi_line", "labels": [str(x)[:10] for x in df_money[col_date]], "series": [{"name": f"M{i}", "color": ["#ef4444", "#10b981", "#3b82f6"][i], "data": [round(float(v), 2) for v in df_money[cols[i]]]} for i in range(3)]}
     except Exception as e:
         print(f"  [失败] 货币供应量异常: {e}")
@@ -122,7 +122,7 @@ def main():
                 return f"{match.group(1)}-{int(match.group(2)):02d}"
             return str(d)
         df_lpr['sort_date'] = df_lpr['date'].apply(parse_date_to_sortable)
-        df_lpr = df_lpr.sort_values(by='sort_date').reset_index(drop=True).tail(13)
+        df_lpr = df_lpr.sort_values(by='sort_date').reset_index(drop=True).tail(60)
         
         new_charts["lpr"] = {
             "name": "贷款市场报价利率 LPR (%)", "category": "货币", "type": "line", "color": "#f59e0b",
@@ -217,9 +217,9 @@ def main():
         col_date = next((c for c in df_pe.columns if "日期" in c), None)
         col_val = next((c for c in df_pe.columns if "滚动市盈率" in c or "等权静态市盈率" in c or "市盈率" in c), None)
         if col_date and col_val:
-            monthly, labels = resample_monthly(df_pe, col_date, [col_val], target_len=36)
+            monthly, labels = resample_monthly(df_pe, col_date, [col_val], target_len=60)
             if monthly is not None:
-                new_charts["hs300_pe"] = {"name": "沪深300 滚动市盈率 (PE-TTM，近三年)", "category": "大类资产", "type": "line", "color": "#8b5cf6", "labels": labels, "data": [round(float(v), 2) for v in monthly[col_val]]}
+                new_charts["hs300_pe"] = {"name": "沪深300 滚动市盈率 (PE-TTM，近五年)", "category": "大类资产", "type": "line", "color": "#8b5cf6", "labels": labels, "data": [round(float(v), 2) for v in monthly[col_val]]}
             else:
                 raise ValueError("数据解析为空")
     except Exception as e: 
@@ -236,9 +236,9 @@ def main():
         col_date = next((c for c in df_pe500.columns if "日期" in c), None)
         col_val = next((c for c in df_pe500.columns if "滚动市盈率" in c or "等权静态市盈率" in c or "市盈率" in c), None)
         if col_date and col_val:
-            monthly, labels = resample_monthly(df_pe500, col_date, [col_val], target_len=36)
+            monthly, labels = resample_monthly(df_pe500, col_date, [col_val], target_len=60)
             if monthly is not None:
-                new_charts["zz500_pe"] = {"name": "中证500 滚动市盈率 (PE-TTM，近三年)", "category": "大类资产", "type": "line", "color": "#ec4899", "labels": labels, "data": [round(float(v), 2) for v in monthly[col_val]]}
+                new_charts["zz500_pe"] = {"name": "中证500 滚动市盈率 (PE-TTM，近五年)", "category": "大类资产", "type": "line", "color": "#ec4899", "labels": labels, "data": [round(float(v), 2) for v in monthly[col_val]]}
             else:
                 raise ValueError("数据解析为空")
     except Exception as e: 
@@ -271,7 +271,7 @@ def main():
         
         if sh_clean is not None and sz_clean is not None:
             merged = pd.concat([sh_clean, sz_clean]).groupby('dt').sum().sort_index()
-            monthly = merged.resample('ME').last().dropna().tail(13)
+            monthly = merged.resample('ME').last().dropna().tail(60)
             if not monthly.empty:
                 labels = [d.strftime('%Y-%m') for d in monthly.index]
                 col_total = [c for c in sh_clean.columns if "融资融券" in c][0]
