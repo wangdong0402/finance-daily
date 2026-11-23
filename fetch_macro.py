@@ -4,17 +4,84 @@ import os
 import pandas as pd
 import re
 import time
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+import requests
 
+# 常量配置
 MACRO_CONFIGS = [
+    # 💵 货币与信用
     {"id": "rmb_loan", "name": "新增人民币贷款 (亿元)", "category": "货币", "api": "macro_china_rmb_loan_ths", "x_col": "月份", "y_col": "总额", "type": "bar", "color": "#8b5cf6"},
-    {"id": "shrzgm", "name": "社会融资规模增量 (亿元)", "category": "货币", "api": "macro_china_social_financing", "x_col": "月份", "y_col": "社会融资规模增量", "type": "bar", "color": "#3b82f6"},
+    # 社融数据已单独处理，此处移除
+    {"id": "lpr", "name": "贷款市场报价利率 LPR (%)", "category": "货币", "api": "interest_rate_lpr_em", "x_col": "日期", "y_col": "LPR1Y", "type": "line", "color": "#f59e0b"},
+    # 📈 物价与通胀
     {"id": "cpi", "name": "居民消费价格指数 (CPI) - 同比 (%)", "category": "物价", "api": "macro_china_cpi", "x_col": "月份", "y_col": "全国-同比增长", "type": "line", "color": "#ef4444"},
     {"id": "ppi", "name": "工业生产者出厂价格 (PPI) - 同比 (%)", "category": "物价", "api": "macro_china_ppi", "x_col": "月份", "y_col": "当月同比增长", "type": "line", "color": "#10b981"},
     {"id": "qyspjg", "name": "企业商品价格指数 - 同比 (%)", "category": "物价", "api": "macro_china_cgpi", "x_col": "月份", "y_col": "同比增长", "type": "line", "color": "#ec4899"},
+    # 🏭 工业与景气
     {"id": "gyzjz", "name": "工业增加值 - 同比 (%)", "category": "工业", "api": "macro_china_industrial_value_added", "x_col": "月份", "y_col": "同比增长", "type": "bar", "color": "#14b8a6"},
+    # 🏗️ 投资与外贸
     {"id": "gdzctz", "name": "固定资产投资 - 同比 (%)", "category": "外贸", "api": "macro_china_fixed_asset_investment", "x_col": "月份", "y_col": "同比增长", "type": "line", "color": "#6366f1"},
 ]
+
+def fetch_social_financing_from_pboc(months=60):
+    """
+    通过 Pipeworx 网关直接调用 PBOC 社融数据（无需 API Key）。
+    返回符合原有格式的 DataFrame：包含 '月份' 和 '社会融资规模增量' 两列。
+    """
+    url = "https://gateway.pipeworx.io/china-macro/mcp"
+    payload = {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "tools/call",
+        "params": {
+            "name": "china_social_financing",
+            "arguments": {"months": min(months, 60)}  # 最多取 60 个月
+        }
+    }
+    headers = {"Content-Type": "application/json"}
+    
+    try:
+        resp = requests.post(url, json=payload, headers=headers, timeout=30)
+        resp.raise_for_status()
+        result = resp.json()
+        
+        series = result.get("result", {}).get("series", [])
+        if not series:
+            print("[警告] PBOC 社融接口返回的 series 为空")
+            return None
+        
+        records = []
+        for item in series:
+            month_str = item.get("month")  # 格式 YYYY-MM
+            inc_val = item.get("monthly_increment_cny_100m")  # 单位：亿元
+            if month_str and inc_val is not None:
+                records.append({
+                    "月份": month_str,
+                    "社会融资规模增量": float(inc_val)
+                })
+        
+        if not records:
+            return None
+        
+        df = pd.DataFrame(records)
+        # 按时间倒序排列，与原 AKShare 返回格式保持一致
+        df = df.sort_values(by="月份", ascending=False).reset_index(drop=True)
+        print(f"[成功] 从 PBOC 获取社融数据，共 {len(df)} 条，最新月份: {df.iloc[0]['月份']}")
+        return df
+        
+    except Exception as e:
+        print(f"[失败] PBOC 社融接口异常: {e}")
+        return None
+
+def clean_text(value, max_len=500):
+    if not value:
+        return ""
+    if isinstance(value, list):
+        value = "，".join([str(v).strip() for v in value if v])
+    text = str(value).strip().replace("\n", " ").replace("\r", " ")
+    if len(text) > max_len:
+        return text[:max_len] + "..."
+    return text
 
 def extract_series(df, x_col_fuzzy, y_col_fuzzy, target_len=60):
     try:
@@ -82,12 +149,34 @@ def main():
             print("    [兜底] 已恢复历史货币供应量数据")
     time.sleep(1)
 
-    # 2. 遍历基础配置
+    # 2. 社融（使用 PBOC 新数据源）
+    print("[信息] 抓取 社会融资规模增量 (PBOC)...")
+    try:
+        df_shrzgm = fetch_social_financing_from_pboc(months=60)
+        if df_shrzgm is not None:
+            result = extract_series(df_shrzgm, "月份", "社会融资规模增量")
+            if result:
+                new_charts["shrzgm"] = {
+                    "name": "社会融资规模增量 (亿元)", "category": "货币",
+                    "type": "bar", "color": "#3b82f6", **result
+                }
+            else:
+                raise ValueError("数据解析为空")
+        else:
+            raise ValueError("接口返回 None")
+    except Exception as e:
+        print(f"  [失败] 社融异常: {e}")
+        if "shrzgm" in old_charts:
+            new_charts["shrzgm"] = old_charts["shrzgm"]
+            print("    [兜底] 已恢复历史 社融 数据")
+    time.sleep(1)
+
+    # 3. 遍历其余配置指标（LPR、CPI、PPI等）
     for cfg in MACRO_CONFIGS:
         print(f"[信息] 抓取 {cfg['name']} ...")
         try:
             df = getattr(ak, cfg["api"])()
-            result = extract_series(df, cfg["x_col"], cfg["y_col"])
+            result = extract_series(df, cfg["x_col"], cfg["y_col"], target_len=60)
             if result:
                 new_charts[cfg["id"]] = {"name": cfg["name"], "category": cfg["category"], "type": cfg["type"], "color": cfg["color"], **result}
             else:
@@ -98,44 +187,6 @@ def main():
                 new_charts[cfg["id"]] = old_charts[cfg["id"]]
                 print(f"    [兜底] 已恢复历史 {cfg['name']} 数据")
         time.sleep(1)
-
-    # 3. LPR (精确匹配新版中文列名)
-    print("[信息] 抓取 贷款市场报价利率 LPR ...")
-    try:
-        df_lpr = ak.interest_rate_lpr_em()
-        
-        # 直接使用日志中返回的中文列名
-        col_date = "日期"
-        col_val = "1年期LPR"
-        
-        if col_date not in df_lpr.columns or col_val not in df_lpr.columns:
-            raise ValueError(f"列名不匹配，实际列名: {df_lpr.columns.tolist()}")
-            
-        df_lpr = df_lpr[[col_date, col_val]].copy()
-        df_lpr.columns = ['date', 'value']
-        df_lpr['value'] = pd.to_numeric(df_lpr['value'], errors='coerce')
-        df_lpr = df_lpr.dropna()
-        
-        def parse_date_to_sortable(d):
-            match = re.search(r'(\d{4})\D*(\d{1,2})', str(d))
-            if match:
-                return f"{match.group(1)}-{int(match.group(2)):02d}"
-            return str(d)
-        df_lpr['sort_date'] = df_lpr['date'].apply(parse_date_to_sortable)
-        df_lpr = df_lpr.sort_values(by='sort_date').reset_index(drop=True).tail(60)
-        
-        new_charts["lpr"] = {
-            "name": "贷款市场报价利率 LPR (%)", "category": "货币", "type": "line", "color": "#f59e0b",
-            "labels": [str(x)[:10] for x in df_lpr['date']],
-            "data": [round(float(v), 2) for v in df_lpr['value']]
-        }
-        print("    [成功] LPR 抓取完成")
-    except Exception as e:
-        print(f"  [失败] LPR 异常: {e}")
-        if "lpr" in old_charts:
-            new_charts["lpr"] = old_charts["lpr"]
-            print("    [兜底] 已恢复历史 LPR 数据")
-    time.sleep(1)
 
     # 4. PMI
     print("[信息] 抓取 PMI ...")
@@ -178,7 +229,7 @@ def main():
         col_cn = next((c for c in df_bond.columns if "中国" in c and "10年" in c), None)
         col_us = next((c for c in df_bond.columns if "美国" in c and "10年" in c), None)
         if col_cn and col_us:
-            monthly, labels = resample_monthly(df_bond, "日期", [col_cn, col_us])
+            monthly, labels = resample_monthly(df_bond, "日期", [col_cn, col_us], target_len=60)
             if monthly is not None:
                 new_charts["bond_yield"] = {"name": "10年期国债收益率 (%)", "category": "大类资产", "type": "multi_line", "labels": labels, "series": [{"name": "中国", "color": "#ef4444", "data": [round(float(v), 2) for v in monthly[col_cn]]}, {"name": "美国", "color": "#3b82f6", "data": [round(float(v), 2) for v in monthly[col_us]]}]}
             else:
@@ -198,7 +249,7 @@ def main():
         col_val = next((c for c in df_fx.columns if "美元" in c), None)
         if col_date and col_val:
             df_fx[col_val] = pd.to_numeric(df_fx[col_val], errors='coerce') / 100.0
-            monthly, labels = resample_monthly(df_fx, col_date, [col_val])
+            monthly, labels = resample_monthly(df_fx, col_date, [col_val], target_len=60)
             if monthly is not None:
                 new_charts["exchange_rate"] = {"name": "美元兑人民币中间价", "category": "大类资产", "type": "line", "color": "#10b981", "labels": labels, "data": [round(float(v), 4) for v in monthly[col_val]]}
             else:
