@@ -25,11 +25,11 @@ MACRO_CONFIGS = [
 
 def fetch_social_financing_from_ak(months=60):
     """
-    AKShare 原生社融接口 macro_china_shrzgm
+    AKShare新版接口 macro_china_social_financing
     返回符合原有格式的 DataFrame：包含 '月份' 和 '社会融资规模增量' 两列。
     """
     try:
-        df = ak.macro_china_shrzgm()
+        df = ak.macro_china_social_financing()
         df = df[["月份", "社会融资规模增量"]].copy()
         df["社会融资规模增量"] = pd.to_numeric(df["社会融资规模增量"], errors="coerce")
         df = df.dropna()
@@ -116,7 +116,7 @@ def main():
             print("    [兜底] 已恢复历史货币供应量数据")
     time.sleep(1)
 
-    # 2. 社融（AKShare原生）
+    # 2. 社融（AKShare新版）
     print("[信息] 抓取 社会融资规模增量 (AKShare)...")
     try:
         df_shrzgm = fetch_social_financing_from_ak(months=60)
