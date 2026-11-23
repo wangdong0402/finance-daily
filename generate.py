@@ -185,7 +185,6 @@ def build_sentiment_html(data):
     </div>
     '''
 
-
 def build_macro_html(macro_data):
     charts = macro_data.get("charts", {})
     categories = {
@@ -225,14 +224,8 @@ def build_macro_html(macro_data):
         else:
             for cfg in cat_charts:
                 key = [k for k, v in charts.items() if v == cfg][0]
-                # 【修改点】：加上了 onclick 事件和“点击放大”提示
-                charts_html += f'''
-                <div class="macro-card" onclick="openChartModal('chart-{key}', '{cfg['name']}')" style="cursor: pointer;">
-                  <h3>{cfg['name']} <span style="font-size:12px; font-weight:normal; color:#98989d; float:right;">点击放大 🔍</span></h3>
-                  <div style="position: relative; height: 200px; width: 100%;">
-                    <canvas id="chart-{key}"></canvas>
-                  </div>
-                </div>'''
+                # 这里改成了紧凑的拼接，避免缩进报错
+                charts_html += f'<div class="macro-card" onclick="openChartModal(\'chart-{key}\', \'{cfg["name"]}\')" style="cursor: pointer;"><h3>{cfg["name"]} <span style="font-size:12px; font-weight:normal; color:#98989d; float:right;">点击放大 🔍</span></h3><div style="position: relative; height: 200px; width: 100%;"><canvas id="chart-{key}"></canvas></div></div>'
         
         cat_contents += f'<div id="subtab-{cat_id}" class="sub-tab-content" style="display: {display};">{charts_html}</div>'
 
@@ -242,16 +235,6 @@ def build_macro_html(macro_data):
       <div class="sub-tab-container">{cat_contents}</div>
     </div>
     '''
-        
-        cat_contents += f'<div id="subtab-{cat_id}" class="sub-tab-content" style="display: {display};">{charts_html}</div>'
-
-    return f'''
-    <div class="macro-wrapper">
-      <div class="sub-tabs">{cat_nav}</div>
-      <div class="sub-tab-container">{cat_contents}</div>
-    </div>
-    '''
-
 
 def main():
     news_data = load_json(NEWS_FILE, {"updated": "", "count": 0, "items": []})
