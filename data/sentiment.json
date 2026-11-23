@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23 03:56",
+  "updated": "2026-11-23 04:15",
   "periods": {
     "20d": {
       "inflow": [
@@ -216,54 +216,54 @@
     "5d": {
       "inflow": [
         {
-          "name": "银行",
+          "name": "家居用品",
           "change": 0.0,
-          "main_net": 44.26
+          "main_net": 1.46
         },
         {
-          "name": "保险",
+          "name": "服装家纺",
           "change": 0.0,
-          "main_net": 13.83
+          "main_net": 0.28
         },
         {
-          "name": "白酒",
+          "name": "医疗器械",
           "change": 0.0,
-          "main_net": 9.84
+          "main_net": -0.22
         },
         {
-          "name": "电力",
+          "name": "贸易",
           "change": 0.0,
-          "main_net": 9.46
+          "main_net": -0.23
         },
         {
-          "name": "电网设备",
+          "name": "环境治理",
           "change": 0.0,
-          "main_net": 8.26
+          "main_net": -0.99
         },
         {
-          "name": "白色家电",
+          "name": "综合",
           "change": 0.0,
-          "main_net": 6.52
+          "main_net": -1.07
         },
         {
-          "name": "证券",
+          "name": "厨卫电器",
           "change": 0.0,
-          "main_net": 4.91
+          "main_net": -1.12
         },
         {
-          "name": "公路铁路运输",
+          "name": "纺织制造",
           "change": 0.0,
-          "main_net": 4.82
+          "main_net": -1.46
         },
         {
-          "name": "港口航运",
+          "name": "互联网电商",
           "change": 0.0,
-          "main_net": 4.69
+          "main_net": -1.79
         },
         {
-          "name": "饮料制造",
+          "name": "非金属材料",
           "change": 0.0,
-          "main_net": 4.21
+          "main_net": -2.22
         }
       ],
       "outflow": [
@@ -276,11 +276,6 @@
           "name": "通信设备",
           "change": 0.0,
           "main_net": -40.9
-        },
-        {
-          "name": "元件",
-          "change": 0.0,
-          "main_net": -33.18
         },
         {
           "name": "小金属",
@@ -316,6 +311,11 @@
           "name": "光学光电子",
           "change": 0.0,
           "main_net": -18.16
+        },
+        {
+          "name": "自动化设备",
+          "change": 0.0,
+          "main_net": -17.41
         }
       ]
     }
