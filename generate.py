@@ -258,6 +258,9 @@ def main():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>个人财经终端</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
@@ -497,12 +500,14 @@ function lazyRenderCharts() {{
               font: {{ size: 10 }},
               autoSkip: true,
               maxTicksLimit: 12,
-              callback: function(value, index, values) {{
-                const rawLabel = this.getLabelForValue(value);
-                let str = rawLabel.replace('年份', '').replace('月份', '月');
-                if (str.includes('-')) {{
-                  const parts = str.split('-');
-                  if (parts.length >= 2) return parts[0].slice(2) + '-' + parts[1]; // 例如 2026-10 -> 26-10
+              callback: function(value) {{
+                const str = this.getLabelForValue(value);
+                // 匹配 2021年11月、2021-11、202111 等格式
+                const match = str.match(/(\d{4})\D*(\d{1,2})/);
+                if (match) {{
+                  const year = match[1].slice(2); // 取后两位年
+                  const month = match[2].padStart(2, '0'); // 补齐两位月
+                  return year + '-' + month;
                 }}
                 return str;
               }}
@@ -581,12 +586,13 @@ function openChartModal(chartId, title) {{
             font: {{ size: 11 }}, 
             autoSkip: true, 
             maxTicksLimit: 24,
-            callback: function(value, index, values) {{
-              const rawLabel = this.getLabelForValue(value);
-              let str = rawLabel.replace('年份', '').replace('月份', '月');
-              if (str.includes('-')) {{
-                const parts = str.split('-');
-                if (parts.length >= 2) return parts[0].slice(2) + '-' + parts[1];
+            callback: function(value) {{
+              const str = this.getLabelForValue(value);
+              const match = str.match(/(\d{4})\D*(\d{1,2})/);
+              if (match) {{
+                const year = match[1].slice(2);
+                const month = match[2].padStart(2, '0');
+                return year + '-' + month;
               }}
               return str;
             }}
