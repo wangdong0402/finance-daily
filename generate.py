@@ -323,9 +323,9 @@ h2 a:hover {{ text-decoration: underline; }}
   .back-to-top {{ background: #f5f5f7; color: #000; }}
 }}
 /* 图表放大弹窗样式 */
-.chart-modal-content { position: fixed; top: 10vh; left: 2vw; width: 96vw; height: 80vh; background: #fff; border-radius: 16px; z-index: 1001; display: none; flex-direction: column; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transform: scale(0.95); opacity: 0; transition: all 0.3s; }
-.chart-modal-content.show { display: flex; transform: scale(1); opacity: 1; }
-.chart-modal-body { padding: 10px; flex: 1; position: relative; min-height: 0; }
+.chart-modal-content {{ position: fixed; top: 10vh; left: 2vw; width: 96vw; height: 80vh; background: #fff; border-radius: 16px; z-index: 1001; display: none; flex-direction: column; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transform: scale(0.95); opacity: 0; transition: all 0.3s; }}
+.chart-modal-content.show {{ display: flex; transform: scale(1); opacity: 1; }}
+.chart-modal-body {{ padding: 10px; flex: 1; position: relative; min-height: 0; }}
 @media (prefers-color-scheme: dark) {{ .chart-modal-content {{ background: #1c1c1e; }} }}
 </style>
 </head>
