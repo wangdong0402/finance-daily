@@ -1,12 +1,43 @@
 [
   {
+    "title": "库存加速去化，动销开瓶表现好于报表",
+    "org": "中邮证券",
+    "date": "2026-11-23",
+    "link": "https://data.eastmoney.com/report/info/AP202611231831952534.html",
+    "rating": "买入",
+    "stock": "泸州老窖",
+    "code": "000568",
+    "infoCode": "AP202611231831952534"
+  },
+  {
+    "title": "对外授权+国内商业化双驱动，自免新管线具备潜力",
+    "org": "中邮证券",
+    "date": "2026-11-23",
+    "link": "https://data.eastmoney.com/report/info/AP202611231831952528.html",
+    "rating": "增持",
+    "stock": "智翔金泰",
+    "code": "688443",
+    "infoCode": "AP202611231831952528"
+  },
+  {
+    "title": "液体乳稳健增长，核心经营利润持续提升",
+    "org": "中邮证券",
+    "date": "2026-11-23",
+    "link": "https://data.eastmoney.com/report/info/AP202611231831952527.html",
+    "rating": "买入",
+    "stock": "伊利股份",
+    "code": "600887",
+    "infoCode": "AP202611231831952527"
+  },
+  {
     "title": "全球工厂 国内品牌的破局之路",
     "org": "华鑫证券",
     "date": "2026-11-23",
     "link": "https://data.eastmoney.com/report/info/AP202611231831948496.html",
     "rating": "买入",
     "stock": "中宠股份",
-    "code": "002891"
+    "code": "002891",
+    "infoCode": "AP202611231831948496"
   },
   {
     "title": "国内发动机龙头，发电业务打造新增长极",
@@ -15,7 +46,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611231831947042.html",
     "rating": "买入",
     "stock": "潍柴动力",
-    "code": "000338"
+    "code": "000338",
+    "infoCode": "AP202611231831947042"
   },
   {
     "title": "三季报点评：核心业务快速增长，长期基本面向好",
@@ -24,7 +56,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611231831946226.html",
     "rating": "买入",
     "stock": "百奥赛图",
-    "code": "688796"
+    "code": "688796",
+    "infoCode": "AP202611231831946226"
   },
   {
     "title": "Q3业绩增长稳健，研发创新持续加码，自免管线推进有序",
@@ -33,7 +66,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611231831946203.html",
     "rating": "买入",
     "stock": "三生国健",
-    "code": "688336"
+    "code": "688336",
+    "infoCode": "AP202611231831946203"
   },
   {
     "title": "2026年三季报点评：全球工程机械龙头，全球化与电动化开启新成长",
@@ -42,7 +76,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611231831943663.html",
     "rating": "买入",
     "stock": "三一重工",
-    "code": "600031"
+    "code": "600031",
+    "infoCode": "AP202611231831943663"
   },
   {
     "title": "公司事件点评报告：独立储能项目加速推进，海外交付持续落地",
@@ -51,7 +86,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611231831943336.html",
     "rating": "买入",
     "stock": "林洋能源",
-    "code": "601222"
+    "code": "601222",
+    "infoCode": "AP202611231831943336"
   },
   {
     "title": "公司信息更新报告：控股股东拟增持公司股份，制冷剂需求大幅改善",
@@ -60,7 +96,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611231831941624.html",
     "rating": "买入",
     "stock": "巨化股份",
-    "code": "600160"
+    "code": "600160",
+    "infoCode": "AP202611231831941624"
   },
   {
     "title": "公司动态研究报告：高端能源装备领先企业，加码液冷打开成长空间",
@@ -69,7 +106,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611231831941260.html",
     "rating": "增持",
     "stock": "川润股份",
-    "code": "002272"
+    "code": "002272",
+    "infoCode": "AP202611231831941260"
   },
   {
     "title": "前三季度归母净利润增长31%，境外收入同比翻倍",
@@ -78,7 +116,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611221831936300.html",
     "rating": "增持",
     "stock": "吉比特",
-    "code": "603444"
+    "code": "603444",
+    "infoCode": "AP202611221831936300"
   },
   {
     "title": "3季报点评：前三季度净利润同比增长，关注竞争格局优化及AI数智化落地",
@@ -87,7 +126,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611221831936267.html",
     "rating": "增持",
     "stock": "分众传媒",
-    "code": "002027"
+    "code": "002027",
+    "infoCode": "AP202611221831936267"
   },
   {
     "title": "西麦食品：Q3收入环比提速，费用精细化释放利润弹性",
@@ -96,7 +136,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611221831933949.html",
     "rating": "买入",
     "stock": "西麦食品",
-    "code": "002956"
+    "code": "002956",
+    "infoCode": "AP202611221831933949"
   },
   {
     "title": "营收稳步增长，车载及新消费光学持续拓展",
@@ -105,7 +146,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611221831933950.html",
     "rating": "买入",
     "stock": "宇瞳光学",
-    "code": "300790"
+    "code": "300790",
+    "infoCode": "AP202611221831933950"
   },
   {
     "title": "龙源电力2026年三季报点评：电量结构分化，盈利底部逐渐清晰",
@@ -114,7 +156,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611221831933948.html",
     "rating": "买入",
     "stock": "龙源电力",
-    "code": "001289"
+    "code": "001289",
+    "infoCode": "AP202611221831933948"
   },
   {
     "title": "万辰集团：渠道下沉打开拓店空间，龙头优势持续巩固",
@@ -123,7 +166,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611221831933920.html",
     "rating": "买入",
     "stock": "万辰集团",
-    "code": "300972"
+    "code": "300972",
+    "infoCode": "AP202611221831933920"
   },
   {
     "title": "新兴市场加速放量，服务器电源新品陆续量产",
@@ -132,7 +176,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611221831933918.html",
     "rating": "买入",
     "stock": "芯朋微",
-    "code": "688508"
+    "code": "688508",
+    "infoCode": "AP202611221831933918"
   },
   {
     "title": "存储产品量价齐升，多元产品布局持续推进",
@@ -141,7 +186,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611221831933917.html",
     "rating": "买入",
     "stock": "兆易创新",
-    "code": "603986"
+    "code": "603986",
+    "infoCode": "AP202611221831933917"
   },
   {
     "title": "新乳业：低温品类延续增势，费效优化支撑盈利",
@@ -150,7 +196,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611221831933916.html",
     "rating": "买入",
     "stock": "新乳业",
-    "code": "002946"
+    "code": "002946",
+    "infoCode": "AP202611221831933916"
   },
   {
     "title": "回购强化长期发展信心，看好后续盈利进一步修复",
@@ -159,7 +206,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611221831933238.html",
     "rating": "买入",
     "stock": "三星电气",
-    "code": "601567"
+    "code": "601567",
+    "infoCode": "AP202611221831933238"
   },
   {
     "title": "自主优质线束企业，积极布局机器人相关业务",
@@ -168,7 +216,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611221831933173.html",
     "rating": "增持",
     "stock": "沪光股份",
-    "code": "605333"
+    "code": "605333",
+    "infoCode": "AP202611221831933173"
   },
   {
     "title": "前三季度营收利润高增，关注AI应用与出海表现",
@@ -177,7 +226,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611221831933172.html",
     "rating": "增持",
     "stock": "巨人网络",
-    "code": "002558"
+    "code": "002558",
+    "infoCode": "AP202611221831933172"
   },
   {
     "title": "营收恢复快速增长，隐形眼镜+运动医学贡献重要增量",
@@ -186,7 +236,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611221831931569.html",
     "rating": "买入",
     "stock": "爱博医疗",
-    "code": "688050"
+    "code": "688050",
+    "infoCode": "AP202611221831931569"
   },
   {
     "title": "澜起科技：内存接口芯片市场持续成长，持续投入研发巩固竞争优势",
@@ -195,7 +246,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611221831931176.html",
     "rating": "买入",
     "stock": "澜起科技",
-    "code": "688008"
+    "code": "688008",
+    "infoCode": "AP202611221831931176"
   },
   {
     "title": "新品群放量叠加出海兑现，创新疫苗平台迎来收获期",
@@ -204,7 +256,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611221831929821.html",
     "rating": "买入",
     "stock": "康希诺",
-    "code": "688185"
+    "code": "688185",
+    "infoCode": "AP202611221831929821"
   },
   {
     "title": "设备平台化再进阶，AI扩产与国产替代共振",
@@ -213,7 +266,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611211831921894.html",
     "rating": "买入",
     "stock": "北方华创",
-    "code": "002371"
+    "code": "002371",
+    "infoCode": "AP202611211831921894"
   },
   {
     "title": "彩印主业筑基，薄膜成长添翼",
@@ -222,7 +276,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611211831910684.html",
     "rating": "买入",
     "stock": "永新股份",
-    "code": "002014"
+    "code": "002014",
+    "infoCode": "AP202611211831910684"
   },
   {
     "title": "以光之名，照亮未来",
@@ -231,7 +286,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831906835.html",
     "rating": "买入",
     "stock": "宇瞳光学",
-    "code": "300790"
+    "code": "300790",
+    "infoCode": "AP202611201831906835"
   },
   {
     "title": "跟踪点评：引进空间组学新平台，看好虚拟细胞产业前景",
@@ -240,7 +296,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831906837.html",
     "rating": "买入",
     "stock": "诺禾致源",
-    "code": "688315"
+    "code": "688315",
+    "infoCode": "AP202611201831906837"
   },
   {
     "title": "单季利润回升，AI商业化提速",
@@ -249,7 +306,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831906834.html",
     "rating": "买入",
     "stock": "合合信息",
-    "code": "688615"
+    "code": "688615",
+    "infoCode": "AP202611201831906834"
   },
   {
     "title": "慧能泰并表推动经营再上台阶，算力电源链布局全面",
@@ -258,7 +316,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831906738.html",
     "rating": "增持",
     "stock": "东微半导",
-    "code": "688261"
+    "code": "688261",
+    "infoCode": "AP202611201831906738"
   },
   {
     "title": "2026年三季报点评：发行创作有望回暖，期待《流浪地球3》",
@@ -267,7 +326,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831906363.html",
     "rating": "",
     "stock": "中国电影",
-    "code": "600977"
+    "code": "600977",
+    "infoCode": "AP202611201831906363"
   },
   {
     "title": "出海商业化元年，从单品走向平台型创新药企",
@@ -276,7 +336,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831893535.html",
     "rating": "增持",
     "stock": "海创药业",
-    "code": "688302"
+    "code": "688302",
+    "infoCode": "AP202611201831893535"
   },
   {
     "title": "公司首次覆盖报告：无源器件强通胀时代的MPO&DFAU领军企业",
@@ -285,7 +346,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831891382.html",
     "rating": "买入",
     "stock": "致尚科技",
-    "code": "301486"
+    "code": "301486",
+    "infoCode": "AP202611201831891382"
   },
   {
     "title": "新股覆盖研究：傲拓科技",
@@ -294,7 +356,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831889553.html",
     "rating": "",
     "stock": "傲拓科技",
-    "code": "688845"
+    "code": "688845",
+    "infoCode": "AP202611201831889553"
   },
   {
     "title": "新股覆盖研究：猎奇智能",
@@ -303,7 +366,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831889395.html",
     "rating": "",
     "stock": "猎奇智能",
-    "code": "301661"
+    "code": "301661",
+    "infoCode": "AP202611201831889395"
   },
   {
     "title": "电镀增量显著，高温硫酸陆续交付",
@@ -312,7 +376,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831889359.html",
     "rating": "买入",
     "stock": "盛美上海",
-    "code": "688082"
+    "code": "688082",
+    "infoCode": "AP202611201831889359"
   },
   {
     "title": "D-2570三期银屑病彰显BIC潜质，看好价值兑现",
@@ -321,7 +386,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831889358.html",
     "rating": "增持",
     "stock": "益方生物",
-    "code": "688382"
+    "code": "688382",
+    "infoCode": "AP202611201831889358"
   },
   {
     "title": "2026Q3净利润大幅增长，盈利明显改善",
@@ -330,7 +396,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831886013.html",
     "rating": "买入",
     "stock": "亚辉龙",
-    "code": "688575"
+    "code": "688575",
+    "infoCode": "AP202611201831886013"
   },
   {
     "title": "CT+IT全栈技术领先，定制化加自有品牌超节点开始放量",
@@ -339,7 +406,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831885707.html",
     "rating": "买入",
     "stock": "紫光股份",
-    "code": "000938"
+    "code": "000938",
+    "infoCode": "AP202611201831885707"
   },
   {
     "title": "中原证券2026年三季报点评：利息净收入大幅增长，管理费用率明显下降",
@@ -348,7 +416,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831885077.html",
     "rating": "增持",
     "stock": "中原证券",
-    "code": "601375"
+    "code": "601375",
+    "infoCode": "AP202611201831885077"
   },
   {
     "title": "毛利率同比改善，端侧AI硬件布局持续深化",
@@ -357,7 +426,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831878030.html",
     "rating": "买入",
     "stock": "歌尔股份",
-    "code": "002241"
+    "code": "002241",
+    "infoCode": "AP202611201831878030"
   },
   {
     "title": "安图生物：经营质量边际改善，26Q3收入利润重回双位数增长",
@@ -366,7 +436,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831878020.html",
     "rating": "买入",
     "stock": "安图生物",
-    "code": "603658"
+    "code": "603658",
+    "infoCode": "AP202611201831878020"
   },
   {
     "title": "偕行大众开海境，秉恃新技术登高",
@@ -375,7 +446,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611201831878013.html",
     "rating": "买入",
     "stock": "国轩高科",
-    "code": "002074"
+    "code": "002074",
+    "infoCode": "AP202611201831878013"
   },
   {
     "title": "果蔬龙头转身医药平台，双轮驱动重塑估值",
@@ -384,7 +456,8 @@
     "link": "https://data.eastmoney.com/report/info/AP202611191831870524.html",
     "rating": "买入",
     "stock": "宏辉果蔬",
-    "code": "603336"
+    "code": "603336",
+    "infoCode": "AP202611191831870524"
   },
   {
     "title": "深耕手持测量三十载，收购伽蓝特开启AI光通信第二成长曲线",
@@ -393,6 +466,7 @@
     "link": "https://data.eastmoney.com/report/info/AP202611191831870190.html",
     "rating": "买入",
     "stock": "华盛昌",
-    "code": "002980"
+    "code": "002980",
+    "infoCode": "AP202611191831870190"
   }
 ]
