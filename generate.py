@@ -225,13 +225,23 @@ def build_macro_html(macro_data):
         else:
             for cfg in cat_charts:
                 key = [k for k, v in charts.items() if v == cfg][0]
+                # 【修改点】：加上了 onclick 事件和“点击放大”提示
                 charts_html += f'''
-                <div class="macro-card">
-                  <h3>{cfg['name']}</h3>
+                <div class="macro-card" onclick="openChartModal('chart-{key}', '{cfg['name']}')" style="cursor: pointer;">
+                  <h3>{cfg['name']} <span style="font-size:12px; font-weight:normal; color:#98989d; float:right;">点击放大 🔍</span></h3>
                   <div style="position: relative; height: 200px; width: 100%;">
                     <canvas id="chart-{key}"></canvas>
                   </div>
                 </div>'''
+        
+        cat_contents += f'<div id="subtab-{cat_id}" class="sub-tab-content" style="display: {display};">{charts_html}</div>'
+
+    return f'''
+    <div class="macro-wrapper">
+      <div class="sub-tabs">{cat_nav}</div>
+      <div class="sub-tab-container">{cat_contents}</div>
+    </div>
+    '''
         
         cat_contents += f'<div id="subtab-{cat_id}" class="sub-tab-content" style="display: {display};">{charts_html}</div>'
 
@@ -329,6 +339,11 @@ h2 a:hover {{ text-decoration: underline; }}
   .sentiment-dashboard div[style*="color: #1d1d1f;"] {{ color: #f5f5f7 !important; }}
   .back-to-top {{ background: #f5f5f7; color: #000; }}
 }}
+/* 图表放大弹窗样式 */
+.chart-modal-content { position: fixed; top: 10vh; left: 2vw; width: 96vw; height: 80vh; background: #fff; border-radius: 16px; z-index: 1001; display: none; flex-direction: column; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transform: scale(0.95); opacity: 0; transition: all 0.3s; }
+.chart-modal-content.show { display: flex; transform: scale(1); opacity: 1; }
+.chart-modal-body { padding: 10px; flex: 1; position: relative; min-height: 0; }
+@media (prefers-color-scheme: dark) {{ .chart-modal-content {{ background: #1c1c1e; }} }}
 </style>
 </head>
 <body>
@@ -360,6 +375,18 @@ h2 a:hover {{ text-decoration: underline; }}
   <div id="tab-sentiment" style="display: none;">{sentiment_cards_html}</div>
   <div id="tab-macro" style="display: none;">{macro_cards_html}</div>
 </main>
+
+<!-- 图表放大弹窗 -->
+<div class="modal-overlay" id="chart-modal-overlay" onclick="closeChartModal()"></div>
+<div class="chart-modal-content" id="chart-modal-content">
+  <div class="modal-header">
+    <h2 id="chart-modal-title">图表放大</h2>
+    <button class="close-btn" onclick="closeChartModal()">✕</button>
+  </div>
+  <div class="chart-modal-body">
+    <canvas id="chart-modal-canvas"></canvas>
+  </div>
+</div>
 
 <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
 
@@ -498,6 +525,79 @@ function lazyRenderCharts() {{
 document.addEventListener('DOMContentLoaded', () => {{
   setTimeout(lazyRenderCharts, 500);
 }});
+let modalChartInstance = null;
+
+function openChartModal(chartId, title) {{
+  document.getElementById('chart-modal-overlay').classList.add('show');
+  document.getElementById('chart-modal-content').classList.add('show');
+  document.getElementById('chart-modal-title').innerText = title;
+  document.body.style.overflow = 'hidden';
+
+  const originalCfg = macroData[chartId.replace('chart-', '')];
+  if (!originalCfg) return;
+
+  if (modalChartInstance) {{
+    modalChartInstance.destroy();
+  }}
+
+  const canvas = document.getElementById('chart-modal-canvas');
+  const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const textColor = isDark ? '#98989d' : '#6e6e73';
+  const gridColor = isDark ? '#3a3a3c' : '#e5e7eb';
+
+  let datasets = [];
+  let chartType = originalCfg.type === 'multi_line' ? 'line' : originalCfg.type;
+
+  if (originalCfg.type === 'mixed') {{
+    chartType = 'bar';
+    datasets.push({{ type: 'bar', label: '两融余额', data: originalCfg.bar_data, backgroundColor: originalCfg.bar_color + '80', borderRadius: 4, yAxisID: 'y' }});
+    datasets.push({{ type: 'line', label: '融资余额', data: originalCfg.line_data, borderColor: originalCfg.line_color, borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false, yAxisID: 'y1' }});
+  }} else if (originalCfg.type === 'multi_line') {{
+    datasets = originalCfg.series.map(s => ({{ label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color + '20', borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false }}));
+  }} else if (originalCfg.type === 'bar') {{
+    const bgColors = originalCfg.data.map(v => v >= 0 ? originalCfg.color : '#10b981');
+    datasets = [{{ data: originalCfg.data, backgroundColor: bgColors, borderRadius: 4 }}];
+  }} else {{
+    datasets = [{{ data: originalCfg.data, borderColor: originalCfg.color, backgroundColor: originalCfg.color + '20', borderWidth: 2, tension: 0.3, pointRadius: 3, fill: true }}];
+  }}
+
+  const config = {{
+    type: chartType,
+    data: {{ labels: originalCfg.labels, datasets: datasets }},
+    options: {{
+      responsive: true, maintainAspectRatio: false,
+      plugins: {{ 
+        legend: {{ display: originalCfg.type === 'multi_line' || originalCfg.type === 'mixed', position: 'top', labels: {{ boxWidth: 12, font: {{ size: 12 }} }} }},
+        tooltip: {{ mode: 'index', intersect: false }}
+      }},
+      scales: {{
+        x: {{ grid: {{ display: false }}, ticks: {{ color: textColor, maxRotation: 60, minRotation: 45, font: {{ size: 11 }}, autoSkip: true, maxTicksLimit: 15 }} }},
+        y: {{ grid: {{ color: gridColor, drawBorder: false }}, ticks: {{ color: textColor, font: {{ size: 11 }} }} }},
+        y1: {{ display: false, grid: {{ display: false }} }}
+      }}
+    }}
+  }};
+
+  if (originalCfg.baseline) {{
+    config.options.plugins.annotation = {{
+      annotations: {{
+        line1: {{ type: 'line', yMin: originalCfg.baseline, yMax: originalCfg.baseline, borderColor: '#ef4444', borderWidth: 1, borderDash: [5, 5], label: {{ display: true, content: '枯荣线', position: 'end' }} }}
+      }}
+    }};
+  }}
+
+  modalChartInstance = new Chart(canvas.getContext('2d'), config);
+}}
+
+function closeChartModal() {{
+  document.getElementById('chart-modal-overlay').classList.remove('show');
+  document.getElementById('chart-modal-content').classList.remove('show');
+  document.body.style.overflow = '';
+  if (modalChartInstance) {{
+    modalChartInstance.destroy();
+    modalChartInstance = null;
+  }}
+}}
 </script>
 </body>
 </html>'''
