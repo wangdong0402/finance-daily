@@ -1,12 +1,42 @@
 {
-  "updated": "2026-11-23 04:45",
+  "updated": "2026-11-23 04:51",
   "periods": {
     "20d": {
       "inflow": [
         {
+          "name": "银行",
+          "change": 0.0,
+          "main_net": 39.15
+        },
+        {
+          "name": "白酒",
+          "change": 0.0,
+          "main_net": 17.73
+        },
+        {
+          "name": "医疗器械",
+          "change": 0.0,
+          "main_net": 13.27
+        },
+        {
+          "name": "游戏",
+          "change": 0.0,
+          "main_net": 12.63
+        },
+        {
+          "name": "证券",
+          "change": 0.0,
+          "main_net": 11.24
+        },
+        {
           "name": "电池",
           "change": 0.0,
           "main_net": 11.18
+        },
+        {
+          "name": "保险",
+          "change": 0.0,
+          "main_net": 9.83
         },
         {
           "name": "房地产",
@@ -14,44 +44,14 @@
           "main_net": 8.22
         },
         {
-          "name": "软件开发",
+          "name": "油气开采及服务",
           "change": 0.0,
-          "main_net": 6.05
+          "main_net": 7.11
         },
         {
-          "name": "生物制品",
+          "name": "石油加工贸易",
           "change": 0.0,
-          "main_net": 3.45
-        },
-        {
-          "name": "自动化设备",
-          "change": 0.0,
-          "main_net": 1.75
-        },
-        {
-          "name": "家居用品",
-          "change": 0.0,
-          "main_net": 1.24
-        },
-        {
-          "name": "美容护理",
-          "change": 0.0,
-          "main_net": 0.94
-        },
-        {
-          "name": "互联网电商",
-          "change": 0.0,
-          "main_net": -0.56
-        },
-        {
-          "name": "造纸",
-          "change": 0.0,
-          "main_net": -0.61
-        },
-        {
-          "name": "农产品加工",
-          "change": 0.0,
-          "main_net": -0.95
+          "main_net": 6.83
         }
       ],
       "outflow": [
