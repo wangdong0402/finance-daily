@@ -30,7 +30,11 @@ def extract_series(df, x_col_fuzzy, y_col_fuzzy, target_len=60):
                 return f"{match.group(1)}-{int(match.group(2)):02d}"
             return str(d)
         df['sort_date'] = df['date'].apply(parse_date_to_sortable)
-        df = df.sort_values(by='sort_date').reset_index(drop=True).tail(target_len)
+        df = df.sort_values(by='sort_date').reset_index(drop=True)
+        
+        print(f"    [排查] 排序后最后3行日期: {df['date'].tail(3).tolist()}")
+        
+        df = df.tail(target_len)
         return {"labels": [str(x)[:10] for x in df['date']], "data": [round(float(v), 2) for v in df['value']]}
     except Exception as e:
         print(f"    [警告] 数据解析失败: {e}")
