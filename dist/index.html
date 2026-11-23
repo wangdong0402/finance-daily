@@ -81,7 +81,7 @@ h2 a:hover { text-decoration: underline; }
 <header>
   <div class="header-top">
     <h1>个人财经终端</h1>
-    <div class="sub">更新：1 分钟前 · 共 70 条新闻</div>
+    <div class="sub">更新：1 分钟前 · 共 69 条新闻</div>
   </div>
   <div class="tabs">
     <button class="tab-btn active" onclick="switchTab('news')" id="btn-news">每日新闻</button>
@@ -92,31 +92,381 @@ h2 a:hover { text-decoration: underline; }
 </header>
 <main>
   <div id="tab-news"><div class="filter-bar" id="filter-bar"><button class="filter-btn active" onclick="filterNews('all', this)">全部</button><button class="filter-btn" onclick="filterNews('中文宏观', this)">中文宏观</button><button class="filter-btn" onclick="filterNews('产业科技', this)">产业科技</button><button class="filter-btn" onclick="filterNews('国际财经', this)">国际财经</button><button class="filter-btn" onclick="filterNews('宏观数据', this)">宏观数据</button></div>
+        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span class="time-text">4 分钟前</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3786472" target="_blank" rel="noopener noreferrer">黄仁勋回归，美股盘前科技股集体反弹，英伟达涨超23%，布油失守90美元</a></h2>
+          <p class="summary">随着抛售压力缓解、市场风险偏好回升，美国股指期货反弹。此前，AI交易遭遇集中抛售，拖累标普500指数进入回调区间。与此同时，国际油价持续走低，布伦特原油日内跌幅达3%。 周一，美股盘前，科技股集体反弹，英伟达盘前涨近23%，英伟达董事会恢复黄仁勋首席执行官职务。美股三大股指期货持续拉升，纳指期货涨超3%，标普500指数期货涨超2.6%。亚太股市普遍下行，MSCI新兴市场股票指数抹去了年初至今的涨幅。韩国KOSPI指数收跌3.32%，三星电子跌超3%，SK海力士跌超2.5%。 亚洲多国监管当局周末密集出台托市措施，为市场情绪改善提供支撑。高盛集团交易部门亦指出，上周的抛售已创造出吸纳美国股票的良</p>
+        </article>
+
         <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
           <div class="meta">
             <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
             <span>MarketWatch</span>
-            <span class="time-text">20 分钟前</span>
+            <span class="time-text">16 分钟前</span>
           </div>
-          <h2><a href="https://www.marketwatch.com/story/stock-market-slides-this-steep-and-fast-trigger-a-rebound-91-of-the-time-over-the-last-decade-798bd2c2?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Stock-market slides this steep and fast trigger a rebound 91% of the time over the last decade</a></h2>
-          <p class="summary">The big question for traders is whether the S&amp;P 500’s swift fall into a correction is the start of something much worse for the stock market or actually a harbinger of a reversal.</p>
+          <h2><a href="https://www.marketwatch.com/story/cybersecurity-stocks-have-been-hot-and-now-crowdstrike-inks-deal-to-buy-zscaler-df8fd163?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Cybersecurity stocks have been hot — and now CrowdStrike inks deal to buy Zscaler</a></h2>
+          <p class="summary">CrowdStrike on Monday said it will acquire Zscaler in an all-stock transaction that values the company at approximately $43.9 billion.</p>
+        </article>
+
+        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
+          <div class="meta">
+            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
+            <span>MarketWatch</span>
+            <span class="time-text">18 分钟前</span>
+          </div>
+          <h2><a href="https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">A 66-year-old nurse faces retirement with just $500 saved. Who’s to blame?</a></h2>
+          <p class="summary">“Retirement is a financial status, not an age.”</p>
         </article>
 
         <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
           <div class="meta">
             <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
             <span>华尔街见闻</span>
-            <span class="time-text">20 分钟前</span>
+            <span class="time-text">21 分钟前</span>
           </div>
-          <h2><a href="https://wallstreetcn.com/articles/3786508" target="_blank" rel="noopener noreferrer">大摩Wilson高喊“抄底”美股：这是我们一直等待的绝佳机会</a></h2>
-          <p class="summary">摩根士丹利首席美股策略师Michael Wilson呼吁，投资者把握当前市场大跌带来的买入窗口。 Wilson团队在最新报告中直言， 上周美股的大幅下挫正是他们&quot;一直耐心等待的绝佳机会&quot;，并明确建议投资者&quot;现在应该积极增加风险敞口&quot;。 这一表态出现在标普500指数连续第七个交易日下跌、正式进入技术性回调区间之后，时机颇为引人关注。 摩根士丹利的分析认为，当前估值已过度反映悲观预期，与该行自身的盈利预测之间存在显著背离，这一差距本身即构成潜在的反弹驱动力。 估值严重低估盈利前景，错位或成反弹催化剂 Wilson团队给出看多判断的核心逻辑，在于当前市场定价与基本面预期之间的明显偏差。Wilson指</p>
+          <h2><a href="https://wallstreetcn.com/articles/3786534" target="_blank" rel="noopener noreferrer">沃什的“少说话”战略遭遇阻力，美联储内部分歧日益明显</a></h2>
+          <p class="summary">沃什出任美联储主席半年后，其“少说话、不提供前瞻指引”的沟通理念正遭遇内部阻力。随着官员分歧公开化，市场对货币政策路径的判断难度上升，政策沟通缺位也开始影响决策效果。 最新信号来自上周三公布的10月议息会议纪要。据彭博报道， 纪要显示，部分支持加息的官员表示，如果市场能够清楚理解进一步收紧政策的可能性，他们原本可以支持维持利率不变。这一表态凸显了沟通不足带来的政策传导问题。 美联储内部的分歧也日益公开。理事Christopher Waller主张一次性加息50个基点，纽约联储主席John Williams则反对这种“戏剧性”举措。面对不同声音，沃什仍选择保持沉默，没有公开协调政策立场。 对投资</p>
+        </article>
+
+        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
+          <div class="meta">
+            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
+            <span>MarketWatch</span>
+            <span class="time-text">28 分钟前</span>
+          </div>
+          <h2><a href="https://www.marketwatch.com/story/unitedhealth-humana-and-cvs-stocks-slide-as-u-s-targets-medicare-advantage-ratings-6c2be5bb?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">UnitedHealth, Humana and CVS stocks slide as U.S targets Medicare Advantage ratings</a></h2>
+          <p class="summary">The health insurers are facing scrutiny over their business practices and potential changes to the private Medicare program.</p>
+        </article>
+
+        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span class="time-text">30 分钟前</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3786535" target="_blank" rel="noopener noreferrer">Anthropic承诺约9000亿美元算力开支，债市预期其债券为垃圾级</a></h2>
+          <p class="summary">Anthropic上周上市募资逾1000亿美元、市值约1.18万亿美元，但同期对外承诺未来数年的算力支出高达约9000亿美元。公司尚未盈利、成立不足六年，债券市场普遍预期评级机构将把其债券定为投机级（垃圾级），多家大型债券基金经理预计落在BB区间。这一问题不仅关乎Anthropic自身的资本计划，也将牵动芯片厂商的贷款担保安排与整个AI生态的融资结构。 据《华尔街日报》报道， 多位债券基金经理预计Anthropic将获得BB区间评级，距投资级仅差一到两档。 若如此，它将成为美国市值最大的高收益债券发行人，远超目前约800亿美元市值的Hilton Worldwide。 Anthropic首席执行</p>
+        </article>
+
+        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span class="time-text">48 分钟前</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3786533" target="_blank" rel="noopener noreferrer">动力电池洗牌，二线进、尾部退</a></h2>
+          <p class="summary">动力电池的份额重排，正在龙头之外展开。 11月23日，全国乘用车市场信息联席会秘书长崔东树发布10月新能源车锂电池市场分析，指出国轩高科、亿纬锂能等二线企业份额提升。 车企过去几年主动引入第二、第三供应商的动作，正逐步反映到行业座次中。 两年前的2024年，宁德时代与比亚迪合计占国内动力电池装车量近七成，呈现出“两强”格局。 如今这种局面进一步松动。到2026年前10月，按中国汽车动力电池产业创新联盟统计，这两家头部企业的装车量占比跌至62.3%，前十家仍占94%，实现装车配套的企业为41家，同比减少10家。订单重排主要发生在具备规模和客户基础的企业之间。 二线扩张首先得益于车企采购策略的变化</p>
+        </article>
+
+        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span class="time-text">1 小时前</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3786531" target="_blank" rel="noopener noreferrer">余承东重新为问界站台，M7还能重现辉煌吗？</a></h2>
+          <p class="summary">作者 | 周智宇 11月23日，华为常务董事、终端BG董事长余承东又为问界M7吆喝起来，在微博上发布了新车的外观图。 余承东提到，M7系列上市以来已收获超过47万用户，新车将更新内外饰，搭载华为乾崑智驾ADS 5，并升级面向L3有条件自动驾驶的全域冗余架构。 这是继11月12日预热新M8、次日与赛力斯集团董事长张兴海同台之后，余承东再次为问界新车发声。 两个月前，双方刚调整合作模式，余承东也曾表示，华为团队会聚焦尊界、享界、智界和尚界，让其他四个品牌获得更多资源。 余承东接连发声，新M7却要面对一场比三年前复杂得多的竞争。太平洋汽车的车型销量榜显示，今年10月M7卖出2473辆。而在2024年</p>
+        </article>
+
+        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span class="time-text">1 小时前</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3786530" target="_blank" rel="noopener noreferrer">雷诺CEO反思在华失误：当时没敢对戈恩说不</a></h2>
+          <p class="summary">作者 | 周智宇 雷诺集团CEO福兰，把自己职业生涯中最大的失误，归结为当年没有向老板说出口的一句话。 福兰在近日一场媒体对谈中回忆，雷诺大举进入中国乘用车市场时已经太晚，时任集团CEO卡洛斯·戈恩设定的销量目标不切实际。他曾在公司内部寻求支持，却没能鼓起勇气直接向戈恩提出异议。 雷诺官网至今保留着福兰2019年的采访，彼时他仍在重申集团到2022年在华年销55万辆的目标，也承认品牌知名度和销售网络都是短板。 如今，雷诺在中国的投入，已然有了初步成果。法国汽车数据机构AAA Data数据显示，今年10月，由上海团队参与开发的Twingo E-Tech以4747辆注册量首次登顶法国纯电车型月榜，</p>
+        </article>
+
+        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span class="time-text">1 小时前</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3786528" target="_blank" rel="noopener noreferrer">特朗普暗示，如果谈判失败，明年将继续打击伊朗</a></h2>
+          <p class="summary">美伊战争前景再度蒙上阴影。美国总统特朗普在最新采访中明确暗示， 若外交谈判无法取得成果，他可能于明年恢复对伊朗的军事打击 ，同时警告伊朗不得挑战美国海上封锁。 特朗普在福克斯新闻21日播出的采访中 将伊朗官员比作&quot;专业踢踏舞者&quot;，指责伊朗蓄意拖延正在进行的间接谈判。 与此同时，据 新华社 ，他表示寻求与伊朗达成一项&quot;永久性协议&quot;，确保即便未来出现&quot;不称职的总统&quot;，协议效力依然不可撼动。他还表示，自己无意推动伊朗政权更迭。 上述表态意味着，特朗普将此前的谈判时间线延长至明年，并向伊朗释放信号：民主党在中期选举的胜利不会改变他对战争的基本立场。与此同时，战争与能源价格飙升已在本月初的中期选举中重创</p>
+        </article>
+
+        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
+          <div class="meta">
+            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
+            <span>MarketWatch</span>
+            <span class="time-text">1 小时前</span>
+          </div>
+          <h2><a href="https://www.marketwatch.com/story/trump-wants-jensen-huang-back-at-nvidia-what-will-it-take-to-stop-the-tech-selloff-3f6b091f?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Trump wants Jensen Huang back at Nvidia. What will it take to stop the tech selloff?</a></h2>
+          <p class="summary">What to watch in AI earnings this Thanksgiving week. Plus, why memory stocks look so cheap, how much less you’ll pay at the pump and a $100,000 pottery-studio dilemma.</p>
+        </article>
+
+        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
+          <div class="meta">
+            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
+            <span>MarketWatch</span>
+            <span class="time-text">1 小时前</span>
+          </div>
+          <h2><a href="https://www.marketwatch.com/story/nvidia-stock-bounces-as-trump-administration-pushes-for-rehiring-of-jensen-huang-08057c29?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Nvidia stock bounces as Trump administration pushes for rehiring of Jensen Huang</a></h2>
+          <p class="summary">Shares in Nvidia rose on Monday after a weekend of more developments, including the Trump administration pushing for the reinstatement of Jensen Huang to lead the company.</p>
+        </article>
+
+        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span class="time-text">1 小时前</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3786529" target="_blank" rel="noopener noreferrer">面对英伟达挖角传闻，Arm CEO 哈斯最新承诺：将执掌公司至2033年，兼任软银集团副董事长</a></h2>
+          <p class="summary">Arm首席执行官雷内·哈斯与公司签署新协议， 承诺将领导公司至2033年，同时出任软银集团副董事长， 进一步强化了这家芯片设计公司与其控股股东之间的治理纽带。 ARM于2026年11月23日正式宣布上述任命。哈斯在软银集团的新职位将于12月1日生效。就在此前数日， 彭博曾报道哈斯于11月18日遭英伟达董事会招募机构接触，市场对其去留的不确定性随即升温，此次官宣有效平息了外界猜测。 &quot;我从未像现在这样对ARM的未来充满信心，&quot; 哈斯在公告中表示： &quot;我深信我们的团队、我们的战略以及未来的机遇，我全力致力于在未来多年实现ARM的全部潜力。&quot; 此举对ARM股东意义重大。在哈斯领导下，ARM已完成纳斯</p>
+        </article>
+
+        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span class="time-text">1 小时前</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3786527" target="_blank" rel="noopener noreferrer">2018年噩梦重演？走势高度相似，纳斯达克反弹之后或还有下一波回调</a></h2>
+          <p class="summary">美股抛售潮已将市场推至极端超卖状态，但历史经验显示，急跌后的反弹未必意味着市场已经触底，纳斯达克可能仍面临新一轮回调。 标普500指数已跌入极度超卖区间，科技股波动率飙升至2020年以来最高水平，对冲基金也在以近十年来最快的速度削减仓位。 市场恐慌程度与资金撤退规模，均已达到罕见水平。 高盛数据显示，其恐慌指标（Vol Panic Index）上周末收于9.8，满分为10。历史上，这一水平通常是强烈的逆向加仓信号。但当前美联储仍处于加息周期，情况有所不同：此前恐慌指数超过9且美联储同步加息时，标普500指数未来三个月平均仅上涨0.4%。 更值得警惕的是，当前市场走势与2018年纳斯达克的一轮调</p>
+        </article>
+
+        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span class="time-text">2 小时前</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3786525" target="_blank" rel="noopener noreferrer">439亿美元！CrowdStrike收购Zscaler，创网络安全行业并购纪录</a></h2>
+          <p class="summary">网络安全行业正在经历一场规模空前的整合。CrowdStrike宣布以约439亿美元全股票交易收购网络安全公司Zscaler，刷新该行业并购纪录，同时公布的第三财季业绩也超出市场预期，两大利好叠加，进一步强化了市场对这家公司成为AI时代网络安全领域主导平台的预期。 根据双方周一发布的公告，Zscaler股东将以1.135股CrowdStrike普通股换取每股Zscaler普通股，折合每股Zscaler约260.41美元，较Zscaler 11月20日收盘价194.82美元溢价约34%。交易完成后，现有CrowdStrike股东将持有合并后公司约84.1%的股权，Zscaler股东持有约15.9%</p>
+        </article>
+
+        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span class="time-text">2 小时前</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3786523" target="_blank" rel="noopener noreferrer">智谱GLM-5.4携循环推理架构上线，如何以更少token完成思考</a></h2>
+          <p class="summary">11月23日，智谱（ 02513.HK ）新模型GLM-5.4上线GLM Coding Plan订阅体系，同步接入ZCode、Trae等编码平台。V2、V3及团队版订阅用户使用GLM-5.4的额度提升至原来的1.5倍。 智谱介绍，GLM-5.4是公司第一代采用Loop Transformer架构的旗舰模型，做法是把GLM-5基座中的28层改为共享权重、循环执行两轮，在不增加参数量的情况下增加模型的计算深度。基座参数量约750B。 智谱称，API将在完成安全评估后开放，模型权重计划开源。 相比上一代，GLM-5.4的变化集中在架构层。GLM-5.3与GLM-5.2使用同一基座，能力提升来自后训练</p>
+        </article>
+
+        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span class="time-text">2 小时前</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3786522" target="_blank" rel="noopener noreferrer">12月加息或成衰退导火索？对冲大佬阿克曼呼吁美联储将2%通胀红线上移至3%</a></h2>
+          <p class="summary">美联储是否应该继续加息，正面临越来越大的争议。对冲基金大佬比尔·阿克曼 （ Bill Ackman）警告，当前金融条件已大幅收紧，如果美联储在12月9日的政策会议上继续加息，将是严重的政策失误，甚至可能把美国乃至全球经济推入衰退。 11月23日，阿克曼在X平台发文称， 美联储可能在12月9日“再犯一个错误”，因为金融条件已经明显收紧。 他以SpaceX为例指出，该公司近期有担保债务融资利率达到8.259%，而此前发行无担保债券时的利率尚不足6%。与此同时，近期股市大幅下跌也进一步推高了企业股权融资成本。 除了反对进一步加息， 阿克曼还提出了一项更具争议性的主张：将美联储长期通胀目标从2%上调至</p>
+        </article>
+
+        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
+          <div class="meta">
+            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
+            <span>MarketWatch</span>
+            <span class="time-text">2 小时前</span>
+          </div>
+          <h2><a href="https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">I’ve been married for 58 years. It’s ‘our’ money, not ‘his’ and ‘hers.’ Why don’t others feel the same?</a></h2>
+          <p class="summary">“My wife stopped working outside the home in 1970.”</p>
+        </article>
+
+        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
+          <div class="meta">
+            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
+            <span>MarketWatch</span>
+            <span class="time-text">3 小时前</span>
+          </div>
+          <h2><a href="https://www.marketwatch.com/story/the-u-s-may-enter-a-recession-if-the-fed-raises-rates-hedge-fund-manager-bill-ackman-says-16738971?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">The U.S. may enter a recession if the Fed raises rates, hedge-fund manager Bill Ackman says</a></h2>
+          <p class="summary">The Pershing Square Capital Management CEO wrote in a post on X that he thinks financial conditions have already considerably tightened.</p>
+        </article>
+
+        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span class="time-text">3 小时前</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3786521" target="_blank" rel="noopener noreferrer">欧元区综合PMI初值连续五个月扩张，德国升至55创四年半新高，德法分化创六年之最</a></h2>
+          <p class="summary">11月欧元区经济活动整体保持温和扩张，但内部表现出现明显分化。德国制造业和服务业同步回暖，推动经济活动增速升至四年半来最高；法国经济活动则连续第二个月收缩。德国经济改善支撑了欧元区整体增长，但区域内其他经济体的复苏步伐有所放缓。 11月23日公布的数据显示， 标普全球11月欧元区综合采购经理人指数（PMI）初值持平于51.7，连续第五个月处于50荣枯线上方。 其中，制造业PMI从10月的52.7升至52.9，服务业PMI则从51.4降至51.2，为五个月低点。欧元区新订单连续第五个月增加，但出口订单增速放缓，企业对未来一年的经营前景也更加谨慎。 从主要成员国来看，德国11月综合PMI初值从10</p>
         </article>
 
         <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
           <div class="meta">
             <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
             <span>钛媒体</span>
-            <span class="time-text">22 分钟前</span>
+            <span class="time-text">3 小时前</span>
+          </div>
+          <h2><a href="https://www.tmtpost.com/8214477.html" target="_blank" rel="noopener noreferrer">Alo中国首批线下体验店开业，想踩着Lululemon的流量上位</a></h2>
+          <p class="summary">卖万元手袋、贴奢侈品开业，Alo想做奢侈品生意。</p>
+        </article>
+
+        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
+          <div class="meta">
+            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
+            <span>钛媒体</span>
+            <span class="time-text">3 小时前</span>
+          </div>
+          <h2><a href="https://www.tmtpost.com/8214502.html" target="_blank" rel="noopener noreferrer">800万对1000万，腾讯字节又在AI办公杠上了</a></h2>
+          <p class="summary">不是产品的胜负，而是存量生态的比拼</p>
+        </article>
+
+        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
+          <div class="meta">
+            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
+            <span>钛媒体</span>
+            <span class="time-text">3 小时前</span>
+          </div>
+          <h2><a href="https://www.tmtpost.com/8214576.html" target="_blank" rel="noopener noreferrer">禾赛的第二增长曲线，瞄准的不仅仅是机器人</a></h2>
+          <p class="summary">Kosmo 的商业化空间，不可小觑。</p>
+        </article>
+
+        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
+          <div class="meta">
+            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
+            <span>钛媒体</span>
+            <span class="time-text">3 小时前</span>
+          </div>
+          <h2><a href="https://www.tmtpost.com/8214386.html" target="_blank" rel="noopener noreferrer">当AI开始自己上班</a></h2>
+          <p class="summary">商业化推倒的第一块多米诺骨牌</p>
+        </article>
+
+        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
+          <div class="meta">
+            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
+            <span>钛媒体</span>
+            <span class="time-text">3 小时前</span>
+          </div>
+          <h2><a href="https://www.tmtpost.com/8214748.html" target="_blank" rel="noopener noreferrer">当AI接管网购，年轻人迷上外包砍价</a></h2>
+          <p class="summary">未来的购物入口藏在对话框里</p>
+        </article>
+
+        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
+          <div class="meta">
+            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
+            <span>钛媒体</span>
+            <span class="time-text">3 小时前</span>
+          </div>
+          <h2><a href="https://www.tmtpost.com/8214813.html" target="_blank" rel="noopener noreferrer">年薪百万，硅谷大厂急招反内鬼专家</a></h2>
+          <p class="summary">硅谷现在最抢手的不是工程师，是会抓内鬼的前特工</p>
+        </article>
+
+        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span class="time-text">3 小时前</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3786510" target="_blank" rel="noopener noreferrer">摩根大通： iPhone Duo交付从72天缩到37天，供应改善有望推动营收兑现</a></h2>
+          <p class="summary">iPhone 18系列供应持续改善，市场对苹果旺季销售的关注点正从缺货转向供需平衡。 据追风交易台，摩根大通最新发布的报告表示， iPhone 18 Duo全球平均交货等待时间从上一周的72天骤降至37天，降幅接近一半 。与此同时，Pro Max交货等待时间也缩短至3天，Pro系列整体供应已基本恢复至去年同期水平。 值得注意的是，随着Duo供货逐步改善，其渠道价格已经跌破苹果官方售价。这一变化与交货周期大幅缩短同时出现，反映出此前供货紧张带来的渠道溢价正在消退。 不过，渠道价格变化与终端需求并不能简单画等号。摩根大通的追踪数据显示，Duo交付周期缩短主要与供应可见度提高有关，苹果的供需匹配状况</p>
+        </article>
+
+        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
+          <div class="meta">
+            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
+            <span>华尔街见闻</span>
+            <span class="time-text">3 小时前</span>
+          </div>
+          <h2><a href="https://wallstreetcn.com/articles/3786518" target="_blank" rel="noopener noreferrer">IPO搁置后，英伟达支持的Firmus转向债券融资，拟募资15亿美元</a></h2>
+          <p class="summary">英伟达支持的人工智能公司Firmus在搁置IPO计划后，正转向债务市场融资，以推进其在印度尼西亚的数据中心项目。受AI行业估值承压及融资环境趋紧影响，该公司融资规模明显收缩，最新债务融资目标较两个月前提出的方案大幅缩水。 11月23日，据彭博援引知情人士，Firmus正考虑发行约15亿美元债券，作为一项总规模最高约40亿美元的综合债务融资方案的一部分。 该方案还包括银行贷款和夹层债务，较公司两个月前设定的约75亿美元融资目标减少近一半。 Firmus最快可能在今年年底前完成债券发行，但具体时间仍取决于市场环境及其他条件。 融资所得将主要用于为Firmus与DayOne Data Centers</p>
+        </article>
+
+        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
+          <div class="meta">
+            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
+            <span>MarketWatch</span>
+            <span class="time-text">4 小时前</span>
+          </div>
+          <h2><a href="https://www.marketwatch.com/story/james-bond-films-were-shot-all-over-the-world-here-are-5-properties-made-famous-by-007-dabafbe6?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">James Bond films were shot all over the world. Here are 5 properties made famous by 007.</a></h2>
+          <p class="summary">As actor Robert Pattinson steps in the role of 007, here are some of the lavish homes where we’ve see James Bond in action.</p>
+        </article>
+
+        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
+          <div class="meta">
+            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
+            <span>MarketWatch</span>
+            <span class="time-text">4 小时前</span>
+          </div>
+          <h2><a href="https://www.marketwatch.com/story/google-co-founder-sergey-brin-and-ex-wife-nicole-shanahan-list-malibu-home-for-33-5-million-0121adcd?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Google co-founder Sergey Brin and ex-wife Nicole Shanahan list Malibu home for $33.5 million</a></h2>
+          <p class="summary">The elegant Malibu estate that Google co-founder Sergey Brin purchased with his ex-wife, Nicole Shanahan, has hit the selling block for $33.5 million—months after it was listed as a rental.</p>
+        </article>
+
+        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
+          <div class="meta">
+            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
+            <span>MarketWatch</span>
+            <span class="time-text">4 小时前</span>
+          </div>
+          <h2><a href="https://www.marketwatch.com/story/stocks-are-serving-up-a-fat-pitch-for-investors-right-now-as-morgan-stanleys-top-strategist-19abe30a?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Stocks are serving up a ‘fat pitch’ for investors right now, says Morgan Stanley’s top strategist</a></h2>
+          <p class="summary">Morgan Stanley points to trough Nasdaq valuations, implied earnings declines and a capitulation in both sentiment and positioning as reasons to be bullish.</p>
+        </article>
+
+        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
+          <div class="meta">
+            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
+            <span>钛媒体</span>
+            <span class="time-text">4 小时前</span>
+          </div>
+          <h2><a href="https://www.tmtpost.com/8212446.html" target="_blank" rel="noopener noreferrer">新鲜感之后，陪伴机器人如何被用起来？</a></h2>
+          <p class="summary">新鲜感退去之后，这些主打陪伴的机器人还有多少被家庭继续使用，又有谁愿意为此持续付费。</p>
+        </article>
+
+        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
+          <div class="meta">
+            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
+            <span>钛媒体</span>
+            <span class="time-text">4 小时前</span>
+          </div>
+          <h2><a href="https://www.tmtpost.com/8214351.html" target="_blank" rel="noopener noreferrer">杉数完成数亿元D轮融资：十年“冷门创业”，走到AI产业的关键处</a></h2>
+          <p class="summary">从数学优化算法到GPU加速，再到AI原生求解器，杉数十年的技术积累有了新的时代坐标。</p>
+        </article>
+
+        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
+          <div class="meta">
+            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
+            <span>钛媒体</span>
+            <span class="time-text">4 小时前</span>
+          </div>
+          <h2><a href="https://www.tmtpost.com/8214407.html" target="_blank" rel="noopener noreferrer">蚂蚁靠金融补贴、京东靠卖药兜底：大厂绕开医保的医疗AI试验</a></h2>
+          <p class="summary">大厂把医生AI工具价格打到零，但3万亿医保只为院内降本买单</p>
+        </article>
+
+        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
+          <div class="meta">
+            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
+            <span>钛媒体</span>
+            <span class="time-text">4 小时前</span>
+          </div>
+          <h2><a href="https://www.tmtpost.com/8214460.html" target="_blank" rel="noopener noreferrer">豆包工作、千问办公、WorkBuddy，怎么越长越像了？</a></h2>
+          <p class="summary">大厂办公Agent贴身肉搏。</p>
+        </article>
+
+        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
+          <div class="meta">
+            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
+            <span>钛媒体</span>
+            <span class="time-text">4 小时前</span>
+          </div>
+          <h2><a href="https://www.tmtpost.com/8214356.html" target="_blank" rel="noopener noreferrer">机器人公司老板当自媒体，图什么？</a></h2>
+          <p class="summary">机器人圈的老板们做自媒体，本身就是创业的一部分。</p>
+        </article>
+
+        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
+          <div class="meta">
+            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
+            <span>钛媒体</span>
+            <span class="time-text">4 小时前</span>
+          </div>
+          <h2><a href="https://www.tmtpost.com/8214426.html" target="_blank" rel="noopener noreferrer">AI不懂情绪，但跑出了七种新生意</a></h2>
+          <p class="summary">不卖效率，卖情绪</p>
+        </article>
+
+        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
+          <div class="meta">
+            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
+            <span>钛媒体</span>
+            <span class="time-text">5 小时前</span>
           </div>
           <h2><a href="https://www.tmtpost.com/8214485.html" target="_blank" rel="noopener noreferrer">东鹏“好厉害”：一瓶酒，三本账</a></h2>
           <p class="summary">东鹏一贯打跟随牌，摸着红牛过河做成了能量饮料新老大，进酒水是同一套逻辑——先对标RIO，再对标劲酒。“但此次能否成功，还需要市场验证。”</p>
@@ -126,337 +476,17 @@ h2 a:hover { text-decoration: underline; }
           <div class="meta">
             <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
             <span>钛媒体</span>
-            <span class="time-text">22 分钟前</span>
+            <span class="time-text">5 小时前</span>
           </div>
           <h2><a href="https://www.tmtpost.com/8211898.html" target="_blank" rel="noopener noreferrer">现金流不会说谎：AI 把中国科技巨头逼进了同一场考试</a></h2>
           <p class="summary">AI重资产投入正改写中国科技巨头的现金流格局。</p>
-        </article>
-
-        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span class="time-text">40 分钟前</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3786506" target="_blank" rel="noopener noreferrer">广发证券：五大因素促成本轮金价大跌，下一个关键节点在12月美联储议息</a></h2>
-          <p class="summary">COMEX黄金从11月9日阶段性高点4129美元/盎司跌至11月20日3526美元/盎司、10个交易日14.4%的跌幅。黄金的这轮下跌，市场最顺手的解释是美联储加息预期升温。 但广发证券在11月22日发布的宏观周度述评中指出，加息只是金价下跌“加速项”，叙事定价退潮、金饰需求走弱、流动性变现需求，以及价格中隐含的2027年地缘缓和预期，共同造成了本轮金价大跌。 对于黄金后续走势，该团队给出的观察窗口是12月议息会议，以及2027年1月世界黄金协会季度需求数据发布期。12月议息会议落地后，金价能否守住3500美元一线，以及是否重新站上4000美元，是判断调整性质的第一层依据。 叙事：2025年那</p>
-        </article>
-
-        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span class="time-text">42 分钟前</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3786484" target="_blank" rel="noopener noreferrer">沪指午后反弹收复3500点，创业板大涨超3%，机器人爆发，宇树20CM涨停，恒科指盘中一度翻红，光通信拉升</a></h2>
-          <p class="summary">11月23日，沪指午后回升，收复3500点，盘中一度跌超1%，主要受权重股拖累，银行、地产、油气等陷入调整，中国石油跌5%，工商银行、农业银行、建设银行、贵州茅台等跌超2%。物理AI、人形机器人、AI短剧、光模块、电路板等概念股纷纷反弹，推动创业板涨超2%。 11月22日，监管层发布一揽子稳市举措，包括调整融资保证金比例、在创业板引入做市商制度、发布一揽子降费举措等，意在稳市场、稳预期，增强稳市力量。业内人士指出，此番举措与本月初的稳市政策接续发力，形成连贯统一的稳预期框架，政策工具箱持续加码，不断增强资本市场韧性，为市场行稳致远注入确定性。 中信证券认为，这些举措直击市场痛点，在杠杆资金持续</p>
-        </article>
-
-        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span class="time-text">56 分钟前</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8214594.html" target="_blank" rel="noopener noreferrer">推理时代，AI服务器的Token成本到底该怎么算？</a></h2>
-          <p class="summary">推理时代的AI服务器竞争，已经不是某一颗芯片、某一项规格的竞争，而是从芯片到散热，从调度到运维的系统级成本控制能力的竞争。</p>
-        </article>
-
-        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span class="time-text">1 小时前</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8212002.html" target="_blank" rel="noopener noreferrer">字节20亿元对腾讯5亿美元：AI办公入口之争</a></h2>
-          <p class="summary">字节腾讯AI办公走不同路径，入口之争刚启</p>
-        </article>
-
-        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span class="time-text">1 小时前</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3786507" target="_blank" rel="noopener noreferrer">美国信用市场崩了！垃圾债遭遇年内最惨烈一周， 高评级债也承压</a></h2>
-          <p class="summary">持续数周的股债市场分化正在收敛。此前对美股下跌反应相对迟缓的美国信贷市场，上周明显承压，高收益债（垃圾债）利差创下年内最大单周走阔纪录，抛售压力也开始从低评级债券向更高评级领域扩散。 上周，标普500指数下跌8.6%，纳斯达克指数下跌10.4%，后者年内涨幅悉数回吐。与此同时， 美国高收益债信用利差扩大51个基点至367个基点，创下2026年以来最大单周涨幅，几乎是此前9月下旬单周最大涨幅的两倍。 高盛数据显示，上周美国高收益债指数1934只成分债券中，有1753只下跌。高收益债年内回报率也由此前的正0.54%转为负0.32%。与此同时， 投资级债信用利差也扩大10个基点至96个基点，显示抛售</p>
-        </article>
-
-        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span class="time-text">1 小时前</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3786504" target="_blank" rel="noopener noreferrer">“至暗一周”后，黄金终于等来散户抄底！</a></h2>
-          <p class="summary">黄金从近八个月来最大单周跌幅中反弹，超卖后的抄底买盘为金价提供支撑，市场也开始下调对美联储12月加息的押注。尽管美国通胀和就业数据仍是短期压制金价的主要因素，但多家机构认为，本轮调整可能已接近尾声。 周一，现货黄金涨超2%，报每盎司3627美元。此前一周，金价累计下跌9%，创近八个月来最大单周跌幅，并跌至一年多来的低位。从技术指标看，黄金14日相对强弱指数（RSI）已跌破30，进入通常被视为超卖的区间。 本轮反弹的直接推手是逢低买盘。据彭博报道，深圳水贝黄金市场金店人流明显增加，消费者纷纷入场购买。市场分析人士认为， 这波购买热潮主要由认为当前价位已是底部的散户投资者推动。 与此同时，上周五美</p>
-        </article>
-
-        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span class="time-text">1 小时前</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3786494" target="_blank" rel="noopener noreferrer">Neuralink脑机芯片新进展：瘫痪患者用意念游玩《GTA 6》</a></h2>
-          <p class="summary">马斯克旗下脑机接口公司Neuralink再度展示其技术突破——一名失去双臂功能的瘫痪患者，借助植入式芯片，仅凭意念便在热门新作《GTA 6》中驾驶快艇、驾驶水上飞机并完成徒手格斗。 Neuralink近日在其X账号发布相关视频，记录了上述患者全程用脑机接口（BCI）操控游戏的过程。 这名患者表示，手术前只能靠&quot;嘴含棍子戳iPad&quot;来玩游戏，而植入芯片后的感受是&quot;你立刻重新拥有了通往世界的入口&quot;。 《GTA 6》本周正式发售，预售销量已达3250万份。Neuralink选择在此节点发布视频，进一步凸显其技术的实用价值，也为这家初创公司在公众视野中积累了新的曝光。 从&quot;啄食iPad&quot;到意念操控 据</p>
-        </article>
-
-        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span class="time-text">1 小时前</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3786501" target="_blank" rel="noopener noreferrer">韩国10万亿救市，为什么不灵了？</a></h2>
-          <p class="summary">韩国政府祭出10.76万亿韩元规模的股市稳定基金，仍未能阻止KOSPI持续下跌。外部冲击的量级、工具本身的局限，以及政策信号与实际行动之间的落差，正在共同消解政府干预的市场效果。 KOSPI指数周一收跌3.32%，三星电子跌超3%，SK海力士跌超2.5%。这是韩国政府宣布启动股市稳定基金准备工作次日的市场反应——一个本应提振信心的政策信号，未能扭转颓势。 韩国副总理兼财政部长 Lee Hyoung-il于22日主持召开金融市场紧急会议（F4会议），宣布上述措施。 会议决定，政府将立即启动股市稳定基金（증안펀드）激活机制的准备工作，视市场情况随时部署。 与此同时，上市公司自股回购每日申报量上限将</p>
-        </article>
-
-        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span class="time-text">1 小时前</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3786499" target="_blank" rel="noopener noreferrer">高盛恐慌指数飙至9.8！历史四次暴涨后美股均强势反弹，交易员称“战术性入场”点位快到了！</a></h2>
-          <p class="summary">上周，高盛交易台用了一个罕见的措辞来描述当前市场环境—— &quot;as challenging as we have seen&quot;（我们见过最难的市场） 。 这句话出自高盛最新一期《美国股票周度简报》，执笔的衍生品团队成员包括Brian Garrett。触发这一判断的背景是：标普500连跌7个交易日，VIX单周飙升逾16点，为有记录以来第五大单周涨幅，而高盛自研的&quot;美国波动率恐慌指数&quot;（US Vol Panic Index）在周五收盘时升至 9.8（满分10） ，创下历史新高。VIX单周飙升92%创有记录以来第五大单周涨幅。 数据显示，历史上四次出现类似VIX暴涨后，标普500一周内全部上涨，平均涨幅</p>
-        </article>
-
-        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span class="time-text">2 小时前</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3786498" target="_blank" rel="noopener noreferrer">Grok Bot正在接管SpaceX财务，5个bot替代十余个岗位</a></h2>
-          <p class="summary">SpaceX旗下AI部门SpaceXSI已将五个Grok Bot部署至财务团队担任全职岗位，完成原本需要10至15名新员工才能覆盖的工作量。 马斯克于11月17日在X平台公开为Grok Bot站台，称其“可以为企业节省数百万美元开支”，并表示该Bot将研究每一笔支出、评估其必要性，并通过互联网或直接致电供应商寻找更优报价。同日，Grok Bot官方账号发文确认，五个Bot已在SpaceX财务团队中担任全职角色。 SpaceX财务团队的实际部署数据印证了这一说法。 据SpaceXSI介绍，其账单Bot将开票时间从约24小时压缩至数分钟；若无这些Bot，该团队估计需要将现有财务人员规模扩大逾一倍，</p>
-        </article>
-
-        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span class="time-text">3 小时前</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3786472" target="_blank" rel="noopener noreferrer">亚洲股市抛售缓解，韩股收跌3.32%，美股期货、黄金齐反弹</a></h2>
-          <p class="summary">上周美股AI交易的去杠杆浪潮正从华尔街迅速蔓延至亚太，区域监管机构罕见同步出手护盘。与此同时，美国股指期货周一亚洲交易时段大幅回升，美债期货和日元走弱，避险需求明显降温。 周一，亚太股市普遍下行， MSCI新兴市场股票指数抹去了年初至今的涨幅 。韩国KOSPI指数收跌3.32%，三星电子跌超3%，SK海力士跌超2.5%。 标普500指数期货涨幅达2.2%，此前标普500指数已连跌七个交易日并陷入技术性调整区间。纳斯达克100指数期货上涨2.9%，该指数上周录得逾六年来最差单周表现，并一度逼近熊市边缘。美股科技股夜盘普遍走高，英伟达、英特尔、闪迪、迈威尔科技涨逾5%，美光科技、博通、谷歌、特斯拉</p>
-        </article>
-
-        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span class="time-text">3 小时前</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8209841.html" target="_blank" rel="noopener noreferrer">辰星技术：营收扩张难掩亏损，多款机器人曾亏本销售</a></h2>
-          <p class="summary">报告期内公司仅在2025年依靠大额政府补助实现短暂账面盈利，其余时段均为亏损；剔除股改因素影响后，这家成立十余载的企业经营层面累计亏损接近2.2亿元。</p>
-        </article>
-
-        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span class="time-text">3 小时前</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8210963.html" target="_blank" rel="noopener noreferrer">立景创新：第一大客户身兼头号供应商，产能闲置仍谋扩产</a></h2>
-          <p class="summary">报告期内，立景创新业绩高度依赖前五大客户，客户集中度逐年攀升，2025年、2026年1-5月前五大客户贡献超九成营业收入。其中客户A为核心收入来源，2025年贡献公司71%营收，自2024年起，公司至少六成收入均来自该客户，业务绑定程度极深。</p>
-        </article>
-
-        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
-          <div class="meta">
-            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
-            <span>MarketWatch</span>
-            <span class="time-text">3 小时前</span>
-          </div>
-          <h2><a href="https://www.marketwatch.com/story/the-number-of-401-k-millionaires-drops-amid-stock-market-swings-23939b94?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">The number of 401(k) millionaires drops amid stock-market swings</a></h2>
-          <p class="summary">‘It was a rocky quarter’: 401(k) balances drop and affordability concerns persist, Fidelity says</p>
-        </article>
-
-        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span class="time-text">4 小时前</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3786479" target="_blank" rel="noopener noreferrer">市场已定价“AI基建周期2027年见顶”，摩根大通：基本面不支持“极度悲观”的市场预期</a></h2>
-          <p class="summary">摩根大通认为，亚洲科技硬件股近期的暴跌，已提前计入了市场对“未来3-4个月EPS下修25%-30%及2027年盈利见顶”的极度悲观预期，但若悲观预期落空，科技股有望迎来20%以上的强劲反弹。 追风交易台消息，11月22日，摩根大通Gokul Hariharan团队研报指出，自9月初以来亚洲科技股累计下跌超过30%，而同期MSCI亚太指数跌幅为15%-20%，投资者讨论的焦点已从“2028年是否见顶”转向“2027年是否就是峰值”。 (亚洲科技板块除存储外的估值已回落至平均市盈率水平) 摩根大通认为，市场当前的定价隐含了未来3-4个月25%-30%的紧急盈利下修。但该行预计， 实际EPS下修幅度</p>
-        </article>
-
-        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span class="time-text">5 小时前</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3786491" target="_blank" rel="noopener noreferrer">傲意科技完成数亿元D轮融资，年内第二轮获国资产业资本加码</a></h2>
-          <p class="summary">11月23日，上海傲意信息科技有限公司（以下简称“傲意科技”）宣布完成数亿元D轮融资，由中兵顺景、长江资本、光谷产投等联合投资。 这是傲意科技2026年完成的第二轮融资。今年3月，公司完成1.5亿元C1轮融资，由中金资本旗下中金脑科学基金领投。本轮融资的具体金额与投后估值暂未披露。 本轮投资方特点是国资背景较密集。中兵顺景为中国兵器工业集团旗下产业投资平台，长江资本依托长江产业投资集团，光谷产投为武汉东湖高新区产业投资平台。 傲意科技董事、副总裁张琦表示，本轮融资将用于加速具身智能商业化进程。张琦还透露，公司目前正积极推进上市前的相关准备。 除灵巧手外，傲意科技也在拓展具身智能数据采集业务，公</p>
-        </article>
-
-        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span class="time-text">5 小时前</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3782813" target="_blank" rel="noopener noreferrer">2027见闻历，财经人的桌面必备“神历”</a></h2>
-          <p class="summary">本文来自华尔街见闻，欢迎下载APP查看更多</p>
-        </article>
-
-        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span class="time-text">5 小时前</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3786488" target="_blank" rel="noopener noreferrer">Manus联创张涛：免费补贴是AI应用创业的最大陷阱，要面向“六个月后的模型”做创新</a></h2>
-          <p class="summary">近日，Manus联合创始人、首席产品官张涛在北京大学AI创投课堂发表了一场长达两小时的演讲，披露了这家30人公司从0到1的创业决策链条。在这场演讲中，张涛抛出了一个在当前AI创业圈颇具争议的判断：免费补贴是AI应用创业最大的陷阱，中国AI创业者可能在被上一代移动互联网的打法所误导。 我觉得回看过去两三年，中国AI应用创业，我觉得有一个非常大的陷阱，就是我们被上一代移动互联网创业的免费补贴陷阱给迷惑了，以为这一代还要这么做，完全错误。 张涛在演讲中透露，Manus发布后第一个月的ARR（年度经常性收入）即突破4000万元人民币，接近5000万，核心用户中不乏每月在平台消费4000至5000美元的</p>
-        </article>
-
-        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span class="time-text">5 小时前</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8209450.html" target="_blank" rel="noopener noreferrer">迅合科技：在Excel和微信群里，给老板造一个Personal Agent</a></h2>
-          <p class="summary">老板对决策的要求比普通人更高，对知识库和决策质量的要求也更高，过去这样的需求长期存在但没有得到很好解决。</p>
-        </article>
-
-        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span class="time-text">5 小时前</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8214320.html" target="_blank" rel="noopener noreferrer">硅基员工元年，投入要向组织与流程倾斜丨ToB产业观察</a></h2>
-          <p class="summary">AI进入企业的第一课，不是学会干活，而是学会按企业和当地法规的要求干活。</p>
-        </article>
-
-        <article class="card news-card" data-category="中文宏观" style="border-left: 4px solid #ef4444;">
-          <div class="meta">
-            <span class="tag" style="background: #fee2e2; color: #991b1b;">中文宏观</span>
-            <span>华尔街见闻</span>
-            <span class="time-text">5 小时前</span>
-          </div>
-          <h2><a href="https://wallstreetcn.com/articles/3786487" target="_blank" rel="noopener noreferrer">铠侠暴跌之后，高盛认为：估值偏低而股东回报强劲，“与过去的航运股类似”</a></h2>
-          <p class="summary">铠侠控股股价近期大幅下挫，但高盛认为进一步下行空间有限，并维持买入评级。 追风交易台消息，11月22日，高盛分析师Shuhei Nakamura与Kaho Otake发布研究报告指出，铠侠股价当前对应截至2028年3月的财年， 预期市盈率仅约1.5倍，市净率在不考虑额外回购的情形下亦低于1倍，均处于历史周期低位。 与此同时，公司管理层已承诺将100%的超额自由现金流返还股东， 高盛测算截至2028年3月的财年及截至2029年3月的财年的总股东回报率将分别超过30%和约50%。 高盛下调了铠侠截至2028年3月的财年至截至2029年3月的财年的营业利润预测，降幅分别为15%和30% ，主要反映2</p>
-        </article>
-
-        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span class="time-text">5 小时前</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8214380.html" target="_blank" rel="noopener noreferrer">【Fintech 周报】海南银行获批定向增资扩股；ChatGPT Wallet上线</a></h2>
-          <p class="summary">金融监管总局两司局“一把手”对调；互金协会通报两款银行App；商业银行总资产突破500万亿元；前三季度消费贷ABS同比下降18.85%；华夏银行董事会“换血”；平安系险资持有主动ETF近45%；云南省级农商行获批筹建；黔东南农商银行获批开业；平安银行400亿元二级资本债发行完毕；海南银行获批定向增资扩股；永诚财险总裁、副总裁同日被免职；蓝海银行回应3.30亿元助贷争议；广州拉卡拉小贷获准注销小贷资质；Visa携手连连数字完成亚太首笔基于支付标记的B2B智能体真实交易；ChatGPT Wallet上线；Apple Pay与Wallet业务线换帅；美国多家银行突发系统异常。</p>
-        </article>
-
-        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span class="time-text">6 小时前</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8214114.html" target="_blank" rel="noopener noreferrer">7 个亿植发、500 亿买钓具：男性购买力终于 &quot;开窍&quot; 了</a></h2>
-          <p class="summary">7 个亿植发、500 亿买钓具：男性购买力终于 &quot;开窍&quot; 了</p>
-        </article>
-
-        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span class="time-text">6 小时前</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8214092.html" target="_blank" rel="noopener noreferrer">这届大学生，狂卷黑客松</a></h2>
-          <p class="summary">还没毕业，大学生已经忙着搞AI项目了。</p>
-        </article>
-
-        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span class="time-text">6 小时前</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8214108.html" target="_blank" rel="noopener noreferrer">“假洋牌”Swisse，卖爆了</a></h2>
-          <p class="summary">最会玩的“时代安慰剂”。</p>
-        </article>
-
-        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span class="time-text">7 小时前</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8213927.html" target="_blank" rel="noopener noreferrer">林俊旸追上李飞飞</a></h2>
-          <p class="summary">林俊旸新公司语用科技完成新一轮融资，估值达到50亿美元</p>
-        </article>
-
-        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span class="time-text">8 小时前</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8214195.html" target="_blank" rel="noopener noreferrer">Edge AI Daily 早报（11月23日）</a></h2>
-          <p class="summary">英伟达季度营收1158亿美元、下季指引1300亿美元，市场焦点转向基建支出能否转化为可量化回报；Anthropic完成IPO募资约916亿美元，却背负约9009亿美元算力采购承诺，成本刚性与收入弹性错配待解；甲骨文筹足OpenAI合同资金，阿比林园区进入GPT-6 Astra训练。Anthropic数学家称与Claude提出黎曼猜想证明并经Lean/Mathlib形式化检查。</p>
-        </article>
-
-        <article class="card news-card" data-category="产业科技" style="border-left: 4px solid #3b82f6;">
-          <div class="meta">
-            <span class="tag" style="background: #dbeafe; color: #1e40af;">产业科技</span>
-            <span>钛媒体</span>
-            <span class="time-text">9 小时前</span>
-          </div>
-          <h2><a href="https://www.tmtpost.com/8214014.html" target="_blank" rel="noopener noreferrer">【钛晨报】A股利好！交易所打出稳市“组合拳”，事关两融、降费、创业板；积存金价格跌至“7字头”，银行纷纷提示贵金属市场风险；量子计算机“高速内存”全球首次真机实现</a></h2>
-          <p class="summary">搜狐张朝阳辟谣“被出具警示函”；天孚通信拟在南昌投建新一代高速光器件研发和生产制造项目；多品牌宣布下调金饰克价；美方拟禁止中国电信运营商直接获取美国互联网电话号码资源，商务部回应；特斯拉在美推出FSDv 15；美国证券交易委员会据悉正对英伟达潜在会计问题展开调查。</p>
-        </article>
-
-        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
-          <div class="meta">
-            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
-            <span>MarketWatch</span>
-            <span class="time-text">11 小时前</span>
-          </div>
-          <h2><a href="https://www.marketwatch.com/story/corporate-america-hunts-for-generational-growth-in-ai-trading-cards-and-the-l-a-airport-3072eb1a?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Corporate America hunts for ‘generational’ growth in AI, trading cards and the L.A. airport</a></h2>
-          <p class="summary">There’s been no shortage of trends deemed once-in-a-generation by executives on earnings calls.</p>
-        </article>
-
-        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
-          <div class="meta">
-            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
-            <span>MarketWatch</span>
-            <span class="time-text">11 小时前</span>
-          </div>
-          <h2><a href="https://www.marketwatch.com/story/ron-johnsons-social-security-gaffe-buried-important-news-b96e0ce8?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Ron Johnson’s Social Security gaffe buried important news</a></h2>
-          <p class="summary">The Wisconsin Republican’s remarks overshadowed what might have been a useful Senate committee hearing about fixing Social Security.</p>
-        </article>
-
-        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
-          <div class="meta">
-            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
-            <span>MarketWatch</span>
-            <span class="time-text">12 小时前</span>
-          </div>
-          <h2><a href="https://www.marketwatch.com/story/social-security-should-be-shut-down-this-republican-senator-says-8f7fef81?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Social Security should be shut down, this Republican senator says</a></h2>
-          <p class="summary">The program’s trust funds are forecast to run out of money in the next six years.</p>
-        </article>
-
-        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
-          <div class="meta">
-            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
-            <span>MarketWatch</span>
-            <span class="time-text">13 小时前</span>
-          </div>
-          <h2><a href="https://www.marketwatch.com/story/medicare-beneficiaries-could-skip-the-nursing-home-for-cheaper-care-at-home-under-new-bill-e289c8d0?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Medicare beneficiaries could skip the nursing home for cheaper care at home under new bill</a></h2>
-          <p class="summary">The plan would free up hospital and nursing-home beds — and lower costs.</p>
         </article>
 
         <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
           <div class="meta">
             <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
             <span>CNBC Business</span>
-            <span class="time-text">14 小时前</span>
+            <span class="time-text">19 小时前</span>
           </div>
           <h2><a href="https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html" target="_blank" rel="noopener noreferrer">Employees at Eric Trump-backed robot startup lose health benefits as company&#x27;s cash crunch deepens</a></h2>
           <p class="summary">Foundation is pursuing an emergency bridge loan and has been in talks with VC firms as it waits for a $150 million investment from South Korea&#x27;s Base Group.</p>
@@ -465,48 +495,8 @@ h2 a:hover { text-decoration: underline; }
         <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
           <div class="meta">
             <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
-            <span>MarketWatch</span>
-            <span class="time-text">14 小时前</span>
-          </div>
-          <h2><a href="https://www.marketwatch.com/story/these-little-known-investments-could-be-among-the-best-bargains-in-a-crash-78a379b4?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">These little-known investments could be among the best bargains in a crash</a></h2>
-          <p class="summary">If this stock market turmoil turns into a full-blown crash, look for low-risk investment bargains among closed-end funds.</p>
-        </article>
-
-        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
-          <div class="meta">
-            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
-            <span>MarketWatch</span>
-            <span class="time-text">15 小时前</span>
-          </div>
-          <h2><a href="https://www.marketwatch.com/story/private-equity-has-been-buying-up-hospice-centers-with-striking-consequences-63642545?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">Private equity has been buying up hospice centers — with striking consequences</a></h2>
-          <p class="summary">Medicare costs are higher and patients stay longer at hospice providers owned by private-equity firms, new research has found.</p>
-        </article>
-
-        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
-          <div class="meta">
-            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
-            <span>MarketWatch</span>
-            <span class="time-text">15 小时前</span>
-          </div>
-          <h2><a href="https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">‘Nvidia’s turmoil has me spooked’: Is it time to sell my stocks and buy real estate?</a></h2>
-          <p class="summary">If you are tempted to ditch stocks for property or CDs, take a deep breath before making any sudden moves.</p>
-        </article>
-
-        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
-          <div class="meta">
-            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
-            <span>MarketWatch</span>
-            <span class="time-text">16 小时前</span>
-          </div>
-          <h2><a href="https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories" target="_blank" rel="noopener noreferrer">I’m terrified of a market crash. Should I put $400,000 of my $1 million retirement savings into an annuity?</a></h2>
-          <p class="summary">“We have a house worth $450,000. Our combined annual income is $125,000.”</p>
-        </article>
-
-        <article class="card news-card" data-category="国际财经" style="border-left: 4px solid #10b981;">
-          <div class="meta">
-            <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
             <span>CNBC Business</span>
-            <span class="time-text">19 小时前</span>
+            <span class="time-text">昨天 21:00</span>
           </div>
           <h2><a href="https://www.cnbc.com/2026/11/22/pizza-chains-sales-glp-1-demand.html" target="_blank" rel="noopener noreferrer">Pizza chains are under pressure. GLP-1 use is only one part of the problem</a></h2>
           <p class="summary">Domino&#x27;s, Papa Johns and Pizza Hut face weaker demand, more delivery competition and changing eating habits, including GLP-1 use.</p>
@@ -516,7 +506,7 @@ h2 a:hover { text-decoration: underline; }
           <div class="meta">
             <span class="tag" style="background: #dcfce7; color: #166534;">国际财经</span>
             <span>CNBC Business</span>
-            <span class="time-text">昨天 20:00</span>
+            <span class="time-text">11-21 20:00</span>
           </div>
           <h2><a href="https://www.cnbc.com/2026/11/21/us-airlines-first-class-business-class.html" target="_blank" rel="noopener noreferrer">International first class is over for U.S. airlines. Enter the mega business-class cabin</a></h2>
           <p class="summary">Airlines are opting to build giant business-class cabins with ever-more luxurious suites.</p>
@@ -798,6 +788,46 @@ h2 a:hover { text-decoration: underline; }
     </div>
     <div id="report-list">
       
+        <article class="card report-card" data-search="中芯国际 688981">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">中芯国际 (688981)</span>
+            <span>中邮证券</span>
+            <span>2026-11-23</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611231831963561.html" target="_blank" rel="noopener noreferrer">持续向好</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
+        </article>
+
+        <article class="card report-card" data-search="首华燃气 300483">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">首华燃气 (300483)</span>
+            <span>西南证券</span>
+            <span>2026-11-23</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611231831958598.html" target="_blank" rel="noopener noreferrer">深层煤层气放量上产，上中下游一体化成长兑现</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
+        </article>
+
+        <article class="card report-card" data-search="阿石创 300706">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">阿石创 (300706)</span>
+            <span>太平洋</span>
+            <span>2026-11-23</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611231831958407.html" target="_blank" rel="noopener noreferrer">营收稳步增长，半导体高端靶材技术持续深化</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
+        </article>
+
+        <article class="card report-card" data-search="宝光股份 600379">
+          <div class="meta">
+            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
+            <span style="font-weight: bold; color: #1d1d1f;">宝光股份 (600379)</span>
+            <span>华安证券</span>
+            <span>2026-11-23</span>
+          </div>
+          <h2><a href="https://data.eastmoney.com/report/info/AP202611231831956955.html" target="_blank" rel="noopener noreferrer">高电压产品持续完善，金属化陶瓷业务取得实质性突破</a><span style="color: #dc2626; font-weight: bold; margin-left: 8px;">[买入]</span></h2>
+        </article>
+
         <article class="card report-card" data-search="泸州老窖 000568">
           <div class="meta">
             <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
@@ -1273,7 +1303,7 @@ h2 a:hover { text-decoration: underline; }
 
   <div id="tab-sentiment" style="display: none;">
     <div class="sentiment-dashboard">
-      <div class="sentiment-time">数据更新于：2026-11-23 08:55（同花顺行业资金流，盘后数据）</div>
+      <div class="sentiment-time">数据更新于：2026-11-23 14:02（同花顺行业资金流，盘后数据）</div>
       
         <div style="margin-bottom: 32px;">
           <div style="font-size: 16px; font-weight: bold; color: #1d1d1f; margin-bottom: 12px; padding-left: 8px; border-left: 4px solid #1d1d1f;">
@@ -1585,7 +1615,7 @@ h2 a:hover { text-decoration: underline; }
 <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
 
 <script>
-const macroData = {"money_supply": {"name": "货币供应量同比增速 (%)", "category": "货币", "type": "multi_line", "labels": ["2021年11月份", "2021年12月份", "2022年01月份", "2022年02月份", "2022年03月份", "2022年04月份", "2022年05月份", "2022年06月份", "2022年07月份", "2022年08月份", "2022年09月份", "2022年10月份", "2022年11月份", "2022年12月份", "2023年01月份", "2023年02月份", "2023年03月份", "2023年04月份", "2023年05月份", "2023年06月份", "2023年07月份", "2023年08月份", "2023年09月份", "2023年10月份", "2023年11月份", "2023年12月份", "2024年01月份", "2024年02月份", "2024年03月份", "2024年04月份", "2024年05月份", "2024年06月份", "2024年07月份", "2024年08月份", "2024年09月份", "2024年10月份", "2024年11月份", "2024年12月份", "2025年01月份", "2025年02月份", "2025年03月份", "2025年04月份", "2025年05月份", "2025年06月份", "2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "series": [{"name": "M0", "color": "#ef4444", "data": [7.2, 7.7, 18.5, 5.8, 10.0, 11.5, 13.5, 13.9, 13.9, 14.3, 13.6, 14.4, 14.1, 15.3, 7.9, 10.6, 11.0, 10.7, 9.6, 9.8, 9.9, 9.5, 10.7, 10.2, 10.4, 8.3, 5.9, 12.5, 11.0, 10.8, 11.7, 11.7, 12.0, 12.2, 11.5, 12.8, 12.7, 13.0, 17.2, 9.7, 11.5, 12.0, 12.1, 12.0, 11.8, 11.7, 11.5, 10.6, 10.6, 10.2, 2.7, 14.1, 12.5, 12.2, 11.9, 11.8, 11.6, 11.2, 10.6, 10.7]}, {"name": "M1", "color": "#10b981", "data": [3.0, 3.5, -1.9, 4.7, 4.7, 5.1, 4.6, 5.8, 6.7, 6.1, 6.4, 5.8, 4.6, 3.7, 6.7, 5.8, 5.1, 5.3, 4.7, 3.1, 2.3, 2.2, 2.1, 1.9, 1.3, 1.3, 5.9, 1.2, 1.1, -1.4, -4.2, -5.0, -6.6, -7.3, -7.4, -6.1, -3.7, -1.4, 0.4, 0.1, 1.6, 1.5, 2.3, 4.6, 5.6, 6.0, 7.2, 6.2, 4.9, 3.8, 4.9, 5.9, 5.1, 5.0, 5.5, 4.0, 4.0, 4.1, 3.2, 4.4]}, {"name": "M2", "color": "#3b82f6", "data": [8.5, 9.0, 9.8, 9.2, 9.7, 10.5, 11.1, 11.4, 12.0, 12.2, 12.1, 11.8, 12.4, 11.8, 12.6, 12.9, 12.7, 12.4, 11.6, 11.3, 10.7, 10.6, 10.3, 10.3, 10.0, 9.7, 8.7, 8.7, 8.3, 7.2, 7.0, 6.2, 6.3, 6.3, 6.8, 7.5, 7.1, 7.3, 7.0, 7.0, 7.0, 8.0, 7.9, 8.3, 8.8, 8.8, 8.4, 8.2, 8.0, 8.5, 9.0, 9.0, 8.5, 8.6, 8.6, 8.0, 7.7, 7.5, 7.2, 7.1]}]}, "shrzgm": {"name": "社会融资规模增量 (亿元)", "category": "货币", "type": "bar", "color": "#3b82f6", "labels": ["202105", "202106", "202107", "202108", "202109", "202110", "202111", "202112", "202201", "202202", "202203", "202204", "202205", "202206", "202207", "202208", "202209", "202210", "202211", "202212", "202301", "202302", "202303", "202304", "202305", "202306", "202307", "202308", "202309", "202310", "202311", "202312", "202401", "202402", "202403", "202404", "202405", "202406", "202407", "202408", "202409", "202410", "202411", "202412", "202501", "202502", "202503", "202504", "202505", "202506", "202507", "202508", "202509", "202510", "202511", "202512", "202601", "202602", "202603", "202604"], "data": [19522.0, 37017.0, 10752.0, 29893.0, 29026.0, 16176.0, 25983.0, 23682.0, 61759.0, 12170.0, 46565.0, 9327.0, 28415.0, 51926.0, 7785.0, 24712.0, 35411.0, 9134.0, 19837.0, 13058.0, 59956.0, 31610.0, 53867.0, 12249.0, 15560.0, 42265.0, 5366.0, 31279.0, 41326.0, 18441.0, 24554.0, 19401.0, 64734.0, 14959.0, 48335.0, -658.0, 20623.0, 32985.0, 7707.0, 30323.0, 37635.0, 14120.0, 23288.0, 28507.0, 70546.0, 22331.0, 58961.0, 11599.0, 22900.0, 42251.0, 11307.0, 25660.0, 35299.0, 8178.0, 24926.0, 22075.0, 72185.0, 23837.0, 52240.0, 6245.0]}, "rmb_loan": {"name": "新增人民币贷款 (亿元)", "category": "货币", "type": "bar", "color": "#8b5cf6", "labels": ["2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09", "2026-10"], "data": [9500.0, 21300.0, 2600.0, 9000.0, 15900.0, 5000.0, 5800.0, 9900.0, 51300.0, 10100.0, 36400.0, 2800.0, 6200.0, 22400.0, -500.0, 5900.0, 12900.0, 2200.0, 3900.0, 9100.0, 47100.0, 9000.0, 29900.0, -100.0, 5200.0, 16100.0, -3400.0, 600.0, 10800.0, -1000.0]}, "lpr": {"name": "贷款市场报价利率 LPR (%)", "category": "货币", "type": "line", "color": "#f59e0b", "labels": ["2021-12-20", "2022-01-20", "2022-02-21", "2022-03-21", "2022-04-20", "2022-05-20", "2022-06-20", "2022-07-20", "2022-08-22", "2022-09-20", "2022-10-20", "2022-11-21", "2022-12-20", "2023-01-20", "2023-02-20", "2023-03-20", "2023-04-20", "2023-05-22", "2023-06-20", "2023-07-20", "2023-08-21", "2023-09-20", "2023-10-20", "2023-11-20", "2023-12-20", "2024-01-22", "2024-02-20", "2024-03-20", "2024-04-22", "2024-05-20", "2024-06-20", "2024-07-22", "2024-08-20", "2024-09-20", "2024-10-21", "2024-11-20", "2024-12-20", "2025-01-20", "2025-02-20", "2025-03-20", "2025-04-21", "2025-05-20", "2025-06-20", "2025-07-21", "2025-08-20", "2025-09-22", "2025-10-20", "2025-11-20", "2025-12-22", "2026-01-20", "2026-02-24", "2026-03-20", "2026-04-20", "2026-05-20", "2026-06-22", "2026-07-20", "2026-08-20", "2026-09-20", "2026-10-20", "2026-11-20"], "data": [3.8, 3.7, 3.7, 3.7, 3.7, 3.7, 3.7, 3.7, 3.65, 3.65, 3.65, 3.65, 3.65, 3.65, 3.65, 3.65, 3.65, 3.65, 3.55, 3.55, 3.45, 3.45, 3.45, 3.45, 3.45, 3.45, 3.45, 3.45, 3.45, 3.45, 3.45, 3.35, 3.35, 3.35, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0]}, "cpi": {"name": "居民消费价格指数 (CPI) - 同比 (%)", "category": "物价", "type": "line", "color": "#ef4444", "labels": ["2021年11月份", "2021年12月份", "2022年01月份", "2022年02月份", "2022年03月份", "2022年04月份", "2022年05月份", "2022年06月份", "2022年07月份", "2022年08月份", "2022年09月份", "2022年10月份", "2022年11月份", "2022年12月份", "2023年01月份", "2023年02月份", "2023年03月份", "2023年04月份", "2023年05月份", "2023年06月份", "2023年07月份", "2023年08月份", "2023年09月份", "2023年10月份", "2023年11月份", "2023年12月份", "2024年01月份", "2024年02月份", "2024年03月份", "2024年04月份", "2024年05月份", "2024年06月份", "2024年07月份", "2024年08月份", "2024年09月份", "2024年10月份", "2024年11月份", "2024年12月份", "2025年01月份", "2025年02月份", "2025年03月份", "2025年04月份", "2025年05月份", "2025年06月份", "2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "data": [2.3, 1.5, 0.9, 0.9, 1.5, 2.1, 2.1, 2.5, 2.7, 2.5, 2.8, 2.1, 1.6, 1.8, 2.1, 1.0, 0.7, 0.1, 0.2, 0.0, -0.3, 0.1, 0.0, -0.2, -0.5, -0.3, -0.8, 0.7, 0.1, 0.3, 0.3, 0.2, 0.5, 0.6, 0.4, 0.3, 0.2, 0.1, 0.5, -0.7, -0.1, -0.1, -0.1, 0.1, 0.0, -0.4, -0.3, 0.2, 0.7, 0.8, 0.2, 1.3, 1.0, 1.2, 1.2, 1.0, 0.5, 0.8, 0.9, 0.7]}, "ppi": {"name": "工业生产者出厂价格 (PPI) - 同比 (%)", "category": "物价", "type": "line", "color": "#10b981", "labels": ["2021年11月份", "2021年12月份", "2022年01月份", "2022年02月份", "2022年03月份", "2022年04月份", "2022年05月份", "2022年06月份", "2022年07月份", "2022年08月份", "2022年09月份", "2022年10月份", "2022年11月份", "2022年12月份", "2023年01月份", "2023年02月份", "2023年03月份", "2023年04月份", "2023年05月份", "2023年06月份", "2023年07月份", "2023年08月份", "2023年09月份", "2023年10月份", "2023年11月份", "2023年12月份", "2024年01月份", "2024年02月份", "2024年03月份", "2024年04月份", "2024年05月份", "2024年06月份", "2024年07月份", "2024年08月份", "2024年09月份", "2024年10月份", "2024年11月份", "2024年12月份", "2025年01月份", "2025年02月份", "2025年03月份", "2025年04月份", "2025年05月份", "2025年06月份", "2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "data": [12.9, 10.3, 9.1, 8.8, 8.3, 8.0, 6.4, 6.1, 4.2, 2.3, 0.9, -1.3, -1.3, -0.7, -0.8, -1.4, -2.5, -3.6, -4.6, -5.4, -4.4, -3.0, -2.5, -2.6, -3.0, -2.7, -2.5, -2.7, -2.8, -2.5, -1.4, -0.8, -0.8, -1.8, -2.8, -2.9, -2.5, -2.3, -2.3, -2.2, -2.5, -2.7, -3.3, -3.6, -3.6, -2.9, -2.3, -2.1, -2.2, -1.9, -1.4, -0.9, 0.5, 2.8, 3.9, 4.1, 3.5, 3.8, 5.0, 5.7]}, "qyspjg": {"name": "企业商品价格指数 - 同比 (%)", "category": "物价", "type": "line", "color": "#ec4899", "labels": ["2021年11月份", "2021年12月份", "2022年01月份", "2022年02月份", "2022年03月份", "2022年04月份", "2022年05月份", "2022年06月份", "2022年07月份", "2022年08月份", "2022年09月份", "2022年10月份", "2022年11月份", "2022年12月份", "2023年01月份", "2023年02月份", "2023年03月份", "2023年04月份", "2023年05月份", "2023年06月份", "2023年07月份", "2023年08月份", "2023年09月份", "2023年10月份", "2023年11月份", "2023年12月份", "2024年01月份", "2024年02月份", "2024年03月份", "2024年04月份", "2024年05月份", "2024年06月份", "2024年07月份", "2024年08月份", "2024年09月份", "2024年10月份", "2024年11月份", "2024年12月份", "2025年01月份", "2025年02月份", "2025年03月份", "2025年04月份", "2025年05月份", "2025年06月份", "2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "data": [10.91, 7.29, 5.14, 3.11, 0.66, -1.12, -3.67, -2.68, -4.45, -4.93, -5.75, -9.08, -9.11, -6.79, -5.64, -6.03, -7.35, -8.65, -8.75, -9.22, -5.92, -4.2, -3.05, -2.2, -1.9, -2.0, -2.59, -1.91, -0.61, 1.13, 3.75, 4.61, 2.89, 1.12, -0.3, 1.12, 0.72, 0.1, 0.61, 0.31, 0.41, -0.61, -2.71, -3.1, -2.71, -1.82, -0.61, -1.72, -0.51, 0.51, 0.91, 1.94, 3.47, 5.23, 6.92, 6.4, 5.25, 5.55, 6.14, 6.58]}, "gyzjz": {"name": "工业增加值 - 同比 (%)", "category": "工业", "type": "bar", "color": "#14b8a6", "labels": ["2020年11月份", "2020年12月份", "2021年03月份", "2021年04月份", "2021年05月份", "2021年06月份", "2021年07月份", "2021年08月份", "2021年09月份", "2021年10月份", "2021年11月份", "2021年12月份", "2022年03月份", "2022年04月份", "2022年05月份", "2022年06月份", "2022年07月份", "2022年08月份", "2022年09月份", "2022年10月份", "2022年11月份", "2022年12月份", "2023年03月份", "2023年04月份", "2023年05月份", "2023年06月份", "2023年07月份", "2023年08月份", "2023年09月份", "2023年10月份", "2023年11月份", "2023年12月份", "2024年03月份", "2024年04月份", "2024年05月份", "2024年06月份", "2024年07月份", "2024年08月份", "2024年09月份", "2024年10月份", "2024年11月份", "2024年12月份", "2025年03月份", "2025年04月份", "2025年05月份", "2025年06月份", "2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "data": [7.0, 7.3, 14.1, 9.8, 8.8, 8.3, 6.4, 5.3, 3.1, 3.5, 3.8, 4.3, 5.0, -2.9, 0.7, 3.9, 3.8, 4.2, 6.3, 5.0, 2.2, 1.3, 3.9, 5.6, 3.5, 4.4, 3.7, 4.5, 4.5, 4.6, 6.6, 6.8, 4.5, 6.7, 5.6, 5.3, 5.1, 4.5, 5.4, 5.3, 5.4, 6.2, 7.7, 6.1, 5.8, 6.8, 5.7, 5.2, 6.5, 4.9, 4.8, 5.2, 5.7, 4.1, 4.5, 5.3, 4.5, 5.2, 5.5, 4.8]}, "gdzctz": {"name": "固定资产投资 - 同比 (%)", "category": "外贸", "type": "line", "color": "#6366f1", "labels": ["2020年11月份", "2020年12月份", "2021年03月份", "2021年04月份", "2021年05月份", "2021年06月份", "2021年07月份", "2021年08月份", "2021年09月份", "2021年10月份", "2021年11月份", "2021年12月份", "2022年03月份", "2022年04月份", "2022年05月份", "2022年06月份", "2022年07月份", "2022年08月份", "2022年09月份", "2022年10月份", "2022年11月份", "2022年12月份", "2023年03月份", "2023年04月份", "2023年05月份", "2023年06月份", "2023年07月份", "2023年08月份", "2023年09月份", "2023年10月份", "2023年11月份", "2023年12月份", "2024年03月份", "2024年04月份", "2024年05月份", "2024年06月份", "2024年07月份", "2024年08月份", "2024年09月份", "2024年10月份", "2024年11月份", "2024年12月份", "2025年03月份", "2025年04月份", "2025年05月份", "2025年06月份", "2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "data": [-28.77, 8.94, -0.13, -9.24, -19.65, -24.79, -2.05, -10.56, -11.75, 2.64, 196.65, 160.84, 6.6, 1.8, 4.6, 5.62, 3.75, 6.57, 6.66, 4.27, 0.67, 3.23, -0.75, -17.41, -21.15, -17.06, -11.57, -13.0, -11.62, -11.34, -14.78, -18.95, -8.4, 7.86, 7.92, 5.69, -1.32, 1.53, 3.33, -0.29, 2.93, 14.95, 2.76, 1.13, 0.71, -1.18, -6.26, -9.32, -8.41, -15.52, -17.59, -15.21, -1.12, -12.01, -17.15, -15.6, -14.19, -13.51, -9.69, -17.84]}, "pmi": {"name": "采购经理人指数 (PMI)", "category": "工业", "type": "multi_line", "labels": ["2021年11月份", "2021年12月份", "2022年01月份", "2022年02月份", "2022年03月份", "2022年04月份", "2022年05月份", "2022年06月份", "2022年07月份", "2022年08月份", "2022年09月份", "2022年10月份", "2022年11月份", "2022年12月份", "2023年01月份", "2023年02月份", "2023年03月份", "2023年04月份", "2023年05月份", "2023年06月份", "2023年07月份", "2023年08月份", "2023年09月份", "2023年10月份", "2023年11月份", "2023年12月份", "2024年01月份", "2024年02月份", "2024年03月份", "2024年04月份", "2024年05月份", "2024年06月份", "2024年07月份", "2024年08月份", "2024年09月份", "2024年10月份", "2024年11月份", "2024年12月份", "2025年01月份", "2025年02月份", "2025年03月份", "2025年04月份", "2025年05月份", "2025年06月份", "2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "baseline": 50, "series": [{"name": "制造业", "color": "#3b82f6", "data": [50.1, 50.3, 50.1, 50.2, 49.5, 47.4, 49.6, 50.2, 49.0, 49.4, 50.1, 49.2, 48.0, 47.0, 50.1, 52.6, 51.9, 49.2, 48.8, 49.0, 49.3, 49.7, 50.2, 49.5, 49.4, 49.0, 49.2, 49.1, 50.8, 50.4, 49.5, 49.5, 49.4, 49.1, 49.8, 50.1, 50.3, 50.1, 49.1, 50.2, 50.5, 49.0, 49.5, 49.7, 49.3, 49.4, 49.8, 49.0, 49.2, 50.1, 49.3, 49.0, 50.4, 50.3, 50.0, 50.3, 49.2, 49.8, 50.1, 49.3]}, {"name": "非制造业", "color": "#f59e0b", "data": [52.3, 52.7, 51.1, 51.6, 48.4, 41.9, 47.8, 54.7, 53.8, 52.6, 50.6, 48.7, 46.7, 41.6, 54.4, 56.3, 58.2, 56.4, 54.5, 53.2, 51.5, 51.0, 51.7, 50.6, 50.2, 50.4, 50.7, 51.4, 53.0, 51.2, 51.1, 50.5, 50.2, 50.3, 50.0, 50.2, 50.0, 52.2, 50.2, 50.4, 50.8, 50.4, 50.3, 50.5, 50.1, 50.3, 50.0, 50.1, 49.5, 50.2, 49.4, 49.5, 50.1, 49.4, 50.1, 50.2, 49.0, 49.0, 50.2, 49.7]}]}, "trade_amount": {"name": "海关进出口当月金额 (亿美元)", "category": "外贸", "type": "multi_line", "labels": ["2021年11月份", "2021年12月份", "2022年01月份", "2022年02月份", "2022年03月份", "2022年04月份", "2022年05月份", "2022年06月份", "2022年07月份", "2022年08月份", "2022年09月份", "2022年10月份", "2022年11月份", "2022年12月份", "2023年01月份", "2023年02月份", "2023年03月份", "2023年04月份", "2023年05月份", "2023年06月份", "2023年07月份", "2023年08月份", "2023年09月份", "2023年10月份", "2023年11月份", "2023年12月份", "2024年01月份", "2024年02月份", "2024年03月份", "2024年04月份", "2024年05月份", "2024年06月份", "2024年07月份", "2024年08月份", "2024年09月份", "2024年10月份", "2024年11月份", "2024年12月份", "2025年01月份", "2025年02月份", "2025年03月份", "2025年04月份", "2025年05月份", "2025年06月份", "2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "series": [{"name": "出口额", "color": "#ef4444", "data": [324277287.76, 339662266.17, 323277032.3, 214796000.6, 272869482.5, 268965296.5, 303898564.3, 323406642.4, 327463192.1, 310386496.8, 318242611.1, 293613877.3, 290615312.4, 296899982.9, 284408501.12, 208640924.77, 302448025.55, 288077191.72, 280918556.32, 283376665.13, 280778782.19, 283838806.93, 296452812.81, 274198382.28, 292628693.46, 303276227.21, 306224051.56, 221659069.4, 279138166.51, 291717286.52, 301603113.27, 307235753.38, 300223715.24, 308242308.39, 303372463.96, 308855475.34, 311877394.26, 335645884.47, 324261518.15, 214772260.44, 313043619.41, 315116072.24, 315631112.02, 324617338.0, 321216254.34, 321280730.7, 328148816.0, 304915592.75, 329990426.06, 357237599.67, 356471081.4, 299749227.49, 320907075.01, 358961275.49, 376202252.17, 411720559.43, 397811586.95, 401362985.64, 447244763.88, 412330272.81]}, {"name": "进口额", "color": "#3b82f6", "data": [253012219.01, 246454139.93, 243971523.1, 188620186.8, 230016765.7, 222673885.7, 227787340.1, 230099919.2, 229223343.7, 233391984.4, 236091997.7, 211906418.3, 224830774.5, 227892723.8, 192546667.35, 196621069.94, 225374623.44, 203029291.08, 215766730.01, 213818538.2, 201382521.01, 216619904.7, 221333257.26, 218336260.19, 223563544.52, 228548798.41, 222529355.71, 180675326.35, 220560451.79, 219838254.64, 220206909.91, 208198436.87, 214744461.41, 216689661.26, 221615361.04, 213138567.62, 214551373.61, 230469913.18, 186363961.76, 183588743.47, 211149437.57, 219255205.89, 212965532.24, 210845682.35, 223843274.22, 220274908.74, 239426216.34, 216917342.26, 220132915.06, 245309772.41, 236571762.2, 210555384.91, 271193303.76, 274784490.51, 271412239.61, 286237683.2, 285643474.78, 282781220.81, 313934852.49, 307053049.44]}]}, "bond_yield": {"name": "10年期国债收益率 (%)", "category": "大类资产", "type": "multi_line", "labels": ["2021-12", "2022-01", "2022-02", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10", "2022-11", "2022-12", "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09", "2026-10", "2026-11"], "series": [{"name": "中国", "color": "#ef4444", "data": [2.78, 2.7, 2.77, 2.79, 2.84, 2.74, 2.82, 2.76, 2.62, 2.76, 2.64, 2.88, 2.84, 2.9, 2.9, 2.85, 2.78, 2.69, 2.64, 2.66, 2.56, 2.68, 2.69, 2.67, 2.56, 2.43, 2.34, 2.29, 2.3, 2.29, 2.21, 2.15, 2.17, 2.15, 2.15, 2.02, 1.68, 1.63, 1.72, 1.81, 1.62, 1.67, 1.65, 1.7, 1.84, 1.86, 1.8, 1.84, 1.85, 1.81, 1.78, 1.82, 1.75, 1.71, 1.73, 1.71, 1.69, 1.68, 1.65, 1.58]}, {"name": "美国", "color": "#3b82f6", "data": [1.52, 1.79, 1.83, 2.32, 2.89, 2.85, 2.98, 2.67, 3.15, 3.83, 4.1, 3.68, 3.88, 3.52, 3.92, 3.48, 3.44, 3.64, 3.81, 3.97, 4.09, 4.59, 4.88, 4.37, 3.88, 3.99, 4.25, 4.2, 4.69, 4.51, 4.36, 4.09, 3.91, 3.81, 4.28, 4.18, 4.58, 4.58, 4.24, 4.23, 4.17, 4.41, 4.24, 4.37, 4.23, 4.16, 4.11, 4.02, 4.18, 4.26, 3.97, 4.3, 4.4, 4.45, 4.44, 4.75, 4.75, 5.29, 4.94, 4.92]}]}, "exchange_rate": {"name": "美元兑人民币中间价", "category": "大类资产", "type": "line", "color": "#10b981", "labels": ["2021-12", "2022-01", "2022-02", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10", "2022-11", "2022-12", "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09", "2026-10", "2026-11"], "data": [6.3757, 6.3746, 6.3222, 6.3482, 6.6177, 6.6607, 6.7114, 6.7437, 6.8906, 7.0998, 7.1768, 7.1769, 6.9646, 6.7604, 6.9519, 6.8717, 6.924, 7.0821, 7.2258, 7.1305, 7.1811, 7.1798, 7.1779, 7.1018, 7.0827, 7.1039, 7.1036, 7.095, 7.1063, 7.1088, 7.1268, 7.1346, 7.1124, 7.0074, 7.125, 7.1877, 7.1884, 7.1698, 7.1738, 7.1782, 7.2014, 7.1848, 7.1586, 7.1494, 7.103, 7.1055, 7.088, 7.0789, 7.0288, 6.9678, 6.9228, 6.9194, 6.8628, 6.8176, 6.8109, 6.7894, 6.7828, 6.7351, 6.7138, 6.712]}, "hs300_pe": {"name": "沪深300 滚动市盈率 (PE-TTM，近五年)", "category": "大类资产", "type": "line", "color": "#8b5cf6", "labels": ["2021-12", "2022-01", "2022-02", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10", "2022-11", "2022-12", "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09", "2026-10", "2026-11"], "data": [49.33, 45.32, 44.89, 38.26, 28.42, 30.37, 35.19, 33.37, 33.11, 30.58, 30.2, 31.6, 32.18, 34.52, 33.74, 32.12, 32.19, 30.7, 30.68, 31.28, 30.16, 29.13, 28.34, 27.03, 28.83, 26.47, 28.96, 29.3, 30.86, 30.19, 27.86, 28.42, 27.64, 32.99, 31.83, 31.71, 31.95, 32.08, 31.97, 30.65, 30.15, 30.23, 30.18, 31.58, 34.67, 35.4, 36.65, 34.83, 38.4, 39.51, 40.34, 35.49, 36.94, 39.19, 41.57, 38.26, 39.8, 36.8, 32.65, 31.91]}, "zz500_pe": {"name": "中证500 滚动市盈率 (PE-TTM，近五年)", "category": "大类资产", "type": "line", "color": "#ec4899", "labels": ["2021-12", "2022-01", "2022-02", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10", "2022-11", "2022-12", "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09", "2026-10", "2026-11"], "data": [45.59, 40.91, 41.18, 35.24, 28.96, 32.0, 34.03, 33.2, 32.1, 30.19, 30.6, 32.47, 33.48, 36.13, 36.55, 37.12, 36.61, 36.69, 38.45, 38.4, 38.53, 38.69, 37.46, 37.58, 36.25, 32.58, 35.78, 33.55, 34.27, 33.34, 34.17, 34.2, 31.88, 36.51, 37.87, 38.49, 38.25, 36.9, 39.16, 39.47, 38.03, 39.5, 41.76, 43.97, 47.7, 49.27, 47.97, 47.57, 50.75, 54.82, 55.94, 48.36, 48.64, 48.99, 52.52, 47.37, 49.66, 46.66, 43.64, 43.5]}, "margin_balance": {"name": "沪深两市两融余额 (亿元)", "category": "大类资产", "type": "mixed", "labels": ["2021-12", "2022-01", "2022-02", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10", "2022-11", "2022-12", "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09", "2026-10", "2026-11"], "bar_data": [18321.91, 17132.1, 17271.6, 16728.39, 15120.42, 15226.26, 16033.31, 16274.72, 16153.79, 15382.36, 15466.74, 15642.7, 15403.92, 15357.63, 15815.08, 16065.86, 16070.46, 16132.0, 15882.87, 15793.53, 15709.87, 15906.52, 16323.64, 16710.36, 16497.51, 15652.42, 14832.69, 15367.88, 15108.94, 15253.71, 7870.92, 14359.14, 13918.2, 14389.94, 8833.42, 9530.89, 9567.4, 9133.25, 9683.45, 9745.04, 9097.76, 9132.48, 18446.38, 19784.97, 22539.77, 23867.4, 24784.7, 24660.5, 25327.14, 27064.74, 26605.88, 26005.18, 27067.79, 29035.98, 30110.91, 26031.79, 26563.78, 25618.15, 23356.5, 22997.88], "line_data": [17120.51, 16202.85, 16311.16, 15806.91, 14337.67, 14445.64, 15097.69, 15277.34, 15106.46, 14435.63, 14428.17, 14643.57, 14445.11, 14450.64, 14880.09, 15128.72, 15137.56, 15186.87, 14952.9, 14860.71, 14771.14, 15094.32, 15491.45, 15915.84, 15781.54, 14994.24, 14397.37, 14952.69, 14728.55, 14871.89, 7664.97, 14126.71, 13804.26, 14295.02, 8766.31, 9458.97, 9495.04, 9068.37, 9609.07, 9670.27, 9022.97, 9050.66, 18323.35, 19646.98, 22381.01, 23709.72, 24609.89, 24489.73, 25161.88, 26898.76, 26432.55, 25823.38, 26871.5, 28821.54, 29877.88, 25809.69, 26271.2, 25324.19, 23078.12, 22709.78], "bar_color": "#f43f5e", "line_color": "#3b82f6"}};
+const macroData = {"money_supply": {"name": "货币供应量同比增速 (%)", "category": "货币", "type": "multi_line", "labels": ["2021年11月份", "2021年12月份", "2022年01月份", "2022年02月份", "2022年03月份", "2022年04月份", "2022年05月份", "2022年06月份", "2022年07月份", "2022年08月份", "2022年09月份", "2022年10月份", "2022年11月份", "2022年12月份", "2023年01月份", "2023年02月份", "2023年03月份", "2023年04月份", "2023年05月份", "2023年06月份", "2023年07月份", "2023年08月份", "2023年09月份", "2023年10月份", "2023年11月份", "2023年12月份", "2024年01月份", "2024年02月份", "2024年03月份", "2024年04月份", "2024年05月份", "2024年06月份", "2024年07月份", "2024年08月份", "2024年09月份", "2024年10月份", "2024年11月份", "2024年12月份", "2025年01月份", "2025年02月份", "2025年03月份", "2025年04月份", "2025年05月份", "2025年06月份", "2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "series": [{"name": "M0", "color": "#ef4444", "data": [7.2, 7.7, 18.5, 5.8, 10.0, 11.5, 13.5, 13.9, 13.9, 14.3, 13.6, 14.4, 14.1, 15.3, 7.9, 10.6, 11.0, 10.7, 9.6, 9.8, 9.9, 9.5, 10.7, 10.2, 10.4, 8.3, 5.9, 12.5, 11.0, 10.8, 11.7, 11.7, 12.0, 12.2, 11.5, 12.8, 12.7, 13.0, 17.2, 9.7, 11.5, 12.0, 12.1, 12.0, 11.8, 11.7, 11.5, 10.6, 10.6, 10.2, 2.7, 14.1, 12.5, 12.2, 11.9, 11.8, 11.6, 11.2, 10.6, 10.7]}, {"name": "M1", "color": "#10b981", "data": [3.0, 3.5, -1.9, 4.7, 4.7, 5.1, 4.6, 5.8, 6.7, 6.1, 6.4, 5.8, 4.6, 3.7, 6.7, 5.8, 5.1, 5.3, 4.7, 3.1, 2.3, 2.2, 2.1, 1.9, 1.3, 1.3, 5.9, 1.2, 1.1, -1.4, -4.2, -5.0, -6.6, -7.3, -7.4, -6.1, -3.7, -1.4, 0.4, 0.1, 1.6, 1.5, 2.3, 4.6, 5.6, 6.0, 7.2, 6.2, 4.9, 3.8, 4.9, 5.9, 5.1, 5.0, 5.5, 4.0, 4.0, 4.1, 3.2, 4.4]}, {"name": "M2", "color": "#3b82f6", "data": [8.5, 9.0, 9.8, 9.2, 9.7, 10.5, 11.1, 11.4, 12.0, 12.2, 12.1, 11.8, 12.4, 11.8, 12.6, 12.9, 12.7, 12.4, 11.6, 11.3, 10.7, 10.6, 10.3, 10.3, 10.0, 9.7, 8.7, 8.7, 8.3, 7.2, 7.0, 6.2, 6.3, 6.3, 6.8, 7.5, 7.1, 7.3, 7.0, 7.0, 7.0, 8.0, 7.9, 8.3, 8.8, 8.8, 8.4, 8.2, 8.0, 8.5, 9.0, 9.0, 8.5, 8.6, 8.6, 8.0, 7.7, 7.5, 7.2, 7.1]}]}, "shrzgm": {"name": "社会融资规模增量 (亿元)", "category": "货币", "type": "bar", "color": "#3b82f6", "labels": ["202105", "202106", "202107", "202108", "202109", "202110", "202111", "202112", "202201", "202202", "202203", "202204", "202205", "202206", "202207", "202208", "202209", "202210", "202211", "202212", "202301", "202302", "202303", "202304", "202305", "202306", "202307", "202308", "202309", "202310", "202311", "202312", "202401", "202402", "202403", "202404", "202405", "202406", "202407", "202408", "202409", "202410", "202411", "202412", "202501", "202502", "202503", "202504", "202505", "202506", "202507", "202508", "202509", "202510", "202511", "202512", "202601", "202602", "202603", "202604"], "data": [19522.0, 37017.0, 10752.0, 29893.0, 29026.0, 16176.0, 25983.0, 23682.0, 61759.0, 12170.0, 46565.0, 9327.0, 28415.0, 51926.0, 7785.0, 24712.0, 35411.0, 9134.0, 19837.0, 13058.0, 59956.0, 31610.0, 53867.0, 12249.0, 15560.0, 42265.0, 5366.0, 31279.0, 41326.0, 18441.0, 24554.0, 19401.0, 64734.0, 14959.0, 48335.0, -658.0, 20623.0, 32985.0, 7707.0, 30323.0, 37635.0, 14120.0, 23288.0, 28507.0, 70546.0, 22331.0, 58961.0, 11599.0, 22900.0, 42251.0, 11307.0, 25660.0, 35299.0, 8178.0, 24926.0, 22075.0, 72185.0, 23837.0, 52240.0, 6245.0]}, "rmb_loan": {"name": "新增人民币贷款 (亿元)", "category": "货币", "type": "bar", "color": "#8b5cf6", "labels": ["2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09", "2026-10"], "data": [9500.0, 21300.0, 2600.0, 9000.0, 15900.0, 5000.0, 5800.0, 9900.0, 51300.0, 10100.0, 36400.0, 2800.0, 6200.0, 22400.0, -500.0, 5900.0, 12900.0, 2200.0, 3900.0, 9100.0, 47100.0, 9000.0, 29900.0, -100.0, 5200.0, 16100.0, -3400.0, 600.0, 10800.0, -1000.0]}, "lpr": {"name": "贷款市场报价利率 LPR (%)", "category": "货币", "type": "line", "color": "#f59e0b", "labels": ["2021-12-20", "2022-01-20", "2022-02-21", "2022-03-21", "2022-04-20", "2022-05-20", "2022-06-20", "2022-07-20", "2022-08-22", "2022-09-20", "2022-10-20", "2022-11-21", "2022-12-20", "2023-01-20", "2023-02-20", "2023-03-20", "2023-04-20", "2023-05-22", "2023-06-20", "2023-07-20", "2023-08-21", "2023-09-20", "2023-10-20", "2023-11-20", "2023-12-20", "2024-01-22", "2024-02-20", "2024-03-20", "2024-04-22", "2024-05-20", "2024-06-20", "2024-07-22", "2024-08-20", "2024-09-20", "2024-10-21", "2024-11-20", "2024-12-20", "2025-01-20", "2025-02-20", "2025-03-20", "2025-04-21", "2025-05-20", "2025-06-20", "2025-07-21", "2025-08-20", "2025-09-22", "2025-10-20", "2025-11-20", "2025-12-22", "2026-01-20", "2026-02-24", "2026-03-20", "2026-04-20", "2026-05-20", "2026-06-22", "2026-07-20", "2026-08-20", "2026-09-20", "2026-10-20", "2026-11-20"], "data": [3.8, 3.7, 3.7, 3.7, 3.7, 3.7, 3.7, 3.7, 3.65, 3.65, 3.65, 3.65, 3.65, 3.65, 3.65, 3.65, 3.65, 3.65, 3.55, 3.55, 3.45, 3.45, 3.45, 3.45, 3.45, 3.45, 3.45, 3.45, 3.45, 3.45, 3.45, 3.35, 3.35, 3.35, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.1, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0]}, "cpi": {"name": "居民消费价格指数 (CPI) - 同比 (%)", "category": "物价", "type": "line", "color": "#ef4444", "labels": ["2021年11月份", "2021年12月份", "2022年01月份", "2022年02月份", "2022年03月份", "2022年04月份", "2022年05月份", "2022年06月份", "2022年07月份", "2022年08月份", "2022年09月份", "2022年10月份", "2022年11月份", "2022年12月份", "2023年01月份", "2023年02月份", "2023年03月份", "2023年04月份", "2023年05月份", "2023年06月份", "2023年07月份", "2023年08月份", "2023年09月份", "2023年10月份", "2023年11月份", "2023年12月份", "2024年01月份", "2024年02月份", "2024年03月份", "2024年04月份", "2024年05月份", "2024年06月份", "2024年07月份", "2024年08月份", "2024年09月份", "2024年10月份", "2024年11月份", "2024年12月份", "2025年01月份", "2025年02月份", "2025年03月份", "2025年04月份", "2025年05月份", "2025年06月份", "2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "data": [2.3, 1.5, 0.9, 0.9, 1.5, 2.1, 2.1, 2.5, 2.7, 2.5, 2.8, 2.1, 1.6, 1.8, 2.1, 1.0, 0.7, 0.1, 0.2, 0.0, -0.3, 0.1, 0.0, -0.2, -0.5, -0.3, -0.8, 0.7, 0.1, 0.3, 0.3, 0.2, 0.5, 0.6, 0.4, 0.3, 0.2, 0.1, 0.5, -0.7, -0.1, -0.1, -0.1, 0.1, 0.0, -0.4, -0.3, 0.2, 0.7, 0.8, 0.2, 1.3, 1.0, 1.2, 1.2, 1.0, 0.5, 0.8, 0.9, 0.7]}, "ppi": {"name": "工业生产者出厂价格 (PPI) - 同比 (%)", "category": "物价", "type": "line", "color": "#10b981", "labels": ["2021年11月份", "2021年12月份", "2022年01月份", "2022年02月份", "2022年03月份", "2022年04月份", "2022年05月份", "2022年06月份", "2022年07月份", "2022年08月份", "2022年09月份", "2022年10月份", "2022年11月份", "2022年12月份", "2023年01月份", "2023年02月份", "2023年03月份", "2023年04月份", "2023年05月份", "2023年06月份", "2023年07月份", "2023年08月份", "2023年09月份", "2023年10月份", "2023年11月份", "2023年12月份", "2024年01月份", "2024年02月份", "2024年03月份", "2024年04月份", "2024年05月份", "2024年06月份", "2024年07月份", "2024年08月份", "2024年09月份", "2024年10月份", "2024年11月份", "2024年12月份", "2025年01月份", "2025年02月份", "2025年03月份", "2025年04月份", "2025年05月份", "2025年06月份", "2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "data": [12.9, 10.3, 9.1, 8.8, 8.3, 8.0, 6.4, 6.1, 4.2, 2.3, 0.9, -1.3, -1.3, -0.7, -0.8, -1.4, -2.5, -3.6, -4.6, -5.4, -4.4, -3.0, -2.5, -2.6, -3.0, -2.7, -2.5, -2.7, -2.8, -2.5, -1.4, -0.8, -0.8, -1.8, -2.8, -2.9, -2.5, -2.3, -2.3, -2.2, -2.5, -2.7, -3.3, -3.6, -3.6, -2.9, -2.3, -2.1, -2.2, -1.9, -1.4, -0.9, 0.5, 2.8, 3.9, 4.1, 3.5, 3.8, 5.0, 5.7]}, "qyspjg": {"name": "企业商品价格指数 - 同比 (%)", "category": "物价", "type": "line", "color": "#ec4899", "labels": ["2021年11月份", "2021年12月份", "2022年01月份", "2022年02月份", "2022年03月份", "2022年04月份", "2022年05月份", "2022年06月份", "2022年07月份", "2022年08月份", "2022年09月份", "2022年10月份", "2022年11月份", "2022年12月份", "2023年01月份", "2023年02月份", "2023年03月份", "2023年04月份", "2023年05月份", "2023年06月份", "2023年07月份", "2023年08月份", "2023年09月份", "2023年10月份", "2023年11月份", "2023年12月份", "2024年01月份", "2024年02月份", "2024年03月份", "2024年04月份", "2024年05月份", "2024年06月份", "2024年07月份", "2024年08月份", "2024年09月份", "2024年10月份", "2024年11月份", "2024年12月份", "2025年01月份", "2025年02月份", "2025年03月份", "2025年04月份", "2025年05月份", "2025年06月份", "2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "data": [10.91, 7.29, 5.14, 3.11, 0.66, -1.12, -3.67, -2.68, -4.45, -4.93, -5.75, -9.08, -9.11, -6.79, -5.64, -6.03, -7.35, -8.65, -8.75, -9.22, -5.92, -4.2, -3.05, -2.2, -1.9, -2.0, -2.59, -1.91, -0.61, 1.13, 3.75, 4.61, 2.89, 1.12, -0.3, 1.12, 0.72, 0.1, 0.61, 0.31, 0.41, -0.61, -2.71, -3.1, -2.71, -1.82, -0.61, -1.72, -0.51, 0.51, 0.91, 1.94, 3.47, 5.23, 6.92, 6.4, 5.25, 5.55, 6.14, 6.58]}, "gyzjz": {"name": "工业增加值 - 同比 (%)", "category": "工业", "type": "bar", "color": "#14b8a6", "labels": ["2020年11月份", "2020年12月份", "2021年03月份", "2021年04月份", "2021年05月份", "2021年06月份", "2021年07月份", "2021年08月份", "2021年09月份", "2021年10月份", "2021年11月份", "2021年12月份", "2022年03月份", "2022年04月份", "2022年05月份", "2022年06月份", "2022年07月份", "2022年08月份", "2022年09月份", "2022年10月份", "2022年11月份", "2022年12月份", "2023年03月份", "2023年04月份", "2023年05月份", "2023年06月份", "2023年07月份", "2023年08月份", "2023年09月份", "2023年10月份", "2023年11月份", "2023年12月份", "2024年03月份", "2024年04月份", "2024年05月份", "2024年06月份", "2024年07月份", "2024年08月份", "2024年09月份", "2024年10月份", "2024年11月份", "2024年12月份", "2025年03月份", "2025年04月份", "2025年05月份", "2025年06月份", "2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "data": [7.0, 7.3, 14.1, 9.8, 8.8, 8.3, 6.4, 5.3, 3.1, 3.5, 3.8, 4.3, 5.0, -2.9, 0.7, 3.9, 3.8, 4.2, 6.3, 5.0, 2.2, 1.3, 3.9, 5.6, 3.5, 4.4, 3.7, 4.5, 4.5, 4.6, 6.6, 6.8, 4.5, 6.7, 5.6, 5.3, 5.1, 4.5, 5.4, 5.3, 5.4, 6.2, 7.7, 6.1, 5.8, 6.8, 5.7, 5.2, 6.5, 4.9, 4.8, 5.2, 5.7, 4.1, 4.5, 5.3, 4.5, 5.2, 5.5, 4.8]}, "gdzctz": {"name": "固定资产投资 - 同比 (%)", "category": "外贸", "type": "line", "color": "#6366f1", "labels": ["2020年11月份", "2020年12月份", "2021年03月份", "2021年04月份", "2021年05月份", "2021年06月份", "2021年07月份", "2021年08月份", "2021年09月份", "2021年10月份", "2021年11月份", "2021年12月份", "2022年03月份", "2022年04月份", "2022年05月份", "2022年06月份", "2022年07月份", "2022年08月份", "2022年09月份", "2022年10月份", "2022年11月份", "2022年12月份", "2023年03月份", "2023年04月份", "2023年05月份", "2023年06月份", "2023年07月份", "2023年08月份", "2023年09月份", "2023年10月份", "2023年11月份", "2023年12月份", "2024年03月份", "2024年04月份", "2024年05月份", "2024年06月份", "2024年07月份", "2024年08月份", "2024年09月份", "2024年10月份", "2024年11月份", "2024年12月份", "2025年03月份", "2025年04月份", "2025年05月份", "2025年06月份", "2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "data": [-28.77, 8.94, -0.13, -9.24, -19.65, -24.79, -2.05, -10.56, -11.75, 2.64, 196.65, 160.84, 6.6, 1.8, 4.6, 5.62, 3.75, 6.57, 6.66, 4.27, 0.67, 3.23, -0.75, -17.41, -21.15, -17.06, -11.57, -13.0, -11.62, -11.34, -14.78, -18.95, -8.4, 7.86, 7.92, 5.69, -1.32, 1.53, 3.33, -0.29, 2.93, 14.95, 2.76, 1.13, 0.71, -1.18, -6.26, -9.32, -8.41, -15.52, -17.59, -15.21, -1.12, -12.01, -17.15, -15.6, -14.19, -13.51, -9.69, -17.84]}, "pmi": {"name": "采购经理人指数 (PMI)", "category": "工业", "type": "multi_line", "labels": ["2021年11月份", "2021年12月份", "2022年01月份", "2022年02月份", "2022年03月份", "2022年04月份", "2022年05月份", "2022年06月份", "2022年07月份", "2022年08月份", "2022年09月份", "2022年10月份", "2022年11月份", "2022年12月份", "2023年01月份", "2023年02月份", "2023年03月份", "2023年04月份", "2023年05月份", "2023年06月份", "2023年07月份", "2023年08月份", "2023年09月份", "2023年10月份", "2023年11月份", "2023年12月份", "2024年01月份", "2024年02月份", "2024年03月份", "2024年04月份", "2024年05月份", "2024年06月份", "2024年07月份", "2024年08月份", "2024年09月份", "2024年10月份", "2024年11月份", "2024年12月份", "2025年01月份", "2025年02月份", "2025年03月份", "2025年04月份", "2025年05月份", "2025年06月份", "2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "baseline": 50, "series": [{"name": "制造业", "color": "#3b82f6", "data": [50.1, 50.3, 50.1, 50.2, 49.5, 47.4, 49.6, 50.2, 49.0, 49.4, 50.1, 49.2, 48.0, 47.0, 50.1, 52.6, 51.9, 49.2, 48.8, 49.0, 49.3, 49.7, 50.2, 49.5, 49.4, 49.0, 49.2, 49.1, 50.8, 50.4, 49.5, 49.5, 49.4, 49.1, 49.8, 50.1, 50.3, 50.1, 49.1, 50.2, 50.5, 49.0, 49.5, 49.7, 49.3, 49.4, 49.8, 49.0, 49.2, 50.1, 49.3, 49.0, 50.4, 50.3, 50.0, 50.3, 49.2, 49.8, 50.1, 49.3]}, {"name": "非制造业", "color": "#f59e0b", "data": [52.3, 52.7, 51.1, 51.6, 48.4, 41.9, 47.8, 54.7, 53.8, 52.6, 50.6, 48.7, 46.7, 41.6, 54.4, 56.3, 58.2, 56.4, 54.5, 53.2, 51.5, 51.0, 51.7, 50.6, 50.2, 50.4, 50.7, 51.4, 53.0, 51.2, 51.1, 50.5, 50.2, 50.3, 50.0, 50.2, 50.0, 52.2, 50.2, 50.4, 50.8, 50.4, 50.3, 50.5, 50.1, 50.3, 50.0, 50.1, 49.5, 50.2, 49.4, 49.5, 50.1, 49.4, 50.1, 50.2, 49.0, 49.0, 50.2, 49.7]}]}, "trade_amount": {"name": "海关进出口当月金额 (亿美元)", "category": "外贸", "type": "multi_line", "labels": ["2021年11月份", "2021年12月份", "2022年01月份", "2022年02月份", "2022年03月份", "2022年04月份", "2022年05月份", "2022年06月份", "2022年07月份", "2022年08月份", "2022年09月份", "2022年10月份", "2022年11月份", "2022年12月份", "2023年01月份", "2023年02月份", "2023年03月份", "2023年04月份", "2023年05月份", "2023年06月份", "2023年07月份", "2023年08月份", "2023年09月份", "2023年10月份", "2023年11月份", "2023年12月份", "2024年01月份", "2024年02月份", "2024年03月份", "2024年04月份", "2024年05月份", "2024年06月份", "2024年07月份", "2024年08月份", "2024年09月份", "2024年10月份", "2024年11月份", "2024年12月份", "2025年01月份", "2025年02月份", "2025年03月份", "2025年04月份", "2025年05月份", "2025年06月份", "2025年07月份", "2025年08月份", "2025年09月份", "2025年10月份", "2025年11月份", "2025年12月份", "2026年01月份", "2026年02月份", "2026年03月份", "2026年04月份", "2026年05月份", "2026年06月份", "2026年07月份", "2026年08月份", "2026年09月份", "2026年10月份"], "series": [{"name": "出口额", "color": "#ef4444", "data": [324277287.76, 339662266.17, 323277032.3, 214796000.6, 272869482.5, 268965296.5, 303898564.3, 323406642.4, 327463192.1, 310386496.8, 318242611.1, 293613877.3, 290615312.4, 296899982.9, 284408501.12, 208640924.77, 302448025.55, 288077191.72, 280918556.32, 283376665.13, 280778782.19, 283838806.93, 296452812.81, 274198382.28, 292628693.46, 303276227.21, 306224051.56, 221659069.4, 279138166.51, 291717286.52, 301603113.27, 307235753.38, 300223715.24, 308242308.39, 303372463.96, 308855475.34, 311877394.26, 335645884.47, 324261518.15, 214772260.44, 313043619.41, 315116072.24, 315631112.02, 324617338.0, 321216254.34, 321280730.7, 328148816.0, 304915592.75, 329990426.06, 357237599.67, 356471081.4, 299749227.49, 320907075.01, 358961275.49, 376202252.17, 411720559.43, 397811586.95, 401362985.64, 447244763.88, 412330272.81]}, {"name": "进口额", "color": "#3b82f6", "data": [253012219.01, 246454139.93, 243971523.1, 188620186.8, 230016765.7, 222673885.7, 227787340.1, 230099919.2, 229223343.7, 233391984.4, 236091997.7, 211906418.3, 224830774.5, 227892723.8, 192546667.35, 196621069.94, 225374623.44, 203029291.08, 215766730.01, 213818538.2, 201382521.01, 216619904.7, 221333257.26, 218336260.19, 223563544.52, 228548798.41, 222529355.71, 180675326.35, 220560451.79, 219838254.64, 220206909.91, 208198436.87, 214744461.41, 216689661.26, 221615361.04, 213138567.62, 214551373.61, 230469913.18, 186363961.76, 183588743.47, 211149437.57, 219255205.89, 212965532.24, 210845682.35, 223843274.22, 220274908.74, 239426216.34, 216917342.26, 220132915.06, 245309772.41, 236571762.2, 210555384.91, 271193303.76, 274784490.51, 271412239.61, 286237683.2, 285643474.78, 282781220.81, 313934852.49, 307053049.44]}]}, "bond_yield": {"name": "10年期国债收益率 (%)", "category": "大类资产", "type": "multi_line", "labels": ["2021-12", "2022-01", "2022-02", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10", "2022-11", "2022-12", "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09", "2026-10", "2026-11"], "series": [{"name": "中国", "color": "#ef4444", "data": [2.78, 2.7, 2.77, 2.79, 2.84, 2.74, 2.82, 2.76, 2.62, 2.76, 2.64, 2.88, 2.84, 2.9, 2.9, 2.85, 2.78, 2.69, 2.64, 2.66, 2.56, 2.68, 2.69, 2.67, 2.56, 2.43, 2.34, 2.29, 2.3, 2.29, 2.21, 2.15, 2.17, 2.15, 2.15, 2.02, 1.68, 1.63, 1.72, 1.81, 1.62, 1.67, 1.65, 1.7, 1.84, 1.86, 1.8, 1.84, 1.85, 1.81, 1.78, 1.82, 1.75, 1.71, 1.73, 1.71, 1.69, 1.68, 1.65, 1.59]}, {"name": "美国", "color": "#3b82f6", "data": [1.52, 1.79, 1.83, 2.32, 2.89, 2.85, 2.98, 2.67, 3.15, 3.83, 4.1, 3.68, 3.88, 3.52, 3.92, 3.48, 3.44, 3.64, 3.81, 3.97, 4.09, 4.59, 4.88, 4.37, 3.88, 3.99, 4.25, 4.2, 4.69, 4.51, 4.36, 4.09, 3.91, 3.81, 4.28, 4.18, 4.58, 4.58, 4.24, 4.23, 4.17, 4.41, 4.24, 4.37, 4.23, 4.16, 4.11, 4.02, 4.18, 4.26, 3.97, 4.3, 4.4, 4.45, 4.44, 4.75, 4.75, 5.29, 4.94, 4.92]}]}, "exchange_rate": {"name": "美元兑人民币中间价", "category": "大类资产", "type": "line", "color": "#10b981", "labels": ["2021-12", "2022-01", "2022-02", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10", "2022-11", "2022-12", "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09", "2026-10", "2026-11"], "data": [6.3757, 6.3746, 6.3222, 6.3482, 6.6177, 6.6607, 6.7114, 6.7437, 6.8906, 7.0998, 7.1768, 7.1769, 6.9646, 6.7604, 6.9519, 6.8717, 6.924, 7.0821, 7.2258, 7.1305, 7.1811, 7.1798, 7.1779, 7.1018, 7.0827, 7.1039, 7.1036, 7.095, 7.1063, 7.1088, 7.1268, 7.1346, 7.1124, 7.0074, 7.125, 7.1877, 7.1884, 7.1698, 7.1738, 7.1782, 7.2014, 7.1848, 7.1586, 7.1494, 7.103, 7.1055, 7.088, 7.0789, 7.0288, 6.9678, 6.9228, 6.9194, 6.8628, 6.8176, 6.8109, 6.7894, 6.7828, 6.7351, 6.7138, 6.712]}, "hs300_pe": {"name": "沪深300 滚动市盈率 (PE-TTM，近五年)", "category": "大类资产", "type": "line", "color": "#8b5cf6", "labels": ["2021-12", "2022-01", "2022-02", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10", "2022-11", "2022-12", "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09", "2026-10", "2026-11"], "data": [49.33, 45.32, 44.89, 38.26, 28.42, 30.37, 35.19, 33.37, 33.11, 30.58, 30.2, 31.6, 32.18, 34.52, 33.74, 32.12, 32.19, 30.7, 30.68, 31.28, 30.16, 29.13, 28.34, 27.03, 28.83, 26.47, 28.96, 29.3, 30.86, 30.19, 27.86, 28.42, 27.64, 32.99, 31.83, 31.71, 31.95, 32.08, 31.97, 30.65, 30.15, 30.23, 30.18, 31.58, 34.67, 35.4, 36.65, 34.83, 38.4, 39.51, 40.34, 35.49, 36.94, 39.19, 41.57, 38.26, 39.8, 36.8, 32.65, 32.19]}, "zz500_pe": {"name": "中证500 滚动市盈率 (PE-TTM，近五年)", "category": "大类资产", "type": "line", "color": "#ec4899", "labels": ["2021-12", "2022-01", "2022-02", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10", "2022-11", "2022-12", "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09", "2026-10", "2026-11"], "data": [45.59, 40.91, 41.18, 35.24, 28.96, 32.0, 34.03, 33.2, 32.1, 30.19, 30.6, 32.47, 33.48, 36.13, 36.55, 37.12, 36.61, 36.69, 38.45, 38.4, 38.53, 38.69, 37.46, 37.58, 36.25, 32.58, 35.78, 33.55, 34.27, 33.34, 34.17, 34.2, 31.88, 36.51, 37.87, 38.49, 38.25, 36.9, 39.16, 39.47, 38.03, 39.5, 41.76, 43.97, 47.7, 49.27, 47.97, 47.57, 50.75, 54.82, 55.94, 48.36, 48.64, 48.99, 52.52, 47.37, 49.66, 46.66, 43.64, 43.55]}, "margin_balance": {"name": "沪深两市两融余额 (亿元)", "category": "大类资产", "type": "mixed", "labels": ["2021-12", "2022-01", "2022-02", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10", "2022-11", "2022-12", "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09", "2026-10", "2026-11"], "bar_data": [18321.91, 17132.1, 17271.6, 16728.39, 15120.42, 15226.26, 16033.31, 16274.72, 16153.79, 15382.36, 15466.74, 15642.7, 15403.92, 15357.63, 15815.08, 16065.86, 16070.46, 16132.0, 15882.87, 15793.53, 15709.87, 15906.52, 16323.64, 16710.36, 16497.51, 15652.42, 14832.69, 15367.88, 15108.94, 15253.71, 7870.92, 14359.14, 13918.2, 14389.94, 8833.42, 9530.89, 9567.4, 9133.25, 9683.45, 9745.04, 9097.76, 9132.48, 18446.38, 19784.97, 22539.77, 23867.4, 24784.7, 24660.5, 25327.14, 27064.74, 26605.88, 26005.18, 27067.79, 29035.98, 30110.91, 26031.79, 26563.78, 25618.15, 23356.5, 22997.88], "line_data": [17120.51, 16202.85, 16311.16, 15806.91, 14337.67, 14445.64, 15097.69, 15277.34, 15106.46, 14435.63, 14428.17, 14643.57, 14445.11, 14450.64, 14880.09, 15128.72, 15137.56, 15186.87, 14952.9, 14860.71, 14771.14, 15094.32, 15491.45, 15915.84, 15781.54, 14994.24, 14397.37, 14952.69, 14728.55, 14871.89, 7664.97, 14126.71, 13804.26, 14295.02, 8766.31, 9458.97, 9495.04, 9068.37, 9609.07, 9670.27, 9022.97, 9050.66, 18323.35, 19646.98, 22381.01, 23709.72, 24609.89, 24489.73, 25161.88, 26898.76, 26432.55, 25823.38, 26871.5, 28821.54, 29877.88, 25809.69, 26271.2, 25324.19, 23078.12, 22709.78], "bar_color": "#f43f5e", "line_color": "#3b82f6"}};
 const chartInstances = {};
 
 function switchTab(tab) {
