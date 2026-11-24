@@ -18,6 +18,8 @@ def format_relative_time(value):
         dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
         now = datetime.now(timezone.utc)
         diff = now - dt
+        if diff.total_seconds() < 0:
+            return "刚刚"
         
         if diff.days == 0:
             if diff.seconds < 3600:
@@ -56,7 +58,34 @@ def build_news_cards(items):
     filter_html += '</div>'
 
     cards = []
+    last_date_key = None
+    today_local = (datetime.now(timezone.utc) + timedelta(hours=8)).date()
+    weekday_cn = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
     for item in items:
+        # 按北京时间日期分组，插入日期分隔标签
+        date_key = None
+        try:
+            _dt = datetime.fromisoformat(item.get("published", "").replace("Z", "+00:00"))
+            _local = (_dt + timedelta(hours=8)).date()
+            # 未来时间戳（源站时区提前）统一归到当天，避免出现"明天的分组"
+            if _local > (datetime.now(timezone.utc) + timedelta(hours=8)).date():
+                _local = (datetime.now(timezone.utc) + timedelta(hours=8)).date()
+            date_key = _local
+        except Exception:
+            date_key = None
+        if date_key != last_date_key:
+            last_date_key = date_key
+            if date_key is not None:
+                delta_days = (today_local - date_key).days
+                label_date = f"{date_key.month}月{date_key.day}日"
+                if delta_days == 0:
+                    group_label = f"今天 · {label_date}"
+                elif delta_days == 1:
+                    group_label = f"昨天 · {label_date}"
+                else:
+                    group_label = f"{label_date} {weekday_cn[date_key.weekday()]}"
+                cards.append(f'<div class="date-group">{group_label}</div>')
+
         title = html.escape(item.get("title", ""))
         link = html.escape(item.get("link", ""))
         summary = html.escape(item.get("summary", ""))
@@ -85,6 +114,8 @@ def build_news_cards(items):
             tag_style = "background: #f3f4f6; color: #374151;"
 
         summary_html = f'<p class="summary">{summary}</p>' if summary else ""
+        if summary and len(summary) > 90:
+            summary_html += '<button class="more-btn" onclick="toggleSummary(this)">展开全文</button>'
         
         cards.append(f'''
         <article class="card news-card" data-category="{category}" style="border-left: 4px solid {border_color};">
@@ -125,6 +156,27 @@ def build_report_cards(reports):
         elif "中性" in rating or "持有" in rating:
             rating_color = "#2563eb"
         rating_html = f'<span style="color: {rating_color}; font-weight: bold; margin-left: 8px;">[{rating}]</span>' if rating else ""
+
+        badge_bg, badge_fg = "#f3f4f6", "#6e6e73"
+        if "买入" in rating or "推荐" in rating:
+            badge_bg, badge_fg = "#fee2e2", "#b91c1c"
+        elif "增持" in rating:
+            badge_bg, badge_fg = "#ffedd5", "#c2410c"
+        elif "中性" in rating or "持有" in rating:
+            badge_bg, badge_fg = "#dbeafe", "#1d4ed8"
+        rating_badge = f'<span class="rating-badge" style="background: {badge_bg}; color: {badge_fg};">{rating}</span>' if rating else ""
+
+        lines = [ln.strip() for ln in (item.get("summary", "") or "").splitlines() if ln.strip()]
+        if lines and code and len(lines[0]) <= 30 and code in lines[0]:
+            lines.pop(0)
+        labels = {"核心观点", "主要观点", "投资要点", "事件", "点评", "摘要", "观点", "投资建议", "核心结论", "报告摘要"}
+        while lines and lines[0] in labels:
+            lines.pop(0)
+        preview = " ".join(lines)
+        if len(preview) > 120:
+            preview = preview[:120] + "…"
+        summary_html = f'<p class="summary clamp2">{html.escape(preview)}</p>' if preview else ""
+
         cards.append(f'''
         <article class="card report-card" data-search="{search_str}">
           <div class="meta">
@@ -132,8 +184,10 @@ def build_report_cards(reports):
             <span style="font-weight: bold; color: #1d1d1f;">{stock} ({code})</span>
             <span>{org}</span>
             <span>{date}</span>
+            {rating_badge}
           </div>
-          <h2><a href="{detail}" rel="noopener noreferrer">{title}</a>{rating_html}</h2>
+          <h2><a href="{detail}" rel="noopener noreferrer">{title}</a></h2>
+          {summary_html}
         </article>''')
     return "\n".join(cards)
 
@@ -426,6 +480,10 @@ def main():
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <title>个人财经终端</title>
+<meta property="og:title" content="个人财经终端">
+<meta property="og:description" content="每日新闻、券商研报、市场情绪与宏观数据的聚合看板">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
 :root {{ color-scheme: light dark; }}
@@ -494,6 +552,22 @@ h2 a:hover {{ text-decoration: underline; }}
 .chart-modal-content.show {{ display: flex; transform: scale(1); opacity: 1; }}
 .chart-modal-body {{ padding: 10px; flex: 1; position: relative; min-height: 0; }}
 @media (prefers-color-scheme: dark) {{ .chart-modal-content {{ background: #1c1c1e; }} }}
+
+/* ==== UI 轻量优化 ==== */
+.summary {{ display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }}
+.summary.clamp2 {{ -webkit-line-clamp: 2; }}
+.summary {{ font-size: 15px; line-height: 1.72; }}
+.summary.expanded {{ -webkit-line-clamp: unset; overflow: visible; }}
+.more-btn {{ background: none; border: none; padding: 4px 0 0; font-size: 13px; color: #0071e3; cursor: pointer; }}
+.rating-badge {{ margin-left: auto; font-size: 12px; font-weight: 600; padding: 2px 10px; border-radius: 999px; white-space: nowrap; }}
+.report-card .summary {{ font-size: 13.5px; color: #6e6e73; margin-top: 8px; }}
+
+.date-group {{ display: flex; align-items: center; gap: 10px; margin: 14px 2px 10px; font-size: 12px; font-weight: 600; color: #6e6e73; }}
+.date-group::after {{ content: ""; flex: 1; height: 1px; background: rgba(0,0,0,.08); }}
+#to-top {{ position: fixed; right: 16px; bottom: 28px; width: 42px; height: 42px; border-radius: 50%; border: none; background: rgba(29,29,31,.82); color: #fff; font-size: 18px; line-height: 42px; text-align: center; cursor: pointer; display: none; z-index: 200; box-shadow: 0 2px 8px rgba(0,0,0,.2); }}
+.search-wrap {{ position: relative; }}
+.search-clear {{ position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 22px; height: 22px; border: none; border-radius: 50%; background: #e5e7eb; color: #6e6e73; font-size: 13px; line-height: 22px; cursor: pointer; padding: 0; }}
+.search-count {{ font-size: 12px; color: #6e6e73; margin-top: 8px; min-height: 16px; }}
 </style>
 </head>
 <body>
@@ -509,12 +583,17 @@ h2 a:hover {{ text-decoration: underline; }}
     <button class="tab-btn" onclick="switchTab('macro')" id="btn-macro">宏观数据</button>
   </div>
 </header>
+<button id="to-top" title="回到顶部">↑</button>
 <main>
   <div id="tab-news">{news_cards_html}</div>
   
   <div id="tab-reports" style="display: none;">
     <div class="search-container">
-      <input type="text" id="report-search" class="search-input" placeholder="🔍 输入股票代码或名称搜索研报..." oninput="filterReports()">
+      <div class="search-wrap">
+        <input type="text" id="report-search" class="search-input" placeholder="🔍 输入股票代码或名称搜索研报..." oninput="filterReports()">
+        <button class="search-clear" id="search-clear" onclick="clearSearch()" style="display:none;">×</button>
+      </div>
+      <div class="search-count" id="search-count"></div>
     </div>
     <div id="report-list">
       {reports_cards_html}
@@ -551,8 +630,19 @@ function switchTab(tab) {{
   }});
   document.getElementById('tab-' + tab).style.display = 'block';
   document.getElementById('btn-' + tab).classList.add('active');
+  window.scrollTo(0, 0);
   if(tab === 'macro') lazyRenderCharts();
 }}
+
+function initBackToTop() {{
+  var btn = document.getElementById('to-top');
+  if (!btn) return;
+  btn.onclick = function () {{ window.scrollTo(0, 0); }};
+  window.addEventListener('scroll', function () {{
+    btn.style.display = window.scrollY > 400 ? 'block' : 'none';
+  }}, {{ passive: true }});
+}}
+
 
 // 打开页面时恢复标签：支持 index.html?tab=reports 或 #reports
 (function(){{
@@ -560,7 +650,15 @@ function switchTab(tab) {{
   try {{ t = new URLSearchParams(location.search).get('tab') || ''; }} catch(e) {{ t = ''; }}
   if (!t && location.hash) {{ t = location.hash.replace(/^#/, ''); }}
   if (['news','reports','sentiment','macro'].indexOf(t) >= 0) {{ switchTab(t); }}
+  initBackToTop();
 }})();
+
+function toggleSummary(btn) {{
+  var p = btn.previousElementSibling;
+  if (!p) return;
+  var on = p.classList.toggle('expanded');
+  btn.textContent = on ? '收起' : '展开全文';
+}}
 
 // 新闻分类筛选
 function filterNews(category, btn) {{
@@ -570,6 +668,10 @@ function filterNews(category, btn) {{
   btn.classList.add('active');
 
   // 过滤卡片
+  document.querySelectorAll('.date-group').forEach(g => {{
+    g.style.display = category === 'all' ? 'flex' : 'none';
+  }});
+
   const cards = document.querySelectorAll('.news-card');
   cards.forEach(card => {{
     if (category === 'all' || card.getAttribute('data-category') === category) {{
@@ -598,6 +700,22 @@ function filterReports() {{
 
   const emptyMsg = document.getElementById('report-empty');
   emptyMsg.style.display = visibleCount === 0 ? 'block' : 'none';
+
+  const clearBtn = document.getElementById('search-clear');
+  if (clearBtn) clearBtn.style.display = query ? 'block' : 'none';
+  const countEl = document.getElementById('search-count');
+  if (countEl) countEl.textContent = query ? ('匹配到 ' + visibleCount + ' 条研报') : '';
+
+  // 分组标签在筛选时隐藏
+  document.querySelectorAll('.date-group').forEach(function (g) {{
+    g.style.display = query ? 'none' : 'flex';
+  }});
+}}
+
+function clearSearch() {{
+  const input = document.getElementById('report-search');
+  input.value = '';
+  filterReports();
 }}
 
 function switchSubTab(catId) {{
