@@ -1,5 +1,6 @@
 import json
 import os
+import base64
 import html
 from datetime import datetime, timezone, timedelta
 
@@ -294,6 +295,79 @@ def build_macro_html(macro_data):
     </div>
     '''
 
+ICON_PNG_B64 = (
+    "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"
+    "AABJRU5ErkJggg=="
+)
+
+
 REPORT_PAGE_TEMPLATE = r"""<!doctype html>
 <html lang="zh-CN">
 <head>
@@ -483,7 +557,10 @@ def main():
 <meta property="og:title" content="个人财经终端">
 <meta property="og:description" content="每日新闻、券商研报、市场情绪与宏观数据的聚合看板">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<link rel="icon" type="image/png" sizes="180x180" href="icon.png">
+<link rel="shortcut icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<meta property="og:image" content="icon.png">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
 :root {{ color-scheme: light dark; }}
@@ -564,7 +641,7 @@ h2 a:hover {{ text-decoration: underline; }}
 
 .date-group {{ display: flex; align-items: center; gap: 10px; margin: 14px 2px 10px; font-size: 12px; font-weight: 600; color: #6e6e73; }}
 .date-group::after {{ content: ""; flex: 1; height: 1px; background: rgba(0,0,0,.08); }}
-#to-top {{ position: fixed; right: 16px; bottom: 28px; width: 42px; height: 42px; border-radius: 50%; border: none; background: rgba(29,29,31,.82); color: #fff; font-size: 18px; line-height: 42px; text-align: center; cursor: pointer; display: none; z-index: 200; box-shadow: 0 2px 8px rgba(0,0,0,.2); }}
+#to-top {{ position: fixed; right: 16px; bottom: 28px; width: 42px; height: 42px; border-radius: 50%; border: none; background: rgba(29,29,31,.82); color: #fff; font-size: 18px; line-height: 42px; text-align: center; cursor: pointer; display: none; z-index: 200;  }}
 .search-wrap {{ position: relative; }}
 .search-clear {{ position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 22px; height: 22px; border: none; border-radius: 50%; background: #e5e7eb; color: #6e6e73; font-size: 13px; line-height: 22px; cursor: pointer; padding: 0; }}
 .search-count {{ font-size: 12px; color: #6e6e73; margin-top: 8px; min-height: 16px; }}
@@ -922,12 +999,17 @@ function closeChartModal() {{
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(html_doc)
 
+    icon_path = os.path.join(os.path.dirname(OUTPUT_FILE), "icon.png")
+    with open(icon_path, "wb") as f:
+        f.write(base64.b64decode(ICON_PNG_B64))
+
     report_path = os.path.join(os.path.dirname(OUTPUT_FILE), "report.html")
     with open(report_path, "w", encoding="utf-8") as f:
         f.write(build_report_page(reports_data))
 
     print(f"已生成 {OUTPUT_FILE}，前端交互已全面优化。")
     print(f"已生成 {report_path}，共 {len(reports_data)} 篇研报详情。")
+    print(f"已生成 {icon_path}。")
 
 
 if __name__ == "__main__":
