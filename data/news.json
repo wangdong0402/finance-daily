@@ -1,7 +1,199 @@
 {
-  "updated": "2026-11-23T23:57:27.216389+00:00",
+  "updated": "2026-11-24T03:10:43.244501+00:00",
   "count": 70,
   "items": [
+    {
+      "title": "长租公寓资本开启“大换血”模式？",
+      "link": "https://www.tmtpost.com/8215405.html",
+      "summary": "万科在卖、友邦在买，开发商退，险资接力入场。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T02:56:00+00:00"
+    },
+    {
+      "title": "刚刚，Anthropic内部Claude模型独立攻克代数版P/NP问题，全篇Lean机器验证通过",
+      "link": "https://wallstreetcn.com/articles/3786566",
+      "summary": "Anthropic的内部研究版Claude模型，刚刚独立证明了代数版本的P对NP猜想。 论文的唯一作者署名就是Claude， GitHub： https://github.com/anthropics/formal-math/tree/main/vp-vnp paper： https://www.alphaxiv.org/pdf/2611.vp-vnp-arithmetic-lower-bounds 不过整项成果没有经过人类数学家的人工审稿，但已经用形式化验证工具Lean 4完成了端到端的机器证明与检验。 这篇论文的核心结论只有一个：在任意域上，VP都不等于VNP。 这个结论正式回答了理论计算",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T02:55:08+00:00"
+    },
+    {
+      "title": "英伟达重新“拥抱”黄仁勋",
+      "link": "https://www.tmtpost.com/8215108.html",
+      "summary": "对英伟达董事会来说，真正没有完成的工作，是为黄仁勋之后的英伟达找到答案。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T02:54:00+00:00"
+    },
+    {
+      "title": "海外短剧演员开始“卖脸”：有人主动授权AI，有人却被AI抢走工作",
+      "link": "https://www.tmtpost.com/8215371.html",
+      "summary": "海外短剧平台开始招募演员“卖脸”。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T02:52:00+00:00"
+    },
+    {
+      "title": "AI一人公司，终结不了全民沉迷做「网红」",
+      "link": "https://www.tmtpost.com/8215404.html",
+      "summary": "为何流量迷恋一直存在？因为网红的造富幻觉从未消散。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T02:47:00+00:00"
+    },
+    {
+      "title": "自免明星被做空，中国临床成“枪口”",
+      "link": "https://www.tmtpost.com/8215370.html",
+      "summary": "谁来承担成本？",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T02:42:00+00:00"
+    },
+    {
+      "title": "英伟达一夜暴涨31%，空头跌懵了",
+      "link": "https://wallstreetcn.com/articles/3786564",
+      "summary": "英伟达股价周一单日飙升逾31%，将押注其下跌的空头打了个措手不及——杠杆做空产品最高暴跌92%，空头单日账面亏损约112亿美元。 触发这场轧空行情的，是英伟达董事会宣布恢复黄仁勋首席执行官职务。消息一出，英伟达股价当日最高涨幅达37%，收盘报165.05美元，涨幅31.5%，市值单日增加约9500亿美元。据ORTEX联合创始人Peter Hillerberg向MarketWatch透露，这是美国股市历史上单只股票单日市值增幅最大的一次。 对于此前顺势做空的交易员而言，这一逆转来得格外猛烈。英伟达上周累计下跌23%，本月截至上周五跌幅达39%，做空者一度坐拥丰厚浮盈。然而黄仁勋复职的消息在数小时",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T02:39:07+00:00"
+    },
+    {
+      "title": "盒马一封催货函，把3岁酸菜品牌推上神坛，它却急着改名？",
+      "link": "https://www.tmtpost.com/8215258.html",
+      "summary": "催货函可以制造一次抢购，但撑不起一个品牌的长期增长。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T02:35:00+00:00"
+    },
+    {
+      "title": "成为 DeepSeek 的股东有什么好处",
+      "link": "https://www.tmtpost.com/8215199.html",
+      "summary": "宁德时代、吉利等大企业入股DeepSeek，布局长线，聚焦各自领域，不求资本增值，而是依托产业优势参与大模型发展。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T02:32:00+00:00"
+    },
+    {
+      "title": "CEO回来了：英伟达为何承受不起黄仁勋离开",
+      "link": "https://www.tmtpost.com/8215109.html",
+      "summary": "英伟达董事会宣布恢复黄仁勋 CEO 职务。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T02:25:00+00:00"
+    },
+    {
+      "title": "英伟达进入黄仁勋2.0时代",
+      "link": "https://www.tmtpost.com/8215432.html",
+      "summary": "黄仁勋重新走进总部，员工用欢呼和拥抱迎接他的那刻，英伟达内部对这位创始人的依赖被直观地呈现出来。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T02:21:29+00:00"
+    },
+    {
+      "title": "好莱坞：电影没得拍，不如投AI",
+      "link": "https://www.tmtpost.com/8214934.html",
+      "summary": "抵制AI，运用AI。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T02:19:00+00:00"
+    },
+    {
+      "title": "具身智能：200亿估值之后，真正的难题是什么？",
+      "link": "https://www.tmtpost.com/8215279.html",
+      "summary": "四家领先，格局未定。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T02:13:33+00:00"
+    },
+    {
+      "title": "黄仁勋“回宫”记",
+      "link": "https://www.tmtpost.com/8215115.html",
+      "summary": "轻舟已过万重山。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T02:13:28+00:00"
+    },
+    {
+      "title": "黄仁勋复职“救市”，然后呢",
+      "link": "https://www.tmtpost.com/8215434.html",
+      "summary": "市场9520亿美元回补，量级上超出了对一位首席执行官回归的常规定价。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T02:10:00+00:00"
+    },
+    {
+      "title": "黄仁勋回归提振亚洲股市，韩股涨7%，SK海力士涨10%，日经一度涨5%",
+      "link": "https://wallstreetcn.com/articles/3786560",
+      "summary": "英伟达董事会恢复黄仁勋首席执行官职务，点燃全球科技股行情。 亚太市场周二全线大涨，芯片相关个股领涨，MSCI亚太指数创逾三个月来最大单日涨幅，此前该指数已连跌八个交易日、逼近熊市边缘。 周二亚太时段，MSCI亚太指数涨幅达4%，报243点。韩国综合股价指数涨幅一度超过7%，日本股市在长假后复市，日经225指数涨幅扩大至5%。 美元指数小幅回落0.12%。黄金延续涨势，现货金价上涨0.7%至每盎司3661.73美元。WTI原油小幅下跌0.26%。 这波反弹紧随华尔街周一的大幅拉升。标普500指数单日涨4.7%，终结七连跌；纳斯达克100指数飙升6.9%，从熊市边缘拉回；费城半导体指数大涨14%；",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T02:00:54+00:00"
+    },
+    {
+      "title": "A股三大股指齐涨，创业板早盘一度涨4%，算力硬件集体大反弹，恒科指早盘高开2%后回落，权重科网股多走低",
+      "link": "https://wallstreetcn.com/articles/3786562",
+      "summary": "11月24日，A股早盘集体高开，三大股指盘初上涨，创业板一度涨超4%，AI硬件大反弹，光模块、光通信、电路板、存储芯片等概念股集体拉升，得益于隔夜黄仁勋重返英伟达任CEO，带动科技股大涨，英伟达单日暴涨31%。券商、油气、煤炭等板块陷入调整。 港股早盘亦高开，恒指、恒科指盘初涨幅收窄，权重科网股多数下跌，光模块、光纤、光通信等科技股集体大涨，东山精密涨超10%。AI大模型股同样回暖。债市方面，国债期货多数上涨。商品方面，国内商品期货多数走高，贵金属期货涨幅居前，核心市场走势： A股 ：截至发稿，沪指涨1.13%%，深成指涨2.18%，创业板指涨3.33%。 港股 ：截至发稿，恒指涨0.83%，",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T01:58:19+00:00"
+    },
+    {
+      "title": "问诊AI？一场死亡背后的追问",
+      "link": "https://www.tmtpost.com/8215116.html",
+      "summary": "这场死亡背后，还有太多关于AI与医疗的边界值得追问。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T01:52:55+00:00"
+    },
+    {
+      "title": "不等英伟达了，机器人公司自己造芯",
+      "link": "https://www.tmtpost.com/8214962.html",
+      "summary": "合资、投资、自研，机器人厂商的造芯三条路线。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T01:52:51+00:00"
+    },
+    {
+      "title": "I’ve been married for 58 years. It’s ‘our’ money, not ‘his’ and ‘hers.’ Why do so many couples keep their finances separate?",
+      "link": "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
+      "summary": "“My wife stopped working outside the home in 1970.”",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-24T01:01:00+00:00"
+    },
+    {
+      "title": "HPE just posted its strongest growth ever — but its stock is sinking",
+      "link": "https://www.marketwatch.com/story/hpe-just-posted-its-strongest-growth-ever-and-its-stock-is-tacking-on-more-big-gains-4421cebb?mod=mw_rss_topstories",
+      "summary": "HPE boosted its financial forecast on Monday in the face of strong AI demand.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-24T01:01:00+00:00"
+    },
+    {
+      "title": "《纽约时报》被群嘲！亲手推倒黄仁勋，又见证他回归：震惊！为何特朗普如此重视他？",
+      "link": "https://wallstreetcn.com/articles/3786559",
+      "summary": "11月23日，就在《纽约时报》还在头版跟进黄仁勋相关丑闻的同一天，另一条消息盖过了它——英伟达宣布，黄仁勋正式复职。同一天，头版换了两次。 该报资深记者Katrin Bennhold在当天的评论专栏里写道：\"昨天早上，我们首页的头条还在披露那名与黄仁勋有染的女性与相关机构之间的联系细节。到了下午，那条标题不见了。取而代之的，是一条新标题：'英伟达恢复黄仁勋CEO职务'。\" \"黄仁勋回来了，特朗普在庆祝，市场在上涨——而我们对这场让他丢掉工作的丑闻，仍未完全摸清底细。\" \"如果你感到震惊、错愕、困惑，你不是一个人。\"她在文章中写道。 而这一幕的反差，让《纽约时报》自己也成了这个故事的一部分。一天",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T00:52:12+00:00"
+    },
+    {
+      "title": "特朗普力促黄仁勋复职、万斯介入给出保证，英伟达董事会“周日提前告知白宫”",
+      "link": "https://wallstreetcn.com/articles/3786540",
+      "summary": "英伟达宣布董事会决定恢复黄仁勋总裁、首席执行官（CEO）及董事职务后不到10分钟，美国总统特朗普便公开力挺这一决定，还自称黄仁勋回归是他一手促成。媒体报道披露，美国副总统万斯还在特朗普的指示下参与了黄仁勋复职的幕后协调。 据新华社，特朗普23日在社交媒体发文说，英伟达董事会让黄仁勋重新担任CEO一职是\"正确且恰当的决定\"。他表示，美国政府没有理由认为黄仁勋回归英伟达会对国家安全构成任何风险。美国司法部长已确认，美国政府没有证据表明其有任何不合法行为。 特朗普发帖表示，美国需要黄仁勋继续领导英伟达，以确保公司乃至美国经济的成功与繁荣。他称，自己已经与黄仁勋相识，认为他是一位\"伟大的爱国者和国家瑰",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T00:12:07+00:00"
+    },
+    {
+      "title": "黄仁勋=2万亿美元！",
+      "link": "https://wallstreetcn.com/articles/3786557",
+      "summary": "黄仁勋重返英伟达CEO职位 ， 单日引爆史上最大规模科技股反弹，纳斯达克综合指数单日飙升6.5%，市值增加逾2万亿美元。 周一（11月23日），黄仁勋重新回归英伟达掌门人的消息在美东时间上午9时前不久正式宣布，距英伟达董事会告知投资者他不会回归仅过去六天。消息一出，英伟达股价单日暴涨31%，创下2003年5月以来最大单日涨幅， 公司市值单日增加近1万亿美元，创下人类历史上任何一家公司单日市值增幅之最 。“科技七巨头”（Mag 7）合计单日市值增加1.6万亿美元，为2025年4月以来最大单日涨幅。 这场反弹席卷了从小盘股、芯片股到比特币、黄金的几乎所有资产类别。纳斯达克100期货在开盘前数分钟跳",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T00:06:12+00:00"
+    },
     {
       "title": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
       "link": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
@@ -9,14 +201,6 @@
       "source": "CNBC Business",
       "category": "国际财经",
       "published": "2026-11-23T23:28:19+00:00"
-    },
-    {
-      "title": "【钛晨报】英伟达董事会一致同意恢复黄仁勋CEO职务；荣耀CEO李健：荣耀阔折叠明年3月发布｜独家；中汽协：1-10月，销量排名前十位的MPV生产企业共销售64.8万辆",
-      "link": "https://www.tmtpost.com/8215026.html",
-      "summary": "蚂蚁阿福App新版发布，蚂蚁阿福医生版上线“循证金标准”UpToDate；亚马逊将支付75亿美元获取人工智能初创公司Decart的技术；微软AI首席执行官苏莱曼：支持OpenAI提高透明度的倡议；四部门：鼓励发展适合养老场景的人工智能体、服务机器人、智能穿戴设备、外骨骼等新产品；人社部：非法骗取社保基金支出或者社保待遇，拟处骗取金额2倍以上5倍以下的罚款；市场监管总局发布《婴幼儿辅助食品生产许可审查细则（2026版）》；“固态锂电池标准项目组”将成立，正式编制《固态锂离子电池和电池组安全技术规范》；中国牵头的摩托车及轻便摩托车信息与服务国际标准正式立项；监管明确两融调整要求，违约处置要稳妥审慎",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-23T23:20:00+00:00"
     },
     {
       "title": "The newest addition to the S&P 500 is a maker of viral ice-cream machines",
@@ -139,14 +323,6 @@
       "published": "2026-11-23T21:33:00+00:00"
     },
     {
-      "title": "HPE just posted its strongest growth ever — but its stock is wavering",
-      "link": "https://www.marketwatch.com/story/hpe-just-posted-its-strongest-growth-ever-and-its-stock-is-tacking-on-more-big-gains-4421cebb?mod=mw_rss_topstories",
-      "summary": "HPE boosted its financial forecast on Monday in the face of strong AI demand.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-23T21:28:00+00:00"
-    },
-    {
       "title": "Oracle and CoreWeave stocks stage big gains as investors bet the AI cash will keep flowing",
       "link": "https://www.marketwatch.com/story/oracle-and-coreweave-stocks-stage-big-gains-as-investors-bet-the-ai-cash-will-keep-flowing-eeb1aa85?mod=mw_rss_topstories",
       "summary": "Nvidia’s financing of the AI ecosystem has been crucial for cloud companies like Oracle, CoreWeave, Nebius and Iren.",
@@ -161,182 +337,6 @@
       "source": "MarketWatch",
       "category": "国际财经",
       "published": "2026-11-23T21:19:00+00:00"
-    },
-    {
-      "title": "A 66-year-old nurse is facing down retirement with just $500 saved. Who’s to blame?",
-      "link": "https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories",
-      "summary": "“Retirement is a financial status, not an age.”",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-23T21:15:00+00:00"
-    },
-    {
-      "title": "Anthropic向企业交出AI数据控制权，Claude Ship同步上线",
-      "link": "https://wallstreetcn.com/articles/3786547",
-      "summary": "Anthropic向企业客户交出数据控制权，以化解此前强制留存政策引发的争议。 11月23日，Anthropic正式推出\"企业前沿安全防护系统\"（Enterprise Frontier Safeguards，EFS）公开测试版，允许企业客户在使用其最强大AI模型时自主掌控数据存储。 该系统针对使用Mythos和Fable两款旗舰AI模型的企业客户，仍要求将提示词与响应内容保留30天，但允许客户将数据存储在自有云服务上，而非Anthropic的服务器。 客户将自持加密密钥，Anthropic软件仅对存储数据进行定期扫描以检测潜在攻击，且无法访问相关数据内容。这一举措与公司今年6月宣布的强制数据留",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-23T21:11:57+00:00"
-    },
-    {
-      "title": "黄仁勋戏剧性重掌英伟达，跻身美国企业界“回旋镖”CEO名单",
-      "link": "https://wallstreetcn.com/articles/3786550",
-      "summary": "英伟达首席执行官黄仁勋戏剧性地重掌帅印，在辞职数日震动人工智能界及整个金融市场后上演了惊天大逆转，这也让他跻身于寥寥无几的“回旋镖”CEO（指离职后重返原职的首席执行官）行列。 尽管美国企业界在危机时刻召回创始人及前任掌门人的历史由来已久——从苹果公司（AAPL.O）的史蒂夫·乔布斯到迪士尼（DIS.N）的鲍勃·艾格——但因个人不当行为引发全面监管审查后还能东山再起的情况却十分罕见。 在美国总统唐纳德·特朗普呼吁黄仁勋回归后，英伟达于周一宣布了这一非同寻常的反转决定。受此消息提振，英伟达股价一度暴涨35%，并带动华尔街股市全线上扬。 以下是部分在卸任后重夺最高职位的企业掌门人： OPENAI ",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-23T20:52:00+00:00"
-    },
-    {
-      "title": "礼来并购负责人：全力押注癌症领域，未来五年八款抗癌新药有望上市",
-      "link": "https://wallstreetcn.com/articles/3786549",
-      "summary": "礼来公司在肥胖症市场确立主导地位后，正将战略重心转向肿瘤领域，并以史无前例的并购力度为这一布局提速。 据彭博，礼来业务拓展与肿瘤部门负责人Jake Van Naarden介绍， 公司目前有八款肿瘤药物处于或即将进入晚期临床开发阶段，有望在未来五年内陆续上市。 其中三款药物预计明年获得晚期临床试验结果，包括乳腺癌口服药Inluriyo——该药此前已获批用于特定晚期或转移性乳腺癌患者，公司正测试其在早期疾病中降低复发风险的效果。 这将直接与罗氏（Roche Holding AG）同类药物Wilserdly形成竞争，后者周一刚获美国食品药品监督管理局（FDA）批准用于早期乳腺癌患者。 在并购层面，礼",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-23T20:29:54+00:00"
-    },
-    {
-      "title": "特朗普力促黄仁勋复职、万斯介入给出保证，英伟达董事会“周日提前告知白宫”",
-      "link": "https://wallstreetcn.com/articles/3786540",
-      "summary": "英伟达宣布董事会决定恢复黄仁勋总裁、首席执行官（CEO）及董事职务后不到10分钟，美国总统特朗普便公开力挺这一决定，还自称黄仁勋回归是他一手促成。媒体报道披露，美国副总统万斯还在特朗普的指示下参与了黄仁勋复职的幕后协调。 据新华社，特朗普23日在社交媒体发文说，英伟达董事会让黄仁勋重新担任CEO一职是“正确且恰当的决定”。他表示，美国政府没有理由认为黄仁勋回归英伟达会对国家安全构成任何风险。美国司法部长已确认，美国政府没有证据表明其有任何不合法行为。 特朗普发帖表示，美国需要黄仁勋继续领导英伟达，以确保公司乃至美国经济的成功与繁荣。他称，自己已经与黄仁勋相识，认为他是一位“伟大的爱国者和国家瑰",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-23T19:06:08+00:00"
-    },
-    {
-      "title": "马斯克承认SpaceX AI研发落后，出租算力比自研Grok更赚钱",
-      "link": "https://wallstreetcn.com/articles/3786545",
-      "summary": "SpaceX的人工智能业务正面临一个深层矛盾：靠向竞争对手出租算力获利，远比发展自有AI产品更赚钱。 据《纽约时报》报道， 马斯克已向员工坦承，公司在AI研发上正在落后，这使得将算力对外出租比用于自研产品更具商业价值。 Anthropic每月向SpaceX支付约31亿美元购买算力，谷歌每月支付约8亿美元，相关协议可能延续至2029年。SpaceX旗下AI部门SpaceXSI目前贡献了公司逾半数营收。 这一格局对AI竞争格局的影响不容忽视。 SpaceX正在为其最有力的竞争对手提供关键基础设施支撑，而自身的Grok等AI产品却在同期面临缩编压力。 晨星研究分析师Nicolas Owens向《纽约",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-23T18:49:03+00:00"
-    },
-    {
-      "title": "黄仁勋回归“比肥皂剧精彩”！华尔街争论他是否“大到不能解雇”、英伟达董事会是否向资本低头",
-      "link": "https://wallstreetcn.com/articles/3786544",
-      "summary": "英伟达董事会宣布黄仁勋辞职仅11天后便一致决定恢复其职务，这场戏剧性反转引发华尔街热议，也将创始人权力、公司治理与政治干预企业决策的争议推至台前。 美东时间11月23日周一，英伟达宣布，董事会一致决定即刻恢复黄仁勋的总裁、CEO及董事职务。该司称，在与黄仁勋进行一系列讨论和会面后，董事会对其坦诚程度及领导公司能力感到满意。同时，董事会征询了美国政府高层意见，据此认定黄仁勋复职不会带来国家安全风险。董事会主席琼斯表示，黄仁勋是领导英伟达的合适人选，他回归符合股东、员工、合作伙伴和客户的利益。 这一决定与董事会此前的公开表态形成鲜明反差。将近一周前、17日上周二，在英伟达公布强劲财报后的业绩电话会",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-23T18:48:51+00:00"
-    },
-    {
-      "title": "黄仁勋回归点燃科技债反弹，全球信用风险指标大幅回落",
-      "link": "https://wallstreetcn.com/articles/3786543",
-      "summary": "全球信用市场周一全面上扬。随着英伟达董事会宣布恢复Jensen Huang的首席执行官职务，科技公司债券强势反弹，信用风险指标录得数月来最大单日改善，为投资者提供了一定程度的喘息空间。 衡量投资级信用风险的CDX投资级指数利差周一盘中跌幅创4月8日以来最大单日降幅。欧洲高评级与高收益债券风险指标同步走低，高收益债券对应的信用风险反向指标升幅则创下七个月来之最。 此前一周，市场经历了大幅抛售，英伟达、Meta Platforms及SpaceX等主要科技公司的信用违约互换（CDS）成本急剧攀升。 周一的反弹虽有所收复失地，但上述公司的CDS利差仅部分回吐了此前涨幅，市场情绪尚未完全平复。 此前市场",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-23T18:46:41+00:00"
-    },
-    {
-      "title": "Alo中国首批线下体验店开业，想踩着Lululemon的流量上位",
-      "link": "https://www.tmtpost.com/8214477.html",
-      "summary": "卖万元手袋、贴奢侈品开业，Alo想做奢侈品生意。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-23T10:36:15+00:00"
-    },
-    {
-      "title": "800万对1000万，腾讯字节又在AI办公杠上了",
-      "link": "https://www.tmtpost.com/8214502.html",
-      "summary": "不是产品的胜负，而是存量生态的比拼",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-23T10:36:11+00:00"
-    },
-    {
-      "title": "禾赛的第二增长曲线，瞄准的不仅仅是机器人",
-      "link": "https://www.tmtpost.com/8214576.html",
-      "summary": "Kosmo 的商业化空间，不可小觑。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-23T10:36:08+00:00"
-    },
-    {
-      "title": "当AI开始自己上班",
-      "link": "https://www.tmtpost.com/8214386.html",
-      "summary": "商业化推倒的第一块多米诺骨牌",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-23T10:36:07+00:00"
-    },
-    {
-      "title": "当AI接管网购，年轻人迷上外包砍价",
-      "link": "https://www.tmtpost.com/8214748.html",
-      "summary": "未来的购物入口藏在对话框里",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-23T10:36:05+00:00"
-    },
-    {
-      "title": "年薪百万，硅谷大厂急招反内鬼专家",
-      "link": "https://www.tmtpost.com/8214813.html",
-      "summary": "硅谷现在最抢手的不是工程师，是会抓内鬼的前特工",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-23T10:36:02+00:00"
-    },
-    {
-      "title": "新鲜感之后，陪伴机器人如何被用起来？",
-      "link": "https://www.tmtpost.com/8212446.html",
-      "summary": "新鲜感退去之后，这些主打陪伴的机器人还有多少被家庭继续使用，又有谁愿意为此持续付费。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-23T09:39:16+00:00"
-    },
-    {
-      "title": "杉数完成数亿元D轮融资：十年“冷门创业”，走到AI产业的关键处",
-      "link": "https://www.tmtpost.com/8214351.html",
-      "summary": "从数学优化算法到GPU加速，再到AI原生求解器，杉数十年的技术积累有了新的时代坐标。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-23T09:26:18+00:00"
-    },
-    {
-      "title": "蚂蚁靠金融补贴、京东靠卖药兜底：大厂绕开医保的医疗AI试验",
-      "link": "https://www.tmtpost.com/8214407.html",
-      "summary": "大厂把医生AI工具价格打到零，但3万亿医保只为院内降本买单",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-23T09:08:48+00:00"
-    },
-    {
-      "title": "豆包工作、千问办公、WorkBuddy，怎么越长越像了？",
-      "link": "https://www.tmtpost.com/8214460.html",
-      "summary": "大厂办公Agent贴身肉搏。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-23T09:08:46+00:00"
-    },
-    {
-      "title": "机器人公司老板当自媒体，图什么？",
-      "link": "https://www.tmtpost.com/8214356.html",
-      "summary": "机器人圈的老板们做自媒体，本身就是创业的一部分。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-23T09:08:46+00:00"
-    },
-    {
-      "title": "AI不懂情绪，但跑出了七种新生意",
-      "link": "https://www.tmtpost.com/8214426.html",
-      "summary": "不卖效率，卖情绪",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-23T09:08:43+00:00"
-    },
-    {
-      "title": "东鹏“好厉害”：一瓶酒，三本账",
-      "link": "https://www.tmtpost.com/8214485.html",
-      "summary": "东鹏一贯打跟随牌，摸着红牛过河做成了能量饮料新老大，进酒水是同一套逻辑——先对标RIO，再对标劲酒。“但此次能否成功，还需要市场验证。”",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-23T08:34:59+00:00"
-    },
-    {
-      "title": "现金流不会说谎：AI 把中国科技巨头逼进了同一场考试",
-      "link": "https://www.tmtpost.com/8211898.html",
-      "summary": "AI重资产投入正改写中国科技巨头的现金流格局。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-23T08:34:57+00:00"
     },
     {
       "title": "Pizza chains are under pressure. GLP-1 use is only one part of the problem",
