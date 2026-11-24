@@ -107,6 +107,7 @@ def build_report_cards(reports):
     for item in reports:
         title = html.escape(item.get("title", ""))
         link = html.escape(item.get("link", ""))
+        detail = html.escape(item.get("detail") or item.get("link", ""))
         org = html.escape(item.get("org", ""))
         date = html.escape(item.get("date", ""))
         rating = html.escape(item.get("rating", ""))
@@ -129,7 +130,7 @@ def build_report_cards(reports):
             <span>{org}</span>
             <span>{date}</span>
           </div>
-          <h2><a href="{link}" target="_blank" rel="noopener noreferrer">{title}</a>{rating_html}</h2>
+          <h2><a href="{detail}" rel="noopener noreferrer">{title}</a>{rating_html}</h2>
         </article>''')
     return "\n".join(cards)
 
@@ -235,6 +236,158 @@ def build_macro_html(macro_data):
       <div class="sub-tab-container">{cat_contents}</div>
     </div>
     '''
+
+REPORT_PAGE_TEMPLATE = r"""<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>研报详情</title>
+<style>
+:root{--ink:#1d1d1f;--sub:#6e6e73;--line:#e5e5ea;--bg:#f5f5f7;--blue:#0071e3}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+.topbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;padding:11px 14px;background:rgba(255,255,255,.94);-webkit-backdrop-filter:saturate(180%) blur(12px);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+.back{color:var(--blue);text-decoration:none;font-size:15px;white-space:nowrap}
+.back:active{opacity:.6}
+.topbar .name{flex:1;text-align:center;font-size:14px;color:var(--sub);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 8px}
+.topbar .gap{width:58px}
+main{max-width:760px;margin:0 auto;padding:14px 14px 40px}
+.card{background:#fff;border-radius:14px;padding:18px 18px 22px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.tag{font-size:12px;line-height:1.6;padding:3px 9px;border-radius:6px;background:#eef2ff;color:#3730a3}
+.tag.stock{background:#f2f2f7;color:var(--ink);font-weight:600}
+h1{font-size:19px;line-height:1.5;margin:0 0 12px;font-weight:600}
+.info{display:flex;flex-wrap:wrap;gap:5px 14px;font-size:13px;color:var(--sub);padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:16px}
+.body p{margin:0 0 13px;font-size:15.5px;line-height:1.9;color:#2c2c30;text-align:justify;word-break:break-word}
+.actions{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.btn{display:block;text-align:center;padding:13px 14px;border-radius:11px;text-decoration:none;font-size:15px;font-weight:600}
+.btn.primary{background:var(--blue);color:#fff}
+.btn.primary:active{background:#0062c4}
+.btn.ghost{background:#f2f2f7;color:var(--ink)}
+.note{margin-top:16px;font-size:12px;line-height:1.7;color:#8e8e93}
+.empty{background:#fff;border-radius:14px;padding:40px 20px;text-align:center;color:var(--sub)}
+.empty a{color:var(--blue);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a class="back" href="index.html">&#8592; 返回</a>
+  <div class="name" id="bar-title">研报详情</div>
+  <div class="gap"></div>
+</div>
+<main id="app"></main>
+<script type="application/json" id="report-data">__DATA__</script>
+<script>
+(function () {
+  var app = document.getElementById('app');
+  var bar = document.getElementById('bar-title');
+
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function ratingColor(r) {
+    if (!r) return '#6e6e73';
+    if (r.indexOf('买入') >= 0 || r.indexOf('推荐') >= 0) return '#dc2626';
+    if (r.indexOf('增持') >= 0) return '#ea580c';
+    if (r.indexOf('中性') >= 0 || r.indexOf('持有') >= 0) return '#2563eb';
+    return '#6e6e73';
+  }
+
+  var list = [];
+  try { list = JSON.parse(document.getElementById('report-data').textContent); } catch (e) { list = []; }
+
+  var id = '';
+  try { id = new URLSearchParams(location.search).get('id') || ''; } catch (e) { id = ''; }
+
+  var item = null;
+  for (var i = 0; i < list.length; i++) {
+    if (list[i].id === id) { item = list[i]; break; }
+  }
+
+  if (!item) {
+    if (bar) bar.textContent = '研报未找到';
+    app.innerHTML = '<div class="empty">没有找到这篇研报的详情。<br><br>' +
+      '它可能已经过了保留期，<a href="index.html">回到列表</a> 看看最新的研报。</div>';
+    return;
+  }
+
+  if (bar) bar.textContent = (item.stock || '') + (item.code ? ' ' + item.code : '');
+  document.title = (item.stock ? item.stock + ' - ' : '') + (item.title || '研报详情');
+
+  var meta = [];
+  if (item.org) meta.push('<span>' + esc(item.org) + '</span>');
+  if (item.date) meta.push('<span>' + esc(item.date) + '</span>');
+  if (item.rating) meta.push('<span class="rating" style="color:' + ratingColor(item.rating) + '">' + esc(item.rating) + '</span>');
+  if (item.researcher) meta.push('<span>研究员 ' + esc(item.researcher) + '</span>');
+  if (item.industry) meta.push('<span>' + esc(item.industry) + '</span>');
+  if (item.pages) meta.push('<span>' + esc(item.pages) + ' 页</span>');
+
+  var paras = String(item.summary || '').split(/\r?\n/).map(function (s) { return s.trim(); }).filter(function (s) { return s.length > 0; });
+  // 去掉首行重复的「股票(代码)」
+  if (paras.length && paras[0].length <= 30 && item.code && paras[0].indexOf(item.code) >= 0) {
+    paras.shift();
+  }
+  var bodyHtml = paras.length
+    ? paras.map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('')
+    : '<p style="color:#8e8e93">这篇研报的公开摘要为空，请点下方按钮下载 PDF 查看全文。</p>';
+
+  var pdfBtn = '';
+  if (item.pdf) {
+    var label = '下载 PDF';
+    var bits = [];
+    if (item.pages) bits.push(item.pages + ' 页');
+    if (item.size) bits.push(item.size + ' KB');
+    if (bits.length) label += '（' + bits.join(' / ') + '）';
+    pdfBtn = '<a class="btn primary" href="' + esc(item.pdf) + '" target="_blank" rel="noopener noreferrer">' + label + '</a>';
+  }
+
+  app.innerHTML =
+    '<article class="card">' +
+      '<div class="tags"><span class="tag">研报</span>' +
+        (item.stock ? '<span class="tag stock">' + esc(item.stock) + (item.code ? ' ' + esc(item.code) : '') + '</span>' : '') +
+      '</div>' +
+      '<h1>' + esc(item.title) + '</h1>' +
+      (meta.length ? '<div class="info">' + meta.join('') + '</div>' : '') +
+      '<div class="body">' + bodyHtml + '</div>' +
+      '<div class="actions">' + pdfBtn +
+        '<a class="btn ghost" href="index.html">回到研报列表</a>' +
+      '</div>' +
+      '<div class="note">摘要来自东方财富公开研报页面，仅供个人研究参考，不构成投资建议。</div>' +
+    '</article>';
+})();
+</script>
+</body>
+</html>
+"""
+
+
+def build_report_page(reports):
+    """生成单篇研报详情页（数据内嵌，无需额外请求）"""
+    payload = []
+    for item in reports:
+        payload.append({
+            "id": item.get("infoCode") or item.get("id") or "",
+            "title": item.get("title", ""),
+            "stock": item.get("stock", ""),
+            "code": item.get("code", ""),
+            "org": item.get("org", ""),
+            "date": item.get("date", ""),
+            "rating": item.get("rating", ""),
+            "researcher": item.get("researcher", ""),
+            "industry": item.get("industry", ""),
+            "pages": item.get("pages", ""),
+            "size": item.get("size", ""),
+            "pdf": item.get("pdf", ""),
+            "summary": item.get("summary", ""),
+        })
+    data_json = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
+    return REPORT_PAGE_TEMPLATE.replace("__DATA__", data_json)
+
 
 def main():
     news_data = load_json(NEWS_FILE, {"updated": "", "count": 0, "items": []})
@@ -631,7 +784,13 @@ function closeChartModal() {{
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(html_doc)
+
+    report_path = os.path.join(os.path.dirname(OUTPUT_FILE), "report.html")
+    with open(report_path, "w", encoding="utf-8") as f:
+        f.write(build_report_page(reports_data))
+
     print(f"已生成 {OUTPUT_FILE}，前端交互已全面优化。")
+    print(f"已生成 {report_path}，共 {len(reports_data)} 篇研报详情。")
 
 
 if __name__ == "__main__":
