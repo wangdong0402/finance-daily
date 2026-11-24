@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24 03:20",
+  "updated": "2026-11-24 04:13",
   "periods": {
     "20d": {
       "inflow": [
@@ -214,8 +214,110 @@
       ]
     },
     "5d": {
-      "inflow": [],
-      "outflow": []
+      "inflow": [
+        {
+          "name": "光学光电子",
+          "change": 0.0,
+          "main_net": 17.0
+        },
+        {
+          "name": "小金属",
+          "change": 0.0,
+          "main_net": 6.49
+        },
+        {
+          "name": "白色家电",
+          "change": 0.0,
+          "main_net": 6.44
+        },
+        {
+          "name": "贵金属",
+          "change": 0.0,
+          "main_net": 5.97
+        },
+        {
+          "name": "工业金属",
+          "change": 0.0,
+          "main_net": 5.48
+        },
+        {
+          "name": "电子化学品",
+          "change": 0.0,
+          "main_net": 4.24
+        },
+        {
+          "name": "军工电子",
+          "change": 0.0,
+          "main_net": 4.17
+        },
+        {
+          "name": "电池",
+          "change": 0.0,
+          "main_net": 3.89
+        },
+        {
+          "name": "白酒",
+          "change": 0.0,
+          "main_net": 3.78
+        },
+        {
+          "name": "农产品加工",
+          "change": 0.0,
+          "main_net": 3.65
+        }
+      ],
+      "outflow": [
+        {
+          "name": "文化传媒",
+          "change": 0.0,
+          "main_net": -30.15
+        },
+        {
+          "name": "通用设备",
+          "change": 0.0,
+          "main_net": -17.1
+        },
+        {
+          "name": "汽车零部件",
+          "change": 0.0,
+          "main_net": -16.86
+        },
+        {
+          "name": "化学制药",
+          "change": 0.0,
+          "main_net": -11.77
+        },
+        {
+          "name": "零售",
+          "change": 0.0,
+          "main_net": -11.53
+        },
+        {
+          "name": "IT服务",
+          "change": 0.0,
+          "main_net": -10.75
+        },
+        {
+          "name": "自动化设备",
+          "change": 0.0,
+          "main_net": -10.53
+        },
+        {
+          "name": "通信设备",
+          "change": 0.0,
+          "main_net": -10.17
+        },
+        {
+          "name": "电力",
+          "change": 0.0,
+          "main_net": -9.0
+        },
+        {
+          "name": "煤炭开采加工",
+          "change": 0.0,
+          "main_net": -8.57
+        }
+      ]
     }
   }
 }
