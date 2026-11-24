@@ -107,7 +107,10 @@ def build_report_cards(reports):
     for item in reports:
         title = html.escape(item.get("title", ""))
         link = html.escape(item.get("link", ""))
-        detail = html.escape(item.get("detail") or item.get("link", ""))
+        detail_raw = item.get("detail") or item.get("link", "")
+        if item.get("detail"):
+            detail_raw += ("&" if "?" in detail_raw else "?") + "tab=reports"
+        detail = html.escape(detail_raw)
         org = html.escape(item.get("org", ""))
         date = html.escape(item.get("date", ""))
         rating = html.escape(item.get("rating", ""))
@@ -273,7 +276,7 @@ h1{font-size:19px;line-height:1.5;margin:0 0 12px;font-weight:600}
 </head>
 <body>
 <div class="topbar">
-  <a class="back" href="index.html">&#8592; 返回</a>
+  <a class="back" id="nav-back" href="index.html">&#8592; 返回</a>
   <div class="name" id="bar-title">研报详情</div>
   <div class="gap"></div>
 </div>
@@ -304,6 +307,14 @@ h1{font-size:19px;line-height:1.5;margin:0 0 12px;font-weight:600}
   var id = '';
   try { id = new URLSearchParams(location.search).get('id') || ''; } catch (e) { id = ''; }
 
+  // 记住是从哪个标签进来的，返回时回到同一个标签（默认研报）
+  var tab = 'reports';
+  try { tab = new URLSearchParams(location.search).get('tab') || 'reports'; } catch (e) { tab = 'reports'; }
+  if (['news', 'reports', 'sentiment', 'macro'].indexOf(tab) < 0) tab = 'reports';
+  var backHref = 'index.html?tab=' + encodeURIComponent(tab);
+  var navBack = document.getElementById('nav-back');
+  if (navBack) navBack.href = backHref;
+
   var item = null;
   for (var i = 0; i < list.length; i++) {
     if (list[i].id === id) { item = list[i]; break; }
@@ -312,7 +323,7 @@ h1{font-size:19px;line-height:1.5;margin:0 0 12px;font-weight:600}
   if (!item) {
     if (bar) bar.textContent = '研报未找到';
     app.innerHTML = '<div class="empty">没有找到这篇研报的详情。<br><br>' +
-      '它可能已经过了保留期，<a href="index.html">回到列表</a> 看看最新的研报。</div>';
+      '它可能已经过了保留期，<a href="' + backHref + '">回到列表</a> 看看最新的研报。</div>';
     return;
   }
 
@@ -355,7 +366,7 @@ h1{font-size:19px;line-height:1.5;margin:0 0 12px;font-weight:600}
       (meta.length ? '<div class="info">' + meta.join('') + '</div>' : '') +
       '<div class="body">' + bodyHtml + '</div>' +
       '<div class="actions">' + pdfBtn +
-        '<a class="btn ghost" href="index.html">回到研报列表</a>' +
+        '<a class="btn ghost" href="' + backHref + '">回到研报列表</a>' +
       '</div>' +
       '<div class="note">摘要来自东方财富公开研报页面，仅供个人研究参考，不构成投资建议。</div>' +
     '</article>';
@@ -542,6 +553,14 @@ function switchTab(tab) {{
   document.getElementById('btn-' + tab).classList.add('active');
   if(tab === 'macro') lazyRenderCharts();
 }}
+
+// 打开页面时恢复标签：支持 index.html?tab=reports 或 #reports
+(function(){{
+  var t = '';
+  try {{ t = new URLSearchParams(location.search).get('tab') || ''; }} catch(e) {{ t = ''; }}
+  if (!t && location.hash) {{ t = location.hash.replace(/^#/, ''); }}
+  if (['news','reports','sentiment','macro'].indexOf(t) >= 0) {{ switchTab(t); }}
+}})();
 
 // 新闻分类筛选
 function filterNews(category, btn) {{
