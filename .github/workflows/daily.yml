@@ -8,11 +8,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: write          # ✅ 分支发布只需要这一个
 
-# ✅ 新增：同一时刻只跑一轮，防止两次调度互踩
 concurrency:
   group: pages-deploy
   cancel-in-progress: false
@@ -20,15 +17,13 @@ concurrency:
 jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    # ✅ 删掉了 environment，因为不再走 Actions 部署环境
 
     steps:
       - name: 下载仓库文件
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0            # ✅ 新增：拉全历史，rebase 才不会卡
+          fetch-depth: 0
 
       - name: 安装 Python
         uses: actions/setup-python@v5
@@ -53,36 +48,31 @@ jobs:
       - name: 生成网页
         run: python generate.py
 
-      - name: 检查产物                # ✅ 新增：产物为空立刻报清楚
+      - name: 检查产物
         run: |
-          test -d dist || { echo "::error::dist 目录不存在，generate.py 没有生成网页"; exit 1; }
+          test -f dist/index.html || { echo "::error::dist/index.html 不存在，generate.py 没有生成网页"; exit 1; }
           du -sh dist
 
-      - name: 保存数据和网页到仓库
+      - name: 保存数据到仓库
         run: |
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ dist/
+          git add data/
           git diff --staged --quiet || git commit -m "自动更新 $(date -u +'%Y-%m-%d %H:%M UTC')"
-          # ✅ 关键修复：推之前先对齐远端，彻底解决 fetch first
           git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || {
-            echo "::warning::rebase 有冲突，改为用本次生成结果覆盖 data/ 与 dist/"
             git rebase --abort || true
             git reset --soft "origin/${GITHUB_REF_NAME}"
-            git add data/ dist/
+            git add data/
             git commit -m "自动更新 $(date -u +'%Y-%m-%d %H:%M UTC')"
           }
           git push origin "HEAD:${GITHUB_REF_NAME}"
 
-      - name: 配置 GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: 上传网页文件
-        uses: actions/upload-pages-artifact@v3
+      # ✅ 唯一新增：把 dist 推到 gh-pages 分支，Pages 直接读它
+      - name: 发布到 gh-pages 分支
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: dist
-
-      - name: 发布到 GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: true      # 每次用全新提交，分支历史不会越滚越大
