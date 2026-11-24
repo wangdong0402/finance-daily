@@ -1,254 +1,110 @@
 {
-  "updated": "2026-11-24T08:46:39.427838+00:00",
+  "updated": "2026-11-24T13:58:32.428918+00:00",
   "count": 70,
   "items": [
     {
-      "title": "特朗普希望美国企业界记住谁才是真正的掌权者",
-      "link": "https://wallstreetcn.com/articles/3786587",
-      "summary": "英伟达董事会周一宣布让黄仁勋重返CEO一职，而这一决定背后，站着的是美国总统特朗普。分析认为，这一事件再次清晰地揭示了当前美国政商关系的底层逻辑： 白宫愿意直接介入私营企业的内部事务，而企业界也愿意配合。 据新华社报道， 美国总统特朗普23日在社交媒体发文说，英伟达董事会让黄仁勋重新担任首席执行官一职是“正确且恰当的决定”。 据Business Insider周二（11月24日）报道， 特朗普周一接受CNBC采访时明确表示，他亲自致电英伟达董事会。 “我跟他们谈过了，就这么说吧，”特朗普说，“如果他们当时抵制，我认为会是一场灾难。”与此同时，英伟达董事会在宣布黄仁勋复职的声明中特别指出，董事会",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-24T08:26:26+00:00"
-    },
-    {
-      "title": "木头姐“倒在黎明前”：卖出英伟达后黄仁勋回归",
-      "link": "https://wallstreetcn.com/articles/3786588",
-      "summary": "一场围绕英伟达领导层的风波，意外演变成ARK Invest一次颇具戏剧性的投资失误。 11月23日，英伟达董事会全票通过恢复黄仁勋CEO职务，推翻此前不打算让其复职的表态。消息公布后，英伟达股价单日涨超30%。 而就在约一周前，Cathie Wood（木头姐）旗下ARK Invest刚以担心“失去黄仁勋”为由卖出约8500万美元英伟达股票，转而买入SpaceX。 Wood随后承认，促成这笔交易的风险“已经消失”。 她此前担忧，黄仁勋可能加入马斯克团队，不仅带走英伟达的核心工程师，还可能导致SpaceX将业务转向其他供应商。 但这一情景并未发生，马斯克本人甚至曾签署请愿书，要求恢复黄仁勋的职位。",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-24T08:21:24+00:00"
-    },
-    {
-      "title": "老黄回归之后，AI产业链的归途何在？",
-      "link": "https://www.tmtpost.com/8215972.html",
-      "summary": "泡沫与需求并存的年代，AI这条不由 CEO 决定的产业主线，该盯住哪几个指标？",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T08:07:20+00:00"
-    },
-    {
-      "title": "中信博在阿曼再拿下一城，光伏跟踪支架的中东账本还没到可以讨论利润的时候",
-      "link": "https://www.tmtpost.com/8215816.html",
-      "summary": "中信博中标阿曼500MW跟踪支架项目，但营收下滑、亏损、毛利率承压，订单规模尚未转化为利润。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T08:07:12+00:00"
-    },
-    {
-      "title": "AI公司的控制权，不再写在股权里",
-      "link": "https://www.tmtpost.com/8215933.html",
-      "summary": "资本层面的控制权，只是博弈的上半场。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T08:07:06+00:00"
-    },
-    {
-      "title": "黄仁勋的11天，谁是英雄，谁是狗熊？",
-      "link": "https://www.tmtpost.com/8216076.html",
-      "summary": "牛熊是市场的周期，英雄与狗熊，有时候只是人性的周期。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T08:06:58+00:00"
-    },
-    {
-      "title": "阿莫迪让AI自己“长”出道德，终于见效了？",
-      "link": "https://www.tmtpost.com/8216002.html",
-      "summary": "OpenAI为安全暂停训练，证明Anthropic的“装神弄鬼”更有效。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T08:06:52+00:00"
-    },
-    {
-      "title": "创业板高开低走尾盘翻绿，机器人爆发，半导体活跃，恒科指午后跌超1%，AI大模型双雄齐跌",
-      "link": "https://wallstreetcn.com/articles/3786562",
-      "summary": "11月24日，A股在英伟达\"黄仁勋复职、一夜暴涨31%\"的海外催化下集体高开，随后涨幅震荡收窄。三大指数高开后回落，创业板指盘中一度涨超4%，午后继续收窄至1%以内。贵金属、券商、油气、煤炭等板块陷入调整。机器人、AI短剧盘中拉升。 港股早盘亦高开，恒指、恒科指盘初涨幅收窄，临近午盘均转跌，午后扩大跌幅，恒科指跌超1%，权重科网股多数下跌，光模块、光纤、光通信等科技股集体大涨，东山精密一度涨超10%。AI大模型股同样回暖。债市方面，国债期货多数上涨。商品方面，国内商品期货多数走高，贵金属期货涨幅居前，核心市场走势： A股 ：截至收盘，沪指涨0.27%，深成指跌0.29%，创业板指跌0.05%。",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-24T08:04:02+00:00"
-    },
-    {
-      "title": "华尔街解读“黄仁勋复辟”：卖方“兴奋雀跃”，买方“困惑不解”，这是“第一次AI大救助”",
-      "link": "https://wallstreetcn.com/articles/3786579",
-      "summary": "英伟达董事会用11天时间验证了市场给出的答案：一个没有黄仁勋的英伟达，代价是标普500蒸发逾5万亿美元。 周一，黄仁勋以全票通过的方式重返英伟达CEO职位，消息公布后英伟达股价单日暴涨31.5%，收于165.05美元，单日市值增加约9520亿美元，纳斯达克100指数飙升6.9%，标普500指数上涨4.7%，创2025年4月关税暂停以来最佳单日表现。这是有史以来单一公司单日创造市值最多的记录。特朗普在CNBC上公开表示，他本人直接介入了董事会决定，并要求副总统Vance游说董事。 然而，这场历史性的反弹在市场专业人士中并未激起一致的欢呼。卖方分析师集体用流行文化标题庆祝\"王者归来\"，买方则在困惑",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-24T08:03:59+00:00"
-    },
-    {
-      "title": "60万吨绿氨等不来订单，1.0024亿元把规矩改了，绿氢补贴从此只认销量",
-      "link": "https://www.tmtpost.com/8215814.html",
-      "summary": "氢能补贴改按实际销量结算，行业转向拼交付拿订单。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T08:01:37+00:00"
-    },
-    {
-      "title": "最高明的涨价，隐藏在你看不见的地方",
-      "link": "https://www.tmtpost.com/8215803.html",
-      "summary": "揭露商家不愿说的涨价秘密。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T08:01:34+00:00"
-    },
-    {
-      "title": "再次押注云脉芯联，字节为什么看上这个“小”生意？",
-      "link": "https://www.tmtpost.com/8215839.html",
-      "summary": "字节看重的不只是互联芯片生意。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T07:58:55+00:00"
-    },
-    {
-      "title": "融资、扩产、上市筹备之后，国产CT球管下一轮增长靠什么？",
-      "link": "https://www.tmtpost.com/8215848.html",
-      "summary": "真正的壁垒在工程化与可靠性。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T07:58:49+00:00"
-    },
-    {
-      "title": "客房AI图，正在毁掉大批酒店",
-      "link": "https://www.tmtpost.com/8215893.html",
-      "summary": "劣币驱良币，商家和用户的矛盾也会增加？",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T07:58:45+00:00"
-    },
-    {
-      "title": "3400万罚单砸向仕净科技，跨界光伏的旧账开始集中清算",
-      "link": "https://www.tmtpost.com/8215815.html",
-      "summary": "*ST仕净遭重罚，跨界光伏暴雷潮延续。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T07:58:40+00:00"
-    },
-    {
-      "title": "黄仁勋11天后重新掌舵：英伟达的下一场仗，已经从GPU转向AI Agent",
-      "link": "https://www.tmtpost.com/8215869.html",
-      "summary": "黄仁勋要争夺的不只是芯片市场 AI Agent对算力的要求，也在改变英伟达的产品逻辑。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T07:54:27+00:00"
-    },
-    {
-      "title": "“人海战术”背后，代言人营销还有多少新可能？",
-      "link": "https://www.tmtpost.com/8215840.html",
-      "summary": "选对人只是第一步，做好内容同样重要。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T07:54:20+00:00"
-    },
-    {
-      "title": "1万4一片的国产人工晶体，市场从“熟人”打开",
-      "link": "https://www.tmtpost.com/8215851.html",
-      "summary": "全球高端人工晶体市场正在迅速增长。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T07:54:14+00:00"
-    },
-    {
-      "title": "脑机接口临床试验，在全国抢病人",
-      "link": "https://www.tmtpost.com/8215853.html",
-      "summary": "溢出的背后。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T07:54:10+00:00"
-    },
-    {
-      "title": "报道：三星或独供iPhone Duo折叠屏至少五年，苹果议价空间受限",
-      "link": "https://wallstreetcn.com/articles/3786584",
-      "summary": "苹果首款折叠屏手机iPhone Duo的屏幕供应链，或将长期被三星Display牢牢掌控。知名爆料人\"Instant Digital\"最新发文预测， 三星Display凭借在折痕控制、可靠性及量产良率方面的显著优势，将在未来至少五年内继续担任iPhone Duo折叠面板的核心供应商 ，LG Display短期内难以进入该供应链。 这一预测意味着，即便三星与苹果之间的独家供应协议到期，只要其他厂商在技术与量产能力上无法与三星抗衡，苹果在折叠屏面板的采购谈判中将持续处于被动地位。这与苹果2017年推出首款OLED手机iPhone X时所遭遇的困境高度相似—— 彼时三星同样是全球唯一能满足苹果要求的",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-24T07:54:01+00:00"
-    },
-    {
-      "title": "涂鸦智能营收增两成，AI新品类放量但毛利率下滑",
-      "link": "https://wallstreetcn.com/articles/3786586",
-      "summary": "AI玩具、陪伴机器人等新品类，正在为涂鸦智能带来增量，也让成本和收入结构成为这份财报的重点。 北京时间11月24日，AI云平台服务商涂鸦智能发布2026年第三季度未经审计业绩。当季收入9860万美元，同比增长19.5%；按美国会计准则计算的净利润1850万美元，同比增长23.8%。 不过，整体毛利率下降2.5个百分点至45.8%，调整后净利润则由上年同期的2010万美元降至1910万美元。 涂鸦主要为品牌商和开发者提供设备智能化、云端连接及应用服务。它的增长既与客户硬件出货有关，也取决于设备售出后能否继续产生云服务和增值服务收入。 第三季度，公司三项业务均实现增长。其中，PaaS收入7010万",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-24T07:40:49+00:00"
-    },
-    {
-      "title": "黄仁勋回归提振AI交易，韩股收涨6%，SK海力士涨超6%，油涨金跌",
-      "link": "https://wallstreetcn.com/articles/3786560",
-      "summary": "英伟达董事会恢复黄仁勋首席执行官职务，点燃全球科技股行情。亚太市场周二全线大涨，芯片相关个股领涨，MSCI亚太指数创逾三个月来最大单日涨幅，此前该指数已连跌八个交易日、逼近熊市边缘。 周二，韩国KOSPI指数收涨6.32%，三星电子、SK海力士均涨超6%；日本东证指数收盘上涨2.5%，报3,764.88点。日本股市在长假后复市，日经225指数涨幅一度扩大至5%。布伦特原油徘徊在每桶约87美元。黄金跌超0.5%，现货黄金价格在每盎司3616美元左右。 这波股市反弹紧随华尔街周一的大幅拉升。标普500指数单日涨4.7%，终结七连跌；纳斯达克100指数飙升6.9%，从熊市边缘拉回；费城半导体指数大涨",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-24T07:36:27+00:00"
-    },
-    {
-      "title": "“救回”黄仁勋，特朗普一夜赚了1500万美元！",
-      "link": "https://wallstreetcn.com/articles/3786582",
-      "summary": "英伟达股价单日暴涨逾30%，而这轮涨势背后的关键推手，正是持有英伟达股票的特朗普本人。 受黄仁勋意外复职消息的提振，英伟达股价周一大幅跳涨， 特朗普所持英伟达股票的账面价值最高增加约1500万美元。 对此，特朗普随后公开表示，他亲自参与了促成黄仁勋复职的决定，并直言\"是我拿下了这笔交易\"。英伟达董事会也随即确认，曾收到来自美国政府\"高层\"的意见。 此事一出，市场对潜在利益冲突的担忧迅速升温。民主党参议员鲁本·加莱戈在社交媒体发文，呼吁彻查公告发布前的股票交易情况，并将现任白宫直斥为\"史上最腐败的政府\"。白宫方面则对此未予回应。 持仓规模存在区间，最高或达37万股 特朗普向政府道德办公室提交的财",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-24T07:22:21+00:00"
-    },
-    {
-      "title": "慧与营收增长50%，服务器与网络业务共同发力",
-      "link": "https://wallstreetcn.com/articles/3786585",
-      "summary": "服务器需求增长，正在更明显地转化为慧与的收入和经营利润。 北京时间11月24日，企业级IT基础设施供应商慧与发布2026财年第四季度业绩，报告期截至10月31日。 当季营收约145亿美元，同比增长50%；调整后每股摊薄收益1.43美元，高于公司此前给出的1.20至1.30美元指引。调整后经营利润率达到16.9%，同比提高4.7个百分点。 相比收入增长，这次业绩更值得注意的是云与AI业务的盈利变化。该分部当季收入约113亿美元，同比增长68.6%，经营利润率从上年同期的9.3%升至18.4%。其中，服务器收入约88亿美元，同比增长94.7%，存储收入也保持增长。 需要区分的是，服务器收入包含不同",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-24T07:19:29+00:00"
-    },
-    {
-      "title": "云知声营收增五成，向模型调用生意拓展",
-      "link": "https://wallstreetcn.com/articles/3786583",
-      "summary": "在医疗、交通等行业积累客户之后，云知声正在拓展按调用提供模型服务的生意。 11月23日，人工智能服务商云知声发布2026年第三季度自愿性公告。公司当季收入约3.44亿元，同比增长53.3%；毛利约1.44亿元，同比增长79.6%；毛利率升至41.8%，同比提高6.1个百分点。收入增长的同时，毛利率也有所改善。 这份成绩单背后，云知声正同时推进三类业务，大模型调用、企业智能化服务和端侧AI。其中，模型调用业务提供了一个不同于行业项目的新增长方向——客户通过接口使用模型能力，服务商根据使用情况获得收入。 据公司披露，截至公告发布日，主力通用模型U2-Flash周Token调用量达到万亿级别，单日调",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-24T07:01:57+00:00"
-    },
-    {
-      "title": "黄仁勋复职，美国国会一片哗然：民主党誓言彻查特朗普和英伟达，共和党也不买账",
-      "link": "https://wallstreetcn.com/articles/3786577",
-      "summary": "英伟达董事会在特朗普直接施压下宣布黄仁勋复职，在华盛顿引爆罕见的两党联合抵制。国会参众两院议员纷纷誓言深化调查，要求黄仁勋公开宣誓作证，围绕这家芯片巨头的疑云正迅速演变为一场政治风暴。 据参考消息、中新网报道 ，11月23日，黄仁勋复职后， 参议院民主党领袖查克·舒默表示，民主党明年掌控国会后，将“动用全部权力”调查特朗普政府、黄仁勋及其他英伟达高管。 舒默称，政府急于让黄仁勋复职，“更凸显国会必须采取行动”。民主党参议员Elizabeth Warren——预计明年接任该委员会主席——则将黄仁勋复职定性为\"鲁莽之举\"，要求白宫说明政府官员在这一决定中扮演的具体角色。 与此同时，据美联社和《华盛",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-24T06:29:52+00:00"
-    },
-    {
-      "title": "智元精灵G2半年进三家工厂，蓝思与长电产线单次节拍低于25秒",
-      "link": "https://wallstreetcn.com/articles/3786578",
-      "summary": "过去半年，智元创新（AGIBOT，以下简称“智元”）先后把精灵G2机器人送进三家工厂，作业对象从平板电脑、智能手机延伸到芯片料盘。 6月23日至28日，精灵G2在龙旗科技（ 603341.SH ）南昌工厂的平板量产质检工段完成6天连续直播作业，智元披露多台机器人累计作业超过64小时，执行64828次产线任务，任务成功率99.99%。 11月21日，蓝思科技（ 300433.SZ ）宣布与智元达成战略合作，在手机测试产线部署数十台精灵G2，承担测试工位自动上下料与测试设备交互。 11月23日，智元披露首批精灵G2并线长电科技（ 600584.SH ）位于上海临港的汽车电子工厂，接入芯片测试车间承",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-24T06:03:04+00:00"
-    },
-    {
-      "title": "Citadel：AI投资的政治风险被严重低估",
-      "link": "https://wallstreetcn.com/articles/3786569",
-      "summary": "Citadel认为，当前市场对AI的关注过度集中于技术层面的\"代理\"风险，却严重忽视了另一类风险——选民、国会和白宫将如何决定AI的部署边界与速度。 11月21日，Citadel固定收益负责人Nohshad Shah研究报告中警告， 美国经济正进入一个容错空间收窄的阶段：财政刺激消退、融资条件收紧、AI资本支出增速放缓，而美联储的货币政策立场也难以为市场提供缓冲。 Shah 指出，只要发生一起重大网络安全事件并点燃公众情绪， 监管层强行干预 AI 商业部署的动作就会比市场预想的来得更快、更果断，而当前市场在给 AI 估值时，几乎完全忽略了这一尾部风险。 他对AI整体投资维持防御立场，并以一句话",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-24T05:00:36+00:00"
-    },
-    {
-      "title": "老黄“神奇回归” ，投行连夜“撕报告”",
-      "link": "https://wallstreetcn.com/articles/3786571",
-      "summary": "黄仁勋回来了。英伟达董事会在不到两周内完成了一次180度转向——从宣布CEO辞职，到全票通过恢复其职务，整个过程伴随着白宫的直接介入、市场的剧烈震荡，以及华尔街各大投行的连夜重写报告。 11月23日，英伟达宣布黄仁勋即时恢复担任总裁、CEO及董事会成员。消息一出，英伟达股价当日收涨约32%，纳斯达克指数同日涨约7%。 也是这一天，高盛、花旗、瑞银等华尔街大行忙坏了。黄仁勋离职仅约两周，华尔街各大投行的分析师们刚刚完成了一套“无黄仁勋情景”下的估值测算——涵盖各细分行业的预期和估值框架。 复职消息一出，这套东西基本作废，得连夜改回来。 高盛、花旗快速上调估值 高盛在黄仁勋复任后维持英伟达“买入”",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-24T04:07:07+00:00"
-    },
-    {
-      "title": "豆包推出“小豆”，大厂争夺个人AI入口",
-      "link": "https://wallstreetcn.com/articles/3786572",
-      "summary": "Personal Agent的竞争正在升温。 11月24日，豆包旗下AI个人助理产品“小豆”正式开启公测，采用独立App的产品形态。目前，小豆采取邀请制开放，用户凭邀请码即可开启体验。 与豆包App不同，小豆更加侧重长期记忆、主动服务及任务执行能力，应用场景覆盖办公、消费、出行等个人事务。 豆包表示，未来小豆上的能力与体验也将逐步在豆包App上线。 华尔街见闻·全天候科技第一时间获得了小豆的邀请码，并进行体验。 对于此前使用过豆包和豆包工作的用户而言，可以直接将这当中沉淀的记忆导入小豆，无需重新介绍自己的职业背景、工作习惯及个人偏好等。 小豆还提供了多个第三方应用的连接入口，包括高德地图、Wi",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-24T04:03:16+00:00"
-    },
-    {
-      "title": "I’ve been married for 58 years. It’s ‘our’ money, not ‘his’ and ‘hers.’ Why do so many couples keep their finances separate?",
-      "link": "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
-      "summary": "“My wife stopped working outside the home in 1970.”",
+      "title": "12 days of sardines and Croc charms: Are Advent calendars getting out of control?",
+      "link": "https://www.marketwatch.com/story/12-days-of-sardines-and-croc-charms-are-advent-calendars-getting-out-of-control-81f24548?mod=mw_rss_topstories",
+      "summary": "Luxury Advent calendars in particular — which can run hundreds of dollars — have seen a spike in sales. Here’s why.",
       "source": "MarketWatch",
       "category": "国际财经",
-      "published": "2026-11-24T01:01:00+00:00"
+      "published": "2026-11-24T13:50:00+00:00"
+    },
+    {
+      "title": "Roth IRA conversions aren’t free money. Watch out for these 5 costly mistakes.",
+      "link": "https://www.marketwatch.com/story/roth-ira-conversions-arent-free-money-watch-out-for-these-5-costly-mistakes-39b182d3?mod=mw_rss_topstories",
+      "summary": "Do it poorly, and you trigger taxes you didn’t even know existed.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-24T13:48:00+00:00"
+    },
+    {
+      "title": "I’ve paid for long-term-care insurance for 20 years. Is it still worth it?",
+      "link": "https://www.marketwatch.com/story/ive-paid-for-long-term-care-insurance-for-20-years-is-it-still-worth-it-1b2cd52d?mod=mw_rss_topstories",
+      "summary": "Doing the math to determine if I have a good deal — or should trade in for a more modern policy.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-24T13:41:00+00:00"
+    },
+    {
+      "title": "编造检验记录，宝莱特华北唯一透析粉液基地遭飞检停产",
+      "link": "https://www.tmtpost.com/8216634.html",
+      "summary": "叠加血透耗材集采持续降价、主业连续亏损的经营压力，宝莱特把目光投向存储芯片赛道，试图寻找新的增长支点。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T13:40:24+00:00"
+    },
+    {
+      "title": "I’m in my 70s and buying a new BMW X1. Should I put my only son on the title?",
+      "link": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
+      "summary": "“Given my age, I never make a major new purchase without thinking about the future.”",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-24T13:40:00+00:00"
+    },
+    {
+      "title": "小米电话会：今年将在AI领域投入160亿，不能简单通过涨价转嫁内存成本，汽车交付Q4预计将迎“较大提升”",
+      "link": "https://wallstreetcn.com/articles/3786602",
+      "summary": "11月24日晚间，小米集团举行第三季度业绩电话会，汽车交付增长、AI战略投入以及内存涨价带来的成本压力成为市场关注的焦点。 小米集团合伙人、集团总裁卢伟冰表示， 小米汽车10月交付量超过5万辆，创年内单月新高，预计第四季度交付规模还将有较大提升 。手机业务方面，小米全球市场份额已连续三个季度提升，业务逐步企稳。 AI方面，小米集团CFO林世伟表示，小米对AI的投入非常坚决，今年将在AI领域投入160亿元，目前相关投入正按规划稳步推进。与此同时， 面对内存芯片价格持续高企，卢伟冰表示，小米不会简单通过提高产品售价转嫁成本，而是希望通过产品创新和结构升级消化压力。 汽车10月交付超5万辆，Q4预计",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T13:36:59+00:00"
+    },
+    {
+      "title": "内存涨价、换机乏力，荣耀如何接住中端市场的难题",
+      "link": "https://www.tmtpost.com/8216686.html",
+      "summary": "中端市场的竞争，从来不只是价格和配置的较量。当参数逐渐趋同，谁能重新定义用户需要什么，谁才有机会在下一轮竞争中占据主动。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T13:15:02+00:00"
+    },
+    {
+      "title": "Anthropic上市5天即破发，2万亿美元估值昙花一现！",
+      "link": "https://wallstreetcn.com/articles/3786614",
+      "summary": "上市不足一周，Anthropic便跌破IPO发行价。这家备受市场追捧的前沿AI公司迅速遭遇股价回撤，也让投资者重新审视AI企业的高估值能否得到持续支撑。 周二盘前，Anthropic股价一度跌破83美元的IPO发行价，最新报83.4美元，跌幅约5%。 相比11月19日上市首日111.50美元的开盘价，股价已明显回落。作为首家登陆公开市场的前沿AI公司，Anthropic的表现也被视为观察AI行业投资情绪的重要风向标。 值得注意的是，此次下跌发生在AI板块整体情绪有所回暖之际。英伟达周一宣布黄仁勋复任首席执行官，带动AI相关股票普遍上涨，但Anthropic未能跟随反弹。与此同时，标普500指数",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T13:14:53+00:00"
+    },
+    {
+      "title": "自变量发布具身基础模型WALL-OSS-1.0，自测零样本成功率55.1%",
+      "link": "https://www.tmtpost.com/8216666.html",
+      "summary": "“理解世界”与“执行动作”在同一模型中成形",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T13:09:16+00:00"
+    },
+    {
+      "title": "高盛：黄仁勋回归也改变不了AI交易逻辑，真正考验是万亿级资本开支能否赚回钱",
+      "link": "https://wallstreetcn.com/articles/3786615",
+      "summary": "英伟达的高管更迭风波并不会从根本上改变AI投资交易的逻辑走向。在高盛欧洲股票策略师Sharon Bell看来， 企业能否从巨额资本开支中赚取足够回报，才是决定AI行情走势的核心变量。 周一，英伟达股价单日暴涨31%，创下2003年以来最大单日涨幅，导火索是公司董事会宣布黄仁勋重返首席执行官职位。然而Bell在接受彭博电视台采访时表示，这一管理层变动\"不会产生太大影响\"，市场围绕单一公司的剧烈波动，更多折射出美股极度集中于少数巨头的结构性问题。 Bell同时警示投资者， 近期市场波动率已有所上升，建议在维持股票超配的同时，增配债券作为对冲缓冲。 高盛团队也已\"非常近期地\"将债券仓位调整至超配。 ",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T13:06:38+00:00"
+    },
+    {
+      "title": "“逢高减仓，别追黄仁勋逼空行情”！BTIG警告：纳指历史12次类似反弹后，无一例外全部出现回撤",
+      "link": "https://wallstreetcn.com/articles/3786613",
+      "summary": "纳斯达克100指数周一单日暴涨7%，英伟达股价飙升30%，空头遭遇\"史诗级\"逼空。然而，华尔街一位在此轮抛售中屡屡精准预判的技术策略师发出严厉警告：这轮反弹是减仓的窗口，而非追多的信号。 BTIG首席技术策略师Jonathan Krinsky回溯纳指自1985年成立以来的全部历史数据，找到12次单日暴跌5%后次日立即反弹5%或以上的先例，结论清晰而令人警醒。 \"数据表明，投资者应利用未来一两天的强势行情来降低仓位，而非追逐大盘风险敞口，尤其是科技和AI板块，\" Krinsky在题为《太快太猛》的报告中写道。 这一判断直接影响当前布局决策。若历史规律重演，QQQ（纳指100ETF）可能从当前水平",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T13:02:34+00:00"
+    },
+    {
+      "title": "Best Buy reports comparable sales growth of 6.1%, highest in five years",
+      "link": "https://www.cnbc.com/2026/11/24/best-buy-bby-q3-2027-earnings.html",
+      "summary": "Best Buy beat quarterly expectations for its fiscal third-quarter earnings results on Tuesday and raised its full-year guidance.",
+      "source": "CNBC Business",
+      "category": "国际财经",
+      "published": "2026-11-24T12:57:35+00:00"
+    },
+    {
+      "title": "Sunday’s pot roast now costs more than a Thanksgiving feast. Why beef won’t get cheaper for years.",
+      "link": "https://www.marketwatch.com/story/sundays-pot-roast-now-costs-more-than-a-thanksgiving-feast-why-beef-wont-get-cheaper-for-years-7daa1b3f?mod=mw_rss_topstories",
+      "summary": "A four-pound chuck roast runs $36.33. Walmart feeds 10 for $35. The turkey is the bait. The cow is the bill.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-24T12:56:00+00:00"
     },
     {
       "title": "HPE just posted its strongest growth ever — but its stock is sinking",
@@ -256,7 +112,231 @@
       "summary": "HPE boosted its financial forecast on Monday in the face of strong AI demand.",
       "source": "MarketWatch",
       "category": "国际财经",
-      "published": "2026-11-24T01:01:00+00:00"
+      "published": "2026-11-24T12:54:00+00:00"
+    },
+    {
+      "title": "The biggest biotech deal in nearly three years carries a hefty $41 billion price tag",
+      "link": "https://www.marketwatch.com/story/the-biggest-biotech-deal-in-nearly-three-years-carries-a-hefty-41-billion-price-tag-dd7fa228?mod=mw_rss_topstories",
+      "summary": "French drugmaker Sanofi on Tuesday agreed to pay $41 billion for U.S. biotech Insmed, a hefty price that will help the pharmaceutical giant offset the patent expiration on a key drug.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-24T12:50:00+00:00"
+    },
+    {
+      "title": "不惜溢价46%！赛诺菲豪掷410亿美元收购美国生物科技公司",
+      "link": "https://wallstreetcn.com/articles/3786608",
+      "summary": "赛诺菲正以三年来制药行业规模最大的一笔并购，押注对冲核心药物专利悬崖的风险。 这家法国制药巨头周二宣布， 以每股175美元现金收购美国生物科技公司Insmed，交易总价约410亿美元，较消息曝光前一个交易日的收盘价溢价约46%。 赛诺菲首席执行官Belén Garijo称此次收购是\"加速增长的绝佳机会\"。交易获两家公司董事会批准，预计于明年上半年完成。 这笔收购直接回应了赛诺菲最迫切的战略压力——其头号畅销药、皮肤与哮喘用药度普利尤单抗（Dupixent）将于2030年代初起陆续失去专利保护。Jefferies分析师Michael Leuchten在研报中写道，此次交易\"争取到了时间\"，有望将",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T12:46:02+00:00"
+    },
+    {
+      "title": "卢伟冰谈“最难第三季度”：小米如何穿越成本周期",
+      "link": "https://wallstreetcn.com/articles/3786612",
+      "summary": "“我感觉是智能手机行业至少是我从业以来最难的一个季度。” 11月24日，在小米集团2026年第三季度业绩媒体电话会上，小米集团合伙人、总裁卢伟冰在回应华尔街见闻·全天候科技提问时，如此评价刚刚过去的第三季度。 这一季度，存储等核心零部件价格在高位继续上涨，国内汽车、IoT等市场也面临需求不足及行业竞争加剧的压力。 尽管外部经营环境复杂，小米仍连续两个季度稳住了千亿营收。 财报显示，今年第三季度，小米集团实现营收1072.4亿元，同比下降5.2%，同比降幅进一步收窄；经调整净利润为48.8亿元。 卢伟冰向全天候科技指出，全球芯片价格高企的确给小米的经营利润带来了较大压力，但经过今年前三个季度的历",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T12:43:32+00:00"
+    },
+    {
+      "title": "B站三季度广告收入增长20%，用户活跃度提升支撑商业化",
+      "link": "https://wallstreetcn.com/articles/3786611",
+      "summary": "用户在B站停留的时间更长了，广告也继续成为公司收入增长的主要动力。 11月24日，哔哩哔哩发布2026年第三季度未经审计财报。当季营收83.17亿元，同比增长8%；净利润5.04亿元，同比增长7%；经调整净利润8.28亿元，同比增长5%。毛利率由上年同期的36.7%升至37.3%，盈利能力继续改善。 广告是这份成绩单中最突出的业务。第三季度，广告收入30.87亿元，同比增长20%，规模已接近增值服务的31.48亿元。公司将广告增长主要归因于广告产品完善和投放效率提升。 按财报数据计算，广告贡献了约37%的季度收入。随着这项业务扩大，B站的商业化越来越依赖内容消费与广告需求之间的连接，用户来观看",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T12:36:10+00:00"
+    },
+    {
+      "title": "Jensen Huang’s return was worth nearly $950 billion to Nvidia. How much of the stock market should ride on one man?",
+      "link": "https://www.marketwatch.com/story/jensen-huangs-return-was-worth-nearly-950-billion-to-nvidia-how-much-of-the-stock-market-should-ride-on-one-man-c7129e95?mod=mw_rss_topstories",
+      "summary": "Trump got the CEO he wanted. Nvidia still has an investigation to finish. Plus, the outlook for AI jobs and why Medicare Advantage insurers missed Monday’s rally.",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-24T12:21:00+00:00"
+    },
+    {
+      "title": "知乎三季度营收企稳：订阅会员回升、拓展AI布局",
+      "link": "https://wallstreetcn.com/articles/3786610",
+      "summary": "知乎的核心业务在第三季度出现企稳信号，AI领域的投资布局也有了新进展。 11月24日，知乎发布2026年第三季度业绩。当季营收6.59亿元，与上年同期基本持平；月均订阅会员达到1410万，环比增长约7%。其中，营销服务收入恢复同比增长，付费内容及IP运营收入保持稳定，共同支撑了本季度收入表现。 付费内容仍是知乎最主要的收入来源。 第三季度，付费内容及IP运营收入3.94亿元，约占总收入六成；营销服务收入1.98亿元，同比增长4.5%，公司将后者的增长主要归因于效果广告产品的改善。 订阅会员回升，为内容业务带来了积极信号。相比浏览、点赞等行为，订阅意味着用户愿意为内容付费。会员规模环比修改，有助",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T12:15:00+00:00"
+    },
+    {
+      "title": "I’ve been married for 58 years. It’s ‘our’ money, not ‘his’ and ‘hers.’ Why do so many couples keep their finances separate?",
+      "link": "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
+      "summary": "“My wife stopped working outside the home in 1970.”",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-24T12:15:00+00:00"
+    },
+    {
+      "title": "AI风险推高美债吸引力！Pimco称一旦危机爆发，收益率将迎来“难以预测”的下行",
+      "link": "https://wallstreetcn.com/articles/3786607",
+      "summary": "AI热潮正在给美国经济和金融市场带来新的不确定性，也让美债的避险价值重新受到重视。全球最大债券基金管理公司之一太平洋投资管理公司（Pimco）认为， AI相关金融风险及其对传统行业商业模式的冲击，可能在未来数年对经济增长形成压力。在这一背景下，美国国债及其他高质量债券的配置吸引力正在上升。 Pimco首席投资官Daniel Ivascyn在接受彭博采访时表示，AI不仅可能引发金融市场波动，还可能通过颠覆传统经济模式影响实体经济。出于对这些风险的警惕，Pimco已将低于投资级别的弱资质债券持仓削减至2008年以来最低水平。 上周市场的剧烈波动也体现了AI交易对债券市场的影响：AI投资前景恶化一度",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T12:03:38+00:00"
+    },
+    {
+      "title": "Some U.S. food banks see demand top pandemic levels",
+      "link": "https://www.cnbc.com/2026/11/24/us-food-banks-demand-snap.html",
+      "summary": "A combination of high costs and restrictions to federal aid have led to soaring demand at many food banks in the U.S.",
+      "source": "CNBC Business",
+      "category": "国际财经",
+      "published": "2026-11-24T12:00:01+00:00"
+    },
+    {
+      "title": "This billionaire bought Nvidia in anticipation of Jensen Huang’s return — and warns the S&P 500 could fall by a third",
+      "link": "https://www.marketwatch.com/story/this-billionaire-bought-nvidia-in-anticipation-of-jensen-huangs-return-and-warns-the-s-p-500-could-fall-by-a-third-dcff9489?mod=mw_rss_topstories",
+      "summary": "Jim Mellon is a billionaire investor with strong views on diverse asset classes. He’s bearish on the AI sector and U.S. stocks generally but he sees real value in Chinese equity markets and long-term Japanese government debt",
+      "source": "MarketWatch",
+      "category": "国际财经",
+      "published": "2026-11-24T11:59:00+00:00"
+    },
+    {
+      "title": "达利欧最新警告：伟大的技术，不等于伟大的投资",
+      "link": "https://wallstreetcn.com/articles/3786589",
+      "summary": "桥水基金创始人瑞·达利欧（Ray Dalio）再度发出警示：人们习惯性地将颠覆性新技术与优质投资机会画等号，而这正是历史上每一次金融泡沫的核心驱动力。 在最新一期Sourcery播客访谈中，达利欧以20世纪20年代的电气化浪潮为镜，直指当前AI热潮中的潜在风险。 他认为，Anthropic和SpaceX的万亿美元级估值所创造的，本质上是账面财富而非可支配现金，二者之间存在根本性区别。一旦持有资产的人被迫变现，泡沫便会开始破裂。 与此同时，他表示正在构建一套将自身投资原则自动化的AI系统，以期突破人类思考能力的边界。 在地缘政治与宏观格局层面，达利欧对新一届美国政府的前景保持审慎。他认为，政权更",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T11:46:43+00:00"
+    },
+    {
+      "title": "\"R2也会亏\"，银行理财市场面临“本金”考验",
+      "link": "https://wallstreetcn.com/articles/3786606",
+      "summary": "虽然早就没有了“保本”的帽子，但当银行理财真的出现跌破面值的情况，客户压力还是源源不断的会透露出来。 根据一家券商第三方的统计，截至11月20日，全市场银行理财的破净率升至近三年的新高。这个表现甚至超过了2023年资本市场“大调整”时期的表现，让外界颇为惊讶。 业界普遍认为，这轮银行理财净值下行和股债等大类资产同时向下波动有关，部分R2产品此次亦不免破净。但不可回避的另一个原因是，过去一年里，银行理财市场发行了大量“含权”（包含部分股票投资比例）产品，后者导致银行理财受同期股市的影响越来越大。 而这个也传递到社交平台上，坊间关于理财经理集中答疑，客户沟通压力增大，十余家银行理财公司先后致信客户",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T11:25:21+00:00"
+    },
+    {
+      "title": "又现卖方王牌团队“集体出走”，近期卖方人事为何变动频频",
+      "link": "https://wallstreetcn.com/articles/3786604",
+      "summary": "又一大型券商研究所遇到投研骨干变动。 11月24日，证券业协会官网显示，兴业证券从业人员目录下，已不再有首席策略分析师张启尧及其团队多名成员的从业信息。这某种程度上，坐实了有关业界传说张启尧团队整体跳槽的传说。 此前，张启尧的“尧望后势”公众号自9月25日后已停止更新近两个月。和之前该号几乎每个工作日都要更新的频率大不一样。 张启尧的离职，应是兴业证券近年在策略方向上又一“领军人才”级别的人才流失。此前的2022年，王德伦离任奔赴资管机构。2025年，兴业证券经济与金融研究院联席院长、全球首席策略分析师、策略大咖张忆东亦离职他往。 九人团队集体离场 截至11月24日，中国证券业协会从业人员信息",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T11:21:12+00:00"
+    },
+    {
+      "title": "大涨之后何去何从？纳指100期货跌1.5%，英伟达盘前跌6%，Anthropic跌破发行价，金油齐跌",
+      "link": "https://wallstreetcn.com/articles/3786560",
+      "summary": "英伟达董事会恢复黄仁勋首席执行官职务，一度点燃全球科技股反弹行情，但提振效应未能持续，美股期货再度走低。 周二，美股盘前，纳指期货跌超0.8%，触及日内新低。英伟达走低，跌6%，此前黄仁勋回归，英伟达收涨超31%；明星科技股普跌，美光科技跌超4%，ARM跌超3%，Anthropic美股盘前跌幅扩大至5%，跌破83美元的IPO发行价。 韩国KOSPI指数收涨6.32%，三星电子、SK海力士均涨超6%；日本东证指数收盘上涨2.5%，报3,764.88点。日本股市在长假后复市，日经225指数涨幅一度扩大至5%。黄金跌超0.5%，现货黄金价格在每盎司3616美元左右。 Hedgeye风险管理公司全球技",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T11:14:28+00:00"
+    },
+    {
+      "title": "中国国航，一张油价看跌期权",
+      "link": "https://www.tmtpost.com/8215597.html",
+      "summary": "迎来周期反转了吗？",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T11:13:22+00:00"
+    },
+    {
+      "title": "连续四月销量破10万，零跑回应“几箱啤酒压穿后备箱”风波",
+      "link": "https://www.tmtpost.com/8215052.html",
+      "summary": "新势力“销冠”零跑汽车，又一次卷入风波。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T11:12:38+00:00"
+    },
+    {
+      "title": "DeepSeek限额，腾讯社交帝国松口气",
+      "link": "https://www.tmtpost.com/8209876.html",
+      "summary": "AI免费时代的成本与社交变局。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T11:11:06+00:00"
+    },
+    {
+      "title": "理想“去宁德化”凶猛",
+      "link": "https://www.tmtpost.com/8214994.html",
+      "summary": "都在悄悄做，嘴里都不说。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T11:11:02+00:00"
+    },
+    {
+      "title": "希望《无限暖暖》送我300抽，记马斯克账上",
+      "link": "https://www.tmtpost.com/8216374.html",
+      "summary": "叠纸必须打赢的一仗。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T11:07:11+00:00"
+    },
+    {
+      "title": "市值蒸发3000亿后，摩尔线程要拿出10亿回购",
+      "link": "https://www.tmtpost.com/8216343.html",
+      "summary": "摩尔线程拟最高10亿元回购。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T11:07:08+00:00"
+    },
+    {
+      "title": "猛犸象没必要把自己包装成大家买不起的样子",
+      "link": "https://www.tmtpost.com/8216367.html",
+      "summary": "找适合自己的路。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T11:07:03+00:00"
+    },
+    {
+      "title": "10.5亿现金全资拿下银球科技，斯菱智驱机器人转型再下重注",
+      "link": "https://www.tmtpost.com/8216503.html",
+      "summary": "先参股后控股分步落子，机器人第二增长曲线能否兑现仍待验证。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T11:02:50+00:00"
+    },
+    {
+      "title": "韩国央行后天或再加息！AI暴跌之际，高盛警告：消费撑不住了",
+      "link": "https://wallstreetcn.com/articles/3786599",
+      "summary": "韩国央行预计将于11月26日再次加息，但半导体出口繁荣难掩内需疲软，AI科技股下跌进一步加剧消费压力，本轮加息周期或已接近尾声。 据路透社对34名经济学家的调查，32人预计韩国央行将于11月26日上调基准利率25个基点至3.25%，仅2人预测维持不变。法国兴业银行经济学家Michelle Lam表示，市场已充分消化加息预期， “如果不加息，反而会令市场意外”。 她指出，韩国三季度GDP表现强劲，通胀预计要到2027年下半年才能回落至2%的目标水平，加之房价持续上涨，均为再次加息提供了理由。 不过，高盛对此持相对谨慎的态度。高盛高级亚洲经济学家Goohoon Kwon周二表示， 考虑到10月和1",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T10:56:19+00:00"
+    },
+    {
+      "title": "豆包灰测购物一级入口，抖音电商拓展AI获客渠道",
+      "link": "https://wallstreetcn.com/articles/3786600",
+      "summary": "豆包正在把用户的购物咨询，进一步接入抖音电商的交易体系。 11月24日消息，豆包App近期灰度测试“豆包购物”功能，目前部分用户可见。购物入口被独立放置在侧边菜单栏，与新对话、插件技能等功能并列。用户可以通过对话表达需求，让豆包协助找商品、比价，再进入抖音电商提供的页面下单。 从已披露的测试界面看，点击购物入口后，页面会加载抖音商城商品流；查看完整价格、库存及下单前，需要关联抖音账号。商品页面还展示优惠券、销量和评价等信息，用户可以围绕商品继续追问。 这次调整的重点，是购物在豆包内的位置更加明确。此前，用户已能通过对话获得商品信息和购物链接；设置独立入口后，购物成为一个可以主动进入、持续浏览的",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-24T10:47:05+00:00"
+    },
+    {
+      "title": "黄仁勋回归，AI泡沫是否继续？",
+      "link": "https://www.tmtpost.com/8215280.html",
+      "summary": "一场关于AI商业价值的真正考验才刚刚开始。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T09:46:00+00:00"
+    },
+    {
+      "title": "AI办公，不再只拼大模型",
+      "link": "https://www.tmtpost.com/8215293.html",
+      "summary": "AI办公竞争升维。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T09:21:45+00:00"
+    },
+    {
+      "title": "艾为电子落子电源芯片业务，钰泰半导体八年资本路迎新局 | 并购一线",
+      "link": "https://www.tmtpost.com/8216284.html",
+      "summary": "钰泰半导体能否借此登陆资本市场拭目以待",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T09:18:48+00:00"
+    },
+    {
+      "title": "阶跃星辰的终端生态，还是一场熟人局？",
+      "link": "https://www.tmtpost.com/8215895.html",
+      "summary": "从模型到芯片，阶跃想把终端的关键环节握在手里。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-24T09:15:51+00:00"
     },
     {
       "title": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
@@ -267,76 +347,12 @@
       "published": "2026-11-23T23:28:19+00:00"
     },
     {
-      "title": "The newest addition to the S&P 500 is a maker of viral ice-cream machines",
-      "link": "https://www.marketwatch.com/story/the-newest-addition-to-the-s-p-500-is-a-maker-of-viral-ice-cream-machines-5c6e209a?mod=mw_rss_topstories",
-      "summary": "SharkNinja will join the S&P 500, replacing AES.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-23T23:18:00+00:00"
-    },
-    {
-      "title": "Nvidia’s stock is surging again. What to know before chasing the AI rally.",
-      "link": "https://www.marketwatch.com/story/nvidias-stock-is-surging-again-what-to-know-before-chasing-the-ai-rally-226688d7?mod=mw_rss_topstories",
-      "summary": "Jensen Huang’s return to Nvidia was the good news that the AI trade needed, but investors should prepare for more volatility",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-23T22:04:00+00:00"
-    },
-    {
       "title": "ESPN, NFL to show Super Bowl 61 in Imax theaters",
       "link": "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
       "summary": "In addition to ESPN channels, Super Bowl 61 will also be available on streaming platform Disney+ as well as the company's broadcast network ABC.",
       "source": "CNBC Business",
       "category": "国际财经",
       "published": "2026-11-23T21:55:27+00:00"
-    },
-    {
-      "title": "U.S. stocks see best day in more than a year, as return of Jensen Huang revives AI enthusiasm",
-      "link": "https://www.marketwatch.com/story/u-s-stocks-see-best-day-in-more-than-a-year-as-return-of-jensen-huang-revives-ai-enthusiasm-c3b9d274?mod=mw_rss_topstories",
-      "summary": "Jensen Huang’s return as CEO of Nvidia powered a massive bounce in the U.S. stock market on Monday by helping to restore faith in the artificial-intelligence trade.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-23T21:51:00+00:00"
-    },
-    {
-      "title": "Consumer stocks, seen as safe bet amid cracks in AI trade, were among the S&P 500’s biggest losers Monday",
-      "link": "https://www.marketwatch.com/story/consumer-stocks-seen-as-safe-bet-amid-cracks-in-ai-trade-are-among-the-s-p-500s-biggest-losers-monday-80cf8f81?mod=mw_rss_topstories",
-      "summary": "Shares of Kroger and Tyson Foods fall, as Nvidia storms higher",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-23T21:45:00+00:00"
-    },
-    {
-      "title": "These stocks are the biggest gainers after Jensen Huang’s return to Nvidia",
-      "link": "https://www.marketwatch.com/story/these-stocks-are-the-biggest-gainers-after-jensen-huangs-return-to-nvidia-bb886140?mod=mw_rss_topstories",
-      "summary": "Huang’s comeback offers relief to the battered AI trade and drives major boosts across the tech sector.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-23T21:36:00+00:00"
-    },
-    {
-      "title": "Amazon may have just found a ‘cheap’ way to get a lot more out of its chips",
-      "link": "https://www.marketwatch.com/story/amazon-may-have-just-found-a-cheap-way-to-get-a-lot-more-out-of-its-chips-bd822bd5?mod=mw_rss_topstories",
-      "summary": "Amazon’s deal for Decart’s AI technology, with a reported price of $7.5 billion, may be a relatively inexpensive way to boost the speed and efficiency of its custom chips, says an analyst.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-23T21:33:00+00:00"
-    },
-    {
-      "title": "Oracle and CoreWeave stocks stage big gains as investors bet the AI cash will keep flowing",
-      "link": "https://www.marketwatch.com/story/oracle-and-coreweave-stocks-stage-big-gains-as-investors-bet-the-ai-cash-will-keep-flowing-eeb1aa85?mod=mw_rss_topstories",
-      "summary": "Nvidia’s financing of the AI ecosystem has been crucial for cloud companies like Oracle, CoreWeave, Nebius and Iren.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-23T21:24:00+00:00"
-    },
-    {
-      "title": "Short sellers get smoked as Nvidia tallies biggest one-day gain in stock-market history",
-      "link": "https://www.marketwatch.com/story/short-sellers-get-smoked-as-nvidia-tallies-biggest-one-day-gain-in-stock-market-history-e9dc6e9c?mod=mw_rss_topstories",
-      "summary": "Two products aiming to profit off daily declines in Nvidia shares were nearly wiped out as the stock rallied more than 30%.",
-      "source": "MarketWatch",
-      "category": "国际财经",
-      "published": "2026-11-23T21:19:00+00:00"
     },
     {
       "title": "Pizza chains are under pressure. GLP-1 use is only one part of the problem",
@@ -427,14 +443,6 @@
       "published": "2026-11-18T19:00:00+00:00"
     },
     {
-      "title": "Lowe's posts strong online sales, raises outlook despite slow housing market",
-      "link": "https://www.cnbc.com/2026/11/18/lowes-low-q3-2026-earnings.html",
-      "summary": "Lowe's said it saw strength in online sales during its quarter that contributed to a guidance raise for the full year.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-18T18:27:52+00:00"
-    },
-    {
       "title": "Investigators make progress in hunt for cause of FAA ground stop",
       "link": "https://www.cnbc.com/2026/11/18/faa-ground-stop-router-investigation.html",
       "summary": "Engineers and analysts are still searching for the root cause of the issue, which led to a four-hour ground stop on Friday.",
@@ -465,14 +473,6 @@
       "source": "CNBC Business",
       "category": "国际财经",
       "published": "2026-11-18T14:02:52+00:00"
-    },
-    {
-      "title": "Booking Holdings creates new enterprise division as AI reshapes travel planning",
-      "link": "https://www.cnbc.com/2026/11/18/booking-holdings-enterprise.html",
-      "summary": "The future for online travel agencies increasingly relies on scaling business-to-business travel platforms.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-18T12:55:01+00:00"
     },
     {
       "title": "Agencies extend comment period for proposed third-party risk management guidance",
