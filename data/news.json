@@ -1,294 +1,622 @@
 {
-  "updated": "2026-11-25T05:30:43.040572+00:00",
-  "count": 130,
+  "updated": "2026-11-25T13:59:34.168292+00:00",
+  "count": 135,
   "items": [
     {
-      "title": "行神州“播”天下，遇见大美雅安",
-      "link": "https://www.jiemian.com/article/15371766.html",
-      "summary": "感受数字新城，品味生态雅安。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T05:11:13+00:00"
+      "title": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
+      "link": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html",
+      "summary": "Bond yields moved lower Wednesday as investors fled to bonds for protection amid sticky inflation data.",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-25T13:55:00+00:00"
     },
     {
-      "title": "中美贸易理事会项下农业工作组首次会议在京举行",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737474.shtml",
-      "summary": "中新网11月25日电 据商务部网站消息，11月23-24日，中美双方在北京举行中美贸易理事会项下农业工作组首次会议。双方以中美元首会晤重要共识为引领，就农产品监管及市场准入、农产品贸易等议题进行了坦诚、深入、建设性的交流。",
+      "title": "Fed’s preferred inflation gauge accelerated to 3.8% in October, likely sealing rate hike",
+      "link": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
+      "summary": "The personal consumption expenditures price index was expected to show an annual inflation rate of 3.8% in October, according to the Dow Jones consensus.",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-25T13:47:28+00:00"
+    },
+    {
+      "title": "专家学者齐聚广州共探人工智能与硬科技产业协同",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737820.shtml",
+      "summary": "中新网广州11月25日电 (记者 王坚)第十九届寰宇生产力论坛暨湾区产业链接大会24日在广州南沙开幕。论坛以“拥抱AI，携手两岸，向新向海向未来”为主题，围绕人工智能、新质生产力、科技金融、产业协同等议题展开。",
       "source": "中新网-财经",
       "category": "中文宏观",
-      "published": "2026-11-25T05:08:57+00:00"
+      "published": "2026-11-25T13:45:07+00:00"
     },
     {
-      "title": "工业和信息化部脑机标委会工作组成立",
-      "link": "https://www.jiemian.com/article/15371778.html",
-      "summary": "",
-      "source": "界面新闻",
+      "title": "中马青年企业家广西南宁共探AI赋能企业出海",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737819.shtml",
+      "summary": "中新网南宁11月25日电 (刘学程)“以智创新·向海而行”AI赋能企业出海主题分享活动24日在广西南宁举行。活动邀请阿里巴巴国际站全球钻石讲师、跨境电商实战专家柯小平作专题分享，正在南宁参访的20位马来西亚青年企业家出席活动。",
+      "source": "中新网-财经",
       "category": "中文宏观",
-      "published": "2026-11-25T05:08:56+00:00"
+      "published": "2026-11-25T13:44:57+00:00"
     },
     {
-      "title": "贝莱德、IFM据悉考虑下调对Stack数据中心的收购报价",
-      "link": "https://www.jiemian.com/article/15371770.html",
-      "summary": "11月25日，据报道，知情人士称，因行业波动加剧，由贝莱德和IFM Investors组成的财团正在考虑下调对Stack Infrastructure亚太地区数据中心的收购报价。知情人士称，该投资集团可能会削减要约中的股权部分，并将部分付款与项目交付情况挂钩。目前讨论仍在进行中，尚未做出最终决定。",
-      "source": "界面新闻",
+      "title": "黑龙江“吸睛”各国客商 共拓入境文旅合作通道",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737814.shtml",
+      "summary": "中新网哈尔滨11月25日电 (王琳 刘倚辰)黑龙江省文化和旅游资产交易大会暨招商对接会——入境游资源交流对接活动于25日在哈尔滨举办，重点引进境内外投资者、文旅龙头企业与优质旅行商，携手共拓入境文旅合作通道。",
+      "source": "中新网-财经",
       "category": "中文宏观",
-      "published": "2026-11-25T05:06:33+00:00"
+      "published": "2026-11-25T13:43:51+00:00"
     },
     {
-      "title": "比亚迪业绩重回增长，市值为何仍不见起色？",
-      "link": "https://www.jiemian.com/article/15371491.html",
-      "summary": "出口撑起半壁江山，但出海的“含金量”还不够高。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T05:05:40+00:00"
+      "title": "目标5000亿元 山东布局智能网联新能源汽车新赛道",
+      "link": "http://www.eeo.com.cn/2026/1125/1103070.shtml",
+      "summary": "山东省工业和信息化厅等十一部门联合印发的《山东省智能网联新能源汽车产业高质量发展行动计划（2026-2030年）》提出，力争到2030年，山东智能网联新能源汽车产业规模达到5000亿元左右、新能源汽车占汽车比重达到55%，加快打造全国重要的智能网联新能源汽车生产基地和产业创新高地。",
+      "source": "经济观察网",
+      "category": "产业科技",
+      "published": "2026-11-25T13:41:23+00:00"
     },
     {
-      "title": "醉美邛崃·链动湾区｜千年酒香里，邛崃带着硬核产业奔赴深圳",
-      "link": "https://www.jiemian.com/article/15371764.html",
-      "summary": "推动邛崃佳酿走向更广阔的市场。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T05:03:25+00:00"
-    },
-    {
-      "title": "手机不香了，小米转头去把钱砸进车里",
-      "link": "https://www.jiemian.com/article/15371308.html",
-      "summary": "卖车的毛利率，是卖手机的两倍。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T05:01:59+00:00"
-    },
-    {
-      "title": "中美贸易理事会项下农业工作组首次会议在京举行",
-      "link": "https://www.jiemian.com/article/15371763.html",
-      "summary": "",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T05:00:52+00:00"
-    },
-    {
-      "title": "星际荣耀：SQX-3运载火箭尾段传力结构极限载荷工况静力试验成功",
-      "link": "https://www.jiemian.com/article/15371760.html",
-      "summary": "",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T05:00:21+00:00"
-    },
-    {
-      "title": "《后会友期》会成为下一个《花少2》吗？",
-      "link": "https://www.jiemian.com/article/15371041.html",
-      "summary": "“友学”出圈。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T04:58:26+00:00"
-    },
-    {
-      "title": "Jeep第一款新能源车明年上市",
-      "link": "https://www.jiemian.com/article/15371759.html",
-      "summary": "",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T04:57:12+00:00"
-    },
-    {
-      "title": "恒生科技指数较低估值特征显现！恒生科技ETF华泰柏瑞(513130)助力把握港股科技资产修复机遇",
-      "link": "https://www.jiemian.com/article/15371753.html",
-      "summary": "昨日，英伟达原CEO复职消息带动的早盘反弹未能延续，叠加史上最大IPO破发、美联储12月加息预期升温等消息冲击，科技板块再度承压，港股科技资产同步出现回调。截至最新，恒生科技指数点位已下探至3467点",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T04:56:39+00:00"
-    },
-    {
-      "title": "久远银海：“银海闻语”大模型已应用于医疗医保、数字政务等领域",
-      "link": "https://www.jiemian.com/article/15371749.html",
-      "summary": "",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T04:51:19+00:00"
-    },
-    {
-      "title": "猪价下行周期里，一家北交所上市公司的跨界账单",
-      "link": "https://www.jiemian.com/article/15371686.html",
-      "summary": "营业收入靠猪在涨，利润却被猪吃掉，现金也被猪占用。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T04:51:06+00:00"
-    },
-    {
-      "title": "蓝焰控股：暂未布局合成金刚石方面的业务",
-      "link": "https://www.jiemian.com/article/15371744.html",
-      "summary": "",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T04:50:58+00:00"
-    },
-    {
-      "title": "万里石：尚未在哈萨克斯坦取得任何矿权",
-      "link": "https://www.jiemian.com/article/15371738.html",
-      "summary": "",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T04:50:42+00:00"
-    },
-    {
-      "title": "‘Ready for any storm’: UAE minister optimistic on economy as IMF lifts forecast",
-      "link": "https://www.cnbc.com/2026/11/25/uae-iran-war-economy-oil.html",
-      "summary": "The UAE is optimistic about achieving 7%-8% economic growth next year, banking on a \"different\" economic model.",
+      "title": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
+      "link": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
+      "summary": "The new levies seek to counter foreign trade practices deemed unfair, discriminatory, or burdensome to U.S. commerce.",
       "source": "CNBC 国际头条",
       "category": "国际财经",
-      "published": "2026-11-25T04:06:01+00:00"
+      "published": "2026-11-25T13:37:35+00:00"
     },
     {
-      "title": "A股三大股指均跌超1%，医药、消费逆势走强，半导体产业链下跌，恒科指盘中涨超2%之后回落，小米涨4%",
-      "link": "https://wallstreetcn.com/articles/3786653",
-      "summary": "11月25日，A股A股在隔夜美股科技股\"一日游\"式回调的拖累下集体低开，随后盘初震荡收窄，盘中跌幅有所扩大，三大指数午盘均跌超1%，算力硬件局部活跃，光模块龙头“易中天”走高，天孚通信大涨超11%。零售、餐饮旅游等大消费活跃。半导体产业链陷入调整，GPU、先进封装、光刻机等概念股下跌。 港股早盘冲高回落，恒指、恒科指双双上涨，恒科指盘初一度涨2%，临近午盘再度回落，权重科网股多数反弹，小米涨4%，京东涨5%，哔哩哔哩拉升近10%。半导体下挫，华虹宏力跌超13%。光模块、光纤、AI大模型股均调整。债市方面，国债期货普遍下跌。商品方面，国内商品方面多数下跌，贵金属期货跌幅居前，跟随隔夜国际黄金的跌",
+      "title": "一汽解放与Deutz签署技术授权协议",
+      "link": "https://www.jiemian.com/article/15374208.html",
+      "summary": "11月25日，一汽解放与Deutz TLA合作协议签约仪式在上海宝马工程机械展解放动力展区举行。本次签署的TLA协议（技术授权协议）标志着合作由意向规划阶段迈入标准化落地阶段。道依茨（Deutz）是德国科隆的一家发动机独立制造品牌，创立于1864年。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:36:00+00:00"
+    },
+    {
+      "title": "蒙古国努姆鲁格保护区火灾初估损失超9亿美元",
+      "link": "https://www.jiemian.com/article/15374202.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:34:36+00:00"
+    },
+    {
+      "title": "以议会初审通过法案，将就哈马斯袭击事件成立国家调查委员会",
+      "link": "https://www.jiemian.com/article/15374189.html",
+      "summary": "当地时间11月25日，以色列议会以65票赞成、50票反对的结果，初审通过一项由正直党领导人埃森科特领衔的反对派阵营推动的法案，决定就2023年10月7日巴勒斯坦伊斯兰抵抗运动（哈马斯）袭击事件成立国家调查委员会。（央视新闻）",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:34:12+00:00"
+    },
+    {
+      "title": "美国10月核心PCE环比增长0.3%，符合预期",
+      "link": "https://www.jiemian.com/article/15374183.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:33:36+00:00"
+    },
+    {
+      "title": "中荷外长共识声明",
+      "link": "https://www.jiemian.com/article/15374176.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:33:09+00:00"
+    },
+    {
+      "title": "小鹏人形机器人IRON预计2027年1月进入硬件量产阶段",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737811.shtml",
+      "summary": "中新社广州11月25日电 (记者 蔡敏婕)第八届小鹏科技日25日在广州举办。记者从活动上获悉，小鹏高阶通用人形机器人IRON预计2027年1月进入硬件量产阶段，第一季度作为导购进入小鹏门店实习，推动人形机器人从技术展示走向真实岗位。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:32:35+00:00"
+    },
+    {
+      "title": "美国上周首次申领失业救济人数为18.9万",
+      "link": "https://www.jiemian.com/article/15374175.html",
+      "summary": "预估为20万，前值为20.3万。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:32:03+00:00"
+    },
+    {
+      "title": "年产值300亿元，联想高性能服务器产线在天津投产",
+      "link": "https://www.jiemian.com/article/15374169.html",
+      "summary": "11月25日，联想集团在天津举行高性能服务器产线落成暨超节点项目启动仪式。据悉，此次落成投产的高性能服务器产线位于联想（天津）创新产业园，于2025年底启动建设，总投资1.2亿元。该产线具备年产20万台通用服务器、10万台AI服务器的设计产能，预计年产值达300亿元。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:32:01+00:00"
+    },
+    {
+      "title": "美国10月PCE物价指数同比增长3.8%创三年半新高，核心同比 3.3%超预期，12月加息几成定局！",
+      "link": "https://wallstreetcn.com/articles/3786699",
+      "summary": "美国通胀降温进程在10月再度受阻。核心个人消费支出（PCE）物价指数同比升幅反弹至3.3%，高于市场预期，距离美联储2%的政策目标仍有明显距离。消费支出同期几乎停滞，通胀黏性与需求走弱同时出现，货币政策的转向时点被迫继续后移。 美国商务部经济分析局周三公布的数据显示，10月核心PCE物价指数同比上涨3.3%，预期为3.2%，前值为3.1%；环比上涨0.3%，与预期和前值一致。整体PCE物价指数同比上涨3.8%，为2023年5月以来最高，预期3.8%，前值3.6%；环比上涨0.3%，前值0.5%。 与通胀黏性并存的是消费动能明显减弱。经通胀调整后的个人消费支出环比几乎持平，而彭博调查经济学家的预",
       "source": "华尔街见闻",
       "category": "中文宏观",
-      "published": "2026-11-25T04:05:17+00:00"
+      "published": "2026-11-25T13:30:36+00:00"
     },
     {
-      "title": "China’s Xiamen Airlines to buy 50 Boeing jets in $7.4 billion deal",
-      "link": "https://www.cnbc.com/2026/11/25/china-xiamen-boeing-deal.html",
-      "summary": "Xiamen Airlines has agreed to purchase 50 Boeing 737-8 aircraft with a combined catalog price of around $7.4 billion.",
+      "title": "广东发布综合运输服务发展“十五五”规划",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737805.shtml",
+      "summary": "中新网广州11月25日电(记者 蔡敏婕)《广东省综合运输服务发展“十五五”规划》(简称《规划》)日前印发。到2030年，广东将基本建成“安全韧性、舒适便捷、经济高效、一体融合、智慧绿色”的现代化综合运输服务体系，“12312”出行交通圈和“123”快货物流圈基本形成，粤港澳大湾区综合运输服务率先实现现代化。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:30:14+00:00"
+    },
+    {
+      "title": "专家：感知能力是机器人进入人类生活关键一步",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737801.shtml",
+      "summary": "中新网北京11月25日电(记者 谢艺观)“所谓自然的表达就是机器人离你很近的时候，要看着舒服。它能够近距离进入人的生活、被人们接纳，这很重要。这也是机器人进入人类生活的最后一步。”",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:27:18+00:00"
+    },
+    {
+      "title": "宇特光电：公司将于2026年12月11日召开2026年第二次临时股东会",
+      "link": "http://www.eeo.com.cn/2026/1125/1103059.shtml",
+      "summary": "证券日报网讯11月25日，宇特光电发布公告称，公司将于2026年12月11日召开2026年第二次临时股东会。 （编辑 吴越）",
+      "source": "经济观察网",
+      "category": "产业科技",
+      "published": "2026-11-25T13:26:42+00:00"
+    },
+    {
+      "title": "凯达重工：2026年第四次临时股东会决议公告",
+      "link": "http://www.eeo.com.cn/2026/1125/1103058.shtml",
+      "summary": "证券日报网讯11月25日，凯达重工发布公告称，公司于2026年11月24日召开2026年第四次临时股东会，审议通过《关于拟变更公司注册资本、公司类型暨修订〈公司章程〉的议案》。 （编辑 赵思卓）",
+      "source": "经济观察网",
+      "category": "产业科技",
+      "published": "2026-11-25T13:26:17+00:00"
+    },
+    {
+      "title": "银价弱势寻底 市场人士称反转尚需时日",
+      "link": "http://www.eeo.com.cn/2026/1125/1103057.shtml",
+      "summary": "近期，金银价格同步走弱，白银跌幅明显大于黄金。截至11月25日日盘收盘，国内沪银主力合约收报9438元/千克，较前结算价下跌859元，跌幅达8.34%，盘中最低触及9400元/千克，续创阶段新低。 国际方面，北京时间11月25日，COMEX白银、COMEX黄金盘中双双走跌。截至记者发稿时，COMEX白银报价40.145美元/盎司，下跌1.56%；COMEX黄金报价3532.6美元/盎司，下跌0.82%。至此，金银比走阔至约88.00，较11月中旬的81.77明显抬升，白...",
+      "source": "经济观察网",
+      "category": "产业科技",
+      "published": "2026-11-25T13:26:11+00:00"
+    },
+    {
+      "title": "兴业证券原首席策略张启尧确认离职，回应：属于正常人才流动，团队已平稳衔接",
+      "link": "https://www.jiemian.com/article/15374152.html",
+      "summary": "兴业证券原首席策略分析师张启尧离职一事引发行业关注。据兴业证券经济与金融研究院确认，张启尧确已离职，本次人员变动属于行业正常人才流动。研究院方面表示，充分尊重个人职业选择，并对张启尧任职期间作出的贡献致以诚挚谢意。据了解，与张启尧一同离职的还有其所带领的策略团队。研究院强调，目前人才梯队完善、全板块覆盖保持完整，策略研究工作已平稳衔接，各项研究业务正常开展，不会对机构客户服务造成影响。另据多方了解，已有卖方大将明确将加盟兴业证券策略团队，相关程序正在进行中。（财联社记者 林坚）",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:24:37+00:00"
+    },
+    {
+      "title": "中荷外长共识声明",
+      "link": "https://www.jiemian.com/article/15374143.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:24:03+00:00"
+    },
+    {
+      "title": "九号公司：2026年第一次临时股东会决议公告",
+      "link": "http://www.eeo.com.cn/2026/1125/1103054.shtml",
+      "summary": "证券日报网讯11月25日，九号公司发布公告称，公司于2026年11月25日召开2026年第一次临时股东会，审议通过《关于调整2024年度回购股份用途并注销的议案》《关于增加2026年度回购股份资金总额的议案》《关于向控股子公司提供财务资助的议案》。 （编辑 王雪儿）",
+      "source": "经济观察网",
+      "category": "产业科技",
+      "published": "2026-11-25T13:23:34+00:00"
+    },
+    {
+      "title": "量子技术“慧眼”智能体在杭州发布 冀降低早期项目识别门槛",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737795.shtml",
+      "summary": "中新网杭州11月25日电(鲍梦妮)11月25日，杭州技术转移转化中心发布量子技术“慧眼”智能体。该智能体面向量子技术领域，旨在通过垂直领域的深度数据挖掘，研判产业热点，预测产业方向，发掘并服务早期优质项目，为杭州未来产业布局贡献力量。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:20:56+00:00"
+    },
+    {
+      "title": "谷爱凌奥地利训练肩膀脱臼，参加云顶世界杯站比赛可能性较小",
+      "link": "https://www.jiemian.com/article/15374132.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:20:32+00:00"
+    },
+    {
+      "title": "可口可乐瓶身不再标注生产日期，客服回应：依据新国标调整",
+      "link": "https://www.jiemian.com/article/15374124.html",
+      "summary": "近日，吉林长春一位消费者在社交平台发帖称，购买到“2027年7月22日”的瓶装可口可乐，此事引发讨论。中粮可口可乐客服工作人员回应称，此次调整依据的是《食品安全国家标准 预包装食品标签通则》（GB 7718—2025）。该标准于2025年3月发布，2027年3月16日正式实施，规定保质期6个月及以上的预包装食品，可仅标示保质期和保质期到期日，生产日期为自愿标示项目，企业可自主选择是否印制。目前处于两年过渡期，企业可提前执行新标准。客服同时说明，如需了解生产时间，可将到期日向前倒推保质期时长；市场目前新旧包装同时流通，印有生产日期且未过期的旧款产品仍可正常销售，新下线产品统一采用新版标签，预计到",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:19:19+00:00"
+    },
+    {
+      "title": "向“深”向“新” 两项全国创新大赛总决赛在杭启幕",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737794.shtml",
+      "summary": "中新网杭州11月25日电(鲍梦妮)11月25日，第十五届中国创新创业大赛颠覆性技术创新大赛总决赛、“AI+OPC”创新应用专业赛总决赛在杭州高新区(滨江)启幕。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:16:40+00:00"
+    },
+    {
+      "title": "音乐流媒体平台Tidal将下架纯AI生成歌曲",
+      "link": "https://www.jiemian.com/article/15374113.html",
+      "summary": "音乐流媒体平台Tidal当地时间11月24日宣布，今年12月9日起，平台将下架所有被判定为“100%AI生成”的歌曲，并停止接收新的AI音乐上传。Tidal负责人罗伯特·安德森表示，平台已上线的AI音乐内容将被分批清除，清除工作预计到2027年初完成，清理歌曲规模大概为2900万首。未来，估计平台每天还将拒收8万到8.5万首新上传的AI作品。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:14:30+00:00"
+    },
+    {
+      "title": "中核田湾核电8号机组完成热态性能试验",
+      "link": "https://www.jiemian.com/article/15374108.html",
+      "summary": "11月25日，中核集团旗下中国核电控股的田湾核电8号机组完成热态性能试验。热态性能试验简称“热试”，目的是在核燃料装填前全面验证核岛、常规岛设备和系统在热态运行时的可靠性，确保相关参数满足设计要求。试验验证了田湾核电8号机组一、二回路相关系统在加热、热态及冷却工况下的性能。后续，江苏核电将稳步推进田湾核电8号机组热试后拆堆、役检等各项装料准备工作。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:12:51+00:00"
+    },
+    {
+      "title": "医疗AI进医院，模型高分还不够",
+      "link": "https://www.tmtpost.com/8217765.html",
+      "summary": "医疗AI正在从医学知识问答和特定疾病识别，进一步进入医疗服务的实际流程。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-25T13:11:26+00:00"
+    },
+    {
+      "title": "英伟达跌成美股“七巨头”最便宜！黄仁勋回归狂欢迅速消退，下周又将迎国会听证大考",
+      "link": "https://wallstreetcn.com/articles/3786695",
+      "summary": "黄仁勋回归带来的短暂狂欢正在迅速消退。英伟达股价周二领跌大盘，较10月6日高点累计下跌35%，市值蒸发2万亿美元，成为标普500指数同期表现最差的30只个股之一，即便周一曾大涨31%。市场很快意识到，这位CEO的复职只解决了领导层问题，并未触及压在股价上的根本疑问。 周三盘前，英伟达股价继续下挫，跌幅一度达5.8%，人工智能板块整体回调。 该股目前约为预期盈利的10倍，上周刚创下2008年以来最低估值倍数，成为标普500指数中最便宜的股票之一，也是“七巨头”中估值最低的成员。 黄仁勋本人即将迎来真正的考验。据彭博报道，他将于12月3日出席参议院银行委员会公开听证会。该委员会资深成员、参议员El",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:10:53+00:00"
+    },
+    {
+      "title": "The Download: AI swamping open records, and firefighting for permafrost",
+      "link": "https://www.technologyreview.com/2026/11/25/1149808/the-download-ai-open-records-permafrost-fires/",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI is straining America’s open records systems AI has intensified investors’ interest in public records. Over the last few years, venture-backed startups have rai",
+      "source": "MIT科技评论",
+      "category": "产业科技",
+      "published": "2026-11-25T13:10:00+00:00"
+    },
+    {
+      "title": "财政部等五部门印发《常态化帮扶资金绩效评价办法》",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737799.shtml",
+      "summary": "记者11月25日从财政部了解到，为规范和加强常态化帮扶资金管理，财政部、农业农村部等五部门近日印发《常态化帮扶资金绩效评价办法》。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:06:07+00:00"
+    },
+    {
+      "title": "重庆市人大社会委原副主任委员张兴益被开除党籍",
+      "link": "https://www.jiemian.com/article/15374101.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:01:20+00:00"
+    },
+    {
+      "title": "财政部等五部门印发《常态化帮扶资金绩效评价办法》",
+      "link": "https://www.jiemian.com/article/15374099.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T13:00:54+00:00"
+    },
+    {
+      "title": "韩股陷入“无差别抛售”：三星与SK海力士齐现死叉，高盛称估值已计入70%盈利暴跌",
+      "link": "https://wallstreetcn.com/articles/3786692",
+      "summary": "韩国股市再度进入清算模式。KOSPI指数隔夜重挫，收于本轮AI行情调整启动以来的最低水平，三星电子与SK海力士双双跌破关键支撑并确认“死叉”，技术面全面恶化。与此同时， 对冲基金正以十余年未见的速度撤离韩国市场，但高盛的估值框架显示，当前股价已隐含盈利预测被下调70%的极端情形。 高盛数据显示，亚洲基本面多空对冲基金的净杠杆率在一个月内骤降47.4个百分点至10%，为该行十余年数据中的最低读数。韩国市场的净配置比例已降至2.3%，处于过去一年的第11百分位，韩国与中国台湾继续主导亚洲范围内的抛售。 技术面上， KOSPI在4200点之前已无明显支撑，100日与200日均线形成的大级别看空交叉已",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T12:39:52+00:00"
+    },
+    {
+      "title": "海南高质量发展“第三极”的新图景：探路开放、航运扩容、产业向新",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737777.shtml",
+      "summary": "中新网儋州11月25日电 (记者 王子谦)11月25日，中国共产党儋州市第十四次代表大会开幕。在海南全岛封关运作即将迎来一周年之际，这场大会为自贸港“样板间”谋划今后五年的发展新图景。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T12:35:07+00:00"
+    },
+    {
+      "title": "杭州发布颠覆性技术及OPC创新应用场景清单",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737774.shtml",
+      "summary": "中新网杭州11月25日电(鲍梦妮)11月25日，杭州颠覆性技术及OPC创新应用场景清单(下称“场景清单”)在第十五届中国创新创业大赛颠覆性技术创新大赛总决赛、“AI+OPC”创新应用专业赛总决赛(下称“大赛”)现场发布。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T12:31:07+00:00"
+    },
+    {
+      "title": "第二届全球技术创新大赛两大专题赛在杭州收官",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737770.shtml",
+      "summary": "中新网杭州11月25日电(鲍梦妮)11月25日，第二届全球技术创新大赛生物制造、AI+光电融合专题赛总决赛颁奖典礼暨首期Z#178;创业营结营活动在浙江大学杭州国际科创中心(下称科创中心)水博园区举行。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T12:27:45+00:00"
+    },
+    {
+      "title": "Liesman: Nvidia whiplash tests Kevin Warsh’s push to read market signals",
+      "link": "https://www.cnbc.com/2026/11/25/nvidia-kevin-warsh-fed-market-signals.html",
+      "summary": "The extreme market gyrations and the drama surrounding Nvidia this past week have highlighted the dilemma facing Federal Reserve Chairman Kevin Warsh.",
       "source": "CNBC 国际头条",
       "category": "国际财经",
-      "published": "2026-11-25T03:58:32+00:00"
+      "published": "2026-11-25T12:26:41+00:00"
     },
     {
-      "title": "SoftBank drops 15% as Wall Street AI sell-off ripples across Asian tech names",
+      "title": "重庆出台新规强化农民工工资支付保障",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737772.shtml",
+      "summary": "中新网重庆11月25日电 (记者 钟旖)记者25日从重庆市人力资源和社会保障局获悉，该局近日联合重庆市发展改革委等11个部门印发《关于加强政府项目国企项目农民工工资支付管理的通知》(以下简称《通知》)，聚焦政府投资项目、国有企业投资项目欠薪风险源头治理，推出人工费单列、开工预拨、按月独立拨付、建设单位代发工资试点等举措，构建“源头防控—过程监管—失信惩戒”全链条欠薪治理闭环。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T12:24:47+00:00"
+    },
+    {
+      "title": "浦江中国AI Token业务加速落地，首批客户已接入",
+      "link": "https://wallstreetcn.com/articles/3786694",
+      "summary": "浦江中国控股有限公司（ 1417.HK ）的AI Token业务正在进入实际运行与加速阶段。 11 月 25 日，浦江中国在港交所发布业务更新补充公告，披露 AI Token 生产与分发业务的商业模式、客户接入情况及分阶段产能目标。 按公告，公司计划 2026 年 12 月底前实现每月 10 万亿至 12 万亿 Token 的生产容量、7 万亿至 8.4 万亿的实际产量，实际利用率超过 70%。到 2027 年第二季度，月度生产容量目标提升至约 80 万亿。 首批客户已接入并开展推理服务。公告称，公司已完成首期基础设施部署及系统搭建，模型部署、推理引擎调优及适配测试进入试运行阶段。经测试，现有",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T12:23:40+00:00"
+    },
+    {
+      "title": "2026中国饭店业高质量大会在三亚开幕",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737768.shtml",
+      "summary": "中新网北京11月25日电 (记者 刘文文)记者从中国饭店协会获悉，2026中国饭店业高质量大会25日在海南三亚拉开帷幕。大会由中国饭店协会以及海南省酒店与餐饮行业协会主办，来自海内外的住宿餐饮企业、酒店用品及供应链企业、行业协会与行业组织、科研院校、投资机构及媒体等领域代表共1500人参加活动。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T12:23:09+00:00"
+    },
+    {
+      "title": "四川先进材料产业持续壮大 今年上半年营收超3838亿元",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737767.shtml",
+      "summary": "中新网成都11月25日电 (单鹏)四川省经济和信息化厅25日在成都举行四川省先进材料产业链供需对接活动新闻通气会。四川省经济和信息化厅材料工业处副处长史忠霖介绍，四川先进材料产业规模持续壮大，今年上半年实现营业收入3838.97亿元，同比增长29.9%。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T12:21:25+00:00"
+    },
+    {
+      "title": "高盛：市场已替美联储“加息四次”，但沃什12月仍将继续加息",
+      "link": "https://wallstreetcn.com/articles/3786691",
+      "summary": "高盛测算，今年以来美国金融条件已收紧约100个基点，相当于美联储四次标准加息的紧缩效果，而其中几乎全部发生在9月初之后。该行首席美国经济学家David Mericle认为， 这并不足以阻止美联储在12月再度加息25个基点，他将此举称为“近乎确定”。 Mericle在最新报告《金融条件收紧对增长和美联储意味着什么》中表示，金融条件指数（FCI）今年累计收紧104.1个基点，其中上周单周就贡献逾40个基点。上周标普500指数下跌8.4%，为“解放日”以来最差单周表现，纳斯达克100指数距熊市仅一步之遥，高盛的恐慌指数升至纪录高位9.8。 尽管市场已自行完成大部分紧缩， Mericle仍预计美联储将",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T12:16:50+00:00"
+    },
+    {
+      "title": "硬折扣祖师爷奥乐齐，也要面对中国速度",
+      "link": "https://wallstreetcn.com/articles/3786693",
+      "summary": "如果说奥乐齐这个名字对不少消费者仍显陌生的话，它在中国硬折扣行业，却已经是一个无法绕开的符号。 有零售行业人士甚至半开玩笑地表示：“超盒算NB、快乐猴的高管，哪有一个敢说自己没有泡在奥乐齐里看过。” 很长时间里，这家德国零售商都是国内少有的、拥有成熟经营经验的硬折扣零售模板。 而这个被争相学习的对象，终于开始加快扩张了。 11月21日至22日，奥乐齐在安徽合肥、芜湖陆续开出六家门店，首次进入安徽市场，全国门店数量达到约140家。 全天候科技从接近奥乐齐人士处获悉，安徽首店的整体开业销售表现刷新了奥乐齐的历史纪录。 未来一段时间，奥乐齐还将继续加密华东市场，拓展浙江。 但在它开始提速的同时，中国",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T12:14:39+00:00"
+    },
+    {
+      "title": "2.07 亿接盘都市酒店，岭南控股踩点兑现三年承诺",
+      "link": "https://www.tmtpost.com/8217705.html",
+      "summary": "同业竞争承诺履约背后，轻资产加盟能否撑起第二增长曲线。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-25T12:04:06+00:00"
+    },
+    {
+      "title": "AI交易信仰动摇，纳指期货跌超3%，英伟达盘前跌超4%，金银大跌，避险资金涌入美债",
+      "link": "https://wallstreetcn.com/articles/3786656",
+      "summary": "围绕人工智能热潮能否持续的疑虑正在重塑全球资产定价，投资者从科技股大举撤离，资金涌向国债与美元避险。 11月25日，美股股指期货跌幅扩大，纳指期货跌超3%，标普500指数期货跌超1%。科技股延续跌势，英伟达跌超4%，Anthropic下跌3%；AMD跌近5%，闪迪跌超5%。 避险需求推动美债上涨，基准10年期美债收益率下降4个基点至4.89%，日本10年期国债收益率同步下行7.5个基点至2.645%。现货黄金跌破3500美元/盎司关口，报3495.49美元/盎司，为去年9月以来最低水平，较高点累计回撤将超过37.5%。现货白银跌破40美元/盎司关口，报39.99美元/盎司，创2025年9月以来",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T12:03:32+00:00"
+    },
+    {
+      "title": "Secondhand shopping is going mainstream this holiday season as consumers seek value",
+      "link": "https://www.cnbc.com/2026/11/25/secondhand-holiday-shopping-grows-as-shoppers-seek-value.html",
+      "summary": "More consumers are shopping secondhand this holiday season as they emphasize value and uniqueness in their purchases.",
+      "source": "CNBC Business",
+      "category": "国际财经",
+      "published": "2026-11-25T12:00:01+00:00"
+    },
+    {
+      "title": "Meta将Muse智能体接入Instagram与沃尔玛",
+      "link": "https://wallstreetcn.com/articles/3786674",
+      "summary": "沃尔玛正尝试让消费者通过AI助手直接完成购物。当地时间周二，沃尔玛宣布与Meta达成合作，用户可以通过Meta旗下AI智能体Muse购买沃尔玛的黑色星期五促销商品，无需自行浏览沃尔玛网站，即可完成商品搜索、比价和下单。 具体而言， 用户打开Muse应用并登录沃尔玛账号后，只需描述所需商品，Muse便会向沃尔玛发送请求，由沃尔玛返回相关商品信息，帮助用户比较选项、寻找优惠并生成购物车。 沃尔玛表示，合作体验内置了隐私保护机制。 Muse无法访问用户的沃尔玛购物历史及其他个人信息；消费者可以设置消费限额、要求购买前审批，并查看AI代理提交的订单，也可以随时删除代理档案。 此次合作意味着沃尔玛开始通",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T11:56:06+00:00"
+    },
+    {
+      "title": "华尔街最乐观之一！德银：盈利增长叠加经济复苏，标普500明年底有望冲上9000点",
+      "link": "https://wallstreetcn.com/articles/3786688",
+      "summary": "美股近期遭遇剧烈抛售，华尔街仍有策略师看好后市，认为企业盈利增长强劲、经济复苏持续扩散，将为市场反弹提供支撑。 德意志银行策略师Binky Chadha在最新客户报告中预计，标普500指数将在2027年底升至9000点，较当前水平上涨约25%，与Yardeni Research并列彭博追踪的最乐观预测。Chadha认为， 近期科技股主导的抛售只是短期波动，类似冲击通常需要六至八周才能消化。 与此同时，风险规避型投资者已大幅削减股票仓位，如果美国经济避免衰退，当前低迷的市场情绪反而可能为后续反弹创造条件。 近期市场震荡加剧，标普500指数上周因AI概念股抛售进入技术性回调，纳斯达克100指数上周",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T11:48:43+00:00"
+    },
+    {
+      "title": "Futures sink further into the red as tech worries resurge",
+      "link": "https://www.cnbc.com/2026/11/25/futures-sink-further-into-the-red-as-tech-worries-resurge.html",
+      "summary": "Huang defies calls for Nvidia succession planning, sending shares lower premarket",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-25T11:43:37+00:00"
+    },
+    {
+      "title": "AI制药终于开始省时间了",
+      "link": "https://wallstreetcn.com/articles/3786689",
+      "summary": "据追风交易台，摩根大通在最新发布的研报中指出，诺华在11月19日的投资者日上首次系统披露了AI在药物研发中的实际成效 ：早期药物发现周期从3至4年缩短至2.5年以内，临床研究报告的90%由AI起草，审阅时间减少25%。 这是大型药企首次以量化数据证明，AI不再只是实验室里的概念，而是开始真实地压缩研发时间与成本。摩根大通认为，这一信号对AI制药（AIDD）投资主题构成建设性支撑。 诺华管理层同时给出了审慎的一面：许多AI设计的分子仍在基础细胞测试中失败，AI尚未被证明能提升人体临床试验的成功率。11月23日， 诺华CEO Vas Narasimhan在接受CNBC采访时表示，AI有望在未来5至",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T11:42:21+00:00"
+    },
+    {
+      "title": "Anthropic内部争论升级：从能力优势到决策权，人类是否应该让位？",
+      "link": "https://wallstreetcn.com/articles/3786687",
+      "summary": "超级智能时代，人类是否应该向AI让渡决策权，正成为Anthropic内部及整个AI行业争论日益激烈的议题。 据Axios报道， 越来越多AI行业高管开始反对Anthropic内部一种颇具影响力的观点：当AI足够强大，能够在人类无法胜任的领域做出更好判断时，人类应当主动交出部分决策权。 这场分歧的核心，是超级智能究竟应该成为人类的辅助工具，还是在某些领域获得超越人类的自主权。 随着前沿AI模型能力快速提升，这一争论正在从理论走向现实。 部分AI公司员工认为，某些模型已经强大到永远不应发布。 多位消息人士指出，凭借在前沿AI开发上的领先地位，Anthropic可能成为第一家真正需要面对超级智能决策",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T11:18:07+00:00"
+    },
+    {
+      "title": "对赌刚过业绩就变脸，和仁科技或迎存储芯片二股东 | 并购一线",
+      "link": "https://www.tmtpost.com/8217626.html",
+      "summary": "对于和仁科技来说，这个可能成为二股东的芯片公司将是其业绩转正的关键变量。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-25T11:17:02+00:00"
+    },
+    {
+      "title": "Budget carrier Norse Atlantic falls 77% after warning its finances are ‘critical’ amid soaring fuel costs",
+      "link": "https://www.cnbc.com/2026/11/25/norse-atlantic-financial-warning-fuel-costs.html",
+      "summary": "The Norwegian low-cost carrier said its situation is dependent on securing financing for its short-term liquidity needs.",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-25T11:10:28+00:00"
+    },
+    {
+      "title": "次贷危机的味道？甲骨文CDS利差已超越2008年的贝尔斯登，AI数据中心股权被抹去近半",
+      "link": "https://wallstreetcn.com/articles/3786678",
+      "summary": "AI基础设施建设的融资信用，正在交易员的报价屏上出现裂缝：甲骨文五年期信用违约互换（CDS）利差已扩至316个基点，超过贝尔斯登在2008年1月1日时的水平。这个利差所隐含的五年违约概率约为23%，而一年前这一数字仅为6%。 一份由独立信用研究者Groundbreaker发布、题为《Mark to Swap: How the Market is Mispricing the AI Boom》的研究给出了更具体的数字： 以25个披露信息较充分的AI数据中心园区为样本，按承租方的CDS利差而非评级机构评级重估后，约40%的业主股权已被抹去，甲骨文项目背后为72%，CoreWeave背后高达91%。",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T11:05:16+00:00"
+    },
+    {
+      "title": "朋友圈进入集体大失声时代",
+      "link": "https://www.tmtpost.com/8216924.html",
+      "summary": "人们从来没有像今天这样拥有如此便捷的表达工具，却越来越谨慎地表达自己。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-25T10:57:07+00:00"
+    },
+    {
+      "title": "破发！但这仅仅是Anthropic要填的七个大坑之一",
+      "link": "https://www.tmtpost.com/8217094.html",
+      "summary": "游戏才刚刚开始",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-25T10:56:34+00:00"
+    },
+    {
+      "title": "黄仁勋的下一场狠仗：再辞职",
+      "link": "https://www.tmtpost.com/8217227.html",
+      "summary": "最重要的CEO，最难的是变得不重要。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-25T10:49:52+00:00"
+    },
+    {
+      "title": "穷鬼超市，集体加速",
+      "link": "https://www.tmtpost.com/8217178.html",
+      "summary": "传统商超的新对手来了。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-25T10:49:49+00:00"
+    },
+    {
+      "title": "腾讯视频困于“总办”",
+      "link": "https://www.tmtpost.com/8217348.html",
+      "summary": "爱优腾的尖子生也难寻长视频余荫。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-25T10:49:43+00:00"
+    },
+    {
+      "title": "本轮机构抱团银行股，与巴菲特、李录重仓银行有什么区别？",
+      "link": "https://www.tmtpost.com/8217072.html",
+      "summary": "涨的不是基本面，而是资产荒；往后看，抱团的共识可能从三个方向松动。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-25T10:49:39+00:00"
+    },
+    {
+      "title": "黄仁勋回归引爆期权狂欢！Reddit散户单笔赚近1984%，1.9万美元秒赚37.7万美元",
+      "link": "https://wallstreetcn.com/articles/3786684",
+      "summary": "英伟达股价单日暴涨31%，不仅让此前押注反弹的期权交易员一夜暴富，也让市场见识了极端行情下衍生品交易的惊人收益。 本月英伟达股价一度累计下跌39%，但周一董事会重新任命黄仁勋为首席执行官后，股价迅速反弹至165.05美元。 一名机构交易员上周五买入1月到期、行权价160美元的看涨期权，周一卖出一半头寸，锁定2380万美元利润。另一名散户则以1.9万美元买入看涨期权，最终获利37.69万美元，收益率高达1984%。 据彭博报道，此次人事决定是在特朗普推动下作出的，董事会甚至未征询管理层意见。黄仁勋随后向英伟达员工道歉，并表示自己每天都在接受心理治疗。 这一戏剧性反转不仅扭转了英伟达此前数周的跌势",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T10:31:12+00:00"
+    },
+    {
+      "title": "Tech rout deepens globally; Softbank falls 15%, Nvidia down 4.5% premarket",
       "link": "https://www.cnbc.com/2026/11/25/tech-stocks-softbank-group-advantest-sk-hynix-samsung.html",
-      "summary": "Asian technology stocks tumbled Wednesday, led by a rout in Japanese semiconductor stocks, as renewed concerns over the artificial intelligence trade rattled investors.",
+      "summary": "Tech stocks tumbled Wednesday, as renewed concerns over the artificial intelligence trade rattled investors.",
       "source": "CNBC 国际头条",
       "category": "国际财经",
-      "published": "2026-11-25T03:52:03+00:00"
+      "published": "2026-11-25T10:29:18+00:00"
     },
     {
-      "title": "世界模型变天了",
-      "link": "https://www.tmtpost.com/8216357.html",
-      "summary": "争抢定义“什么是好的世界模型”。",
+      "title": "豆包侧边栏放进购物入口：大厂AI，只做翻译，不当主人",
+      "link": "https://www.tmtpost.com/8216992.html",
+      "summary": "AI翻译层、豆包购物、大厂AI入口战、独立变现、超级App",
       "source": "钛媒体",
       "category": "产业科技",
-      "published": "2026-11-25T03:49:00+00:00"
+      "published": "2026-11-25T10:23:05+00:00"
     },
     {
-      "title": "黄仁勋复职“加速”美国国会“芯片出口管制”立法？",
-      "link": "https://wallstreetcn.com/articles/3786650",
-      "summary": "巴克莱认为，黄仁勋重返英伟达CEO职位，正在为美国国会推进半导体出口管制立法提供新的政治动能。 国会两党议员已将其复职视为加快立法的又一理由，芯片管控走向更严格、更持久的轨道的可能性正在上升。 据追风交易台消息，巴克莱公共政策研究团队分析师Michael McLean在11月24日发布的研报中称， 美国国会将半导体管制条款附加至2027财年《国防授权法案》（NDAA）的可能性已显著提升 。目前有四项两党提案同步推进，分别针对先进芯片采购、出口后转移、制造设备获取及境外远程算力访问四条潜在渗透路径。与此同时，特朗普政府正就上述提案提供技术协助，显示行政当局并非全面反对立法，核心争议将集中于条款范",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T03:48:46+00:00"
-    },
-    {
-      "title": "冰火两重天！摩根大通金属展望：铜铝还要“挤泡沫”，黄金即将迎来“抄底时刻”",
-      "link": "https://wallstreetcn.com/articles/3786657",
-      "summary": "近期，大宗商品走势波动剧烈。 据追风交易台消息，摩根大通在最新发布的2027/28年金属展望报告中，对铜、铝等基本金属维持看空，同时认为黄金已接近阶段性底部，预计明年下半年将开启一轮修复行情。 研究团队认为，美国铜库存去化将在2027年上半年加速，推动铜价进一步下探；印度尼西亚主导的铝产能扩张将令铝市供应过剩持续扩大；与此同时，能源价格回落与美联储政策转向预期，将为黄金在2027年下半年的复苏铺路。 铜：美国去库存加速，价格持续承压 摩根大通指出，过去一年铜价涨至14,000美元/吨以上，并非源于全球供需基本面的短缺，而是美国大规模超额进口和囤货所制造的\"错位\"行情。 报告估计，过去两年美国累",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T03:46:29+00:00"
-    },
-    {
-      "title": "手机、汽车、AI，小米需要一场新的增长接力",
-      "link": "https://www.tmtpost.com/8216871.html",
-      "summary": "从手机到汽车再到AI，小米在寻找下一个增长点，但恰巧碰到了消费电子的下行周期。",
+      "title": "确权、加工、场景：中国数据资产市场的三种力量及其价值形成逻辑",
+      "link": "https://www.tmtpost.com/8217341.html",
+      "summary": "数据资产市场的成熟，不在于数据被登记为资产的一刻，亦不在于数据被加工成产品的一刻，而在于数据持续进入真实的经济活动，并在使用中不断创造可计量、可分配、可持续的价值，且其中归属财政的部分能够被合规归集、清晰核算。",
       "source": "钛媒体",
       "category": "产业科技",
-      "published": "2026-11-25T03:32:28+00:00"
+      "published": "2026-11-25T10:23:03+00:00"
     },
     {
-      "title": "第八届“滴滴司机节”举办 超4200名司机获表彰",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737373.shtml",
-      "summary": "11月24日起，第八届“滴滴司机节”在宁波、北京、兰州等14个城市举办，超4200名司机获“全国优秀司机”“城市荣誉司机”表彰。期间，滴滴在10个城市地标建筑为司机点亮大屏，展示优秀司机风采。同时，为司机发放超45万份节日礼品，在端内为司机提供福利抽奖，感谢全国司机师傅的陪伴和信任。",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T03:29:30+00:00"
+      "title": "小米继续加码AI，MiMo靠什么回本？",
+      "link": "https://www.tmtpost.com/8217008.html",
+      "summary": "这笔投入的硬件生意，正面临利润压力。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-25T10:23:02+00:00"
     },
     {
-      "title": "亚太空间合作组织秘书长江辉：以中国空间发展机遇，赋能成员国",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737424.shtml",
-      "summary": "中新网重庆11月25日电(程春雨 肖江川 宋宇晟)“高科技有时候看起来很高冷，但能不能真正落地，才是最重要的。”",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T03:28:00+00:00"
+      "title": "小米，告别小米",
+      "link": "https://www.tmtpost.com/8217034.html",
+      "summary": "小米所有的生意，都在变得陌生。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-25T10:23:00+00:00"
     },
     {
-      "title": "黄金对冲由亏转盈，周大福账面利润翻倍",
-      "link": "https://wallstreetcn.com/articles/3786659",
-      "summary": "11月24日，周大福（ 1929.HK ）发布截至2026年9月30日止六个月的中期业绩。 期内营业额442.63亿港元，同比增长13.5%。 股东应占溢利50.34亿港元，同比大增98.7%，每股基本盈利由0.26港元升至0.51港元。 董事会宣派中期股息每股0.35港元，派息率约68.6%。 账面净利润与主营经营表现出现分化。同期经营溢利55.79亿港元，同比下降18.2%。 毛利率由30.5%收窄至25.6%，降了4.9个百分点。 净利润与经营溢利走势相反，主因是黄金借贷合约重估产生的会计损益。 财报显示，黄金借贷合约重估期内录得公允值收益13.36亿港元，上年同期为亏损31.43亿港元",
+      "title": "AI进厂，先革企业的命",
+      "link": "https://www.tmtpost.com/8217052.html",
+      "summary": "AI巨头的终极战场，是企业的工作流",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-25T10:22:56+00:00"
+    },
+    {
+      "title": "三季度亏损1.33亿，启用星巴克前高管的Tims能否熬过转型之痛？",
+      "link": "https://www.tmtpost.com/8217502.html",
+      "summary": "在咖啡行业整体竞争压力急剧增长的背景下，Tims已经告别过去快速铺店的扩张模式。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-25T10:12:36+00:00"
+    },
+    {
+      "title": "今晚，美联储12月决议前最后一份重磅通胀报告出炉！",
+      "link": "https://wallstreetcn.com/articles/3786680",
+      "summary": "美联储12月议息会议临近，市场正等待一份关键通胀报告，以判断下一阶段货币政策走向。美国劳工部将于当地时间11月25日上午8时30分（北京时间21时30分）公布10月个人消费支出（PCE）物价指数。这将是美联储12月8日至9日议息会议前最后一份重磅通胀报告，而11月CPI数据要到议息会议结束后的第二天才会公布。 市场普遍预计， 10月整体PCE同比增速将从9月的3.6%升至3.8%，核心PCE同比增速将从3.1%升至3.2%。 在市场已经押注美联储12月进一步加息的背景下，投资者更关心通胀是否会持续高企，以及美联储的紧缩立场可能延续至2027年何时。 数据公布前，美债收益率全线下行。美国10年期",
       "source": "华尔街见闻",
       "category": "中文宏观",
-      "published": "2026-11-25T03:27:39+00:00"
+      "published": "2026-11-25T10:06:17+00:00"
     },
     {
-      "title": "布局海南自贸港 台商：从“可选项”变成“必选项”",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737386.shtml",
-      "summary": "中新网海南东方11月25日电 题：布局海南自贸港 台商：从“可选项”变成“必选项”",
-      "source": "中新网-财经",
+      "title": "10万亿不够“救市”，韩国酝酿扩大股市稳定基金！",
+      "link": "https://wallstreetcn.com/articles/3786681",
+      "summary": "韩国产业银行已向各大券商发函，摸底其对证券市场稳定基金（证安基金）的追加出资能力。 距离政府宣布启动证安基金运作准备仅三天，相关行动已从机制启动转向资金能力摸底，市场据此猜测，基金扩容可能正在酝酿。 据《韩国经济》报道，产业银行在公文中要求各家券商确认可向证安基金追加出资的资金额度。 该基金目前的出资承诺总额为10.76万亿韩元，但尚未发生实际缴款。 扩容压力主要来自基金规模与韩国股市体量之间的严重失衡。以2020年3月约定出资时KOSPI指数低点对应的市值计算，10.76万亿韩元相当于有价证券市场总市值的1.1%。此后，半导体等板块推动股指大幅上涨，市场总市值持续扩张，如今这一比例已降至0.",
+      "source": "华尔街见闻",
       "category": "中文宏观",
-      "published": "2026-11-25T03:25:50+00:00"
+      "published": "2026-11-25T10:03:25+00:00"
     },
     {
-      "title": "（神州写真）东北传统“冻货”迭代出新 哈尔滨冰雪游热销“冷滋味”",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737414.shtml",
-      "summary": "中新社哈尔滨11月25日电 题：东北传统“冻货”迭代出新 哈尔滨冰雪游热销“冷滋味”",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T03:21:59+00:00"
+      "title": "AI is straining America’s open records systems",
+      "link": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
+      "summary": "In Panton, Vermont, population 660, town clerk Kyle Rowe did it all. He crafted budgets, paid vendors, handled property tax disputes, and served as the town’s zoning supervisor and presiding elections officer. During morning office hours at the town hall—a wood-frame structure built as a church in 1",
+      "source": "MIT科技评论",
+      "category": "产业科技",
+      "published": "2026-11-25T10:00:00+00:00"
     },
     {
-      "title": "截至10月底全国累计发电装机容量同比增长10.9%",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737413.shtml",
-      "summary": "中新网11月25日电 据国家能源局微信公众号消息，11月25日，国家能源局发布1-10月份全国电力统计数据。",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T03:14:45+00:00"
-    },
-    {
-      "title": "按吨计价→按克拉售卖 河南柘城“磨”出硬实力",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737412.shtml",
-      "summary": "金刚石微粉，是人造金刚石经过特殊工艺处理加工，形成的一种新型超硬超细磨料，具有硬度高、耐磨性好、稳定性强、生物无毒等特点，作为切割、抛光、精密研磨材料，广泛应用于电子芯片、光伏、军工、航空航天等各个领域。",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T03:11:35+00:00"
-    },
-    {
-      "title": "新动能是一步一步闯出来的(经济新方位·八大重点任务看落实)",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737391.shtml",
-      "summary": "八大重点任务之二：坚持创新驱动，加紧培育壮大新动能",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T02:58:20+00:00"
-    },
-    {
-      "title": "黄金又跌了，25日国际金价跌破3550美元",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737384.shtml",
-      "summary": "原标题：黄金又跌了",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T02:55:34+00:00"
-    },
-    {
-      "title": "前10个月全社会用电量平稳增长 彰显经济发展活力",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737376.shtml",
-      "summary": "央视网消息(新闻联播)：国家能源局发布数据显示，前10个月，全社会用电量保持平稳增长，高端制造业、互联网数据服务业等用电量增长较快。",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T02:46:44+00:00"
-    },
-    {
-      "title": "U.S. jury convicts Huawei in a criminal trial over fraud and trade secrets",
-      "link": "https://www.cnbc.com/2026/11/25/huawei-fraud-trade-trial.html",
-      "summary": "Huawei was found guilty of bank fraud, money laundering and trade secret theft conspiracy in a U.S. trial.",
+      "title": "Ukraine tells Putin to ‘stop complaining’ over oil refinery attacks as Russia promises retaliation",
+      "link": "https://www.cnbc.com/2026/11/25/ukraine-putin-russia-oil-refinery-attacks.html",
+      "summary": "Ukraine’s foreign minister told Putin to end the war if he wants Kyiv to stop attacking Russian refineries, after Putin said retaliation was “inevitable.”",
       "source": "CNBC 国际头条",
       "category": "国际财经",
-      "published": "2026-11-25T02:43:33+00:00"
+      "published": "2026-11-25T09:18:37+00:00"
     },
     {
-      "title": "不做“屎山代码”制造机！“AI软件工厂”的“12条军规”",
-      "link": "https://wallstreetcn.com/articles/3786655",
-      "summary": "AI写代码越来越快，但写出来的东西越来越难维护。 在近日举行的一场AI工程峰会上，Factory公司成员、前Human Layer联合创始人Dex Horthy发表演讲，抛出了一套针对“AI软件工厂”的12条核心法则，并联合多位业内人士正式发布“反Slop宣言”。 所谓“Slop”，是AI圈对低质量、大批量生成内容的俗称——堆砌、冗余、看起来能跑但没人敢动的代码。 “反Slop宣言”的核心主张包括： “我们重视结果，而非产出；重视理解，而非速度。 ”“ 一群Agent在一天内产生的工作量，可能超过一个人一辈子能审查的总量。”等等。 AI写代码，最好成绩只有16.3% Horthy在演讲中引用了",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T02:40:32+00:00"
+      "title": "AI debt worries grow as Nvidia rebound masks Big Tech spending squeeze",
+      "link": "https://www.cnbc.com/2026/11/25/ai-debt-big-tech-spending-nvidia.html",
+      "summary": "Big Tech could find it increasingly tough to secure funding from debt markets critical to the AI build-out, as lenders become pickier over corporate bonds.",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-25T06:29:46+00:00"
     },
     {
       "title": "Houthi attack on Saudi Arabian sovereign wealth fund PIF's tower injures 11",
@@ -299,188 +627,12 @@
       "published": "2026-11-25T02:36:43+00:00"
     },
     {
-      "title": "早已是第二大进口国了，中国还能买什么",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737364.shtml",
-      "summary": "我国已连续17年位居全球第二大进口市场。今年前10个月，货物贸易进口18.8万亿元，增长23.6%。扩大进口促进了国内消费和产业升级，深化了中国与世界双向联结，为贸易伙伴提供了广阔的发展空间，为全球经济增长注入了确定性。我国经济继续向新向优向好发展，人民消费潜力不断释放，扩大高水平开放政策深入推进，未来进口前景依然可期。",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T02:26:59+00:00"
-    },
-    {
-      "title": "金观平：递稳跨年政策衔接“交接棒”",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737361.shtml",
-      "summary": "临近年末，谋划来年经济工作、做好跨年度政策衔接成为宏观调控的重点。近期召开的国务院常务会议提出，要认真研究明年经济工作思路，加强跨年度政策衔接，推动经济持续向好。",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T02:23:04+00:00"
-    },
-    {
-      "title": "Trump open to pardoning Jensen Huang if needed: NY Post",
-      "link": "https://www.cnbc.com/2026/11/25/trump-huang-pardon-politics.html",
-      "summary": "Trump said he would be willing to pardon Jensen Huang if needed and argued that the Nvidia CEO should not have to invoke the Fifth Amendment before Congress.",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-25T02:09:45+00:00"
-    },
-    {
-      "title": "11月25日央行开展6170亿元隔夜逆回购操作",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737327.shtml",
-      "summary": "中新网11月25日电 2026年11月25日中国人民银行以固定利率、数量招标方式开展了6170亿元隔夜逆回购操作，全额满足了一级交易商需求。具体情况如下：",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T02:06:19+00:00"
-    },
-    {
-      "title": "闪迪交流会：NAND“毫无下行风险”，三大AI存储机会“均健康增长”，中国市场足以吸收增加供给",
-      "link": "https://wallstreetcn.com/articles/3786651",
-      "summary": "闪迪管理层在最新投资者交流会上释放强烈积极信号，对AI驱动的闪存需求前景保持高度乐观，并重申此前提出的约1.2泽字节（ZB）AI数据中心NAND市场规模预测\"毫无下行风险\"。 追风交易台消息，11月23日，花旗Michael Cadiz发表闪迪的投资者会议纪要解读，此次会议由闪迪执行副总裁兼首席产品官Khurram Ismail及投资者关系团队参与，通过线上形式与机构投资者交流。 闪迪执行副总裁兼首席产品官Khurram Ismail指出， 直连存储、KV缓存及高性能数据湖三大AI存储机会均处于健康增长态势 ，客户资质认证、设计导入及部署进展持续验证需求趋势。 与此同时，管理层强调 高带宽闪存",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T02:05:57+00:00"
-    },
-    {
-      "title": "11月25日人民币对美元中间价报6.7088 上调23个基点",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737322.shtml",
-      "summary": "中新网11月25日电 据中国外汇交易中心网站消息，中国人民银行授权中国外汇交易中心公布，2026年11月25日银行间外汇市场人民币汇率中间价为：1美元对人民币6.7088元，上调23个基点。",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T02:03:47+00:00"
-    },
-    {
-      "title": "“在深化区域合作中彼此成就”",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737345.shtml",
-      "summary": "“在深化区域合作中彼此成就”(环球热点)",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T02:00:43+00:00"
-    },
-    {
-      "title": "2027见闻历，财经人的桌面必备“神历”",
-      "link": "https://wallstreetcn.com/articles/3782813",
-      "summary": "本文来自华尔街见闻，欢迎下载APP查看更多",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T01:55:44+00:00"
-    },
-    {
-      "title": "被红果改写的Q3财报季",
-      "link": "https://www.tmtpost.com/8216958.html",
-      "summary": "二线大厂的冬天：砍成本，赌AI",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-25T01:38:10+00:00"
-    },
-    {
-      "title": "这届年轻人开始劝父母卖掉租不上价的房，用来收息",
-      "link": "https://www.tmtpost.com/8216479.html",
-      "summary": "这届年轻人开始劝父母卖掉租不上价的房，用来收息",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-25T01:38:06+00:00"
-    },
-    {
-      "title": "OpenAI瞄上网络安全：比编程更大的下一个市场",
-      "link": "https://wallstreetcn.com/articles/3786652",
-      "summary": "近期一系列高调网络安全事件令市场警觉，也让OpenAI看到了新的商业机会。 OpenAI总裁Greg Brockman近日明确表态，网络安全将成为该公司比编程更大的业务板块。首席财务官Sarah Friar则称，目前市场对网络安全总可寻址市场逾3000亿美元的估算，远远低估了这一领域的真实潜力。 上述表态出现在OpenAI为备战潜在IPO、积极寻求新收入来源的关键节点。然而，OpenAI如何将这一愿景落地，目前仍缺乏清晰路径，且面临来自Anthropic、谷歌等竞争对手的正面挑战。 网络安全事件频发，OpenAI嗅到商机 据The Information最新报道，近期多起高知名度网络安全事件相",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T01:22:51+00:00"
-    },
-    {
-      "title": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
-      "link": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
-      "summary": "Jensen Huang's return as Nvidia CEO demonstrates that the U.S.-China artificial intelligence race is not just about semiconductors, but tech talent too.",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-25T01:13:56+00:00"
-    },
-    {
-      "title": "小米：拐点已现？",
-      "link": "https://wallstreetcn.com/articles/3786646",
-      "summary": "尽管小米三季度业绩承压，但高盛、花旗与巴克莱均维持买入或增持评级，认为小米收入同比降幅持续收窄，盈利修正正在触底，2027年的复苏轨道日益清晰。 追风交易台消息，11月25日，高盛分析师Timothy Zhao团队研报中指出，小米2026年三季度业绩基本符合预期，调整后净利润同比下滑57%至49亿元，较高盛预期高出1%。 与此同时， 高盛认为盈利修正正在接近底部，叠加存储成本、物联网增长、海外扩张及AI等核心叙事出现改善信号，核心运营费用自三季度起实现同比削减，这一趋势有望延续数个季度，维持买入评级。 花旗 分析师Kyna Wong团队同日发布报告，同样维持买入评级，看好物联网与手机业务202",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T01:12:21+00:00"
-    },
-    {
-      "title": "阴霾笼罩年底市场！摩根大通：伊朗军事升级、美联储紧缩、政府关门、关税上调、芯片管制一起来了！",
-      "link": "https://wallstreetcn.com/articles/3786649",
-      "summary": "距离2026年结束还有五周，市场却要同时面对一张密密麻麻的风险清单。 据追风交易台消息，11月19日，摩根大通全球研究主席Joyce Chang率团队在华盛顿与政策制定者、官方债权人及独立智库人士举行了一整天的闭门会议。该行于11月24日发布报告，将会议核心内容整理为\"中期选举后需监测的十大风险\"。 报告开篇基调沉重。分析师写道，\"从华盛顿回来后，我们对中期选举后的风险更加谨慎\"，而那一周几乎每一类资产都在下跌，美债和美元是仅有的例外。 报告援引当天最令人印象深刻的一句警告： \"AI融资的解体，加上美联储的进一步紧缩，可能造就'一个非常难看的圣诞节'——股市大幅下跌，直到美联储被迫转向，就像2",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T01:11:40+00:00"
-    },
-    {
-      "title": "数据中心需求推动，美国钢铁价格飙至四年高位",
-      "link": "https://wallstreetcn.com/articles/3786647",
-      "summary": "人工智能基础设施建设热潮正在重塑美国钢铁市场格局。数据中心建设需求超出预期，令美国国内钢铁供应趋于紧张，价格攀升至四年高位，同时也在悄然瓦解特朗普政府关税政策的保护效果。 美国热轧卷板价格近期报价已突破每短吨1300美元，较一年前不足900美元的水平大幅跃升。 美国最大钢铁生产商Nucor本周将热轧卷板挂牌价上调至每短吨1330美元，延续了自夏季以来连续数周上涨的态势。与此同时，据Jefferies分析师Albert Realini在近期报告中指出，部分进口钢铁在计入关税及运输成本后，仍比美国国内供应便宜近400美元每吨。（短吨为美国常用重量单位，1短吨等于 2000磅 ，约合 907.185",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T00:42:07+00:00"
-    },
-    {
-      "title": "新鲜感之后，陪伴机器人如何被用起来？",
-      "link": "https://www.tmtpost.com/8212446.html",
-      "summary": "新鲜感退去之后，这些主打陪伴的机器人还有多少被家庭继续使用，又有谁愿意为此持续付费。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-25T00:39:00+00:00"
-    },
-    {
-      "title": "Edge AI Daily 早报（11月25日）",
-      "link": "https://www.tmtpost.com/8216877.html",
-      "summary": "OpenAI与Anthropic因安全证明暂缓前沿模型，发布转向可控性验证；Anthropic跌破发行价，AI估值进入资本纪律期。GPT-6.2 Sol、Meta Muse、Google Personal Intelligence争夺默认入口，Claude Ship切入代码交付责任链。英伟达复职黄仁勋后仍面临听证与出口审计，OpenAI与思科开源Shirudo前移运行时防御。国内腾讯WorkBuddy推进办公Agent，阿里子公司列实体清单，超节点应对供应链收紧；数据中心自建燃气与AI黑客推高基础设施与安全成本。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-25T00:29:56+00:00"
-    },
-    {
-      "title": "推动黄仁勋下台的“自媒体黑嘴”：由Anthropic的早期投资者资助",
-      "link": "https://wallstreetcn.com/articles/3786645",
-      "summary": "黄仁勋于11月12日辞去英伟达CEO职务，英伟达董事会11月23日宣布将其复职，并在监管文件中援引美国政府高级官员的表态称其\"不构成国家安全风险\"。 在这一事件的舆论发酵过程中，研究人员Kevin Bass梳理出一条资金脉络：率先发文呼吁黄仁勋辞职的新闻简报《Transformer》，以及大篇幅跟进报道的新上线的播客节目《Machine Gods》，均指向同一个资助方—— Tarbell人工智能新闻中心 ，而Tarbell的核心金主，正是Facebook联合创始人、 Anthropic早期投资者Dustin Moskovitz 的慈善机构。 但Tarbell方面表示，其捐助者\"对旗下记者或受资",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T00:20:40+00:00"
-    },
-    {
-      "title": "戴尔电话会：AI服务器积压订单突破1320亿美元，AI代理引爆传统服务器需求",
-      "link": "https://wallstreetcn.com/articles/3786641",
-      "summary": "得益于AI基础设施的狂热需求以及传统数据中心的现代化升级，戴尔2027财年第三季度营收实现翻倍，AI服务器积压订单创下1323亿美元历史新高，管理层明确表示“未见任何需求放缓迹象”。 华尔街见闻提及 ，11月24日美股盘后，戴尔科技公布了截至2026年10月底的2027财年第三季度业绩，营收和盈利双双刷新公司历史纪录，AI服务器业务成为核心驱动力。公司同步上调第四季度指引，并宣布250亿美元回购授权，向市场释放强烈的信心信号。 财报电话会议上，戴尔副董事长兼首席运营官Jeff Clarke明确表示， 本季度新增AI服务器订单达602亿美元，确认收入220亿美元，期末积压订单达1323亿美元，均",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T00:10:36+00:00"
-    },
-    {
-      "title": "1天20倍！上周五买入英伟达期权的买家火了，周一放话“开盘即卖，感谢老黄”",
-      "link": "https://wallstreetcn.com/articles/3786643",
-      "summary": "一场押注英伟达反弹的期权交易，在周一早间因CEO黄仁勋（Jensen Huang）重新执掌帅印而迎来爆发式兑现。 据彭博11月25日报道，Reddit用户Outrageous-Voice1459以1.9万美元买入的英伟达看涨期权，单日暴涨逾1984%，净赚37.69万美元，其在社交媒体上高呼“开盘即卖，感谢老黄”的帖子迅速引发广泛关注。 英伟达股价周一单日飙升31%至165.05美元 ，此前该股本月累计跌幅已达39%。黄仁勋重返CEO职位的消息成为直接催化剂，令此前布局反弹的多头期权持仓集中兑现。 这场期权盛宴不止于散户。据彭博报道，一名机构交易员此前买入1月到期、行权价160美元的看涨期权，",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T00:03:57+00:00"
-    },
-    {
-      "title": "【钛晨报】8000亿+5000亿！中国央行“组合拳”出手；新加坡子公司被列入美实体清单，阿里巴巴回应；工业富联大手笔分红，拟派现超132亿元",
-      "link": "https://www.tmtpost.com/8216719.html",
-      "summary": "大烨智能年报虚假记载遭行政处罚，股票11月26日起戴帽；厦航拟斥资近500亿元买50架波音飞机；天齐锂业拟豪掷68.72亿元买矿；AI内部模型能力过强引发安全担忧，OpenAI和Anthropic员工质疑是否应继续发布前沿模型；中国在5个自贸试验区开展人工智能标准化自主开放试点；外交部回应“英伟达重新任命黄仁勋为首席执行官”。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T23:20:00+00:00"
-    },
-    {
       "title": "Jensen Huang tells staff that Nvidia doesn't need a succession plan",
       "link": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-employee-meeting.html",
       "summary": "Nvidia CEO Jensen Huang resigned after multiple reported affairs, including one with a Chinese businesswoman who is alleged to be a spy for Beijing.",
       "source": "CNBC 国际头条",
       "category": "国际财经",
       "published": "2026-11-24T23:13:49+00:00"
-    },
-    {
-      "title": "华尔街见闻早餐FM-Radio | 2026年11月25日",
-      "link": "https://wallstreetcn.com/articles/3786639",
-      "summary": "华见早安之声 要闻精选 中国 小米 Q3营收超预期，存储涨价挤压手机毛利，增程SUV首月锁单超7万。 电话会 ： 今年将在AI领域投入160亿 ，不能简单通过涨价转嫁内存成本，汽车交付Q4预计将迎“较大提升”。 海外 黄仁勋 复职后 首场全员会道歉 、承认违反英伟达行为准则， 仍拒绝传统接班人计划 。 美国会 持续施压英伟达： 共和党 议员 提议给黄仁勋配“保姆” ， 民主党 领袖 指控升级 。 特朗普 亲自营救黄仁勋， 被指是“现代水门事件”。 Anthropic 破发一度暴跌14%，创始人套现逾5.6亿美元 ，黄仁勋回归加剧AI路线之争。Anthropic内部Claude模型独立攻克代数版",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-24T23:07:46+00:00"
     },
     {
       "title": "Trump Account contributions from friends and family pass $1 billion mark, Treasury says",
@@ -491,44 +643,12 @@
       "published": "2026-11-24T22:18:47+00:00"
     },
     {
-      "title": "Saudi national charged in OpenAI bugging to be released on $1 million bond",
-      "link": "https://www.cnbc.com/2026/11/24/openai-bugging-aflozan-release-saudi.html",
-      "summary": "Abdulrahman Alfozan is accused of planting a recording device in an executive conference room at OpenAI's headquarters.",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-24T22:03:01+00:00"
-    },
-    {
-      "title": "Trump wanted Jensen Huang back. Now, the president is all alone in Washington",
-      "link": "https://www.cnbc.com/2026/11/24/trump-jensen-huang-nvidia.html",
-      "summary": "Republicans worry Nvidia CEO Jensen Huang's affairs with a suspected Chinese spy jeopardized U.S. national security.",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-24T21:13:39+00:00"
-    },
-    {
-      "title": "Drugmaker Insmed shares rally 14% after Sanofi agrees to buy it in pharma’s biggest deal in three years",
-      "link": "https://www.cnbc.com/2026/11/24/insmed-sanofi-deal-stock-pharma.html",
-      "summary": "Sanofi faces a revenue drop toward the end of the decade as top-selling drugs lose exclusivity and open up for generic drugmakers to compete.",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-24T21:07:19+00:00"
-    },
-    {
       "title": "Retail turnarounds are taking hold just in time for the holiday season",
       "link": "https://www.cnbc.com/2026/11/24/retail-turnarounds-holiday-season.html",
       "summary": "Retail earnings reports on Tuesday pointed to a mix of factors behind the strong results, including a resilient consumer and stronger execution.",
       "source": "CNBC Business",
       "category": "国际财经",
       "published": "2026-11-24T19:26:39+00:00"
-    },
-    {
-      "title": "Raising the stakes for enterprise networks with AI modernization",
-      "link": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
-      "summary": "Enterprise networks are under severe strain. As companies rush to deploy artificial intelligence, the technology is quickly becoming the biggest source of demand on the network. Now, agentic AI is adding to the load. Tasks conducted by AI agents generate an estimated 450% more network traffic than t",
-      "source": "MIT科技评论",
-      "category": "产业科技",
-      "published": "2026-11-24T15:15:16+00:00"
     },
     {
       "title": "Best Buy reports comparable sales growth of 6.1%, highest in five years",
@@ -539,36 +659,12 @@
       "published": "2026-11-24T14:51:58+00:00"
     },
     {
-      "title": "编造检验记录，宝莱特华北唯一透析粉液基地遭飞检停产",
-      "link": "https://www.tmtpost.com/8216634.html",
-      "summary": "叠加血透耗材集采持续降价、主业连续亏损的经营压力，宝莱特把目光投向存储芯片赛道，试图寻找新的增长支点。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T13:40:24+00:00"
-    },
-    {
-      "title": "内存涨价、换机乏力，荣耀如何接住中端市场的难题",
-      "link": "https://www.tmtpost.com/8216686.html",
-      "summary": "中端市场的竞争，从来不只是价格和配置的较量。当参数逐渐趋同，谁能重新定义用户需要什么，谁才有机会在下一轮竞争中占据主动。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T13:15:02+00:00"
-    },
-    {
       "title": "The Download: AI’s gas power boom and a consciousness reality check",
       "link": "https://www.technologyreview.com/2026/11/24/1149669/the-download-data-centers-gas-ai-consciousness/",
       "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Data centers are getting their own natural gas power plants One of the biggest obstacles to building a data center is getting approval to connect to the grid, a w",
       "source": "MIT科技评论",
       "category": "产业科技",
       "published": "2026-11-24T13:10:00+00:00"
-    },
-    {
-      "title": "自变量发布具身基础模型WALL-OSS-1.0，自测零样本成功率55.1%",
-      "link": "https://www.tmtpost.com/8216666.html",
-      "summary": "“理解世界”与“执行动作”在同一模型中成形",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T13:09:16+00:00"
     },
     {
       "title": "Some U.S. food banks see demand top pandemic levels",
@@ -585,46 +681,6 @@
       "source": "CNBC 国际头条",
       "category": "国际财经",
       "published": "2026-11-24T11:15:30+00:00"
-    },
-    {
-      "title": "中国国航，一张油价看跌期权",
-      "link": "https://www.tmtpost.com/8215597.html",
-      "summary": "迎来周期反转了吗？",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T11:13:22+00:00"
-    },
-    {
-      "title": "连续四月销量破10万，零跑回应“几箱啤酒压穿后备箱”风波",
-      "link": "https://www.tmtpost.com/8215052.html",
-      "summary": "新势力“销冠”零跑汽车，又一次卷入风波。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T11:12:38+00:00"
-    },
-    {
-      "title": "DeepSeek限额，腾讯社交帝国松口气",
-      "link": "https://www.tmtpost.com/8209876.html",
-      "summary": "AI免费时代的成本与社交变局。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T11:11:06+00:00"
-    },
-    {
-      "title": "理想“去宁德化”凶猛",
-      "link": "https://www.tmtpost.com/8214994.html",
-      "summary": "都在悄悄做，嘴里都不说。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T11:11:02+00:00"
-    },
-    {
-      "title": "希望《无限暖暖》送我300抽，记马斯克账上",
-      "link": "https://www.tmtpost.com/8216374.html",
-      "summary": "叠纸必须打赢的一仗。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-24T11:07:11+00:00"
     },
     {
       "title": "Data centers are getting their own natural gas power plants",
@@ -779,14 +835,6 @@
       "published": "2026-11-19T13:10:00+00:00"
     },
     {
-      "title": "A human liver has been kept alive outside the body for a record seven weeks",
-      "link": "https://www.technologyreview.com/2026/11/19/1148934/a-human-liver-has-been-kept-alive-outside-the-body-for-seven-weeks-setting-a-record/",
-      "summary": "Researchers in Australia claim they’ve kept a human liver alive, on life support, outside the body for seven weeks, opening up speculative new possibilities in biomedical engineering. The feat, whose details are pending publication, was carried out in Sydney after a team led by surgeon and inventor ",
-      "source": "MIT科技评论",
-      "category": "产业科技",
-      "published": "2026-11-19T12:00:00+00:00"
-    },
-    {
       "title": "Investigators make progress in hunt for cause of FAA ground stop",
       "link": "https://www.cnbc.com/2026/11/18/faa-ground-stop-router-investigation.html",
       "summary": "Engineers and analysts are still searching for the root cause of the issue, which led to a four-hour ground stop on Friday.",
@@ -801,14 +849,6 @@
       "source": "CNBC Business",
       "category": "国际财经",
       "published": "2026-11-18T17:02:53+00:00"
-    },
-    {
-      "title": "Hims & Hers launches new peptide treatments — while admitting there's more to learn about efficacy",
-      "link": "https://www.cnbc.com/2026/11/18/hims-hers-peptides-plus-treatments.html",
-      "summary": "The telehealth company will now offer compounded forms of sermorelin, glutathione, NAD+, vitamin B-12 and L-carnitine, none of which are approved by the FDA.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-18T14:02:52+00:00"
     },
     {
       "title": "10月份国民经济运行总体平稳、向新向优",
