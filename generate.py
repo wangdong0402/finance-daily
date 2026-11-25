@@ -148,7 +148,10 @@ def build_report_cards(reports):
         rating = html.escape(item.get("rating", ""))
         stock = html.escape(item.get("stock", ""))
         code = html.escape(item.get("code", ""))
-        search_str = f"{stock} {code}".lower()
+        industry = html.escape(item.get("industry", ""))
+        # 行业研报没有股票名、只有行业名；个股研报两者都有
+        is_industry = (not stock) and bool(industry)
+        search_str = f"{stock} {code} {industry}".lower()
         rating_color = "#6e6e73"
         if "买入" in rating or "推荐" in rating:
             rating_color = "#dc2626"
@@ -178,11 +181,19 @@ def build_report_cards(reports):
             preview = preview[:120] + "…"
         summary_html = f'<p class="summary clamp2">{html.escape(preview)}</p>' if preview else ""
 
+        # 行业研报：标签换成绿色「行业研报」，主体位置显示行业名
+        if is_industry:
+            tag_bg, tag_fg, tag_text = "#ecfdf5", "#047857", "行业研报"
+            subject = industry
+        else:
+            tag_bg, tag_fg, tag_text = "#e0e7ff", "#3730a3", "研报"
+            subject = f"{stock} ({code})" if code else stock
+
         cards.append(f'''
         <article class="card report-card" data-search="{search_str}">
           <div class="meta">
-            <span class="tag" style="background: #e0e7ff; color: #3730a3;">研报</span>
-            <span style="font-weight: bold; color: #1d1d1f;">{stock} ({code})</span>
+            <span class="tag" style="background: {tag_bg}; color: {tag_fg};">{tag_text}</span>
+            <span style="font-weight: bold; color: #1d1d1f;">{subject}</span>
             <span>{org}</span>
             <span>{date}</span>
             {rating_badge}
@@ -455,7 +466,10 @@ h1{font-size:19px;line-height:1.5;margin:0 0 12px;font-weight:600}
     return;
   }
 
-  if (bar) bar.textContent = (item.stock || '') + (item.code ? ' ' + item.code : '');
+  if (bar) {{
+    var _subj = item.stock || item.industry || '';
+    bar.textContent = _subj + ((item.stock && item.code) ? ' ' + item.code : '');
+  }}
   document.title = (item.stock ? item.stock + ' - ' : '') + (item.title || '研报详情');
 
   var meta = [];
@@ -667,7 +681,7 @@ h2 a:hover {{ text-decoration: underline; }}
   <div id="tab-reports" style="display: none;">
     <div class="search-container">
       <div class="search-wrap">
-        <input type="text" id="report-search" class="search-input" placeholder="🔍 输入股票代码或名称搜索研报..." oninput="filterReports()">
+        <input type="text" id="report-search" class="search-input" placeholder="🔍 输入股票/行业/标题关键词搜索研报..." oninput="filterReports()">
         <button class="search-clear" id="search-clear" onclick="clearSearch()" style="display:none;">×</button>
       </div>
       <div class="search-count" id="search-count"></div>
