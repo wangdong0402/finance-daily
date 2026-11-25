@@ -788,10 +788,7 @@ function toggleSummary(btn) {{
 
 // 新闻分类筛选
 function filterNews(category, btn) {{
-  buttons.forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-
-  // 更新按钮状态
+  // 更新按钮状态（限定在新闻胶囊条内，避免影响研报胶囊）
   const buttons = document.querySelectorAll('#filter-bar .filter-btn');
   buttons.forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
