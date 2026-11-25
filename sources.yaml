@@ -1,31 +1,50 @@
 sources:
-  # --- 中文宏观与产业 ---
+  # ===================== 中文宏观（国内财经要闻/宏观经济） =====================
   - name: 华尔街见闻
     url: https://dedicated.wallstreetcn.com/rss.xml
     category: 中文宏观
 
+  - name: 界面新闻
+    url: https://a.jiemian.com/index.php?m=article&a=rss
+    category: 中文宏观
+
+  - name: 中新网-财经
+    url: https://www.chinanews.com.cn/rss/finance.xml
+    category: 中文宏观
+
+  # ===================== 产业科技（行业/科技/企业动态） =====================
   - name: 钛媒体
     url: https://www.tmtpost.com/rss
     category: 产业科技
 
-  # --- 国际宏观与财经 ---
-  - name: 联合早报-中国
-    url: https://www.zaobao.com.sg/rss/realtime/china
-    category: 国际宏观
+  - name: 经济观察网
+    url: http://www.eeo.com.cn/rss.xml
+    category: 产业科技
 
-  - name: 联合早报-财经
-    url: https://www.zaobao.com.sg/rss/realtime/finance
-    category: 国际财经
+  - name: MIT科技评论
+    url: https://www.technologyreview.com/feed/
+    category: 产业科技
 
+  # ===================== 国际财经（海外市场/全球经济） =====================
   - name: CNBC Business
     url: https://www.cnbc.com/id/10001147/device/rss/rss.html
     category: 国际财经
 
-  - name: MarketWatch
-    url: https://feeds.content.dowjones.io/public/rss/mw_topstories
+  - name: CNBC 国际头条
+    url: https://www.cnbc.com/id/100727362/device/rss/rss.html
     category: 国际财经
 
-  # --- 官方宏观数据 ---
-  - name: Federal Reserve
-    url: https://www.federalreserve.gov/feeds/press_all.xml
+  # ===================== 政策法规（国务院文件/条例/批复） =====================
+  - name: 中国政府网-原创推荐
+    url: https://www.gov.cn/pushinfo/v150203/rss.xml
+    category: 政策法规
+
+  # ===================== 宏观数据（统计局官方发布） =====================
+  - name: 国家统计局-数据发布
+    url: https://www.stats.gov.cn/sj/zxfb/rss.xml
     category: 宏观数据
+
+  # ===================== 备用（已实测可用，需要时去掉 # 启用） =====================
+  # - name: CNBC 科技
+  #   url: https://www.cnbc.com/id/19854910/device/rss/rss.html
+  #   category: 产业科技
