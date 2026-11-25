@@ -4,10 +4,16 @@ import os
 import re
 import time
 import random
+import html as html_lib
 from datetime import datetime, timedelta
 
 LIST_API   = "https://reportapi.eastmoney.com/report/list"
 DETAIL_URL = "https://data.eastmoney.com/report/info/{}.html"
+
+# 方案A：中商情报网 产业分析频道（正文免费可读，只存摘要不转载全文）
+ASKCI_LIST_URL   = "https://www.askci.com/news/chanye/"
+ASKCI_SUMMARY_LEN = 500     # 摘要保留字数
+ASKCI_MAX         = 15      # 每天最多取多少条
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -20,8 +26,8 @@ MAX_DETAILS_STOCK    = 30   # 个股研报
 MAX_DETAILS_INDUSTRY = 30   # 行业研报
 FAIL_STREAK_LIMIT    = 8    # 连续失败这么多次就停手，防止被封
 
-# 保存总量上限（个股 + 行业合计）
-MAX_TOTAL_REPORTS = 80
+# 保存总量上限（个股 + 行业 + 产业分析合计）
+MAX_TOTAL_REPORTS = 95
 
 
 def fetch_detail(info_code, retry=2):
@@ -140,6 +146,140 @@ def fetch_eastmoney_reports(days=3, page_size=80, qtype="0", max_details=80, lab
     return reports
 
 
+# ---------------------------------------------------------------- 方案A：中商情报网 产业分析
+
+ASKCI_HEADERS = {
+    "User-Agent": HEADERS["User-Agent"],
+    "Referer": "https://www.askci.com/",
+}
+
+
+def _askci_text(url, retry=2):
+    """中商返回的 header 没带 charset，必须按 utf-8 手动解码，否则中文乱码"""
+    last_err = None
+    for i in range(retry + 1):
+        try:
+            r = requests.get(url, headers=ASKCI_HEADERS, timeout=20)
+            r.raise_for_status()
+            return r.content.decode("utf-8", "ignore")
+        except Exception as e:
+            last_err = e
+            if i < retry:
+                time.sleep(1.0 + random.random())
+    raise last_err
+
+
+def _strip_tags(s):
+    s = re.sub(r"<script.*?</script>", " ", s, flags=re.S)
+    s = re.sub(r"<style.*?</style>", " ", s, flags=re.S)
+    s = re.sub(r"<[^>]+>", " ", s)
+    s = html_lib.unescape(s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def _askci_list():
+    """解析产业分析频道列表：每 <li> 一篇（标题 + 行业标签 + 日期）"""
+    page = _askci_text(ASKCI_LIST_URL)
+    items = []
+    for m in re.finditer(r"<li>(.*?)</li>", page, re.S):
+        block = m.group(1)
+        link_m = re.search(r'class="wes2"[^>]*href="([^"]+)"|href="([^"]+)"[^>]*class="wes2"', block)
+        if not link_m:
+            link_m = re.search(r'content_list_title_231.*?href="([^"]+)"', block, re.S)
+        if not link_m:
+            continue
+        url = link_m.group(1) or link_m.group(2)
+        title_m = re.search(r'class="wes2"[^>]*>(.*?)</a>', block, re.S)
+        if not title_m:
+            continue
+        title = _strip_tags(title_m.group(1))
+
+        date_m = re.search(r"<b>(20\d{2}-\d{2}-\d{2})</b>", block)
+        date = date_m.group(1) if date_m else ""
+
+        tag_m = re.search(r"content_list_font_232.*?title='([^']+)'", block, re.S)
+        industry = tag_m.group(1) if tag_m else ""
+
+        art_id_m = re.search(r"/(\d{6})/(\d+)\.shtml", url)
+        art_id = art_id_m.group(2) if art_id_m else url
+
+        items.append({"title": title, "url": url, "date": date, "industry": industry, "art_id": art_id})
+
+    uniq, seen = [], set()
+    for it in items:
+        if it["url"] in seen:
+            continue
+        seen.add(it["url"])
+        uniq.append(it)
+    return uniq
+
+
+def _askci_summary(url):
+    """返回 (摘要, 来源机构)"""
+    page = _askci_text(url)
+    org_m = re.search(r"来源：([^<<]+)</span>", page)
+    org = org_m.group(1).strip() if org_m else "中商情报网"
+
+    i = page.find("detail_content_text")
+    if i < 0:
+        return "", org
+    seg = page[i:i + 20000]
+    j = seg.find('<div class="clear">')
+    body = seg[:j] if j > 0 else seg[:15000]
+    body = re.sub(r'detail_content_text">', " ", body, count=1)
+    return _strip_tags(body)[:ASKCI_SUMMARY_LEN], org
+
+
+def fetch_askci_analysis(limit=ASKCI_MAX):
+    """抓中商情报网产业分析（正文免费，只存摘要 + 跳原文）"""
+    try:
+        items = _askci_list()
+    except Exception as e:
+        print(f"::warning::中商情报网 列表抓取失败: {e}")
+        return []
+
+    print(f"[信息] 产业分析列表拿到 {len(items)} 条（去重后）")
+    if not items:
+        print("::warning::中商情报网 列表解析到 0 条，页面结构可能已改版")
+        return []
+
+    out = []
+    for it in items[:limit]:
+        try:
+            summary, org = _askci_summary(it["url"])
+        except Exception as e:
+            print(f"  [详情失败] {it['url']}: {e}")
+            summary, org = "", "中商情报网"
+
+        rec = {
+            "title":      it["title"],
+            "org":        org,
+            "date":       it["date"],
+            "infoCode":   it["art_id"],
+            "rating":     "",
+            "stock":      "",
+            "code":       "",
+            "researcher": "",
+            "industry":   it["industry"],
+            "pages":      "",
+            "size":       "",
+            "aim_price":  "",
+            "eps_this":   "",
+            "pe_this":    "",
+            "link":       it["url"],
+            # 中商文章不进自建详情页，直接跳原文
+            "detail":     it["url"],
+            "pdf":        "",
+            "summary":    summary,
+            "reportType": "产业分析",
+        }
+        out.append(rec)
+        print(f"  √ {it['date']} [{it['industry']}] {it['title'][:36]} | 摘要 {len(summary)} 字")
+        time.sleep(0.8 + random.random() * 0.5)
+
+    return out
+
+
 def main():
     # 1) 个股研报
     stock_reports = fetch_eastmoney_reports(
@@ -149,10 +289,12 @@ def main():
     industry_reports = fetch_eastmoney_reports(
         days=3, page_size=40, qtype="1", max_details=MAX_DETAILS_INDUSTRY, label="行业研报"
     )
+    # 3) 产业分析（中商情报网）
+    analysis_reports = fetch_askci_analysis()
 
-    # 3) 合并去重（按 infoCode），再按日期倒序
+    # 4) 合并去重（按 infoCode），再按日期倒序
     merged, seen_codes = [], set()
-    for rec in stock_reports + industry_reports:
+    for rec in stock_reports + industry_reports + analysis_reports:
         key = rec.get("infoCode", "")
         if not key or key in seen_codes:
             continue
@@ -168,8 +310,10 @@ def main():
 
     ok = sum(1 for r in merged if r.get("summary"))
     n_stock = sum(1 for r in merged if r.get("stock"))
-    n_industry = sum(1 for r in merged if not r.get("stock") and r.get("industry"))
-    print(f"成功抓取 {len(merged)} 条研报（个股 {n_stock} / 行业 {n_industry}），其中 {ok} 条含摘要 → data/reports.json")
+    n_industry = sum(1 for r in merged if (not r.get("stock")) and r.get("industry") and r.get("reportType") != "产业分析")
+    n_analysis = sum(1 for r in merged if r.get("reportType") == "产业分析")
+    print(f"成功抓取 {len(merged)} 条研报（个股 {n_stock} / 行业 {n_industry} / 产业分析 {n_analysis}），"
+          f"其中 {ok} 条含摘要 → data/reports.json")
 
 
 if __name__ == "__main__":
