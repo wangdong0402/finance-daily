@@ -132,6 +132,38 @@ def build_news_cards(items):
     return filter_html + "\n".join(cards)
 
 
+REPORT_TYPE_ORDER = ["个股研报", "行业研报", "产业分析"]
+
+
+def report_type(item):
+    """判断研报类型：优先用数据里的 reportType，否则按字段推断"""
+    rt = (item.get("reportType") or "").strip()
+    if rt:
+        return rt
+    if not item.get("stock") and item.get("industry"):
+        return "行业研报"
+    return "个股研报"
+
+
+def build_report_filter(reports):
+    """研报分类胶囊：全部 / 个股研报 / 行业研报（将来会有产业分析）"""
+    present = []
+    for item in reports:
+        t = report_type(item)
+        if t and t not in present:
+            present.append(t)
+    present.sort(key=lambda x: REPORT_TYPE_ORDER.index(x) if x in REPORT_TYPE_ORDER else 99)
+    if len(present) < 2:
+        return ""
+
+    html_parts = ['<div class="filter-bar" id="report-type-bar">']
+    html_parts.append('<button class="filter-btn active" onclick="filterReportType(\'all\', this)">全部</button>')
+    for t in present:
+        html_parts.append(f'<button class="filter-btn" onclick="filterReportType(\'{html.escape(t)}\', this)">{html.escape(t)}</button>')
+    html_parts.append('</div>')
+    return "".join(html_parts)
+
+
 def build_report_cards(reports):
     if not reports:
         return '<div class="empty">还没有研报数据。</div>'
@@ -182,15 +214,16 @@ def build_report_cards(reports):
         summary_html = f'<p class="summary clamp2">{html.escape(preview)}</p>' if preview else ""
 
         # 行业研报：标签换成绿色「行业研报」，主体位置显示行业名
+        rtype = report_type(item)
         if is_industry:
-            tag_bg, tag_fg, tag_text = "#ecfdf5", "#047857", "行业研报"
+            tag_bg, tag_fg, tag_text = "#ecfdf5", "#047857", rtype
             subject = industry
         else:
-            tag_bg, tag_fg, tag_text = "#e0e7ff", "#3730a3", "研报"
+            tag_bg, tag_fg, tag_text = "#e0e7ff", "#3730a3", rtype
             subject = f"{stock} ({code})" if code else stock
 
         cards.append(f'''
-        <article class="card report-card" data-search="{search_str}">
+        <article class="card report-card" data-search="{search_str}" data-type="{html.escape(rtype)}">
           <div class="meta">
             <span class="tag" style="background: {tag_bg}; color: {tag_fg};">{tag_text}</span>
             <span style="font-weight: bold; color: #1d1d1f;">{subject}</span>
@@ -554,6 +587,7 @@ def main():
 
     news_cards_html = build_news_cards(news_items)
     reports_cards_html = build_report_cards(reports_data)
+    report_filter_html = build_report_filter(reports_data)
     sentiment_cards_html = build_sentiment_html(sentiment_data)
     macro_cards_html = build_macro_html(macro_data)
 
@@ -686,6 +720,7 @@ h2 a:hover {{ text-decoration: underline; }}
       </div>
       <div class="search-count" id="search-count"></div>
     </div>
+    {report_filter_html}
     <div id="report-list">
       {reports_cards_html}
     </div>
@@ -753,8 +788,11 @@ function toggleSummary(btn) {{
 
 // 新闻分类筛选
 function filterNews(category, btn) {{
+  buttons.forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
   // 更新按钮状态
-  const buttons = document.querySelectorAll('.filter-btn');
+  const buttons = document.querySelectorAll('#filter-bar .filter-btn');
   buttons.forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
 
@@ -773,15 +811,20 @@ function filterNews(category, btn) {{
   }});
 }}
 
-// 研报搜索
+// 研报搜索 + 类型筛选
+var activeReportType = 'all';
+
 function filterReports() {{
   const query = document.getElementById('report-search').value.toLowerCase().trim();
   const cards = document.querySelectorAll('.report-card');
   let visibleCount = 0;
 
   cards.forEach(card => {{
-    const searchData = card.getAttribute('data-search');
-    if (searchData.includes(query)) {{
+    const searchData = card.getAttribute('data-search') || '';
+    const typeData = card.getAttribute('data-type') || '';
+    const matchQuery = searchData.includes(query);
+    const matchType = (activeReportType === 'all') || (typeData === activeReportType);
+    if (matchQuery && matchType) {{
       card.style.display = 'block';
       visibleCount++;
     }} else {{
@@ -792,15 +835,24 @@ function filterReports() {{
   const emptyMsg = document.getElementById('report-empty');
   emptyMsg.style.display = visibleCount === 0 ? 'block' : 'none';
 
+  const filtering = !!query || activeReportType !== 'all';
   const clearBtn = document.getElementById('search-clear');
   if (clearBtn) clearBtn.style.display = query ? 'block' : 'none';
   const countEl = document.getElementById('search-count');
-  if (countEl) countEl.textContent = query ? ('匹配到 ' + visibleCount + ' 条研报') : '';
+  if (countEl) countEl.textContent = filtering ? ('匹配到 ' + visibleCount + ' 条研报') : '';
 
   // 分组标签在筛选时隐藏
   document.querySelectorAll('.date-group').forEach(function (g) {{
-    g.style.display = query ? 'none' : 'flex';
+    g.style.display = filtering ? 'none' : 'flex';
   }});
+}}
+
+// 研报分类胶囊（个股研报 / 行业研报 / 产业分析）
+function filterReportType(type, btn) {{
+  activeReportType = type;
+  document.querySelectorAll('#report-type-bar .filter-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  filterReports();
 }}
 
 function clearSearch() {{
