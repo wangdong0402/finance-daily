@@ -11,7 +11,7 @@ import requests
 SOURCES_FILE = "sources.yaml"
 OUTPUT_FILE = "data/news.json"
 MAX_PER_SOURCE = 15
-MAX_TOTAL = 100
+MAX_TOTAL = 150
 
 # 伪装成正常的浏览器，防止被部分网站当作爬虫拦截
 HEADERS = {
