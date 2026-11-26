@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes">
+<meta name="referrer" content="no-referrer">
+<title>研报 PDF 预览</title>
+<style>
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; background: #525659; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: #1f2937;
+  }
+  .topbar {
+    position: sticky; top: 0; z-index: 20;
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 14px;
+    background: rgba(255,255,255,.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,.08);
+  }
+  .topbar .back { flex: none; text-decoration: none; color: #1d4ed8; font-size: 15px; padding: 4px 2px; }
+  .topbar .title {
+    flex: 1; min-width: 0; font-size: 14px; font-weight: 600; color: #1d1d1f;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .topbar .dl {
+    flex: none; font-size: 13px; color: #047857; text-decoration: none;
+    border: 1px solid #d1fae5; background: #ecfdf5; padding: 5px 10px; border-radius: 8px;
+    cursor: pointer;
+  }
+  .topbar .dl[disabled] { opacity: .45; pointer-events: none; }
+  .hint {
+    padding: 7px 14px; font-size: 12px; color: #f3f4f6; background: #3f4448;
+    display: flex; justify-content: space-between; gap: 10px;
+  }
+  .hint span:last-child { color: #d1d5db; }
+  .progress { height: 3px; background: #4b5155; }
+  .progress > i { display: block; height: 100%; width: 0; background: #3b82f6; transition: width .2s; }
+  #viewer { padding: 10px 8px 80px; }
+  .page-wrap {
+    position: relative;
+    margin: 0 auto 12px; max-width: 900px;
+    background: #fff; border-radius: 4px; overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    min-height: 320px;
+  }
+  .page-wrap canvas { display: block; width: 100%; height: auto; }
+  .page-wrap .ph {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+    color: #9ca3af; font-size: 13px; white-space: nowrap; pointer-events: none;
+  }
+  .controls { position: fixed; right: 14px; bottom: 24px; z-index: 30; display: flex; flex-direction: column; gap: 8px; }
+  .controls button {
+    width: 44px; height: 44px; border-radius: 22px; border: none;
+    background: rgba(29,29,31,.72); color: #fff; font-size: 20px; line-height: 1;
+    box-shadow: 0 2px 8px rgba(0,0,0,.3); cursor: pointer;
+  }
+  .controls button:active { transform: scale(.94); }
+  .pager {
+    position: fixed; left: 14px; bottom: 28px; z-index: 30;
+    background: rgba(29,29,31,.72); color: #fff; font-size: 13px;
+    padding: 7px 14px; border-radius: 18px;
+  }
+  .loading {
+    position: fixed; inset: 0; z-index: 40; display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 14px; background: #525659; color: #fff; font-size: 14px;
+  }
+  .spinner {
+    width: 30px; height: 30px; border: 3px solid rgba(255,255,255,.35);
+    border-top-color: #fff; border-radius: 50%;
+    animation: spin .8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .error { padding: 40px 20px; color: #fff; text-align: center; font-size: 14px; line-height: 1.9; }
+  .error a, .error b { color: #93c5fd; }
+  .error .code { font-size: 12px; color: #d1d5db; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back" href="javascript:history.back()">‹ 返回</a>
+  <div class="title" id="title">研报 PDF 预览</div>
+  <a class="dl" id="dl" href="#" referrerpolicy="no-referrer" disabled>保存</a>
+</div>
+<div class="hint">
+  <span id="hintL">加载中…</span>
+  <span id="hintR">双指缩放可放大</span>
+</div>
+<div class="progress"><i id="bar"></i></div>
+
+<div id="viewer"></div>
+
+<div class="pager" id="pager">— / —</div>
+<div class="controls">
+  <button id="zoomIn" title="放大">＋</button>
+  <button id="zoomOut" title="缩小">－</button>
+</div>
+
+<div class="loading" id="loading">
+  <div class="spinner"></div>
+  <div id="loadingText">正在获取 PDF…</div>
+</div>
+
+<script src="vendor/pdf.min.js"></script>
+<script>
+/* ---------------- 配置区 ---------------- */
+var DEFAULT_PDF_URL = 'https://pdf.dfcfw.com/pdf/H3_AP202611261832056774_1.pdf';
+var DEFAULT_PDF_TITLE = '中国核电(601985)：厚积收获，量价双升';
+
+var qs = new URLSearchParams(location.search);
+var PDF_URL = qs.get('pdf') || qs.get('url') || DEFAULT_PDF_URL;
+var PDF_TITLE = qs.get('title') || DEFAULT_PDF_TITLE;
+if (!/^https?:/i.test(PDF_URL) && !PDF_URL.startsWith('.')) PDF_URL = DEFAULT_PDF_URL;
+
+var viewer = document.getElementById('viewer');
+var loading = document.getElementById('loading');
+var loadingText = document.getElementById('loadingText');
+var pager = document.getElementById('pager');
+var hintL = document.getElementById('hintL');
+var dlBtn = document.getElementById('dl');
+var bar = document.getElementById('bar');
+
+var pdfDoc = null;
+var pdfBytes = null;          // 已拿到的 PDF 原始字节，用于生成 blob 保存
+var scale = 1;
+var baseScale = 1;
+var pages = [];
+var currentPage = 1;
+
+document.getElementById('title').textContent = PDF_TITLE;
+document.title = PDF_TITLE;
+
+function kb(n) { return (n / 1024).toFixed(0); }
+
+function showError(html) {
+  loading.style.display = 'none';
+  viewer.innerHTML = '<div class="error">' + html +
+    '<br><a href="' + PDF_URL + '" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">点这里直接用浏览器打开 PDF</a>' +
+    '<br><span class="code">' + (PDF_URL.length > 70 ? PDF_URL.slice(0, 70) + '…' : PDF_URL) + '</span></div>';
+}
+
+function fitScale(page) {
+  var availWidth = viewer.clientWidth - 16;
+  var vp = page.getViewport({ scale: 1 });
+  return Math.min(availWidth / vp.width, 2);
+}
+
+function renderPage(idx) {
+  var p = pages[idx];
+  if (!p || p.rendered || p.rendering) return;
+  p.rendering = true;
+  pdfDoc.getPage(idx + 1).then(function (page) {
+    var ratio = (window.devicePixelRatio || 1) * 1.4;
+    var vp = page.getViewport({ scale: baseScale * scale * ratio });
+    var canvas = p.canvas;
+    canvas.width = Math.floor(vp.width);
+    canvas.height = Math.floor(vp.height);
+    canvas.style.width = '100%';
+    var task = page.render({ canvasContext: canvas.getContext('2d'), viewport: vp });
+    task.promise.then(function () {
+      p.rendered = true; p.rendering = false;
+      p.wrap.style.minHeight = '0px';
+      var ph = p.wrap.querySelector('.ph');
+      if (ph) ph.remove();
+    }).catch(function (err) {
+      p.rendering = false;
+      if (err && err.name !== 'RenderingCancelledException') console.warn('render fail', err);
+    });
+  }).catch(function (err) { p.rendering = false; console.warn('getPage fail', err); });
+}
+
+var visible = {};
+
+/* 释放离屏页面的画布，避免 28 页全渲染吃掉上百 MB（手机容易崩） */
+function freePage(idx) {
+  var p = pages[idx];
+  if (!p || !p.rendered) return;
+  var h = p.canvas.getBoundingClientRect().height;
+  if (h > 0) p.wrap.style.minHeight = Math.round(h) + 'px';
+  p.canvas.width = 0;
+  p.canvas.height = 0;
+  p.rendered = false;
+  p.rendering = false;
+  if (!p.wrap.querySelector('.ph')) {
+    var ph = document.createElement('div');
+    ph.className = 'ph';
+    ph.textContent = '第 ' + (idx + 1) + ' 页';
+    p.wrap.insertBefore(ph, p.canvas);
+  }
+}
+
+var io = new IntersectionObserver(function (entries) {
+  entries.forEach(function (e) {
+    var idx = parseInt(e.target.getAttribute('data-page'), 10);
+    if (e.isIntersecting) { visible[idx] = true; renderPage(idx); }
+    else { delete visible[idx]; freePage(idx); }
+  });
+  var keys = Object.keys(visible).map(Number);
+  if (keys.length) {
+    currentPage = Math.min.apply(null, keys) + 1;
+    pager.textContent = currentPage + ' / ' + pages.length;
+  }
+}, { rootMargin: '300px 0px' });
+
+function buildPlaceholders(total) {
+  viewer.innerHTML = '';
+  pages = [];
+  for (var i = 0; i < total; i++) {
+    var wrap = document.createElement('div');
+    wrap.className = 'page-wrap';
+    wrap.setAttribute('data-page', i);
+    var canvas = document.createElement('canvas');
+    wrap.appendChild(canvas);
+    var ph = document.createElement('div');
+    ph.className = 'ph';
+    ph.textContent = '第 ' + (i + 1) + ' 页';
+    wrap.appendChild(ph);
+    viewer.appendChild(wrap);
+    pages.push({ wrap: wrap, canvas: canvas, rendered: false, rendering: false });
+    io.observe(wrap);
+  }
+  pager.textContent = '1 / ' + total;
+}
+
+function reRenderAll() {
+  pages.forEach(function (p, idx) {
+    p.rendered = false; p.rendering = false;
+    if (!p.wrap.querySelector('.ph')) {
+      var ph = document.createElement('div');
+      ph.className = 'ph';
+      ph.textContent = '第 ' + (idx + 1) + ' 页';
+      p.wrap.insertBefore(ph, p.canvas);
+    }
+  });
+  renderPage(currentPage - 1);
+}
+
+/* 关键：由本页自己读 PDF，显式声明不带来源信息（绕开源站防盗链） */
+function fetchPdf() {
+  return fetch(PDF_URL, {
+    referrerPolicy: 'no-referrer',
+    credentials: 'omit',
+    cache: 'no-store'
+  }).then(function (res) {
+    var ct = (res.headers.get('content-type') || '').toLowerCase();
+    var len = parseInt(res.headers.get('content-length') || '0', 10);
+
+    if (res.status !== 200) {
+      var extra = '';
+      if (res.status === 567) extra = '（来源校验拦截：该 PDF 只允许东财站内或空来源访问）';
+      throw { kind: 'status', status: res.status, extra: extra };
+    }
+    if (ct && ct.indexOf('pdf') === -1 && ct.indexOf('octet-stream') === -1) {
+      throw { kind: 'notpdf', status: res.status, ct: ct };
+    }
+
+    if (!res.body || !res.body.getReader) return res.arrayBuffer().then(function (b) {
+      bar.style.width = '100%'; return b;
+    });
+
+    var reader = res.body.getReader();
+    var chunks = [], got = 0;
+    function pump() {
+      return reader.read().then(function (r) {
+        if (r.done) {
+          var out = new Uint8Array(got);
+          var off = 0;
+          chunks.forEach(function (c) { out.set(c, off); off += c.length; });
+          return out.buffer;
+        }
+        chunks.push(r.value);
+        got += r.value.length;
+        var pct = len ? Math.min(100, Math.round(got / len * 100)) : 0;
+        bar.style.width = pct + '%';
+        loadingText.textContent = len
+          ? '正在获取 PDF… ' + pct + '%（' + kb(got) + ' / ' + kb(len) + ' KB）'
+          : '正在获取 PDF… 已下载 ' + kb(got) + ' KB';
+        return pump();
+      });
+    }
+    return pump();
+  });
+}
+
+function start() {
+  if (!window.pdfjsLib) { showError('PDF.js 库未加载成功，请检查 vendor 目录。'); return; }
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'vendor/pdf.worker.min.js';
+
+  fetchPdf().then(function (buf) {
+    pdfBytes = buf;                       // 保留原始字节用于「保存」
+    loadingText.textContent = '正在解析 PDF…';
+    // 传给 pdf.js 必须是副本：它会 transfer（转移所有权），原始 buffer 会被 detach 成空
+    var copy = new Uint8Array(buf.byteLength);
+    copy.set(new Uint8Array(buf));
+    return pdfjsLib.getDocument({ data: copy }).promise;
+  }).then(function (doc) {
+    pdfDoc = doc;
+    return doc.getPage(1).then(function (page) {
+      baseScale = fitScale(page);
+      buildPlaceholders(doc.numPages);
+      loading.style.display = 'none';
+      hintL.textContent = '共 ' + doc.numPages + ' 页 · ' + kb(pdfBytes.byteLength) + ' KB';
+      dlBtn.removeAttribute('disabled');
+      renderPage(0);
+    });
+  }).catch(function (err) {
+    if (err && err.kind === 'status') {
+      showError('PDF 获取失败：服务端返回 HTTP ' + err.status + ' ' + (err.extra || '') +
+        '<br>本页已声明不带来源信息，若仍被拦截，请用下面的直开链接。');
+    } else if (err && err.kind === 'notpdf') {
+      showError('服务端返回的不是 PDF（content-type: ' + err.ct + '），可能被来源校验拦截了。');
+    } else {
+      var n = (err && err.name) || '';
+      var tip = {
+        InvalidPDFException: '文件内容损坏或不是有效 PDF。',
+        MissingPDFException: '该地址返回 404，可能已过期。',
+        UnexpectedResponseException: '服务端返回异常状态码' + ((err && err.status) ? '：' + err.status : '') + '。'
+      }[n] || '可能是网络中断，或该 PDF 地址已失效。';
+      showError('PDF 加载失败：' + (err && err.message ? err.message : err) + '<br>' + tip);
+    }
+  });
+}
+
+/* 保存：用已下到的字节生成本地 blob，不再请求 CDN，彻底避开防盗链 */
+dlBtn.onclick = function (e) {
+  e.preventDefault();
+  if (!pdfBytes) return;
+  var blob = new Blob([pdfBytes], { type: 'application/pdf' });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = (PDF_TITLE || '研报').replace(/[\\/:*?"<>|]/g, '_') + '.pdf';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(function () { document.body.removeChild(a); URL.revokeObjectURL(url); }, 4000);
+};
+
+document.getElementById('zoomIn').onclick = function () {
+  scale = Math.min(scale * 1.25, 3);
+  hintL.textContent = '已放大 ×' + scale.toFixed(2) + '（共 ' + pdfDoc.numPages + ' 页）';
+  reRenderAll();
+};
+document.getElementById('zoomOut').onclick = function () {
+  scale = Math.max(scale / 1.25, 0.5);
+  hintL.textContent = '已缩小 ×' + scale.toFixed(2) + '（共 ' + pdfDoc.numPages + ' 页）';
+  reRenderAll();
+};
+window.addEventListener('orientationchange', function () {
+  setTimeout(function () { if (pdfDoc) { scale = 1; reRenderAll(); } }, 300);
+});
+
+start();
+</script>
+</body>
+</html>

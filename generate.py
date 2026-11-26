@@ -2,6 +2,7 @@ import json
 import os
 import base64
 import html
+import shutil
 from datetime import datetime, timezone, timedelta
 
 NEWS_FILE = "data/news.json"
@@ -524,12 +525,17 @@ h1{font-size:19px;line-height:1.5;margin:0 0 12px;font-weight:600}
 
   var pdfBtn = '';
   if (item.pdf) {
-    var label = '下载 PDF';
+    var label = '在线阅读 PDF';
     var bits = [];
     if (item.pages) bits.push(item.pages + ' 页');
     if (item.size) bits.push(item.size + ' KB');
     if (bits.length) label += '（' + bits.join(' / ') + '）';
-    pdfBtn = '<a class="btn primary" href="' + esc(item.pdf) + '" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">' + label + '</a>';
+    var viewHref = 'viewer.html?pdf=' + encodeURIComponent(item.pdf) +
+                   '&title=' + encodeURIComponent(item.title || '研报');
+    pdfBtn = '<a class="btn primary" href="' + viewHref + '">' + label + '</a>' +
+             '<div style="margin-top:10px;text-align:center;font-size:12px;line-height:1.6">' +
+             '<a href="' + esc(item.pdf) + '" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" ' +
+             'style="color:#8e8e93;text-decoration:underline">下载原文件（少数浏览器可能被来源校验拦截）</a></div>';
   }
 
   app.innerHTML =
@@ -1069,6 +1075,16 @@ function closeChartModal() {{
     report_path = os.path.join(os.path.dirname(OUTPUT_FILE), "report.html")
     with open(report_path, "w", encoding="utf-8") as f:
         f.write(build_report_page(reports_data))
+
+    static_dir = "static"
+    if os.path.isdir(static_dir):
+        for root, _dirs, files in os.walk(static_dir):
+            rel = os.path.relpath(root, static_dir)
+            target = os.path.dirname(OUTPUT_FILE) if rel == "." else os.path.join(os.path.dirname(OUTPUT_FILE), rel)
+            os.makedirs(target, exist_ok=True)
+            for fn in files:
+                shutil.copy2(os.path.join(root, fn), os.path.join(target, fn))
+        print(f"已同步 {static_dir}/ 到 dist/。")
 
     print(f"已生成 {OUTPUT_FILE}，前端交互已全面优化。")
     print(f"已生成 {report_path}，共 {len(reports_data)} 篇研报详情。")
