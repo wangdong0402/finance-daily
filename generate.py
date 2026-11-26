@@ -529,7 +529,7 @@ h1{font-size:19px;line-height:1.5;margin:0 0 12px;font-weight:600}
     if (item.pages) bits.push(item.pages + ' 页');
     if (item.size) bits.push(item.size + ' KB');
     if (bits.length) label += '（' + bits.join(' / ') + '）';
-    pdfBtn = '<a class="btn primary" href="' + esc(item.pdf) + '" target="_blank" rel="noopener noreferrer">' + label + '</a>';
+    pdfBtn = '<a class="btn primary" href="' + esc(item.pdf) + '" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">' + label + '</a>';
   }
 
   app.innerHTML =
