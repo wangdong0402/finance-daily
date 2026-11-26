@@ -15,6 +15,12 @@ ASKCI_LIST_URL   = "https://www.askci.com/news/chanye/"
 ASKCI_SUMMARY_LEN = 500     # 摘要保留字数
 ASKCI_MAX         = 15      # 每天最多取多少条
 
+# 方案B：199IT 行业资讯（RSS 免费、含全文，只存摘要 + 跳原文，不转载正文）
+IT199_FEED        = "https://www.199it.com/feed"
+IT199_MAX         = 12      # 每次最多取多少条
+IT199_SUMMARY_LEN = 300     # 摘要保留字数
+IT199_TTL_HOURS   = 72      # 只保留最近多少小时的条目
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                   "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -27,7 +33,7 @@ MAX_DETAILS_INDUSTRY = 30   # 行业研报
 FAIL_STREAK_LIMIT    = 8    # 连续失败这么多次就停手，防止被封
 
 # 保存总量上限（个股 + 行业 + 产业分析合计）
-MAX_TOTAL_REPORTS = 95
+MAX_TOTAL_REPORTS = 110   # 2026-11 加了 199IT 后上调，保证三类都留得住
 
 
 def fetch_detail(info_code, retry=2):
@@ -280,6 +286,124 @@ def fetch_askci_analysis(limit=ASKCI_MAX):
     return out
 
 
+# ---------------------------------------------------------------- 方案B：199IT 行业资讯
+def _html_to_text(s):
+    """HTML 正文转纯文本"""
+    if not s:
+        return ""
+    s = re.sub(r"<script.*?</script>", " ", s, flags=re.S | re.I)
+    s = re.sub(r"<style.*?</style>", " ", s, flags=re.S | re.I)
+    s = re.sub(r"<[^>]+>", " ", s)
+    s = html_lib.unescape(s)
+    return re.sub(r"[\s\u3000]+", " ", s).strip()
+
+
+IT199_GENERIC_TAGS = {"199IT推荐文章", "199IT数据", "199IT原创", "199IT", "研究报告", "数据", "统计"}
+
+
+def _it199_org(title, tags=None):
+    """卡片主体文字：优先标题里的机构名（Eurostat：…），否则用分类里的主题标签"""
+    m = re.match(r"^\s*([^：:]{2,18})[：:]", title or "")
+    if m:
+        cand = m.group(1).strip()
+        too_generic = re.search(r"报告|数据|分析|研究|统计|年度|月度|季度|展望|趋势|白皮书|盘点", cand)
+        looks_like_year = re.match(r"^\d{4}\s*年|^\d{2,4}年", cand)
+        if not too_generic and not looks_like_year and 2 <= len(cand) <= 12:
+            return cand
+    for t in (tags or []):
+        t = t.strip()
+        if t and t not in IT199_GENERIC_TAGS and 2 <= len(t) <= 14:
+            return t
+    return "行业资讯"
+
+
+def _it199_summary(text):
+    """199IT 的「数据图表」类正文只有一串『更多阅读』相关链接，没有实质内容 → 不存摘要"""
+    text = (text or "").strip()
+    if not text:
+        return ""
+    if text.startswith("更多阅读"):
+        return ""
+    return text[:IT199_SUMMARY_LEN]
+
+
+def fetch_199it(limit=IT199_MAX):
+    """抓 199IT RSS：免费全文源，但本站只存摘要和原文链接"""
+    import feedparser
+
+    try:
+        r = requests.get(IT199_FEED, headers={"User-Agent": HEADERS["User-Agent"]}, timeout=25)
+        r.raise_for_status()
+        feed = feedparser.parse(r.content)
+    except Exception as e:
+        print(f"::warning::199IT RSS 抓取失败: {e}")
+        return []
+
+    entries = getattr(feed, "entries", []) or []
+    print(f"[信息] 199IT RSS 拿到 {len(entries)} 条")
+    if not entries:
+        print("::warning::199IT RSS 解析到 0 条，源可能异常")
+        return []
+
+    cutoff = datetime.now() - timedelta(hours=IT199_TTL_HOURS)
+    out = []
+    for e in entries:
+        if len(out) >= limit:
+            break
+        title = _html_to_text(e.get("title", ""))
+        title = re.sub(r"[\u200b\u200c\u200d\u2060\ufeff]", "", title).strip()
+        link = e.get("link", "") or ""
+        if not title or not link:
+            continue
+
+        pub = e.get("published_parsed")
+        if pub:
+            utc_dt = datetime(*pub[:6])
+            if utc_dt < cutoff:
+                continue
+            date_str = (utc_dt + timedelta(hours=8)).strftime("%Y-%m-%d")
+        else:
+            date_str = datetime.now().strftime("%Y-%m-%d")
+
+        body = ""
+        if e.get("content"):
+            body = " ".join(c.get("value", "") for c in e["content"])
+        body = _html_to_text(body or e.get("summary", ""))
+        summary = _it199_summary(body)
+        if not summary:
+            # 「数据图表」类条目正文只有一串相关链接，没有实质内容，直接跳过
+            continue
+
+        tags = [c.get("term", "") for c in (e.get("tags") or [])]
+        org = _it199_org(title, tags)
+        out.append({
+            "title":      title,
+            "org":        "199IT",
+            "date":       date_str,
+            "infoCode":   link,
+            "rating":     "",
+            "stock":      "",
+            "code":       "",
+            "researcher": "",
+            "industry":   org,       # 卡片主体位置显示机构名（Eurostat / Gartner…）
+            "pages":      "",
+            "size":       "",
+            "aim_price":  "",
+            "eps_this":   "",
+            "pe_this":    "",
+            "link":       link,
+            "detail":     link,      # 不进自建详情页，直接跳原文
+            "pdf":        "",
+            "summary":    summary,
+            "reportType": "产业分析",
+        })
+        print(f"  √ {date_str} [{org}] {title[:36]} | 摘要 {len(summary)} 字")
+
+    if not out:
+        print("::warning::199IT 这次没有抓到带正文的条目（可能全是数据图表），不影响其它研报")
+    return out
+
+
 def main():
     # 1) 个股研报
     stock_reports = fetch_eastmoney_reports(
@@ -291,10 +415,12 @@ def main():
     )
     # 3) 产业分析（中商情报网）
     analysis_reports = fetch_askci_analysis()
+    # 3b) 产业分析（199IT 行业资讯）
+    it199_reports = fetch_199it()
 
     # 4) 合并去重（按 infoCode），再按日期倒序
     merged, seen_codes = [], set()
-    for rec in stock_reports + industry_reports + analysis_reports:
+    for rec in stock_reports + industry_reports + analysis_reports + it199_reports:
         key = rec.get("infoCode", "")
         if not key or key in seen_codes:
             continue
