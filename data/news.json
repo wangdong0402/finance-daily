@@ -1,22 +1,470 @@
 {
-  "updated": "2026-11-25T13:59:34.168292+00:00",
-  "count": 135,
+  "updated": "2026-11-25T23:57:17.515510+00:00",
+  "count": 136,
   "items": [
     {
-      "title": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
-      "link": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html",
-      "summary": "Bond yields moved lower Wednesday as investors fled to bonds for protection amid sticky inflation data.",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-25T13:55:00+00:00"
+      "title": "被红果改写的Q3财报季",
+      "link": "https://www.tmtpost.com/8216958.html",
+      "summary": "二线大厂的冬天：砍成本，赌AI",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-26T03:38:00+00:00"
     },
     {
-      "title": "Fed’s preferred inflation gauge accelerated to 3.8% in October, likely sealing rate hike",
+      "title": "Asia-Pacific markets set for subdued open as investors weigh fresh U.S. tariffs",
+      "link": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html",
+      "summary": "Asia-Pacific markets were set to open higher Thursday, after Wall Street staged a dramatic recovery from session lows overnight.",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-25T23:48:51+00:00"
+    },
+    {
+      "title": "关于年终奖，这份指南请收藏",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-26/10737871.shtml",
+      "summary": "临近年底，“年终奖”是社会关注及职场热议的焦点之一。对许多劳动者而言，这笔钱既是一年辛苦工作的“压轴回报”，也是家庭年度开支的重要来源。现实中，因约定不明、规则不清、举证不能等诸多因素交织，年终奖的发放时常引发争议。围绕这笔钱到底该不该发、发多少、什么时候发，记者进行了采访。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:46:20+00:00"
+    },
+    {
+      "title": "上线即被盗？影视版权保护要“争分夺秒”",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-26/10737870.shtml",
+      "summary": "“还有观众在主创团队评论区里求资源，让人哭笑不得”，一电影导演、编剧提起这段经历，倍感无奈。主创团队耗资不菲、历时良久打磨的电影、剧集，正版上线10多分钟后，盗版资源就在全网流转。今年3月，某电视剧大规模片源泄露事件就将影视剧集盗版现象推向公众视野。今年，这样的情形多次上演。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:43:38+00:00"
+    },
+    {
+      "title": "中信建投：AI相关需求放量升级，测试设备产业链价值重估",
+      "link": "https://www.jiemian.com/article/15374661.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:41:29+00:00"
+    },
+    {
+      "title": "标普或90天内下调英伟达信用评级",
+      "link": "https://www.jiemian.com/article/15374649.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:34:07+00:00"
+    },
+    {
+      "title": "刘海星会见古巴共产党干部考察团",
+      "link": "https://www.jiemian.com/article/15374638.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:30:56+00:00"
+    },
+    {
+      "title": "界面早报 | 五部门印发《常态化帮扶资金绩效评价办法》；现货黄金跌破3500美元关口",
+      "link": "https://www.jiemian.com/article/15374395.html",
+      "summary": "保利发展：拟发行不超过200亿元公司债券；翰森制药与拜耳就HS-20122订立许可协议，最高可获里程碑付款31亿美元；美媒：美政府正重新考虑或将伊朗高层列为打击目标；美股收盘：道指翻红，芯片股继续调整，英伟达跌近4%。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:29:09+00:00"
+    },
+    {
+      "title": "高端PCB排单延至2028年，算力赛道带动产业链扩产",
+      "link": "https://www.jiemian.com/article/15374633.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:28:37+00:00"
+    },
+    {
+      "title": "机构11月以来调研近1800家上市公司，后市看好物理AI等方向机遇",
+      "link": "https://www.jiemian.com/article/15374608.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:27:24+00:00"
+    },
+    {
+      "title": "公募四季度加仓频现，偏爱科技和高增长标的",
+      "link": "https://www.jiemian.com/article/15374597.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:26:58+00:00"
+    },
+    {
+      "title": "粤港澳大湾区首个变速抽蓄工程输水系统完工",
+      "link": "https://www.jiemian.com/article/15374612.html",
+      "summary": "南方电网消息，昨天（11月25日），粤港澳大湾区首个变速抽水蓄能工程——肇庆浪江抽蓄电站充水一次成功，该工程的输水系统全面建成完工。经过15天的充水试验，肇庆浪江抽蓄工程的输水系统注满21万立方米的水，将上下水库和厂房机组设备连为一体，在山体腹地形成一个高低落差546米、长近2800米的“能量转换通道”。利用该通道，电站每小时可将112万立方米水能转换为120万度清洁电能。输水系统完工后，工程建设正式进入投产准备的最后冲刺阶段，首批两台机组预计年内投产，将给大湾区电网增加120万千瓦的调节能力。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:26:23+00:00"
+    },
+    {
+      "title": "马尔科·查拉迪亚当选马达加斯加国民议会新议长",
+      "link": "https://www.jiemian.com/article/15374593.html",
+      "summary": "马达加斯加国民议会11月25日发布消息称，马尔科·查拉迪亚当选新一任国民议会议长。马尔科·查拉迪亚表示，他将致力于推动国民议会发展，确保各项工作顺利开展。马尔科·查拉迪亚此前担任国民议会副议长。马达加斯加国民议会23日投票通过了罢免时任国民议会议长西泰尼·兰德里亚纳苏卢尼艾库的提案。该提案还导致另外三名国民议会成员被投票罢免，其中包括两名副议长。国民议会没有公布罢免上述人员的具体原因。（央视新闻）",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:22:34+00:00"
+    },
+    {
+      "title": "点心债市场扩容，人民币资产更受青睐",
+      "link": "https://www.jiemian.com/article/15374580.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:20:55+00:00"
+    },
+    {
+      "title": "【钛晨报】外媒称美国将对中国等十几个国家加征关税，外交部回应；美国10月核心PCE物价指数同比上涨3.3%，升至3年高位；小鹏机器人IRON计划2027年1月启动硬件量产",
+      "link": "https://www.tmtpost.com/8217786.html",
+      "summary": "中荷外长共识声明；两年来已有近30家机器人公司倒下；黄仁勋主持员工大会：英伟达不需要接班人计划；福特汽车证实与美国防部会谈，未提是否涉及造无人机；券商启动创业板做市交易前期准备；韩国拟扩大股市稳定基金规模，正向25家金融机构摸底追加出资能力；保利发展：拟发行不超过200亿元公司债券",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-25T23:20:00+00:00"
+    },
+    {
+      "title": "11月130余只新基成立，发起式基金加速市场布局",
+      "link": "https://www.jiemian.com/article/15374564.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:16:44+00:00"
+    },
+    {
+      "title": "强化投资者回报导向，债基迎来集中分红期",
+      "link": "https://www.jiemian.com/article/15374561.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:16:28+00:00"
+    },
+    {
+      "title": "制度持续优化，年内超1300家上市公司实施回购",
+      "link": "https://www.jiemian.com/article/15374543.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:14:50+00:00"
+    },
+    {
+      "title": "广东汕尾一路面散落大量“图钉”致车辆轮胎受损？官方通报",
+      "link": "https://www.jiemian.com/article/15374536.html",
+      "summary": "陆丰市甲子镇人民政府通报，经核查，11月24日18时40分许，三轮车驾驶人黄某某运载装修用金属螺钉配白色塑料胀塞（俗称\"地脚钉\"），途经陆甲大道鹏程圆盘路段时，因货物捆扎不牢发生遗撒。驾驶人随即放置简易警示物，并通知家人协助清理；因警示措施不足，导致一辆途经车辆轮胎受损。网传所称\"图钉\"，经核查为运输途中遗撒的上述地脚钉。目前，该路段路面已清理完毕，安全隐患已消除。交管部门已对驾驶人依法作出处理；甲子镇已主动联系涉事车主，协商善后事宜。经排查，截至目前未发现其他行人受伤或车辆受损。甲子镇将举一反三，开展道路货物运输安全专项整治，加强路面巡查和从业人员安全教育，严格落实货物装载规范，严防类似情况",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:12:44+00:00"
+    },
+    {
+      "title": "日本政府被曝或删除武器出口文件中“无核三原则”相关表述",
+      "link": "https://www.jiemian.com/article/15374526.html",
+      "summary": "据日本方面11月24日消息，日本政府正在研究修改“防卫装备转移三原则”，或删除其前言中有关“无核三原则”等内容的表述。当地时间25日晚，部分日本民众在位于东京的参议院议员会馆举行集会，反对高市内阁持续推动军事扩张，试图推动修改“无核三原则”，反对日本引进核动力潜艇，民众认为这一系列动向令人担忧。（央视新闻）",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:09:41+00:00"
+    },
+    {
+      "title": "美国拟对配额外食糖大幅加征关税，直指巴西",
+      "link": "https://wallstreetcn.com/articles/3786721",
+      "summary": "特朗普政府提议对不受配额制度覆盖的食糖大幅加征关税，主要针对全球最大产糖国巴西，此举可能进一步推高本已高于国际市场的美国国内糖价。 美国贸易代表办公室周三提出，对配额外原糖征收每公斤44美分关税，对配额外精制糖征收每公斤60美分关税。 这一提案的影响范围超出预期：除巴西外，还可能适用于所有国家，以防其他国家填补巴西留下的市场空缺。 美国贸易大使Jamieson Greer在提案随附的新闻稿中表示，全面征税是为了“防止来自其他国家的食糖进口激增，巴西的市场缺口可能由这些国家填补”。 消息公布后，纽约原糖期货周三一度上涨4.6%，伦敦精制糖期货一度上涨3.8%。 受冲击最大的可能是美国国内糖价：现",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:05:51+00:00"
+    },
+    {
+      "title": "“中国购”火了，有哪些“供货地”",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-26/10737862.shtml",
+      "summary": "“中国购”火了，有哪些“供货地”(神州看点)",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:05:48+00:00"
+    },
+    {
+      "title": "华尔街见闻早餐FM-Radio | 2026年11月26日",
+      "link": "https://wallstreetcn.com/articles/3786720",
+      "summary": "华见早安之声 要闻精选 中国 神舟二十四号载人飞船 发射圆满成功 ，乘组进驻“天宫”，中外航天员首次“太空握手”。 中国外交部 回应报道称美国将宣布对中国商品加征关税： 反对借口“产能过剩”进行政治操弄。 理想汽车 Q3营收同比增5.4%超预期 ，经营亏损大幅收窄，但 Q4交付指引远低于预期 。 小鹏汽车 ： L4级Robotaxi正式载客 ， 人形机器人IRON 登台演讲， 明年1月起量产 。 海外 美联储青睐通胀指标 美国PCE 10月同比涨3.8%、涨幅创三年半新高， 核心PCE同比超预期涨3.3% ，12月加息几成定局；美 三季度GDP 年化季环比 增速大幅上修至4.3% ；10月耐用",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:05:40+00:00"
+    },
+    {
+      "title": "拯救纳指！“大空头”Burry转多：做空仓位几近清零，四分之一现金备战抄底",
+      "link": "https://wallstreetcn.com/articles/3786713",
+      "summary": "因2008年做空美国房地产而闻名的投资人Michael Burry，在本轮科技股抛售潮中调整了投资组合仓位。他在清空纳斯达克100指数的看跌期权后，整体持仓已从做空转向偏多，这是他一段时间以来最为看多的状态。 Burry周三早间在其Substack专栏\"Cassandra Unchained\"发文表示： \"在全球范围内，我的投资组合比过去一段时间更加偏多，做空更少。\" 他补充称， 除Palantir和MetLife的看跌期权外，目前他\"暂时几乎全部为多头\"。 之所以说是\"暂时\"，是因为他仍在持续评估做空机会。 周三午间，美股收窄跌幅，成交量随之上升，显示投资者对解除部分看跌股票头寸的兴趣正在升",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T23:01:34+00:00"
+    },
+    {
+      "title": "AI抛售拖累美股盘中重挫，逢低买盘力撑道指转涨，避险需求推升美债，贵金属深V反转",
+      "link": "https://wallstreetcn.com/articles/3786656",
+      "summary": "美国股市在感恩节假期前夕剧烈震荡，AI相关股票抛售一度拖累纳指深跌、进入技术性熊市，但逢低买盘介入，使主要指数显著脱离日内低点。科技股仍是压力核心，道指则逆势收高。 周三标普500指数跌0.25%至7183.08点，纳斯达克综合指数跌0.65%至23579.44点，道琼斯工业平均指数涨0.31%至50173.90点。 板块层面，科技板块领跌，材料与房地产板块表现居前。节前交投清淡，成交量低于平均水平，美股周四休市、周五提前收盘。 抛售主线仍是AI交易降温。英伟达下跌，并拖累半导体板块走弱。投资者同时消化美国新的关税提案，以及强于初值的三季度经济增长和10月通胀数据，这些因素强化了对美联储维持鹰",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T22:57:21+00:00"
+    },
+    {
+      "title": "从囤商品到囤服务 小小购物车装着消费大趋势",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-26/10737860.shtml",
+      "summary": "从以旧换新到以旧换优，从囤商品到囤服务",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T22:55:24+00:00"
+    },
+    {
+      "title": "Macy's postpones Thanksgiving Day Parade due to severe weather",
+      "link": "https://www.cnbc.com/2026/11/25/macys-thanksgiving-day-parade-postponed.html",
+      "summary": "Macy's announced Wednesday that its annual Thanksgiving Day Parade is being postponed to Saturday due to severe weather.",
+      "source": "CNBC Business",
+      "category": "国际财经",
+      "published": "2026-11-25T22:26:56+00:00"
+    },
+    {
+      "title": "OpenAI与马斯克年内第二次庭审交锋：聘请Cravath顶级律师迎战",
+      "link": "https://wallstreetcn.com/articles/3786719",
+      "summary": "OpenAI已指定Cravath, Swaine & Moore律所顶级合伙人Gary Bornstein担任首席辩护律师，应对马斯克旗下公司在得克萨斯州联邦法院提起的诉讼。该案将于明年3月在Fort Worth由陪审团审理，距马斯克在加州另一起诉讼中败诉尚不足一年。 据路透报道， Bornstein是Cravath诉讼部门联席负责人，将担任该案的首席庭审律师。马斯克一方则由Bartlit Beck律所的John Hughes担任首席庭审律师，该所曾代理哈佛大学招生平权案并最终打到美国最高法院。 这起案件由X Corp与SpaceX Super Intelligence于去年提起，指控苹果与O",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T21:45:16+00:00"
+    },
+    {
+      "title": "Tech stocks sink but close well off the lows, Anthropic struggles to rebound above IPO price",
+      "link": "https://www.cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html",
+      "summary": "Nvidia and other AI-linked stocks fell as investors weighed AI spending, inflation and higher-rate risks.",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-25T21:04:57+00:00"
+    },
+    {
+      "title": "Vance says he was assured Jensen Huang was not under DOJ investigation",
+      "link": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
+      "summary": "Whether the Trump administration has investigated Jensen Huang for potential national security risks has been the subject of questions.",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-25T21:00:08+00:00"
+    },
+    {
+      "title": "AI债务风险加剧！CoreWeave、英伟达信用违约风险指标双双创历史新高",
+      "link": "https://wallstreetcn.com/articles/3786717",
+      "summary": "CoreWeave和英伟达五年期信用违约互换成本双双刷新纪录，CoreWeave违约概率被市场定价至逾70%。 据彭博报道， CoreWeave和英伟达的信用风险指标周三刷新历史最高水平，衡量市场担忧程度的广泛指标也再度回到3月份时的水平。 华尔街对科技行业为人工智能融资而进行的创纪录借贷日益担忧。同日纳指100一度跌破20%的牛熊分界线。 ICE Data Services数据显示， CoreWeave五年期债务违约保护成本一度上升2.09个百分点，为史上最大单日涨幅，达到每年15.34个百分点。掉期市场对该公司未来五年内违约的概率定价已超过70%。 英伟达、谷歌、甲骨文和SpaceX的信用",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T20:56:54+00:00"
+    },
+    {
+      "title": "标普将英伟达列入“信用观察负面”名单，治理风险成评级焦点",
+      "link": "https://wallstreetcn.com/articles/3786715",
+      "summary": "11月25日周三， 标普全球评级将英伟达的信用评级列入“信用观察负面”名单 ，意味着这家当前评级为“AA”的芯片巨头可能在90天内遭遇下调。 理由在于公司管理层与治理风险上升，这给投资者敲响了信用层面的警钟。 这是英伟达治理风波从董事会层面传导至信用市场的直接体现。本周，董事会先宣布将寻找黄仁勋的继任者，随后又恢复了他的CEO职务，而独立董事委员会对其本人的调查仍在进行中。 据路透社报道， 标普明确表态，这一事件暴露了英伟达管理层与治理框架的脆弱性，尤其是董事会结构、构成与有效性方面的不足。 上周三穆迪已经下调英伟达评级展望。 华尔街见闻提及 ，11月18日，穆迪将英伟达评级展望由“正面”下调",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T20:56:28+00:00"
+    },
+    {
+      "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
+      "link": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+      "summary": "SpaceX won approval from the FCC to put 1 million orbital data center satellites into space, a proposal that was opposed by Amazon and other groups.",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-25T19:52:47+00:00"
+    },
+    {
+      "title": "美联储褐皮书：AI基建支撑工业扩张，高成本加剧消费“K型”分化",
+      "link": "https://wallstreetcn.com/articles/3786712",
+      "summary": "美联储发布的最新一期《褐皮书》显示，美国经济整体维持轻微至适度扩张态势，但内部结构分化显著。 在数据中心建设与国防需求强劲支撑工业活动的同时，高利率、关税与能源成本持续挤压终端消费与企业利润率。 美东时间11月25日周三，美联储公布基于截至11月16日所收集信息编制的褐皮书。褐皮书显示，在12个地区联储的辖区中，有8个报告经济活动出现轻微至适度增长，其余4个辖区则维持持平。 大多数辖区预计未来数月经济将继续保持轻微至适度增长，但部分地区受选举及政策不确定性影响，企业对中短期前景的乐观情绪有所降温。 物价与劳动力市场呈现出明显的成本粘性。 整体物价延续适度上涨步伐，但 企业普遍反映投入端成本增速",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T19:49:21+00:00"
+    },
+    {
+      "title": "高盛策略师：AI抛售尚未见底，抄底为时过早，美联储转鸽是关键",
+      "link": "https://wallstreetcn.com/articles/3786711",
+      "summary": "高盛集团策略师Christian Mueller-Glissmann警告，投资者不应对当前AI板块的抛售急于抄底，市场仍在等待巨额人工智能资本开支转化为实际利润的证据。 他表示，市场正处于“相当脆弱的状态”，仓位尚未出清到足以确认底部的深度。 周三Mueller-Glissmann在接受采访时指出，高盛的风险偏好指标“尚不足以让我们在没有基本面进一步支持的情况下轻易判断底部”。 他认为，最明确的稳定力量将是美联储转向更偏鸽派的立场，并认为在美国，这一转向是有依据的。 他同时警告，若调整持续，将对经济造成实质伤害，并特别提及家庭部门美股配置比例已高于互联网泡沫时期水平。信用利差正在稳步走阔，他最",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T18:55:53+00:00"
+    },
+    {
+      "title": "中国深度参与人工智能国标体系建设",
+      "link": "http://www.eeo.com.cn/2026/1126/1103110.shtml",
+      "summary": "市场监管总局披露，我国正深度参与人工智能国际标准体系建设，聚焦数据治理、人机交互、安全可信等关键领域，组织头部企业、领先科研机构，牵头29项基础共性国际标准研制。 当前，全球人工智能技术迭代提速，各国监管框架、技术规范差异明显，标准碎片化成为产品跨境落地的重要障碍。过去，中国人工智能产业“出海”更多依靠产品、模型与场景的单点输出；如今，标准化话语权正在成为中国人工智能产业新的竞争力支点。 ...",
+      "source": "经济观察网",
+      "category": "产业科技",
+      "published": "2026-11-25T18:26:17+00:00"
+    },
+    {
+      "title": "从开箱热看中国制造供给之变",
+      "link": "http://www.eeo.com.cn/2026/1126/1103109.shtml",
+      "summary": "■刘琪 近期，“China Haul”（即“中国购物开箱”）在海外社交平台走红。外国博主空箱来华、满载而归，一段段开箱视频，把无人机、折叠屏手机、AI（人工智能）眼镜、国潮美妆、文创潮玩带到全球网友眼前。这股热潮，既是我国产业迭代升级的生动缩影，也是高水平对外开放持续深化的鲜活注脚。 小小行李箱，记录着中国制造的迭代。早些年走出国门的中国商品，多集中于轻工日用品，靠性价比打开市场；如今外国博主的...",
+      "source": "经济观察网",
+      "category": "产业科技",
+      "published": "2026-11-25T18:26:14+00:00"
+    },
+    {
+      "title": "“先卖了再说”！AI投资回报疑虑叠加通胀超预期，纳指100一度跌入熊市",
+      "link": "https://wallstreetcn.com/articles/3786710",
+      "summary": "纳斯达克100指数连续第二日重挫，盘中一度较高点回落20%，触及熊市门槛。 对人工智能过度投资的担忧集中爆发，叠加通胀数据强化加息预期，科技股遭遇广泛抛售。 周三美股盘中，纳斯达克100下跌4.5%，标普500下跌2.9%。波动性率指数（VIX）升破33，追踪芯片股的交易所基金跌超过7%。纳斯达克100年内累计涨幅已转负。标普500正走向2008年金融危机以来表现最差的11月。 “先卖出，后提问，”The Wealth Alliance总裁兼董事总经理Eric Diton表示： “这轮残酷抛售由英伟达的不稳定引发，再被美联储加息周期和对科技股盈利增长见顶的担忧放大。贷款机构感到紧张，它们在质疑",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T18:07:24+00:00"
+    },
+    {
+      "title": "After Novelty Wears off, How can Companion Robots Actually be Put to Use?",
+      "link": "https://www.tmtpost.com/8217942.html",
+      "summary": "After freshness is gone, how many of these companionship-oriented robots will stay and who are willing to pay for them?",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-25T17:49:10+00:00"
+    },
+    {
+      "title": "How data centers are driving a US natural-gas boom",
+      "link": "https://www.technologyreview.com/2026/11/25/1149836/data-centers-gas-power-plants/",
+      "summary": "In May 2025, my colleague David Rotman wrote a feature story describing how AI could keep us dependent on natural gas. Just 18 months later, I’ve lost count of how many times he’s already been proved right. Sure, it’s technically possible to meet the world’s rising electricity demand with other powe",
+      "source": "MIT科技评论",
+      "category": "产业科技",
+      "published": "2026-11-25T17:00:00+00:00"
+    },
+    {
+      "title": "逸仙电商三季度营收同比下滑11.4%至8.85亿元",
+      "link": "http://www.eeo.com.cn/2026/1126/1103106.shtml",
+      "summary": "本文来源：时代财经 美东时间11月25日盘前，完美日记母公司逸仙电商发布2026财年第三季度财报。截至2026年9月30日的3个月，逸仙电商总净营收从上年同期的9.984亿元下降11.4%至8.845亿元，略低于公司此前公布的指引区间。收入下滑主要源于彩妆品牌净收入同比下降 44.2%，护肤品品牌净收入同比增长 22.3%，二者一定程度抵消了该降幅。 2026年第三季度，逸仙电商的毛利率从上年同期的78.2%提升至78.4%；期内净亏损为1...",
+      "source": "经济观察网",
+      "category": "产业科技",
+      "published": "2026-11-25T16:52:12+00:00"
+    },
+    {
+      "title": "Jeep在华再出发：2027年上市首款新能源SUV，2028年底网点超220家",
+      "link": "http://www.eeo.com.cn/2026/1126/1103102.shtml",
+      "summary": "11月25日，Jeep品牌在广州发布了“Jeep+”生态战略，从产品与技术、网络与服务、文化与生活方式三个领域推进品牌在中国的升级。",
+      "source": "经济观察网",
+      "category": "产业科技",
+      "published": "2026-11-25T16:21:11+00:00"
+    },
+    {
+      "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
+      "link": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
+      "summary": "U.S. consumers face higher food, travel and gift costs in 2026 as inflation and Iran-war energy shocks pressure holiday budgets.",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-25T16:17:13+00:00"
+    },
+    {
+      "title": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
+      "link": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
+      "summary": "The new levies seek to counter foreign trade practices deemed unfair, discriminatory or burdensome to U.S. commerce.",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-25T16:02:52+00:00"
+    },
+    {
+      "title": "摩根大通：日股这轮回调还没到头",
+      "link": "https://wallstreetcn.com/articles/3786705",
+      "summary": "日股调整正在从AI板块的获利回吐，演变为一场由全球宏观风险驱动的仓位重估，信贷紧缩与CTA集中去杠杆可能成为下一阶段的主要压力。 摩根大通在11月25日发布的报告中指出，当前市场最大的风险并非经济衰退本身，而是信贷环境收紧。随着全球高收益债利差持续走阔，投资者正提前为类似2018年末“圣诞惊魂”的信用冲击做准备。 若衰退交易成为主导，日经平均指数可能跌破53,250点，届时CTA将清空日经225期货多头并转为净空头，进一步放大跌势。 这一担忧已反映在日股表现中。日经平均指数11月24日一度回升至59,000点，次日再度回落至56,500点附近。AI相关个股也已进入获利了结超过逢低买入的阶段。 ",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T15:46:42+00:00"
+    },
+    {
+      "title": "黄仁勋回来了，但AI的问题并没有消失",
+      "link": "https://wallstreetcn.com/articles/3786709",
+      "summary": "黄仁勋重返英伟达，看似化解了公司领导层变动带来的危机，却没有消除AI产业和英伟达自身面临的长期风险。 《华尔街日报》专栏作者James Mackintosh指出， 市场将黄仁勋回归视为利好，主要是因为英伟达避免了失去核心掌舵人的不确定性，但投资者忽视了这场回归背后的深层问题。 从公司治理、AI资本开支到行业竞争，英伟达面临的挑战并未改变，黄仁勋的强势回归甚至可能让部分问题进一步暴露。 短期来看，市场的乐观情绪有其逻辑。此前，美国政府高级别官员确认黄仁勋不构成国家安全风险，英伟达由此解除了一项重大不确定性。消息推动市场迅速反弹，英伟达市值一度增加约1万亿美元，CoreWeave、美光和SK海力士",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T15:45:48+00:00"
+    },
+    {
+      "title": "胡塞武装无人机袭击沙特最大炼油厂，布油拉升近3%重回92美元",
+      "link": "https://wallstreetcn.com/articles/3786708",
+      "summary": "也门胡塞武装对沙特最大炼油厂发动无人机袭击，并威胁红海港口，令市场重新计入中东冲突可能扰乱能源供应的风险溢价。布伦特原油期货在盘中下探后迅速反弹，升至每桶92美元上方。 布伦特原油期货周三早些时候一度跌至每桶89.50美元，随后扭转跌势。 胡塞武装称，其以单向攻击无人机袭击了沙特Ras Tanura炼油厂，该炼油厂日处理能力为55万桶，是沙特规模最大的炼油设施。 据路透援引胡塞武装军事发言人Yahya Saree的说法，袭击引发炼油厂起火。该媒体审阅的NASA卫星图像显示，位于沙特东部省海湾沿岸的炼油厂周边出现浓厚黑烟。该设施由沙特阿美所有，邻近对沙特原油出口至关重要的基础设施。 市场目前关注",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T15:41:27+00:00"
+    },
+    {
+      "title": "AI收入破亿后，OceanBase寻找数据库业务新入口",
+      "link": "https://wallstreetcn.com/articles/3786707",
+      "summary": "11月24日，蚂蚁集团旗下数据库公司OceanBase在北京举办AI数据大会。公司披露，2026年AI业务收入首次突破1亿元。 OceanBase CEO杨冰在会后群访中对华尔街见闻等媒体表示，AI相关营收中老客户贡献更大。按全量数据口径，老客户约占AI收入的七成；按客户数量计，新客户占比约40%，但新客户单体量较小、上量比老客户慢。 从这一结构来看，OceanBase当前AI业务的增长中，存量客户是重要的组成部分。对于已经使用OceanBase数据库的金融、政企客户而言，AI应用落地可能带来向量检索、知识库、Agent等新增需求，进而形成新的收入来源。 相比之下，新客户数量虽已占相当比例，收",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T15:36:51+00:00"
+    },
+    {
+      "title": "美股存储芯片股深夜重挫，美光科技跌超10%，英伟达跌超8%",
+      "link": "http://www.eeo.com.cn/2026/1125/1103095.shtml",
+      "summary": "11月25日，美股三大指数集体低开，截至北京时间22:31，道琼斯指数跌1.53%，标普500指数跌2.27%，纳斯达克综合指数跌3.41%。 存储芯片股重挫，美光科技跌超10%，SK海力士跌超7%。热门个股方面，英伟达跌超8%。 美股“科技七巨头”普跌，苹果股价下跌0.95%，微软股价下跌2.08%，谷歌-A股价下跌5.33%，亚马逊股价下跌3.98%，Meta股价下跌2.74%，特斯拉股价下跌5.43%。",
+      "source": "经济观察网",
+      "category": "产业科技",
+      "published": "2026-11-25T15:26:11+00:00"
+    },
+    {
+      "title": "卢伟冰：小米汽车第三季度“非常有收获”，2027年将进入欧洲",
+      "link": "http://www.eeo.com.cn/2026/1125/1103094.shtml",
+      "summary": "在国内完成初步布局后，小米汽车计划2027年进入欧洲市场。小米集团管理层在业绩电话会上表示，小米汽车全球化会扎根在世界顶尖的汽车研发地，2027年第三季度小米汽车将首先登陆德国市场。",
+      "source": "经济观察网",
+      "category": "产业科技",
+      "published": "2026-11-25T15:23:41+00:00"
+    },
+    {
+      "title": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
+      "link": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
+      "summary": "Jensen Huang's return as Nvidia CEO demonstrates that the U.S.-China artificial intelligence race is not just about semiconductors, but tech talent too.",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-25T14:29:00+00:00"
+    },
+    {
+      "title": "Budget carrier Norse Atlantic falls 78% after warning its finances are ‘critical’ amid soaring fuel costs",
+      "link": "https://www.cnbc.com/2026/11/25/norse-atlantic-financial-warning-fuel-costs.html",
+      "summary": "The Norwegian low-cost carrier said its situation is dependent on securing financing for its short-term liquidity needs.",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-25T14:24:04+00:00"
+    },
+    {
+      "title": "Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank",
       "link": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
       "summary": "The personal consumption expenditures price index was expected to show an annual inflation rate of 3.8% in October, according to the Dow Jones consensus.",
       "source": "CNBC 国际头条",
       "category": "国际财经",
-      "published": "2026-11-25T13:47:28+00:00"
+      "published": "2026-11-25T14:18:45+00:00"
+    },
+    {
+      "title": "Secondhand shopping is going mainstream this holiday season as consumers seek value",
+      "link": "https://www.cnbc.com/2026/11/25/secondhand-holiday-shopping-grows-as-shoppers-seek-value.html",
+      "summary": "More consumers are shopping secondhand this holiday season as they emphasize value and uniqueness in their purchases.",
+      "source": "CNBC Business",
+      "category": "国际财经",
+      "published": "2026-11-25T14:17:01+00:00"
+    },
+    {
+      "title": "中外旅行商携手开发内蒙古冰雪旅游市场",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737841.shtml",
+      "summary": "中新社内蒙古兴安盟11月25日电 (记者 张玮)“你好！中国”——2027冰雪主题旅游海外推广活动洽谈会25日晚在内蒙古自治区兴安盟阿尔山市举办。中外旅行商签署合作协议，携手开发内蒙古冰雪旅游市场。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T14:14:37+00:00"
+    },
+    {
+      "title": "万国数据营收增一成，成本上涨压缩利润空间",
+      "link": "https://wallstreetcn.com/articles/3786704",
+      "summary": "万国数据的机房更满了，利润空间却在收窄。 11月25日，数据中心运营商万国数据发布2026年三季报，营收31.8亿元，同比增长10.1%。截至9月底，上架率升至81.2%，高于上年同期的74.4%和今年二季度的79.2%。客户持续入驻，正在转化为实际收入。 但毛利润同比下降2.1%至6.26亿元，毛利率由22.1%降至19.7%。公司将其主要归因于公用事业成本增加。经调整EBITDA，即调整后的息税折旧及摊销前利润，同比增长2.8%，也明显慢于收入。 对数据中心而言，上架率提高通常有利于摊薄固定成本，机房、设备和人员可以服务更多客户。不过，客户入驻也会增加用电等支出。 万国数据年报指出，公用事",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-25T14:14:33+00:00"
+    },
+    {
+      "title": "海内外客商齐聚哈尔滨共拓入境文旅合作通道",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737840.shtml",
+      "summary": "中新社哈尔滨11月25日电 (记者 史轶夫 王琳)黑龙江省文化和旅游资产交易大会暨招商对接会——入境游资源交流对接活动25日在哈尔滨举办，重点引进境内外投资者、文旅龙头企业与优质旅行商，共拓入境文旅合作通道。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T14:13:53+00:00"
+    },
+    {
+      "title": "浙西山地间，油茶产业“长出新枝”",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737838.shtml",
+      "summary": "中新网衢州11月25日电(董易鑫 张曌)千百年以来，油茶树依山而生、岁岁结果，撑起了浙西林农的家门口生计。而今科技赋能、机械助耕，传统油茶产业正绽放出新的产业价值。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-25T14:02:24+00:00"
     },
     {
       "title": "专家学者齐聚广州共探人工智能与硬科技产业协同",
@@ -43,92 +491,12 @@
       "published": "2026-11-25T13:43:51+00:00"
     },
     {
-      "title": "目标5000亿元 山东布局智能网联新能源汽车新赛道",
-      "link": "http://www.eeo.com.cn/2026/1125/1103070.shtml",
-      "summary": "山东省工业和信息化厅等十一部门联合印发的《山东省智能网联新能源汽车产业高质量发展行动计划（2026-2030年）》提出，力争到2030年，山东智能网联新能源汽车产业规模达到5000亿元左右、新能源汽车占汽车比重达到55%，加快打造全国重要的智能网联新能源汽车生产基地和产业创新高地。",
-      "source": "经济观察网",
-      "category": "产业科技",
-      "published": "2026-11-25T13:41:23+00:00"
-    },
-    {
-      "title": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
-      "link": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
-      "summary": "The new levies seek to counter foreign trade practices deemed unfair, discriminatory, or burdensome to U.S. commerce.",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-25T13:37:35+00:00"
-    },
-    {
-      "title": "一汽解放与Deutz签署技术授权协议",
-      "link": "https://www.jiemian.com/article/15374208.html",
-      "summary": "11月25日，一汽解放与Deutz TLA合作协议签约仪式在上海宝马工程机械展解放动力展区举行。本次签署的TLA协议（技术授权协议）标志着合作由意向规划阶段迈入标准化落地阶段。道依茨（Deutz）是德国科隆的一家发动机独立制造品牌，创立于1864年。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:36:00+00:00"
-    },
-    {
-      "title": "蒙古国努姆鲁格保护区火灾初估损失超9亿美元",
-      "link": "https://www.jiemian.com/article/15374202.html",
-      "summary": "",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:34:36+00:00"
-    },
-    {
-      "title": "以议会初审通过法案，将就哈马斯袭击事件成立国家调查委员会",
-      "link": "https://www.jiemian.com/article/15374189.html",
-      "summary": "当地时间11月25日，以色列议会以65票赞成、50票反对的结果，初审通过一项由正直党领导人埃森科特领衔的反对派阵营推动的法案，决定就2023年10月7日巴勒斯坦伊斯兰抵抗运动（哈马斯）袭击事件成立国家调查委员会。（央视新闻）",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:34:12+00:00"
-    },
-    {
-      "title": "美国10月核心PCE环比增长0.3%，符合预期",
-      "link": "https://www.jiemian.com/article/15374183.html",
-      "summary": "",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:33:36+00:00"
-    },
-    {
-      "title": "中荷外长共识声明",
-      "link": "https://www.jiemian.com/article/15374176.html",
-      "summary": "",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:33:09+00:00"
-    },
-    {
       "title": "小鹏人形机器人IRON预计2027年1月进入硬件量产阶段",
       "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737811.shtml",
       "summary": "中新社广州11月25日电 (记者 蔡敏婕)第八届小鹏科技日25日在广州举办。记者从活动上获悉，小鹏高阶通用人形机器人IRON预计2027年1月进入硬件量产阶段，第一季度作为导购进入小鹏门店实习，推动人形机器人从技术展示走向真实岗位。",
       "source": "中新网-财经",
       "category": "中文宏观",
       "published": "2026-11-25T13:32:35+00:00"
-    },
-    {
-      "title": "美国上周首次申领失业救济人数为18.9万",
-      "link": "https://www.jiemian.com/article/15374175.html",
-      "summary": "预估为20万，前值为20.3万。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:32:03+00:00"
-    },
-    {
-      "title": "年产值300亿元，联想高性能服务器产线在天津投产",
-      "link": "https://www.jiemian.com/article/15374169.html",
-      "summary": "11月25日，联想集团在天津举行高性能服务器产线落成暨超节点项目启动仪式。据悉，此次落成投产的高性能服务器产线位于联想（天津）创新产业园，于2025年底启动建设，总投资1.2亿元。该产线具备年产20万台通用服务器、10万台AI服务器的设计产能，预计年产值达300亿元。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:32:01+00:00"
-    },
-    {
-      "title": "美国10月PCE物价指数同比增长3.8%创三年半新高，核心同比 3.3%超预期，12月加息几成定局！",
-      "link": "https://wallstreetcn.com/articles/3786699",
-      "summary": "美国通胀降温进程在10月再度受阻。核心个人消费支出（PCE）物价指数同比升幅反弹至3.3%，高于市场预期，距离美联储2%的政策目标仍有明显距离。消费支出同期几乎停滞，通胀黏性与需求走弱同时出现，货币政策的转向时点被迫继续后移。 美国商务部经济分析局周三公布的数据显示，10月核心PCE物价指数同比上涨3.3%，预期为3.2%，前值为3.1%；环比上涨0.3%，与预期和前值一致。整体PCE物价指数同比上涨3.8%，为2023年5月以来最高，预期3.8%，前值3.6%；环比上涨0.3%，前值0.5%。 与通胀黏性并存的是消费动能明显减弱。经通胀调整后的个人消费支出环比几乎持平，而彭博调查经济学家的预",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:30:36+00:00"
     },
     {
       "title": "广东发布综合运输服务发展“十五五”规划",
@@ -147,76 +515,12 @@
       "published": "2026-11-25T13:27:18+00:00"
     },
     {
-      "title": "宇特光电：公司将于2026年12月11日召开2026年第二次临时股东会",
-      "link": "http://www.eeo.com.cn/2026/1125/1103059.shtml",
-      "summary": "证券日报网讯11月25日，宇特光电发布公告称，公司将于2026年12月11日召开2026年第二次临时股东会。 （编辑 吴越）",
-      "source": "经济观察网",
-      "category": "产业科技",
-      "published": "2026-11-25T13:26:42+00:00"
-    },
-    {
-      "title": "凯达重工：2026年第四次临时股东会决议公告",
-      "link": "http://www.eeo.com.cn/2026/1125/1103058.shtml",
-      "summary": "证券日报网讯11月25日，凯达重工发布公告称，公司于2026年11月24日召开2026年第四次临时股东会，审议通过《关于拟变更公司注册资本、公司类型暨修订〈公司章程〉的议案》。 （编辑 赵思卓）",
-      "source": "经济观察网",
-      "category": "产业科技",
-      "published": "2026-11-25T13:26:17+00:00"
-    },
-    {
-      "title": "银价弱势寻底 市场人士称反转尚需时日",
-      "link": "http://www.eeo.com.cn/2026/1125/1103057.shtml",
-      "summary": "近期，金银价格同步走弱，白银跌幅明显大于黄金。截至11月25日日盘收盘，国内沪银主力合约收报9438元/千克，较前结算价下跌859元，跌幅达8.34%，盘中最低触及9400元/千克，续创阶段新低。 国际方面，北京时间11月25日，COMEX白银、COMEX黄金盘中双双走跌。截至记者发稿时，COMEX白银报价40.145美元/盎司，下跌1.56%；COMEX黄金报价3532.6美元/盎司，下跌0.82%。至此，金银比走阔至约88.00，较11月中旬的81.77明显抬升，白...",
-      "source": "经济观察网",
-      "category": "产业科技",
-      "published": "2026-11-25T13:26:11+00:00"
-    },
-    {
-      "title": "兴业证券原首席策略张启尧确认离职，回应：属于正常人才流动，团队已平稳衔接",
-      "link": "https://www.jiemian.com/article/15374152.html",
-      "summary": "兴业证券原首席策略分析师张启尧离职一事引发行业关注。据兴业证券经济与金融研究院确认，张启尧确已离职，本次人员变动属于行业正常人才流动。研究院方面表示，充分尊重个人职业选择，并对张启尧任职期间作出的贡献致以诚挚谢意。据了解，与张启尧一同离职的还有其所带领的策略团队。研究院强调，目前人才梯队完善、全板块覆盖保持完整，策略研究工作已平稳衔接，各项研究业务正常开展，不会对机构客户服务造成影响。另据多方了解，已有卖方大将明确将加盟兴业证券策略团队，相关程序正在进行中。（财联社记者 林坚）",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:24:37+00:00"
-    },
-    {
-      "title": "中荷外长共识声明",
-      "link": "https://www.jiemian.com/article/15374143.html",
-      "summary": "",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:24:03+00:00"
-    },
-    {
-      "title": "九号公司：2026年第一次临时股东会决议公告",
-      "link": "http://www.eeo.com.cn/2026/1125/1103054.shtml",
-      "summary": "证券日报网讯11月25日，九号公司发布公告称，公司于2026年11月25日召开2026年第一次临时股东会，审议通过《关于调整2024年度回购股份用途并注销的议案》《关于增加2026年度回购股份资金总额的议案》《关于向控股子公司提供财务资助的议案》。 （编辑 王雪儿）",
-      "source": "经济观察网",
-      "category": "产业科技",
-      "published": "2026-11-25T13:23:34+00:00"
-    },
-    {
       "title": "量子技术“慧眼”智能体在杭州发布 冀降低早期项目识别门槛",
       "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737795.shtml",
       "summary": "中新网杭州11月25日电(鲍梦妮)11月25日，杭州技术转移转化中心发布量子技术“慧眼”智能体。该智能体面向量子技术领域，旨在通过垂直领域的深度数据挖掘，研判产业热点，预测产业方向，发掘并服务早期优质项目，为杭州未来产业布局贡献力量。",
       "source": "中新网-财经",
       "category": "中文宏观",
       "published": "2026-11-25T13:20:56+00:00"
-    },
-    {
-      "title": "谷爱凌奥地利训练肩膀脱臼，参加云顶世界杯站比赛可能性较小",
-      "link": "https://www.jiemian.com/article/15374132.html",
-      "summary": "",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:20:32+00:00"
-    },
-    {
-      "title": "可口可乐瓶身不再标注生产日期，客服回应：依据新国标调整",
-      "link": "https://www.jiemian.com/article/15374124.html",
-      "summary": "近日，吉林长春一位消费者在社交平台发帖称，购买到“2027年7月22日”的瓶装可口可乐，此事引发讨论。中粮可口可乐客服工作人员回应称，此次调整依据的是《食品安全国家标准 预包装食品标签通则》（GB 7718—2025）。该标准于2025年3月发布，2027年3月16日正式实施，规定保质期6个月及以上的预包装食品，可仅标示保质期和保质期到期日，生产日期为自愿标示项目，企业可自主选择是否印制。目前处于两年过渡期，企业可提前执行新标准。客服同时说明，如需了解生产时间，可将到期日向前倒推保质期时长；市场目前新旧包装同时流通，印有生产日期且未过期的旧款产品仍可正常销售，新下线产品统一采用新版标签，预计到",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:19:19+00:00"
     },
     {
       "title": "向“深”向“新” 两项全国创新大赛总决赛在杭启幕",
@@ -227,100 +531,12 @@
       "published": "2026-11-25T13:16:40+00:00"
     },
     {
-      "title": "音乐流媒体平台Tidal将下架纯AI生成歌曲",
-      "link": "https://www.jiemian.com/article/15374113.html",
-      "summary": "音乐流媒体平台Tidal当地时间11月24日宣布，今年12月9日起，平台将下架所有被判定为“100%AI生成”的歌曲，并停止接收新的AI音乐上传。Tidal负责人罗伯特·安德森表示，平台已上线的AI音乐内容将被分批清除，清除工作预计到2027年初完成，清理歌曲规模大概为2900万首。未来，估计平台每天还将拒收8万到8.5万首新上传的AI作品。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:14:30+00:00"
-    },
-    {
-      "title": "中核田湾核电8号机组完成热态性能试验",
-      "link": "https://www.jiemian.com/article/15374108.html",
-      "summary": "11月25日，中核集团旗下中国核电控股的田湾核电8号机组完成热态性能试验。热态性能试验简称“热试”，目的是在核燃料装填前全面验证核岛、常规岛设备和系统在热态运行时的可靠性，确保相关参数满足设计要求。试验验证了田湾核电8号机组一、二回路相关系统在加热、热态及冷却工况下的性能。后续，江苏核电将稳步推进田湾核电8号机组热试后拆堆、役检等各项装料准备工作。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:12:51+00:00"
-    },
-    {
-      "title": "医疗AI进医院，模型高分还不够",
-      "link": "https://www.tmtpost.com/8217765.html",
-      "summary": "医疗AI正在从医学知识问答和特定疾病识别，进一步进入医疗服务的实际流程。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-25T13:11:26+00:00"
-    },
-    {
-      "title": "英伟达跌成美股“七巨头”最便宜！黄仁勋回归狂欢迅速消退，下周又将迎国会听证大考",
-      "link": "https://wallstreetcn.com/articles/3786695",
-      "summary": "黄仁勋回归带来的短暂狂欢正在迅速消退。英伟达股价周二领跌大盘，较10月6日高点累计下跌35%，市值蒸发2万亿美元，成为标普500指数同期表现最差的30只个股之一，即便周一曾大涨31%。市场很快意识到，这位CEO的复职只解决了领导层问题，并未触及压在股价上的根本疑问。 周三盘前，英伟达股价继续下挫，跌幅一度达5.8%，人工智能板块整体回调。 该股目前约为预期盈利的10倍，上周刚创下2008年以来最低估值倍数，成为标普500指数中最便宜的股票之一，也是“七巨头”中估值最低的成员。 黄仁勋本人即将迎来真正的考验。据彭博报道，他将于12月3日出席参议院银行委员会公开听证会。该委员会资深成员、参议员El",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:10:53+00:00"
-    },
-    {
       "title": "The Download: AI swamping open records, and firefighting for permafrost",
       "link": "https://www.technologyreview.com/2026/11/25/1149808/the-download-ai-open-records-permafrost-fires/",
       "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI is straining America’s open records systems AI has intensified investors’ interest in public records. Over the last few years, venture-backed startups have rai",
       "source": "MIT科技评论",
       "category": "产业科技",
       "published": "2026-11-25T13:10:00+00:00"
-    },
-    {
-      "title": "财政部等五部门印发《常态化帮扶资金绩效评价办法》",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737799.shtml",
-      "summary": "记者11月25日从财政部了解到，为规范和加强常态化帮扶资金管理，财政部、农业农村部等五部门近日印发《常态化帮扶资金绩效评价办法》。",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:06:07+00:00"
-    },
-    {
-      "title": "重庆市人大社会委原副主任委员张兴益被开除党籍",
-      "link": "https://www.jiemian.com/article/15374101.html",
-      "summary": "",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:01:20+00:00"
-    },
-    {
-      "title": "财政部等五部门印发《常态化帮扶资金绩效评价办法》",
-      "link": "https://www.jiemian.com/article/15374099.html",
-      "summary": "",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T13:00:54+00:00"
-    },
-    {
-      "title": "韩股陷入“无差别抛售”：三星与SK海力士齐现死叉，高盛称估值已计入70%盈利暴跌",
-      "link": "https://wallstreetcn.com/articles/3786692",
-      "summary": "韩国股市再度进入清算模式。KOSPI指数隔夜重挫，收于本轮AI行情调整启动以来的最低水平，三星电子与SK海力士双双跌破关键支撑并确认“死叉”，技术面全面恶化。与此同时， 对冲基金正以十余年未见的速度撤离韩国市场，但高盛的估值框架显示，当前股价已隐含盈利预测被下调70%的极端情形。 高盛数据显示，亚洲基本面多空对冲基金的净杠杆率在一个月内骤降47.4个百分点至10%，为该行十余年数据中的最低读数。韩国市场的净配置比例已降至2.3%，处于过去一年的第11百分位，韩国与中国台湾继续主导亚洲范围内的抛售。 技术面上， KOSPI在4200点之前已无明显支撑，100日与200日均线形成的大级别看空交叉已",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T12:39:52+00:00"
-    },
-    {
-      "title": "海南高质量发展“第三极”的新图景：探路开放、航运扩容、产业向新",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737777.shtml",
-      "summary": "中新网儋州11月25日电 (记者 王子谦)11月25日，中国共产党儋州市第十四次代表大会开幕。在海南全岛封关运作即将迎来一周年之际，这场大会为自贸港“样板间”谋划今后五年的发展新图景。",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T12:35:07+00:00"
-    },
-    {
-      "title": "杭州发布颠覆性技术及OPC创新应用场景清单",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737774.shtml",
-      "summary": "中新网杭州11月25日电(鲍梦妮)11月25日，杭州颠覆性技术及OPC创新应用场景清单(下称“场景清单”)在第十五届中国创新创业大赛颠覆性技术创新大赛总决赛、“AI+OPC”创新应用专业赛总决赛(下称“大赛”)现场发布。",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T12:31:07+00:00"
-    },
-    {
-      "title": "第二届全球技术创新大赛两大专题赛在杭州收官",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737770.shtml",
-      "summary": "中新网杭州11月25日电(鲍梦妮)11月25日，第二届全球技术创新大赛生物制造、AI+光电融合专题赛总决赛颁奖典礼暨首期Z#178;创业营结营活动在浙江大学杭州国际科创中心(下称科创中心)水博园区举行。",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T12:27:45+00:00"
     },
     {
       "title": "Liesman: Nvidia whiplash tests Kevin Warsh’s push to read market signals",
@@ -331,54 +547,6 @@
       "published": "2026-11-25T12:26:41+00:00"
     },
     {
-      "title": "重庆出台新规强化农民工工资支付保障",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737772.shtml",
-      "summary": "中新网重庆11月25日电 (记者 钟旖)记者25日从重庆市人力资源和社会保障局获悉，该局近日联合重庆市发展改革委等11个部门印发《关于加强政府项目国企项目农民工工资支付管理的通知》(以下简称《通知》)，聚焦政府投资项目、国有企业投资项目欠薪风险源头治理，推出人工费单列、开工预拨、按月独立拨付、建设单位代发工资试点等举措，构建“源头防控—过程监管—失信惩戒”全链条欠薪治理闭环。",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T12:24:47+00:00"
-    },
-    {
-      "title": "浦江中国AI Token业务加速落地，首批客户已接入",
-      "link": "https://wallstreetcn.com/articles/3786694",
-      "summary": "浦江中国控股有限公司（ 1417.HK ）的AI Token业务正在进入实际运行与加速阶段。 11 月 25 日，浦江中国在港交所发布业务更新补充公告，披露 AI Token 生产与分发业务的商业模式、客户接入情况及分阶段产能目标。 按公告，公司计划 2026 年 12 月底前实现每月 10 万亿至 12 万亿 Token 的生产容量、7 万亿至 8.4 万亿的实际产量，实际利用率超过 70%。到 2027 年第二季度，月度生产容量目标提升至约 80 万亿。 首批客户已接入并开展推理服务。公告称，公司已完成首期基础设施部署及系统搭建，模型部署、推理引擎调优及适配测试进入试运行阶段。经测试，现有",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T12:23:40+00:00"
-    },
-    {
-      "title": "2026中国饭店业高质量大会在三亚开幕",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737768.shtml",
-      "summary": "中新网北京11月25日电 (记者 刘文文)记者从中国饭店协会获悉，2026中国饭店业高质量大会25日在海南三亚拉开帷幕。大会由中国饭店协会以及海南省酒店与餐饮行业协会主办，来自海内外的住宿餐饮企业、酒店用品及供应链企业、行业协会与行业组织、科研院校、投资机构及媒体等领域代表共1500人参加活动。",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T12:23:09+00:00"
-    },
-    {
-      "title": "四川先进材料产业持续壮大 今年上半年营收超3838亿元",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-25/10737767.shtml",
-      "summary": "中新网成都11月25日电 (单鹏)四川省经济和信息化厅25日在成都举行四川省先进材料产业链供需对接活动新闻通气会。四川省经济和信息化厅材料工业处副处长史忠霖介绍，四川先进材料产业规模持续壮大，今年上半年实现营业收入3838.97亿元，同比增长29.9%。",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-25T12:21:25+00:00"
-    },
-    {
-      "title": "高盛：市场已替美联储“加息四次”，但沃什12月仍将继续加息",
-      "link": "https://wallstreetcn.com/articles/3786691",
-      "summary": "高盛测算，今年以来美国金融条件已收紧约100个基点，相当于美联储四次标准加息的紧缩效果，而其中几乎全部发生在9月初之后。该行首席美国经济学家David Mericle认为， 这并不足以阻止美联储在12月再度加息25个基点，他将此举称为“近乎确定”。 Mericle在最新报告《金融条件收紧对增长和美联储意味着什么》中表示，金融条件指数（FCI）今年累计收紧104.1个基点，其中上周单周就贡献逾40个基点。上周标普500指数下跌8.4%，为“解放日”以来最差单周表现，纳斯达克100指数距熊市仅一步之遥，高盛的恐慌指数升至纪录高位9.8。 尽管市场已自行完成大部分紧缩， Mericle仍预计美联储将",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T12:16:50+00:00"
-    },
-    {
-      "title": "硬折扣祖师爷奥乐齐，也要面对中国速度",
-      "link": "https://wallstreetcn.com/articles/3786693",
-      "summary": "如果说奥乐齐这个名字对不少消费者仍显陌生的话，它在中国硬折扣行业，却已经是一个无法绕开的符号。 有零售行业人士甚至半开玩笑地表示：“超盒算NB、快乐猴的高管，哪有一个敢说自己没有泡在奥乐齐里看过。” 很长时间里，这家德国零售商都是国内少有的、拥有成熟经营经验的硬折扣零售模板。 而这个被争相学习的对象，终于开始加快扩张了。 11月21日至22日，奥乐齐在安徽合肥、芜湖陆续开出六家门店，首次进入安徽市场，全国门店数量达到约140家。 全天候科技从接近奥乐齐人士处获悉，安徽首店的整体开业销售表现刷新了奥乐齐的历史纪录。 未来一段时间，奥乐齐还将继续加密华东市场，拓展浙江。 但在它开始提速的同时，中国",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T12:14:39+00:00"
-    },
-    {
       "title": "2.07 亿接盘都市酒店，岭南控股踩点兑现三年承诺",
       "link": "https://www.tmtpost.com/8217705.html",
       "summary": "同业竞争承诺履约背后，轻资产加盟能否撑起第二增长曲线。",
@@ -387,84 +555,12 @@
       "published": "2026-11-25T12:04:06+00:00"
     },
     {
-      "title": "AI交易信仰动摇，纳指期货跌超3%，英伟达盘前跌超4%，金银大跌，避险资金涌入美债",
-      "link": "https://wallstreetcn.com/articles/3786656",
-      "summary": "围绕人工智能热潮能否持续的疑虑正在重塑全球资产定价，投资者从科技股大举撤离，资金涌向国债与美元避险。 11月25日，美股股指期货跌幅扩大，纳指期货跌超3%，标普500指数期货跌超1%。科技股延续跌势，英伟达跌超4%，Anthropic下跌3%；AMD跌近5%，闪迪跌超5%。 避险需求推动美债上涨，基准10年期美债收益率下降4个基点至4.89%，日本10年期国债收益率同步下行7.5个基点至2.645%。现货黄金跌破3500美元/盎司关口，报3495.49美元/盎司，为去年9月以来最低水平，较高点累计回撤将超过37.5%。现货白银跌破40美元/盎司关口，报39.99美元/盎司，创2025年9月以来",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T12:03:32+00:00"
-    },
-    {
-      "title": "Secondhand shopping is going mainstream this holiday season as consumers seek value",
-      "link": "https://www.cnbc.com/2026/11/25/secondhand-holiday-shopping-grows-as-shoppers-seek-value.html",
-      "summary": "More consumers are shopping secondhand this holiday season as they emphasize value and uniqueness in their purchases.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-25T12:00:01+00:00"
-    },
-    {
-      "title": "Meta将Muse智能体接入Instagram与沃尔玛",
-      "link": "https://wallstreetcn.com/articles/3786674",
-      "summary": "沃尔玛正尝试让消费者通过AI助手直接完成购物。当地时间周二，沃尔玛宣布与Meta达成合作，用户可以通过Meta旗下AI智能体Muse购买沃尔玛的黑色星期五促销商品，无需自行浏览沃尔玛网站，即可完成商品搜索、比价和下单。 具体而言， 用户打开Muse应用并登录沃尔玛账号后，只需描述所需商品，Muse便会向沃尔玛发送请求，由沃尔玛返回相关商品信息，帮助用户比较选项、寻找优惠并生成购物车。 沃尔玛表示，合作体验内置了隐私保护机制。 Muse无法访问用户的沃尔玛购物历史及其他个人信息；消费者可以设置消费限额、要求购买前审批，并查看AI代理提交的订单，也可以随时删除代理档案。 此次合作意味着沃尔玛开始通",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T11:56:06+00:00"
-    },
-    {
-      "title": "华尔街最乐观之一！德银：盈利增长叠加经济复苏，标普500明年底有望冲上9000点",
-      "link": "https://wallstreetcn.com/articles/3786688",
-      "summary": "美股近期遭遇剧烈抛售，华尔街仍有策略师看好后市，认为企业盈利增长强劲、经济复苏持续扩散，将为市场反弹提供支撑。 德意志银行策略师Binky Chadha在最新客户报告中预计，标普500指数将在2027年底升至9000点，较当前水平上涨约25%，与Yardeni Research并列彭博追踪的最乐观预测。Chadha认为， 近期科技股主导的抛售只是短期波动，类似冲击通常需要六至八周才能消化。 与此同时，风险规避型投资者已大幅削减股票仓位，如果美国经济避免衰退，当前低迷的市场情绪反而可能为后续反弹创造条件。 近期市场震荡加剧，标普500指数上周因AI概念股抛售进入技术性回调，纳斯达克100指数上周",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T11:48:43+00:00"
-    },
-    {
-      "title": "Futures sink further into the red as tech worries resurge",
-      "link": "https://www.cnbc.com/2026/11/25/futures-sink-further-into-the-red-as-tech-worries-resurge.html",
-      "summary": "Huang defies calls for Nvidia succession planning, sending shares lower premarket",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-25T11:43:37+00:00"
-    },
-    {
-      "title": "AI制药终于开始省时间了",
-      "link": "https://wallstreetcn.com/articles/3786689",
-      "summary": "据追风交易台，摩根大通在最新发布的研报中指出，诺华在11月19日的投资者日上首次系统披露了AI在药物研发中的实际成效 ：早期药物发现周期从3至4年缩短至2.5年以内，临床研究报告的90%由AI起草，审阅时间减少25%。 这是大型药企首次以量化数据证明，AI不再只是实验室里的概念，而是开始真实地压缩研发时间与成本。摩根大通认为，这一信号对AI制药（AIDD）投资主题构成建设性支撑。 诺华管理层同时给出了审慎的一面：许多AI设计的分子仍在基础细胞测试中失败，AI尚未被证明能提升人体临床试验的成功率。11月23日， 诺华CEO Vas Narasimhan在接受CNBC采访时表示，AI有望在未来5至",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T11:42:21+00:00"
-    },
-    {
-      "title": "Anthropic内部争论升级：从能力优势到决策权，人类是否应该让位？",
-      "link": "https://wallstreetcn.com/articles/3786687",
-      "summary": "超级智能时代，人类是否应该向AI让渡决策权，正成为Anthropic内部及整个AI行业争论日益激烈的议题。 据Axios报道， 越来越多AI行业高管开始反对Anthropic内部一种颇具影响力的观点：当AI足够强大，能够在人类无法胜任的领域做出更好判断时，人类应当主动交出部分决策权。 这场分歧的核心，是超级智能究竟应该成为人类的辅助工具，还是在某些领域获得超越人类的自主权。 随着前沿AI模型能力快速提升，这一争论正在从理论走向现实。 部分AI公司员工认为，某些模型已经强大到永远不应发布。 多位消息人士指出，凭借在前沿AI开发上的领先地位，Anthropic可能成为第一家真正需要面对超级智能决策",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T11:18:07+00:00"
-    },
-    {
       "title": "对赌刚过业绩就变脸，和仁科技或迎存储芯片二股东 | 并购一线",
       "link": "https://www.tmtpost.com/8217626.html",
       "summary": "对于和仁科技来说，这个可能成为二股东的芯片公司将是其业绩转正的关键变量。",
       "source": "钛媒体",
       "category": "产业科技",
       "published": "2026-11-25T11:17:02+00:00"
-    },
-    {
-      "title": "Budget carrier Norse Atlantic falls 77% after warning its finances are ‘critical’ amid soaring fuel costs",
-      "link": "https://www.cnbc.com/2026/11/25/norse-atlantic-financial-warning-fuel-costs.html",
-      "summary": "The Norwegian low-cost carrier said its situation is dependent on securing financing for its short-term liquidity needs.",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-25T11:10:28+00:00"
-    },
-    {
-      "title": "次贷危机的味道？甲骨文CDS利差已超越2008年的贝尔斯登，AI数据中心股权被抹去近半",
-      "link": "https://wallstreetcn.com/articles/3786678",
-      "summary": "AI基础设施建设的融资信用，正在交易员的报价屏上出现裂缝：甲骨文五年期信用违约互换（CDS）利差已扩至316个基点，超过贝尔斯登在2008年1月1日时的水平。这个利差所隐含的五年违约概率约为23%，而一年前这一数字仅为6%。 一份由独立信用研究者Groundbreaker发布、题为《Mark to Swap: How the Market is Mispricing the AI Boom》的研究给出了更具体的数字： 以25个披露信息较充分的AI数据中心园区为样本，按承租方的CDS利差而非评级机构评级重估后，约40%的业主股权已被抹去，甲骨文项目背后为72%，CoreWeave背后高达91%。",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T11:05:16+00:00"
     },
     {
       "title": "朋友圈进入集体大失声时代",
@@ -515,22 +611,6 @@
       "published": "2026-11-25T10:49:39+00:00"
     },
     {
-      "title": "黄仁勋回归引爆期权狂欢！Reddit散户单笔赚近1984%，1.9万美元秒赚37.7万美元",
-      "link": "https://wallstreetcn.com/articles/3786684",
-      "summary": "英伟达股价单日暴涨31%，不仅让此前押注反弹的期权交易员一夜暴富，也让市场见识了极端行情下衍生品交易的惊人收益。 本月英伟达股价一度累计下跌39%，但周一董事会重新任命黄仁勋为首席执行官后，股价迅速反弹至165.05美元。 一名机构交易员上周五买入1月到期、行权价160美元的看涨期权，周一卖出一半头寸，锁定2380万美元利润。另一名散户则以1.9万美元买入看涨期权，最终获利37.69万美元，收益率高达1984%。 据彭博报道，此次人事决定是在特朗普推动下作出的，董事会甚至未征询管理层意见。黄仁勋随后向英伟达员工道歉，并表示自己每天都在接受心理治疗。 这一戏剧性反转不仅扭转了英伟达此前数周的跌势",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T10:31:12+00:00"
-    },
-    {
-      "title": "Tech rout deepens globally; Softbank falls 15%, Nvidia down 4.5% premarket",
-      "link": "https://www.cnbc.com/2026/11/25/tech-stocks-softbank-group-advantest-sk-hynix-samsung.html",
-      "summary": "Tech stocks tumbled Wednesday, as renewed concerns over the artificial intelligence trade rattled investors.",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-25T10:29:18+00:00"
-    },
-    {
       "title": "豆包侧边栏放进购物入口：大厂AI，只做翻译，不当主人",
       "link": "https://www.tmtpost.com/8216992.html",
       "summary": "AI翻译层、豆包购物、大厂AI入口战、独立变现、超级App",
@@ -563,38 +643,6 @@
       "published": "2026-11-25T10:23:00+00:00"
     },
     {
-      "title": "AI进厂，先革企业的命",
-      "link": "https://www.tmtpost.com/8217052.html",
-      "summary": "AI巨头的终极战场，是企业的工作流",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-25T10:22:56+00:00"
-    },
-    {
-      "title": "三季度亏损1.33亿，启用星巴克前高管的Tims能否熬过转型之痛？",
-      "link": "https://www.tmtpost.com/8217502.html",
-      "summary": "在咖啡行业整体竞争压力急剧增长的背景下，Tims已经告别过去快速铺店的扩张模式。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-25T10:12:36+00:00"
-    },
-    {
-      "title": "今晚，美联储12月决议前最后一份重磅通胀报告出炉！",
-      "link": "https://wallstreetcn.com/articles/3786680",
-      "summary": "美联储12月议息会议临近，市场正等待一份关键通胀报告，以判断下一阶段货币政策走向。美国劳工部将于当地时间11月25日上午8时30分（北京时间21时30分）公布10月个人消费支出（PCE）物价指数。这将是美联储12月8日至9日议息会议前最后一份重磅通胀报告，而11月CPI数据要到议息会议结束后的第二天才会公布。 市场普遍预计， 10月整体PCE同比增速将从9月的3.6%升至3.8%，核心PCE同比增速将从3.1%升至3.2%。 在市场已经押注美联储12月进一步加息的背景下，投资者更关心通胀是否会持续高企，以及美联储的紧缩立场可能延续至2027年何时。 数据公布前，美债收益率全线下行。美国10年期",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T10:06:17+00:00"
-    },
-    {
-      "title": "10万亿不够“救市”，韩国酝酿扩大股市稳定基金！",
-      "link": "https://wallstreetcn.com/articles/3786681",
-      "summary": "韩国产业银行已向各大券商发函，摸底其对证券市场稳定基金（证安基金）的追加出资能力。 距离政府宣布启动证安基金运作准备仅三天，相关行动已从机制启动转向资金能力摸底，市场据此猜测，基金扩容可能正在酝酿。 据《韩国经济》报道，产业银行在公文中要求各家券商确认可向证安基金追加出资的资金额度。 该基金目前的出资承诺总额为10.76万亿韩元，但尚未发生实际缴款。 扩容压力主要来自基金规模与韩国股市体量之间的严重失衡。以2020年3月约定出资时KOSPI指数低点对应的市值计算，10.76万亿韩元相当于有价证券市场总市值的1.1%。此后，半导体等板块推动股指大幅上涨，市场总市值持续扩张，如今这一比例已降至0.",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T10:03:25+00:00"
-    },
-    {
       "title": "AI is straining America’s open records systems",
       "link": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
       "summary": "In Panton, Vermont, population 660, town clerk Kyle Rowe did it all. He crafted budgets, paid vendors, handled property tax disputes, and served as the town’s zoning supervisor and presiding elections officer. During morning office hours at the town hall—a wood-frame structure built as a church in 1",
@@ -619,20 +667,20 @@
       "published": "2026-11-25T06:29:46+00:00"
     },
     {
-      "title": "Houthi attack on Saudi Arabian sovereign wealth fund PIF's tower injures 11",
-      "link": "https://www.cnbc.com/2026/11/25/us-iran-war-trump-hormuz-houthi-saudi-pif-tower.html",
-      "summary": "This has been the second attack by the Iran-backed group in six days on the tower, although the previous attack did not cause any casualties.",
+      "title": "Crypto talent will return ‘when AI implodes,’ Arthur Hayes says",
+      "link": "https://www.cnbc.com/2026/11/25/talents-crypto-ai-investment.html",
+      "summary": "Maelstrom CIO Arthur Hayes expects the AI trade to face headwinds in the second half of 2027, with startup talent potentially returning to crypto afterward.",
       "source": "CNBC 国际头条",
       "category": "国际财经",
-      "published": "2026-11-25T02:36:43+00:00"
+      "published": "2026-11-25T06:09:44+00:00"
     },
     {
-      "title": "Jensen Huang tells staff that Nvidia doesn't need a succession plan",
-      "link": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-employee-meeting.html",
-      "summary": "Nvidia CEO Jensen Huang resigned after multiple reported affairs, including one with a Chinese businesswoman who is alleged to be a spy for Beijing.",
+      "title": "‘Ready for any storm’: UAE minister optimistic on economy as IMF lifts forecast",
+      "link": "https://www.cnbc.com/2026/11/25/uae-iran-war-economy-oil.html",
+      "summary": "The UAE is optimistic about achieving 7%-8% economic growth next year, banking on a \"different\" economic model.",
       "source": "CNBC 国际头条",
       "category": "国际财经",
-      "published": "2026-11-24T23:13:49+00:00"
+      "published": "2026-11-25T04:06:01+00:00"
     },
     {
       "title": "Trump Account contributions from friends and family pass $1 billion mark, Treasury says",
@@ -675,14 +723,6 @@
       "published": "2026-11-24T12:00:01+00:00"
     },
     {
-      "title": "Why France is at risk of recession — and what could keep it out of one",
-      "link": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html",
-      "summary": "Bank of France Governor Emmanuel Moulin told CNBC he still expects growth, pointing to resilience in sectors including defense, aerospace and electricity.",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-24T11:15:30+00:00"
-    },
-    {
       "title": "Data centers are getting their own natural gas power plants",
       "link": "https://www.technologyreview.com/2026/11/24/1149622/data-centers-natural-gas/",
       "summary": "One of the biggest roadblocks to starting up a data center is getting approval to connect to the electric grid—a wait that could last as long as a decade. Some developers aren’t willing to wait and are instead opting to build their own off-grid, or behind-the-meter, gas power plants to fuel the AI b",
@@ -707,14 +747,6 @@
       "published": "2026-11-23T23:28:19+00:00"
     },
     {
-      "title": "CNBC's The China Connection newsletter: AI race spreads from robots to smartphones",
-      "link": "https://www.cnbc.com/2026/11/23/cnbcs-the-china-connection-newsletter-ai-race-spreads-to-smartphones.html",
-      "summary": "More powerful artificial intelligence models are raising expectations for more powerful on-device chips that can run on devices from robots to smartphones.",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-23T23:00:01+00:00"
-    },
-    {
       "title": "ESPN, NFL to show Super Bowl 61 in Imax theaters",
       "link": "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
       "summary": "In addition to ESPN channels, Super Bowl 61 will also be available on streaming platform Disney+ as well as the company's broadcast network ABC.",
@@ -729,14 +761,6 @@
       "source": "MIT科技评论",
       "category": "产业科技",
       "published": "2026-11-23T17:36:08+00:00"
-    },
-    {
-      "title": "26-year-old Google worker earns $323,000 a year—but lives on less than minimum wage",
-      "link": "https://www.cnbc.com/make-it/2026/11/22/google-worker-earns-323000-a-yearbut-he-lives-on-minimum-wage.html",
-      "summary": "Charles Broomfield set a post-college goal of reaching $750,000 in investments by age 30. Now 26, he expects to get there within the next year.",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-23T15:26:57+00:00"
     },
     {
       "title": "The Download: AI’s judgment problem and carbon removal’s crop threat",
@@ -827,28 +851,12 @@
       "published": "2026-11-19T19:58:30+00:00"
     },
     {
-      "title": "The Download: a living liver, a billion-dollar battery deal, and AI hype",
-      "link": "https://www.technologyreview.com/2026/11/19/1148979/the-download-liver-kept-alive-sila-battery-deal-ai-hype/",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. A human liver has been kept alive outside the body for a record seven weeks Researchers in Australia claim they’ve kept a human liver alive on life support outsid",
-      "source": "MIT科技评论",
-      "category": "产业科技",
-      "published": "2026-11-19T13:10:00+00:00"
-    },
-    {
       "title": "Investigators make progress in hunt for cause of FAA ground stop",
       "link": "https://www.cnbc.com/2026/11/18/faa-ground-stop-router-investigation.html",
       "summary": "Engineers and analysts are still searching for the root cause of the issue, which led to a four-hour ground stop on Friday.",
       "source": "CNBC Business",
       "category": "国际财经",
       "published": "2026-11-18T18:13:25+00:00"
-    },
-    {
-      "title": "Ford starts U.S. battery cell production using Chinese tech amid geopolitical tensions",
-      "link": "https://www.cnbc.com/2026/11/18/ford-us-battery-cells-catl-tech.html",
-      "summary": "Ford has started U.S. production and shipments of battery cells for its next-generation EVs using technologies licensed by Chinese battery giant CATL.",
-      "source": "CNBC Business",
-      "category": "国际财经",
-      "published": "2026-11-18T17:02:53+00:00"
     },
     {
       "title": "10月份国民经济运行总体平稳、向新向优",
