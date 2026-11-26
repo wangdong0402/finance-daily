@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26 03:59",
+  "updated": "2026-11-26 04:43",
   "periods": {
     "20d": {
       "inflow": [
@@ -19,19 +19,9 @@
           "main_net": 14.25
         },
         {
-          "name": "军工电子",
-          "change": 0.0,
-          "main_net": 10.44
-        },
-        {
           "name": "电力",
           "change": 0.0,
           "main_net": 7.28
-        },
-        {
-          "name": "风电设备",
-          "change": 0.0,
-          "main_net": 5.87
         },
         {
           "name": "煤炭开采加工",
@@ -52,58 +42,68 @@
           "name": "饮料制造",
           "change": 0.0,
           "main_net": 2.18
+        },
+        {
+          "name": "机场航运",
+          "change": 0.0,
+          "main_net": 0.86
+        },
+        {
+          "name": "白色家电",
+          "change": 0.0,
+          "main_net": 0.85
         }
       ],
       "outflow": [
-        {
-          "name": "半导体",
-          "change": 0.0,
-          "main_net": -147.74
-        },
-        {
-          "name": "通信设备",
-          "change": 0.0,
-          "main_net": -104.2
-        },
-        {
-          "name": "元件",
-          "change": 0.0,
-          "main_net": -73.13
-        },
-        {
-          "name": "汽车零部件",
-          "change": 0.0,
-          "main_net": -48.62
-        },
-        {
-          "name": "消费电子",
-          "change": 0.0,
-          "main_net": -32.93
-        },
-        {
-          "name": "光学光电子",
-          "change": 0.0,
-          "main_net": -32.83
-        },
-        {
-          "name": "自动化设备",
-          "change": 0.0,
-          "main_net": -31.77
-        },
-        {
-          "name": "通用设备",
-          "change": 0.0,
-          "main_net": -29.59
-        },
         {
           "name": "文化传媒",
           "change": 0.0,
           "main_net": -23.92
         },
         {
-          "name": "软件开发",
+          "name": "建筑材料",
           "change": 0.0,
-          "main_net": -23.71
+          "main_net": -16.84
+        },
+        {
+          "name": "化学制药",
+          "change": 0.0,
+          "main_net": -15.43
+        },
+        {
+          "name": "证券",
+          "change": 0.0,
+          "main_net": -11.23
+        },
+        {
+          "name": "医疗服务",
+          "change": 0.0,
+          "main_net": -11.2
+        },
+        {
+          "name": "零售",
+          "change": 0.0,
+          "main_net": -9.59
+        },
+        {
+          "name": "贵金属",
+          "change": 0.0,
+          "main_net": -7.82
+        },
+        {
+          "name": "影视院线",
+          "change": 0.0,
+          "main_net": -6.61
+        },
+        {
+          "name": "中药",
+          "change": 0.0,
+          "main_net": -6.52
+        },
+        {
+          "name": "建筑装饰",
+          "change": 0.0,
+          "main_net": -6.39
         }
       ]
     },

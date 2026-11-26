@@ -1,7 +1,247 @@
 {
-  "updated": "2026-11-26T03:56:56.260110+00:00",
-  "count": 138,
+  "updated": "2026-11-26T04:40:50.940448+00:00",
+  "count": 130,
   "items": [
+    {
+      "title": "黄仁勋回来了，但AI的问题并没有消失",
+      "link": "https://wallstreetcn.com/articles/3786709",
+      "summary": "黄仁勋重返英伟达，看似化解了公司领导层变动带来的危机，却没有消除AI产业和英伟达自身面临的长期风险。 《华尔街日报》专栏作者James Mackintosh指出，市场将黄仁勋回归视为利好，主要是因为英伟达避免了失去核心掌舵人的不确定性，但投资者忽视了这场回归背后的深层问题。从公司治理、AI资本开支到行业竞争，英伟达面临的挑战并未改变，黄仁勋的强势回归甚至可能让部分问题进一步暴露。 短期来看，市场的乐观情绪有其逻辑。此前，美国政府高级别官员确认黄仁勋不构成国家安全风险，英伟达由此解除了一项重大不确定性。消息推动市场迅速反弹，英伟达市值一度增加约1万亿美元，CoreWeave、美光和SK海力士等A",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T04:28:27+00:00"
+    },
+    {
+      "title": "摩根大通：大模型用量暴增79%，但价格大跌，存储只剩DRAM在涨",
+      "link": "https://wallstreetcn.com/articles/3786738",
+      "summary": "AI基础设施的最新数据呈现出一幅分化图景：用量与价格背道而驰，存储市场内部也出现明显裂痕。 追风交易台消息，11月23日摩根大通Joseph Cardoso团队发布最新《数据中心观察》月度追踪报告， 11月大模型付费Token用量环比激增79%，但价格同步大幅下滑，导致整体支出环比增速骤然放缓至仅8% 。 这一\"量升价跌\"的格局，主要由腾讯Hy4 Flash和DeepSeek V4.1 Flash 1017等低价开源模型的大规模渗透所驱动。 与此同时，英伟达GPU租赁价格全线上涨，B200涨幅最为突出； 存储市场则出现分化，DRAM现货价格连续第二个月上涨，NAND价格却加速下跌，录得连续第三",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T04:19:33+00:00"
+    },
+    {
+      "title": "马斯克下血本！全美儿童免费发两股SpaceX股票，一股来自公司，一股来自他个人",
+      "link": "https://wallstreetcn.com/articles/3786740",
+      "summary": "SpaceX及其首席执行官埃隆·马斯克宣布向持有“特朗普账户”的美国儿童捐赠公司股票，这一举措在推动下一代长期储蓄的同时，进一步巩固了马斯克与特朗普之间的紧密联系。 北京时间11月26日，SpaceX表示将向每个拥有上述账户的儿童捐赠一股新发行的A类普通股。马斯克随后确认，他将以个人名义进行等额配捐，以确保每个符合条件的儿童获得两股股票。 与此同时，SpaceX总裁兼首席运营官Gwynne Shotwell也宣布，将个人向该账户体系捐赠超过200万股SpaceX股票。 “特朗普账户”吸金超90亿美元 所谓“特朗普账户”，是一项旨在帮助美国儿童建立长期储蓄的税收优惠投资账户。 据CNBC援引美国",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T04:03:08+00:00"
+    },
+    {
+      "title": "边养6个孩子边创业！Vercel创始人要做“面向Agent”的互联网",
+      "link": "https://wallstreetcn.com/articles/3786736",
+      "summary": "Vercel创始人兼CEO Guillermo Rauch认为，互联网正在经历一次根本性的重构——从服务人类的界面，转向服务Agent的基础设施。这一判断，已经在他自己公司的数据里得到印证。 在近期一档播客节目中，Rauch披露了一组数字：2026年初，Vercel平台上仅有3%的部署由AI Agent完成；不到10个月后，这一比例已超过60%。他预测，到2027年初，这个数字将达到90%。“我们用了10年时间，从零做到10亿次部署，”他说，“而现在，我们每四个月就新增12亿次部署，因为完成这些工作的不再是人类，而是Agent。” Vercel目前年化营收约7亿美元，客户涵盖McDonald'",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:59:18+00:00"
+    },
+    {
+      "title": "Anthropic让AI重构自家核心系统：CPU消耗骤减70%，内存占用狂降80%，响应速度飙升！",
+      "link": "https://wallstreetcn.com/articles/3786734",
+      "summary": "在科技圈，对一个庞大且正在高速运转的生产系统进行“彻底重写”，往往被工程师们视为技术上的“自杀行为”。 但11月25日，顶级AI公司Anthropic宣布完成了一项堪称奇迹的工程： 他们让自家的AI大模型Claude亲自操刀，将核心的Messages API从Python全面迁移到了Rust。 结果令人震惊：在没有一分钟停机、没有冻结任何新功能开发的情况下， 新系统每请求的CPU消耗骤减约70%，内存占用狂降超过80%，中位数首token响应时间（TTFT）缩短了约20%！ Anthropic究竟是如何利用AI完成这场“给飞行中的飞机换引擎”的壮举的？这场史诗级迁移又给未来的软件工程带来了怎样",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:37:19+00:00"
+    },
+    {
+      "title": "AI周期能持续多久？",
+      "link": "https://wallstreetcn.com/articles/3786731",
+      "summary": "2026年11月，美国中期选举尘埃落定，美股AI板块的剧烈震荡与信贷市场的信用利差走阔，正在把华尔街拉入一场关于“AI投资周期持久性”的深度拷问。 11月25日，高盛最新一期播客中，主持人 Allison Nathan 邀请了身处算力基建与企业软件一线的Social Capital创始人Chamath Palihapitiya，以及高盛首席美国互联网研究分析师Eric Sheridan。 两位嘉宾围绕新兴云厂商的商业漏洞、企业端迟迟未兑现的投入产出比（ROI），以及科技巨头的财务兜底能力，完整拆解了本轮AI周期的真实账本与潜在拐点。 高盛分析师Eric Sheridan认为 超大规模云厂商回报",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:32:48+00:00"
+    },
+    {
+      "title": "A股三大股指早盘震荡反弹，有色金属爆发，AI硬件侧反弹，恒指、恒科指集体大涨，AI大模型双雄均飙涨超10%",
+      "link": "https://wallstreetcn.com/articles/3786732",
+      "summary": "11月26日，A股早盘震荡走高，三大股指盘初大幅上涨，盘中震荡回落，AI硬件侧局部活跃，电路板、覆铜板拉升，工业金属、盐湖提锂、铜产业等概念股上涨。油气、煤炭等板块上涨。疫苗、物理AI、机器人等概念股陷入调整。 港股高开高走，恒指、恒科指双双大涨，恒科指涨超3%，权重科网股爆发，芯片、光模块、光纤等科技股拉升。AI大模型股强势爆发，智谱、MINIMAX涨超10%。债市方面，国债期货集体下跌。商品方面，国内商品期货普遍上涨。核心市场走势： A股 ：截至发稿，沪指涨0.20%，深成指涨0.42%，创业板指涨0.28%。 港股 ：截至发稿，恒指涨2.13%，恒科指涨3.16%。 债市 ：国债期货全线",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:03:47+00:00"
+    },
+    {
+      "title": "SHEIN三季度盈利回升，欧洲市场寻求2027年下半年复苏",
+      "link": "https://wallstreetcn.com/articles/3786735",
+      "summary": "全球贸易政策的变化，正在推动SHEIN（希音）重新调整区域经营策略。 11月25日，SHEIN公布2026年第三季度业绩，实现净收入102.71亿美元，同比下降5.9%；经营利润7.43亿美元，同比增长17.4%。 期内净利润同比增长 654.5% 至 46.48 亿美元，其中 40.75 亿美元来自上市相关的优先股公允价值变动等非现金一次性收益；经调整净利润为7.9亿美元，同比增长26.8%、环比增长246.5%，高于高盛此前预测的6.74亿美元。 三季度是欧盟取消低价值商品关税豁免后的首个完整季度。SHEIN欧洲市场收入降幅进一步扩大，但美国市场需求已出现企稳迹象，拉美等新兴市场则继续贡献",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T02:51:05+00:00"
+    },
+    {
+      "title": "AI避风港！一片惨跌声中，印度股市11月涨逾12%领跑全球",
+      "link": "https://wallstreetcn.com/articles/3786733",
+      "summary": "当全球AI科技股遭遇抛售、亚太市场普遍下挫之际，印度股市却凭借低AI敞口的“意外优势”，成为本轮行情中最大的受益者。 11月25日，印度Sensex指数收报83938点，Nifty 50收报25819.25点，单日涨幅均超过1.8%。11月以来，两大基准指数累计涨幅已超过12%，在全球90多个主要市场中排名第一。与此同时，外国投资者本月已向印度股市净流入142.8亿美元，有望创下单月流入纪录。 同日，亚太科技股集体重挫。韩国KOSPI指数单日收跌6.16%，三星电子跌9.87%，SK海力士跌11.05%；日经225指数收跌2.78%，软银集团跌近15%。印度与周边市场的走势分化，在这一天被放大",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T02:45:29+00:00"
+    },
+    {
+      "title": "一损俱损！如果AI泡沫破灭，对美国杀伤力超过“互联网泡沫”",
+      "link": "https://wallstreetcn.com/articles/3786725",
+      "summary": "美国经济已经对AI支出上瘾。一旦这场繁荣熄火，冲击可能比互联网泡沫破裂更深。 据《华尔街日报》11月24日分析文章，过去两周股市剧烈震荡、英伟达董事会出现动荡，从硅谷到白宫都在追问同一个问题：如果AI繁荣破灭，美国经济会怎样？经济学家的共识是经济将遭受痛苦打击，但对冲击量级仍存激烈分歧。 最直接的传导渠道是财富效应。自2025年初以来，标普500指数上涨约20%，其中AI相关股票贡献了近一半涨幅。第三季度消费者支出增长3.8%，推动GDP增速达到3.4%。一旦股市掉头，这条链条会迅速反向运转。 更棘手的是债务。数据中心的融资正变得越来越难追踪，许多贷款游离于资产负债表之外，由私募股权基金等非银",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T01:53:57+00:00"
+    },
+    {
+      "title": "纳指入熊，BTIG：抛售才过半程，AI熊市后全面熊市或正在路上",
+      "link": "https://wallstreetcn.com/articles/3786729",
+      "summary": "11月25日周三，纳斯达克100指数盘中跌幅一度触及20%关口，从10月6日的历史收盘高点计算，正式进入技术性熊市区间。 而在BTIG首席技术策略师Jonathan Krinsky看来，这场抛售远未结束——可能才走完一半。 迄今为止，这是一场AI熊市，而非整个股票市场的熊市。但他认为这一局面即将改变。 历史样本指向3月低点，还要继续跌16%？ 上周五，纳指单日暴跌5.61%；本周一，随着英伟达CEO黄仁勋重返岗位的消息传出，纳指反弹逾7%。这种“单日跌5%、次日涨5%”的组合，自1985年以来仅出现过12次。 Krinsky在周一的报告中翻出了这12次的后续： 11次中，纳指在三天后均收低，平",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T01:30:56+00:00"
+    },
+    {
+      "title": "纳指“深V”惊险躲过大跌，但AI交易依旧在“寻底”",
+      "link": "https://wallstreetcn.com/articles/3786723",
+      "summary": "周三美股上演惊心动魄的盘中大逆转，纳斯达克100指数在开盘仅15分钟暴跌近5%并一度触及熊市门槛后，午后逐步收复大部分失地，但市场对AI投资回报率及债务风险的深层质疑仍未消散。 盘中极端波动凸显了华尔街对AI热潮可持续性的日益焦虑。尽管本周一英伟达宣布重新任命黄仁勋为CEO曾短暂提振市场情绪，但相关涨幅在随后两个交易日内大幅回吐，英伟达周三收跌3.9%。 与此同时，信贷市场释放出更为严峻的预警信号。 华尔街见闻提及 ，标普全球评级周三将英伟达的AA信用评级列入负面观察名单，而超大规模数据中心信用违约互换价格创下历史新高。 多家机构指出，市场已聚焦于巨额资本开支何时能转化为实际盈利。随着美联储重",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T00:31:18+00:00"
+    },
+    {
+      "title": "算力“利空砸盘”：先有企业Token使用增速放缓传言，随后爆出SpaceX下调Blackwell GPU价格“多达1/3”",
+      "link": "https://wallstreetcn.com/articles/3786726",
+      "summary": "AI算力市场在24小时内接连遭遇需求 增速放缓与供给增加 的双重冲击，GPU租赁价格的剧烈重估引发了投资者对基础设施可能出现供给过剩的担忧。 据SemiAnalysis向其机构客户发布的报告，SpaceX已将英伟达Blackwell GPU小集群的现货租赁报价从约15至15.5美元/GPU/小时下调至10至12美元/GPU/小时，降幅达20%至35%；同时，Anthropic将不再续租SpaceX一个约5万张H200的集群，该批算力已以约5美元/GPU/小时的价格重新对外报价，2027年初交付。科技媒体The Information以“ AI股最大的担忧：芯片过剩 ”为题报道了SemiAnal",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T00:30:10+00:00"
+    },
+    {
+      "title": "历史首次！美国监管批准“SpaceX发射100万颗卫星部署太空数据中心”，要求“2040年前完成”",
+      "link": "https://wallstreetcn.com/articles/3786724",
+      "summary": "美国联邦通信委员会（FCC）正式为SpaceX的太空数据中心计划放行，批准其发射100万颗卫星，组建名为“Starmind”的AI算力星座。FCC称，这是美国历史上首次批准在太空部署数据中心星座。 11月25日周三，FCC主席Brendan Carr宣布了这一决定。他在声明中称，FCC“今天通过首次授予此类许可，为这一努力再添一把火” 。 他并表示：“计算园区或数据中心，是维持美国在超级智能领域领导地位的关键。”他补充说：“把算力搬离地球，SpaceX以及众多正在自建轨道数据中心的竞争者，正在回应这个时代的需求。” 消息公布后，SpaceX股价上涨1.30%。该公司今年6月完成IPO，募资近8",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T00:19:02+00:00"
+    },
+    {
+      "title": "2027见闻历，财经人的桌面必备“神历”",
+      "link": "https://wallstreetcn.com/articles/3782813",
+      "summary": "本文来自华尔街见闻，欢迎下载APP查看更多",
+      "source": "华尔街见闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T00:14:28+00:00"
+    },
+    {
+      "title": "Hedge funds are no longer just for the rich. They’re wooing everyday investors",
+      "link": "https://www.cnbc.com/2026/11/26/hedge-funds-retail-investors.html",
+      "summary": "Hedge funds are increasingly courting retail investors as the industry seeks new avenues for growth.",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-26T04:20:18+00:00"
+    },
+    {
+      "title": "How Trump’s latest tariff moves hand India an edge over rival Asian exporters",
+      "link": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html",
+      "summary": "Proposed tariffs of 18% on Bangladesh, Cambodia, Thailand, and 20% on China and Vietnam, subject to their respective trade deals, offer India a competitive advantage.",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-26T04:12:18+00:00"
+    },
+    {
+      "title": "业绩刚回暖，水井坊总经理上任不足半年离职",
+      "link": "https://www.jiemian.com/article/15376483.html",
+      "summary": "经营修复再迎考验。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T04:04:08+00:00"
+    },
+    {
+      "title": "蔡磊发文回应“病情进入终末期”",
+      "link": "https://www.jiemian.com/article/15376676.html",
+      "summary": "",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T04:02:18+00:00"
+    },
+    {
+      "title": "港股午评：恒生指数涨1.86%，恒生科技指数涨2.63%",
+      "link": "https://www.jiemian.com/article/15376673.html",
+      "summary": "11月26日，港股午间收盘，恒生指数涨1.86%，恒生科技指数涨2.63%。新能源汽车股活跃，理想汽车-W涨近12%，蔚来-SW涨超5%，小鹏集团-W涨超2%。“大模型双雄”走强，智谱涨超13%，MINIMAX-W涨超10%。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T04:01:17+00:00"
+    },
+    {
+      "title": "Judge blocks FCC early-renewal process for Disney-owned ABC stations, for now",
+      "link": "https://www.cnbc.com/2026/11/26/fcc-disney-abc-stations-judge-block.html",
+      "summary": "A judge has blocked the FCC's early license renewal process for Disney-owned ABC stations in 'important victory for the First Amendment'",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-26T04:00:15+00:00"
+    },
+    {
+      "title": "中国牵头制定！这一国际标准成30余个欧洲国家重要技术参考",
+      "link": "https://www.chinanews.com.cn/cj/2026/11-26/10738006.shtml",
+      "summary": "记者今天从国家数据局了解到，由我国专家牵头制定的人工智能训练数据质量国际标准(ISO/IEC 5259-4:2024)已被欧洲相关机构采纳，成为30余个欧洲国家人工智能合规评估的重要技术参考，将应用于人工智能训练数据采集、标注、质量判断等环节。我国在人工智能国际规则制定中持续发挥重要作用。",
+      "source": "中新网-财经",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:59:00+00:00"
+    },
+    {
+      "title": "10月社零延续缓复苏态势，布局消费板块有哪些ETF？恒生消费ETF景顺(513970)跟踪标的传统消费+新兴消费龙头全覆盖",
+      "link": "https://www.jiemian.com/article/15376643.html",
+      "summary": "恒生消费ETF景顺(513970)跟踪的恒生消费指数(HSCGSI)网罗大众消费，不只是白酒。既包含跟我们衣食住行相关的传统消费，又包含泡泡玛特、老铺黄金、名创优品、毛戈平等新兴消费龙头。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:58:59+00:00"
+    },
+    {
+      "title": "扎堆备案，一批老牌“中东香水”涌入中国",
+      "link": "https://www.jiemian.com/article/15374929.html",
+      "summary": "这批中东香水品牌为何纷纷将目光投向中国？它们又能否在中国市场异军突起？",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:57:56+00:00"
+    },
+    {
+      "title": "天齐锂业砸近78亿买矿",
+      "link": "https://www.jiemian.com/article/15374223.html",
+      "summary": "相当于其六成货币资金。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:56:44+00:00"
+    },
+    {
+      "title": "“得Agent开发者，得天下”，70+技术大咖共探AI技术演进与生态变革，2026奇点智能技术大会圆满收官！",
+      "link": "https://www.tmtpost.com/8217882.html",
+      "summary": "为期两天的「2026 奇点智能技术大会」与「2026 C++ 及系统软件技术大会」圆满落幕。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-26T03:55:49+00:00"
+    },
+    {
+      "title": "青浦第七次党代会开幕，将深化“农文商旅体展”融合",
+      "link": "https://www.jiemian.com/article/15376231.html",
+      "summary": "推动长三角创新枢纽彰显江南气派。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:54:32+00:00"
+    },
+    {
+      "title": "恒达新材：公司尚未涉及视觉码包装等相关业务",
+      "link": "https://www.jiemian.com/article/15376635.html",
+      "summary": "11月26日消息，恒达新材在互动平台表示，公司目前主营业务聚焦于医疗包装原纸及食品包装原纸等特种纸原纸领域，尚未涉及视觉码包装等相关业务。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:53:35+00:00"
+    },
+    {
+      "title": "2025-2030年中国人形机器人核心零部件市场规模复合年均增长率高达83%，机器人主题类ETF选哪个？机器人ETF景顺(159559)备受资金关注",
+      "link": "https://www.jiemian.com/article/15376620.html",
+      "summary": "从资金净流入方面来看，Wind数据显示，截至2026年11月23日，机器人ETF景顺(159559)近6天获得连续资金净流入，最高单日获得3056.91万元净流入，合计“吸金”7118.52万元。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:53:24+00:00"
+    },
+    {
+      "title": "三家酒店同日法拍，泰禾的酒店故事讲到了最后一章？",
+      "link": "https://www.jiemian.com/article/15375789.html",
+      "summary": "顶级酒店群将花落谁家。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:52:39+00:00"
+    },
     {
       "title": "中国提出到2030年建成覆盖完善、性能领先的新一代通信网",
       "link": "https://www.chinanews.com.cn/cj/2026/11-26/10738003.shtml",
@@ -27,6 +267,30 @@
       "published": "2026-11-26T03:50:40+00:00"
     },
     {
+      "title": "AI按下加速键，167年的数学悬案有了回音",
+      "link": "https://www.jiemian.com/article/15375425.html",
+      "summary": "机器与人类的百年接力。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:50:34+00:00"
+    },
+    {
+      "title": "通则康威：光通信业务主要是PON光猫等宽带接入终端，暂未与“易中天”合作",
+      "link": "https://www.jiemian.com/article/15376618.html",
+      "summary": "11月26日，通则康威在互动平台表示，公司光通信业务主要是PON光猫等宽带接入终端，依托现有海外运营商客户拓展产品品类。CPO、FAU是光通信领域前沿技术，分属不同业务方向，公司保持行业研究与跟踪，目前暂无与“易中天”的合作。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:48:57+00:00"
+    },
+    {
+      "title": "融资遇冷，具身智能还要“烧心”多久？",
+      "link": "https://www.jiemian.com/article/15375208.html",
+      "summary": "信用体系和估值体系的崩塌与重建。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:48:41+00:00"
+    },
+    {
       "title": "河北滦南：打造京津冀优质“菜篮子”",
       "link": "https://www.chinanews.com.cn/cj/2026/11-26/10737997.shtml",
       "summary": "中新网唐山11月26日电(王夏菲 邢璐)初冬时节，走进河北省唐山市滦南县姚王庄镇的蔬菜批发市场，菜农正忙着将新鲜的蔬菜清理、分拣、打包。这些经过初步加工的净菜，将搭乘冷链运输车直供北京市场。",
@@ -41,6 +305,22 @@
       "source": "中新网-财经",
       "category": "中文宏观",
       "published": "2026-11-26T03:47:09+00:00"
+    },
+    {
+      "title": "理想汽车Q3：增长天花板已在纯电和增程两条线上同时显现",
+      "link": "https://www.jiemian.com/article/15375071.html",
+      "summary": "营收288.3亿元，同比增长5.4%。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:47:08+00:00"
+    },
+    {
+      "title": "从“被保护”到“被使用”：济宁文化“两创”的六个现场",
+      "link": "https://www.jiemian.com/article/15376319.html",
+      "summary": "文化两创的终极目标不是“出圈”，而是“入常”：让传统进入日常生活，成为人们愿意反复使用的事物。",
+      "source": "界面新闻",
+      "category": "中文宏观",
+      "published": "2026-11-26T03:46:54+00:00"
     },
     {
       "title": "2026浙商研究报告：浙商发展动力向“新”结构向“优”",
@@ -59,134 +339,6 @@
       "published": "2026-11-26T03:44:59+00:00"
     },
     {
-      "title": "深圳华强：刘慧军辞任公司副总裁职务",
-      "link": "https://www.jiemian.com/article/15376571.html",
-      "summary": "",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:44:26+00:00"
-    },
-    {
-      "title": "创业板算力ETF鹏华(158057)标的指数涨超2.2%，八部门发文推动云计算、大模型服务出海",
-      "link": "https://www.jiemian.com/article/15376172.html",
-      "summary": "消息面上，商务部等8部门印发《服务贸易发展“十五五”规划》，其中提到，稳妥有序推动云计算、大模型等人工智能相关服务出海，培育人工智能领域服务贸易新业态。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:43:59+00:00"
-    },
-    {
-      "title": "科创板定投和波段是同一套工具的两个用法——科创50ETF汇添富(588870)各占哪一头？",
-      "link": "https://www.jiemian.com/article/15376181.html",
-      "summary": "如果你问一个正在定投科创50的人：这个指数里装的到底是什么？大概率会听到这样的答案——科创板里最好的五十家公司，相当于科创板的沪深300，买它等于买了一篮子硬科技。这个理解很自然，也很危险。因为科创5",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:43:57+00:00"
-    },
-    {
-      "title": "毛利率回升，理想汽车绩后涨超11%！小鹏人形机器人即将硬件量产，港股通汽车ETF汇添富(159210)指数涨超3%！27年展望：关注出口与AI双主线",
-      "link": "https://www.jiemian.com/article/15376196.html",
-      "summary": "11月26日，港股市场震荡上行，恒生指数涨超1%，汽车板块强劲冲高，港股通汽车ETF汇添富（159210）标的指数涨超3%。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:43:49+00:00"
-    },
-    {
-      "title": "伦敦基本金属多数收涨，有色板块情绪回暖，工业有色ETF博时(159171)跟踪指数涨超2%",
-      "link": "https://www.jiemian.com/article/15376220.html",
-      "summary": "工业有色ETF博时(159171)涨2.29%，跟踪中证工业有色金属主题指数(H11059)，LME基本金属多数上涨，铜铝供应趋紧支撑板块情绪。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:43:47+00:00"
-    },
-    {
-      "title": "美债收益率回落带动黄金反弹，南方基金旗下低费率产品金ETF南方(159834)盘中活跃",
-      "link": "https://www.jiemian.com/article/15376263.html",
-      "summary": "截至10:40，金ETF南方（159834）盘中换手3.99%，成交7697.39万元，跟踪指数黄金集中定价（SHAU合约）。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:43:38+00:00"
-    },
-    {
-      "title": "10年美债收益率下降，金铜价反弹！LME铜大涨3%，COMEX黄金涨超1%！紫金矿业涨超4%，“金铜含量”更高的有色ETF汇添富(159652)指数涨超3%",
-      "link": "https://www.jiemian.com/article/15376271.html",
-      "summary": "11月26日，A股市场震荡上行，COMEX黄金涨超1%，LME铜大涨3%，有色板块冲高！截至10:40，“金铜含量”更高的有色ETF汇添富（159652）标的指数涨超3%！",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:43:36+00:00"
-    },
-    {
-      "title": "中生制药与京东健康深化战略合作，港股创新药ETF博时(520690)跟踪指数盘中最高涨超2%，机构：创新药商业化增长势头强劲",
-      "link": "https://www.jiemian.com/article/15376302.html",
-      "summary": "港股创新药ETF博时（520690）盘中涨超2%，跟踪指数恒生港股通创新药精选指数涨1.23%；政策支持+商业化提速，机构看好真创新企业。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:43:25+00:00"
-    },
-    {
-      "title": "地缘冲突推升油价！布油重返90美元，化工板块震荡反弹，卫星化学涨超3%，化工ETF汇添富(159093)指数涨近2%",
-      "link": "https://www.jiemian.com/article/15376294.html",
-      "summary": "“布局全球供给反内卷大周期+AI需求大周期”的化工ETF汇添富（159093）标的指数——细分化工（000813）涨近2%。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:43:25+00:00"
-    },
-    {
-      "title": "机器人ETF鹏华(159278)盘中净申购2300万份，小鹏人机机器人IRON明年1月进入硬件量产",
-      "link": "https://www.jiemian.com/article/15376306.html",
-      "summary": "消息面上，何小鹏在小鹏科技日活动上透露，小鹏人机机器人IRON将于2027年1月进入硬件量产，2月正式对外发布。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:43:24+00:00"
-    },
-    {
-      "title": "半导体产业链波动加大，定价重心转向国产制造、长期供货保障，后市怎么看？",
-      "link": "https://www.jiemian.com/article/15376310.html",
-      "summary": "11月26日，半导体产业链波动加大，设备、材料、设计、制造走势分化。截至发文，寒武纪、中巨芯盘中涨超4%，雅克科技、华峰测控涨超3%，长川科技、中科飞测涨超2%。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:43:13+00:00"
-    },
-    {
-      "title": "港股通红利低波ETF鹏华(159117)标的指数涨超1.4%，石油、电力等红利资产盘中走强",
-      "link": "https://www.jiemian.com/article/15376307.html",
-      "summary": "石油、电力等红利资产盘中走强，消息面上，国际油价集体上涨。WTI原油期货结算价报每桶83.68美元，涨幅1.99%；布伦特原油期货结算价报每桶94.61美元，涨幅3.51%。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:43:13+00:00"
-    },
-    {
-      "title": "1~10月服务消费保持良好增长韧性，恒生消费ETF嘉实(520620)布局港股消费板块投资机会",
-      "link": "https://www.jiemian.com/article/15376321.html",
-      "summary": "截至2026年11月26日 10:21，恒生消费指数(HSCGSI)上涨0.63%，成分股鸣鸣很忙上涨3.39%，阜丰集团上涨2.85%，巨子生物上涨2.41%，奥克斯电气上涨2.30%，老铺黄金上涨2.26%。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:43:12+00:00"
-    },
-    {
-      "title": "八部门发文推动人工智能相关服务出海，AI人工智能ETF平安(512930)标的指数上涨0.4%",
-      "link": "https://www.jiemian.com/article/15376330.html",
-      "summary": "截至2026年11月26日 11:15，AI人工智能ETF平安(512930)标的指数中证人工智能主题指数(930713)上涨0.40%，成分股中际旭创上涨3.83%，寒武纪上涨3.35%，拓维信息上涨2.99%。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:43:02+00:00"
-    },
-    {
-      "title": "医保双目录正式落地，创新药支付端兑现密集，港股通创新药ETF嘉实(520970)把握港股创新药产业发展机会",
-      "link": "https://www.jiemian.com/article/15376335.html",
-      "summary": "截至2026年11月26日 10:45，中证港股通创新药指数强势上涨2.71%，成分股昭衍新药上涨5.27%，金斯瑞生物科技上涨5.26%，中国生物制药上涨5.14%，药明康德，英矽智能等个股跟涨。",
-      "source": "界面新闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:43:01+00:00"
-    },
-    {
-      "title": "自有品牌热潮涌起，代工企业重新洗牌",
-      "link": "http://www.eeo.com.cn/2026/1126/1103493.shtml",
-      "summary": "山姆、盒马、胖东来自有品牌火爆背后，大批大厂与中小工厂隐身商品背标。自有品牌渗透率持续走高，代工产能迎来重新洗牌。一部分代工厂借订单实现增长，另一部分却深陷渠道依附的困境。货架话语权正在悄然重构，藏在标签背后的生产企业，该如何拿回属于自己的名字？",
-      "source": "经济观察网",
-      "category": "产业科技",
-      "published": "2026-11-26T03:41:33+00:00"
-    },
-    {
       "title": "商务部就欧方将玉沙集团有限公司移出欧盟涉俄出口管制制裁清单事答记者问",
       "link": "https://www.chinanews.com.cn/cj/2026/11-26/10737998.shtml",
       "summary": "中新网11月26日电 据商务部网站消息，11月26日，商务部新闻发言人就欧方将玉沙集团有限公司移出欧盟涉俄出口管制制裁清单事答记者问。",
@@ -203,28 +355,12 @@
       "published": "2026-11-26T03:38:00+00:00"
     },
     {
-      "title": "Anthropic让AI重构自家核心系统：CPU消耗骤减70%，内存占用狂降80%，响应速度飙升！",
-      "link": "https://wallstreetcn.com/articles/3786734",
-      "summary": "在科技圈，对一个庞大且正在高速运转的生产系统进行“彻底重写”，往往被工程师们视为技术上的“自杀行为”。 但11月25日，顶级AI公司Anthropic宣布完成了一项堪称奇迹的工程： 他们让自家的AI大模型Claude亲自操刀，将核心的Messages API从Python全面迁移到了Rust。 结果令人震惊：在没有一分钟停机、没有冻结任何新功能开发的情况下， 新系统每请求的CPU消耗骤减约70%，内存占用狂降超过80%，中位数首token响应时间（TTFT）缩短了约20%！ Anthropic究竟是如何利用AI完成这场“给飞行中的飞机换引擎”的壮举的？这场史诗级迁移又给未来的软件工程带来了怎样",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:37:19+00:00"
-    },
-    {
       "title": "South Korea upgrades growth forecast, raises benchmark rates to highest in two years",
       "link": "https://www.cnbc.com/2026/11/26/bok-rate-decision-korea-gdp-inflation.html",
       "summary": "The central bank raised rates by 25 basis points to 3.25% for its final meeting of the year, in line with expectations from economists.",
       "source": "CNBC 国际头条",
       "category": "国际财经",
       "published": "2026-11-26T03:32:53+00:00"
-    },
-    {
-      "title": "AI周期能持续多久？",
-      "link": "https://wallstreetcn.com/articles/3786731",
-      "summary": "2026年11月，美国中期选举尘埃落定，美股AI板块的剧烈震荡与信贷市场的信用利差走阔，正在把华尔街拉入一场关于“AI投资周期持久性”的深度拷问。 11月25日，高盛最新一期播客中，主持人 Allison Nathan 邀请了身处算力基建与企业软件一线的Social Capital创始人Chamath Palihapitiya，以及高盛首席美国互联网研究分析师Eric Sheridan。 两位嘉宾围绕新兴云厂商的商业漏洞、企业端迟迟未兑现的投入产出比（ROI），以及科技巨头的财务兜底能力，完整拆解了本轮AI周期的真实账本与潜在拐点。 高盛分析师Eric Sheridan认为 超大规模云厂商回报",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:32:48+00:00"
     },
     {
       "title": "北京市“无事不扰”清单扩围，夯实城市发展软实力",
@@ -235,36 +371,12 @@
       "published": "2026-11-26T03:29:28+00:00"
     },
     {
-      "title": "6G要来了！三部委：到2030年建成性能领先的新一代通信网",
-      "link": "http://www.eeo.com.cn/2026/1126/1103435.shtml",
-      "summary": "《实施方案》要求，到2030年，建成覆盖完善、性能领先的新一代通信网。基础网络发展水平持续领先，空间网络形成全球服务能力，国际网络韧性明显提升，融合网络实现规模化发展。",
-      "source": "经济观察网",
-      "category": "产业科技",
-      "published": "2026-11-26T03:27:16+00:00"
-    },
-    {
-      "title": "2026年1—10月全国电力市场交易电量同比增长18.3%",
-      "link": "http://www.eeo.com.cn/2026/1126/1103428.shtml",
-      "summary": "2026年1—10月，全国各电力交易机构累计完成交易电量64971亿千瓦时，同比增长18.3%。",
-      "source": "经济观察网",
-      "category": "产业科技",
-      "published": "2026-11-26T03:19:50+00:00"
-    },
-    {
       "title": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
       "link": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
       "summary": "S&P Global Ratings said Nvidia's credit rating could be cut by one notch as it flagged \"rising\" management and governance risk at the chipmaker.",
       "source": "CNBC 国际头条",
       "category": "国际财经",
       "published": "2026-11-26T03:19:44+00:00"
-    },
-    {
-      "title": "王玉雯皮草代言惹争议，赚了代言费，输了好感度？",
-      "link": "http://www.eeo.com.cn/2026/1126/1103427.shtml",
-      "summary": "一场明星代言引发的争议，在品牌与艺人工作室相继发布声明后，并未就此平息。",
-      "source": "经济观察网",
-      "category": "产业科技",
-      "published": "2026-11-26T03:19:12+00:00"
     },
     {
       "title": "1-10月全国电力市场交易电量同比增长18.3%",
@@ -283,38 +395,6 @@
       "published": "2026-11-26T03:13:43+00:00"
     },
     {
-      "title": "商务部等8部门：稳妥有序推动云计算、大模型等人工智能相关服务出海",
-      "link": "http://www.eeo.com.cn/2026/1126/1103420.shtml",
-      "summary": "本文来源：时代财经 11月26日，商务部等8部门印发《服务贸易发展“十五五”规划》（下称：《规划》）。 《规划》提到，稳妥有序推动云计算、大模型等人工智能相关服务出海，培育人工智能领域服务贸易新业态。鼓励人工智能企业在防范技术外流前提下整合硬件制造商、算力提供商、IT基础设施运营商等，形成“技术+产品+服务”一体化解决方案，拓展海外市场布局。支持人工智能企业实施差异化产品策略，与当地合作伙伴...",
-      "source": "经济观察网",
-      "category": "产业科技",
-      "published": "2026-11-26T03:13:42+00:00"
-    },
-    {
-      "title": "硬件公司遇上“最难的一个季度”，但苦日子还没到头",
-      "link": "http://www.eeo.com.cn/2026/1126/1103426.shtml",
-      "summary": "此前一直预判的市场下行，在今年第三季度彻底兑现。但这还不是最坏的情况，各项数据表明，市场尚未触底。",
-      "source": "经济观察网",
-      "category": "产业科技",
-      "published": "2026-11-26T03:13:00+00:00"
-    },
-    {
-      "title": "前三季度我国农产品与食材流通规模同比增长2.17%",
-      "link": "http://www.eeo.com.cn/2026/1126/1103418.shtml",
-      "summary": "今年前三季度，我国农产品与食材流通规模4.63万亿元，同比增长2.17%。供应链服务市场规模达1.26万亿元，同比增长2.23%，成为流通环节中最具活力的单元。",
-      "source": "经济观察网",
-      "category": "产业科技",
-      "published": "2026-11-26T03:12:02+00:00"
-    },
-    {
-      "title": "光伏减产，废钨丝却越来越值钱",
-      "link": "http://www.eeo.com.cn/2026/1126/1103415.shtml",
-      "summary": "经济观察报记者近期采访多家硅片、金刚线及钨丝母线企业（即生产金刚线用钨丝母线的企业）了解到，光伏行业下行正在加快钨丝赛道的分化，简单说，切割硅片的金刚线，内层的芯丝就是钨丝，硅片企业一旦减产，切割硅片的订单就会随之缩水。过去依靠扩产和抢订单获得增长的方式正在失效，一些企业通过降低负荷、停线检修来控制成本，另一些企业则围绕材料利用率、生产工艺和钨资源回收持续挖掘潜力。",
-      "source": "经济观察网",
-      "category": "产业科技",
-      "published": "2026-11-26T03:11:49+00:00"
-    },
-    {
       "title": "K-beauty stocks rally as Korean brands top Amazon bestseller lists globally ahead of Black Friday",
       "link": "https://www.cnbc.com/2026/11/26/k-beauty-firms-amazon-sales-black-friday.html",
       "summary": "South Korean beauty stocks rose as K-beauty brands dominated Amazon's skincare rankings ahead of Black Friday.",
@@ -323,36 +403,12 @@
       "published": "2026-11-26T03:09:47+00:00"
     },
     {
-      "title": "巧克力、烟草与虫害防治：这些非AI标的逆势避开科技股回调",
-      "link": "https://www.tmtpost.com/8218516.html",
-      "summary": "随着科技股抛售进一步加剧，周三好时、奥驰亚和罗林斯股价上涨。自10月以来，必需消费品板块的表现已领先科技板块。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-26T03:07:48+00:00"
-    },
-    {
-      "title": "A股三大股指早盘震荡反弹，有色金属爆发，AI硬件侧反弹，恒指、恒科指集体大涨，AI大模型双雄均飙涨超10%",
-      "link": "https://wallstreetcn.com/articles/3786732",
-      "summary": "11月26日，A股早盘震荡走高，三大股指盘初大幅上涨，盘中震荡回落，AI硬件侧局部活跃，电路板、覆铜板拉升，工业金属、盐湖提锂、铜产业等概念股上涨。油气、煤炭等板块上涨。疫苗、物理AI、机器人等概念股陷入调整。 港股高开高走，恒指、恒科指双双大涨，恒科指涨超3%，权重科网股爆发，芯片、光模块、光纤等科技股拉升。AI大模型股强势爆发，智谱、MINIMAX涨超10%。债市方面，国债期货集体下跌。商品方面，国内商品期货普遍上涨。核心市场走势： A股 ：截至发稿，沪指涨0.20%，深成指涨0.42%，创业板指涨0.28%。 港股 ：截至发稿，恒指涨2.13%，恒科指涨3.16%。 债市 ：国债期货全线",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T03:03:47+00:00"
-    },
-    {
       "title": "小米三季报：手机开始高端化，汽车还没走出亏损",
       "link": "https://www.tmtpost.com/8217508.html",
       "summary": "小米能不能在继续投入新业务的同时，让旧业务保持足够的造血能力？",
       "source": "钛媒体",
       "category": "产业科技",
       "published": "2026-11-26T03:02:00+00:00"
-    },
-    {
-      "title": "买入这只制药股，躲避AI风暴冲击",
-      "link": "https://www.tmtpost.com/8218492.html",
-      "summary": "艾伯维的股价目前接近历史最高点，但仍有理由预期其回报将持续强劲。",
-      "source": "钛媒体",
-      "category": "产业科技",
-      "published": "2026-11-26T02:55:50+00:00"
     },
     {
       "title": "中产减脂流行新三件套：盒马选购、Keep训练、体脂秤验收",
@@ -368,15 +424,7 @@
       "summary": "从电助力自行车到轻四轮车，Lemmo探索汽车之外的城市短途出行市场。",
       "source": "钛媒体",
       "category": "产业科技",
-      "published": "2026-11-26T02:51:57+00:00"
-    },
-    {
-      "title": "SHEIN三季度盈利回升，欧洲市场寻求2027年下半年复苏",
-      "link": "https://wallstreetcn.com/articles/3786735",
-      "summary": "全球贸易政策的变化，正在推动SHEIN（希音）重新调整区域经营策略。 11月25日，SHEIN公布2026年第三季度业绩，实现净收入102.71亿美元，同比下降5.9%；经营利润7.43亿美元，同比增长17.4%。 期内净利润同比增长 654.5% 至 46.48 亿美元，其中 40.75 亿美元来自上市相关的优先股公允价值变动等非现金一次性收益；经调整净利润为7.9亿美元，同比增长26.8%、环比增长246.5%，高于高盛此前预测的6.74亿美元。 三季度是欧盟取消低价值商品关税豁免后的首个完整季度。SHEIN欧洲市场收入降幅进一步扩大，但美国市场需求已出现企稳迹象，拉美等新兴市场则继续贡献",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T02:51:05+00:00"
+      "published": "2026-11-26T02:51:00+00:00"
     },
     {
       "title": "BOSS直聘Q3：营收增11.7%，利润率守住44%",
@@ -385,14 +433,6 @@
       "source": "钛媒体",
       "category": "产业科技",
       "published": "2026-11-26T02:48:00+00:00"
-    },
-    {
-      "title": "AI避风港！一片惨跌声中，印度股市11月涨逾12%领跑全球",
-      "link": "https://wallstreetcn.com/articles/3786733",
-      "summary": "当全球AI科技股遭遇抛售、亚太市场普遍下挫之际，印度股市却凭借低AI敞口的“意外优势”，成为本轮行情中最大的受益者。 11月25日，印度Sensex指数收报83938点，Nifty 50收报25819.25点，单日涨幅均超过1.8%。11月以来，两大基准指数累计涨幅已超过12%，在全球90多个主要市场中排名第一。与此同时，外国投资者本月已向印度股市净流入142.8亿美元，有望创下单月流入纪录。 同日，亚太科技股集体重挫。韩国KOSPI指数单日收跌6.16%，三星电子跌9.87%，SK海力士跌11.05%；日经225指数收跌2.78%，软银集团跌近15%。印度与周边市场的走势分化，在这一天被放大",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T02:45:29+00:00"
     },
     {
       "title": "从山水酒店到青乐文旅：中青旅“甩卖”背后的利润焦虑",
@@ -409,14 +449,6 @@
       "source": "钛媒体",
       "category": "产业科技",
       "published": "2026-11-26T02:37:00+00:00"
-    },
-    {
-      "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
-      "link": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
-      "summary": "SpaceX won approval from the FCC to put 1 million orbital data center satellites into space, a proposal that was opposed by Amazon and other groups.",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-26T02:35:39+00:00"
     },
     {
       "title": "中消协发布25款儿童书包比较试验结果 这份选购指南请收好",
@@ -491,28 +523,20 @@
       "published": "2026-11-26T02:06:26+00:00"
     },
     {
+      "title": "刚果（金）全面暂停钴矿出口，但这次市场只买账一天，钴的稀缺故事讲到头了",
+      "link": "https://www.tmtpost.com/8217929.html",
+      "summary": "刚果（金）钴禁令难托价，钴定价锚转向下游需求。",
+      "source": "钛媒体",
+      "category": "产业科技",
+      "published": "2026-11-26T02:03:00+00:00"
+    },
+    {
       "title": "应季农产品丰收 各地拓销路忙增收",
       "link": "https://www.chinanews.com.cn/cj/2026/11-26/10737948.shtml",
       "summary": "央视网消息(新闻联播)：眼下，各类秋冬季农产品进入集中采摘上市期。各地通过搭平台、拓销路，让农民增产又增收。",
       "source": "中新网-财经",
       "category": "中文宏观",
       "published": "2026-11-26T01:58:42+00:00"
-    },
-    {
-      "title": "西成铁路XCTJ1标郎木寺站特大桥合龙",
-      "link": "https://www.chinanews.com.cn/cj/2026/11-26/10737946.shtml",
-      "summary": "中新网兰州11月26日电 (戴文昌)由中铁四局承建的西(宁)成(都)铁路(甘青段)XCTJ1标郎木寺站特大桥，25日，随着最后一孔移动模架简支梁混凝土浇筑完成，西成铁路甘肃段海拔最高桥梁顺利合龙，为轨道铺设、接触网架设等后续工程创造了先决条件，也为西成铁路甘青段按期建成奠定基础。",
-      "source": "中新网-财经",
-      "category": "中文宏观",
-      "published": "2026-11-26T01:57:51+00:00"
-    },
-    {
-      "title": "一损俱损！如果AI泡沫破灭，对美国杀伤力超过“互联网泡沫”",
-      "link": "https://wallstreetcn.com/articles/3786725",
-      "summary": "美国经济已经对AI支出上瘾。一旦这场繁荣熄火，冲击可能比互联网泡沫破裂更深。 据《华尔街日报》11月24日分析文章，过去两周股市剧烈震荡、英伟达董事会出现动荡，从硅谷到白宫都在追问同一个问题：如果AI繁荣破灭，美国经济会怎样？经济学家的共识是经济将遭受痛苦打击，但对冲击量级仍存激烈分歧。 最直接的传导渠道是财富效应。自2025年初以来，标普500指数上涨约20%，其中AI相关股票贡献了近一半涨幅。第三季度消费者支出增长3.8%，推动GDP增速达到3.4%。一旦股市掉头，这条链条会迅速反向运转。 更棘手的是债务。数据中心的融资正变得越来越难追踪，许多贷款游离于资产负债表之外，由私募股权基金等非银",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T01:53:57+00:00"
     },
     {
       "title": "Norse Atlantic flights suspended after warning finances 'critical'",
@@ -531,60 +555,12 @@
       "published": "2026-11-26T01:45:52+00:00"
     },
     {
-      "title": "Where the market may be mispricing risk most: AI boom, volatility, high-yield bonds",
-      "link": "https://www.cnbc.com/2026/11/26/mispricing-risk-fund-managers-ai-volatility.html",
-      "summary": "The AI boom could trigger a recession, but data centers remain an attractive investment opportunity, a hedge fund manager said.",
+      "title": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
+      "link": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
+      "summary": "SpaceX said it will donate one share of the company's class A stock to every active Trump Account, and CEO Elon Musk would match it.",
       "source": "CNBC 国际头条",
       "category": "国际财经",
-      "published": "2026-11-26T01:34:58+00:00"
-    },
-    {
-      "title": "纳指入熊，BTIG：抛售才过半程，AI熊市后全面熊市或正在路上",
-      "link": "https://wallstreetcn.com/articles/3786729",
-      "summary": "11月25日周三，纳斯达克100指数盘中跌幅一度触及20%关口，从10月6日的历史收盘高点计算，正式进入技术性熊市区间。 而在BTIG首席技术策略师Jonathan Krinsky看来，这场抛售远未结束——可能才走完一半。 迄今为止，这是一场AI熊市，而非整个股票市场的熊市。但他认为这一局面即将改变。 历史样本指向3月低点，还要继续跌16%？ 上周五，纳指单日暴跌5.61%；本周一，随着英伟达CEO黄仁勋重返岗位的消息传出，纳指反弹逾7%。这种“单日跌5%、次日涨5%”的组合，自1985年以来仅出现过12次。 Krinsky在周一的报告中翻出了这12次的后续： 11次中，纳指在三天后均收低，平",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T01:30:56+00:00"
-    },
-    {
-      "title": "Hedge funds are no longer just for the rich. They’re coming for everyday investors",
-      "link": "https://www.cnbc.com/2026/11/26/hedge-funds-retail-investors.html",
-      "summary": "Hedge funds are increasingly courting retail investors as the industry seeks new avenues for growth.",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-26T01:10:58+00:00"
-    },
-    {
-      "title": "纳指“深V”惊险躲过大跌，但AI交易依旧在“寻底”",
-      "link": "https://wallstreetcn.com/articles/3786723",
-      "summary": "周三美股上演惊心动魄的盘中大逆转，纳斯达克100指数在开盘仅15分钟暴跌近5%并一度触及熊市门槛后，午后逐步收复大部分失地，但市场对AI投资回报率及债务风险的深层质疑仍未消散。 盘中极端波动凸显了华尔街对AI热潮可持续性的日益焦虑。尽管本周一英伟达宣布重新任命黄仁勋为CEO曾短暂提振市场情绪，但相关涨幅在随后两个交易日内大幅回吐，英伟达周三收跌3.9%。 与此同时，信贷市场释放出更为严峻的预警信号。 华尔街见闻提及 ，标普全球评级周三将英伟达的AA信用评级列入负面观察名单，而超大规模数据中心信用违约互换价格创下历史新高。 多家机构指出，市场已聚焦于巨额资本开支何时能转化为实际盈利。随着美联储重",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T00:31:18+00:00"
-    },
-    {
-      "title": "算力“利空砸盘”：先有企业Token使用增速放缓传言，随后爆出SpaceX下调Blackwell GPU价格“多达1/3”",
-      "link": "https://wallstreetcn.com/articles/3786726",
-      "summary": "AI算力市场在24小时内接连遭遇需求 增速放缓与供给增加 的双重冲击，GPU租赁价格的剧烈重估引发了投资者对基础设施可能出现供给过剩的担忧。 据SemiAnalysis向其机构客户发布的报告，SpaceX已将英伟达Blackwell GPU小集群的现货租赁报价从约15至15.5美元/GPU/小时下调至10至12美元/GPU/小时，降幅达20%至35%；同时，Anthropic将不再续租SpaceX一个约5万张H200的集群，该批算力已以约5美元/GPU/小时的价格重新对外报价，2027年初交付。科技媒体The Information以“ AI股最大的担忧：芯片过剩 ”为题报道了SemiAnal",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T00:30:10+00:00"
-    },
-    {
-      "title": "历史首次！美国监管批准“SpaceX发射100万颗卫星部署太空数据中心”，要求“2040年前完成”",
-      "link": "https://wallstreetcn.com/articles/3786724",
-      "summary": "美国联邦通信委员会（FCC）正式为SpaceX的太空数据中心计划放行，批准其发射100万颗卫星，组建名为“Starmind”的AI算力星座。FCC称，这是美国历史上首次批准在太空部署数据中心星座。 11月25日周三，FCC主席Brendan Carr宣布了这一决定。他在声明中称，FCC“今天通过首次授予此类许可，为这一努力再添一把火” 。 他并表示：“计算园区或数据中心，是维持美国在超级智能领域领导地位的关键。”他补充说：“把算力搬离地球，SpaceX以及众多正在自建轨道数据中心的竞争者，正在回应这个时代的需求。” 消息公布后，SpaceX股价上涨1.30%。该公司今年6月完成IPO，募资近8",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T00:19:02+00:00"
-    },
-    {
-      "title": "2027见闻历，财经人的桌面必备“神历”",
-      "link": "https://wallstreetcn.com/articles/3782813",
-      "summary": "本文来自华尔街见闻，欢迎下载APP查看更多",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-26T00:14:28+00:00"
+      "published": "2026-11-26T00:27:52+00:00"
     },
     {
       "title": "Inside India newsletter: Roaring economy, foreign investors’ return and now record auto sales",
@@ -593,38 +569,6 @@
       "source": "CNBC 国际头条",
       "category": "国际财经",
       "published": "2026-11-26T00:12:16+00:00"
-    },
-    {
-      "title": "美国拟对配额外食糖大幅加征关税，直指巴西",
-      "link": "https://wallstreetcn.com/articles/3786721",
-      "summary": "特朗普政府提议对不受配额制度覆盖的食糖大幅加征关税，主要针对全球最大产糖国巴西，此举可能进一步推高本已高于国际市场的美国国内糖价。 美国贸易代表办公室周三提出，对配额外原糖征收每公斤44美分关税，对配额外精制糖征收每公斤60美分关税。 这一提案的影响范围超出预期：除巴西外，还可能适用于所有国家，以防其他国家填补巴西留下的市场空缺。 美国贸易大使Jamieson Greer在提案随附的新闻稿中表示，全面征税是为了“防止来自其他国家的食糖进口激增，巴西的市场缺口可能由这些国家填补”。 消息公布后，纽约原糖期货周三一度上涨4.6%，伦敦精制糖期货一度上涨3.8%。 受冲击最大的可能是美国国内糖价：现",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T23:05:51+00:00"
-    },
-    {
-      "title": "华尔街见闻早餐FM-Radio | 2026年11月26日",
-      "link": "https://wallstreetcn.com/articles/3786720",
-      "summary": "华见早安之声 要闻精选 中国 神舟二十四号载人飞船 发射圆满成功 ，乘组进驻“天宫”，中外航天员首次“太空握手”。 中国外交部 回应报道称美国将宣布对中国商品加征关税： 反对借口“产能过剩”进行政治操弄。 理想汽车 Q3营收同比增5.4%超预期 ，经营亏损大幅收窄，但 Q4交付指引远低于预期 。 小鹏汽车 ： L4级Robotaxi正式载客 ， 人形机器人IRON 登台演讲， 明年1月起量产 。 海外 美联储青睐通胀指标 美国PCE 10月同比涨3.8%、涨幅创三年半新高， 核心PCE同比超预期涨3.3% ，12月加息几成定局；美 三季度GDP 年化季环比 增速大幅上修至4.3% ；10月耐用",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T23:05:40+00:00"
-    },
-    {
-      "title": "拯救纳指！“大空头”Burry转多：做空仓位几近清零，四分之一现金备战抄底",
-      "link": "https://wallstreetcn.com/articles/3786713",
-      "summary": "因2008年做空美国房地产而闻名的投资人Michael Burry，在本轮科技股抛售潮中调整了投资组合仓位。他在清空纳斯达克100指数的看跌期权后，整体持仓已从做空转向偏多，这是他一段时间以来最为看多的状态。 Burry周三早间在其Substack专栏\"Cassandra Unchained\"发文表示： \"在全球范围内，我的投资组合比过去一段时间更加偏多，做空更少。\" 他补充称， 除Palantir和MetLife的看跌期权外，目前他\"暂时几乎全部为多头\"。 之所以说是\"暂时\"，是因为他仍在持续评估做空机会。 周三午间，美股收窄跌幅，成交量随之上升，显示投资者对解除部分看跌股票头寸的兴趣正在升",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T23:01:34+00:00"
-    },
-    {
-      "title": "AI抛售拖累美股盘中重挫，逢低买盘力撑道指转涨，避险需求推升美债，贵金属深V反转",
-      "link": "https://wallstreetcn.com/articles/3786656",
-      "summary": "美国股市在感恩节假期前夕剧烈震荡，AI相关股票抛售一度拖累纳指深跌、进入技术性熊市，但逢低买盘介入，使主要指数显著脱离日内低点。科技股仍是压力核心，道指则逆势收高。 周三标普500指数跌0.25%至7183.08点，纳斯达克综合指数跌0.65%至23579.44点，道琼斯工业平均指数涨0.31%至50173.90点。 板块层面，科技板块领跌，材料与房地产板块表现居前。节前交投清淡，成交量低于平均水平，美股周四休市、周五提前收盘。 抛售主线仍是AI交易降温。英伟达下跌，并拖累半导体板块走弱。投资者同时消化美国新的关税提案，以及强于初值的三季度经济增长和10月通胀数据，这些因素强化了对美联储维持鹰",
-      "source": "华尔街见闻",
-      "category": "中文宏观",
-      "published": "2026-11-25T22:57:21+00:00"
     },
     {
       "title": "Macy's postpones Thanksgiving Day Parade due to severe weather",
@@ -689,14 +633,6 @@
       "source": "CNBC 国际头条",
       "category": "国际财经",
       "published": "2026-11-25T09:18:37+00:00"
-    },
-    {
-      "title": "Crypto talent will return ‘when AI implodes,’ Arthur Hayes says",
-      "link": "https://www.cnbc.com/2026/11/25/talents-crypto-ai-investment.html",
-      "summary": "Maelstrom CIO Arthur Hayes expects the AI trade to face headwinds in the second half of 2027, with startup talent potentially returning to crypto afterward.",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-25T06:09:44+00:00"
     },
     {
       "title": "Trump Account contributions from friends and family pass $1 billion mark, Treasury says",
