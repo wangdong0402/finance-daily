@@ -2,7 +2,7 @@ import os
 import re
 import json
 import html
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 import yaml
 import feedparser
@@ -12,6 +12,9 @@ SOURCES_FILE = "sources.yaml"
 OUTPUT_FILE = "data/news.json"
 MAX_PER_SOURCE = 15
 MAX_TOTAL = 150
+
+# 置顶来源：这里的源在同一个日期分组内排最前面（组内仍按时间倒序）
+PINNED_SOURCES = {"华尔街见闻"}
 
 # 伪装成正常的浏览器，防止被部分网站当作爬虫拦截
 HEADERS = {
@@ -36,6 +39,14 @@ def parse_time(entry):
             except Exception:
                 pass
     return datetime.now(timezone.utc).isoformat()
+
+def beijing_date(item):
+    """按北京时间的日期分桶，用于“置顶来源只在同一天内靠前”"""
+    try:
+        dt = datetime.fromisoformat(item.get("published", "").replace("Z", "+00:00"))
+        return (dt + timedelta(hours=8)).strftime("%Y-%m-%d")
+    except Exception:
+        return ""
 
 def fetch_source(source):
     name = source.get("name", "未知来源")
@@ -95,7 +106,10 @@ def main():
         seen.add(link)
         unique_items.append(item)
 
+    # 第一遍：全局按发布时间倒序（保证每个日期分组内是有序的）
     unique_items.sort(key=lambda x: x["published"], reverse=True)
+    # 第二遍：按“日期倒序 + 置顶来源优先”分桶；sort 是稳定排序，组内仍保持时间倒序
+    unique_items.sort(key=lambda x: (beijing_date(x), x.get("source") in PINNED_SOURCES), reverse=True)
     unique_items = unique_items[:MAX_TOTAL]
 
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
