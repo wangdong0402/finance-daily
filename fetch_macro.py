@@ -189,18 +189,35 @@ def main():
             print("    [兜底] 已恢复历史 海关进出口 数据")
     time.sleep(1)
 
-    # 6. 国债收益率
-    print("[信息] 抓取 10年期国债收益率 ...")
+    # 6. 国债收益率（中/美 2Y + 10Y 四条线）
+    print("[信息] 抓取 中美国债收益率 (2Y / 10Y) ...")
     try:
         df_bond = ak.bond_zh_us_yield_em()
-        col_cn = next((c for c in df_bond.columns if "中国" in c and "10年" in c), None)
-        col_us = next((c for c in df_bond.columns if "美国" in c and "10年" in c), None)
-        if col_cn and col_us:
-            monthly, labels = resample_monthly(df_bond, "日期", [col_cn, col_us], target_len=60)
+        # 表里还有「10年-2年」利差列，必须排除，否则会误匹配
+        col_cn10 = next((c for c in df_bond.columns if "中国" in c and "10年" in c and "-" not in c), None)
+        col_cn2  = next((c for c in df_bond.columns if "中国" in c and "2年" in c and "10年" not in c), None)
+        col_us10 = next((c for c in df_bond.columns if "美国" in c and "10年" in c and "-" not in c), None)
+        col_us2  = next((c for c in df_bond.columns if "美国" in c and "2年" in c and "10年" not in c), None)
+        cols = [col_cn10, col_cn2, col_us10, col_us2]
+        if all(cols):
+            monthly, labels = resample_monthly(df_bond, "日期", cols, target_len=60)
             if monthly is not None:
-                new_charts["bond_yield"] = {"name": "10年期国债收益率 (%)", "category": "大类资产", "type": "multi_line", "labels": labels, "series": [{"name": "中国", "color": "#ef4444", "data": [round(float(v), 2) for v in monthly[col_cn]]}, {"name": "美国", "color": "#3b82f6", "data": [round(float(v), 2) for v in monthly[col_us]]}]}
+                new_charts["bond_yield"] = {
+                    "name": "中美国债收益率 (2Y / 10Y)",
+                    "category": "大类资产",
+                    "type": "multi_line",
+                    "labels": labels,
+                    "series": [
+                        {"name": "中国 10Y", "color": "#ef4444", "data": [round(float(v), 2) for v in monthly[col_cn10]]},
+                        {"name": "中国 2Y",  "color": "#f97316", "data": [round(float(v), 2) for v in monthly[col_cn2]]},
+                        {"name": "美国 10Y", "color": "#3b82f6", "data": [round(float(v), 2) for v in monthly[col_us10]]},
+                        {"name": "美国 2Y",  "color": "#06b6d4", "data": [round(float(v), 2) for v in monthly[col_us2]]},
+                    ],
+                }
             else:
                 raise ValueError("数据解析为空")
+        else:
+            raise ValueError(f"国债列名未匹配: {cols}")
     except Exception as e: 
         print(f"国债异常: {e}")
         if "bond_yield" in old_charts:
