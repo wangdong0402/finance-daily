@@ -695,7 +695,6 @@ h2 a:hover {{ text-decoration: underline; }}
 
 .date-group {{ display: flex; align-items: center; gap: 10px; margin: 14px 2px 10px; font-size: 12px; font-weight: 600; color: #6e6e73; }}
 .date-group::after {{ content: ""; flex: 1; height: 1px; background: rgba(0,0,0,.08); }}
-#to-top {{ position: fixed; right: 16px; bottom: 28px; width: 42px; height: 42px; border-radius: 50%; border: none; background: rgba(29,29,31,.82); color: #fff; font-size: 18px; line-height: 42px; text-align: center; cursor: pointer; display: none; z-index: 200;  }}
 .search-wrap {{ position: relative; }}
 .search-clear {{ position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 22px; height: 22px; border: none; border-radius: 50%; background: #e5e7eb; color: #6e6e73; font-size: 13px; line-height: 22px; cursor: pointer; padding: 0; }}
 .search-count {{ font-size: 12px; color: #6e6e73; margin-top: 8px; min-height: 16px; }}
@@ -714,7 +713,6 @@ h2 a:hover {{ text-decoration: underline; }}
     <button class="tab-btn" onclick="switchTab('macro')" id="btn-macro">宏观数据</button>
   </div>
 </header>
-<button id="to-top" title="回到顶部">↑</button>
 <main>
   <div id="tab-news">{news_cards_html}</div>
   
@@ -766,15 +764,6 @@ function switchTab(tab) {{
   if(tab === 'macro') lazyRenderCharts();
 }}
 
-function initBackToTop() {{
-  var btn = document.getElementById('to-top');
-  if (!btn) return;
-  btn.onclick = function () {{ window.scrollTo(0, 0); }};
-  window.addEventListener('scroll', function () {{
-    btn.style.display = window.scrollY > 400 ? 'block' : 'none';
-  }}, {{ passive: true }});
-}}
-
 
 // 打开页面时恢复标签：支持 index.html?tab=reports 或 #reports
 (function(){{
@@ -782,7 +771,6 @@ function initBackToTop() {{
   try {{ t = new URLSearchParams(location.search).get('tab') || ''; }} catch(e) {{ t = ''; }}
   if (!t && location.hash) {{ t = location.hash.replace(/^#/, ''); }}
   if (['news','reports','sentiment','macro'].indexOf(t) >= 0) {{ switchTab(t); }}
-  initBackToTop();
 }})();
 
 function toggleSummary(btn) {{
