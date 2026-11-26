@@ -310,6 +310,29 @@ def main():
             new_charts["margin_balance"] = old_charts["margin_balance"]
             print("    [兜底] 已恢复历史 两融余额 数据")
 
+    # 11. 黄金现货（上海金交所 Au99.99，元/克，近五年）
+    print("[信息] 抓取 黄金现货 Au99.99 ...")
+    try:
+        df_gold = ak.spot_hist_sge(symbol="Au99.99")
+        monthly, labels = resample_monthly(df_gold, "date", ["close"], target_len=60)
+        if monthly is not None and len(monthly) >= 12:
+            new_charts["gold_price"] = {
+                "name": "黄金现货 Au99.99 (元/克，近五年)",
+                "category": "大类资产",
+                "type": "line",
+                "color": "#d4a017",
+                "labels": labels,
+                "data": [round(float(v), 2) for v in monthly["close"]]
+            }
+            print(f"    最新 {labels[-1]}：{monthly['close'].iloc[-1]:.2f} 元/克，共 {len(monthly)} 个月")
+        else:
+            raise ValueError("数据解析为空")
+    except Exception as e:
+        print(f"黄金异常: {e}")
+        if "gold_price" in old_charts:
+            new_charts["gold_price"] = old_charts["gold_price"]
+            print("    [兜底] 已恢复历史 黄金 数据")
+
     os.makedirs("data", exist_ok=True)
     with open("data/macro.json", "w", encoding="utf-8") as f:
         json.dump(macro_data, f, ensure_ascii=False, indent=2)
