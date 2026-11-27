@@ -1,4 +1,5 @@
 import akshare as ak
+import io
 import json
 import os
 import pandas as pd
@@ -6,6 +7,10 @@ import re
 import time
 from datetime import datetime, timezone, timedelta
 import requests
+
+# 美元指数 DXY：FRED（美联储圣路易斯分行）六个汇率，按 ICE 官方权重公式合成，无需 API key
+FRED_FX6_URL = ("https://fred.stlouisfed.org/graph/fredgraph.csv"
+                "?id=DEXUSEU,DEXJPUS,DEXUSUK,DEXCAUS,DEXSDUS,DEXSZUS")
 
 # 常量配置
 MACRO_CONFIGS = [
@@ -329,26 +334,102 @@ def main():
 
     # 11. 黄金现货（上海金交所 Au99.99，元/克，近五年）
     print("[信息] 抓取 黄金现货 Au99.99 ...")
+    gold_labels, gold_vals = None, None
     try:
         df_gold = ak.spot_hist_sge(symbol="Au99.99")
         monthly, labels = resample_monthly(df_gold, "date", ["close"], target_len=60)
         if monthly is not None and len(monthly) >= 12:
-            new_charts["gold_price"] = {
-                "name": "黄金现货 Au99.99 (元/克，近五年)",
-                "category": "大类资产",
-                "type": "line",
-                "color": "#d4a017",
-                "labels": labels,
-                "data": [round(float(v), 2) for v in monthly["close"]]
-            }
-            print(f"    最新 {labels[-1]}：{monthly['close'].iloc[-1]:.2f} 元/克，共 {len(monthly)} 个月")
+            gold_labels = labels
+            gold_vals = [round(float(v), 2) for v in monthly["close"]]
+            print(f"    黄金最新 {labels[-1]}：{gold_vals[-1]:.2f} 元/克，共 {len(gold_vals)} 个月")
         else:
             raise ValueError("数据解析为空")
     except Exception as e:
         print(f"黄金异常: {e}")
-        if "gold_price" in old_charts:
-            new_charts["gold_price"] = old_charts["gold_price"]
+    if not gold_vals and "gold_price" in old_charts:
+        old_gold = old_charts["gold_price"]
+        gold_labels = old_gold.get("labels") or []
+        if old_gold.get("series"):          # 兼容旧的「双轴」结构
+            gold_vals = (old_gold["series"][0] or {}).get("data") or []
+        else:
+            gold_vals = old_gold.get("data") or []
+        if gold_vals:
             print("    [兜底] 已恢复历史 黄金 数据")
+
+    # 12. 美元指数 DXY：FRED 六个货币对按 ICE 官方权重公式合成（1 次请求，不新增外部依赖）
+    print("[信息] 抓取 美元指数 DXY（FRED 合成）...")
+    dxy_labels, dxy_vals = None, None
+    try:
+        resp = None
+        sess = requests.Session()
+        sess.trust_env = False          # 忽略环境变量里的代理设置（GitHub Actions 直连时无影响）
+        for _try in range(2):
+            try:
+                resp = sess.get(FRED_FX6_URL, timeout=20, headers={"User-Agent": "Mozilla/5.0"})
+                if resp.status_code == 200 and len(resp.text) > 10000:
+                    break
+            except Exception as _e:
+                print(f"    [重试 {_try + 1}/2] FRED 请求失败: {_e}")
+                time.sleep(3)
+        if resp is None or resp.status_code != 200 or len(resp.text) <= 10000:
+            raise ValueError("FRED 汇率数据请求失败")
+        df_fx = pd.read_csv(io.StringIO(resp.text))
+        df_fx["observation_date"] = pd.to_datetime(df_fx["observation_date"])
+        df_fx = df_fx.set_index("observation_date").apply(pd.to_numeric, errors="coerce").dropna()
+        if len(df_fx) < 200:
+            raise ValueError(f"汇率数据过少（{len(df_fx)} 行）")
+        dxy = (50.14348112
+               * df_fx["DEXUSEU"] ** -0.576
+               * df_fx["DEXJPUS"] ** 0.136
+               * df_fx["DEXUSUK"] ** -0.119
+               * df_fx["DEXCAUS"] ** 0.091
+               * df_fx["DEXSDUS"] ** 0.042
+               * df_fx["DEXSZUS"] ** 0.036)
+        dxy_df = dxy.to_frame("dxy").reset_index().rename(columns={"observation_date": "date"})
+        monthly_fx, labels_fx = resample_monthly(dxy_df, "date", ["dxy"], target_len=60)
+        if monthly_fx is None or len(monthly_fx) < 12:
+            raise ValueError("美元指数月度数据为空")
+        dxy_labels = labels_fx
+        dxy_vals = [round(float(v), 2) for v in monthly_fx["dxy"]]
+        print(f"    美元指数最新 {dxy_labels[-1]}：{dxy_vals[-1]:.2f}，共 {len(dxy_vals)} 个月")
+    except Exception as e:
+        print(f"美元指数异常: {e}")
+        old_gu = old_charts.get("gold_price") or {}
+        if old_gu.get("type") == "dual_axis" and len(old_gu.get("series") or []) > 1:
+            dxy_labels = old_gu.get("labels") or []
+            dxy_vals = (old_gu["series"][1] or {}).get("data") or []
+            if dxy_vals:
+                print("    [兜底] 已恢复历史 美元指数 数据")
+
+    # 13. 组合成 黄金 + 美元指数 双轴图（黄金缺失时退回单线金价图）
+    if gold_vals and dxy_vals:
+        _m = dict(zip(dxy_labels or [], dxy_vals or []))
+        new_charts["gold_price"] = {
+            "name": "黄金 vs 美元指数 (近五年)",
+            "category": "大类资产",
+            "type": "dual_axis",
+            "left_title": "元/克",
+            "right_title": "DXY",
+            "labels": gold_labels,
+            "series": [
+                {"name": "黄金 Au99.99", "color": "#d4a017", "axis": "left", "data": gold_vals},
+                {"name": "美元指数 DXY", "color": "#8b5cf6", "axis": "right", "data": [_m.get(l) for l in gold_labels]},
+            ],
+        }
+        print("    [完成] 黄金 + 美元指数 已合并为一张双轴图")
+    elif gold_vals:
+        new_charts["gold_price"] = {
+            "name": "黄金现货 Au99.99 (元/克，近五年)",
+            "category": "大类资产",
+            "type": "line",
+            "color": "#d4a017",
+            "labels": gold_labels,
+            "data": gold_vals,
+        }
+        print("    [提示] 美元指数未取到，本图仅展示黄金")
+    elif "gold_price" in old_charts:
+        new_charts["gold_price"] = old_charts["gold_price"]
+        print("    [兜底] 已恢复历史 黄金 数据")
 
     os.makedirs("data", exist_ok=True)
     with open("data/macro.json", "w", encoding="utf-8") as f:
