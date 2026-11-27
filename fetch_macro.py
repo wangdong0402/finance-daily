@@ -92,6 +92,80 @@ def resample_monthly(df, date_col, value_cols, target_len=60):
         print(f"  [重采样报错] {e}")
         return None, []
 
+def _curl_get(url, timeout=25, headers=None):
+    """
+    用系统 curl 取文本。
+    为什么不用 requests：FRED 的 CDN 对 Python 的 TLS 指纹不友好，
+    直接用 requests 会在 20 秒后 Read timeout（curl 只要 1 秒），GitHub Actions 上同样如此。
+    """
+    import shutil
+    import subprocess
+    curl = shutil.which("curl")
+    if not curl:
+        raise RuntimeError("环境里没有 curl 命令")
+    cmd = [curl, "-s", "--noproxy", "*", "-m", str(timeout), url]
+    for k, v in (headers or {}).items():
+        cmd += ["-H", f"{k}: {v}"]
+    try:
+        out = subprocess.run(cmd, capture_output=True, timeout=timeout + 8)
+    except Exception as e:
+        raise RuntimeError(f"curl 执行失败: {e}")
+    txt = out.stdout.decode("utf-8", "ignore")
+    # 注意：某些站点（如 FRED 的 CDN）会在数据已完整返回后仍报 HTTP/2 收尾错误（rc=92），
+    # 所以这里不按退出码判失败，只看有没有拿到内容。
+    if not txt.strip():
+        raise RuntimeError(f"curl 无输出（rc={out.returncode}）: {out.stderr[:120]}")
+    return txt
+
+
+EM_UDI_URL = ("https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=100.UDI"
+              "&ut=fa5fd1943c7b386f172d6893dbfba10b&fields1=f1,f2&fields2=f51,f53"
+              "&klt=101&fqt=1&beg=0&end=20500000&lmt=2000")
+
+
+def dxy_from_eastmoney():
+    """东方财富的官方美元指数品种（100.UDI），直接是 DXY 点位。"""
+    txt = _curl_get(EM_UDI_URL, timeout=25, headers={"Referer": "https://quote.eastmoney.com/"})
+    if '"klines"' not in txt:
+        raise ValueError("东财返回里没有 klines")
+    data = json.loads(txt).get("data") or {}
+    klines = data.get("klines") or []
+    if len(klines) < 500:
+        raise ValueError(f"东财 K 线过少（{len(klines)} 根）")
+    rows = []
+    for k in klines:
+        parts = k.split(",")
+        if len(parts) >= 2:
+            rows.append({"date": parts[0], "dxy": parts[1]})
+    df = pd.DataFrame(rows)
+    monthly, labels = resample_monthly(df, "date", ["dxy"], target_len=60)
+    if monthly is None or len(monthly) < 12:
+        raise ValueError("东财美元指数月度数据为空")
+    return labels, [round(float(v), 2) for v in monthly["dxy"]]
+
+
+def dxy_from_fred():
+    """FRED 六个汇率按 ICE 官方权重公式合成 DXY（备用源，数值与官方误差 <0.1 点）。"""
+    txt = _curl_get(FRED_FX6_URL, timeout=30)
+    df_fx = pd.read_csv(io.StringIO(txt))
+    df_fx["observation_date"] = pd.to_datetime(df_fx["observation_date"])
+    df_fx = df_fx.set_index("observation_date").apply(pd.to_numeric, errors="coerce").dropna()
+    if len(df_fx) < 200:
+        raise ValueError(f"汇率数据过少（{len(df_fx)} 行）")
+    dxy = (50.14348112
+           * df_fx["DEXUSEU"] ** -0.576
+           * df_fx["DEXJPUS"] ** 0.136
+           * df_fx["DEXUSUK"] ** -0.119
+           * df_fx["DEXCAUS"] ** 0.091
+           * df_fx["DEXSDUS"] ** 0.042
+           * df_fx["DEXSZUS"] ** 0.036)
+    dxy_df = dxy.to_frame("dxy").reset_index().rename(columns={"observation_date": "date"})
+    monthly, labels = resample_monthly(dxy_df, "date", ["dxy"], target_len=60)
+    if monthly is None or len(monthly) < 12:
+        raise ValueError("美元指数月度数据为空")
+    return labels, [round(float(v), 2) for v in monthly["dxy"]]
+
+
 def main():
     old_charts = {}
     if os.path.exists("data/macro.json"):
@@ -356,50 +430,25 @@ def main():
         if gold_vals:
             print("    [兜底] 已恢复历史 黄金 数据")
 
-    # 12. 美元指数 DXY：FRED 六个货币对按 ICE 官方权重公式合成（1 次请求，不新增外部依赖）
-    print("[信息] 抓取 美元指数 DXY（FRED 合成）...")
+    # 12. 美元指数 DXY：先试东财官方品种 100.UDI，失败再用 FRED 六个汇率合成，都失败则沿用旧数据
+    print("[信息] 抓取 美元指数 DXY ...")
     dxy_labels, dxy_vals = None, None
     try:
-        resp = None
-        sess = requests.Session()
-        sess.trust_env = False          # 忽略环境变量里的代理设置（GitHub Actions 直连时无影响）
-        for _try in range(2):
-            try:
-                resp = sess.get(FRED_FX6_URL, timeout=20, headers={"User-Agent": "Mozilla/5.0"})
-                if resp.status_code == 200 and len(resp.text) > 10000:
-                    break
-            except Exception as _e:
-                print(f"    [重试 {_try + 1}/2] FRED 请求失败: {_e}")
-                time.sleep(3)
-        if resp is None or resp.status_code != 200 or len(resp.text) <= 10000:
-            raise ValueError("FRED 汇率数据请求失败")
-        df_fx = pd.read_csv(io.StringIO(resp.text))
-        df_fx["observation_date"] = pd.to_datetime(df_fx["observation_date"])
-        df_fx = df_fx.set_index("observation_date").apply(pd.to_numeric, errors="coerce").dropna()
-        if len(df_fx) < 200:
-            raise ValueError(f"汇率数据过少（{len(df_fx)} 行）")
-        dxy = (50.14348112
-               * df_fx["DEXUSEU"] ** -0.576
-               * df_fx["DEXJPUS"] ** 0.136
-               * df_fx["DEXUSUK"] ** -0.119
-               * df_fx["DEXCAUS"] ** 0.091
-               * df_fx["DEXSDUS"] ** 0.042
-               * df_fx["DEXSZUS"] ** 0.036)
-        dxy_df = dxy.to_frame("dxy").reset_index().rename(columns={"observation_date": "date"})
-        monthly_fx, labels_fx = resample_monthly(dxy_df, "date", ["dxy"], target_len=60)
-        if monthly_fx is None or len(monthly_fx) < 12:
-            raise ValueError("美元指数月度数据为空")
-        dxy_labels = labels_fx
-        dxy_vals = [round(float(v), 2) for v in monthly_fx["dxy"]]
-        print(f"    美元指数最新 {dxy_labels[-1]}：{dxy_vals[-1]:.2f}，共 {len(dxy_vals)} 个月")
+        dxy_labels, dxy_vals = dxy_from_eastmoney()
+        print(f"    [东财] 最新 {dxy_labels[-1]}：{dxy_vals[-1]:.2f}，共 {len(dxy_vals)} 个月")
     except Exception as e:
-        print(f"美元指数异常: {e}")
-        old_gu = old_charts.get("gold_price") or {}
-        if old_gu.get("type") == "dual_axis" and len(old_gu.get("series") or []) > 1:
-            dxy_labels = old_gu.get("labels") or []
-            dxy_vals = (old_gu["series"][1] or {}).get("data") or []
-            if dxy_vals:
-                print("    [兜底] 已恢复历史 美元指数 数据")
+        print(f"  东财美元指数失败: {e}")
+        try:
+            dxy_labels, dxy_vals = dxy_from_fred()
+            print(f"    [FRED 合成] 最新 {dxy_labels[-1]}：{dxy_vals[-1]:.2f}，共 {len(dxy_vals)} 个月")
+        except Exception as e2:
+            print(f"  美元指数异常: {e2}")
+            old_gu = old_charts.get("gold_price") or {}
+            if old_gu.get("type") == "dual_axis" and len(old_gu.get("series") or []) > 1:
+                dxy_labels = old_gu.get("labels") or []
+                dxy_vals = (old_gu["series"][1] or {}).get("data") or []
+                if dxy_vals:
+                    print("    [兜底] 已恢复历史 美元指数 数据")
 
     # 13. 组合成 黄金 + 美元指数 双轴图（黄金缺失时退回单线金价图）
     if gold_vals and dxy_vals:
