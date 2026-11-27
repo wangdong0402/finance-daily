@@ -616,41 +616,58 @@ def main():
         new_charts["gold_price"] = old_charts["gold_price"]
         print("    [兜底] 已恢复历史 黄金 数据")
 
-    # 14. 居民端：社会消费品零售总额（柱，左轴）+ 消费者信心指数（线，右轴）
+    # 14. 居民端：社零当月（柱，左轴）+ 社零当月同比（线，右轴）；消费者信心另作一张
     print("[信息] 抓取 社会消费品零售总额 + 消费者信心指数 ...")
-    ret_labels, ret_vals, conf_map = [], [], {}
+    ret_labels, ret_vals, ret_yoy, conf_labels, conf_vals = [], [], [], [], []
     try:
         df_ret = ak.macro_china_consumer_goods_retail()
         ret_labels, ret_vals = monthly_by_ym(df_ret, "月份", "当月", target_len=60)
-        print(f"    [成功] 社零 {len(ret_vals)} 个月，最新 {ret_labels[-1]}：{ret_vals[-1]} 亿元")
+        yoy_map = dict(zip(*monthly_by_ym(df_ret, "月份", "同比增长", target_len=240)))
+        ret_yoy = [yoy_map.get(l) for l in ret_labels]
+        print(f"    [成功] 社零 {len(ret_vals)} 个月，最新 {ret_labels[-1]}：{ret_vals[-1]} 亿元，同比 {ret_yoy[-1]}%")
     except Exception as e:
         print(f"  [失败] 社零: {e}")
     try:
         df_conf = ak.macro_china_consumer_confidence()
         conf_col = [c for c in df_conf.columns if "消费者信心指数" in c and "指数值" in c][0]
-        conf_labels, conf_vals = monthly_by_ym(df_conf, "月份", conf_col, target_len=72)
-        conf_map = dict(zip(conf_labels, conf_vals))
-        print(f"    [成功] 消费者信心 {len(conf_map)} 个月，最新 {conf_labels[-1]}：{conf_vals[-1]}")
+        conf_labels, conf_vals = monthly_by_ym(df_conf, "月份", conf_col, target_len=60)
+        print(f"    [成功] 消费者信心 {len(conf_labels)} 个月，最新 {conf_labels[-1]}：{conf_vals[-1]}")
     except Exception as e:
         print(f"  [失败] 消费者信心: {e}")
 
-    if ret_labels and ret_vals and conf_map:
+    if ret_labels and ret_vals:
         new_charts["household_consume"] = {
-            "name": "居民端：社零当月 vs 消费者信心 (近五年)",
+            "name": "居民端：社零当月 + 当月同比 (近五年)",
             "category": "居民",
             "type": "dual_axis",
             "left_title": "社零当月（亿元）",
-            "right_title": "信心指数",
+            "right_title": "当月同比（%）",
             "labels": ret_labels,
             "series": [
                 {"name": "社零当月", "color": "#3b82f6", "axis": "left", "type": "bar", "data": ret_vals},
-                {"name": "消费者信心指数", "color": "#ef4444", "axis": "right", "data": [conf_map.get(l) for l in ret_labels]},
+                {"name": "社零当月同比", "color": "#ef4444", "axis": "right", "data": ret_yoy},
             ],
         }
-        print("    [完成] 社零 + 消费者信心 已合并为一张双轴图")
+        print("    [完成] 社零当月 + 当月同比 一张图")
     elif "household_consume" in old_charts:
         new_charts["household_consume"] = old_charts["household_consume"]
         print("    [兜底] 已恢复历史 居民消费 数据")
+
+    if conf_labels and conf_vals:
+        new_charts["consumer_confidence"] = {
+            "name": "消费者信心指数 (近五年)",
+            "category": "居民",
+            "type": "line",
+            "color": "#ef4444",
+            "baseline": 100,
+            "baseline_label": "100 景气分界",
+            "labels": conf_labels,
+            "data": conf_vals,
+        }
+        print("    [完成] 消费者信心指数 单图")
+    elif "consumer_confidence" in old_charts:
+        new_charts["consumer_confidence"] = old_charts["consumer_confidence"]
+        print("    [兜底] 已恢复历史 消费者信心 数据")
     time.sleep(1)
 
     # 15. 财政：财政收入当月（柱，左轴）+ 财政收入累计同比 / 税收累计同比（线，右轴）

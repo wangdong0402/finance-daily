@@ -954,7 +954,7 @@ function lazyRenderCharts() {{
 
     if (cfg.baseline) {{
       config.options.plugins.annotation = {{
-        annotations: {{ line1: {{ type: 'line', yMin: cfg.baseline, yMax: cfg.baseline, borderColor: '#ef4444', borderWidth: 1, borderDash: [5, 5], label: {{ display: true, content: '枯荣线', position: 'end' }} }} }}
+        annotations: {{ line1: {{ type: 'line', yMin: cfg.baseline, yMax: cfg.baseline, borderColor: '#ef4444', borderWidth: 1, borderDash: [5, 5], label: {{ display: true, content: cfg.baseline_label || '枯荣线', position: 'end' }} }} }}
       }};
     }}
 
@@ -1048,7 +1048,7 @@ function openChartModal(chartId, title) {{
   if (originalCfg.baseline) {{
     config.options.plugins.annotation = {{
       annotations: {{
-        line1: {{ type: 'line', yMin: originalCfg.baseline, yMax: originalCfg.baseline, borderColor: '#ef4444', borderWidth: 1, borderDash: [5, 5], label: {{ display: true, content: '枯荣线', position: 'end' }} }}
+        line1: {{ type: 'line', yMin: originalCfg.baseline, yMax: originalCfg.baseline, borderColor: '#ef4444', borderWidth: 1, borderDash: [5, 5], label: {{ display: true, content: originalCfg.baseline_label || '枯荣线', position: 'end' }} }}
       }}
     }};
   }}
