@@ -890,7 +890,7 @@ function lazyRenderCharts() {{
     if (!cfg) return;
 
     let datasets = [];
-    let chartType = cfg.type === 'multi_line' ? 'line' : cfg.type;
+    let chartType = (cfg.type === 'multi_line' || cfg.type === 'dual_axis') ? 'line' : cfg.type;
 
     if (cfg.type === 'mixed') {{
       chartType = 'bar';
@@ -898,6 +898,8 @@ function lazyRenderCharts() {{
       datasets.push({{ type: 'line', label: '融资余额', data: cfg.line_data, borderColor: cfg.line_color, borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false, yAxisID: 'y1' }});
     }} else if (cfg.type === 'multi_line') {{
       datasets = cfg.series.map(s => ({{ label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color + '20', borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false }}));
+    }} else if (cfg.type === 'dual_axis') {{
+      datasets = cfg.series.map(s => ({{ label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color + '20', borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false, yAxisID: s.axis === 'right' ? 'y1' : 'y' }}));
     }} else if (cfg.type === 'bar') {{
       const bgColors = cfg.data.map(v => v >= 0 ? cfg.color : '#10b981');
       datasets = [{{ data: cfg.data, backgroundColor: bgColors, borderRadius: 4 }}];
@@ -911,7 +913,7 @@ function lazyRenderCharts() {{
       options: {{
         responsive: true, maintainAspectRatio: false,
         plugins: {{ 
-          legend: {{ display: cfg.type === 'multi_line' || cfg.type === 'mixed', position: 'top', labels: {{ boxWidth: 12, font: {{ size: 10 }} }} }},
+          legend: {{ display: cfg.type === 'multi_line' || cfg.type === 'mixed' || cfg.type === 'dual_axis', position: 'top', labels: {{ boxWidth: 12, font: {{ size: 10 }} }} }},
           tooltip: {{ mode: 'index', intersect: false }}
         }},
         scales: {{
@@ -937,7 +939,10 @@ function lazyRenderCharts() {{
               }}
             }} 
           }},
-          y: {{ grid: {{ color: gridColor, drawBorder: false }}, ticks: {{ color: textColor, font: {{ size: 10 }} }} }}
+          y: {{ grid: {{ color: gridColor, drawBorder: false }}, ticks: {{ color: textColor, font: {{ size: 10 }} }}, title: {{ display: !!cfg.left_title, text: cfg.left_title || '', color: textColor, font: {{ size: 10 }} }} }},
+          y1: cfg.type === 'dual_axis'
+            ? {{ position: 'right', display: true, grid: {{ display: false }}, ticks: {{ color: textColor, font: {{ size: 10 }} }}, title: {{ display: !!cfg.right_title, text: cfg.right_title || '', color: textColor, font: {{ size: 10 }} }} }}
+            : {{ display: false, grid: {{ display: false }} }}
         }}
       }}
     }};
@@ -976,7 +981,7 @@ function openChartModal(chartId, title) {{
   const gridColor = isDark ? '#3a3a3c' : '#e5e7eb';
 
   let datasets = [];
-  let chartType = originalCfg.type === 'multi_line' ? 'line' : originalCfg.type;
+  let chartType = (originalCfg.type === 'multi_line' || originalCfg.type === 'dual_axis') ? 'line' : originalCfg.type;
 
   if (originalCfg.type === 'mixed') {{
     chartType = 'bar';
@@ -984,6 +989,8 @@ function openChartModal(chartId, title) {{
     datasets.push({{ type: 'line', label: '融资余额', data: originalCfg.line_data, borderColor: originalCfg.line_color, borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false, yAxisID: 'y1' }});
   }} else if (originalCfg.type === 'multi_line') {{
     datasets = originalCfg.series.map(s => ({{ label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color + '20', borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false }}));
+  }} else if (originalCfg.type === 'dual_axis') {{
+    datasets = originalCfg.series.map(s => ({{ label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color + '20', borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false, yAxisID: s.axis === 'right' ? 'y1' : 'y' }}));
   }} else if (originalCfg.type === 'bar') {{
     const bgColors = originalCfg.data.map(v => v >= 0 ? originalCfg.color : '#10b981');
     datasets = [{{ data: originalCfg.data, backgroundColor: bgColors, borderRadius: 4 }}];
@@ -997,7 +1004,7 @@ function openChartModal(chartId, title) {{
     options: {{
       responsive: true, maintainAspectRatio: false,
       plugins: {{ 
-        legend: {{ display: originalCfg.type === 'multi_line' || originalCfg.type === 'mixed', position: 'top', labels: {{ boxWidth: 12, font: {{ size: 12 }} }} }},
+        legend: {{ display: originalCfg.type === 'multi_line' || originalCfg.type === 'mixed' || originalCfg.type === 'dual_axis', position: 'top', labels: {{ boxWidth: 12, font: {{ size: 12 }} }} }},
         tooltip: {{ mode: 'index', intersect: false }}
       }},
       scales: {{
@@ -1022,8 +1029,10 @@ function openChartModal(chartId, title) {{
             }}
           }} 
         }},
-        y: {{ grid: {{ color: gridColor, drawBorder: false }}, ticks: {{ color: textColor, font: {{ size: 11 }} }} }},
-        y1: {{ display: false, grid: {{ display: false }} }}
+        y: {{ grid: {{ color: gridColor, drawBorder: false }}, ticks: {{ color: textColor, font: {{ size: 11 }} }}, title: {{ display: !!originalCfg.left_title, text: originalCfg.left_title || '', color: textColor, font: {{ size: 11 }} }} }},
+        y1: originalCfg.type === 'dual_axis'
+          ? {{ position: 'right', display: true, grid: {{ display: false }}, ticks: {{ color: textColor, font: {{ size: 11 }} }}, title: {{ display: !!originalCfg.right_title, text: originalCfg.right_title || '', color: textColor, font: {{ size: 11 }} }} }}
+          : {{ display: false, grid: {{ display: false }} }}
       }}
     }}
   }};
