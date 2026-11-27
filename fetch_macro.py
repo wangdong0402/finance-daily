@@ -5,6 +5,7 @@ import os
 import pandas as pd
 import re
 import time
+import html
 from datetime import datetime, timezone, timedelta
 import requests
 
@@ -91,6 +92,141 @@ def resample_monthly(df, date_col, value_cols, target_len=60):
     except Exception as e:
         print(f"  [重采样报错] {e}")
         return None, []
+
+def _cn_period_to_ym(value):
+    """把「2026年10月份」「2026年第1-3季度」这类中文期间统一成 YYYY-MM 标签。"""
+    try:
+        text = str(value)
+        m = re.match(r'^\s*(\d{4})[-/\.](\d{1,2})', text)
+        if m:
+            return f"{m.group(1)}-{int(m.group(2)):02d}"
+        year = re.search(r'(\d{4})', text)
+        if not year:
+            return None
+        y = year.group(1)
+        q = re.search(r'第\s*(\d)\s*(?:-\s*(\d))?\s*季度', text)
+        if q:
+            end_q = int(q.group(2) or q.group(1))
+            return f"{y}-{min(end_q * 3, 12):02d}"
+        m = re.search(r'(\d{1,2})\s*月', text)
+        if m:
+            return f"{y}-{int(m.group(1)):02d}"
+        return None
+    except Exception:
+        return None
+
+
+def monthly_by_ym(df, date_col, value_col, target_len=60):
+    """按 YYYY-MM 归并成月度序列，返回 (labels, values)。"""
+    work = df.copy()
+    work['_ym'] = work[date_col].map(_cn_period_to_ym)
+    work[value_col] = pd.to_numeric(work[value_col], errors='coerce')
+    work = work.dropna(subset=['_ym', value_col])
+    work = work.drop_duplicates('_ym', keep='last').sort_values('_ym').tail(target_len)
+    labels = list(work['_ym'])
+    values = [round(float(v), 2) for v in work[value_col]]
+    return labels, values
+
+
+# 财政部《财政收支情况》：一般公共预算收入 / 支出（累计口径）
+MOF_LIST_URL = "https://www.mof.gov.cn/gkml/caizhengshuju/index.htm"
+MOF_PAGE_URL = "https://www.mof.gov.cn/gkml/caizhengshuju/index_{}.htm"
+MOF_HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"}
+_MOF_ITEM_RE = re.compile(r'<a[^>]+href="(https://gks\.mof\.gov\.cn/tongjishuju/[^"]+)"[^>]*>([^<]*财政收支情况[^<]*)</a>')
+_MOF_DATA_RE = re.compile(r'全国一般公共预算(收入|支出)(\d+(?:\.\d+)?)亿元，同比(增长|下降)([\d.]+)%')
+
+
+def _mof_get(url, timeout=25):
+    r = requests.get(url, headers=MOF_HEADERS, timeout=timeout)
+    r.encoding = r.apparent_encoding or "utf-8"
+    return r.text
+
+
+def _mof_plain(text):
+    text = re.sub(r"<script.*?</script>|<style.*?</style>", "", text, flags=re.S)
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", text)))
+
+
+def _mof_period_month(head):
+    m = re.search(r"1-?(\d{1,2})月", head)
+    if m:
+        return int(m.group(1))
+    if "前三季度" in head:
+        return 9
+    if "上半年" in head:
+        return 6
+    if "一季度" in head:
+        return 3
+    if "全年" in head:
+        return 12
+    m = re.search(r"前(\d{1,2})个月", head)
+    return int(m.group(1)) if m else None
+
+
+def _mof_parse(text, year):
+    out = {}
+    for m in _MOF_DATA_RE.finditer(text):
+        mon = _mof_period_month(text[max(0, m.start() - 40):m.start()])
+        if not mon or m.group(1) in out:
+            continue
+        out[m.group(1)] = (f"{year}-{mon:02d}", float(m.group(2)),
+                           (-1 if m.group(3) == "下降" else 1) * float(m.group(4)))
+    if "收入" in out and "支出" in out:
+        return {"ym": out["收入"][0], "rev": out["收入"][1], "rev_yoy": out["收入"][2],
+                "exp": out["支出"][1], "exp_yoy": out["支出"][2]}
+    return None
+
+
+def mof_fiscal_rows(max_pages=15, max_articles=None):
+    """抓财政部月度《财政收支情况》，返回 [{ym, rev, rev_yoy, exp, exp_yoy}]（累计口径，亿元）。"""
+    items, seen = [], set()
+    for i in range(max_pages):
+        url = MOF_LIST_URL if i == 0 else MOF_PAGE_URL.format(i)
+        try:
+            page = _mof_get(url)
+        except Exception as e:
+            print(f"    列表页 {i} 失败: {e}")
+            break
+        for u, title in _MOF_ITEM_RE.findall(page):
+            if u in seen:
+                continue
+            seen.add(u)
+            items.append((u, title.strip()))
+        if max_articles and len(items) >= max_articles:
+            break
+    rows = []
+    for url, title in (items[:max_articles] if max_articles else items):
+        ym = re.search(r"(20\d\d)", title)
+        if not ym:
+            continue
+        try:
+            d = _mof_parse(_mof_plain(_mof_get(url)), ym.group(1))
+        except Exception:
+            d = None
+        if d:
+            rows.append(d)
+        time.sleep(0.2)
+    return rows
+
+
+def ths_resident_deposit():
+    """同花顺-人民币存款：返回 DataFrame[月份, 住户存款(亿元)]。优先 akshare，失败则直连页面。"""
+    try:
+        df = ak.macro_china_rmb_deposit_ths()
+        col = [c for c in df.columns if "储蓄" in str(c)]
+        if col:
+            return pd.DataFrame({"月份": df["月份"], "住户存款": pd.to_numeric(df[col[0]], errors="coerce")})
+    except Exception:
+        pass
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}
+    r = requests.get("https://data.10jqka.com.cn/macro/rmb/", headers=headers, timeout=20,
+                     proxies={"http": None, "https": None})
+    r.encoding = r.apparent_encoding or "utf-8"
+    df = pd.read_html(io.StringIO(r.text))[0]
+    df.columns = [c[0] if isinstance(c, tuple) else c for c in df.columns]
+    col = [c for c in df.columns if "储蓄" in str(c)][0]
+    return pd.DataFrame({"月份": df.iloc[:, 0], "住户存款": pd.to_numeric(df[col], errors="coerce")})
+
 
 def _curl_get(url, timeout=25, headers=None):
     """
@@ -479,6 +615,160 @@ def main():
     elif "gold_price" in old_charts:
         new_charts["gold_price"] = old_charts["gold_price"]
         print("    [兜底] 已恢复历史 黄金 数据")
+
+    # 14. 居民端：社会消费品零售总额（柱，左轴）+ 消费者信心指数（线，右轴）
+    print("[信息] 抓取 社会消费品零售总额 + 消费者信心指数 ...")
+    ret_labels, ret_vals, conf_map = [], [], {}
+    try:
+        df_ret = ak.macro_china_consumer_goods_retail()
+        ret_labels, ret_vals = monthly_by_ym(df_ret, "月份", "当月", target_len=60)
+        print(f"    [成功] 社零 {len(ret_vals)} 个月，最新 {ret_labels[-1]}：{ret_vals[-1]} 亿元")
+    except Exception as e:
+        print(f"  [失败] 社零: {e}")
+    try:
+        df_conf = ak.macro_china_consumer_confidence()
+        conf_col = [c for c in df_conf.columns if "消费者信心指数" in c and "指数值" in c][0]
+        conf_labels, conf_vals = monthly_by_ym(df_conf, "月份", conf_col, target_len=72)
+        conf_map = dict(zip(conf_labels, conf_vals))
+        print(f"    [成功] 消费者信心 {len(conf_map)} 个月，最新 {conf_labels[-1]}：{conf_vals[-1]}")
+    except Exception as e:
+        print(f"  [失败] 消费者信心: {e}")
+
+    if ret_labels and ret_vals and conf_map:
+        new_charts["household_consume"] = {
+            "name": "居民端：社零当月 vs 消费者信心 (近五年)",
+            "category": "居民",
+            "type": "dual_axis",
+            "left_title": "社零当月（亿元）",
+            "right_title": "信心指数",
+            "labels": ret_labels,
+            "series": [
+                {"name": "社零当月", "color": "#3b82f6", "axis": "left", "type": "bar", "data": ret_vals},
+                {"name": "消费者信心指数", "color": "#ef4444", "axis": "right", "data": [conf_map.get(l) for l in ret_labels]},
+            ],
+        }
+        print("    [完成] 社零 + 消费者信心 已合并为一张双轴图")
+    elif "household_consume" in old_charts:
+        new_charts["household_consume"] = old_charts["household_consume"]
+        print("    [兜底] 已恢复历史 居民消费 数据")
+    time.sleep(1)
+
+    # 15. 财政：财政收入当月（柱，左轴）+ 财政收入累计同比 / 税收累计同比（线，右轴）
+    print("[信息] 抓取 财政收入 + 税收收入 ...")
+    fs_labels, fs_vals, fs_yoy, tax_map = [], [], [], {}
+    try:
+        df_fs = ak.macro_china_fiscal_revenue()
+        fs_labels, fs_vals = monthly_by_ym(df_fs, "月份", "当月", target_len=60)
+        yoy_col = [c for c in df_fs.columns if "累计-同比增长" in c][0]
+        _, fs_yoy = monthly_by_ym(df_fs, "月份", yoy_col, target_len=60)
+        print(f"    [成功] 财政收入 {len(fs_vals)} 个月，最新 {fs_labels[-1]}：当月 {fs_vals[-1]} 亿元，累计同比 {fs_yoy[-1]}%")
+    except Exception as e:
+        print(f"  [失败] 财政收入: {e}")
+    try:
+        df_tax = ak.macro_china_national_tax_receipts()
+        tax_col = [c for c in df_tax.columns if "较上年同期" in c][0]
+        tax_labels, tax_vals = monthly_by_ym(df_tax, "季度", tax_col, target_len=60)
+        tax_map = dict(zip(tax_labels, tax_vals))
+        print(f"    [成功] 税收收入(季度) {len(tax_map)} 期，最新 {tax_labels[-1]}：累计同比 {tax_vals[-1]}%")
+    except Exception as e:
+        print(f"  [失败] 税收收入: {e}")
+
+    if fs_labels and fs_vals:
+        series = [{"name": "财政收入当月", "color": "#0ea5e9", "axis": "left", "type": "bar", "data": fs_vals},
+                  {"name": "财政收入累计同比", "color": "#f59e0b", "axis": "right", "type": "line", "data": fs_yoy}]
+        if tax_map:
+            series.append({"name": "税收累计同比", "color": "#10b981", "axis": "right", "type": "line",
+                           "data": [tax_map.get(l) for l in fs_labels]})
+        new_charts["fiscal"] = {
+            "name": "财政：收入当月 vs 累计同比 (近五年)",
+            "category": "财政",
+            "type": "dual_axis",
+            "left_title": "当月收入（亿元）",
+            "right_title": "累计同比（%）",
+            "labels": fs_labels,
+            "series": series,
+        }
+        print("    [完成] 财政收入 + 税收 已合并为一张双轴图")
+    elif "fiscal" in old_charts:
+        new_charts["fiscal"] = old_charts["fiscal"]
+        print("    [兜底] 已恢复历史 财政 数据")
+    time.sleep(1)
+
+    # 16. 财政收支累计同比（收入 vs 支出）：首次全量抓财政部，之后只增量
+    print("[信息] 抓取 财政收支（财政部月度，收入 vs 支出）...")
+    old_fb = old_charts.get("fiscal_yoy") or {}
+    old_map = {}
+    try:
+        for i, ym in enumerate(old_fb.get("labels") or []):
+            old_map[ym] = (old_fb["series"][0]["data"][i], old_fb["series"][1]["data"][i])
+    except Exception:
+        old_map = {}
+    need_full = len(old_map) < 40
+    rows_fb = []
+    try:
+        rows_fb = mof_fiscal_rows(max_pages=15 if need_full else 2, max_articles=None if need_full else 5)
+        print(f"    [成功] 财政部本期解析 {len(rows_fb)} 期（{'全量' if need_full else '增量'}）")
+    except Exception as e:
+        print(f"  [失败] 财政部抓取: {e}")
+
+    merged = dict(old_map)
+    for r in rows_fb:
+        merged[r["ym"]] = (round(r["rev_yoy"], 2), round(r["exp_yoy"], 2))
+
+    if merged:
+        labels = sorted(merged)[-60:]
+        new_charts["fiscal_yoy"] = {
+            "name": "财政收支累计同比：收入 vs 支出 (近五年)",
+            "category": "财政",
+            "type": "multi_line",
+            "labels": labels,
+            "series": [
+                {"name": "财政收入累计同比", "color": "#0ea5e9", "data": [merged[l][0] for l in labels]},
+                {"name": "财政支出累计同比", "color": "#ef4444", "data": [merged[l][1] for l in labels]},
+            ],
+        }
+        print(f"    [完成] 财政收支同比图，{len(labels)} 个月（{labels[0]} → {labels[-1]}）")
+    else:
+        print("    [提示] 财政收支未取到，跳过")
+    time.sleep(1)
+
+    # 17. 居民存款余额（同花顺，近 30 个月）+ 本外币存款余额（东财）
+    print("[信息] 抓取 住户存款余额 vs 本外币存款余额 ...")
+    sv_labels, sv_vals, all_map = [], [], {}
+    try:
+        df_sv = ths_resident_deposit()
+        sv_col = "住户存款"
+        sv_labels, sv_vals = monthly_by_ym(df_sv, "月份", sv_col, target_len=30)
+        sv_vals = [round(v / 10000, 2) for v in sv_vals]
+        print(f"    [成功] 住户存款 {len(sv_vals)} 个月，最新 {sv_labels[-1] if sv_labels else '无'}：{sv_vals[-1] if sv_vals else '无'} 万亿元")
+    except Exception as e:
+        print(f"  [失败] 住户存款: {e}")
+    try:
+        df_dp = ak.macro_china_deposit()
+        dp_labels, dp_vals = monthly_by_ym(df_dp, "月份", "累计", target_len=72)
+        all_map = dict(zip(dp_labels, [round(v / 10000, 2) for v in dp_vals]))
+        print(f"    [成功] 本外币存款 {len(all_map)} 个月，最新 {dp_labels[-1]}：{dp_vals[-1] / 10000:.2f} 万亿元")
+    except Exception as e:
+        print(f"  [失败] 本外币存款: {e}")
+
+    if sv_labels and sv_vals and all_map:
+        new_charts["deposit"] = {
+            "name": "存款余额：住户 vs 全部 (万亿元)",
+            "category": "货币",
+            "type": "multi_line",
+            "labels": sv_labels,
+            "series": [
+                {"name": "住户存款余额", "color": "#ef4444", "data": sv_vals},
+                {"name": "本外币存款余额", "color": "#3b82f6", "data": [all_map.get(l) for l in sv_labels]},
+            ],
+        }
+        ratio = round(sv_vals[-1] / all_map.get(sv_labels[-1], 1) * 100, 1) if all_map.get(sv_labels[-1]) else 0
+        print(f"    [完成] 存款余额图，{len(sv_labels)} 个月，住户占比 {ratio}%")
+    elif "deposit" in old_charts:
+        new_charts["deposit"] = old_charts["deposit"]
+        print("    [兜底] 已恢复历史 存款余额 数据")
+    else:
+        print("    [提示] 存款余额未取到，跳过")
 
     os.makedirs("data", exist_ok=True)
     with open("data/macro.json", "w", encoding="utf-8") as f:

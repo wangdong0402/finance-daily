@@ -294,7 +294,9 @@ def build_macro_html(macro_data):
     categories = {
         "货币": "💵 货币与信用", 
         "物价": "📈 物价与通胀", 
+        "居民": "🏠 居民与消费",
         "工业": "🏭 工业与景气", 
+        "财政": "🏛️ 财政收支",
         "外贸": "🏗️ 投资与外贸",
         "大类资产": "💰 大类资产"
     }
@@ -891,6 +893,7 @@ function lazyRenderCharts() {{
 
     let datasets = [];
     let chartType = (cfg.type === 'multi_line' || cfg.type === 'dual_axis') ? 'line' : cfg.type;
+    if (cfg.type === 'dual_axis' && cfg.series.some(s => s.type === 'bar')) chartType = 'bar';
 
     if (cfg.type === 'mixed') {{
       chartType = 'bar';
@@ -899,7 +902,9 @@ function lazyRenderCharts() {{
     }} else if (cfg.type === 'multi_line') {{
       datasets = cfg.series.map(s => ({{ label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color + '20', borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false }}));
     }} else if (cfg.type === 'dual_axis') {{
-      datasets = cfg.series.map(s => ({{ label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color + '20', borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false, yAxisID: s.axis === 'right' ? 'y1' : 'y' }}));
+      datasets = cfg.series.map(s => (s.type === 'bar'
+        ? {{ type: 'bar', label: s.name, data: s.data, backgroundColor: s.color + '80', borderRadius: 4, yAxisID: s.axis === 'right' ? 'y1' : 'y' }}
+        : {{ type: 'line', label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color + '20', borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false, spanGaps: true, yAxisID: s.axis === 'right' ? 'y1' : 'y' }}));
     }} else if (cfg.type === 'bar') {{
       const bgColors = cfg.data.map(v => v >= 0 ? cfg.color : '#10b981');
       datasets = [{{ data: cfg.data, backgroundColor: bgColors, borderRadius: 4 }}];
@@ -982,6 +987,7 @@ function openChartModal(chartId, title) {{
 
   let datasets = [];
   let chartType = (originalCfg.type === 'multi_line' || originalCfg.type === 'dual_axis') ? 'line' : originalCfg.type;
+  if (originalCfg.type === 'dual_axis' && originalCfg.series.some(s => s.type === 'bar')) chartType = 'bar';
 
   if (originalCfg.type === 'mixed') {{
     chartType = 'bar';
@@ -990,7 +996,9 @@ function openChartModal(chartId, title) {{
   }} else if (originalCfg.type === 'multi_line') {{
     datasets = originalCfg.series.map(s => ({{ label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color + '20', borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false }}));
   }} else if (originalCfg.type === 'dual_axis') {{
-    datasets = originalCfg.series.map(s => ({{ label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color + '20', borderWidth: 2, tension: 0.3, pointRadius: 2, fill: false, yAxisID: s.axis === 'right' ? 'y1' : 'y' }}));
+    datasets = originalCfg.series.map(s => (s.type === 'bar'
+      ? {{ type: 'bar', label: s.name, data: s.data, backgroundColor: s.color + '80', borderRadius: 4, yAxisID: s.axis === 'right' ? 'y1' : 'y' }}
+      : {{ type: 'line', label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color + '20', borderWidth: 2, tension: 0.3, pointRadius: 3, pointHoverRadius: 5, fill: false, spanGaps: true, yAxisID: s.axis === 'right' ? 'y1' : 'y' }}));
   }} else if (originalCfg.type === 'bar') {{
     const bgColors = originalCfg.data.map(v => v >= 0 ? originalCfg.color : '#10b981');
     datasets = [{{ data: originalCfg.data, backgroundColor: bgColors, borderRadius: 4 }}];
