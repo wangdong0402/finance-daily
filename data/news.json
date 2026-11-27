@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T04:18:48.059403+00:00",
+  "updated": "2026-11-27T04:39:51.587599+00:00",
   "count": 130,
   "items": [
     {
@@ -121,6 +121,14 @@
       "source": "华尔街见闻",
       "category": "中文宏观",
       "published": "2026-11-26T22:33:10+00:00"
+    },
+    {
+      "title": "SpaceX shares jump on alternative trading platform after Musk says he will expand share donations",
+      "link": "https://www.cnbc.com/2026/11/27/spacex-shares-musk-donations.html",
+      "summary": "SpaceX shares jumped in overnight trading on Blue Ocean ATS after Elon Musk said on X that he would donate shares to American children every year.",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-27T04:20:55+00:00"
     },
     {
       "title": "机构：双十一期间华为是主要手机厂商中唯一实现同比增长的品牌",
@@ -555,6 +563,14 @@
       "published": "2026-11-26T15:28:26+00:00"
     },
     {
+      "title": "What is ‘texture-maxxing’? The food trend putting crunch on the menu",
+      "link": "https://www.cnbc.com/2026/11/26/texture-maxxing-food-trends-gen-z.html",
+      "summary": "Texture-maxxing is the latest food trend taking social media by storm as consumers, driven by aesthetics and taste, are now looking for a sensory experience too.",
+      "source": "CNBC 国际头条",
+      "category": "国际财经",
+      "published": "2026-11-26T13:34:51+00:00"
+    },
+    {
       "title": "The Download: Better bionic hands and AI’s natural-gas boom",
       "link": "https://www.technologyreview.com/2026/11/26/1149934/the-download-better-bionic-hands-ai-natural-gas-boom/",
       "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The next generation of bionic hands is here—and they can feel Avi Davidson lost his left hand as a teenager. Since then, he’s cycled through a few prosthetics. Bu",
@@ -595,14 +611,6 @@
       "published": "2026-11-26T07:45:05+00:00"
     },
     {
-      "title": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
-      "link": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
-      "summary": "SpaceX said it will donate one share of the company's class A stock to every active Trump Account, and CEO Elon Musk would match it.",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-26T06:39:34+00:00"
-    },
-    {
       "title": "How Trump’s latest tariff moves hand India an edge over rival Asian exporters",
       "link": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html",
       "summary": "Proposed tariffs of 18% on Bangladesh, Cambodia, Thailand, and 20% on China and Vietnam, subject to their respective trade deals, offer India a competitive advantage.",
@@ -625,14 +633,6 @@
       "source": "CNBC Business",
       "category": "国际财经",
       "published": "2026-11-25T22:26:56+00:00"
-    },
-    {
-      "title": "Nvidia sellers seek new buyers as U.S. curbs China AI chip access, sources tell CNBC",
-      "link": "https://www.cnbc.com/2026/11/25/nvidia-china-ai-chip-remote-access.html",
-      "summary": "Nvidia GPU sellers are seeking new buyers after new U.S. rules tightened remote access to advanced AI chips for China-linked customers",
-      "source": "CNBC 国际头条",
-      "category": "国际财经",
-      "published": "2026-11-25T17:28:24+00:00"
     },
     {
       "title": "How data centers are driving a US natural-gas boom",
